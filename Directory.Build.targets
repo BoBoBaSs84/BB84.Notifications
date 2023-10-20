@@ -1,0 +1,6 @@
+<Project>
+  <!-- See https://aka.ms/dotnet/msbuild/customize for more details on customizing your build -->
+  <ItemGroup Condition=" '$(TargetFrameworkIdentifier)' == '.NETFramework' ">
+    <Using Remove="System.Net.Http" />
+  </ItemGroup>
+</Project>
