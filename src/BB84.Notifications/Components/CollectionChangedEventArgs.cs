@@ -13,18 +13,18 @@ public sealed class CollectionChangedEventArgs : EventArgs
   /// <summary>
   /// Initializes a instance of the collection changed event args class.
   /// </summary>
-  /// <param name="type">The event type that causes the change.</param>
+  /// <param name="action">The action that causes the change.</param>
   /// <param name="item">The item that is changed.</param>
-  public CollectionChangedEventArgs(CollectionEventType type, object? item)
+  public CollectionChangedEventArgs(CollectionChangeAction action, object? item)
   {
-    Event = type;
+    Action = action;
     Item = item;
   }
 
   /// <summary>
-  /// The event type that causes the change.
+  /// The action that causes the change.
   /// </summary>
-  public CollectionEventType Event { get; }
+  public CollectionChangeAction Action { get; }
 
   /// <summary>
   /// The item that is changed.
