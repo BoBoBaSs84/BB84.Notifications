@@ -19,6 +19,7 @@
     <DebugType>full</DebugType>
     <Deterministic>true</Deterministic>
     <EnableNETAnalyzers>true</EnableNETAnalyzers>
+    <EnablePackageValidation>true</EnablePackageValidation>
     <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <GeneratedAssemblyInfoFile>Properties\AssemblyInfo.cs</GeneratedAssemblyInfoFile>
