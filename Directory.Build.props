@@ -1,9 +1,9 @@
 <Project>
 
   <PropertyGroup>
-    <VersionMajor>1</VersionMajor>
-    <VersionMinor>0</VersionMinor>
-    <VersionPatch>$([System.DateTime]::UtcNow.Month)$([System.DateTime]::UtcNow.Day)</VersionPatch>
+    <VersionMajor>$([System.DateTime]::UtcNow.Year)</VersionMajor>
+    <VersionMinor>$([System.DateTime]::UtcNow.Month)</VersionMinor>
+    <VersionPatch>$([System.DateTime]::UtcNow.Day)</VersionPatch>
     <VersionRevision>$([System.DateTime]::UtcNow.TimeOfDay.TotalMinutes.ToString("0"))</VersionRevision>
     <VersionPrefix>$(VersionMajor).$(VersionMinor).$(VersionPatch).$(VersionRevision)</VersionPrefix>
     <VersionSuffix Condition="$(Configuration.Equals('Debug'))">Development</VersionSuffix>
@@ -32,7 +32,6 @@
 
   <PropertyGroup Condition="'$(Configuration)'=='Release'">
     <DebugType>none</DebugType>
-    <GenerateDocumentationFile>false</GenerateDocumentationFile>
   </PropertyGroup>
 
   <PropertyGroup Condition="!$(MSBuildProjectName.EndsWith('Tests'))">
@@ -43,14 +42,13 @@
     <Description>Contains relevant things for property change/changing notification and collection change/changing notification.</Description>
     <!--<PackageIcon>$(AssemblyName).png</PackageIcon>-->
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <!--<PackageLicenseFile>LICENSE</PackageLicenseFile>-->
-    <PackageProjectUrl>https://github.com/$(Author)/$(AssemblyName)</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/BoBoBaSs84/BB84.Notifications</PackageProjectUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
     <Product>$(AssemblyName)</Product>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <RepositoryUrl>https://github.com/$(Author)/$(AssemblyName)</RepositoryUrl>
+    <RepositoryUrl>https://github.com/BoBoBaSs84/BB84.Notifications</RepositoryUrl>
     <Title>$(AssemblyName)</Title>
   </PropertyGroup>
 
@@ -62,7 +60,7 @@
   </PropertyGroup>
 
   <ItemGroup Condition="!$(MSBuildProjectName.EndsWith('Tests'))">
-    <InternalsVisibleTo Include="$(AssemblyName).Tests" Key="00240000048000009400000006020000002400005253413100040000010001001d279f3822ca86e5157254452c9b0bda97bfeef3ed7964a8626318a1e46449adb0b62b7ca2f37b461ab2f28d0203344b11da76c5244331ff0a8629a258901534d0fb7d1cdfc6c048031874fced4f4c6a6d87991d4105e072adde2a965ccd440bbf8c3f90d6de6f8cfce47bd8908d9fdcdc08c617dc04616fc1dfcd290b4f4eec" />
+    <InternalsVisibleTo Include="$(AssemblyName)Tests" Key="00240000048000009400000006020000002400005253413100040000010001001d279f3822ca86e5157254452c9b0bda97bfeef3ed7964a8626318a1e46449adb0b62b7ca2f37b461ab2f28d0203344b11da76c5244331ff0a8629a258901534d0fb7d1cdfc6c048031874fced4f4c6a6d87991d4105e072adde2a965ccd440bbf8c3f90d6de6f8cfce47bd8908d9fdcdc08c617dc04616fc1dfcd290b4f4eec" />
   </ItemGroup>
 
   <ItemGroup Condition="$(MSBuildProjectName.EndsWith('Tests'))">
