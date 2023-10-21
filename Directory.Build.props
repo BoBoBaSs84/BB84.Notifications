@@ -1,11 +1,10 @@
 <Project>
 
   <PropertyGroup>
-    <VersionMajor>$([System.DateTime]::UtcNow.Year)</VersionMajor>
-    <VersionMinor>$([System.DateTime]::UtcNow.Month)</VersionMinor>
-    <VersionPatch>$([System.DateTime]::UtcNow.Day)</VersionPatch>
-    <VersionRevision>$([System.DateTime]::UtcNow.TimeOfDay.TotalMinutes.ToString("0"))</VersionRevision>
-    <VersionPrefix>$(VersionMajor).$(VersionMinor).$(VersionPatch).$(VersionRevision)</VersionPrefix>
+    <VersionMajor>1</VersionMajor>
+    <VersionMinor>0</VersionMinor>
+    <VersionPatch>0</VersionPatch>
+    <VersionPrefix>$(VersionMajor).$(VersionMinor).$(VersionPatch)</VersionPrefix>
     <VersionSuffix Condition="$(Configuration.Equals('Debug'))">Development</VersionSuffix>
   </PropertyGroup>
 
@@ -28,7 +27,7 @@
     <NeutralLanguage>en-US</NeutralLanguage>
     <Nullable>enable</Nullable>
     <SignAssembly>true</SignAssembly>
-    <TargetFrameworks>netstandard2.0;net462;net6.0</TargetFrameworks>
+    <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)'=='Release'">
@@ -39,9 +38,11 @@
     <Author>BoBoBaSs84</Author>
     <Authors>$(Author)</Authors>
     <Company>https://github.com/$(Author)</Company>
-    <Copyright>Copyright © $(VersionMajor) $(Author)</Copyright>
+    <Copyright>Copyright © $([System.DateTime]::UtcNow.Year) $(Author)</Copyright>
     <Description>Contains relevant things for property change/changing notification and collection change/changing notification.</Description>
     <!--<PackageIcon>$(AssemblyName).png</PackageIcon>-->
+    <PackageId>$(AssemblyName)</PackageId>
+    <PackageTags>library;csharp;notification;common</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/BoBoBaSs84/BB84.Notifications</PackageProjectUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
@@ -57,7 +58,7 @@
     <IsPackable>false</IsPackable>
     <IsTestProject>true</IsTestProject>
     <GenerateDocumentationFile>false</GenerateDocumentationFile>
-    <TargetFrameworks>net462;net6.0</TargetFrameworks>
+    <TargetFramework>net6.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup Condition="!$(MSBuildProjectName.EndsWith('Tests'))">
