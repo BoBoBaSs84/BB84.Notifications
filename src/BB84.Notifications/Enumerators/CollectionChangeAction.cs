@@ -1,9 +1,9 @@
 ﻿namespace BB84.Notifications.Enumerators;
 
 /// <summary>
-/// The collection event type enumerator.
+/// The collection change action enumerator.
 /// </summary>
-public enum CollectionEventType
+public enum CollectionChangeAction
 {
   /// <summary>
   /// An item was added to the collection.

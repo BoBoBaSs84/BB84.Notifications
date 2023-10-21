@@ -17,12 +17,12 @@ public sealed class BindableProperty<T> : IBindableProperty<T> where T : IEquata
     get => _value;
     set
     {
-      if (EqualityComparer<T>.Default.Equals(_value, value))
-        return;
-
-      Changing?.Invoke(this, new BindablePropertyChangingEventArgs<T>(_value));
-      _value = value;
-      Changed?.Invoke(this, new BindablePropertyChangedEventArgs<T>(value));
+      if (!EqualityComparer<T>.Default.Equals(_value, value))
+      {
+        Changing?.Invoke(this, new BindablePropertyChangingEventArgs<T>(_value));
+        _value = value;
+        Changed?.Invoke(this, new BindablePropertyChangedEventArgs<T>(value));
+      }
     }
   }
 

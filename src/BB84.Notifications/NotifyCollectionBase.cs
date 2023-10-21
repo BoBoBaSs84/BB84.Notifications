@@ -24,7 +24,7 @@ public abstract class NotifyCollectionBase : NotifyPropertyBase, INotifyCollecti
   /// </summary>
   /// <param name="eventType">The event that causes the change.</param>
   /// <param name="value">The item that is changed.</param>
-  protected void RaiseCollectionChanged(CollectionEventType eventType, object? value = null)
+  protected void RaiseCollectionChanged(CollectionChangeAction eventType, object? value = null)
     => CollectionChanged?.Invoke(this, new(eventType, value));
 
   /// <summary>
@@ -32,6 +32,6 @@ public abstract class NotifyCollectionBase : NotifyPropertyBase, INotifyCollecti
   /// </summary>
   /// <param name="eventType">The event that causes the change.</param>
   /// <param name="value">The item that is changing.</param>
-  protected void RaiseCollectionChanging(CollectionEventType eventType, object? value = null)
+  protected void RaiseCollectionChanging(CollectionChangeAction eventType, object? value = null)
     => CollectionChanging?.Invoke(this, new(eventType, value));
 }
