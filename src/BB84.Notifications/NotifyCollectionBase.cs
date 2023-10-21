@@ -22,16 +22,16 @@ public abstract class NotifyCollectionBase : NotifyPropertyBase, INotifyCollecti
   /// <summary>
   /// Raises the <see cref="CollectionChanged"/> event.
   /// </summary>
-  /// <param name="eventType">The event that causes the change.</param>
+  /// <param name="action">The action that causes the change.</param>
   /// <param name="value">The item that is changed.</param>
-  protected void RaiseCollectionChanged(CollectionChangeAction eventType, object? value = null)
-    => CollectionChanged?.Invoke(this, new(eventType, value));
+  protected void RaiseCollectionChanged(CollectionChangeAction action, object? value = null)
+    => CollectionChanged?.Invoke(this, new(action, value));
 
   /// <summary>
   /// Raises the <see cref="CollectionChanging"/> event.
   /// </summary>
-  /// <param name="eventType">The event that causes the change.</param>
+  /// <param name="action">The action that causes the change.</param>
   /// <param name="value">The item that is changing.</param>
-  protected void RaiseCollectionChanging(CollectionChangeAction eventType, object? value = null)
-    => CollectionChanging?.Invoke(this, new(eventType, value));
+  protected void RaiseCollectionChanging(CollectionChangeAction action, object? value = null)
+    => CollectionChanging?.Invoke(this, new(action, value));
 }
