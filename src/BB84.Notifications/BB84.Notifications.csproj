@@ -5,9 +5,4 @@
     <None Include="..\..\README.md" Pack="True" PackagePath="\" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Interfaces\Components\" />
-    <Folder Include="Components\" />
-  </ItemGroup>
-
 </Project>
