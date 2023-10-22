@@ -27,7 +27,7 @@
     <NeutralLanguage>en-US</NeutralLanguage>
     <Nullable>enable</Nullable>
     <SignAssembly>true</SignAssembly>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFrameworks>netstandard2.0;net462;net6.0</TargetFrameworks>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)'=='Release'">
@@ -58,7 +58,7 @@
     <IsPackable>false</IsPackable>
     <IsTestProject>true</IsTestProject>
     <GenerateDocumentationFile>false</GenerateDocumentationFile>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFrameworks>net462;net6.0</TargetFrameworks>
   </PropertyGroup>
 
   <ItemGroup Condition="!$(MSBuildProjectName.EndsWith('Tests'))">
