@@ -24,9 +24,5 @@ public enum CollectionChangeAction
   /// <summary>
   /// An item was replaced in the collection.
   /// </summary>
-  Replace,
-  /// <summary>
-  /// An item was updated in the collection.
-  /// </summary>
-  Update
+  Replace
 }
