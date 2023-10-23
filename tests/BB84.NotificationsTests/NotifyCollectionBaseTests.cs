@@ -9,7 +9,7 @@ namespace BB84.NotificationsTests;
 [TestClass]
 public sealed partial class NotifyCollectionBaseTests
 {
-  private class MyCollection : NotifyCollectionBase, ICollection<string>
+  private sealed class MyCollection : NotifyCollectionBase, ICollection<string>
   {
     private readonly Collection<string> _collection;
 
