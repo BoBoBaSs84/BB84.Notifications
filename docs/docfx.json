@@ -3,9 +3,8 @@
     {
       "src": [
         {
-          "files": [
-            "bin/**/*.dll"
-          ]
+          "files": ["**/*.csproj"],
+          "src": "../src"
         }
       ],
       "dest": "api",
@@ -30,8 +29,6 @@
       },
       {
         "files": [
-          "articles/**.md",
-          "articles/**/toc.yml",
           "toc.yml",
           "*.md"
         ]

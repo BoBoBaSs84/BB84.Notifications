@@ -1,8 +1,1 @@
-<Project Sdk="Microsoft.NET.Sdk">
-
-  <ItemGroup>
-    <None Include="..\..\LICENSE" Pack="True" PackagePath="\" />
-    <None Include="..\..\README.md" Pack="True" PackagePath="\" />
-  </ItemGroup>
-
-</Project>
+<Project Sdk="Microsoft.NET.Sdk"/>
