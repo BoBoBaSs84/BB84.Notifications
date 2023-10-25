@@ -1,0 +1,762 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: BB84.Notifications
+  name: BB84.Notifications
+  href: api/BB84.Notifications.html
+  commentId: N:BB84.Notifications
+  fullName: BB84.Notifications
+  nameWithType: BB84.Notifications
+- uid: BB84.Notifications.BindableProperty`1
+  name: BindableProperty<T>
+  href: api/BB84.Notifications.BindableProperty-1.html
+  commentId: T:BB84.Notifications.BindableProperty`1
+  name.vb: BindableProperty(Of T)
+  fullName: BB84.Notifications.BindableProperty<T>
+  fullName.vb: BB84.Notifications.BindableProperty(Of T)
+  nameWithType: BindableProperty<T>
+  nameWithType.vb: BindableProperty(Of T)
+- uid: BB84.Notifications.BindableProperty`1.#ctor(`0)
+  name: BindableProperty(T)
+  href: api/BB84.Notifications.BindableProperty-1.html#BB84_Notifications_BindableProperty_1__ctor__0_
+  commentId: M:BB84.Notifications.BindableProperty`1.#ctor(`0)
+  name.vb: New(T)
+  fullName: BB84.Notifications.BindableProperty<T>.BindableProperty(T)
+  fullName.vb: BB84.Notifications.BindableProperty(Of T).New(T)
+  nameWithType: BindableProperty<T>.BindableProperty(T)
+  nameWithType.vb: BindableProperty(Of T).New(T)
+- uid: BB84.Notifications.BindableProperty`1.#ctor*
+  name: BindableProperty
+  href: api/BB84.Notifications.BindableProperty-1.html#BB84_Notifications_BindableProperty_1__ctor_
+  commentId: Overload:BB84.Notifications.BindableProperty`1.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: BB84.Notifications.BindableProperty<T>.BindableProperty
+  fullName.vb: BB84.Notifications.BindableProperty(Of T).New
+  nameWithType: BindableProperty<T>.BindableProperty
+  nameWithType.vb: BindableProperty(Of T).New
+- uid: BB84.Notifications.BindableProperty`1.Changed
+  name: Changed
+  href: api/BB84.Notifications.BindableProperty-1.html#BB84_Notifications_BindableProperty_1_Changed
+  commentId: E:BB84.Notifications.BindableProperty`1.Changed
+  fullName: BB84.Notifications.BindableProperty<T>.Changed
+  fullName.vb: BB84.Notifications.BindableProperty(Of T).Changed
+  nameWithType: BindableProperty<T>.Changed
+  nameWithType.vb: BindableProperty(Of T).Changed
+- uid: BB84.Notifications.BindableProperty`1.Changing
+  name: Changing
+  href: api/BB84.Notifications.BindableProperty-1.html#BB84_Notifications_BindableProperty_1_Changing
+  commentId: E:BB84.Notifications.BindableProperty`1.Changing
+  fullName: BB84.Notifications.BindableProperty<T>.Changing
+  fullName.vb: BB84.Notifications.BindableProperty(Of T).Changing
+  nameWithType: BindableProperty<T>.Changing
+  nameWithType.vb: BindableProperty(Of T).Changing
+- uid: BB84.Notifications.BindableProperty`1.Value
+  name: Value
+  href: api/BB84.Notifications.BindableProperty-1.html#BB84_Notifications_BindableProperty_1_Value
+  commentId: P:BB84.Notifications.BindableProperty`1.Value
+  fullName: BB84.Notifications.BindableProperty<T>.Value
+  fullName.vb: BB84.Notifications.BindableProperty(Of T).Value
+  nameWithType: BindableProperty<T>.Value
+  nameWithType.vb: BindableProperty(Of T).Value
+- uid: BB84.Notifications.BindableProperty`1.Value*
+  name: Value
+  href: api/BB84.Notifications.BindableProperty-1.html#BB84_Notifications_BindableProperty_1_Value_
+  commentId: Overload:BB84.Notifications.BindableProperty`1.Value
+  isSpec: "True"
+  fullName: BB84.Notifications.BindableProperty<T>.Value
+  fullName.vb: BB84.Notifications.BindableProperty(Of T).Value
+  nameWithType: BindableProperty<T>.Value
+  nameWithType.vb: BindableProperty(Of T).Value
+- uid: BB84.Notifications.Components
+  name: BB84.Notifications.Components
+  href: api/BB84.Notifications.Components.html
+  commentId: N:BB84.Notifications.Components
+  fullName: BB84.Notifications.Components
+  nameWithType: BB84.Notifications.Components
+- uid: BB84.Notifications.Components.BindablePropertyChangedEventArgs`1
+  name: BindablePropertyChangedEventArgs<T>
+  href: api/BB84.Notifications.Components.BindablePropertyChangedEventArgs-1.html
+  commentId: T:BB84.Notifications.Components.BindablePropertyChangedEventArgs`1
+  name.vb: BindablePropertyChangedEventArgs(Of T)
+  fullName: BB84.Notifications.Components.BindablePropertyChangedEventArgs<T>
+  fullName.vb: BB84.Notifications.Components.BindablePropertyChangedEventArgs(Of T)
+  nameWithType: BindablePropertyChangedEventArgs<T>
+  nameWithType.vb: BindablePropertyChangedEventArgs(Of T)
+- uid: BB84.Notifications.Components.BindablePropertyChangedEventArgs`1.#ctor(`0)
+  name: BindablePropertyChangedEventArgs(T)
+  href: api/BB84.Notifications.Components.BindablePropertyChangedEventArgs-1.html#BB84_Notifications_Components_BindablePropertyChangedEventArgs_1__ctor__0_
+  commentId: M:BB84.Notifications.Components.BindablePropertyChangedEventArgs`1.#ctor(`0)
+  name.vb: New(T)
+  fullName: BB84.Notifications.Components.BindablePropertyChangedEventArgs<T>.BindablePropertyChangedEventArgs(T)
+  fullName.vb: BB84.Notifications.Components.BindablePropertyChangedEventArgs(Of T).New(T)
+  nameWithType: BindablePropertyChangedEventArgs<T>.BindablePropertyChangedEventArgs(T)
+  nameWithType.vb: BindablePropertyChangedEventArgs(Of T).New(T)
+- uid: BB84.Notifications.Components.BindablePropertyChangedEventArgs`1.#ctor*
+  name: BindablePropertyChangedEventArgs
+  href: api/BB84.Notifications.Components.BindablePropertyChangedEventArgs-1.html#BB84_Notifications_Components_BindablePropertyChangedEventArgs_1__ctor_
+  commentId: Overload:BB84.Notifications.Components.BindablePropertyChangedEventArgs`1.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: BB84.Notifications.Components.BindablePropertyChangedEventArgs<T>.BindablePropertyChangedEventArgs
+  fullName.vb: BB84.Notifications.Components.BindablePropertyChangedEventArgs(Of T).New
+  nameWithType: BindablePropertyChangedEventArgs<T>.BindablePropertyChangedEventArgs
+  nameWithType.vb: BindablePropertyChangedEventArgs(Of T).New
+- uid: BB84.Notifications.Components.BindablePropertyChangedEventArgs`1.Value
+  name: Value
+  href: api/BB84.Notifications.Components.BindablePropertyChangedEventArgs-1.html#BB84_Notifications_Components_BindablePropertyChangedEventArgs_1_Value
+  commentId: P:BB84.Notifications.Components.BindablePropertyChangedEventArgs`1.Value
+  fullName: BB84.Notifications.Components.BindablePropertyChangedEventArgs<T>.Value
+  fullName.vb: BB84.Notifications.Components.BindablePropertyChangedEventArgs(Of T).Value
+  nameWithType: BindablePropertyChangedEventArgs<T>.Value
+  nameWithType.vb: BindablePropertyChangedEventArgs(Of T).Value
+- uid: BB84.Notifications.Components.BindablePropertyChangedEventArgs`1.Value*
+  name: Value
+  href: api/BB84.Notifications.Components.BindablePropertyChangedEventArgs-1.html#BB84_Notifications_Components_BindablePropertyChangedEventArgs_1_Value_
+  commentId: Overload:BB84.Notifications.Components.BindablePropertyChangedEventArgs`1.Value
+  isSpec: "True"
+  fullName: BB84.Notifications.Components.BindablePropertyChangedEventArgs<T>.Value
+  fullName.vb: BB84.Notifications.Components.BindablePropertyChangedEventArgs(Of T).Value
+  nameWithType: BindablePropertyChangedEventArgs<T>.Value
+  nameWithType.vb: BindablePropertyChangedEventArgs(Of T).Value
+- uid: BB84.Notifications.Components.BindablePropertyChangingEventArgs`1
+  name: BindablePropertyChangingEventArgs<T>
+  href: api/BB84.Notifications.Components.BindablePropertyChangingEventArgs-1.html
+  commentId: T:BB84.Notifications.Components.BindablePropertyChangingEventArgs`1
+  name.vb: BindablePropertyChangingEventArgs(Of T)
+  fullName: BB84.Notifications.Components.BindablePropertyChangingEventArgs<T>
+  fullName.vb: BB84.Notifications.Components.BindablePropertyChangingEventArgs(Of T)
+  nameWithType: BindablePropertyChangingEventArgs<T>
+  nameWithType.vb: BindablePropertyChangingEventArgs(Of T)
+- uid: BB84.Notifications.Components.BindablePropertyChangingEventArgs`1.#ctor(`0)
+  name: BindablePropertyChangingEventArgs(T)
+  href: api/BB84.Notifications.Components.BindablePropertyChangingEventArgs-1.html#BB84_Notifications_Components_BindablePropertyChangingEventArgs_1__ctor__0_
+  commentId: M:BB84.Notifications.Components.BindablePropertyChangingEventArgs`1.#ctor(`0)
+  name.vb: New(T)
+  fullName: BB84.Notifications.Components.BindablePropertyChangingEventArgs<T>.BindablePropertyChangingEventArgs(T)
+  fullName.vb: BB84.Notifications.Components.BindablePropertyChangingEventArgs(Of T).New(T)
+  nameWithType: BindablePropertyChangingEventArgs<T>.BindablePropertyChangingEventArgs(T)
+  nameWithType.vb: BindablePropertyChangingEventArgs(Of T).New(T)
+- uid: BB84.Notifications.Components.BindablePropertyChangingEventArgs`1.#ctor*
+  name: BindablePropertyChangingEventArgs
+  href: api/BB84.Notifications.Components.BindablePropertyChangingEventArgs-1.html#BB84_Notifications_Components_BindablePropertyChangingEventArgs_1__ctor_
+  commentId: Overload:BB84.Notifications.Components.BindablePropertyChangingEventArgs`1.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: BB84.Notifications.Components.BindablePropertyChangingEventArgs<T>.BindablePropertyChangingEventArgs
+  fullName.vb: BB84.Notifications.Components.BindablePropertyChangingEventArgs(Of T).New
+  nameWithType: BindablePropertyChangingEventArgs<T>.BindablePropertyChangingEventArgs
+  nameWithType.vb: BindablePropertyChangingEventArgs(Of T).New
+- uid: BB84.Notifications.Components.BindablePropertyChangingEventArgs`1.Value
+  name: Value
+  href: api/BB84.Notifications.Components.BindablePropertyChangingEventArgs-1.html#BB84_Notifications_Components_BindablePropertyChangingEventArgs_1_Value
+  commentId: P:BB84.Notifications.Components.BindablePropertyChangingEventArgs`1.Value
+  fullName: BB84.Notifications.Components.BindablePropertyChangingEventArgs<T>.Value
+  fullName.vb: BB84.Notifications.Components.BindablePropertyChangingEventArgs(Of T).Value
+  nameWithType: BindablePropertyChangingEventArgs<T>.Value
+  nameWithType.vb: BindablePropertyChangingEventArgs(Of T).Value
+- uid: BB84.Notifications.Components.BindablePropertyChangingEventArgs`1.Value*
+  name: Value
+  href: api/BB84.Notifications.Components.BindablePropertyChangingEventArgs-1.html#BB84_Notifications_Components_BindablePropertyChangingEventArgs_1_Value_
+  commentId: Overload:BB84.Notifications.Components.BindablePropertyChangingEventArgs`1.Value
+  isSpec: "True"
+  fullName: BB84.Notifications.Components.BindablePropertyChangingEventArgs<T>.Value
+  fullName.vb: BB84.Notifications.Components.BindablePropertyChangingEventArgs(Of T).Value
+  nameWithType: BindablePropertyChangingEventArgs<T>.Value
+  nameWithType.vb: BindablePropertyChangingEventArgs(Of T).Value
+- uid: BB84.Notifications.Components.CollectionChangedEventArgs
+  name: CollectionChangedEventArgs
+  href: api/BB84.Notifications.Components.CollectionChangedEventArgs.html
+  commentId: T:BB84.Notifications.Components.CollectionChangedEventArgs
+  fullName: BB84.Notifications.Components.CollectionChangedEventArgs
+  nameWithType: CollectionChangedEventArgs
+- uid: BB84.Notifications.Components.CollectionChangedEventArgs.#ctor(BB84.Notifications.Enumerators.CollectionChangeAction,System.Object)
+  name: CollectionChangedEventArgs(CollectionChangeAction, object?)
+  href: api/BB84.Notifications.Components.CollectionChangedEventArgs.html#BB84_Notifications_Components_CollectionChangedEventArgs__ctor_BB84_Notifications_Enumerators_CollectionChangeAction_System_Object_
+  commentId: M:BB84.Notifications.Components.CollectionChangedEventArgs.#ctor(BB84.Notifications.Enumerators.CollectionChangeAction,System.Object)
+  name.vb: New(CollectionChangeAction, Object)
+  fullName: BB84.Notifications.Components.CollectionChangedEventArgs.CollectionChangedEventArgs(BB84.Notifications.Enumerators.CollectionChangeAction, object?)
+  fullName.vb: BB84.Notifications.Components.CollectionChangedEventArgs.New(BB84.Notifications.Enumerators.CollectionChangeAction, Object)
+  nameWithType: CollectionChangedEventArgs.CollectionChangedEventArgs(CollectionChangeAction, object?)
+  nameWithType.vb: CollectionChangedEventArgs.New(CollectionChangeAction, Object)
+- uid: BB84.Notifications.Components.CollectionChangedEventArgs.#ctor*
+  name: CollectionChangedEventArgs
+  href: api/BB84.Notifications.Components.CollectionChangedEventArgs.html#BB84_Notifications_Components_CollectionChangedEventArgs__ctor_
+  commentId: Overload:BB84.Notifications.Components.CollectionChangedEventArgs.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: BB84.Notifications.Components.CollectionChangedEventArgs.CollectionChangedEventArgs
+  fullName.vb: BB84.Notifications.Components.CollectionChangedEventArgs.New
+  nameWithType: CollectionChangedEventArgs.CollectionChangedEventArgs
+  nameWithType.vb: CollectionChangedEventArgs.New
+- uid: BB84.Notifications.Components.CollectionChangedEventArgs.Action
+  name: Action
+  href: api/BB84.Notifications.Components.CollectionChangedEventArgs.html#BB84_Notifications_Components_CollectionChangedEventArgs_Action
+  commentId: P:BB84.Notifications.Components.CollectionChangedEventArgs.Action
+  fullName: BB84.Notifications.Components.CollectionChangedEventArgs.Action
+  nameWithType: CollectionChangedEventArgs.Action
+- uid: BB84.Notifications.Components.CollectionChangedEventArgs.Action*
+  name: Action
+  href: api/BB84.Notifications.Components.CollectionChangedEventArgs.html#BB84_Notifications_Components_CollectionChangedEventArgs_Action_
+  commentId: Overload:BB84.Notifications.Components.CollectionChangedEventArgs.Action
+  isSpec: "True"
+  fullName: BB84.Notifications.Components.CollectionChangedEventArgs.Action
+  nameWithType: CollectionChangedEventArgs.Action
+- uid: BB84.Notifications.Components.CollectionChangedEventArgs.Item
+  name: Item
+  href: api/BB84.Notifications.Components.CollectionChangedEventArgs.html#BB84_Notifications_Components_CollectionChangedEventArgs_Item
+  commentId: P:BB84.Notifications.Components.CollectionChangedEventArgs.Item
+  fullName: BB84.Notifications.Components.CollectionChangedEventArgs.Item
+  nameWithType: CollectionChangedEventArgs.Item
+- uid: BB84.Notifications.Components.CollectionChangedEventArgs.Item*
+  name: Item
+  href: api/BB84.Notifications.Components.CollectionChangedEventArgs.html#BB84_Notifications_Components_CollectionChangedEventArgs_Item_
+  commentId: Overload:BB84.Notifications.Components.CollectionChangedEventArgs.Item
+  isSpec: "True"
+  fullName: BB84.Notifications.Components.CollectionChangedEventArgs.Item
+  nameWithType: CollectionChangedEventArgs.Item
+- uid: BB84.Notifications.Components.CollectionChangedEventHandler
+  name: CollectionChangedEventHandler
+  href: api/BB84.Notifications.Components.CollectionChangedEventHandler.html
+  commentId: T:BB84.Notifications.Components.CollectionChangedEventHandler
+  fullName: BB84.Notifications.Components.CollectionChangedEventHandler
+  nameWithType: CollectionChangedEventHandler
+- uid: BB84.Notifications.Components.CollectionChangingEventArgs
+  name: CollectionChangingEventArgs
+  href: api/BB84.Notifications.Components.CollectionChangingEventArgs.html
+  commentId: T:BB84.Notifications.Components.CollectionChangingEventArgs
+  fullName: BB84.Notifications.Components.CollectionChangingEventArgs
+  nameWithType: CollectionChangingEventArgs
+- uid: BB84.Notifications.Components.CollectionChangingEventArgs.#ctor(BB84.Notifications.Enumerators.CollectionChangeAction,System.Object)
+  name: CollectionChangingEventArgs(CollectionChangeAction, object?)
+  href: api/BB84.Notifications.Components.CollectionChangingEventArgs.html#BB84_Notifications_Components_CollectionChangingEventArgs__ctor_BB84_Notifications_Enumerators_CollectionChangeAction_System_Object_
+  commentId: M:BB84.Notifications.Components.CollectionChangingEventArgs.#ctor(BB84.Notifications.Enumerators.CollectionChangeAction,System.Object)
+  name.vb: New(CollectionChangeAction, Object)
+  fullName: BB84.Notifications.Components.CollectionChangingEventArgs.CollectionChangingEventArgs(BB84.Notifications.Enumerators.CollectionChangeAction, object?)
+  fullName.vb: BB84.Notifications.Components.CollectionChangingEventArgs.New(BB84.Notifications.Enumerators.CollectionChangeAction, Object)
+  nameWithType: CollectionChangingEventArgs.CollectionChangingEventArgs(CollectionChangeAction, object?)
+  nameWithType.vb: CollectionChangingEventArgs.New(CollectionChangeAction, Object)
+- uid: BB84.Notifications.Components.CollectionChangingEventArgs.#ctor*
+  name: CollectionChangingEventArgs
+  href: api/BB84.Notifications.Components.CollectionChangingEventArgs.html#BB84_Notifications_Components_CollectionChangingEventArgs__ctor_
+  commentId: Overload:BB84.Notifications.Components.CollectionChangingEventArgs.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: BB84.Notifications.Components.CollectionChangingEventArgs.CollectionChangingEventArgs
+  fullName.vb: BB84.Notifications.Components.CollectionChangingEventArgs.New
+  nameWithType: CollectionChangingEventArgs.CollectionChangingEventArgs
+  nameWithType.vb: CollectionChangingEventArgs.New
+- uid: BB84.Notifications.Components.CollectionChangingEventArgs.Action
+  name: Action
+  href: api/BB84.Notifications.Components.CollectionChangingEventArgs.html#BB84_Notifications_Components_CollectionChangingEventArgs_Action
+  commentId: P:BB84.Notifications.Components.CollectionChangingEventArgs.Action
+  fullName: BB84.Notifications.Components.CollectionChangingEventArgs.Action
+  nameWithType: CollectionChangingEventArgs.Action
+- uid: BB84.Notifications.Components.CollectionChangingEventArgs.Action*
+  name: Action
+  href: api/BB84.Notifications.Components.CollectionChangingEventArgs.html#BB84_Notifications_Components_CollectionChangingEventArgs_Action_
+  commentId: Overload:BB84.Notifications.Components.CollectionChangingEventArgs.Action
+  isSpec: "True"
+  fullName: BB84.Notifications.Components.CollectionChangingEventArgs.Action
+  nameWithType: CollectionChangingEventArgs.Action
+- uid: BB84.Notifications.Components.CollectionChangingEventArgs.Item
+  name: Item
+  href: api/BB84.Notifications.Components.CollectionChangingEventArgs.html#BB84_Notifications_Components_CollectionChangingEventArgs_Item
+  commentId: P:BB84.Notifications.Components.CollectionChangingEventArgs.Item
+  fullName: BB84.Notifications.Components.CollectionChangingEventArgs.Item
+  nameWithType: CollectionChangingEventArgs.Item
+- uid: BB84.Notifications.Components.CollectionChangingEventArgs.Item*
+  name: Item
+  href: api/BB84.Notifications.Components.CollectionChangingEventArgs.html#BB84_Notifications_Components_CollectionChangingEventArgs_Item_
+  commentId: Overload:BB84.Notifications.Components.CollectionChangingEventArgs.Item
+  isSpec: "True"
+  fullName: BB84.Notifications.Components.CollectionChangingEventArgs.Item
+  nameWithType: CollectionChangingEventArgs.Item
+- uid: BB84.Notifications.Components.CollectionChangingEventHandler
+  name: CollectionChangingEventHandler
+  href: api/BB84.Notifications.Components.CollectionChangingEventHandler.html
+  commentId: T:BB84.Notifications.Components.CollectionChangingEventHandler
+  fullName: BB84.Notifications.Components.CollectionChangingEventHandler
+  nameWithType: CollectionChangingEventHandler
+- uid: BB84.Notifications.Components.PropertyChangedEventArgs
+  name: PropertyChangedEventArgs
+  href: api/BB84.Notifications.Components.PropertyChangedEventArgs.html
+  commentId: T:BB84.Notifications.Components.PropertyChangedEventArgs
+  fullName: BB84.Notifications.Components.PropertyChangedEventArgs
+  nameWithType: PropertyChangedEventArgs
+- uid: BB84.Notifications.Components.PropertyChangedEventArgs.#ctor(System.String,System.Object)
+  name: PropertyChangedEventArgs(string, object?)
+  href: api/BB84.Notifications.Components.PropertyChangedEventArgs.html#BB84_Notifications_Components_PropertyChangedEventArgs__ctor_System_String_System_Object_
+  commentId: M:BB84.Notifications.Components.PropertyChangedEventArgs.#ctor(System.String,System.Object)
+  name.vb: New(String, Object)
+  fullName: BB84.Notifications.Components.PropertyChangedEventArgs.PropertyChangedEventArgs(string, object?)
+  fullName.vb: BB84.Notifications.Components.PropertyChangedEventArgs.New(String, Object)
+  nameWithType: PropertyChangedEventArgs.PropertyChangedEventArgs(string, object?)
+  nameWithType.vb: PropertyChangedEventArgs.New(String, Object)
+- uid: BB84.Notifications.Components.PropertyChangedEventArgs.#ctor*
+  name: PropertyChangedEventArgs
+  href: api/BB84.Notifications.Components.PropertyChangedEventArgs.html#BB84_Notifications_Components_PropertyChangedEventArgs__ctor_
+  commentId: Overload:BB84.Notifications.Components.PropertyChangedEventArgs.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: BB84.Notifications.Components.PropertyChangedEventArgs.PropertyChangedEventArgs
+  fullName.vb: BB84.Notifications.Components.PropertyChangedEventArgs.New
+  nameWithType: PropertyChangedEventArgs.PropertyChangedEventArgs
+  nameWithType.vb: PropertyChangedEventArgs.New
+- uid: BB84.Notifications.Components.PropertyChangedEventArgs.Name
+  name: Name
+  href: api/BB84.Notifications.Components.PropertyChangedEventArgs.html#BB84_Notifications_Components_PropertyChangedEventArgs_Name
+  commentId: P:BB84.Notifications.Components.PropertyChangedEventArgs.Name
+  fullName: BB84.Notifications.Components.PropertyChangedEventArgs.Name
+  nameWithType: PropertyChangedEventArgs.Name
+- uid: BB84.Notifications.Components.PropertyChangedEventArgs.Name*
+  name: Name
+  href: api/BB84.Notifications.Components.PropertyChangedEventArgs.html#BB84_Notifications_Components_PropertyChangedEventArgs_Name_
+  commentId: Overload:BB84.Notifications.Components.PropertyChangedEventArgs.Name
+  isSpec: "True"
+  fullName: BB84.Notifications.Components.PropertyChangedEventArgs.Name
+  nameWithType: PropertyChangedEventArgs.Name
+- uid: BB84.Notifications.Components.PropertyChangedEventArgs.Value
+  name: Value
+  href: api/BB84.Notifications.Components.PropertyChangedEventArgs.html#BB84_Notifications_Components_PropertyChangedEventArgs_Value
+  commentId: P:BB84.Notifications.Components.PropertyChangedEventArgs.Value
+  fullName: BB84.Notifications.Components.PropertyChangedEventArgs.Value
+  nameWithType: PropertyChangedEventArgs.Value
+- uid: BB84.Notifications.Components.PropertyChangedEventArgs.Value*
+  name: Value
+  href: api/BB84.Notifications.Components.PropertyChangedEventArgs.html#BB84_Notifications_Components_PropertyChangedEventArgs_Value_
+  commentId: Overload:BB84.Notifications.Components.PropertyChangedEventArgs.Value
+  isSpec: "True"
+  fullName: BB84.Notifications.Components.PropertyChangedEventArgs.Value
+  nameWithType: PropertyChangedEventArgs.Value
+- uid: BB84.Notifications.Components.PropertyChangedEventHandler
+  name: PropertyChangedEventHandler
+  href: api/BB84.Notifications.Components.PropertyChangedEventHandler.html
+  commentId: T:BB84.Notifications.Components.PropertyChangedEventHandler
+  fullName: BB84.Notifications.Components.PropertyChangedEventHandler
+  nameWithType: PropertyChangedEventHandler
+- uid: BB84.Notifications.Components.PropertyChangingEventArgs
+  name: PropertyChangingEventArgs
+  href: api/BB84.Notifications.Components.PropertyChangingEventArgs.html
+  commentId: T:BB84.Notifications.Components.PropertyChangingEventArgs
+  fullName: BB84.Notifications.Components.PropertyChangingEventArgs
+  nameWithType: PropertyChangingEventArgs
+- uid: BB84.Notifications.Components.PropertyChangingEventArgs.#ctor(System.String,System.Object)
+  name: PropertyChangingEventArgs(string, object?)
+  href: api/BB84.Notifications.Components.PropertyChangingEventArgs.html#BB84_Notifications_Components_PropertyChangingEventArgs__ctor_System_String_System_Object_
+  commentId: M:BB84.Notifications.Components.PropertyChangingEventArgs.#ctor(System.String,System.Object)
+  name.vb: New(String, Object)
+  fullName: BB84.Notifications.Components.PropertyChangingEventArgs.PropertyChangingEventArgs(string, object?)
+  fullName.vb: BB84.Notifications.Components.PropertyChangingEventArgs.New(String, Object)
+  nameWithType: PropertyChangingEventArgs.PropertyChangingEventArgs(string, object?)
+  nameWithType.vb: PropertyChangingEventArgs.New(String, Object)
+- uid: BB84.Notifications.Components.PropertyChangingEventArgs.#ctor*
+  name: PropertyChangingEventArgs
+  href: api/BB84.Notifications.Components.PropertyChangingEventArgs.html#BB84_Notifications_Components_PropertyChangingEventArgs__ctor_
+  commentId: Overload:BB84.Notifications.Components.PropertyChangingEventArgs.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: BB84.Notifications.Components.PropertyChangingEventArgs.PropertyChangingEventArgs
+  fullName.vb: BB84.Notifications.Components.PropertyChangingEventArgs.New
+  nameWithType: PropertyChangingEventArgs.PropertyChangingEventArgs
+  nameWithType.vb: PropertyChangingEventArgs.New
+- uid: BB84.Notifications.Components.PropertyChangingEventArgs.Name
+  name: Name
+  href: api/BB84.Notifications.Components.PropertyChangingEventArgs.html#BB84_Notifications_Components_PropertyChangingEventArgs_Name
+  commentId: P:BB84.Notifications.Components.PropertyChangingEventArgs.Name
+  fullName: BB84.Notifications.Components.PropertyChangingEventArgs.Name
+  nameWithType: PropertyChangingEventArgs.Name
+- uid: BB84.Notifications.Components.PropertyChangingEventArgs.Name*
+  name: Name
+  href: api/BB84.Notifications.Components.PropertyChangingEventArgs.html#BB84_Notifications_Components_PropertyChangingEventArgs_Name_
+  commentId: Overload:BB84.Notifications.Components.PropertyChangingEventArgs.Name
+  isSpec: "True"
+  fullName: BB84.Notifications.Components.PropertyChangingEventArgs.Name
+  nameWithType: PropertyChangingEventArgs.Name
+- uid: BB84.Notifications.Components.PropertyChangingEventArgs.Value
+  name: Value
+  href: api/BB84.Notifications.Components.PropertyChangingEventArgs.html#BB84_Notifications_Components_PropertyChangingEventArgs_Value
+  commentId: P:BB84.Notifications.Components.PropertyChangingEventArgs.Value
+  fullName: BB84.Notifications.Components.PropertyChangingEventArgs.Value
+  nameWithType: PropertyChangingEventArgs.Value
+- uid: BB84.Notifications.Components.PropertyChangingEventArgs.Value*
+  name: Value
+  href: api/BB84.Notifications.Components.PropertyChangingEventArgs.html#BB84_Notifications_Components_PropertyChangingEventArgs_Value_
+  commentId: Overload:BB84.Notifications.Components.PropertyChangingEventArgs.Value
+  isSpec: "True"
+  fullName: BB84.Notifications.Components.PropertyChangingEventArgs.Value
+  nameWithType: PropertyChangingEventArgs.Value
+- uid: BB84.Notifications.Components.PropertyChangingEventHandler
+  name: PropertyChangingEventHandler
+  href: api/BB84.Notifications.Components.PropertyChangingEventHandler.html
+  commentId: T:BB84.Notifications.Components.PropertyChangingEventHandler
+  fullName: BB84.Notifications.Components.PropertyChangingEventHandler
+  nameWithType: PropertyChangingEventHandler
+- uid: BB84.Notifications.Enumerators
+  name: BB84.Notifications.Enumerators
+  href: api/BB84.Notifications.Enumerators.html
+  commentId: N:BB84.Notifications.Enumerators
+  fullName: BB84.Notifications.Enumerators
+  nameWithType: BB84.Notifications.Enumerators
+- uid: BB84.Notifications.Enumerators.CollectionChangeAction
+  name: CollectionChangeAction
+  href: api/BB84.Notifications.Enumerators.CollectionChangeAction.html
+  commentId: T:BB84.Notifications.Enumerators.CollectionChangeAction
+  fullName: BB84.Notifications.Enumerators.CollectionChangeAction
+  nameWithType: CollectionChangeAction
+- uid: BB84.Notifications.Enumerators.CollectionChangeAction.Add
+  name: Add
+  href: api/BB84.Notifications.Enumerators.CollectionChangeAction.html#BB84_Notifications_Enumerators_CollectionChangeAction_Add
+  commentId: F:BB84.Notifications.Enumerators.CollectionChangeAction.Add
+  fullName: BB84.Notifications.Enumerators.CollectionChangeAction.Add
+  nameWithType: CollectionChangeAction.Add
+- uid: BB84.Notifications.Enumerators.CollectionChangeAction.Clear
+  name: Clear
+  href: api/BB84.Notifications.Enumerators.CollectionChangeAction.html#BB84_Notifications_Enumerators_CollectionChangeAction_Clear
+  commentId: F:BB84.Notifications.Enumerators.CollectionChangeAction.Clear
+  fullName: BB84.Notifications.Enumerators.CollectionChangeAction.Clear
+  nameWithType: CollectionChangeAction.Clear
+- uid: BB84.Notifications.Enumerators.CollectionChangeAction.Move
+  name: Move
+  href: api/BB84.Notifications.Enumerators.CollectionChangeAction.html#BB84_Notifications_Enumerators_CollectionChangeAction_Move
+  commentId: F:BB84.Notifications.Enumerators.CollectionChangeAction.Move
+  fullName: BB84.Notifications.Enumerators.CollectionChangeAction.Move
+  nameWithType: CollectionChangeAction.Move
+- uid: BB84.Notifications.Enumerators.CollectionChangeAction.Remove
+  name: Remove
+  href: api/BB84.Notifications.Enumerators.CollectionChangeAction.html#BB84_Notifications_Enumerators_CollectionChangeAction_Remove
+  commentId: F:BB84.Notifications.Enumerators.CollectionChangeAction.Remove
+  fullName: BB84.Notifications.Enumerators.CollectionChangeAction.Remove
+  nameWithType: CollectionChangeAction.Remove
+- uid: BB84.Notifications.Enumerators.CollectionChangeAction.Replace
+  name: Replace
+  href: api/BB84.Notifications.Enumerators.CollectionChangeAction.html#BB84_Notifications_Enumerators_CollectionChangeAction_Replace
+  commentId: F:BB84.Notifications.Enumerators.CollectionChangeAction.Replace
+  fullName: BB84.Notifications.Enumerators.CollectionChangeAction.Replace
+  nameWithType: CollectionChangeAction.Replace
+- uid: BB84.Notifications.Interfaces
+  name: BB84.Notifications.Interfaces
+  href: api/BB84.Notifications.Interfaces.html
+  commentId: N:BB84.Notifications.Interfaces
+  fullName: BB84.Notifications.Interfaces
+  nameWithType: BB84.Notifications.Interfaces
+- uid: BB84.Notifications.Interfaces.Components
+  name: BB84.Notifications.Interfaces.Components
+  href: api/BB84.Notifications.Interfaces.Components.html
+  commentId: N:BB84.Notifications.Interfaces.Components
+  fullName: BB84.Notifications.Interfaces.Components
+  nameWithType: BB84.Notifications.Interfaces.Components
+- uid: BB84.Notifications.Interfaces.Components.INotifyCollectionChanged
+  name: INotifyCollectionChanged
+  href: api/BB84.Notifications.Interfaces.Components.INotifyCollectionChanged.html
+  commentId: T:BB84.Notifications.Interfaces.Components.INotifyCollectionChanged
+  fullName: BB84.Notifications.Interfaces.Components.INotifyCollectionChanged
+  nameWithType: INotifyCollectionChanged
+- uid: BB84.Notifications.Interfaces.Components.INotifyCollectionChanged.CollectionChanged
+  name: CollectionChanged
+  href: api/BB84.Notifications.Interfaces.Components.INotifyCollectionChanged.html#BB84_Notifications_Interfaces_Components_INotifyCollectionChanged_CollectionChanged
+  commentId: E:BB84.Notifications.Interfaces.Components.INotifyCollectionChanged.CollectionChanged
+  fullName: BB84.Notifications.Interfaces.Components.INotifyCollectionChanged.CollectionChanged
+  nameWithType: INotifyCollectionChanged.CollectionChanged
+- uid: BB84.Notifications.Interfaces.Components.INotifyCollectionChanging
+  name: INotifyCollectionChanging
+  href: api/BB84.Notifications.Interfaces.Components.INotifyCollectionChanging.html
+  commentId: T:BB84.Notifications.Interfaces.Components.INotifyCollectionChanging
+  fullName: BB84.Notifications.Interfaces.Components.INotifyCollectionChanging
+  nameWithType: INotifyCollectionChanging
+- uid: BB84.Notifications.Interfaces.Components.INotifyCollectionChanging.CollectionChanging
+  name: CollectionChanging
+  href: api/BB84.Notifications.Interfaces.Components.INotifyCollectionChanging.html#BB84_Notifications_Interfaces_Components_INotifyCollectionChanging_CollectionChanging
+  commentId: E:BB84.Notifications.Interfaces.Components.INotifyCollectionChanging.CollectionChanging
+  fullName: BB84.Notifications.Interfaces.Components.INotifyCollectionChanging.CollectionChanging
+  nameWithType: INotifyCollectionChanging.CollectionChanging
+- uid: BB84.Notifications.Interfaces.Components.INotifyPropertyChanged
+  name: INotifyPropertyChanged
+  href: api/BB84.Notifications.Interfaces.Components.INotifyPropertyChanged.html
+  commentId: T:BB84.Notifications.Interfaces.Components.INotifyPropertyChanged
+  fullName: BB84.Notifications.Interfaces.Components.INotifyPropertyChanged
+  nameWithType: INotifyPropertyChanged
+- uid: BB84.Notifications.Interfaces.Components.INotifyPropertyChanged.PropertyChanged
+  name: PropertyChanged
+  href: api/BB84.Notifications.Interfaces.Components.INotifyPropertyChanged.html#BB84_Notifications_Interfaces_Components_INotifyPropertyChanged_PropertyChanged
+  commentId: E:BB84.Notifications.Interfaces.Components.INotifyPropertyChanged.PropertyChanged
+  fullName: BB84.Notifications.Interfaces.Components.INotifyPropertyChanged.PropertyChanged
+  nameWithType: INotifyPropertyChanged.PropertyChanged
+- uid: BB84.Notifications.Interfaces.Components.INotifyPropertyChanging
+  name: INotifyPropertyChanging
+  href: api/BB84.Notifications.Interfaces.Components.INotifyPropertyChanging.html
+  commentId: T:BB84.Notifications.Interfaces.Components.INotifyPropertyChanging
+  fullName: BB84.Notifications.Interfaces.Components.INotifyPropertyChanging
+  nameWithType: INotifyPropertyChanging
+- uid: BB84.Notifications.Interfaces.Components.INotifyPropertyChanging.PropertyChanging
+  name: PropertyChanging
+  href: api/BB84.Notifications.Interfaces.Components.INotifyPropertyChanging.html#BB84_Notifications_Interfaces_Components_INotifyPropertyChanging_PropertyChanging
+  commentId: E:BB84.Notifications.Interfaces.Components.INotifyPropertyChanging.PropertyChanging
+  fullName: BB84.Notifications.Interfaces.Components.INotifyPropertyChanging.PropertyChanging
+  nameWithType: INotifyPropertyChanging.PropertyChanging
+- uid: BB84.Notifications.Interfaces.IBindableProperty`1
+  name: IBindableProperty<T>
+  href: api/BB84.Notifications.Interfaces.IBindableProperty-1.html
+  commentId: T:BB84.Notifications.Interfaces.IBindableProperty`1
+  name.vb: IBindableProperty(Of T)
+  fullName: BB84.Notifications.Interfaces.IBindableProperty<T>
+  fullName.vb: BB84.Notifications.Interfaces.IBindableProperty(Of T)
+  nameWithType: IBindableProperty<T>
+  nameWithType.vb: IBindableProperty(Of T)
+- uid: BB84.Notifications.Interfaces.IBindableProperty`1.Changed
+  name: Changed
+  href: api/BB84.Notifications.Interfaces.IBindableProperty-1.html#BB84_Notifications_Interfaces_IBindableProperty_1_Changed
+  commentId: E:BB84.Notifications.Interfaces.IBindableProperty`1.Changed
+  fullName: BB84.Notifications.Interfaces.IBindableProperty<T>.Changed
+  fullName.vb: BB84.Notifications.Interfaces.IBindableProperty(Of T).Changed
+  nameWithType: IBindableProperty<T>.Changed
+  nameWithType.vb: IBindableProperty(Of T).Changed
+- uid: BB84.Notifications.Interfaces.IBindableProperty`1.Changing
+  name: Changing
+  href: api/BB84.Notifications.Interfaces.IBindableProperty-1.html#BB84_Notifications_Interfaces_IBindableProperty_1_Changing
+  commentId: E:BB84.Notifications.Interfaces.IBindableProperty`1.Changing
+  fullName: BB84.Notifications.Interfaces.IBindableProperty<T>.Changing
+  fullName.vb: BB84.Notifications.Interfaces.IBindableProperty(Of T).Changing
+  nameWithType: IBindableProperty<T>.Changing
+  nameWithType.vb: IBindableProperty(Of T).Changing
+- uid: BB84.Notifications.Interfaces.IBindableProperty`1.Value
+  name: Value
+  href: api/BB84.Notifications.Interfaces.IBindableProperty-1.html#BB84_Notifications_Interfaces_IBindableProperty_1_Value
+  commentId: P:BB84.Notifications.Interfaces.IBindableProperty`1.Value
+  fullName: BB84.Notifications.Interfaces.IBindableProperty<T>.Value
+  fullName.vb: BB84.Notifications.Interfaces.IBindableProperty(Of T).Value
+  nameWithType: IBindableProperty<T>.Value
+  nameWithType.vb: IBindableProperty(Of T).Value
+- uid: BB84.Notifications.Interfaces.IBindableProperty`1.Value*
+  name: Value
+  href: api/BB84.Notifications.Interfaces.IBindableProperty-1.html#BB84_Notifications_Interfaces_IBindableProperty_1_Value_
+  commentId: Overload:BB84.Notifications.Interfaces.IBindableProperty`1.Value
+  isSpec: "True"
+  fullName: BB84.Notifications.Interfaces.IBindableProperty<T>.Value
+  fullName.vb: BB84.Notifications.Interfaces.IBindableProperty(Of T).Value
+  nameWithType: IBindableProperty<T>.Value
+  nameWithType.vb: IBindableProperty(Of T).Value
+- uid: BB84.Notifications.Interfaces.INotifyCollectionBase
+  name: INotifyCollectionBase
+  href: api/BB84.Notifications.Interfaces.INotifyCollectionBase.html
+  commentId: T:BB84.Notifications.Interfaces.INotifyCollectionBase
+  fullName: BB84.Notifications.Interfaces.INotifyCollectionBase
+  nameWithType: INotifyCollectionBase
+- uid: BB84.Notifications.Interfaces.INotifyPropertyBase
+  name: INotifyPropertyBase
+  href: api/BB84.Notifications.Interfaces.INotifyPropertyBase.html
+  commentId: T:BB84.Notifications.Interfaces.INotifyPropertyBase
+  fullName: BB84.Notifications.Interfaces.INotifyPropertyBase
+  nameWithType: INotifyPropertyBase
+- uid: BB84.Notifications.NotifyCollectionBase
+  name: NotifyCollectionBase
+  href: api/BB84.Notifications.NotifyCollectionBase.html
+  commentId: T:BB84.Notifications.NotifyCollectionBase
+  fullName: BB84.Notifications.NotifyCollectionBase
+  nameWithType: NotifyCollectionBase
+- uid: BB84.Notifications.NotifyCollectionBase.CollectionChanged
+  name: CollectionChanged
+  href: api/BB84.Notifications.NotifyCollectionBase.html#BB84_Notifications_NotifyCollectionBase_CollectionChanged
+  commentId: E:BB84.Notifications.NotifyCollectionBase.CollectionChanged
+  fullName: BB84.Notifications.NotifyCollectionBase.CollectionChanged
+  nameWithType: NotifyCollectionBase.CollectionChanged
+- uid: BB84.Notifications.NotifyCollectionBase.CollectionChanging
+  name: CollectionChanging
+  href: api/BB84.Notifications.NotifyCollectionBase.html#BB84_Notifications_NotifyCollectionBase_CollectionChanging
+  commentId: E:BB84.Notifications.NotifyCollectionBase.CollectionChanging
+  fullName: BB84.Notifications.NotifyCollectionBase.CollectionChanging
+  nameWithType: NotifyCollectionBase.CollectionChanging
+- uid: BB84.Notifications.NotifyCollectionBase.RaiseCollectionAdded(System.Object)
+  name: RaiseCollectionAdded(object?)
+  href: api/BB84.Notifications.NotifyCollectionBase.html#BB84_Notifications_NotifyCollectionBase_RaiseCollectionAdded_System_Object_
+  commentId: M:BB84.Notifications.NotifyCollectionBase.RaiseCollectionAdded(System.Object)
+  name.vb: RaiseCollectionAdded(Object)
+  fullName: BB84.Notifications.NotifyCollectionBase.RaiseCollectionAdded(object?)
+  fullName.vb: BB84.Notifications.NotifyCollectionBase.RaiseCollectionAdded(Object)
+  nameWithType: NotifyCollectionBase.RaiseCollectionAdded(object?)
+  nameWithType.vb: NotifyCollectionBase.RaiseCollectionAdded(Object)
+- uid: BB84.Notifications.NotifyCollectionBase.RaiseCollectionAdded*
+  name: RaiseCollectionAdded
+  href: api/BB84.Notifications.NotifyCollectionBase.html#BB84_Notifications_NotifyCollectionBase_RaiseCollectionAdded_
+  commentId: Overload:BB84.Notifications.NotifyCollectionBase.RaiseCollectionAdded
+  isSpec: "True"
+  fullName: BB84.Notifications.NotifyCollectionBase.RaiseCollectionAdded
+  nameWithType: NotifyCollectionBase.RaiseCollectionAdded
+- uid: BB84.Notifications.NotifyCollectionBase.RaiseCollectionAdding(System.Object)
+  name: RaiseCollectionAdding(object?)
+  href: api/BB84.Notifications.NotifyCollectionBase.html#BB84_Notifications_NotifyCollectionBase_RaiseCollectionAdding_System_Object_
+  commentId: M:BB84.Notifications.NotifyCollectionBase.RaiseCollectionAdding(System.Object)
+  name.vb: RaiseCollectionAdding(Object)
+  fullName: BB84.Notifications.NotifyCollectionBase.RaiseCollectionAdding(object?)
+  fullName.vb: BB84.Notifications.NotifyCollectionBase.RaiseCollectionAdding(Object)
+  nameWithType: NotifyCollectionBase.RaiseCollectionAdding(object?)
+  nameWithType.vb: NotifyCollectionBase.RaiseCollectionAdding(Object)
+- uid: BB84.Notifications.NotifyCollectionBase.RaiseCollectionAdding*
+  name: RaiseCollectionAdding
+  href: api/BB84.Notifications.NotifyCollectionBase.html#BB84_Notifications_NotifyCollectionBase_RaiseCollectionAdding_
+  commentId: Overload:BB84.Notifications.NotifyCollectionBase.RaiseCollectionAdding
+  isSpec: "True"
+  fullName: BB84.Notifications.NotifyCollectionBase.RaiseCollectionAdding
+  nameWithType: NotifyCollectionBase.RaiseCollectionAdding
+- uid: BB84.Notifications.NotifyCollectionBase.RaiseCollectionCleared(System.Object)
+  name: RaiseCollectionCleared(object?)
+  href: api/BB84.Notifications.NotifyCollectionBase.html#BB84_Notifications_NotifyCollectionBase_RaiseCollectionCleared_System_Object_
+  commentId: M:BB84.Notifications.NotifyCollectionBase.RaiseCollectionCleared(System.Object)
+  name.vb: RaiseCollectionCleared(Object)
+  fullName: BB84.Notifications.NotifyCollectionBase.RaiseCollectionCleared(object?)
+  fullName.vb: BB84.Notifications.NotifyCollectionBase.RaiseCollectionCleared(Object)
+  nameWithType: NotifyCollectionBase.RaiseCollectionCleared(object?)
+  nameWithType.vb: NotifyCollectionBase.RaiseCollectionCleared(Object)
+- uid: BB84.Notifications.NotifyCollectionBase.RaiseCollectionCleared*
+  name: RaiseCollectionCleared
+  href: api/BB84.Notifications.NotifyCollectionBase.html#BB84_Notifications_NotifyCollectionBase_RaiseCollectionCleared_
+  commentId: Overload:BB84.Notifications.NotifyCollectionBase.RaiseCollectionCleared
+  isSpec: "True"
+  fullName: BB84.Notifications.NotifyCollectionBase.RaiseCollectionCleared
+  nameWithType: NotifyCollectionBase.RaiseCollectionCleared
+- uid: BB84.Notifications.NotifyCollectionBase.RaiseCollectionClearing(System.Object)
+  name: RaiseCollectionClearing(object?)
+  href: api/BB84.Notifications.NotifyCollectionBase.html#BB84_Notifications_NotifyCollectionBase_RaiseCollectionClearing_System_Object_
+  commentId: M:BB84.Notifications.NotifyCollectionBase.RaiseCollectionClearing(System.Object)
+  name.vb: RaiseCollectionClearing(Object)
+  fullName: BB84.Notifications.NotifyCollectionBase.RaiseCollectionClearing(object?)
+  fullName.vb: BB84.Notifications.NotifyCollectionBase.RaiseCollectionClearing(Object)
+  nameWithType: NotifyCollectionBase.RaiseCollectionClearing(object?)
+  nameWithType.vb: NotifyCollectionBase.RaiseCollectionClearing(Object)
+- uid: BB84.Notifications.NotifyCollectionBase.RaiseCollectionClearing*
+  name: RaiseCollectionClearing
+  href: api/BB84.Notifications.NotifyCollectionBase.html#BB84_Notifications_NotifyCollectionBase_RaiseCollectionClearing_
+  commentId: Overload:BB84.Notifications.NotifyCollectionBase.RaiseCollectionClearing
+  isSpec: "True"
+  fullName: BB84.Notifications.NotifyCollectionBase.RaiseCollectionClearing
+  nameWithType: NotifyCollectionBase.RaiseCollectionClearing
+- uid: BB84.Notifications.NotifyCollectionBase.RaiseCollectionMoved(System.Object)
+  name: RaiseCollectionMoved(object?)
+  href: api/BB84.Notifications.NotifyCollectionBase.html#BB84_Notifications_NotifyCollectionBase_RaiseCollectionMoved_System_Object_
+  commentId: M:BB84.Notifications.NotifyCollectionBase.RaiseCollectionMoved(System.Object)
+  name.vb: RaiseCollectionMoved(Object)
+  fullName: BB84.Notifications.NotifyCollectionBase.RaiseCollectionMoved(object?)
+  fullName.vb: BB84.Notifications.NotifyCollectionBase.RaiseCollectionMoved(Object)
+  nameWithType: NotifyCollectionBase.RaiseCollectionMoved(object?)
+  nameWithType.vb: NotifyCollectionBase.RaiseCollectionMoved(Object)
+- uid: BB84.Notifications.NotifyCollectionBase.RaiseCollectionMoved*
+  name: RaiseCollectionMoved
+  href: api/BB84.Notifications.NotifyCollectionBase.html#BB84_Notifications_NotifyCollectionBase_RaiseCollectionMoved_
+  commentId: Overload:BB84.Notifications.NotifyCollectionBase.RaiseCollectionMoved
+  isSpec: "True"
+  fullName: BB84.Notifications.NotifyCollectionBase.RaiseCollectionMoved
+  nameWithType: NotifyCollectionBase.RaiseCollectionMoved
+- uid: BB84.Notifications.NotifyCollectionBase.RaiseCollectionMoving(System.Object)
+  name: RaiseCollectionMoving(object?)
+  href: api/BB84.Notifications.NotifyCollectionBase.html#BB84_Notifications_NotifyCollectionBase_RaiseCollectionMoving_System_Object_
+  commentId: M:BB84.Notifications.NotifyCollectionBase.RaiseCollectionMoving(System.Object)
+  name.vb: RaiseCollectionMoving(Object)
+  fullName: BB84.Notifications.NotifyCollectionBase.RaiseCollectionMoving(object?)
+  fullName.vb: BB84.Notifications.NotifyCollectionBase.RaiseCollectionMoving(Object)
+  nameWithType: NotifyCollectionBase.RaiseCollectionMoving(object?)
+  nameWithType.vb: NotifyCollectionBase.RaiseCollectionMoving(Object)
+- uid: BB84.Notifications.NotifyCollectionBase.RaiseCollectionMoving*
+  name: RaiseCollectionMoving
+  href: api/BB84.Notifications.NotifyCollectionBase.html#BB84_Notifications_NotifyCollectionBase_RaiseCollectionMoving_
+  commentId: Overload:BB84.Notifications.NotifyCollectionBase.RaiseCollectionMoving
+  isSpec: "True"
+  fullName: BB84.Notifications.NotifyCollectionBase.RaiseCollectionMoving
+  nameWithType: NotifyCollectionBase.RaiseCollectionMoving
+- uid: BB84.Notifications.NotifyCollectionBase.RaiseCollectionRemoved(System.Object)
+  name: RaiseCollectionRemoved(object?)
+  href: api/BB84.Notifications.NotifyCollectionBase.html#BB84_Notifications_NotifyCollectionBase_RaiseCollectionRemoved_System_Object_
+  commentId: M:BB84.Notifications.NotifyCollectionBase.RaiseCollectionRemoved(System.Object)
+  name.vb: RaiseCollectionRemoved(Object)
+  fullName: BB84.Notifications.NotifyCollectionBase.RaiseCollectionRemoved(object?)
+  fullName.vb: BB84.Notifications.NotifyCollectionBase.RaiseCollectionRemoved(Object)
+  nameWithType: NotifyCollectionBase.RaiseCollectionRemoved(object?)
+  nameWithType.vb: NotifyCollectionBase.RaiseCollectionRemoved(Object)
+- uid: BB84.Notifications.NotifyCollectionBase.RaiseCollectionRemoved*
+  name: RaiseCollectionRemoved
+  href: api/BB84.Notifications.NotifyCollectionBase.html#BB84_Notifications_NotifyCollectionBase_RaiseCollectionRemoved_
+  commentId: Overload:BB84.Notifications.NotifyCollectionBase.RaiseCollectionRemoved
+  isSpec: "True"
+  fullName: BB84.Notifications.NotifyCollectionBase.RaiseCollectionRemoved
+  nameWithType: NotifyCollectionBase.RaiseCollectionRemoved
+- uid: BB84.Notifications.NotifyCollectionBase.RaiseCollectionRemoving(System.Object)
+  name: RaiseCollectionRemoving(object?)
+  href: api/BB84.Notifications.NotifyCollectionBase.html#BB84_Notifications_NotifyCollectionBase_RaiseCollectionRemoving_System_Object_
+  commentId: M:BB84.Notifications.NotifyCollectionBase.RaiseCollectionRemoving(System.Object)
+  name.vb: RaiseCollectionRemoving(Object)
+  fullName: BB84.Notifications.NotifyCollectionBase.RaiseCollectionRemoving(object?)
+  fullName.vb: BB84.Notifications.NotifyCollectionBase.RaiseCollectionRemoving(Object)
+  nameWithType: NotifyCollectionBase.RaiseCollectionRemoving(object?)
+  nameWithType.vb: NotifyCollectionBase.RaiseCollectionRemoving(Object)
+- uid: BB84.Notifications.NotifyCollectionBase.RaiseCollectionRemoving*
+  name: RaiseCollectionRemoving
+  href: api/BB84.Notifications.NotifyCollectionBase.html#BB84_Notifications_NotifyCollectionBase_RaiseCollectionRemoving_
+  commentId: Overload:BB84.Notifications.NotifyCollectionBase.RaiseCollectionRemoving
+  isSpec: "True"
+  fullName: BB84.Notifications.NotifyCollectionBase.RaiseCollectionRemoving
+  nameWithType: NotifyCollectionBase.RaiseCollectionRemoving
+- uid: BB84.Notifications.NotifyCollectionBase.RaiseCollectionReplaced(System.Object)
+  name: RaiseCollectionReplaced(object?)
+  href: api/BB84.Notifications.NotifyCollectionBase.html#BB84_Notifications_NotifyCollectionBase_RaiseCollectionReplaced_System_Object_
+  commentId: M:BB84.Notifications.NotifyCollectionBase.RaiseCollectionReplaced(System.Object)
+  name.vb: RaiseCollectionReplaced(Object)
+  fullName: BB84.Notifications.NotifyCollectionBase.RaiseCollectionReplaced(object?)
+  fullName.vb: BB84.Notifications.NotifyCollectionBase.RaiseCollectionReplaced(Object)
+  nameWithType: NotifyCollectionBase.RaiseCollectionReplaced(object?)
+  nameWithType.vb: NotifyCollectionBase.RaiseCollectionReplaced(Object)
+- uid: BB84.Notifications.NotifyCollectionBase.RaiseCollectionReplaced*
+  name: RaiseCollectionReplaced
+  href: api/BB84.Notifications.NotifyCollectionBase.html#BB84_Notifications_NotifyCollectionBase_RaiseCollectionReplaced_
+  commentId: Overload:BB84.Notifications.NotifyCollectionBase.RaiseCollectionReplaced
+  isSpec: "True"
+  fullName: BB84.Notifications.NotifyCollectionBase.RaiseCollectionReplaced
+  nameWithType: NotifyCollectionBase.RaiseCollectionReplaced
+- uid: BB84.Notifications.NotifyCollectionBase.RaiseCollectionReplacing(System.Object)
+  name: RaiseCollectionReplacing(object?)
+  href: api/BB84.Notifications.NotifyCollectionBase.html#BB84_Notifications_NotifyCollectionBase_RaiseCollectionReplacing_System_Object_
+  commentId: M:BB84.Notifications.NotifyCollectionBase.RaiseCollectionReplacing(System.Object)
+  name.vb: RaiseCollectionReplacing(Object)
+  fullName: BB84.Notifications.NotifyCollectionBase.RaiseCollectionReplacing(object?)
+  fullName.vb: BB84.Notifications.NotifyCollectionBase.RaiseCollectionReplacing(Object)
+  nameWithType: NotifyCollectionBase.RaiseCollectionReplacing(object?)
+  nameWithType.vb: NotifyCollectionBase.RaiseCollectionReplacing(Object)
+- uid: BB84.Notifications.NotifyCollectionBase.RaiseCollectionReplacing*
+  name: RaiseCollectionReplacing
+  href: api/BB84.Notifications.NotifyCollectionBase.html#BB84_Notifications_NotifyCollectionBase_RaiseCollectionReplacing_
+  commentId: Overload:BB84.Notifications.NotifyCollectionBase.RaiseCollectionReplacing
+  isSpec: "True"
+  fullName: BB84.Notifications.NotifyCollectionBase.RaiseCollectionReplacing
+  nameWithType: NotifyCollectionBase.RaiseCollectionReplacing
+- uid: BB84.Notifications.NotifyPropertyBase
+  name: NotifyPropertyBase
+  href: api/BB84.Notifications.NotifyPropertyBase.html
+  commentId: T:BB84.Notifications.NotifyPropertyBase
+  fullName: BB84.Notifications.NotifyPropertyBase
+  nameWithType: NotifyPropertyBase
+- uid: BB84.Notifications.NotifyPropertyBase.PropertyChanged
+  name: PropertyChanged
+  href: api/BB84.Notifications.NotifyPropertyBase.html#BB84_Notifications_NotifyPropertyBase_PropertyChanged
+  commentId: E:BB84.Notifications.NotifyPropertyBase.PropertyChanged
+  fullName: BB84.Notifications.NotifyPropertyBase.PropertyChanged
+  nameWithType: NotifyPropertyBase.PropertyChanged
+- uid: BB84.Notifications.NotifyPropertyBase.PropertyChanging
+  name: PropertyChanging
+  href: api/BB84.Notifications.NotifyPropertyBase.html#BB84_Notifications_NotifyPropertyBase_PropertyChanging
+  commentId: E:BB84.Notifications.NotifyPropertyBase.PropertyChanging
+  fullName: BB84.Notifications.NotifyPropertyBase.PropertyChanging
+  nameWithType: NotifyPropertyBase.PropertyChanging
+- uid: BB84.Notifications.NotifyPropertyBase.SetProperty*
+  name: SetProperty
+  href: api/BB84.Notifications.NotifyPropertyBase.html#BB84_Notifications_NotifyPropertyBase_SetProperty_
+  commentId: Overload:BB84.Notifications.NotifyPropertyBase.SetProperty
+  isSpec: "True"
+  fullName: BB84.Notifications.NotifyPropertyBase.SetProperty
+  nameWithType: NotifyPropertyBase.SetProperty
+- uid: BB84.Notifications.NotifyPropertyBase.SetProperty``1(``0@,``0,System.String)
+  name: SetProperty<T>(ref T, T, string)
+  href: api/BB84.Notifications.NotifyPropertyBase.html#BB84_Notifications_NotifyPropertyBase_SetProperty__1___0____0_System_String_
+  commentId: M:BB84.Notifications.NotifyPropertyBase.SetProperty``1(``0@,``0,System.String)
+  name.vb: SetProperty(Of T)(T, T, String)
+  fullName: BB84.Notifications.NotifyPropertyBase.SetProperty<T>(ref T, T, string)
+  fullName.vb: BB84.Notifications.NotifyPropertyBase.SetProperty(Of T)(T, T, String)
+  nameWithType: NotifyPropertyBase.SetProperty<T>(ref T, T, string)
+  nameWithType.vb: NotifyPropertyBase.SetProperty(Of T)(T, T, String)
