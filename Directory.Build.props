@@ -3,7 +3,7 @@
   <PropertyGroup>
     <VersionMajor>1</VersionMajor>
     <VersionMinor>3</VersionMinor>
-    <VersionPatch>0</VersionPatch>
+    <VersionPatch>1</VersionPatch>
     <VersionPrefix>$(VersionMajor).$(VersionMinor).$(VersionPatch)</VersionPrefix>
     <VersionSuffix Condition="$(Configuration.Equals('Debug'))">Development</VersionSuffix>
   </PropertyGroup>
@@ -39,7 +39,7 @@
     <Authors>$(Author)</Authors>
     <Company>https://github.com/$(Author)</Company>
     <Copyright>Copyright © $([System.DateTime]::UtcNow.Year) $(Author)</Copyright>
-    <Description>Contains relevant things for property change/changing notification and collection change/changing notification.</Description>
+    <Description>Contains relevant things for property one-way binding / two-way binding, for property change / changing notification and for collection change / changing notification.</Description>
     <!--<PackageIcon>$(AssemblyName).png</PackageIcon>-->
     <PackageId>$(AssemblyName)</PackageId>
     <PackageTags>library;csharp;notification;common</PackageTags>

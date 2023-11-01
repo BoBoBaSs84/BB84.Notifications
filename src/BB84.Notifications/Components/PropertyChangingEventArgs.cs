@@ -32,7 +32,7 @@ public sealed class PropertyChangingEventArgs : EventArgs
 }
 
 /// <summary>
-/// Represents the method that will handle the event of an <see cref="INotifyPropertyChanging"/> interface.
+/// Represents the method that will handle the event of the <see cref="INotifyPropertyChanging"/> interface.
 /// </summary>
 /// <param name="sender">The source of the event.</param>
 /// <param name="e">The argument that contains the event data.</param>
