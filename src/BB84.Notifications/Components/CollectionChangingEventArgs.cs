@@ -33,7 +33,7 @@ public sealed class CollectionChangingEventArgs : EventArgs
 }
 
 /// <summary>
-/// Represents the method that will handle the event of an <see cref="INotifyCollectionChanging"/> interface.
+/// Represents the method that will handle the event of the <see cref="INotifyCollectionChanging"/> interface.
 /// </summary>
 /// <param name="sender">The source of the event.</param>
 /// <param name="e">The argument that contains the event data.</param>
