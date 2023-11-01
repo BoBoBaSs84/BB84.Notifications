@@ -24,10 +24,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/BB84.Notifications.Components.BindablePropertyChangedEventHandler-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BB84.Notifications.Components.BindablePropertyChangedEventHandler-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/BB84.Notifications.Components.BindablePropertyChangingEventArgs-1.yml",
       "output": {
         ".html": {
           "relative_path": "api/BB84.Notifications.Components.BindablePropertyChangingEventArgs-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BB84.Notifications.Components.BindablePropertyChangingEventHandler-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BB84.Notifications.Components.BindablePropertyChangingEventHandler-1.html"
         }
       },
       "version": ""

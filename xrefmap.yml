@@ -119,6 +119,15 @@ references:
   fullName.vb: BB84.Notifications.Components.BindablePropertyChangedEventArgs(Of T).Value
   nameWithType: BindablePropertyChangedEventArgs<T>.Value
   nameWithType.vb: BindablePropertyChangedEventArgs(Of T).Value
+- uid: BB84.Notifications.Components.BindablePropertyChangedEventHandler`1
+  name: BindablePropertyChangedEventHandler<T>
+  href: api/BB84.Notifications.Components.BindablePropertyChangedEventHandler-1.html
+  commentId: T:BB84.Notifications.Components.BindablePropertyChangedEventHandler`1
+  name.vb: BindablePropertyChangedEventHandler(Of T)
+  fullName: BB84.Notifications.Components.BindablePropertyChangedEventHandler<T>
+  fullName.vb: BB84.Notifications.Components.BindablePropertyChangedEventHandler(Of T)
+  nameWithType: BindablePropertyChangedEventHandler<T>
+  nameWithType.vb: BindablePropertyChangedEventHandler(Of T)
 - uid: BB84.Notifications.Components.BindablePropertyChangingEventArgs`1
   name: BindablePropertyChangingEventArgs<T>
   href: api/BB84.Notifications.Components.BindablePropertyChangingEventArgs-1.html
@@ -164,6 +173,15 @@ references:
   fullName.vb: BB84.Notifications.Components.BindablePropertyChangingEventArgs(Of T).Value
   nameWithType: BindablePropertyChangingEventArgs<T>.Value
   nameWithType.vb: BindablePropertyChangingEventArgs(Of T).Value
+- uid: BB84.Notifications.Components.BindablePropertyChangingEventHandler`1
+  name: BindablePropertyChangingEventHandler<T>
+  href: api/BB84.Notifications.Components.BindablePropertyChangingEventHandler-1.html
+  commentId: T:BB84.Notifications.Components.BindablePropertyChangingEventHandler`1
+  name.vb: BindablePropertyChangingEventHandler(Of T)
+  fullName: BB84.Notifications.Components.BindablePropertyChangingEventHandler<T>
+  fullName.vb: BB84.Notifications.Components.BindablePropertyChangingEventHandler(Of T)
+  nameWithType: BindablePropertyChangingEventHandler<T>
+  nameWithType.vb: BindablePropertyChangingEventHandler(Of T)
 - uid: BB84.Notifications.Components.CollectionChangedEventArgs
   name: CollectionChangedEventArgs
   href: api/BB84.Notifications.Components.CollectionChangedEventArgs.html
