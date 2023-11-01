@@ -6,10 +6,17 @@ namespace BB84.Notifications;
 /// <summary>
 /// The bindable property class.
 /// </summary>
-/// <typeparam name="T"></typeparam>
+/// <typeparam name="T">The value type to work with.</typeparam>
 public sealed class BindableProperty<T> : IBindableProperty<T> where T : IEquatable<T>
 {
   private T _value;
+
+  /// <summary>
+  /// Initializes a instance of the bindable property class.
+  /// </summary>
+  /// <param name="value">The value of the bindable property.</param>
+  public BindableProperty(T value)
+    => _value = value;
 
   /// <inheritdoc/>
   public T Value
@@ -26,16 +33,9 @@ public sealed class BindableProperty<T> : IBindableProperty<T> where T : IEquata
     }
   }
 
-  /// <summary>
-  /// Initializes a instance of the bindable property class.
-  /// </summary>
-  /// <param name="value">The value of the bindable property.</param>
-  public BindableProperty(T value)
-    => _value = value;
-
   /// <inheritdoc/>	
-  public event EventHandler<BindablePropertyChangedEventArgs<T>>? Changed;
+  public event BindablePropertyChangedEventHandler<T>? Changed;
 
   /// <inheritdoc/>
-  public event EventHandler<BindablePropertyChangingEventArgs<T>>? Changing;
+  public event BindablePropertyChangingEventHandler<T>? Changing;
 }

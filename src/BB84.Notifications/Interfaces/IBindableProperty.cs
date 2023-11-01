@@ -5,6 +5,7 @@ namespace BB84.Notifications.Interfaces;
 /// <summary>
 /// The bindable property interface.
 /// </summary>
+/// <typeparam name="T">The value type to work with.</typeparam>
 public interface IBindableProperty<T> where T : IEquatable<T>
 {
   /// <summary>
@@ -15,10 +16,10 @@ public interface IBindableProperty<T> where T : IEquatable<T>
   /// <summary>
   /// Occurs when the bindable property value is changed.
   /// </summary>
-  public event EventHandler<BindablePropertyChangedEventArgs<T>>? Changed;
+  public event BindablePropertyChangedEventHandler<T>? Changed;
 
   /// <summary>
   /// Occurs when the bindable property value is changing.
   /// </summary>
-  public event EventHandler<BindablePropertyChangingEventArgs<T>>? Changing;
+  public event BindablePropertyChangingEventHandler<T>? Changing;
 }
