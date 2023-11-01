@@ -1,11 +1,10 @@
 <Project>
 
   <PropertyGroup>
-    <VersionMajor>$([System.DateTime]::UtcNow.Year)</VersionMajor>
-    <VersionMinor>$([System.DateTime]::UtcNow.Month)</VersionMinor>
-    <VersionPatch>$([System.DateTime]::UtcNow.Day)</VersionPatch>
-    <VersionRevision>$([System.DateTime]::UtcNow.TimeOfDay.TotalMinutes.ToString("0"))</VersionRevision>
-    <VersionPrefix>$(VersionMajor).$(VersionMinor).$(VersionPatch).$(VersionRevision)</VersionPrefix>
+    <VersionMajor>1</VersionMajor>
+    <VersionMinor>3</VersionMinor>
+    <VersionPatch>0</VersionPatch>
+    <VersionPrefix>$(VersionMajor).$(VersionMinor).$(VersionPatch)</VersionPrefix>
     <VersionSuffix Condition="$(Configuration.Equals('Debug'))">Development</VersionSuffix>
   </PropertyGroup>
 
@@ -19,6 +18,7 @@
     <DebugType>full</DebugType>
     <Deterministic>true</Deterministic>
     <EnableNETAnalyzers>true</EnableNETAnalyzers>
+    <EnablePackageValidation>true</EnablePackageValidation>
     <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <GeneratedAssemblyInfoFile>Properties\AssemblyInfo.cs</GeneratedAssemblyInfoFile>
@@ -38,9 +38,11 @@
     <Author>BoBoBaSs84</Author>
     <Authors>$(Author)</Authors>
     <Company>https://github.com/$(Author)</Company>
-    <Copyright>Copyright © $(VersionMajor) $(Author)</Copyright>
+    <Copyright>Copyright © $([System.DateTime]::UtcNow.Year) $(Author)</Copyright>
     <Description>Contains relevant things for property change/changing notification and collection change/changing notification.</Description>
     <!--<PackageIcon>$(AssemblyName).png</PackageIcon>-->
+    <PackageId>$(AssemblyName)</PackageId>
+    <PackageTags>library;csharp;notification;common</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/BoBoBaSs84/BB84.Notifications</PackageProjectUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
@@ -61,6 +63,8 @@
 
   <ItemGroup Condition="!$(MSBuildProjectName.EndsWith('Tests'))">
     <InternalsVisibleTo Include="$(AssemblyName)Tests" Key="00240000048000009400000006020000002400005253413100040000010001001d279f3822ca86e5157254452c9b0bda97bfeef3ed7964a8626318a1e46449adb0b62b7ca2f37b461ab2f28d0203344b11da76c5244331ff0a8629a258901534d0fb7d1cdfc6c048031874fced4f4c6a6d87991d4105e072adde2a965ccd440bbf8c3f90d6de6f8cfce47bd8908d9fdcdc08c617dc04616fc1dfcd290b4f4eec" />
+    <None Include="..\..\LICENSE" Pack="True" PackagePath="\" />
+    <None Include="..\..\README.md" Pack="True" PackagePath="\" />
   </ItemGroup>
 
   <ItemGroup Condition="$(MSBuildProjectName.EndsWith('Tests'))">
