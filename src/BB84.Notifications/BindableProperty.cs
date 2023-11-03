@@ -7,7 +7,7 @@ namespace BB84.Notifications;
 /// The bindable property class.
 /// </summary>
 /// <typeparam name="T">The value type to work with.</typeparam>
-public sealed class BindableProperty<T> : IBindableProperty<T> where T : IEquatable<T>
+public sealed class BindableProperty<T> : IBindableProperty<T>
 {
   private T _value;
 

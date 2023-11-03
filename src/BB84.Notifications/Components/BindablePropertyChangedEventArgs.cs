@@ -8,7 +8,7 @@ namespace BB84.Notifications.Components;
 /// The bindable property changed event args class.
 /// </summary>
 /// <typeparam name="T">The value type to work with.</typeparam>
-public sealed class BindablePropertyChangedEventArgs<T> : EventArgs where T : IEquatable<T>
+public sealed class BindablePropertyChangedEventArgs<T> : EventArgs
 {
   /// <summary>
   /// Initializes a instance of the bindable property changed event args class.
@@ -30,4 +30,4 @@ public sealed class BindablePropertyChangedEventArgs<T> : EventArgs where T : IE
 /// <param name="sender">The source of the event.</param>
 /// <param name="e">The argument that contains the event data.</param>
 [SuppressMessage("Naming", "CA1711", Justification = "Event Handler Naming Conventions")]
-public delegate void BindablePropertyChangedEventHandler<T>(object? sender, BindablePropertyChangedEventArgs<T> e) where T : IEquatable<T>;
+public delegate void BindablePropertyChangedEventHandler<T>(object? sender, BindablePropertyChangedEventArgs<T> e);

@@ -6,7 +6,7 @@ namespace BB84.Notifications.Interfaces;
 /// The bindable property interface.
 /// </summary>
 /// <typeparam name="T">The value type to work with.</typeparam>
-public interface IBindableProperty<T> where T : IEquatable<T>
+public interface IBindableProperty<T>
 {
   /// <summary>
   /// The actual value of the bindable property.
