@@ -26,7 +26,7 @@ public abstract class NotifyPropertyBase : INotifyPropertyBase
   /// <param name="fieldValue">The referenced field.</param>
   /// <param name="newValue">The new value for the property.</param>
   /// <param name="propertyName">The name of the calling property.</param>
-  protected void SetProperty<T>(ref T fieldValue, T newValue, [CallerMemberName] string propertyName = "") where T : IEquatable<T>
+  protected void SetProperty<T>(ref T fieldValue, T newValue, [CallerMemberName] string propertyName = "")
   {
     if (!EqualityComparer<T>.Default.Equals(fieldValue, newValue))
     {
@@ -44,7 +44,7 @@ public abstract class NotifyPropertyBase : INotifyPropertyBase
   /// </remarks>
   /// <param name="propertyName">The name of the calling property.</param>
   /// <param name="value">The value of the calling property.</param>
-  private void RaisePropertyChanged(string propertyName, object value)
+  private void RaisePropertyChanged(string propertyName, object? value)
     => PropertyChanged?.Invoke(this, new(propertyName, value));
 
   /// <summary>
@@ -55,6 +55,6 @@ public abstract class NotifyPropertyBase : INotifyPropertyBase
   /// </remarks>
   /// <param name="propertyName">The name of the calling property.</param>
   /// <param name="value">The value of the calling property.</param>
-  private void RaisePropertyChanging(string propertyName, object value)
+  private void RaisePropertyChanging(string propertyName, object? value)
     => PropertyChanging?.Invoke(this, new(propertyName, value));
 }
