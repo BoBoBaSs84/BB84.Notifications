@@ -1,5 +1,7 @@
-﻿using System.Runtime.CompilerServices;
+﻿using System.Reflection;
+using System.Runtime.CompilerServices;
 
+using BB84.Notifications.Attributes;
 using BB84.Notifications.Components;
 using BB84.Notifications.Interfaces;
 
@@ -31,8 +33,12 @@ public abstract class NotifyPropertyBase : INotifyPropertyBase
     if (!EqualityComparer<T>.Default.Equals(fieldValue, newValue))
     {
       RaisePropertyChanging(propertyName, fieldValue);
+      RaiseChangingAttribute(propertyName);
+
       fieldValue = newValue;
+
       RaisePropertyChanged(propertyName, newValue);
+      RaiseChangedAttribute(propertyName);
     }
   }
 
@@ -44,7 +50,7 @@ public abstract class NotifyPropertyBase : INotifyPropertyBase
   /// </remarks>
   /// <param name="propertyName">The name of the calling property.</param>
   /// <param name="value">The value of the calling property.</param>
-  private void RaisePropertyChanged(string propertyName, object? value)
+  private void RaisePropertyChanged(string propertyName, object? value = null)
     => PropertyChanged?.Invoke(this, new(propertyName, value));
 
   /// <summary>
@@ -55,6 +61,46 @@ public abstract class NotifyPropertyBase : INotifyPropertyBase
   /// </remarks>
   /// <param name="propertyName">The name of the calling property.</param>
   /// <param name="value">The value of the calling property.</param>
-  private void RaisePropertyChanging(string propertyName, object? value)
+  private void RaisePropertyChanging(string propertyName, object? value = null)
     => PropertyChanging?.Invoke(this, new(propertyName, value));
+
+  /// <summary>
+  /// Raises the <see cref="PropertyChanged"/> event for all properties that are
+  /// defined within the <see cref="NotifyChangedAttribute"/>.
+  /// </summary>
+  /// <param name="propertyName">The name of the calling property.</param>
+  private void RaiseChangedAttribute(string propertyName)
+  {
+    PropertyInfo? propertyInfo = GetType().GetProperty(propertyName);
+
+    if (propertyInfo is not null)
+    {
+      NotifyChangedAttribute? attribute =
+        propertyInfo.GetCustomAttribute(typeof(NotifyChangedAttribute), false) as NotifyChangedAttribute;
+
+      if (attribute is not null)
+        foreach (var property in attribute.Properties)
+          RaisePropertyChanged(property);
+    }
+  }
+
+  /// <summary>
+  /// Raises the <see cref="PropertyChanging"/> event for all properties that are
+  /// defined within the <see cref="NotifyChangingAttribute"/>.
+  /// </summary>
+  /// <param name="propertyName">The name of the calling property.</param>
+  private void RaiseChangingAttribute(string propertyName)
+  {
+    PropertyInfo? propertyInfo = GetType().GetProperty(propertyName);
+
+    if (propertyInfo is not null)
+    {
+      NotifyChangingAttribute? attribute =
+        propertyInfo.GetCustomAttribute(typeof(NotifyChangingAttribute), false) as NotifyChangingAttribute;
+
+      if (attribute is not null)
+        foreach (var property in attribute.Properties)
+          RaisePropertyChanging(property);
+    }
+  }
 }

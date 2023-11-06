@@ -10,14 +10,8 @@ public sealed class NotifyChangedAttribute : Attribute
   /// Initializes a instance of the notify changed attribute class.
   /// </summary>
   /// <param name="properties">The properties to notify on change.</param>
-  /// <exception cref="ArgumentException"></exception>
   public NotifyChangedAttribute(params string[] properties)
-  {
-    if (properties.Length.Equals(0))
-      throw new ArgumentException("Can't be empty.", nameof(properties));
-
-    Properties = properties;
-  }
+    => Properties = properties;
 
   /// <summary>
   /// The properties to notify on change.
