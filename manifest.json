@@ -4,6 +4,36 @@
   "files": [
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/BB84.Notifications.Attributes.NotifyChangedAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BB84.Notifications.Attributes.NotifyChangedAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BB84.Notifications.Attributes.NotifyChangingAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BB84.Notifications.Attributes.NotifyChangingAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BB84.Notifications.Attributes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BB84.Notifications.Attributes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/BB84.Notifications.BindableProperty-1.yml",
       "output": {
         ".html": {

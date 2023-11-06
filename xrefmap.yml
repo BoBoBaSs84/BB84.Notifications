@@ -7,6 +7,88 @@ references:
   commentId: N:BB84.Notifications
   fullName: BB84.Notifications
   nameWithType: BB84.Notifications
+- uid: BB84.Notifications.Attributes
+  name: BB84.Notifications.Attributes
+  href: api/BB84.Notifications.Attributes.html
+  commentId: N:BB84.Notifications.Attributes
+  fullName: BB84.Notifications.Attributes
+  nameWithType: BB84.Notifications.Attributes
+- uid: BB84.Notifications.Attributes.NotifyChangedAttribute
+  name: NotifyChangedAttribute
+  href: api/BB84.Notifications.Attributes.NotifyChangedAttribute.html
+  commentId: T:BB84.Notifications.Attributes.NotifyChangedAttribute
+  fullName: BB84.Notifications.Attributes.NotifyChangedAttribute
+  nameWithType: NotifyChangedAttribute
+- uid: BB84.Notifications.Attributes.NotifyChangedAttribute.#ctor(System.String[])
+  name: NotifyChangedAttribute(params string[])
+  href: api/BB84.Notifications.Attributes.NotifyChangedAttribute.html#BB84_Notifications_Attributes_NotifyChangedAttribute__ctor_System_String___
+  commentId: M:BB84.Notifications.Attributes.NotifyChangedAttribute.#ctor(System.String[])
+  name.vb: New(ParamArray String())
+  fullName: BB84.Notifications.Attributes.NotifyChangedAttribute.NotifyChangedAttribute(params string[])
+  fullName.vb: BB84.Notifications.Attributes.NotifyChangedAttribute.New(ParamArray String())
+  nameWithType: NotifyChangedAttribute.NotifyChangedAttribute(params string[])
+  nameWithType.vb: NotifyChangedAttribute.New(ParamArray String())
+- uid: BB84.Notifications.Attributes.NotifyChangedAttribute.#ctor*
+  name: NotifyChangedAttribute
+  href: api/BB84.Notifications.Attributes.NotifyChangedAttribute.html#BB84_Notifications_Attributes_NotifyChangedAttribute__ctor_
+  commentId: Overload:BB84.Notifications.Attributes.NotifyChangedAttribute.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: BB84.Notifications.Attributes.NotifyChangedAttribute.NotifyChangedAttribute
+  fullName.vb: BB84.Notifications.Attributes.NotifyChangedAttribute.New
+  nameWithType: NotifyChangedAttribute.NotifyChangedAttribute
+  nameWithType.vb: NotifyChangedAttribute.New
+- uid: BB84.Notifications.Attributes.NotifyChangedAttribute.Properties
+  name: Properties
+  href: api/BB84.Notifications.Attributes.NotifyChangedAttribute.html#BB84_Notifications_Attributes_NotifyChangedAttribute_Properties
+  commentId: P:BB84.Notifications.Attributes.NotifyChangedAttribute.Properties
+  fullName: BB84.Notifications.Attributes.NotifyChangedAttribute.Properties
+  nameWithType: NotifyChangedAttribute.Properties
+- uid: BB84.Notifications.Attributes.NotifyChangedAttribute.Properties*
+  name: Properties
+  href: api/BB84.Notifications.Attributes.NotifyChangedAttribute.html#BB84_Notifications_Attributes_NotifyChangedAttribute_Properties_
+  commentId: Overload:BB84.Notifications.Attributes.NotifyChangedAttribute.Properties
+  isSpec: "True"
+  fullName: BB84.Notifications.Attributes.NotifyChangedAttribute.Properties
+  nameWithType: NotifyChangedAttribute.Properties
+- uid: BB84.Notifications.Attributes.NotifyChangingAttribute
+  name: NotifyChangingAttribute
+  href: api/BB84.Notifications.Attributes.NotifyChangingAttribute.html
+  commentId: T:BB84.Notifications.Attributes.NotifyChangingAttribute
+  fullName: BB84.Notifications.Attributes.NotifyChangingAttribute
+  nameWithType: NotifyChangingAttribute
+- uid: BB84.Notifications.Attributes.NotifyChangingAttribute.#ctor(System.String[])
+  name: NotifyChangingAttribute(params string[])
+  href: api/BB84.Notifications.Attributes.NotifyChangingAttribute.html#BB84_Notifications_Attributes_NotifyChangingAttribute__ctor_System_String___
+  commentId: M:BB84.Notifications.Attributes.NotifyChangingAttribute.#ctor(System.String[])
+  name.vb: New(ParamArray String())
+  fullName: BB84.Notifications.Attributes.NotifyChangingAttribute.NotifyChangingAttribute(params string[])
+  fullName.vb: BB84.Notifications.Attributes.NotifyChangingAttribute.New(ParamArray String())
+  nameWithType: NotifyChangingAttribute.NotifyChangingAttribute(params string[])
+  nameWithType.vb: NotifyChangingAttribute.New(ParamArray String())
+- uid: BB84.Notifications.Attributes.NotifyChangingAttribute.#ctor*
+  name: NotifyChangingAttribute
+  href: api/BB84.Notifications.Attributes.NotifyChangingAttribute.html#BB84_Notifications_Attributes_NotifyChangingAttribute__ctor_
+  commentId: Overload:BB84.Notifications.Attributes.NotifyChangingAttribute.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: BB84.Notifications.Attributes.NotifyChangingAttribute.NotifyChangingAttribute
+  fullName.vb: BB84.Notifications.Attributes.NotifyChangingAttribute.New
+  nameWithType: NotifyChangingAttribute.NotifyChangingAttribute
+  nameWithType.vb: NotifyChangingAttribute.New
+- uid: BB84.Notifications.Attributes.NotifyChangingAttribute.Properties
+  name: Properties
+  href: api/BB84.Notifications.Attributes.NotifyChangingAttribute.html#BB84_Notifications_Attributes_NotifyChangingAttribute_Properties
+  commentId: P:BB84.Notifications.Attributes.NotifyChangingAttribute.Properties
+  fullName: BB84.Notifications.Attributes.NotifyChangingAttribute.Properties
+  nameWithType: NotifyChangingAttribute.Properties
+- uid: BB84.Notifications.Attributes.NotifyChangingAttribute.Properties*
+  name: Properties
+  href: api/BB84.Notifications.Attributes.NotifyChangingAttribute.html#BB84_Notifications_Attributes_NotifyChangingAttribute_Properties_
+  commentId: Overload:BB84.Notifications.Attributes.NotifyChangingAttribute.Properties
+  isSpec: "True"
+  fullName: BB84.Notifications.Attributes.NotifyChangingAttribute.Properties
+  nameWithType: NotifyChangingAttribute.Properties
 - uid: BB84.Notifications.BindableProperty`1
   name: BindableProperty<T>
   href: api/BB84.Notifications.BindableProperty-1.html
