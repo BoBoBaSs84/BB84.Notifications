@@ -2,6 +2,7 @@
 using System.Collections.ObjectModel;
 
 using BB84.Notifications;
+using BB84.Notifications.Enumerators;
 
 namespace BB84.NotificationsTests;
 
@@ -22,16 +23,16 @@ public sealed partial class NotifyCollectionBaseTests
 
     public void Add(string item)
     {
-      RaiseCollectionAdding(item);
+      RaiseCollectionChanging(CollectionChangeAction.Add);
       _collection.Add(item);
-      RaiseCollectionAdded(item);
+      RaiseCollectionChanged(CollectionChangeAction.Add, item);
     }
 
     public void Clear()
     {
-      RaiseCollectionClearing();
+      RaiseCollectionChanging(CollectionChangeAction.Clear);
       _collection.Clear();
-      RaiseCollectionCleared();
+      RaiseCollectionChanged(CollectionChangeAction.Clear);
     }
 
     public bool Contains(string item)
@@ -45,19 +46,19 @@ public sealed partial class NotifyCollectionBaseTests
 
     public bool Remove(string item)
     {
-      RaiseCollectionRemoving(item);
-      _collection.Remove(item);
-      RaiseCollectionRemoved(item);
+      RaiseCollectionChanging(CollectionChangeAction.Remove, item);
+      _ = _collection.Remove(item);
+      RaiseCollectionChanged(CollectionChangeAction.Remove);
       return true;
     }
 
     public void Move(int oldIndex, int newIndex)
     {
       string @string = _collection[oldIndex];
-      RaiseCollectionMoving(oldIndex);
+      RaiseCollectionChanging(CollectionChangeAction.Move, oldIndex);
       _collection.RemoveAt(oldIndex);
       _collection.Insert(newIndex, @string);
-      RaiseCollectionMoved(newIndex);
+      RaiseCollectionChanged(CollectionChangeAction.Move, newIndex);
     }
 
     IEnumerator IEnumerable.GetEnumerator()
@@ -65,10 +66,10 @@ public sealed partial class NotifyCollectionBaseTests
 
     public void Update(string oldString, string newString)
     {
-      var @string = this.Where(x => x == oldString).Single();
-      RaiseCollectionReplacing(oldString);
+      string @string = this.Where(x => x == oldString).Single();
+      RaiseCollectionChanging(CollectionChangeAction.Replace, oldString);
       @string = newString;
-      RaiseCollectionReplaced(newString);
+      RaiseCollectionChanged(CollectionChangeAction.Replace, newString);
     }
   }
 }

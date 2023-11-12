@@ -4,13 +4,14 @@ using System.Runtime.CompilerServices;
 
 using BB84.Notifications.Attributes;
 using BB84.Notifications.Components;
+using BB84.Notifications.Interfaces;
 
 namespace BB84.Notifications;
 
 /// <summary>
 ///	The notify property base class.
 /// </summary>
-public abstract class NotifyPropertyBase : INotifyPropertyChanged, INotifyPropertyChanging
+public abstract class NotifyPropertyBase : INotifyPropertyBase
 {
   /// <inheritdoc/>
   public event PropertyChangedEventHandler? PropertyChanged;

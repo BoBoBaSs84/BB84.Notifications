@@ -1,4 +1,5 @@
-﻿using BB84.Notifications.Enumerators;
+﻿using BB84.Notifications.Components;
+using BB84.Notifications.Enumerators;
 
 namespace BB84.NotificationsTests;
 
@@ -8,14 +9,12 @@ public sealed partial class NotifyCollectionBaseTests
   public void Adding()
   {
     CollectionChangeAction action = default!;
-    string item = string.Empty;
     MyCollection strings = new();
-    strings.CollectionChanging += (sender, e) => { item = (string)e.Item!; action = e.Action; };
+    strings.CollectionChanging += (s, e) => action = e.Action;
 
     strings.Add(UnitTestString);
 
     Assert.AreEqual(CollectionChangeAction.Add, action);
-    Assert.AreEqual(UnitTestString, item);
   }
 
   [TestMethod]
@@ -24,7 +23,12 @@ public sealed partial class NotifyCollectionBaseTests
     CollectionChangeAction action = default!;
     string item = string.Empty;
     MyCollection strings = new();
-    strings.CollectionChanged += (sender, e) => { item = (string)e.Item!; action = e.Action; };
+    strings.CollectionChanged += (s, e) =>
+    {
+      if (e is CollectionChangedEventArgs<string> stringEvent)
+        item = stringEvent.Item;
+      action = e.Action;
+    };
 
     strings.Add(UnitTestString);
 
