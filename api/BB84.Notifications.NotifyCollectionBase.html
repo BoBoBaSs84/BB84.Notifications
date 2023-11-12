@@ -87,7 +87,7 @@
 
   <h1 id="BB84_Notifications_NotifyCollectionBase" data-uid="BB84.Notifications.NotifyCollectionBase" class="text-break">
     Class NotifyCollectionBase
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/NotifyCollectionBase.cs/#L14"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/NotifyCollectionBase.cs/#L10"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -100,7 +100,7 @@
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class NotifyCollectionBase : NotifyPropertyBase, INotifyCollectionBase, INotifyCollectionChanging, INotifyCollectionChanged, INotifyPropertyChanging, INotifyPropertyChanged</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class NotifyCollectionBase : NotifyPropertyBase, INotifyPropertyBase, INotifyCollectionBase, INotifyCollectionChanged, INotifyCollectionChanging, INotifyPropertyChanged, INotifyPropertyChanging</code></pre>
   </div>
 
 
@@ -118,11 +118,12 @@
   <dl class="typelist implements">
     <dt>Implements</dt>
     <dd>
+      <div><a class="xref" href="BB84.Notifications.Interfaces.INotifyPropertyBase.html">INotifyPropertyBase</a></div>
       <div><a class="xref" href="BB84.Notifications.Interfaces.INotifyCollectionBase.html">INotifyCollectionBase</a></div>
-      <div><a class="xref" href="BB84.Notifications.Interfaces.Components.INotifyCollectionChanging.html">INotifyCollectionChanging</a></div>
       <div><a class="xref" href="BB84.Notifications.Interfaces.Components.INotifyCollectionChanged.html">INotifyCollectionChanged</a></div>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanging">INotifyPropertyChanging</a></div>
+      <div><a class="xref" href="BB84.Notifications.Interfaces.Components.INotifyCollectionChanging.html">INotifyCollectionChanging</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged">INotifyPropertyChanged</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanging">INotifyPropertyChanging</a></div>
     </dd>
   </dl>
 
@@ -165,36 +166,31 @@
 
 
 
-  <h2 id="BB84_Notifications_NotifyCollectionBase_remarks">Remarks</h2>
-  <div class="markdown level0 remarks"><p>Inherits from the <a class="xref" href="BB84.Notifications.NotifyPropertyBase.html">NotifyPropertyBase</a> class and implements
-the members of the <a class="xref" href="BB84.Notifications.Interfaces.INotifyCollectionBase.html">INotifyCollectionBase</a> interface.</p>
-</div>
 
 
   <h2 class="section" id="methods">Methods
 </h2>
 
 
-  <a id="BB84_Notifications_NotifyCollectionBase_RaiseCollectionAdded_" data-uid="BB84.Notifications.NotifyCollectionBase.RaiseCollectionAdded*"></a>
+  <a id="BB84_Notifications_NotifyCollectionBase_RaiseCollectionChanged_" data-uid="BB84.Notifications.NotifyCollectionBase.RaiseCollectionChanged*"></a>
 
-  <h3 id="BB84_Notifications_NotifyCollectionBase_RaiseCollectionAdded_System_Object_" data-uid="BB84.Notifications.NotifyCollectionBase.RaiseCollectionAdded(System.Object)">
-  RaiseCollectionAdded(object?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/NotifyCollectionBase.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BB84_Notifications_NotifyCollectionBase_RaiseCollectionChanged_BB84_Notifications_Enumerators_CollectionChangeAction_" data-uid="BB84.Notifications.NotifyCollectionBase.RaiseCollectionChanged(BB84.Notifications.Enumerators.CollectionChangeAction)">
+  RaiseCollectionChanged(CollectionChangeAction)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/NotifyCollectionBase.cs/#L22"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Raises the <a class="xref" href="BB84.Notifications.NotifyCollectionBase.html#BB84_Notifications_NotifyCollectionBase_CollectionChanged">CollectionChanged</a> event with the
-<a class="xref" href="BB84.Notifications.Enumerators.CollectionChangeAction.html#BB84_Notifications_Enumerators_CollectionChangeAction_Add">Add</a> action.</p>
+  <div class="markdown level1 summary"><p>Raises the <a class="xref" href="BB84.Notifications.NotifyCollectionBase.html#BB84_Notifications_NotifyCollectionBase_CollectionChanged">CollectionChanged</a> event.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected void RaiseCollectionAdded(object? value = null)</code></pre>
+    <pre><code class="lang-csharp hljs">protected void RaiseCollectionChanged(CollectionChangeAction action)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-    <dd><p>The object that is changed.</p>
+    <dt><code>action</code> <a class="xref" href="BB84.Notifications.Enumerators.CollectionChangeAction.html">CollectionChangeAction</a></dt>
+    <dd><p>The action that causes the change.</p>
 </dd>
   </dl>
 
@@ -209,26 +205,67 @@ the members of the <a class="xref" href="BB84.Notifications.Interfaces.INotifyCo
 
 
 
-  <a id="BB84_Notifications_NotifyCollectionBase_RaiseCollectionAdding_" data-uid="BB84.Notifications.NotifyCollectionBase.RaiseCollectionAdding*"></a>
+  <a id="BB84_Notifications_NotifyCollectionBase_RaiseCollectionChanged_" data-uid="BB84.Notifications.NotifyCollectionBase.RaiseCollectionChanged*"></a>
 
-  <h3 id="BB84_Notifications_NotifyCollectionBase_RaiseCollectionAdding_System_Object_" data-uid="BB84.Notifications.NotifyCollectionBase.RaiseCollectionAdding(System.Object)">
-  RaiseCollectionAdding(object?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/NotifyCollectionBase.cs/#L35"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BB84_Notifications_NotifyCollectionBase_RaiseCollectionChanged__1_BB84_Notifications_Enumerators_CollectionChangeAction___0_" data-uid="BB84.Notifications.NotifyCollectionBase.RaiseCollectionChanged``1(BB84.Notifications.Enumerators.CollectionChangeAction,``0)">
+  RaiseCollectionChanged&lt;T&gt;(CollectionChangeAction, T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/NotifyCollectionBase.cs/#L31"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Raises the <a class="xref" href="BB84.Notifications.NotifyCollectionBase.html#BB84_Notifications_NotifyCollectionBase_CollectionChanging">CollectionChanging</a> event with the
-<a class="xref" href="BB84.Notifications.Enumerators.CollectionChangeAction.html#BB84_Notifications_Enumerators_CollectionChangeAction_Add">Add</a> action.</p>
+  <div class="markdown level1 summary"><p>Raises the <a class="xref" href="BB84.Notifications.NotifyCollectionBase.html#BB84_Notifications_NotifyCollectionBase_CollectionChanged">CollectionChanged</a> event.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected void RaiseCollectionAdding(object? value = null)</code></pre>
+    <pre><code class="lang-csharp hljs">protected void RaiseCollectionChanged&lt;T&gt;(CollectionChangeAction action, T item)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-    <dd><p>The object that is changing.</p>
+    <dt><code>action</code> <a class="xref" href="BB84.Notifications.Enumerators.CollectionChangeAction.html">CollectionChangeAction</a></dt>
+    <dd><p>The action that causes the change.</p>
+</dd>
+    <dt><code>item</code> <span class="xref">T</span></dt>
+    <dd><p>The item that is changed.</p>
+</dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The type to work with.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="BB84_Notifications_NotifyCollectionBase_RaiseCollectionChanging_" data-uid="BB84.Notifications.NotifyCollectionBase.RaiseCollectionChanging*"></a>
+
+  <h3 id="BB84_Notifications_NotifyCollectionBase_RaiseCollectionChanging_BB84_Notifications_Enumerators_CollectionChangeAction_" data-uid="BB84.Notifications.NotifyCollectionBase.RaiseCollectionChanging(BB84.Notifications.Enumerators.CollectionChangeAction)">
+  RaiseCollectionChanging(CollectionChangeAction)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/NotifyCollectionBase.cs/#L38"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Raises the <a class="xref" href="BB84.Notifications.NotifyCollectionBase.html#BB84_Notifications_NotifyCollectionBase_CollectionChanging">CollectionChanging</a> event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void RaiseCollectionChanging(CollectionChangeAction action)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>action</code> <a class="xref" href="BB84.Notifications.Enumerators.CollectionChangeAction.html">CollectionChangeAction</a></dt>
+    <dd><p>The action that causes the change.</p>
 </dd>
   </dl>
 
@@ -243,268 +280,38 @@ the members of the <a class="xref" href="BB84.Notifications.Interfaces.INotifyCo
 
 
 
-  <a id="BB84_Notifications_NotifyCollectionBase_RaiseCollectionCleared_" data-uid="BB84.Notifications.NotifyCollectionBase.RaiseCollectionCleared*"></a>
+  <a id="BB84_Notifications_NotifyCollectionBase_RaiseCollectionChanging_" data-uid="BB84.Notifications.NotifyCollectionBase.RaiseCollectionChanging*"></a>
 
-  <h3 id="BB84_Notifications_NotifyCollectionBase_RaiseCollectionCleared_System_Object_" data-uid="BB84.Notifications.NotifyCollectionBase.RaiseCollectionCleared(System.Object)">
-  RaiseCollectionCleared(object?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/NotifyCollectionBase.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BB84_Notifications_NotifyCollectionBase_RaiseCollectionChanging__1_BB84_Notifications_Enumerators_CollectionChangeAction___0_" data-uid="BB84.Notifications.NotifyCollectionBase.RaiseCollectionChanging``1(BB84.Notifications.Enumerators.CollectionChangeAction,``0)">
+  RaiseCollectionChanging&lt;T&gt;(CollectionChangeAction, T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/NotifyCollectionBase.cs/#L47"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Raises the <a class="xref" href="BB84.Notifications.NotifyCollectionBase.html#BB84_Notifications_NotifyCollectionBase_CollectionChanged">CollectionChanged</a> event with the
-<a class="xref" href="BB84.Notifications.Enumerators.CollectionChangeAction.html#BB84_Notifications_Enumerators_CollectionChangeAction_Clear">Clear</a> action.</p>
+  <div class="markdown level1 summary"><p>Raises the <a class="xref" href="BB84.Notifications.NotifyCollectionBase.html#BB84_Notifications_NotifyCollectionBase_CollectionChanging">CollectionChanging</a> event.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected void RaiseCollectionCleared(object? value = null)</code></pre>
+    <pre><code class="lang-csharp hljs">protected void RaiseCollectionChanging&lt;T&gt;(CollectionChangeAction action, T item)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-    <dd><p>The object that is changed.</p>
+    <dt><code>action</code> <a class="xref" href="BB84.Notifications.Enumerators.CollectionChangeAction.html">CollectionChangeAction</a></dt>
+    <dd><p>The action that causes the change.</p>
+</dd>
+    <dt><code>item</code> <span class="xref">T</span></dt>
+    <dd><p>The item that is changing.</p>
 </dd>
   </dl>
 
 
-
-
-
-
-
-
-
-
-
-
-  <a id="BB84_Notifications_NotifyCollectionBase_RaiseCollectionClearing_" data-uid="BB84.Notifications.NotifyCollectionBase.RaiseCollectionClearing*"></a>
-
-  <h3 id="BB84_Notifications_NotifyCollectionBase_RaiseCollectionClearing_System_Object_" data-uid="BB84.Notifications.NotifyCollectionBase.RaiseCollectionClearing(System.Object)">
-  RaiseCollectionClearing(object?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/NotifyCollectionBase.cs/#L51"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Raises the <a class="xref" href="BB84.Notifications.NotifyCollectionBase.html#BB84_Notifications_NotifyCollectionBase_CollectionChanging">CollectionChanging</a> event with the
-<a class="xref" href="BB84.Notifications.Enumerators.CollectionChangeAction.html#BB84_Notifications_Enumerators_CollectionChangeAction_Clear">Clear</a> action.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected void RaiseCollectionClearing(object? value = null)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
+  <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
-    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-    <dd><p>The object that is changing.</p>
+    <dt><code>T</code></dt>
+    <dd><p>The type to work with.</p>
 </dd>
   </dl>
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="BB84_Notifications_NotifyCollectionBase_RaiseCollectionMoved_" data-uid="BB84.Notifications.NotifyCollectionBase.RaiseCollectionMoved*"></a>
-
-  <h3 id="BB84_Notifications_NotifyCollectionBase_RaiseCollectionMoved_System_Object_" data-uid="BB84.Notifications.NotifyCollectionBase.RaiseCollectionMoved(System.Object)">
-  RaiseCollectionMoved(object?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/NotifyCollectionBase.cs/#L59"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Raises the <a class="xref" href="BB84.Notifications.NotifyCollectionBase.html#BB84_Notifications_NotifyCollectionBase_CollectionChanged">CollectionChanged</a> event with the
-<a class="xref" href="BB84.Notifications.Enumerators.CollectionChangeAction.html#BB84_Notifications_Enumerators_CollectionChangeAction_Move">Move</a> action.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected void RaiseCollectionMoved(object? value = null)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-    <dd><p>The object that is changed.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="BB84_Notifications_NotifyCollectionBase_RaiseCollectionMoving_" data-uid="BB84.Notifications.NotifyCollectionBase.RaiseCollectionMoving*"></a>
-
-  <h3 id="BB84_Notifications_NotifyCollectionBase_RaiseCollectionMoving_System_Object_" data-uid="BB84.Notifications.NotifyCollectionBase.RaiseCollectionMoving(System.Object)">
-  RaiseCollectionMoving(object?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/NotifyCollectionBase.cs/#L67"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Raises the <a class="xref" href="BB84.Notifications.NotifyCollectionBase.html#BB84_Notifications_NotifyCollectionBase_CollectionChanging">CollectionChanging</a> event with the
-<a class="xref" href="BB84.Notifications.Enumerators.CollectionChangeAction.html#BB84_Notifications_Enumerators_CollectionChangeAction_Move">Move</a> action.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected void RaiseCollectionMoving(object? value = null)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-    <dd><p>The object that is changing.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="BB84_Notifications_NotifyCollectionBase_RaiseCollectionRemoved_" data-uid="BB84.Notifications.NotifyCollectionBase.RaiseCollectionRemoved*"></a>
-
-  <h3 id="BB84_Notifications_NotifyCollectionBase_RaiseCollectionRemoved_System_Object_" data-uid="BB84.Notifications.NotifyCollectionBase.RaiseCollectionRemoved(System.Object)">
-  RaiseCollectionRemoved(object?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/NotifyCollectionBase.cs/#L75"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Raises the <a class="xref" href="BB84.Notifications.NotifyCollectionBase.html#BB84_Notifications_NotifyCollectionBase_CollectionChanged">CollectionChanged</a> event with the
-<a class="xref" href="BB84.Notifications.Enumerators.CollectionChangeAction.html#BB84_Notifications_Enumerators_CollectionChangeAction_Remove">Remove</a> action.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected void RaiseCollectionRemoved(object? value = null)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-    <dd><p>The object that is changed.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="BB84_Notifications_NotifyCollectionBase_RaiseCollectionRemoving_" data-uid="BB84.Notifications.NotifyCollectionBase.RaiseCollectionRemoving*"></a>
-
-  <h3 id="BB84_Notifications_NotifyCollectionBase_RaiseCollectionRemoving_System_Object_" data-uid="BB84.Notifications.NotifyCollectionBase.RaiseCollectionRemoving(System.Object)">
-  RaiseCollectionRemoving(object?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/NotifyCollectionBase.cs/#L83"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Raises the <a class="xref" href="BB84.Notifications.NotifyCollectionBase.html#BB84_Notifications_NotifyCollectionBase_CollectionChanging">CollectionChanging</a> event with the
-<a class="xref" href="BB84.Notifications.Enumerators.CollectionChangeAction.html#BB84_Notifications_Enumerators_CollectionChangeAction_Remove">Remove</a> action.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected void RaiseCollectionRemoving(object? value = null)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-    <dd><p>The object that is changing.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="BB84_Notifications_NotifyCollectionBase_RaiseCollectionReplaced_" data-uid="BB84.Notifications.NotifyCollectionBase.RaiseCollectionReplaced*"></a>
-
-  <h3 id="BB84_Notifications_NotifyCollectionBase_RaiseCollectionReplaced_System_Object_" data-uid="BB84.Notifications.NotifyCollectionBase.RaiseCollectionReplaced(System.Object)">
-  RaiseCollectionReplaced(object?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/NotifyCollectionBase.cs/#L91"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Raises the <a class="xref" href="BB84.Notifications.NotifyCollectionBase.html#BB84_Notifications_NotifyCollectionBase_CollectionChanged">CollectionChanged</a> event with the
-<a class="xref" href="BB84.Notifications.Enumerators.CollectionChangeAction.html#BB84_Notifications_Enumerators_CollectionChangeAction_Replace">Replace</a> action.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected void RaiseCollectionReplaced(object? value = null)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-    <dd><p>The object that is changed.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="BB84_Notifications_NotifyCollectionBase_RaiseCollectionReplacing_" data-uid="BB84.Notifications.NotifyCollectionBase.RaiseCollectionReplacing*"></a>
-
-  <h3 id="BB84_Notifications_NotifyCollectionBase_RaiseCollectionReplacing_System_Object_" data-uid="BB84.Notifications.NotifyCollectionBase.RaiseCollectionReplacing(System.Object)">
-  RaiseCollectionReplacing(object?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/NotifyCollectionBase.cs/#L99"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Raises the <a class="xref" href="BB84.Notifications.NotifyCollectionBase.html#BB84_Notifications_NotifyCollectionBase_CollectionChanging">CollectionChanging</a> event with the
-<a class="xref" href="BB84.Notifications.Enumerators.CollectionChangeAction.html#BB84_Notifications_Enumerators_CollectionChangeAction_Replace">Replace</a> action.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected void RaiseCollectionReplacing(object? value = null)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-    <dd><p>The object that is changing.</p>
-</dd>
-  </dl>
-
-
 
 
 
@@ -522,7 +329,7 @@ the members of the <a class="xref" href="BB84.Notifications.Interfaces.INotifyCo
 
   <h3 id="BB84_Notifications_NotifyCollectionBase_CollectionChanged" data-uid="BB84.Notifications.NotifyCollectionBase.CollectionChanged">
   CollectionChanged
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/NotifyCollectionBase.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/NotifyCollectionBase.cs/#L13"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Occurs when the collection is changed.</p>
@@ -553,7 +360,7 @@ the members of the <a class="xref" href="BB84.Notifications.Interfaces.INotifyCo
 
   <h3 id="BB84_Notifications_NotifyCollectionBase_CollectionChanging" data-uid="BB84.Notifications.NotifyCollectionBase.CollectionChanging">
   CollectionChanging
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/NotifyCollectionBase.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/NotifyCollectionBase.cs/#L16"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Occurs when the collection is changing.</p>
@@ -585,7 +392,7 @@ the members of the <a class="xref" href="BB84.Notifications.Interfaces.INotifyCo
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/NotifyCollectionBase.cs/#L14" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/NotifyCollectionBase.cs/#L10" class="edit-link">Edit this page</a>
         </div>
 
 
