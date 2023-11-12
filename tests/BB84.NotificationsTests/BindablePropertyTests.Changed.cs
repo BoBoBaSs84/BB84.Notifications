@@ -1,4 +1,6 @@
-﻿namespace BB84.NotificationsTests;
+﻿using BB84.Notifications.Components;
+
+namespace BB84.NotificationsTests;
 
 public sealed partial class BindablePropertyTests
 {
@@ -7,7 +9,11 @@ public sealed partial class BindablePropertyTests
   {
     int changedValue = default;
     TestClass testClass = new(1);
-    testClass.BindableProperty.Changed += (sender, e) => changedValue = e.Value;
+    testClass.BindableProperty.PropertyChanged += (s, e) =>
+    {
+      if (e is PropertyChangedEventArgs<int> intEvent)
+        changedValue = intEvent.Value;
+    };
 
     testClass.BindableProperty.Value = 2;
 

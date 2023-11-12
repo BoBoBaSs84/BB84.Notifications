@@ -11,7 +11,7 @@ public class NotifyChangingAttributeTests
   {
     List<string> propertiesNotified = new();
     TestClass testClass = new(3, 40);
-    testClass.PropertyChanging += (sender, e) => propertiesNotified.Add(e.Name);
+    testClass.PropertyChanging += (sender, e) => propertiesNotified.Add(e.PropertyName!);
 
     testClass.Quantity = 4;
 

@@ -1,4 +1,6 @@
-﻿using BB84.Notifications.Components;
+﻿using System.ComponentModel;
+
+using BB84.Notifications.Components;
 using BB84.Notifications.Interfaces;
 
 namespace BB84.Notifications;
@@ -26,16 +28,16 @@ public sealed class BindableProperty<T> : IBindableProperty<T>
     {
       if (!EqualityComparer<T>.Default.Equals(_value, value))
       {
-        Changing?.Invoke(this, new BindablePropertyChangingEventArgs<T>(_value));
+        PropertyChanging?.Invoke(this, new PropertyChangingEventArgs<T>(ToString(), _value));
         _value = value;
-        Changed?.Invoke(this, new BindablePropertyChangedEventArgs<T>(value));
+        PropertyChanged?.Invoke(this, new PropertyChangedEventArgs<T>(ToString(), value));
       }
     }
   }
 
-  /// <inheritdoc/>	
-  public event BindablePropertyChangedEventHandler<T>? Changed;
+  /// <inheritdoc/>
+  public event PropertyChangedEventHandler? PropertyChanged;
 
   /// <inheritdoc/>
-  public event BindablePropertyChangingEventHandler<T>? Changing;
+  public event PropertyChangingEventHandler? PropertyChanging;
 }

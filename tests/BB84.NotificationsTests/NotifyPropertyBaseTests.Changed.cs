@@ -7,20 +7,20 @@ public sealed partial class NotifyPropertyBaseTests
   [TestMethod]
   public void Changed()
   {
-    string changedProperty = string.Empty;
+    string? propertyName = string.Empty;
     TestClass testClass = new();
-    testClass.PropertyChanged += (sender, e) => changedProperty = e.Name;
+    testClass.PropertyChanged += (sender, e) => propertyName = e.PropertyName;
 
     testClass.Property = 1;
 
-    Assert.AreEqual(nameof(testClass.Property), changedProperty);
+    Assert.AreEqual(nameof(testClass.Property), propertyName);
     Assert.AreEqual(1, testClass.Property);
   }
 
   [TestMethod]
   public void ChangedWithValue()
   {
-    string propertyName = string.Empty;
+    string? propertyName = string.Empty;
     int propertyValue = default;
     TestClass testClass = new();
     testClass.PropertyChanged += (sender, e) =>
@@ -28,7 +28,7 @@ public sealed partial class NotifyPropertyBaseTests
       if (e is PropertyChangedEventArgs<int> iArgs)
         propertyValue = iArgs.Value;
 
-      propertyName = e.Name;
+      propertyName = e.PropertyName;
     };
 
     testClass.Property = 1;

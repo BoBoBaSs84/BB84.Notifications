@@ -1,19 +1,16 @@
-﻿using System.Reflection;
+﻿using System.ComponentModel;
+using System.Reflection;
 using System.Runtime.CompilerServices;
 
 using BB84.Notifications.Attributes;
 using BB84.Notifications.Components;
-using BB84.Notifications.Interfaces;
 
 namespace BB84.Notifications;
 
 /// <summary>
 ///	The notify property base class.
 /// </summary>
-/// <remarks>
-/// Implements the members of the <see cref="INotifyPropertyBase"/> interface.
-/// </remarks>
-public abstract class NotifyPropertyBase : INotifyPropertyBase
+public abstract class NotifyPropertyBase : INotifyPropertyChanged, INotifyPropertyChanging
 {
   /// <inheritdoc/>
   public event PropertyChangedEventHandler? PropertyChanged;
