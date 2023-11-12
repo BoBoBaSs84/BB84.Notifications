@@ -100,7 +100,7 @@
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface IBindableProperty&lt;T&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public interface IBindableProperty&lt;T&gt; : INotifyPropertyChanged, INotifyPropertyChanging</code></pre>
   </div>
 
 
@@ -115,6 +115,16 @@
 
 
 
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged.propertychanged">INotifyPropertyChanged.PropertyChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanging.propertychanging">INotifyPropertyChanging.PropertyChanging</a>
+    </div>
+  </dd></dl>
 
 
 
@@ -150,72 +160,6 @@
     <dd></dd>
   </dl>
 
-
-
-
-
-
-
-
-  <h2 class="section" id="events">Events
-</h2>
-
-
-
-  <h3 id="BB84_Notifications_Interfaces_IBindableProperty_1_Changed" data-uid="BB84.Notifications.Interfaces.IBindableProperty`1.Changed">
-  Changed
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Interfaces/IBindableProperty.cs/#L19"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Occurs when the bindable property value is changed.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">event BindablePropertyChangedEventHandler&lt;T&gt;? Changed</code></pre>
-  </div>
-
-
-
-
-
-
-  <h4 class="section">Event Type</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="BB84.Notifications.Components.BindablePropertyChangedEventHandler-1.html">BindablePropertyChangedEventHandler</a>&lt;T&gt;</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <h3 id="BB84_Notifications_Interfaces_IBindableProperty_1_Changing" data-uid="BB84.Notifications.Interfaces.IBindableProperty`1.Changing">
-  Changing
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Interfaces/IBindableProperty.cs/#L24"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Occurs when the bindable property value is changing.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">event BindablePropertyChangingEventHandler&lt;T&gt;? Changing</code></pre>
-  </div>
-
-
-
-
-
-
-  <h4 class="section">Event Type</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="BB84.Notifications.Components.BindablePropertyChangingEventHandler-1.html">BindablePropertyChangingEventHandler</a>&lt;T&gt;</dt>
-    <dd></dd>
-  </dl>
 
 
 

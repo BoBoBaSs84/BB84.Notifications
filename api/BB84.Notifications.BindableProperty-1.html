@@ -87,7 +87,7 @@
 
   <h1 id="BB84_Notifications_BindableProperty_1" data-uid="BB84.Notifications.BindableProperty`1" class="text-break">
     Class BindableProperty&lt;T&gt;
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/BindableProperty.cs/#L10"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/BindableProperty.cs/#L12"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -100,7 +100,7 @@
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class BindableProperty&lt;T&gt; : IBindableProperty&lt;T&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class BindableProperty&lt;T&gt; : IBindableProperty&lt;T&gt;, INotifyPropertyChanged, INotifyPropertyChanging</code></pre>
   </div>
 
 
@@ -124,6 +124,8 @@
     <dt>Implements</dt>
     <dd>
       <div><a class="xref" href="BB84.Notifications.Interfaces.IBindableProperty-1.html">IBindableProperty</a>&lt;T&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged">INotifyPropertyChanged</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanging">INotifyPropertyChanging</a></div>
     </dd>
   </dl>
 
@@ -164,7 +166,7 @@
 
   <h3 id="BB84_Notifications_BindableProperty_1__ctor__0_" data-uid="BB84.Notifications.BindableProperty`1.#ctor(`0)">
   BindableProperty(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/BindableProperty.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/BindableProperty.cs/#L20"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Initializes a instance of the bindable property class.</p>
@@ -201,7 +203,7 @@
 
   <h3 id="BB84_Notifications_BindableProperty_1_Value" data-uid="BB84.Notifications.BindableProperty`1.Value">
   Value
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/BindableProperty.cs/#L22"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/BindableProperty.cs/#L24"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The actual value of the bindable property.</p>
@@ -234,17 +236,16 @@
 
 
 
-  <h3 id="BB84_Notifications_BindableProperty_1_Changed" data-uid="BB84.Notifications.BindableProperty`1.Changed">
-  Changed
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/BindableProperty.cs/#L37"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BB84_Notifications_BindableProperty_1_PropertyChanged" data-uid="BB84.Notifications.BindableProperty`1.PropertyChanged">
+  PropertyChanged
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/BindableProperty.cs/#L39"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Occurs when the bindable property value is changed.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event BindablePropertyChangedEventHandler&lt;T&gt;? Changed</code></pre>
+    <pre><code class="lang-csharp hljs">public event PropertyChangedEventHandler? PropertyChanged</code></pre>
   </div>
 
 
@@ -254,7 +255,7 @@
 
   <h4 class="section">Event Type</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="BB84.Notifications.Components.BindablePropertyChangedEventHandler-1.html">BindablePropertyChangedEventHandler</a>&lt;T&gt;</dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.propertychangedeventhandler">PropertyChangedEventHandler</a></dt>
     <dd></dd>
   </dl>
 
@@ -265,17 +266,16 @@
 
 
 
-  <h3 id="BB84_Notifications_BindableProperty_1_Changing" data-uid="BB84.Notifications.BindableProperty`1.Changing">
-  Changing
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/BindableProperty.cs/#L40"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BB84_Notifications_BindableProperty_1_PropertyChanging" data-uid="BB84.Notifications.BindableProperty`1.PropertyChanging">
+  PropertyChanging
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/BindableProperty.cs/#L42"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Occurs when the bindable property value is changing.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event BindablePropertyChangingEventHandler&lt;T&gt;? Changing</code></pre>
+    <pre><code class="lang-csharp hljs">public event PropertyChangingEventHandler? PropertyChanging</code></pre>
   </div>
 
 
@@ -285,7 +285,7 @@
 
   <h4 class="section">Event Type</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="BB84.Notifications.Components.BindablePropertyChangingEventHandler-1.html">BindablePropertyChangingEventHandler</a>&lt;T&gt;</dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.propertychangingeventhandler">PropertyChangingEventHandler</a></dt>
     <dd></dd>
   </dl>
 
@@ -299,7 +299,7 @@
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/BindableProperty.cs/#L10" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/BindableProperty.cs/#L12" class="edit-link">Edit this page</a>
         </div>
 
 

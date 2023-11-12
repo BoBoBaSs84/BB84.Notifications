@@ -44,46 +44,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/BB84.Notifications.Components.BindablePropertyChangedEventArgs-1.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/BB84.Notifications.Components.BindablePropertyChangedEventArgs-1.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/BB84.Notifications.Components.BindablePropertyChangedEventHandler-1.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/BB84.Notifications.Components.BindablePropertyChangedEventHandler-1.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/BB84.Notifications.Components.BindablePropertyChangingEventArgs-1.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/BB84.Notifications.Components.BindablePropertyChangingEventArgs-1.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/BB84.Notifications.Components.BindablePropertyChangingEventHandler-1.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/BB84.Notifications.Components.BindablePropertyChangingEventHandler-1.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/BB84.Notifications.Components.CollectionChangedEventArgs.yml",
       "output": {
         ".html": {
@@ -134,50 +94,10 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/BB84.Notifications.Components.PropertyChangedEventArgs.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/BB84.Notifications.Components.PropertyChangedEventArgs.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/BB84.Notifications.Components.PropertyChangedEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/BB84.Notifications.Components.PropertyChangedEventHandler.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/BB84.Notifications.Components.PropertyChangingEventArgs-1.yml",
       "output": {
         ".html": {
           "relative_path": "api/BB84.Notifications.Components.PropertyChangingEventArgs-1.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/BB84.Notifications.Components.PropertyChangingEventArgs.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/BB84.Notifications.Components.PropertyChangingEventArgs.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/BB84.Notifications.Components.PropertyChangingEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/BB84.Notifications.Components.PropertyChangingEventHandler.html"
         }
       },
       "version": ""
@@ -234,26 +154,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/BB84.Notifications.Interfaces.Components.INotifyPropertyChanged.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/BB84.Notifications.Interfaces.Components.INotifyPropertyChanged.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/BB84.Notifications.Interfaces.Components.INotifyPropertyChanging.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/BB84.Notifications.Interfaces.Components.INotifyPropertyChanging.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/BB84.Notifications.Interfaces.Components.yml",
       "output": {
         ".html": {
@@ -278,16 +178,6 @@
       "output": {
         ".html": {
           "relative_path": "api/BB84.Notifications.Interfaces.INotifyCollectionBase.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/BB84.Notifications.Interfaces.INotifyPropertyBase.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/BB84.Notifications.Interfaces.INotifyPropertyBase.html"
         }
       },
       "version": ""

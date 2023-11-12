@@ -117,22 +117,22 @@ references:
   fullName.vb: BB84.Notifications.BindableProperty(Of T).New
   nameWithType: BindableProperty<T>.BindableProperty
   nameWithType.vb: BindableProperty(Of T).New
-- uid: BB84.Notifications.BindableProperty`1.Changed
-  name: Changed
-  href: api/BB84.Notifications.BindableProperty-1.html#BB84_Notifications_BindableProperty_1_Changed
-  commentId: E:BB84.Notifications.BindableProperty`1.Changed
-  fullName: BB84.Notifications.BindableProperty<T>.Changed
-  fullName.vb: BB84.Notifications.BindableProperty(Of T).Changed
-  nameWithType: BindableProperty<T>.Changed
-  nameWithType.vb: BindableProperty(Of T).Changed
-- uid: BB84.Notifications.BindableProperty`1.Changing
-  name: Changing
-  href: api/BB84.Notifications.BindableProperty-1.html#BB84_Notifications_BindableProperty_1_Changing
-  commentId: E:BB84.Notifications.BindableProperty`1.Changing
-  fullName: BB84.Notifications.BindableProperty<T>.Changing
-  fullName.vb: BB84.Notifications.BindableProperty(Of T).Changing
-  nameWithType: BindableProperty<T>.Changing
-  nameWithType.vb: BindableProperty(Of T).Changing
+- uid: BB84.Notifications.BindableProperty`1.PropertyChanged
+  name: PropertyChanged
+  href: api/BB84.Notifications.BindableProperty-1.html#BB84_Notifications_BindableProperty_1_PropertyChanged
+  commentId: E:BB84.Notifications.BindableProperty`1.PropertyChanged
+  fullName: BB84.Notifications.BindableProperty<T>.PropertyChanged
+  fullName.vb: BB84.Notifications.BindableProperty(Of T).PropertyChanged
+  nameWithType: BindableProperty<T>.PropertyChanged
+  nameWithType.vb: BindableProperty(Of T).PropertyChanged
+- uid: BB84.Notifications.BindableProperty`1.PropertyChanging
+  name: PropertyChanging
+  href: api/BB84.Notifications.BindableProperty-1.html#BB84_Notifications_BindableProperty_1_PropertyChanging
+  commentId: E:BB84.Notifications.BindableProperty`1.PropertyChanging
+  fullName: BB84.Notifications.BindableProperty<T>.PropertyChanging
+  fullName.vb: BB84.Notifications.BindableProperty(Of T).PropertyChanging
+  nameWithType: BindableProperty<T>.PropertyChanging
+  nameWithType.vb: BindableProperty(Of T).PropertyChanging
 - uid: BB84.Notifications.BindableProperty`1.Value
   name: Value
   href: api/BB84.Notifications.BindableProperty-1.html#BB84_Notifications_BindableProperty_1_Value
@@ -156,114 +156,6 @@ references:
   commentId: N:BB84.Notifications.Components
   fullName: BB84.Notifications.Components
   nameWithType: BB84.Notifications.Components
-- uid: BB84.Notifications.Components.BindablePropertyChangedEventArgs`1
-  name: BindablePropertyChangedEventArgs<T>
-  href: api/BB84.Notifications.Components.BindablePropertyChangedEventArgs-1.html
-  commentId: T:BB84.Notifications.Components.BindablePropertyChangedEventArgs`1
-  name.vb: BindablePropertyChangedEventArgs(Of T)
-  fullName: BB84.Notifications.Components.BindablePropertyChangedEventArgs<T>
-  fullName.vb: BB84.Notifications.Components.BindablePropertyChangedEventArgs(Of T)
-  nameWithType: BindablePropertyChangedEventArgs<T>
-  nameWithType.vb: BindablePropertyChangedEventArgs(Of T)
-- uid: BB84.Notifications.Components.BindablePropertyChangedEventArgs`1.#ctor(`0)
-  name: BindablePropertyChangedEventArgs(T)
-  href: api/BB84.Notifications.Components.BindablePropertyChangedEventArgs-1.html#BB84_Notifications_Components_BindablePropertyChangedEventArgs_1__ctor__0_
-  commentId: M:BB84.Notifications.Components.BindablePropertyChangedEventArgs`1.#ctor(`0)
-  name.vb: New(T)
-  fullName: BB84.Notifications.Components.BindablePropertyChangedEventArgs<T>.BindablePropertyChangedEventArgs(T)
-  fullName.vb: BB84.Notifications.Components.BindablePropertyChangedEventArgs(Of T).New(T)
-  nameWithType: BindablePropertyChangedEventArgs<T>.BindablePropertyChangedEventArgs(T)
-  nameWithType.vb: BindablePropertyChangedEventArgs(Of T).New(T)
-- uid: BB84.Notifications.Components.BindablePropertyChangedEventArgs`1.#ctor*
-  name: BindablePropertyChangedEventArgs
-  href: api/BB84.Notifications.Components.BindablePropertyChangedEventArgs-1.html#BB84_Notifications_Components_BindablePropertyChangedEventArgs_1__ctor_
-  commentId: Overload:BB84.Notifications.Components.BindablePropertyChangedEventArgs`1.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: BB84.Notifications.Components.BindablePropertyChangedEventArgs<T>.BindablePropertyChangedEventArgs
-  fullName.vb: BB84.Notifications.Components.BindablePropertyChangedEventArgs(Of T).New
-  nameWithType: BindablePropertyChangedEventArgs<T>.BindablePropertyChangedEventArgs
-  nameWithType.vb: BindablePropertyChangedEventArgs(Of T).New
-- uid: BB84.Notifications.Components.BindablePropertyChangedEventArgs`1.Value
-  name: Value
-  href: api/BB84.Notifications.Components.BindablePropertyChangedEventArgs-1.html#BB84_Notifications_Components_BindablePropertyChangedEventArgs_1_Value
-  commentId: P:BB84.Notifications.Components.BindablePropertyChangedEventArgs`1.Value
-  fullName: BB84.Notifications.Components.BindablePropertyChangedEventArgs<T>.Value
-  fullName.vb: BB84.Notifications.Components.BindablePropertyChangedEventArgs(Of T).Value
-  nameWithType: BindablePropertyChangedEventArgs<T>.Value
-  nameWithType.vb: BindablePropertyChangedEventArgs(Of T).Value
-- uid: BB84.Notifications.Components.BindablePropertyChangedEventArgs`1.Value*
-  name: Value
-  href: api/BB84.Notifications.Components.BindablePropertyChangedEventArgs-1.html#BB84_Notifications_Components_BindablePropertyChangedEventArgs_1_Value_
-  commentId: Overload:BB84.Notifications.Components.BindablePropertyChangedEventArgs`1.Value
-  isSpec: "True"
-  fullName: BB84.Notifications.Components.BindablePropertyChangedEventArgs<T>.Value
-  fullName.vb: BB84.Notifications.Components.BindablePropertyChangedEventArgs(Of T).Value
-  nameWithType: BindablePropertyChangedEventArgs<T>.Value
-  nameWithType.vb: BindablePropertyChangedEventArgs(Of T).Value
-- uid: BB84.Notifications.Components.BindablePropertyChangedEventHandler`1
-  name: BindablePropertyChangedEventHandler<T>
-  href: api/BB84.Notifications.Components.BindablePropertyChangedEventHandler-1.html
-  commentId: T:BB84.Notifications.Components.BindablePropertyChangedEventHandler`1
-  name.vb: BindablePropertyChangedEventHandler(Of T)
-  fullName: BB84.Notifications.Components.BindablePropertyChangedEventHandler<T>
-  fullName.vb: BB84.Notifications.Components.BindablePropertyChangedEventHandler(Of T)
-  nameWithType: BindablePropertyChangedEventHandler<T>
-  nameWithType.vb: BindablePropertyChangedEventHandler(Of T)
-- uid: BB84.Notifications.Components.BindablePropertyChangingEventArgs`1
-  name: BindablePropertyChangingEventArgs<T>
-  href: api/BB84.Notifications.Components.BindablePropertyChangingEventArgs-1.html
-  commentId: T:BB84.Notifications.Components.BindablePropertyChangingEventArgs`1
-  name.vb: BindablePropertyChangingEventArgs(Of T)
-  fullName: BB84.Notifications.Components.BindablePropertyChangingEventArgs<T>
-  fullName.vb: BB84.Notifications.Components.BindablePropertyChangingEventArgs(Of T)
-  nameWithType: BindablePropertyChangingEventArgs<T>
-  nameWithType.vb: BindablePropertyChangingEventArgs(Of T)
-- uid: BB84.Notifications.Components.BindablePropertyChangingEventArgs`1.#ctor(`0)
-  name: BindablePropertyChangingEventArgs(T)
-  href: api/BB84.Notifications.Components.BindablePropertyChangingEventArgs-1.html#BB84_Notifications_Components_BindablePropertyChangingEventArgs_1__ctor__0_
-  commentId: M:BB84.Notifications.Components.BindablePropertyChangingEventArgs`1.#ctor(`0)
-  name.vb: New(T)
-  fullName: BB84.Notifications.Components.BindablePropertyChangingEventArgs<T>.BindablePropertyChangingEventArgs(T)
-  fullName.vb: BB84.Notifications.Components.BindablePropertyChangingEventArgs(Of T).New(T)
-  nameWithType: BindablePropertyChangingEventArgs<T>.BindablePropertyChangingEventArgs(T)
-  nameWithType.vb: BindablePropertyChangingEventArgs(Of T).New(T)
-- uid: BB84.Notifications.Components.BindablePropertyChangingEventArgs`1.#ctor*
-  name: BindablePropertyChangingEventArgs
-  href: api/BB84.Notifications.Components.BindablePropertyChangingEventArgs-1.html#BB84_Notifications_Components_BindablePropertyChangingEventArgs_1__ctor_
-  commentId: Overload:BB84.Notifications.Components.BindablePropertyChangingEventArgs`1.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: BB84.Notifications.Components.BindablePropertyChangingEventArgs<T>.BindablePropertyChangingEventArgs
-  fullName.vb: BB84.Notifications.Components.BindablePropertyChangingEventArgs(Of T).New
-  nameWithType: BindablePropertyChangingEventArgs<T>.BindablePropertyChangingEventArgs
-  nameWithType.vb: BindablePropertyChangingEventArgs(Of T).New
-- uid: BB84.Notifications.Components.BindablePropertyChangingEventArgs`1.Value
-  name: Value
-  href: api/BB84.Notifications.Components.BindablePropertyChangingEventArgs-1.html#BB84_Notifications_Components_BindablePropertyChangingEventArgs_1_Value
-  commentId: P:BB84.Notifications.Components.BindablePropertyChangingEventArgs`1.Value
-  fullName: BB84.Notifications.Components.BindablePropertyChangingEventArgs<T>.Value
-  fullName.vb: BB84.Notifications.Components.BindablePropertyChangingEventArgs(Of T).Value
-  nameWithType: BindablePropertyChangingEventArgs<T>.Value
-  nameWithType.vb: BindablePropertyChangingEventArgs(Of T).Value
-- uid: BB84.Notifications.Components.BindablePropertyChangingEventArgs`1.Value*
-  name: Value
-  href: api/BB84.Notifications.Components.BindablePropertyChangingEventArgs-1.html#BB84_Notifications_Components_BindablePropertyChangingEventArgs_1_Value_
-  commentId: Overload:BB84.Notifications.Components.BindablePropertyChangingEventArgs`1.Value
-  isSpec: "True"
-  fullName: BB84.Notifications.Components.BindablePropertyChangingEventArgs<T>.Value
-  fullName.vb: BB84.Notifications.Components.BindablePropertyChangingEventArgs(Of T).Value
-  nameWithType: BindablePropertyChangingEventArgs<T>.Value
-  nameWithType.vb: BindablePropertyChangingEventArgs(Of T).Value
-- uid: BB84.Notifications.Components.BindablePropertyChangingEventHandler`1
-  name: BindablePropertyChangingEventHandler<T>
-  href: api/BB84.Notifications.Components.BindablePropertyChangingEventHandler-1.html
-  commentId: T:BB84.Notifications.Components.BindablePropertyChangingEventHandler`1
-  name.vb: BindablePropertyChangingEventHandler(Of T)
-  fullName: BB84.Notifications.Components.BindablePropertyChangingEventHandler<T>
-  fullName.vb: BB84.Notifications.Components.BindablePropertyChangingEventHandler(Of T)
-  nameWithType: BindablePropertyChangingEventHandler<T>
-  nameWithType.vb: BindablePropertyChangingEventHandler(Of T)
 - uid: BB84.Notifications.Components.CollectionChangedEventArgs
   name: CollectionChangedEventArgs
   href: api/BB84.Notifications.Components.CollectionChangedEventArgs.html
@@ -378,44 +270,6 @@ references:
   commentId: T:BB84.Notifications.Components.CollectionChangingEventHandler
   fullName: BB84.Notifications.Components.CollectionChangingEventHandler
   nameWithType: CollectionChangingEventHandler
-- uid: BB84.Notifications.Components.PropertyChangedEventArgs
-  name: PropertyChangedEventArgs
-  href: api/BB84.Notifications.Components.PropertyChangedEventArgs.html
-  commentId: T:BB84.Notifications.Components.PropertyChangedEventArgs
-  fullName: BB84.Notifications.Components.PropertyChangedEventArgs
-  nameWithType: PropertyChangedEventArgs
-- uid: BB84.Notifications.Components.PropertyChangedEventArgs.#ctor(System.String)
-  name: PropertyChangedEventArgs(string)
-  href: api/BB84.Notifications.Components.PropertyChangedEventArgs.html#BB84_Notifications_Components_PropertyChangedEventArgs__ctor_System_String_
-  commentId: M:BB84.Notifications.Components.PropertyChangedEventArgs.#ctor(System.String)
-  name.vb: New(String)
-  fullName: BB84.Notifications.Components.PropertyChangedEventArgs.PropertyChangedEventArgs(string)
-  fullName.vb: BB84.Notifications.Components.PropertyChangedEventArgs.New(String)
-  nameWithType: PropertyChangedEventArgs.PropertyChangedEventArgs(string)
-  nameWithType.vb: PropertyChangedEventArgs.New(String)
-- uid: BB84.Notifications.Components.PropertyChangedEventArgs.#ctor*
-  name: PropertyChangedEventArgs
-  href: api/BB84.Notifications.Components.PropertyChangedEventArgs.html#BB84_Notifications_Components_PropertyChangedEventArgs__ctor_
-  commentId: Overload:BB84.Notifications.Components.PropertyChangedEventArgs.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: BB84.Notifications.Components.PropertyChangedEventArgs.PropertyChangedEventArgs
-  fullName.vb: BB84.Notifications.Components.PropertyChangedEventArgs.New
-  nameWithType: PropertyChangedEventArgs.PropertyChangedEventArgs
-  nameWithType.vb: PropertyChangedEventArgs.New
-- uid: BB84.Notifications.Components.PropertyChangedEventArgs.Name
-  name: Name
-  href: api/BB84.Notifications.Components.PropertyChangedEventArgs.html#BB84_Notifications_Components_PropertyChangedEventArgs_Name
-  commentId: P:BB84.Notifications.Components.PropertyChangedEventArgs.Name
-  fullName: BB84.Notifications.Components.PropertyChangedEventArgs.Name
-  nameWithType: PropertyChangedEventArgs.Name
-- uid: BB84.Notifications.Components.PropertyChangedEventArgs.Name*
-  name: Name
-  href: api/BB84.Notifications.Components.PropertyChangedEventArgs.html#BB84_Notifications_Components_PropertyChangedEventArgs_Name_
-  commentId: Overload:BB84.Notifications.Components.PropertyChangedEventArgs.Name
-  isSpec: "True"
-  fullName: BB84.Notifications.Components.PropertyChangedEventArgs.Name
-  nameWithType: PropertyChangedEventArgs.Name
 - uid: BB84.Notifications.Components.PropertyChangedEventArgs`1
   name: PropertyChangedEventArgs<T>
   href: api/BB84.Notifications.Components.PropertyChangedEventArgs-1.html
@@ -461,50 +315,6 @@ references:
   fullName.vb: BB84.Notifications.Components.PropertyChangedEventArgs(Of T).Value
   nameWithType: PropertyChangedEventArgs<T>.Value
   nameWithType.vb: PropertyChangedEventArgs(Of T).Value
-- uid: BB84.Notifications.Components.PropertyChangedEventHandler
-  name: PropertyChangedEventHandler
-  href: api/BB84.Notifications.Components.PropertyChangedEventHandler.html
-  commentId: T:BB84.Notifications.Components.PropertyChangedEventHandler
-  fullName: BB84.Notifications.Components.PropertyChangedEventHandler
-  nameWithType: PropertyChangedEventHandler
-- uid: BB84.Notifications.Components.PropertyChangingEventArgs
-  name: PropertyChangingEventArgs
-  href: api/BB84.Notifications.Components.PropertyChangingEventArgs.html
-  commentId: T:BB84.Notifications.Components.PropertyChangingEventArgs
-  fullName: BB84.Notifications.Components.PropertyChangingEventArgs
-  nameWithType: PropertyChangingEventArgs
-- uid: BB84.Notifications.Components.PropertyChangingEventArgs.#ctor(System.String)
-  name: PropertyChangingEventArgs(string)
-  href: api/BB84.Notifications.Components.PropertyChangingEventArgs.html#BB84_Notifications_Components_PropertyChangingEventArgs__ctor_System_String_
-  commentId: M:BB84.Notifications.Components.PropertyChangingEventArgs.#ctor(System.String)
-  name.vb: New(String)
-  fullName: BB84.Notifications.Components.PropertyChangingEventArgs.PropertyChangingEventArgs(string)
-  fullName.vb: BB84.Notifications.Components.PropertyChangingEventArgs.New(String)
-  nameWithType: PropertyChangingEventArgs.PropertyChangingEventArgs(string)
-  nameWithType.vb: PropertyChangingEventArgs.New(String)
-- uid: BB84.Notifications.Components.PropertyChangingEventArgs.#ctor*
-  name: PropertyChangingEventArgs
-  href: api/BB84.Notifications.Components.PropertyChangingEventArgs.html#BB84_Notifications_Components_PropertyChangingEventArgs__ctor_
-  commentId: Overload:BB84.Notifications.Components.PropertyChangingEventArgs.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: BB84.Notifications.Components.PropertyChangingEventArgs.PropertyChangingEventArgs
-  fullName.vb: BB84.Notifications.Components.PropertyChangingEventArgs.New
-  nameWithType: PropertyChangingEventArgs.PropertyChangingEventArgs
-  nameWithType.vb: PropertyChangingEventArgs.New
-- uid: BB84.Notifications.Components.PropertyChangingEventArgs.Name
-  name: Name
-  href: api/BB84.Notifications.Components.PropertyChangingEventArgs.html#BB84_Notifications_Components_PropertyChangingEventArgs_Name
-  commentId: P:BB84.Notifications.Components.PropertyChangingEventArgs.Name
-  fullName: BB84.Notifications.Components.PropertyChangingEventArgs.Name
-  nameWithType: PropertyChangingEventArgs.Name
-- uid: BB84.Notifications.Components.PropertyChangingEventArgs.Name*
-  name: Name
-  href: api/BB84.Notifications.Components.PropertyChangingEventArgs.html#BB84_Notifications_Components_PropertyChangingEventArgs_Name_
-  commentId: Overload:BB84.Notifications.Components.PropertyChangingEventArgs.Name
-  isSpec: "True"
-  fullName: BB84.Notifications.Components.PropertyChangingEventArgs.Name
-  nameWithType: PropertyChangingEventArgs.Name
 - uid: BB84.Notifications.Components.PropertyChangingEventArgs`1
   name: PropertyChangingEventArgs<T>
   href: api/BB84.Notifications.Components.PropertyChangingEventArgs-1.html
@@ -550,12 +360,6 @@ references:
   fullName.vb: BB84.Notifications.Components.PropertyChangingEventArgs(Of T).Value
   nameWithType: PropertyChangingEventArgs<T>.Value
   nameWithType.vb: PropertyChangingEventArgs(Of T).Value
-- uid: BB84.Notifications.Components.PropertyChangingEventHandler
-  name: PropertyChangingEventHandler
-  href: api/BB84.Notifications.Components.PropertyChangingEventHandler.html
-  commentId: T:BB84.Notifications.Components.PropertyChangingEventHandler
-  fullName: BB84.Notifications.Components.PropertyChangingEventHandler
-  nameWithType: PropertyChangingEventHandler
 - uid: BB84.Notifications.Enumerators
   name: BB84.Notifications.Enumerators
   href: api/BB84.Notifications.Enumerators.html
@@ -634,30 +438,6 @@ references:
   commentId: E:BB84.Notifications.Interfaces.Components.INotifyCollectionChanging.CollectionChanging
   fullName: BB84.Notifications.Interfaces.Components.INotifyCollectionChanging.CollectionChanging
   nameWithType: INotifyCollectionChanging.CollectionChanging
-- uid: BB84.Notifications.Interfaces.Components.INotifyPropertyChanged
-  name: INotifyPropertyChanged
-  href: api/BB84.Notifications.Interfaces.Components.INotifyPropertyChanged.html
-  commentId: T:BB84.Notifications.Interfaces.Components.INotifyPropertyChanged
-  fullName: BB84.Notifications.Interfaces.Components.INotifyPropertyChanged
-  nameWithType: INotifyPropertyChanged
-- uid: BB84.Notifications.Interfaces.Components.INotifyPropertyChanged.PropertyChanged
-  name: PropertyChanged
-  href: api/BB84.Notifications.Interfaces.Components.INotifyPropertyChanged.html#BB84_Notifications_Interfaces_Components_INotifyPropertyChanged_PropertyChanged
-  commentId: E:BB84.Notifications.Interfaces.Components.INotifyPropertyChanged.PropertyChanged
-  fullName: BB84.Notifications.Interfaces.Components.INotifyPropertyChanged.PropertyChanged
-  nameWithType: INotifyPropertyChanged.PropertyChanged
-- uid: BB84.Notifications.Interfaces.Components.INotifyPropertyChanging
-  name: INotifyPropertyChanging
-  href: api/BB84.Notifications.Interfaces.Components.INotifyPropertyChanging.html
-  commentId: T:BB84.Notifications.Interfaces.Components.INotifyPropertyChanging
-  fullName: BB84.Notifications.Interfaces.Components.INotifyPropertyChanging
-  nameWithType: INotifyPropertyChanging
-- uid: BB84.Notifications.Interfaces.Components.INotifyPropertyChanging.PropertyChanging
-  name: PropertyChanging
-  href: api/BB84.Notifications.Interfaces.Components.INotifyPropertyChanging.html#BB84_Notifications_Interfaces_Components_INotifyPropertyChanging_PropertyChanging
-  commentId: E:BB84.Notifications.Interfaces.Components.INotifyPropertyChanging.PropertyChanging
-  fullName: BB84.Notifications.Interfaces.Components.INotifyPropertyChanging.PropertyChanging
-  nameWithType: INotifyPropertyChanging.PropertyChanging
 - uid: BB84.Notifications.Interfaces.IBindableProperty`1
   name: IBindableProperty<T>
   href: api/BB84.Notifications.Interfaces.IBindableProperty-1.html
@@ -667,22 +447,6 @@ references:
   fullName.vb: BB84.Notifications.Interfaces.IBindableProperty(Of T)
   nameWithType: IBindableProperty<T>
   nameWithType.vb: IBindableProperty(Of T)
-- uid: BB84.Notifications.Interfaces.IBindableProperty`1.Changed
-  name: Changed
-  href: api/BB84.Notifications.Interfaces.IBindableProperty-1.html#BB84_Notifications_Interfaces_IBindableProperty_1_Changed
-  commentId: E:BB84.Notifications.Interfaces.IBindableProperty`1.Changed
-  fullName: BB84.Notifications.Interfaces.IBindableProperty<T>.Changed
-  fullName.vb: BB84.Notifications.Interfaces.IBindableProperty(Of T).Changed
-  nameWithType: IBindableProperty<T>.Changed
-  nameWithType.vb: IBindableProperty(Of T).Changed
-- uid: BB84.Notifications.Interfaces.IBindableProperty`1.Changing
-  name: Changing
-  href: api/BB84.Notifications.Interfaces.IBindableProperty-1.html#BB84_Notifications_Interfaces_IBindableProperty_1_Changing
-  commentId: E:BB84.Notifications.Interfaces.IBindableProperty`1.Changing
-  fullName: BB84.Notifications.Interfaces.IBindableProperty<T>.Changing
-  fullName.vb: BB84.Notifications.Interfaces.IBindableProperty(Of T).Changing
-  nameWithType: IBindableProperty<T>.Changing
-  nameWithType.vb: IBindableProperty(Of T).Changing
 - uid: BB84.Notifications.Interfaces.IBindableProperty`1.Value
   name: Value
   href: api/BB84.Notifications.Interfaces.IBindableProperty-1.html#BB84_Notifications_Interfaces_IBindableProperty_1_Value
@@ -706,12 +470,6 @@ references:
   commentId: T:BB84.Notifications.Interfaces.INotifyCollectionBase
   fullName: BB84.Notifications.Interfaces.INotifyCollectionBase
   nameWithType: INotifyCollectionBase
-- uid: BB84.Notifications.Interfaces.INotifyPropertyBase
-  name: INotifyPropertyBase
-  href: api/BB84.Notifications.Interfaces.INotifyPropertyBase.html
-  commentId: T:BB84.Notifications.Interfaces.INotifyPropertyBase
-  fullName: BB84.Notifications.Interfaces.INotifyPropertyBase
-  nameWithType: INotifyPropertyBase
 - uid: BB84.Notifications.NotifyCollectionBase
   name: NotifyCollectionBase
   href: api/BB84.Notifications.NotifyCollectionBase.html
