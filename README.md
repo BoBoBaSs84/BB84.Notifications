@@ -10,11 +10,11 @@
 
 Contains relevant things for property one-way binding / two-way binding, for property change / changing notification and for collection change / changing notification.
 
-# Usage
+## Usage
 
 Depending on the application, there are several ways to skin a cat.
 
-## The bindable property class and interfaces
+### The bindable property class and interfaces
 
 Designed with one or two way binding in mind.
 
@@ -22,14 +22,14 @@ Designed with one or two way binding in mind.
 public IBindableProperty<int> BindableInt { get; set; } = new BindableProperty<int>(default);
 ```
 
-If the property is changed, the `BindablePropertyChangingEventHandler<T>` is triggered before the value changes and the `BindablePropertyChangedEventHandler<T>` is triggered after the value has changed.
+If the property is changed, the `PropertyChangingEventHandler` is triggered before the value changes and the `PropertyChangedEventHandler` is triggered after the value has changed.
 
-- The `BindablePropertyChangingEventHandler<T>` contains via the `BindablePropertyChangingEventArgs` the old value.
-- The `BindablePropertyChangedEventHandler<T>` contains via the `BindablePropertyChangedEventArgs` the new value.
+- The `PropertyChangingEventHandler` contains via the `PropertyChangingEventArgs` the name of the property that is changing and when casted to `PropertyChangingEventArgs<T>` the old value of the property.
+- The `PropertyChangedEventHandler` contains via the `PropertyChangedEventArgs` the name of the property that has changed and when casted to `PropertyChangedEventArgs<T>` the new value of the property.
 
 Further implementation possibilities can be achieved with the help of the `IBindableProperty` interface.
 
-## The notification property base class and interfaces
+### The notification property base class and interfaces
 
 Designed to handle changes at the class level and propagate them forward to the outside.
 
@@ -48,12 +48,12 @@ public sealed class TestClass : NotifyPropertyBase
 
 If the property is changed, the `PropertyChangingEventHandler` is triggered before the value changes and the `PropertyChangedEventHandler` is triggered after the value has changed.
 
-- The `PropertyChangingEventHandler` contains via the `CollectionChangingEventArgs` the name of the property that is changing and when casted to `CollectionChangingEventArgs<T>` the old value.
-- The `PropertyChangedEventHandler` contains via the `PropertyChangedEventArgs` the name of the property that has changed and when casted to `PropertyChangedEventArgs<T>` the new value.
+- The `PropertyChangingEventHandler` contains via the `PropertyChangingEventArgs` the name of the property that is changing and when casted to `PropertyChangingEventArgs<T>` the old value of the property.
+- The `PropertyChangedEventHandler` contains via the `PropertyChangedEventArgs` the name of the property that has changed and when casted to `PropertyChangedEventArgs<T>` the new value of the property.
 
-Further implementation possibilities can be achieved using the `INotifyPropertyChanged` and `INotifyPropertyChanging` interfaces.
+Further implementation possibilities can be achieved with the help of the `INotifyPropertyBase` interface.
 
-## The notification collection base class and interfaces
+### The notification collection base class and interfaces
 
 The `NotifyCollectionBase` class provides methods to handle the change within a collection and propagate it to the outside.
 
@@ -71,12 +71,12 @@ public sealed class MyStringCollection : NotifyCollectionBase, ICollection<strin
 
 Most of the implementation must be done despite the base class itself. The intention has been to be able to signal the state of a collection before (`CollectionChangingEventHandler`) or after (`CollectionChangedEventHandler`) the addition, deletion or modification of objects.
 
-- The `CollectionChangingEventHandler` contains via the `CollectionChangingEventArgs` the `CollectionChangeAction` and can contain the `object` before the change depending on the action.
-- The `CollectionChangedEventHandler` contains via the `CollectionChangedEventArgs` the `CollectionChangeAction` and can contain the `object` after the change depending on the action.
+- The `CollectionChangingEventHandler` contains via the `CollectionChangingEventArgs` the `CollectionChangeAction` and when casted to `CollectionChangingEventArgs<T>` the old value of the object.
+- The `CollectionChangedEventHandler` contains via the `CollectionChangedEventArgs` the `CollectionChangeAction` and when casted to `CollectionChangedEventArgs<T>` the new value of the object.
 
 Further implementation possibilities can be achieved with the interfaces `INotifyCollectionChanged` and `INotifyCollectionChanging`.
 
-## The notification attributes
+### The notification attributes
 
 The `NotifyChangedAttribute` and the `NotifyChangingAttribute` propagating the information also to those properties the are defined via the constructor. An example implementation could look like this:
 
@@ -104,6 +104,6 @@ private sealed class TestClass : NotifyPropertyBase
 
 If the `Quantity` property or the `Value` property is changed, a `PropertyChanged` event is also triggered for the `TotalValue` property.
 
-# Documentation
+## Documentation
 
-The API documentation can be found [here](https://bobobass84.github.io/BB84.Notifications/).
+The complete API documentation can be found [here](https://bobobass84.github.io/BB84.Notifications/).
