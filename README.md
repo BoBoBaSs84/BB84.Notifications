@@ -3,10 +3,8 @@
 [![CodeQL](https://github.com/BoBoBaSs84/BB84.Notifications/actions/workflows/codeql.yml/badge.svg?branch=main)](https://github.com/BoBoBaSs84/BB84.Notifications/actions/workflows/codeql.yml)
 [![Issues](https://img.shields.io/github/issues/BoBoBaSs84/BB84.Notifications)](https://github.com/BoBoBaSs84/BB84.Notifications/issues)
 [![Commit](https://img.shields.io/github/last-commit/BoBoBaSs84/BB84.Notifications)](https://github.com/BoBoBaSs84/BB84.Notifications/commit/main)
-[![Forks](https://img.shields.io/github/forks/BoBoBaSs84/BB84.Notifications)](https://github.com/BoBoBaSs84/BB84.Notifications/network)
-[![Size](https://img.shields.io/github/repo-size/BoBoBaSs84/BB84.Notifications)](https://github.com/BoBoBaSs84/BB84.Notifications)
-[![stars](https://img.shields.io/github/stars/BoBoBaSs84/BB84.Notifications)](https://github.com/BoBoBaSs84/BB84.Notifications/stargazers)
 [![License](https://img.shields.io/github/license/BoBoBaSs84/BB84.Notifications)](https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/LICENSE)
+[![NuGet](https://img.shields.io/nuget/v/BB84.Notifications.svg?logo=nuget&logoColor=white)](https://www.nuget.org/packages/BB84.Notifications)
 
 # BB84.Notifications
 
