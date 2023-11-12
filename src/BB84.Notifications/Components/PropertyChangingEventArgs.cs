@@ -7,28 +7,39 @@ namespace BB84.Notifications.Components;
 /// <summary>
 /// The property changing event args class.
 /// </summary>
-public sealed class PropertyChangingEventArgs : EventArgs
+public class PropertyChangingEventArgs : EventArgs
+{
+  /// <summary>
+  /// Initializes a instance of the property changing event args class.
+  /// </summary>
+  /// <param name="name">The name of the property that is changing.</param>
+  public PropertyChangingEventArgs(string name)
+    => Name = name;
+
+  /// <summary>
+  /// The name of the property that is changing.
+  /// </summary>
+  public string Name { get; }
+}
+
+/// <summary>
+/// The property changing event args class.
+/// </summary>
+/// <typeparam name="T">The type to work with.</typeparam>
+public sealed class PropertyChangingEventArgs<T> : PropertyChangingEventArgs
 {
   /// <summary>
   /// Initializes a instance of the property changing event args class.
   /// </summary>
   /// <param name="name">The name of the property that is changing.</param>
   /// <param name="value">The value of the property that is changing.</param>
-  public PropertyChangingEventArgs(string name, object? value = null)
-  {
-    Name = name;
-    Value = value;
-  }
-
-  /// <summary>
-  /// The name of the property that is changing.
-  /// </summary>
-  public string Name { get; }
+  public PropertyChangingEventArgs(string name, T value) : base(name)
+    => Value = value;
 
   /// <summary>
   /// The value of the property that is changing.
   /// </summary>
-  public object? Value { get; }
+  public T Value { get; }
 }
 
 /// <summary>

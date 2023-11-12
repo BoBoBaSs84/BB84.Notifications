@@ -50,8 +50,8 @@ public sealed class TestClass : NotifyPropertyBase
 
 If the property is changed, the `PropertyChangingEventHandler` is triggered before the value changes and the `PropertyChangedEventHandler` is triggered after the value has changed.
 
-- The `PropertyChangingEventHandler` contains via the `CollectionChangingEventArgs` the name of the property that is changing and the old value.
-- The `PropertyChangedEventHandler` contains via the `PropertyChangedEventArgs` the name of the property that has changed and the new value.
+- The `PropertyChangingEventHandler` contains via the `CollectionChangingEventArgs` the name of the property that is changing and when casted to `CollectionChangingEventArgs<T>` the old value.
+- The `PropertyChangedEventHandler` contains via the `PropertyChangedEventArgs` the name of the property that has changed and when casted to `PropertyChangedEventArgs<T>` the new value.
 
 Further implementation possibilities can be achieved using the `INotifyPropertyChanged` and `INotifyPropertyChanging` interfaces.
 
