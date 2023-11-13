@@ -134,26 +134,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/BB84.Notifications.Enumerators.CollectionChangeAction.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/BB84.Notifications.Enumerators.CollectionChangeAction.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/BB84.Notifications.Enumerators.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/BB84.Notifications.Enumerators.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/BB84.Notifications.Interfaces.Components.INotifyCollectionChanged.yml",
       "output": {
         ".html": {
