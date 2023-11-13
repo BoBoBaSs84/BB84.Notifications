@@ -1,5 +1,6 @@
-﻿using BB84.Notifications.Components;
-using BB84.Notifications.Enumerators;
+﻿using System.ComponentModel;
+
+using BB84.Notifications.Components;
 
 namespace BB84.NotificationsTests;
 

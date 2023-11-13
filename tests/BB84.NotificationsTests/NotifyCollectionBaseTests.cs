@@ -1,8 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
 
 using BB84.Notifications;
-using BB84.Notifications.Enumerators;
 
 namespace BB84.NotificationsTests;
 
@@ -30,9 +30,9 @@ public sealed partial class NotifyCollectionBaseTests
 
     public void Clear()
     {
-      RaiseCollectionChanging(CollectionChangeAction.Clear);
+      RaiseCollectionChanging(CollectionChangeAction.Refresh);
       _collection.Clear();
-      RaiseCollectionChanged(CollectionChangeAction.Clear);
+      RaiseCollectionChanged(CollectionChangeAction.Refresh);
     }
 
     public bool Contains(string item)
@@ -52,24 +52,7 @@ public sealed partial class NotifyCollectionBaseTests
       return true;
     }
 
-    public void Move(int oldIndex, int newIndex)
-    {
-      string @string = _collection[oldIndex];
-      RaiseCollectionChanging(CollectionChangeAction.Move, oldIndex);
-      _collection.RemoveAt(oldIndex);
-      _collection.Insert(newIndex, @string);
-      RaiseCollectionChanged(CollectionChangeAction.Move, newIndex);
-    }
-
     IEnumerator IEnumerable.GetEnumerator()
       => _collection.GetEnumerator();
-
-    public void Update(string oldString, string newString)
-    {
-      string @string = this.Where(x => x == oldString).Single();
-      RaiseCollectionChanging(CollectionChangeAction.Replace, oldString);
-      @string = newString;
-      RaiseCollectionChanged(CollectionChangeAction.Replace, newString);
-    }
   }
 }
