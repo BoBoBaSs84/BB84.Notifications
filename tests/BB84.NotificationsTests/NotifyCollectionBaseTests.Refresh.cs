@@ -1,11 +1,11 @@
-﻿using BB84.Notifications.Enumerators;
+﻿using System.ComponentModel;
 
 namespace BB84.NotificationsTests;
 
 public sealed partial class NotifyCollectionBaseTests
 {
   [TestMethod]
-  public void Clearing()
+  public void Refreshing()
   {
     CollectionChangeAction action = default!;
     MyCollection strings = new() { UnitTestString };
@@ -13,11 +13,11 @@ public sealed partial class NotifyCollectionBaseTests
 
     strings.Clear();
 
-    Assert.AreEqual(CollectionChangeAction.Clear, action);
+    Assert.AreEqual(CollectionChangeAction.Refresh, action);
   }
 
   [TestMethod]
-  public void Cleared()
+  public void Refreshed()
   {
     CollectionChangeAction action = default!;
     MyCollection strings = new() { UnitTestString };
@@ -25,6 +25,6 @@ public sealed partial class NotifyCollectionBaseTests
 
     strings.Clear();
 
-    Assert.AreEqual(CollectionChangeAction.Clear, action);
+    Assert.AreEqual(CollectionChangeAction.Refresh, action);
   }
 }

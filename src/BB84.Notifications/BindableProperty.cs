@@ -28,9 +28,9 @@ public sealed class BindableProperty<T> : IBindableProperty<T>
     {
       if (!EqualityComparer<T>.Default.Equals(_value, value))
       {
-        PropertyChanging?.Invoke(this, new PropertyChangingEventArgs<T>(ToString(), _value));
+        PropertyChanging?.Invoke(this, new PropertyChangingEventArgs<T>(string.Empty, _value));
         _value = value;
-        PropertyChanged?.Invoke(this, new PropertyChangedEventArgs<T>(ToString(), value));
+        PropertyChanged?.Invoke(this, new PropertyChangedEventArgs<T>(string.Empty, value));
       }
     }
   }

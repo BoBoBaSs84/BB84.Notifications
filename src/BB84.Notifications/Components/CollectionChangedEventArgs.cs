@@ -1,6 +1,6 @@
-﻿using System.Diagnostics.CodeAnalysis;
+﻿using System.ComponentModel;
+using System.Diagnostics.CodeAnalysis;
 
-using BB84.Notifications.Enumerators;
 using BB84.Notifications.Interfaces.Components;
 
 namespace BB84.Notifications.Components;
