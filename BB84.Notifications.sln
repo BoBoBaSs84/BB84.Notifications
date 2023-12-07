@@ -11,13 +11,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BB84.Notifications", "src\B
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BB84.NotificationsTests", "tests\BB84.NotificationsTests\BB84.NotificationsTests.csproj", "{81F557F4-B5C4-4E4F-A78F-60541007C7EF}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9E7470F7-144C-4EE1-9BCA-2C1B705EC0B0}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{154E1136-A1B4-4BBC-83A9-5AAA73E36EE1}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
 		.gitignore = .gitignore
 		Directory.Build.props = Directory.Build.props
 		Directory.Build.targets = Directory.Build.targets
 		dotnet-releaser.toml = dotnet-releaser.toml
+		global.json = global.json
 		LICENSE = LICENSE
 		PublicKey.snk = PublicKey.snk
 		README.md = README.md
