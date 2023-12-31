@@ -20,4 +20,26 @@ public sealed partial class BindablePropertyTests
 
     Assert.AreEqual(expected, bindableProperty.IsDefault);
   }
+
+  [DataTestMethod]
+  [DataRow(1, false)]
+  [DataRow(0, true)]
+  [DataRow(default, true)]
+  public void IsDefaultInteger(int value, bool expected)
+  {
+    IBindableProperty<int> bindableProperty = new BindableProperty<int>(value);
+
+    Assert.AreEqual(expected, bindableProperty.IsDefault);
+  }
+
+  [DataTestMethod]
+  [DataRow(1, false)]
+  [DataRow(0, false)]
+  [DataRow(default, true)]
+  public void IsDefaultNullableInteger(int? value, bool expected)
+  {
+    IBindableProperty<int?> bindableProperty = new BindableProperty<int?>(value);
+
+    Assert.AreEqual(expected, bindableProperty.IsDefault);
+  }
 }
