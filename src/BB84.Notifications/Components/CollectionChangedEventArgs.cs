@@ -8,39 +8,33 @@ namespace BB84.Notifications.Components;
 /// <summary>
 /// The collection changed event args class.
 /// </summary>
-public class CollectionChangedEventArgs : EventArgs
+/// <remarks>
+/// Initializes a instance of the collection changed event args class.
+/// </remarks>
+/// <param name="action">The action that causes the change.</param>
+public class CollectionChangedEventArgs(CollectionChangeAction action) : EventArgs
 {
-  /// <summary>
-  /// Initializes a instance of the collection changed event args class.
-  /// </summary>
-  /// <param name="action">The action that causes the change.</param>
-  public CollectionChangedEventArgs(CollectionChangeAction action)
-    => Action = action;
-
   /// <summary>
   /// The action that causes the change.
   /// </summary>
-  public CollectionChangeAction Action { get; }
+  public CollectionChangeAction Action { get; } = action;
 }
 
 /// <summary>
 /// The collection changed event args class.
 /// </summary>
 /// <typeparam name="T">The type to work with.</typeparam>
-public class CollectionChangedEventArgs<T> : CollectionChangedEventArgs
+/// <remarks>
+/// Initializes a instance of the collection changed event args class.
+/// </remarks>
+/// <param name="action">The action that causes the change.</param>
+/// <param name="item">The item that is changed.</param>
+public class CollectionChangedEventArgs<T>(CollectionChangeAction action, T item) : CollectionChangedEventArgs(action)
 {
-  /// <summary>
-  /// Initializes a instance of the collection changed event args class.
-  /// </summary>
-  /// <param name="action">The action that causes the change.</param>
-  /// <param name="item">The item that is changed.</param>
-  public CollectionChangedEventArgs(CollectionChangeAction action, T item) : base(action)
-    => Item = item;
-
   /// <summary>
   /// The item that is changed.
   /// </summary>
-  public T Item { get; }
+  public T Item { get; } = item;
 }
 
 /// <summary>
