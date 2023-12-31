@@ -117,6 +117,23 @@ references:
   fullName.vb: BB84.Notifications.BindableProperty(Of T).New
   nameWithType: BindableProperty<T>.BindableProperty
   nameWithType.vb: BindableProperty(Of T).New
+- uid: BB84.Notifications.BindableProperty`1.IsNull
+  name: IsNull
+  href: api/BB84.Notifications.BindableProperty-1.html#BB84_Notifications_BindableProperty_1_IsNull
+  commentId: P:BB84.Notifications.BindableProperty`1.IsNull
+  fullName: BB84.Notifications.BindableProperty<T>.IsNull
+  fullName.vb: BB84.Notifications.BindableProperty(Of T).IsNull
+  nameWithType: BindableProperty<T>.IsNull
+  nameWithType.vb: BindableProperty(Of T).IsNull
+- uid: BB84.Notifications.BindableProperty`1.IsNull*
+  name: IsNull
+  href: api/BB84.Notifications.BindableProperty-1.html#BB84_Notifications_BindableProperty_1_IsNull_
+  commentId: Overload:BB84.Notifications.BindableProperty`1.IsNull
+  isSpec: "True"
+  fullName: BB84.Notifications.BindableProperty<T>.IsNull
+  fullName.vb: BB84.Notifications.BindableProperty(Of T).IsNull
+  nameWithType: BindableProperty<T>.IsNull
+  nameWithType.vb: BindableProperty(Of T).IsNull
 - uid: BB84.Notifications.BindableProperty`1.PropertyChanged
   name: PropertyChanged
   href: api/BB84.Notifications.BindableProperty-1.html#BB84_Notifications_BindableProperty_1_PropertyChanged
@@ -469,6 +486,23 @@ references:
   fullName.vb: BB84.Notifications.Interfaces.IBindableProperty(Of T)
   nameWithType: IBindableProperty<T>
   nameWithType.vb: IBindableProperty(Of T)
+- uid: BB84.Notifications.Interfaces.IBindableProperty`1.IsNull
+  name: IsNull
+  href: api/BB84.Notifications.Interfaces.IBindableProperty-1.html#BB84_Notifications_Interfaces_IBindableProperty_1_IsNull
+  commentId: P:BB84.Notifications.Interfaces.IBindableProperty`1.IsNull
+  fullName: BB84.Notifications.Interfaces.IBindableProperty<T>.IsNull
+  fullName.vb: BB84.Notifications.Interfaces.IBindableProperty(Of T).IsNull
+  nameWithType: IBindableProperty<T>.IsNull
+  nameWithType.vb: IBindableProperty(Of T).IsNull
+- uid: BB84.Notifications.Interfaces.IBindableProperty`1.IsNull*
+  name: IsNull
+  href: api/BB84.Notifications.Interfaces.IBindableProperty-1.html#BB84_Notifications_Interfaces_IBindableProperty_1_IsNull_
+  commentId: Overload:BB84.Notifications.Interfaces.IBindableProperty`1.IsNull
+  isSpec: "True"
+  fullName: BB84.Notifications.Interfaces.IBindableProperty<T>.IsNull
+  fullName.vb: BB84.Notifications.Interfaces.IBindableProperty(Of T).IsNull
+  nameWithType: IBindableProperty<T>.IsNull
+  nameWithType.vb: IBindableProperty(Of T).IsNull
 - uid: BB84.Notifications.Interfaces.IBindableProperty`1.Value
   name: Value
   href: api/BB84.Notifications.Interfaces.IBindableProperty-1.html#BB84_Notifications_Interfaces_IBindableProperty_1_Value
