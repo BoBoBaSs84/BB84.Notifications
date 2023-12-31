@@ -117,6 +117,23 @@ references:
   fullName.vb: BB84.Notifications.BindableProperty(Of T).New
   nameWithType: BindableProperty<T>.BindableProperty
   nameWithType.vb: BindableProperty(Of T).New
+- uid: BB84.Notifications.BindableProperty`1.IsDefault
+  name: IsDefault
+  href: api/BB84.Notifications.BindableProperty-1.html#BB84_Notifications_BindableProperty_1_IsDefault
+  commentId: P:BB84.Notifications.BindableProperty`1.IsDefault
+  fullName: BB84.Notifications.BindableProperty<T>.IsDefault
+  fullName.vb: BB84.Notifications.BindableProperty(Of T).IsDefault
+  nameWithType: BindableProperty<T>.IsDefault
+  nameWithType.vb: BindableProperty(Of T).IsDefault
+- uid: BB84.Notifications.BindableProperty`1.IsDefault*
+  name: IsDefault
+  href: api/BB84.Notifications.BindableProperty-1.html#BB84_Notifications_BindableProperty_1_IsDefault_
+  commentId: Overload:BB84.Notifications.BindableProperty`1.IsDefault
+  isSpec: "True"
+  fullName: BB84.Notifications.BindableProperty<T>.IsDefault
+  fullName.vb: BB84.Notifications.BindableProperty(Of T).IsDefault
+  nameWithType: BindableProperty<T>.IsDefault
+  nameWithType.vb: BindableProperty(Of T).IsDefault
 - uid: BB84.Notifications.BindableProperty`1.IsNull
   name: IsNull
   href: api/BB84.Notifications.BindableProperty-1.html#BB84_Notifications_BindableProperty_1_IsNull
@@ -486,6 +503,23 @@ references:
   fullName.vb: BB84.Notifications.Interfaces.IBindableProperty(Of T)
   nameWithType: IBindableProperty<T>
   nameWithType.vb: IBindableProperty(Of T)
+- uid: BB84.Notifications.Interfaces.IBindableProperty`1.IsDefault
+  name: IsDefault
+  href: api/BB84.Notifications.Interfaces.IBindableProperty-1.html#BB84_Notifications_Interfaces_IBindableProperty_1_IsDefault
+  commentId: P:BB84.Notifications.Interfaces.IBindableProperty`1.IsDefault
+  fullName: BB84.Notifications.Interfaces.IBindableProperty<T>.IsDefault
+  fullName.vb: BB84.Notifications.Interfaces.IBindableProperty(Of T).IsDefault
+  nameWithType: IBindableProperty<T>.IsDefault
+  nameWithType.vb: IBindableProperty(Of T).IsDefault
+- uid: BB84.Notifications.Interfaces.IBindableProperty`1.IsDefault*
+  name: IsDefault
+  href: api/BB84.Notifications.Interfaces.IBindableProperty-1.html#BB84_Notifications_Interfaces_IBindableProperty_1_IsDefault_
+  commentId: Overload:BB84.Notifications.Interfaces.IBindableProperty`1.IsDefault
+  isSpec: "True"
+  fullName: BB84.Notifications.Interfaces.IBindableProperty<T>.IsDefault
+  fullName.vb: BB84.Notifications.Interfaces.IBindableProperty(Of T).IsDefault
+  nameWithType: IBindableProperty<T>.IsDefault
+  nameWithType.vb: IBindableProperty(Of T).IsDefault
 - uid: BB84.Notifications.Interfaces.IBindableProperty`1.IsNull
   name: IsNull
   href: api/BB84.Notifications.Interfaces.IBindableProperty-1.html#BB84_Notifications_Interfaces_IBindableProperty_1_IsNull
