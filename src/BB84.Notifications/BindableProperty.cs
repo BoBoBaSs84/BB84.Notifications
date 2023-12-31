@@ -20,6 +20,9 @@ public sealed class BindableProperty<T> : IBindableProperty<T>
   public BindableProperty(T value)
     => _value = value;
 
+/// <inheritdoc/>
+  public bool IsDefault => EqualityComparer<T>.Default.Equals(_value, default!);
+
   /// <inheritdoc/>
   public bool IsNull => _value is null;
 
