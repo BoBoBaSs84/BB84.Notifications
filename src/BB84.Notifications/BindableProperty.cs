@@ -21,6 +21,9 @@ public sealed class BindableProperty<T> : IBindableProperty<T>
     => _value = value;
 
   /// <inheritdoc/>
+  public bool IsNull => _value is null;
+
+  /// <inheritdoc/>
   public T Value
   {
     get => _value;
