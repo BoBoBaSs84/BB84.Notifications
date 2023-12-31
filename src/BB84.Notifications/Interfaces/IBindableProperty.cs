@@ -9,6 +9,11 @@ namespace BB84.Notifications.Interfaces;
 public interface IBindableProperty<T> : INotifyPropertyChanged, INotifyPropertyChanging
 {
   /// <summary>
+  /// Is the value of the bindable property the default value?
+  /// </summary>
+  bool IsDefault { get; }
+
+  /// <summary>
   /// Is the value of the bindable property null?
   /// </summary>
   bool IsNull { get; }
