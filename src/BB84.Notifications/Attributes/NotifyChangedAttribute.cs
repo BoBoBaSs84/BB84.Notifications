@@ -3,18 +3,15 @@
 /// <summary>
 /// The notify changed attribute class.
 /// </summary>
+/// <remarks>
+/// Initializes a instance of the notify changed attribute class.
+/// </remarks>
+/// <param name="properties">The properties to notify on change.</param>
 [AttributeUsage(AttributeTargets.Property, Inherited = false)]
-public sealed class NotifyChangedAttribute : Attribute
+public sealed class NotifyChangedAttribute(params string[] properties) : Attribute
 {
-  /// <summary>
-  /// Initializes a instance of the notify changed attribute class.
-  /// </summary>
-  /// <param name="properties">The properties to notify on change.</param>
-  public NotifyChangedAttribute(params string[] properties)
-    => Properties = properties;
-
   /// <summary>
   /// The properties to notify on change.
   /// </summary>
-  public string[] Properties { get; }
+  public string[] Properties { get; } = properties;
 }
