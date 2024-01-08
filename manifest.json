@@ -174,20 +174,20 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/BB84.Notifications.Interfaces.INotifyCollectionBase.yml",
+      "source_relative_path": "api/BB84.Notifications.Interfaces.INotificationCollection.yml",
       "output": {
         ".html": {
-          "relative_path": "api/BB84.Notifications.Interfaces.INotifyCollectionBase.html"
+          "relative_path": "api/BB84.Notifications.Interfaces.INotificationCollection.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/BB84.Notifications.Interfaces.INotifyPropertyBase.yml",
+      "source_relative_path": "api/BB84.Notifications.Interfaces.INotificationObject.yml",
       "output": {
         ".html": {
-          "relative_path": "api/BB84.Notifications.Interfaces.INotifyPropertyBase.html"
+          "relative_path": "api/BB84.Notifications.Interfaces.INotificationObject.html"
         }
       },
       "version": ""
@@ -224,20 +224,20 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/BB84.Notifications.NotifyCollectionBase.yml",
+      "source_relative_path": "api/BB84.Notifications.NotificationCollection.yml",
       "output": {
         ".html": {
-          "relative_path": "api/BB84.Notifications.NotifyCollectionBase.html"
+          "relative_path": "api/BB84.Notifications.NotificationCollection.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/BB84.Notifications.NotifyPropertyBase.yml",
+      "source_relative_path": "api/BB84.Notifications.NotificationObject.yml",
       "output": {
         ".html": {
-          "relative_path": "api/BB84.Notifications.NotifyPropertyBase.html"
+          "relative_path": "api/BB84.Notifications.NotificationObject.html"
         }
       },
       "version": ""
