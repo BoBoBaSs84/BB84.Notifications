@@ -3,9 +3,9 @@
 namespace BB84.NotificationsTests;
 
 [TestClass]
-public sealed partial class NotifyPropertyBaseTests
+public sealed partial class NotificationObjectTests
 {
-  private sealed class TestClass : NotifyPropertyBase
+  private sealed class TestClass : NotificationObject
   {
     private int _property;
 

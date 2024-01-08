@@ -9,9 +9,9 @@ using BB84.Notifications.Interfaces;
 namespace BB84.Notifications;
 
 /// <summary>
-///	The notify property base class.
+///	The notification object class.
 /// </summary>
-public abstract class NotifyPropertyBase : INotifyPropertyBase
+public abstract class NotificationObject : INotificationObject
 {
   /// <inheritdoc/>
   public event PropertyChangedEventHandler? PropertyChanged;
