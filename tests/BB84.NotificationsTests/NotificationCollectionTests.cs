@@ -7,11 +7,11 @@ using BB84.Notifications;
 namespace BB84.NotificationsTests;
 
 [TestClass]
-public sealed partial class NotifyCollectionBaseTests
+public sealed partial class NotificationCollectionTests
 {
   private const string UnitTestString = "UnitTest";
 
-  private sealed class MyCollection : NotifyCollectionBase, ICollection<string>
+  private sealed class MyCollection : NotificationCollection, ICollection<string>
   {
     private readonly Collection<string> _collection;
 
