@@ -566,6 +566,68 @@ references:
   commentId: T:BB84.Notifications.Interfaces.INotifyPropertyBase
   fullName: BB84.Notifications.Interfaces.INotifyPropertyBase
   nameWithType: INotifyPropertyBase
+- uid: BB84.Notifications.Interfaces.IRelayCommand
+  name: IRelayCommand
+  href: api/BB84.Notifications.Interfaces.IRelayCommand.html
+  commentId: T:BB84.Notifications.Interfaces.IRelayCommand
+  fullName: BB84.Notifications.Interfaces.IRelayCommand
+  nameWithType: IRelayCommand
+- uid: BB84.Notifications.Interfaces.IRelayCommand.NotifyCanExecuteChanged
+  name: NotifyCanExecuteChanged()
+  href: api/BB84.Notifications.Interfaces.IRelayCommand.html#BB84_Notifications_Interfaces_IRelayCommand_NotifyCanExecuteChanged
+  commentId: M:BB84.Notifications.Interfaces.IRelayCommand.NotifyCanExecuteChanged
+  fullName: BB84.Notifications.Interfaces.IRelayCommand.NotifyCanExecuteChanged()
+  nameWithType: IRelayCommand.NotifyCanExecuteChanged()
+- uid: BB84.Notifications.Interfaces.IRelayCommand.NotifyCanExecuteChanged*
+  name: NotifyCanExecuteChanged
+  href: api/BB84.Notifications.Interfaces.IRelayCommand.html#BB84_Notifications_Interfaces_IRelayCommand_NotifyCanExecuteChanged_
+  commentId: Overload:BB84.Notifications.Interfaces.IRelayCommand.NotifyCanExecuteChanged
+  isSpec: "True"
+  fullName: BB84.Notifications.Interfaces.IRelayCommand.NotifyCanExecuteChanged
+  nameWithType: IRelayCommand.NotifyCanExecuteChanged
+- uid: BB84.Notifications.Interfaces.IRelayCommand`1
+  name: IRelayCommand<T>
+  href: api/BB84.Notifications.Interfaces.IRelayCommand-1.html
+  commentId: T:BB84.Notifications.Interfaces.IRelayCommand`1
+  name.vb: IRelayCommand(Of T)
+  fullName: BB84.Notifications.Interfaces.IRelayCommand<T>
+  fullName.vb: BB84.Notifications.Interfaces.IRelayCommand(Of T)
+  nameWithType: IRelayCommand<T>
+  nameWithType.vb: IRelayCommand(Of T)
+- uid: BB84.Notifications.Interfaces.IRelayCommand`1.CanExecute(`0)
+  name: CanExecute(T)
+  href: api/BB84.Notifications.Interfaces.IRelayCommand-1.html#BB84_Notifications_Interfaces_IRelayCommand_1_CanExecute__0_
+  commentId: M:BB84.Notifications.Interfaces.IRelayCommand`1.CanExecute(`0)
+  fullName: BB84.Notifications.Interfaces.IRelayCommand<T>.CanExecute(T)
+  fullName.vb: BB84.Notifications.Interfaces.IRelayCommand(Of T).CanExecute(T)
+  nameWithType: IRelayCommand<T>.CanExecute(T)
+  nameWithType.vb: IRelayCommand(Of T).CanExecute(T)
+- uid: BB84.Notifications.Interfaces.IRelayCommand`1.CanExecute*
+  name: CanExecute
+  href: api/BB84.Notifications.Interfaces.IRelayCommand-1.html#BB84_Notifications_Interfaces_IRelayCommand_1_CanExecute_
+  commentId: Overload:BB84.Notifications.Interfaces.IRelayCommand`1.CanExecute
+  isSpec: "True"
+  fullName: BB84.Notifications.Interfaces.IRelayCommand<T>.CanExecute
+  fullName.vb: BB84.Notifications.Interfaces.IRelayCommand(Of T).CanExecute
+  nameWithType: IRelayCommand<T>.CanExecute
+  nameWithType.vb: IRelayCommand(Of T).CanExecute
+- uid: BB84.Notifications.Interfaces.IRelayCommand`1.Execute(`0)
+  name: Execute(T)
+  href: api/BB84.Notifications.Interfaces.IRelayCommand-1.html#BB84_Notifications_Interfaces_IRelayCommand_1_Execute__0_
+  commentId: M:BB84.Notifications.Interfaces.IRelayCommand`1.Execute(`0)
+  fullName: BB84.Notifications.Interfaces.IRelayCommand<T>.Execute(T)
+  fullName.vb: BB84.Notifications.Interfaces.IRelayCommand(Of T).Execute(T)
+  nameWithType: IRelayCommand<T>.Execute(T)
+  nameWithType.vb: IRelayCommand(Of T).Execute(T)
+- uid: BB84.Notifications.Interfaces.IRelayCommand`1.Execute*
+  name: Execute
+  href: api/BB84.Notifications.Interfaces.IRelayCommand-1.html#BB84_Notifications_Interfaces_IRelayCommand_1_Execute_
+  commentId: Overload:BB84.Notifications.Interfaces.IRelayCommand`1.Execute
+  isSpec: "True"
+  fullName: BB84.Notifications.Interfaces.IRelayCommand<T>.Execute
+  fullName.vb: BB84.Notifications.Interfaces.IRelayCommand(Of T).Execute
+  nameWithType: IRelayCommand<T>.Execute
+  nameWithType.vb: IRelayCommand(Of T).Execute
 - uid: BB84.Notifications.NotifyCollectionBase
   name: NotifyCollectionBase
   href: api/BB84.Notifications.NotifyCollectionBase.html
@@ -662,3 +724,202 @@ references:
   fullName.vb: BB84.Notifications.NotifyPropertyBase.SetProperty(Of T)(T, T, String)
   nameWithType: NotifyPropertyBase.SetProperty<T>(ref T, T, string)
   nameWithType.vb: NotifyPropertyBase.SetProperty(Of T)(T, T, String)
+- uid: BB84.Notifications.RelayCommand
+  name: RelayCommand
+  href: api/BB84.Notifications.RelayCommand.html
+  commentId: T:BB84.Notifications.RelayCommand
+  fullName: BB84.Notifications.RelayCommand
+  nameWithType: RelayCommand
+- uid: BB84.Notifications.RelayCommand.#ctor(System.Action{System.Object})
+  name: RelayCommand(Action<object?>)
+  href: api/BB84.Notifications.RelayCommand.html#BB84_Notifications_RelayCommand__ctor_System_Action_System_Object__
+  commentId: M:BB84.Notifications.RelayCommand.#ctor(System.Action{System.Object})
+  name.vb: New(Action(Of Object))
+  fullName: BB84.Notifications.RelayCommand.RelayCommand(System.Action<object?>)
+  fullName.vb: BB84.Notifications.RelayCommand.New(System.Action(Of Object))
+  nameWithType: RelayCommand.RelayCommand(Action<object?>)
+  nameWithType.vb: RelayCommand.New(Action(Of Object))
+- uid: BB84.Notifications.RelayCommand.#ctor(System.Action{System.Object},System.Predicate{System.Object})
+  name: RelayCommand(Action<object?>, Predicate<object?>?)
+  href: api/BB84.Notifications.RelayCommand.html#BB84_Notifications_RelayCommand__ctor_System_Action_System_Object__System_Predicate_System_Object__
+  commentId: M:BB84.Notifications.RelayCommand.#ctor(System.Action{System.Object},System.Predicate{System.Object})
+  name.vb: New(Action(Of Object), Predicate(Of Object))
+  fullName: BB84.Notifications.RelayCommand.RelayCommand(System.Action<object?>, System.Predicate<object?>?)
+  fullName.vb: BB84.Notifications.RelayCommand.New(System.Action(Of Object), System.Predicate(Of Object))
+  nameWithType: RelayCommand.RelayCommand(Action<object?>, Predicate<object?>?)
+  nameWithType.vb: RelayCommand.New(Action(Of Object), Predicate(Of Object))
+- uid: BB84.Notifications.RelayCommand.#ctor*
+  name: RelayCommand
+  href: api/BB84.Notifications.RelayCommand.html#BB84_Notifications_RelayCommand__ctor_
+  commentId: Overload:BB84.Notifications.RelayCommand.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: BB84.Notifications.RelayCommand.RelayCommand
+  fullName.vb: BB84.Notifications.RelayCommand.New
+  nameWithType: RelayCommand.RelayCommand
+  nameWithType.vb: RelayCommand.New
+- uid: BB84.Notifications.RelayCommand.CanExecute(System.Object)
+  name: CanExecute(object?)
+  href: api/BB84.Notifications.RelayCommand.html#BB84_Notifications_RelayCommand_CanExecute_System_Object_
+  commentId: M:BB84.Notifications.RelayCommand.CanExecute(System.Object)
+  name.vb: CanExecute(Object)
+  fullName: BB84.Notifications.RelayCommand.CanExecute(object?)
+  fullName.vb: BB84.Notifications.RelayCommand.CanExecute(Object)
+  nameWithType: RelayCommand.CanExecute(object?)
+  nameWithType.vb: RelayCommand.CanExecute(Object)
+- uid: BB84.Notifications.RelayCommand.CanExecute*
+  name: CanExecute
+  href: api/BB84.Notifications.RelayCommand.html#BB84_Notifications_RelayCommand_CanExecute_
+  commentId: Overload:BB84.Notifications.RelayCommand.CanExecute
+  isSpec: "True"
+  fullName: BB84.Notifications.RelayCommand.CanExecute
+  nameWithType: RelayCommand.CanExecute
+- uid: BB84.Notifications.RelayCommand.CanExecuteChanged
+  name: CanExecuteChanged
+  href: api/BB84.Notifications.RelayCommand.html#BB84_Notifications_RelayCommand_CanExecuteChanged
+  commentId: E:BB84.Notifications.RelayCommand.CanExecuteChanged
+  fullName: BB84.Notifications.RelayCommand.CanExecuteChanged
+  nameWithType: RelayCommand.CanExecuteChanged
+- uid: BB84.Notifications.RelayCommand.Execute(System.Object)
+  name: Execute(object?)
+  href: api/BB84.Notifications.RelayCommand.html#BB84_Notifications_RelayCommand_Execute_System_Object_
+  commentId: M:BB84.Notifications.RelayCommand.Execute(System.Object)
+  name.vb: Execute(Object)
+  fullName: BB84.Notifications.RelayCommand.Execute(object?)
+  fullName.vb: BB84.Notifications.RelayCommand.Execute(Object)
+  nameWithType: RelayCommand.Execute(object?)
+  nameWithType.vb: RelayCommand.Execute(Object)
+- uid: BB84.Notifications.RelayCommand.Execute*
+  name: Execute
+  href: api/BB84.Notifications.RelayCommand.html#BB84_Notifications_RelayCommand_Execute_
+  commentId: Overload:BB84.Notifications.RelayCommand.Execute
+  isSpec: "True"
+  fullName: BB84.Notifications.RelayCommand.Execute
+  nameWithType: RelayCommand.Execute
+- uid: BB84.Notifications.RelayCommand.NotifyCanExecuteChanged
+  name: NotifyCanExecuteChanged()
+  href: api/BB84.Notifications.RelayCommand.html#BB84_Notifications_RelayCommand_NotifyCanExecuteChanged
+  commentId: M:BB84.Notifications.RelayCommand.NotifyCanExecuteChanged
+  fullName: BB84.Notifications.RelayCommand.NotifyCanExecuteChanged()
+  nameWithType: RelayCommand.NotifyCanExecuteChanged()
+- uid: BB84.Notifications.RelayCommand.NotifyCanExecuteChanged*
+  name: NotifyCanExecuteChanged
+  href: api/BB84.Notifications.RelayCommand.html#BB84_Notifications_RelayCommand_NotifyCanExecuteChanged_
+  commentId: Overload:BB84.Notifications.RelayCommand.NotifyCanExecuteChanged
+  isSpec: "True"
+  fullName: BB84.Notifications.RelayCommand.NotifyCanExecuteChanged
+  nameWithType: RelayCommand.NotifyCanExecuteChanged
+- uid: BB84.Notifications.RelayCommand`1
+  name: RelayCommand<T>
+  href: api/BB84.Notifications.RelayCommand-1.html
+  commentId: T:BB84.Notifications.RelayCommand`1
+  name.vb: RelayCommand(Of T)
+  fullName: BB84.Notifications.RelayCommand<T>
+  fullName.vb: BB84.Notifications.RelayCommand(Of T)
+  nameWithType: RelayCommand<T>
+  nameWithType.vb: RelayCommand(Of T)
+- uid: BB84.Notifications.RelayCommand`1.#ctor(System.Action{`0})
+  name: RelayCommand(Action<T>)
+  href: api/BB84.Notifications.RelayCommand-1.html#BB84_Notifications_RelayCommand_1__ctor_System_Action__0__
+  commentId: M:BB84.Notifications.RelayCommand`1.#ctor(System.Action{`0})
+  name.vb: New(Action(Of T))
+  fullName: BB84.Notifications.RelayCommand<T>.RelayCommand(System.Action<T>)
+  fullName.vb: BB84.Notifications.RelayCommand(Of T).New(System.Action(Of T))
+  nameWithType: RelayCommand<T>.RelayCommand(Action<T>)
+  nameWithType.vb: RelayCommand(Of T).New(Action(Of T))
+- uid: BB84.Notifications.RelayCommand`1.#ctor(System.Action{`0},System.Predicate{`0})
+  name: RelayCommand(Action<T>, Predicate<T>?)
+  href: api/BB84.Notifications.RelayCommand-1.html#BB84_Notifications_RelayCommand_1__ctor_System_Action__0__System_Predicate__0__
+  commentId: M:BB84.Notifications.RelayCommand`1.#ctor(System.Action{`0},System.Predicate{`0})
+  name.vb: New(Action(Of T), Predicate(Of T))
+  fullName: BB84.Notifications.RelayCommand<T>.RelayCommand(System.Action<T>, System.Predicate<T>?)
+  fullName.vb: BB84.Notifications.RelayCommand(Of T).New(System.Action(Of T), System.Predicate(Of T))
+  nameWithType: RelayCommand<T>.RelayCommand(Action<T>, Predicate<T>?)
+  nameWithType.vb: RelayCommand(Of T).New(Action(Of T), Predicate(Of T))
+- uid: BB84.Notifications.RelayCommand`1.#ctor*
+  name: RelayCommand
+  href: api/BB84.Notifications.RelayCommand-1.html#BB84_Notifications_RelayCommand_1__ctor_
+  commentId: Overload:BB84.Notifications.RelayCommand`1.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: BB84.Notifications.RelayCommand<T>.RelayCommand
+  fullName.vb: BB84.Notifications.RelayCommand(Of T).New
+  nameWithType: RelayCommand<T>.RelayCommand
+  nameWithType.vb: RelayCommand(Of T).New
+- uid: BB84.Notifications.RelayCommand`1.CanExecute(System.Object)
+  name: CanExecute(object?)
+  href: api/BB84.Notifications.RelayCommand-1.html#BB84_Notifications_RelayCommand_1_CanExecute_System_Object_
+  commentId: M:BB84.Notifications.RelayCommand`1.CanExecute(System.Object)
+  name.vb: CanExecute(Object)
+  fullName: BB84.Notifications.RelayCommand<T>.CanExecute(object?)
+  fullName.vb: BB84.Notifications.RelayCommand(Of T).CanExecute(Object)
+  nameWithType: RelayCommand<T>.CanExecute(object?)
+  nameWithType.vb: RelayCommand(Of T).CanExecute(Object)
+- uid: BB84.Notifications.RelayCommand`1.CanExecute(`0)
+  name: CanExecute(T)
+  href: api/BB84.Notifications.RelayCommand-1.html#BB84_Notifications_RelayCommand_1_CanExecute__0_
+  commentId: M:BB84.Notifications.RelayCommand`1.CanExecute(`0)
+  fullName: BB84.Notifications.RelayCommand<T>.CanExecute(T)
+  fullName.vb: BB84.Notifications.RelayCommand(Of T).CanExecute(T)
+  nameWithType: RelayCommand<T>.CanExecute(T)
+  nameWithType.vb: RelayCommand(Of T).CanExecute(T)
+- uid: BB84.Notifications.RelayCommand`1.CanExecute*
+  name: CanExecute
+  href: api/BB84.Notifications.RelayCommand-1.html#BB84_Notifications_RelayCommand_1_CanExecute_
+  commentId: Overload:BB84.Notifications.RelayCommand`1.CanExecute
+  isSpec: "True"
+  fullName: BB84.Notifications.RelayCommand<T>.CanExecute
+  fullName.vb: BB84.Notifications.RelayCommand(Of T).CanExecute
+  nameWithType: RelayCommand<T>.CanExecute
+  nameWithType.vb: RelayCommand(Of T).CanExecute
+- uid: BB84.Notifications.RelayCommand`1.CanExecuteChanged
+  name: CanExecuteChanged
+  href: api/BB84.Notifications.RelayCommand-1.html#BB84_Notifications_RelayCommand_1_CanExecuteChanged
+  commentId: E:BB84.Notifications.RelayCommand`1.CanExecuteChanged
+  fullName: BB84.Notifications.RelayCommand<T>.CanExecuteChanged
+  fullName.vb: BB84.Notifications.RelayCommand(Of T).CanExecuteChanged
+  nameWithType: RelayCommand<T>.CanExecuteChanged
+  nameWithType.vb: RelayCommand(Of T).CanExecuteChanged
+- uid: BB84.Notifications.RelayCommand`1.Execute(System.Object)
+  name: Execute(object?)
+  href: api/BB84.Notifications.RelayCommand-1.html#BB84_Notifications_RelayCommand_1_Execute_System_Object_
+  commentId: M:BB84.Notifications.RelayCommand`1.Execute(System.Object)
+  name.vb: Execute(Object)
+  fullName: BB84.Notifications.RelayCommand<T>.Execute(object?)
+  fullName.vb: BB84.Notifications.RelayCommand(Of T).Execute(Object)
+  nameWithType: RelayCommand<T>.Execute(object?)
+  nameWithType.vb: RelayCommand(Of T).Execute(Object)
+- uid: BB84.Notifications.RelayCommand`1.Execute(`0)
+  name: Execute(T)
+  href: api/BB84.Notifications.RelayCommand-1.html#BB84_Notifications_RelayCommand_1_Execute__0_
+  commentId: M:BB84.Notifications.RelayCommand`1.Execute(`0)
+  fullName: BB84.Notifications.RelayCommand<T>.Execute(T)
+  fullName.vb: BB84.Notifications.RelayCommand(Of T).Execute(T)
+  nameWithType: RelayCommand<T>.Execute(T)
+  nameWithType.vb: RelayCommand(Of T).Execute(T)
+- uid: BB84.Notifications.RelayCommand`1.Execute*
+  name: Execute
+  href: api/BB84.Notifications.RelayCommand-1.html#BB84_Notifications_RelayCommand_1_Execute_
+  commentId: Overload:BB84.Notifications.RelayCommand`1.Execute
+  isSpec: "True"
+  fullName: BB84.Notifications.RelayCommand<T>.Execute
+  fullName.vb: BB84.Notifications.RelayCommand(Of T).Execute
+  nameWithType: RelayCommand<T>.Execute
+  nameWithType.vb: RelayCommand(Of T).Execute
+- uid: BB84.Notifications.RelayCommand`1.NotifyCanExecuteChanged
+  name: NotifyCanExecuteChanged()
+  href: api/BB84.Notifications.RelayCommand-1.html#BB84_Notifications_RelayCommand_1_NotifyCanExecuteChanged
+  commentId: M:BB84.Notifications.RelayCommand`1.NotifyCanExecuteChanged
+  fullName: BB84.Notifications.RelayCommand<T>.NotifyCanExecuteChanged()
+  fullName.vb: BB84.Notifications.RelayCommand(Of T).NotifyCanExecuteChanged()
+  nameWithType: RelayCommand<T>.NotifyCanExecuteChanged()
+  nameWithType.vb: RelayCommand(Of T).NotifyCanExecuteChanged()
+- uid: BB84.Notifications.RelayCommand`1.NotifyCanExecuteChanged*
+  name: NotifyCanExecuteChanged
+  href: api/BB84.Notifications.RelayCommand-1.html#BB84_Notifications_RelayCommand_1_NotifyCanExecuteChanged_
+  commentId: Overload:BB84.Notifications.RelayCommand`1.NotifyCanExecuteChanged
+  isSpec: "True"
+  fullName: BB84.Notifications.RelayCommand<T>.NotifyCanExecuteChanged
+  fullName.vb: BB84.Notifications.RelayCommand(Of T).NotifyCanExecuteChanged
+  nameWithType: RelayCommand<T>.NotifyCanExecuteChanged
+  nameWithType.vb: RelayCommand(Of T).NotifyCanExecuteChanged
