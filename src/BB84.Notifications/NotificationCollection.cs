@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel;
+using System.Diagnostics.CodeAnalysis;
 
 using BB84.Notifications.Components;
 using BB84.Notifications.Interfaces;
@@ -6,9 +7,10 @@ using BB84.Notifications.Interfaces;
 namespace BB84.Notifications;
 
 /// <summary>
-/// The notify collection base class.
+/// The notification collection class.
 /// </summary>
-public abstract class NotifyCollectionBase : NotifyPropertyBase, INotifyCollectionBase
+[SuppressMessage("Naming", "CA1711", Justification = "Identifier is correct here")]
+public abstract class NotificationCollection : NotificationObject, INotificationCollection
 {
   /// <inheritdoc/>
   public event CollectionChangedEventHandler? CollectionChanged;
