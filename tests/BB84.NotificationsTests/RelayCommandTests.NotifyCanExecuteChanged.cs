@@ -12,7 +12,9 @@ public sealed partial class RelayCommandTests
     test.IntCommand.CanExecuteChanged += (s, e) => intCommandChanged = true;
 
     test.Command.NotifyCanExecuteChanged();
+    test.CondCommand.NotifyCanExecuteChanged();
     test.IntCommand.NotifyCanExecuteChanged();
+    test.CondIntCommand.NotifyCanExecuteChanged();
 
     Assert.IsTrue(commandChanged);
     Assert.IsTrue(intCommandChanged);
