@@ -214,6 +214,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/BB84.Notifications.Interfaces.IValidatableObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BB84.Notifications.Interfaces.IValidatableObject.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/BB84.Notifications.Interfaces.yml",
       "output": {
         ".html": {
@@ -258,6 +268,16 @@
       "output": {
         ".html": {
           "relative_path": "api/BB84.Notifications.RelayCommand.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BB84.Notifications.ValidatableObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BB84.Notifications.ValidatableObject.html"
         }
       },
       "version": ""
