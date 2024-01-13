@@ -16,7 +16,7 @@ public sealed partial class NotificationCollectionTests
     private readonly Collection<string> _collection;
 
     public MyCollection()
-      => _collection = new Collection<string>();
+      => _collection = [];
 
     public int Count => _collection.Count;
     public bool IsReadOnly => false;

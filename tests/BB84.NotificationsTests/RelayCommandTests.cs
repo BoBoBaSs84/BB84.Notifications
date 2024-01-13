@@ -20,10 +20,10 @@ public sealed partial class RelayCommandTests
     }
 
     public IRelayCommand Command
-      => _command ??= new RelayCommand(x => CommandExecution++);
+      => _command ??= new RelayCommand(() => CommandExecution++);
 
     public IRelayCommand CondCommand
-      => _condCommand ??= new RelayCommand(x => CommandExecution++, x => false);
+      => _condCommand ??= new RelayCommand(() => CommandExecution++, () => false);
 
     public IRelayCommand<int> IntCommand
       => _intCommand ??= new RelayCommand<int>(x => IntegerCommandExecution = x);

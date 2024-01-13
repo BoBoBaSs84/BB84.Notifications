@@ -12,13 +12,13 @@ namespace BB84.Notifications;
 /// </remarks>
 /// <param name="execute">The action to execute.</param>
 /// <param name="canExecute">The condition to execute.</param>
-public sealed class RelayCommand(Action<object?> execute, Predicate<object?>? canExecute) : IRelayCommand
+public sealed class RelayCommand(Action execute, Func<bool>? canExecute) : IRelayCommand
 {
   /// <summary>
   /// Initializes a new instance of the <see cref="RelayCommand"/> class that can always execute.
   /// </summary>
   /// <param name="execute">The action to execute.</param>
-  public RelayCommand(Action<object?> execute) : this(execute, null)
+  public RelayCommand(Action execute) : this(execute, null)
   { }
 
   /// <inheritdoc/>
@@ -26,11 +26,11 @@ public sealed class RelayCommand(Action<object?> execute, Predicate<object?>? ca
 
   /// <inheritdoc/>
   public bool CanExecute(object? parameter)
-    => canExecute is null || canExecute.Invoke(parameter);
+    => canExecute is null || canExecute.Invoke();
 
   /// <inheritdoc/>
   public void Execute(object? parameter)
-    => execute.Invoke(parameter);
+    => execute.Invoke();
 
   /// <inheritdoc/>
   public void NotifyCanExecuteChanged()
@@ -48,7 +48,7 @@ public sealed class RelayCommand(Action<object?> execute, Predicate<object?>? ca
 /// <typeparam name="T">The type to wor with</typeparam>
 /// <param name="execute">The action to execute.</param>
 /// <param name="canExecute">The condition to execute.</param>
-public sealed class RelayCommand<T>(Action<T> execute, Predicate<T>? canExecute) : IRelayCommand<T>
+public sealed class RelayCommand<T>(Action<T> execute, Func<T, bool>? canExecute) : IRelayCommand<T>
 {
   /// <summary>
   /// Initializes a new instance of <see cref="RelayCommand{T}"/> class that can always execute.

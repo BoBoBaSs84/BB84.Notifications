@@ -9,7 +9,7 @@ public class NotifyChangedAttributeTests
   [TestMethod]
   public void NotifyChangedAttributeTest()
   {
-    List<string> propertiesNotified = new();
+    List<string> propertiesNotified = [];
     TestClass testClass = new(3, 40);
     testClass.PropertyChanged += (sender, e) => propertiesNotified.Add(e.PropertyName!);
 
