@@ -8,6 +8,7 @@
       <meta name="title" content="Class RelayCommand&lt;T&gt;
  ">
       
+      <meta name="description" content="The relay command class T.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -202,8 +203,8 @@ objects by invoking delegates. The default return value for the
 
   <a id="BB84_Notifications_RelayCommand_1__ctor_" data-uid="BB84.Notifications.RelayCommand`1.#ctor*"></a>
 
-  <h3 id="BB84_Notifications_RelayCommand_1__ctor_System_Action__0__System_Predicate__0__" data-uid="BB84.Notifications.RelayCommand`1.#ctor(System.Action{`0},System.Predicate{`0})">
-  RelayCommand(Action&lt;T&gt;, Predicate&lt;T&gt;?)
+  <h3 id="BB84_Notifications_RelayCommand_1__ctor_System_Action__0__System_Func__0_System_Boolean__" data-uid="BB84.Notifications.RelayCommand`1.#ctor(System.Action{`0},System.Func{`0,System.Boolean})">
+  RelayCommand(Action&lt;T&gt;, Func&lt;T, bool&gt;?)
   <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/RelayCommand.cs/#L51"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -212,7 +213,7 @@ objects by invoking delegates. The default return value for the
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public RelayCommand(Action&lt;T&gt; execute, Predicate&lt;T&gt;? canExecute)</code></pre>
+    <pre><code class="lang-csharp hljs">public RelayCommand(Action&lt;T&gt; execute, Func&lt;T, bool&gt;? canExecute)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -220,7 +221,7 @@ objects by invoking delegates. The default return value for the
     <dt><code>execute</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;T&gt;</dt>
     <dd><p>The action to execute.</p>
 </dd>
-    <dt><code>canExecute</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.predicate-1">Predicate</a>&lt;T&gt;</dt>
+    <dt><code>canExecute</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;T, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
     <dd><p>The condition to execute.</p>
 </dd>
   </dl>
@@ -232,7 +233,7 @@ objects by invoking delegates. The default return value for the
 
 
 
-  <h4 class="section" id="BB84_Notifications_RelayCommand_1__ctor_System_Action__0__System_Predicate__0___remarks">Remarks</h4>
+  <h4 class="section" id="BB84_Notifications_RelayCommand_1__ctor_System_Action__0__System_Func__0_System_Boolean___remarks">Remarks</h4>
   <div class="markdown level1 remarks"><p>A command whose sole purpose is to relay its functionality to other
 objects by invoking delegates. The default return value for the
 <a class="xref" href="BB84.Notifications.RelayCommand-1.html#BB84_Notifications_RelayCommand_1_CanExecute__0_">CanExecute(T)</a> method is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>.</p>
@@ -262,13 +263,13 @@ objects by invoking delegates. The default return value for the
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>parameter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-    <dd></dd>
+    <dd>The relay command class T.</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd>The relay command class T.</dd>
   </dl>
 
 
@@ -337,7 +338,7 @@ objects by invoking delegates. The default return value for the
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>parameter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-    <dd></dd>
+    <dd>The relay command class T.</dd>
   </dl>
 
 
@@ -436,7 +437,7 @@ objects by invoking delegates. The default return value for the
   <h4 class="section">Event Type</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler">EventHandler</a></dt>
-    <dd></dd>
+    <dd>The relay command class T.</dd>
   </dl>
 
 

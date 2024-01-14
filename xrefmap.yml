@@ -736,24 +736,24 @@ references:
   commentId: T:BB84.Notifications.RelayCommand
   fullName: BB84.Notifications.RelayCommand
   nameWithType: RelayCommand
-- uid: BB84.Notifications.RelayCommand.#ctor(System.Action{System.Object})
-  name: RelayCommand(Action<object?>)
-  href: api/BB84.Notifications.RelayCommand.html#BB84_Notifications_RelayCommand__ctor_System_Action_System_Object__
-  commentId: M:BB84.Notifications.RelayCommand.#ctor(System.Action{System.Object})
-  name.vb: New(Action(Of Object))
-  fullName: BB84.Notifications.RelayCommand.RelayCommand(System.Action<object?>)
-  fullName.vb: BB84.Notifications.RelayCommand.New(System.Action(Of Object))
-  nameWithType: RelayCommand.RelayCommand(Action<object?>)
-  nameWithType.vb: RelayCommand.New(Action(Of Object))
-- uid: BB84.Notifications.RelayCommand.#ctor(System.Action{System.Object},System.Predicate{System.Object})
-  name: RelayCommand(Action<object?>, Predicate<object?>?)
-  href: api/BB84.Notifications.RelayCommand.html#BB84_Notifications_RelayCommand__ctor_System_Action_System_Object__System_Predicate_System_Object__
-  commentId: M:BB84.Notifications.RelayCommand.#ctor(System.Action{System.Object},System.Predicate{System.Object})
-  name.vb: New(Action(Of Object), Predicate(Of Object))
-  fullName: BB84.Notifications.RelayCommand.RelayCommand(System.Action<object?>, System.Predicate<object?>?)
-  fullName.vb: BB84.Notifications.RelayCommand.New(System.Action(Of Object), System.Predicate(Of Object))
-  nameWithType: RelayCommand.RelayCommand(Action<object?>, Predicate<object?>?)
-  nameWithType.vb: RelayCommand.New(Action(Of Object), Predicate(Of Object))
+- uid: BB84.Notifications.RelayCommand.#ctor(System.Action)
+  name: RelayCommand(Action)
+  href: api/BB84.Notifications.RelayCommand.html#BB84_Notifications_RelayCommand__ctor_System_Action_
+  commentId: M:BB84.Notifications.RelayCommand.#ctor(System.Action)
+  name.vb: New(Action)
+  fullName: BB84.Notifications.RelayCommand.RelayCommand(System.Action)
+  fullName.vb: BB84.Notifications.RelayCommand.New(System.Action)
+  nameWithType: RelayCommand.RelayCommand(Action)
+  nameWithType.vb: RelayCommand.New(Action)
+- uid: BB84.Notifications.RelayCommand.#ctor(System.Action,System.Func{System.Boolean})
+  name: RelayCommand(Action, Func<bool>?)
+  href: api/BB84.Notifications.RelayCommand.html#BB84_Notifications_RelayCommand__ctor_System_Action_System_Func_System_Boolean__
+  commentId: M:BB84.Notifications.RelayCommand.#ctor(System.Action,System.Func{System.Boolean})
+  name.vb: New(Action, Func(Of Boolean))
+  fullName: BB84.Notifications.RelayCommand.RelayCommand(System.Action, System.Func<bool>?)
+  fullName.vb: BB84.Notifications.RelayCommand.New(System.Action, System.Func(Of Boolean))
+  nameWithType: RelayCommand.RelayCommand(Action, Func<bool>?)
+  nameWithType.vb: RelayCommand.New(Action, Func(Of Boolean))
 - uid: BB84.Notifications.RelayCommand.#ctor*
   name: RelayCommand
   href: api/BB84.Notifications.RelayCommand.html#BB84_Notifications_RelayCommand__ctor_
@@ -833,15 +833,15 @@ references:
   fullName.vb: BB84.Notifications.RelayCommand(Of T).New(System.Action(Of T))
   nameWithType: RelayCommand<T>.RelayCommand(Action<T>)
   nameWithType.vb: RelayCommand(Of T).New(Action(Of T))
-- uid: BB84.Notifications.RelayCommand`1.#ctor(System.Action{`0},System.Predicate{`0})
-  name: RelayCommand(Action<T>, Predicate<T>?)
-  href: api/BB84.Notifications.RelayCommand-1.html#BB84_Notifications_RelayCommand_1__ctor_System_Action__0__System_Predicate__0__
-  commentId: M:BB84.Notifications.RelayCommand`1.#ctor(System.Action{`0},System.Predicate{`0})
-  name.vb: New(Action(Of T), Predicate(Of T))
-  fullName: BB84.Notifications.RelayCommand<T>.RelayCommand(System.Action<T>, System.Predicate<T>?)
-  fullName.vb: BB84.Notifications.RelayCommand(Of T).New(System.Action(Of T), System.Predicate(Of T))
-  nameWithType: RelayCommand<T>.RelayCommand(Action<T>, Predicate<T>?)
-  nameWithType.vb: RelayCommand(Of T).New(Action(Of T), Predicate(Of T))
+- uid: BB84.Notifications.RelayCommand`1.#ctor(System.Action{`0},System.Func{`0,System.Boolean})
+  name: RelayCommand(Action<T>, Func<T, bool>?)
+  href: api/BB84.Notifications.RelayCommand-1.html#BB84_Notifications_RelayCommand_1__ctor_System_Action__0__System_Func__0_System_Boolean__
+  commentId: M:BB84.Notifications.RelayCommand`1.#ctor(System.Action{`0},System.Func{`0,System.Boolean})
+  name.vb: New(Action(Of T), Func(Of T, Boolean))
+  fullName: BB84.Notifications.RelayCommand<T>.RelayCommand(System.Action<T>, System.Func<T, bool>?)
+  fullName.vb: BB84.Notifications.RelayCommand(Of T).New(System.Action(Of T), System.Func(Of T, Boolean))
+  nameWithType: RelayCommand<T>.RelayCommand(Action<T>, Func<T, bool>?)
+  nameWithType.vb: RelayCommand(Of T).New(Action(Of T), Func(Of T, Boolean))
 - uid: BB84.Notifications.RelayCommand`1.#ctor*
   name: RelayCommand
   href: api/BB84.Notifications.RelayCommand-1.html#BB84_Notifications_RelayCommand_1__ctor_
