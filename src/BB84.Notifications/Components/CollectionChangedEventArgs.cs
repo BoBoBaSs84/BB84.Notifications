@@ -29,7 +29,7 @@ public class CollectionChangedEventArgs(CollectionChangeAction action) : EventAr
 /// </remarks>
 /// <param name="action">The action that causes the change.</param>
 /// <param name="item">The item that is changed.</param>
-public class CollectionChangedEventArgs<T>(CollectionChangeAction action, T item) : CollectionChangedEventArgs(action)
+public sealed class CollectionChangedEventArgs<T>(CollectionChangeAction action, T item) : CollectionChangedEventArgs(action)
 {
   /// <summary>
   /// The item that is changed.

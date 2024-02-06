@@ -4,7 +4,7 @@
 /// The notify changing attribute class.
 /// </summary>
 /// <remarks>
-/// Initializes a instance of the notify changing attribute class.
+/// Notifies the specified properties about the imminent change to the decorated property.
 /// </remarks>
 /// <param name="properties">The properties to notify on change.</param>
 [AttributeUsage(AttributeTargets.Property, Inherited = false)]

@@ -18,12 +18,24 @@ public abstract class ValidatableObject : NotificationObject, Interfaces.IValida
   /// <inheritdoc/>
   public event EventHandler<DataErrorsChangedEventArgs>? ErrorsChanged;
 
+#if NET5_0_OR_GREATER
+  /// <inheritdoc/>
+  public IEnumerable GetErrors(string? propertyName)
+  {
+    if (propertyName is null)
+      return _errors;
+
+    List<string?>? values = [];
+    return _errors.TryGetValue(propertyName, out values) ? values : Array.Empty<string?>();
+  }
+#else
   /// <inheritdoc/>
   public IEnumerable GetErrors(string propertyName)
   {
     List<string?> values = [];
     return _errors.TryGetValue(propertyName, out values) ? values : Array.Empty<string?>();
   }
+#endif
 
   /// <summary>
   /// Sets a new value for a property, notifies about the change and validates the value.
@@ -40,13 +52,13 @@ public abstract class ValidatableObject : NotificationObject, Interfaces.IValida
       Vaildate(newValue, propertyName);
     }
   }
-  
+
   /// <summary>
   /// The method will add an error message for the property.
   /// </summary>
   /// <param name="propertyName">The name of the property.</param>
   /// <param name="errorMessage">The error message for the property.</param>
-  protected void AddError(string propertyName, string? errorMessage)
+  private void AddError(string propertyName, string? errorMessage)
   {
     if (_errors.ContainsKey(propertyName).Equals(false))
       _errors.Add(propertyName, []);
@@ -61,7 +73,7 @@ public abstract class ValidatableObject : NotificationObject, Interfaces.IValida
   /// The method will clear all errors for the property.
   /// </summary>
   /// <param name="propertyName">The name of the property.</param>
-  protected void ClearErrors(string propertyName)
+  private void ClearErrors(string propertyName)
   {
     if (_errors.Remove(propertyName))
       RaiseErrorsChanged();
@@ -71,7 +83,7 @@ public abstract class ValidatableObject : NotificationObject, Interfaces.IValida
   /// The method will raise the <see cref="ErrorsChanged"/> event.
   /// </summary>
   /// <param name="propertyName">The name of the calling property.</param>
-  protected void RaiseErrorsChanged([CallerMemberName] string propertyName = "")
+  private void RaiseErrorsChanged([CallerMemberName] string propertyName = "")
     => ErrorsChanged?.Invoke(this, new(propertyName));
 
   /// <summary>
@@ -80,7 +92,7 @@ public abstract class ValidatableObject : NotificationObject, Interfaces.IValida
   /// <typeparam name="T">The type to work with.</typeparam>
   /// <param name="value">The value of the proprty.</param>
   /// <param name="propertyName">The name of the property.</param>
-  protected void Vaildate<T>(T value, string propertyName)
+  private void Vaildate<T>(T value, string propertyName)
   {
     ValidationContext context = new(this) { MemberName = propertyName };
     List<ValidationResult> results = [];
