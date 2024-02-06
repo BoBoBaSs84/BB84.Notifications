@@ -935,38 +935,6 @@ references:
   commentId: T:BB84.Notifications.ValidatableObject
   fullName: BB84.Notifications.ValidatableObject
   nameWithType: ValidatableObject
-- uid: BB84.Notifications.ValidatableObject.AddError(System.String,System.String)
-  name: AddError(string, string?)
-  href: api/BB84.Notifications.ValidatableObject.html#BB84_Notifications_ValidatableObject_AddError_System_String_System_String_
-  commentId: M:BB84.Notifications.ValidatableObject.AddError(System.String,System.String)
-  name.vb: AddError(String, String)
-  fullName: BB84.Notifications.ValidatableObject.AddError(string, string?)
-  fullName.vb: BB84.Notifications.ValidatableObject.AddError(String, String)
-  nameWithType: ValidatableObject.AddError(string, string?)
-  nameWithType.vb: ValidatableObject.AddError(String, String)
-- uid: BB84.Notifications.ValidatableObject.AddError*
-  name: AddError
-  href: api/BB84.Notifications.ValidatableObject.html#BB84_Notifications_ValidatableObject_AddError_
-  commentId: Overload:BB84.Notifications.ValidatableObject.AddError
-  isSpec: "True"
-  fullName: BB84.Notifications.ValidatableObject.AddError
-  nameWithType: ValidatableObject.AddError
-- uid: BB84.Notifications.ValidatableObject.ClearErrors(System.String)
-  name: ClearErrors(string)
-  href: api/BB84.Notifications.ValidatableObject.html#BB84_Notifications_ValidatableObject_ClearErrors_System_String_
-  commentId: M:BB84.Notifications.ValidatableObject.ClearErrors(System.String)
-  name.vb: ClearErrors(String)
-  fullName: BB84.Notifications.ValidatableObject.ClearErrors(string)
-  fullName.vb: BB84.Notifications.ValidatableObject.ClearErrors(String)
-  nameWithType: ValidatableObject.ClearErrors(string)
-  nameWithType.vb: ValidatableObject.ClearErrors(String)
-- uid: BB84.Notifications.ValidatableObject.ClearErrors*
-  name: ClearErrors
-  href: api/BB84.Notifications.ValidatableObject.html#BB84_Notifications_ValidatableObject_ClearErrors_
-  commentId: Overload:BB84.Notifications.ValidatableObject.ClearErrors
-  isSpec: "True"
-  fullName: BB84.Notifications.ValidatableObject.ClearErrors
-  nameWithType: ValidatableObject.ClearErrors
 - uid: BB84.Notifications.ValidatableObject.ErrorsChanged
   name: ErrorsChanged
   href: api/BB84.Notifications.ValidatableObject.html#BB84_Notifications_ValidatableObject_ErrorsChanged
@@ -1002,22 +970,6 @@ references:
   isSpec: "True"
   fullName: BB84.Notifications.ValidatableObject.HasErrors
   nameWithType: ValidatableObject.HasErrors
-- uid: BB84.Notifications.ValidatableObject.RaiseErrorsChanged(System.String)
-  name: RaiseErrorsChanged(string)
-  href: api/BB84.Notifications.ValidatableObject.html#BB84_Notifications_ValidatableObject_RaiseErrorsChanged_System_String_
-  commentId: M:BB84.Notifications.ValidatableObject.RaiseErrorsChanged(System.String)
-  name.vb: RaiseErrorsChanged(String)
-  fullName: BB84.Notifications.ValidatableObject.RaiseErrorsChanged(string)
-  fullName.vb: BB84.Notifications.ValidatableObject.RaiseErrorsChanged(String)
-  nameWithType: ValidatableObject.RaiseErrorsChanged(string)
-  nameWithType.vb: ValidatableObject.RaiseErrorsChanged(String)
-- uid: BB84.Notifications.ValidatableObject.RaiseErrorsChanged*
-  name: RaiseErrorsChanged
-  href: api/BB84.Notifications.ValidatableObject.html#BB84_Notifications_ValidatableObject_RaiseErrorsChanged_
-  commentId: Overload:BB84.Notifications.ValidatableObject.RaiseErrorsChanged
-  isSpec: "True"
-  fullName: BB84.Notifications.ValidatableObject.RaiseErrorsChanged
-  nameWithType: ValidatableObject.RaiseErrorsChanged
 - uid: BB84.Notifications.ValidatableObject.SetPropertyAndValidate*
   name: SetPropertyAndValidate
   href: api/BB84.Notifications.ValidatableObject.html#BB84_Notifications_ValidatableObject_SetPropertyAndValidate_
@@ -1034,19 +986,3 @@ references:
   fullName.vb: BB84.Notifications.ValidatableObject.SetPropertyAndValidate(Of T)(T, T, String)
   nameWithType: ValidatableObject.SetPropertyAndValidate<T>(ref T, T, string)
   nameWithType.vb: ValidatableObject.SetPropertyAndValidate(Of T)(T, T, String)
-- uid: BB84.Notifications.ValidatableObject.Vaildate*
-  name: Vaildate
-  href: api/BB84.Notifications.ValidatableObject.html#BB84_Notifications_ValidatableObject_Vaildate_
-  commentId: Overload:BB84.Notifications.ValidatableObject.Vaildate
-  isSpec: "True"
-  fullName: BB84.Notifications.ValidatableObject.Vaildate
-  nameWithType: ValidatableObject.Vaildate
-- uid: BB84.Notifications.ValidatableObject.Vaildate``1(``0,System.String)
-  name: Vaildate<T>(T, string)
-  href: api/BB84.Notifications.ValidatableObject.html#BB84_Notifications_ValidatableObject_Vaildate__1___0_System_String_
-  commentId: M:BB84.Notifications.ValidatableObject.Vaildate``1(``0,System.String)
-  name.vb: Vaildate(Of T)(T, String)
-  fullName: BB84.Notifications.ValidatableObject.Vaildate<T>(T, string)
-  fullName.vb: BB84.Notifications.ValidatableObject.Vaildate(Of T)(T, String)
-  nameWithType: ValidatableObject.Vaildate<T>(T, string)
-  nameWithType.vb: ValidatableObject.Vaildate(Of T)(T, String)
