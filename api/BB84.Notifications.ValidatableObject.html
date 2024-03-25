@@ -98,7 +98,7 @@ Class ValidatableObject  <a class="header-action link-secondary" title="View sou
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class ValidatableObject : NotificationObject, INotificationObject, IValidatableObject, INotifyPropertyChanged, INotifyPropertyChanging, INotifyDataErrorInfo</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class ValidatableObject : NotifiableObject, INotifiableObject, IValidatableObject, INotifyPropertyChanged, INotifyPropertyChanging, INotifyDataErrorInfo</code></pre>
   </div>
 
 
@@ -108,7 +108,7 @@ Class ValidatableObject  <a class="header-action link-secondary" title="View sou
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><a class="xref" href="BB84.Notifications.NotificationObject.html">NotificationObject</a></div>
+      <div><a class="xref" href="BB84.Notifications.NotifiableObject.html">NotifiableObject</a></div>
       <div><span class="xref">ValidatableObject</span></div>
     </dd>
   </dl>
@@ -116,7 +116,7 @@ Class ValidatableObject  <a class="header-action link-secondary" title="View sou
   <dl class="typelist implements">
     <dt>Implements</dt>
     <dd>
-      <div><a class="xref" href="BB84.Notifications.Interfaces.INotificationObject.html">INotificationObject</a></div>
+      <div><a class="xref" href="BB84.Notifications.Interfaces.INotifiableObject.html">INotifiableObject</a></div>
       <div><a class="xref" href="BB84.Notifications.Interfaces.IValidatableObject.html">IValidatableObject</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged">INotifyPropertyChanged</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanging">INotifyPropertyChanging</a></div>
@@ -129,13 +129,13 @@ Class ValidatableObject  <a class="header-action link-secondary" title="View sou
     <dt>Inherited Members</dt>
     <dd>
     <div>
-      <a class="xref" href="BB84.Notifications.NotificationObject.html#BB84_Notifications_NotificationObject_PropertyChanged">NotificationObject.PropertyChanged</a>
+      <a class="xref" href="BB84.Notifications.NotifiableObject.html#BB84_Notifications_NotifiableObject_PropertyChanged">NotifiableObject.PropertyChanged</a>
     </div>
     <div>
-      <a class="xref" href="BB84.Notifications.NotificationObject.html#BB84_Notifications_NotificationObject_PropertyChanging">NotificationObject.PropertyChanging</a>
+      <a class="xref" href="BB84.Notifications.NotifiableObject.html#BB84_Notifications_NotifiableObject_PropertyChanging">NotifiableObject.PropertyChanging</a>
     </div>
     <div>
-      <a class="xref" href="BB84.Notifications.NotificationObject.html#BB84_Notifications_NotificationObject_SetProperty__1___0____0_System_String_">NotificationObject.SetProperty&lt;T&gt;(ref T, T, string)</a>
+      <a class="xref" href="BB84.Notifications.NotifiableObject.html#BB84_Notifications_NotifiableObject_SetProperty__1___0____0_System_String_">NotifiableObject.SetProperty&lt;T&gt;(ref T, T, string)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
@@ -208,7 +208,7 @@ Class ValidatableObject  <a class="header-action link-secondary" title="View sou
 
   <h3 id="BB84_Notifications_ValidatableObject_GetErrors_System_String_" data-uid="BB84.Notifications.ValidatableObject.GetErrors(System.String)">
   GetErrors(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/ValidatableObject.cs/#L33"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/ValidatableObject.cs/#L29"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -244,7 +244,7 @@ Class ValidatableObject  <a class="header-action link-secondary" title="View sou
 
   <h3 id="BB84_Notifications_ValidatableObject_SetPropertyAndValidate__1___0____0_System_String_" data-uid="BB84.Notifications.ValidatableObject.SetPropertyAndValidate``1(``0@,``0,System.String)">
   SetPropertyAndValidate&lt;T&gt;(ref T, T, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/ValidatableObject.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/ValidatableObject.cs/#L40"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Sets a new value for a property, notifies about the change and validates the value.</p>
