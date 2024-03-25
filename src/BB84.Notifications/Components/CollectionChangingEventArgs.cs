@@ -6,11 +6,8 @@ using BB84.Notifications.Interfaces.Components;
 namespace BB84.Notifications.Components;
 
 /// <summary>
-/// The collection changing event args class.
+/// Provides data for the <see cref="INotifyCollectionChanging"/> event.
 /// </summary>
-/// <remarks>
-/// Initializes a instance of the collection changing event args class.
-/// </remarks>
 /// <param name="action">The action that causes the change.</param>
 public class CollectionChangingEventArgs(CollectionChangeAction action) : EventArgs
 {
@@ -21,12 +18,9 @@ public class CollectionChangingEventArgs(CollectionChangeAction action) : EventA
 }
 
 /// <summary>
-/// The collection changing event args class.
+/// Provides data for the <see cref="INotifyCollectionChanging"/> event.
 /// </summary>
 /// <typeparam name="T">The type to work with.</typeparam>
-/// <remarks>
-/// Initializes a instance of the collection changing event args class.
-/// </remarks>
 /// <param name="action">The action that causes the change.</param>
 /// <param name="item">The item that is changing.</param>
 public sealed class CollectionChangingEventArgs<T>(CollectionChangeAction action, T item) : CollectionChangingEventArgs(action)

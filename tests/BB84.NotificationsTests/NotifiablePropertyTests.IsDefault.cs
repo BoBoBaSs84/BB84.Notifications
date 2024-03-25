@@ -3,7 +3,7 @@ using BB84.Notifications.Interfaces;
 
 namespace BB84.NotificationsTests;
 
-public sealed partial class BindablePropertyTests
+public sealed partial class NotifiablePropertyTests
 {
   [DataTestMethod]
   [DataRow(456, false)]
@@ -16,7 +16,7 @@ public sealed partial class BindablePropertyTests
   [DataRow(default, true)]
   public void IsDefault(object value, bool expected)
   {
-    IBindableProperty<object> bindableProperty = new BindableProperty<object>(value);
+    INotifiableProperty<object> bindableProperty = new NotifiableProperty<object>(value);
 
     Assert.AreEqual(expected, bindableProperty.IsDefault);
   }
@@ -27,7 +27,7 @@ public sealed partial class BindablePropertyTests
   [DataRow(default, true)]
   public void IsDefaultInteger(int value, bool expected)
   {
-    IBindableProperty<int> bindableProperty = new BindableProperty<int>(value);
+    INotifiableProperty<int> bindableProperty = new NotifiableProperty<int>(value);
 
     Assert.AreEqual(expected, bindableProperty.IsDefault);
   }
@@ -38,7 +38,7 @@ public sealed partial class BindablePropertyTests
   [DataRow(default, true)]
   public void IsDefaultNullableInteger(int? value, bool expected)
   {
-    IBindableProperty<int?> bindableProperty = new BindableProperty<int?>(value);
+    INotifiableProperty<int?> bindableProperty = new NotifiableProperty<int?>(value);
 
     Assert.AreEqual(expected, bindableProperty.IsDefault);
   }

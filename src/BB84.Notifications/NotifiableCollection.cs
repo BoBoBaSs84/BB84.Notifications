@@ -7,10 +7,10 @@ using BB84.Notifications.Interfaces;
 namespace BB84.Notifications;
 
 /// <summary>
-/// The notification collection class.
+/// The notifiable collection class.
 /// </summary>
 [SuppressMessage("Naming", "CA1711", Justification = "Identifier is correct here")]
-public abstract class NotificationCollection : NotificationObject, INotificationCollection
+public abstract class NotifiableCollection : NotifiableObject, INotifiableCollection
 {
   /// <inheritdoc/>
   public event CollectionChangedEventHandler? CollectionChanged;

@@ -3,23 +3,23 @@
 namespace BB84.Notifications.Interfaces;
 
 /// <summary>
-/// The bindable property interface.
+/// The notifiable property interface.
 /// </summary>
 /// <typeparam name="T">The value type to work with.</typeparam>
-public interface IBindableProperty<T> : INotifyPropertyChanged, INotifyPropertyChanging
+public interface INotifiableProperty<T> : INotifyPropertyChanged, INotifyPropertyChanging
 {
   /// <summary>
-  /// Is the value of the bindable property the default value?
+  /// Is the value of the notifiable property the default value?
   /// </summary>
   bool IsDefault { get; }
 
   /// <summary>
-  /// Is the value of the bindable property null?
+  /// Is the value of the notifiable property null?
   /// </summary>
   bool IsNull { get; }
 
   /// <summary>
-  /// The actual value of the bindable property.
+  /// The actual value of the notifiable property.
   /// </summary>
   T Value { get; set; }
 }

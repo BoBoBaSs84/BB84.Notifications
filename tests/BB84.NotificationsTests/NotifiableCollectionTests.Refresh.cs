@@ -2,7 +2,7 @@
 
 namespace BB84.NotificationsTests;
 
-public sealed partial class NotificationCollectionTests
+public sealed partial class NotifiableCollectionTests
 {
   [TestMethod]
   public void Refreshing()
