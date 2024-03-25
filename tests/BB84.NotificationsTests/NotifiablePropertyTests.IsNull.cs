@@ -3,7 +3,7 @@ using BB84.Notifications.Interfaces;
 
 namespace BB84.NotificationsTests;
 
-public sealed partial class BindablePropertyTests
+public sealed partial class NotifiablePropertyTests
 {
   [DataTestMethod]
   [DataRow(456, false)]
@@ -16,7 +16,7 @@ public sealed partial class BindablePropertyTests
   [DataRow(null, true)]
   public void IsNull(object? value, bool expected)
   {
-    IBindableProperty<object?> bindableProperty = new BindableProperty<object?>(value);
+    INotifiableProperty<object?> bindableProperty = new NotifiableProperty<object?>(value);
 
     Assert.AreEqual(expected, bindableProperty.IsNull);
   }

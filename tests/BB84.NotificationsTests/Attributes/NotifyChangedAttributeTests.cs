@@ -20,7 +20,7 @@ public class NotifyChangedAttributeTests
     Assert.AreEqual(nameof(TestClass.TotalValue), propertiesNotified.Last());
   }
 
-  private sealed class TestClass : NotificationObject
+  private sealed class TestClass : NotifiableObject
   {
     private int _quantity;
     private int _value;

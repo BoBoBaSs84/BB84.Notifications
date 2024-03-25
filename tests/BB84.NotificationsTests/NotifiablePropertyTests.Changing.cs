@@ -2,7 +2,7 @@
 
 namespace BB84.NotificationsTests;
 
-public sealed partial class BindablePropertyTests
+public sealed partial class NotifiablePropertyTests
 {
   [TestMethod]
   public void Changing()

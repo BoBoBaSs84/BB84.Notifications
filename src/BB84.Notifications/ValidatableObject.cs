@@ -8,7 +8,7 @@ namespace BB84.Notifications;
 /// <summary>
 /// The validatable object class.
 /// </summary>
-public abstract class ValidatableObject : NotificationObject, Interfaces.IValidatableObject
+public abstract class ValidatableObject : NotifiableObject, Interfaces.IValidatableObject
 {
   private readonly Dictionary<string, List<string?>> _errors = [];
 
@@ -21,20 +21,13 @@ public abstract class ValidatableObject : NotificationObject, Interfaces.IValida
 #if NET5_0_OR_GREATER
   /// <inheritdoc/>
   public IEnumerable GetErrors(string? propertyName)
-  {
-    if (propertyName is null)
-      return _errors;
-
-    List<string?>? values = [];
-    return _errors.TryGetValue(propertyName, out values) ? values : Array.Empty<string?>();
-  }
+    => propertyName is null
+    ? _errors
+    : _errors.TryGetValue(propertyName, out List<string?>? values) ? values : Array.Empty<string?>();
 #else
   /// <inheritdoc/>
   public IEnumerable GetErrors(string propertyName)
-  {
-    List<string?> values = [];
-    return _errors.TryGetValue(propertyName, out values) ? values : Array.Empty<string?>();
-  }
+    => _errors.TryGetValue(propertyName, out List<string?> values) ? values : Array.Empty<string?>();
 #endif
 
   /// <summary>
