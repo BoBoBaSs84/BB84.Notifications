@@ -3,12 +3,12 @@
 namespace BB84.Notifications.Interfaces.Components;
 
 /// <summary>
-/// The notify collection changing interface.
+/// Notifies clients that a collection is changing.
 /// </summary>
 public interface INotifyCollectionChanging
 {
   /// <summary>
-  /// Occurs when the collection is changing.
+  /// Occurs when a collection is changing.
   /// </summary>
   event CollectionChangingEventHandler? CollectionChanging;
 }
