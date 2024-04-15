@@ -8,22 +8,33 @@ namespace BB84.Notifications.Interfaces;
 public interface IRelayCommand : ICommand
 {
   /// <summary>
-  /// Notifies that the <see cref="ICommand.CanExecute(object?)"/> property has changed.
+  /// Defines the method that determines whether the command can execute in its current state.
   /// </summary>
-  void NotifyCanExecuteChanged();
+  /// <returns>True if this command can be executed, otherwise false.</returns>
+  bool CanExecute();
+
+  /// <summary>
+  /// Defines the method to be called when the command is invoked.
+  /// </summary>
+  void Execute();
+
+  /// <summary>
+  /// Notifies that the <see cref="ICommand.CanExecuteChanged"/> property has changed.
+  /// </summary>
+  void RaiseCanExecuteChanged();
 }
 
 /// <summary>
 /// The relay command interface.
 /// </summary>
 /// <typeparam name="T">The type to work with.</typeparam>
-public interface IRelayCommand<T> : IRelayCommand
+public interface IRelayCommand<T> : ICommand
 {
   /// <summary>
   /// Defines the method that determines whether the command can execute in its current state.
   /// </summary>
   /// <param name="parameter">The data used by the command.</param>
-  /// <returns>true if this command can be executed; otherwise, false.</returns>
+  /// <returns>True if this command can be executed, otherwise false.</returns>
   bool CanExecute(T parameter);
 
   /// <summary>
@@ -31,4 +42,9 @@ public interface IRelayCommand<T> : IRelayCommand
   /// </summary>
   /// <param name="parameter">The data used by the command.</param>
   void Execute(T parameter);
+
+  /// <summary>
+  /// Notifies that the <see cref="ICommand.CanExecuteChanged"/> property has changed.
+  /// </summary>
+  void RaiseCanExecuteChanged();
 }

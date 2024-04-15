@@ -5,11 +5,6 @@ namespace BB84.Notifications;
 /// <summary>
 /// The relay command class.
 /// </summary>
-/// <remarks>
-/// A command whose sole purpose is to relay its functionality to other
-/// objects by invoking delegates. The default return value for the
-/// <see cref="CanExecute(object?)"/> method is <see langword="true"/>.
-/// </remarks>
 /// <param name="execute">The action to execute.</param>
 /// <param name="canExecute">The condition to execute.</param>
 public sealed class RelayCommand(Action execute, Func<bool>? canExecute) : IRelayCommand
@@ -26,26 +21,38 @@ public sealed class RelayCommand(Action execute, Func<bool>? canExecute) : IRela
 
   /// <inheritdoc/>
   public bool CanExecute(object? parameter)
-    => canExecute is null || canExecute.Invoke();
+    => CanExecute();
+
+  /// <inheritdoc/>
+  public bool CanExecute()
+    => canExecute?.Invoke() ?? true;
 
   /// <inheritdoc/>
   public void Execute(object? parameter)
-    => execute.Invoke();
+    => Execute();
 
   /// <inheritdoc/>
-  public void NotifyCanExecuteChanged()
+  public void Execute()
+  {
+    if (CanExecute())
+    {
+      execute.Invoke();
+      RaiseCanExecuteChanged();
+    }
+  }
+
+  /// <inheritdoc/>
+  public void RaiseCanExecuteChanged()
     => CanExecuteChanged?.Invoke(this, EventArgs.Empty);
 }
 
 /// <summary>
-/// The relay command class <typeparamref name="T"/>.
+/// The relay command class.
 /// </summary>
 /// <remarks>
-/// A command whose sole purpose is to relay its functionality to other
-/// objects by invoking delegates. The default return value for the
-/// <see cref="CanExecute(T)"/> method is <see langword="true"/>.
+/// For all commands that need a parameter.
 /// </remarks>
-/// <typeparam name="T">The type to wor with</typeparam>
+/// <typeparam name="T">The generic type to work with.</typeparam>
 /// <param name="execute">The action to execute.</param>
 /// <param name="canExecute">The condition to execute.</param>
 public sealed class RelayCommand<T>(Action<T> execute, Func<T, bool>? canExecute) : IRelayCommand<T>
@@ -62,7 +69,7 @@ public sealed class RelayCommand<T>(Action<T> execute, Func<T, bool>? canExecute
 
   /// <inheritdoc/>
   public bool CanExecute(T parameter)
-   => canExecute is null || canExecute.Invoke(parameter);
+   => canExecute?.Invoke(parameter) ?? true;
 
   /// <inheritdoc/>
   public bool CanExecute(object? parameter)
@@ -70,13 +77,19 @@ public sealed class RelayCommand<T>(Action<T> execute, Func<T, bool>? canExecute
 
   /// <inheritdoc/>
   public void Execute(T parameter)
-    => execute.Invoke(parameter);
+  {
+    if (CanExecute(parameter))
+    {
+      execute.Invoke(parameter);
+      RaiseCanExecuteChanged();
+    }
+  }
 
   /// <inheritdoc/>
   public void Execute(object? parameter)
     => Execute((T)parameter!);
 
   /// <inheritdoc/>
-  public void NotifyCanExecuteChanged()
+  public void RaiseCanExecuteChanged()
     => CanExecuteChanged?.Invoke(this, EventArgs.Empty);
 }

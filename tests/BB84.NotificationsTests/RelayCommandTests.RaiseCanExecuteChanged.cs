@@ -3,7 +3,7 @@
 public sealed partial class RelayCommandTests
 {
   [TestMethod]
-  public void NotifyCanExecuteChanged()
+  public void RaiseCanExecuteChanged()
   {
     bool commandChanged = default;
     bool intCommandChanged = default;
@@ -11,10 +11,10 @@ public sealed partial class RelayCommandTests
     test.Command.CanExecuteChanged += (s, e) => commandChanged = true;
     test.IntCommand.CanExecuteChanged += (s, e) => intCommandChanged = true;
 
-    test.Command.NotifyCanExecuteChanged();
-    test.CondCommand.NotifyCanExecuteChanged();
-    test.IntCommand.NotifyCanExecuteChanged();
-    test.CondIntCommand.NotifyCanExecuteChanged();
+    test.Command.RaiseCanExecuteChanged();
+    test.CondCommand.RaiseCanExecuteChanged();
+    test.IntCommand.RaiseCanExecuteChanged();
+    test.CondIntCommand.RaiseCanExecuteChanged();
 
     Assert.IsTrue(commandChanged);
     Assert.IsTrue(intCommandChanged);
