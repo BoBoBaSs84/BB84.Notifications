@@ -4,6 +4,26 @@
   "files": [
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/BB84.Notifications.AsyncRelayCommand-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BB84.Notifications.AsyncRelayCommand-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BB84.Notifications.AsyncRelayCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BB84.Notifications.AsyncRelayCommand.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/BB84.Notifications.Attributes.NotifyChangedAttribute.yml",
       "output": {
         ".html": {
@@ -148,6 +168,26 @@
       "output": {
         ".html": {
           "relative_path": "api/BB84.Notifications.Interfaces.Components.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BB84.Notifications.Interfaces.IAsyncRelayCommand-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BB84.Notifications.Interfaces.IAsyncRelayCommand-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BB84.Notifications.Interfaces.IAsyncRelayCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BB84.Notifications.Interfaces.IAsyncRelayCommand.html"
         }
       },
       "version": ""
