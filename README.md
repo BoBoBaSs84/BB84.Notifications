@@ -1,6 +1,7 @@
 [![CI](https://github.com/BoBoBaSs84/BB84.Notifications/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/BoBoBaSs84/BB84.Notifications/actions/workflows/ci.yml)
 [![Docs](https://github.com/BoBoBaSs84/BB84.Notifications/actions/workflows/docs.yml/badge.svg?branch=main)](https://github.com/BoBoBaSs84/BB84.Notifications/actions/workflows/docs.yml)
 [![CodeQL](https://github.com/BoBoBaSs84/BB84.Notifications/actions/workflows/codeql.yml/badge.svg?branch=main)](https://github.com/BoBoBaSs84/BB84.Notifications/actions/workflows/codeql.yml)
+[![C#](https://img.shields.io/badge/12.0-239120?logo=csharp&logoColor=white&labelColor=gray)](https://github.com/BoBoBaSs84/BB84.Notifications)
 [![Issues](https://img.shields.io/github/issues/BoBoBaSs84/BB84.Notifications)](https://github.com/BoBoBaSs84/BB84.Notifications/issues)
 [![Commit](https://img.shields.io/github/last-commit/BoBoBaSs84/BB84.Notifications)](https://github.com/BoBoBaSs84/BB84.Notifications/commit/main)
 [![License](https://img.shields.io/github/license/BoBoBaSs84/BB84.Notifications)](https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/LICENSE)
@@ -8,18 +9,18 @@
 
 # BB84.Notifications
 
-Contains relevant things for property one-way binding / two-way binding, for property change / changing notification and for collection change / changing notification.
+This repository contains relevant abstractions and implementations for one- and two-way binding of properties, for notifications about changed properties, for notifications about changed collections and for the Relay Command Pattern for synchronous and asynchronous operations.
 
 ## Usage
 
 Depending on the application, there are several ways to skin a cat.
 
-### The bindable property class and interfaces
+### The notifiable property class and interface
 
 Designed with one or two way binding in mind.
 
 ```csharp
-public IBindableProperty<int> BindableInt { get; set; } = new BindableProperty<int>(default);
+public INotifiableProperty<int> NotifiableInt { get; set; } = new NotifiableProperty<int>(default);
 ```
 
 If the property is changed, the `PropertyChangingEventHandler` is triggered before the value changes and the `PropertyChangedEventHandler` is triggered after the value has changed.
@@ -27,14 +28,14 @@ If the property is changed, the `PropertyChangingEventHandler` is triggered befo
 - The `PropertyChangingEventHandler` contains via the `PropertyChangingEventArgs` the name of the property that is changing and when casted to `PropertyChangingEventArgs<T>` the old value of the property.
 - The `PropertyChangedEventHandler` contains via the `PropertyChangedEventArgs` the name of the property that has changed and when casted to `PropertyChangedEventArgs<T>` the new value of the property.
 
-Further implementation possibilities can be achieved with the help of the `IBindableProperty` interface.
+Further implementation possibilities can be achieved with the help of the `INotifiableProperty<T>` interface.
 
-### The notification property base class and interfaces
+### The notifiable object base class and interface
 
-Designed to handle changes at the class level and propagate them forward to the outside.
+Designed to handle changes at the class level and propagate them.
 
 ```csharp
-public sealed class TestClass : NotifyPropertyBase
+public sealed class TestClass : NotifiableObject
 {
     private int _property;
 
@@ -51,14 +52,14 @@ If the property is changed, the `PropertyChangingEventHandler` is triggered befo
 - The `PropertyChangingEventHandler` contains via the `PropertyChangingEventArgs` the name of the property that is changing and when casted to `PropertyChangingEventArgs<T>` the old value of the property.
 - The `PropertyChangedEventHandler` contains via the `PropertyChangedEventArgs` the name of the property that has changed and when casted to `PropertyChangedEventArgs<T>` the new value of the property.
 
-Further implementation possibilities can be achieved with the help of the `INotifyPropertyBase` interface.
+Further implementation possibilities can be achieved with the help of the `INotifiableObject` interface.
 
-### The notification collection base class and interfaces
+### The notifiable collection base class and interface
 
-The `NotifyCollectionBase` class provides methods to handle the change within a collection and propagate it to the outside.
+The `NotifiableCollection` class provides methods to handle the change within a collection and propagate it to the outside.
 
 ```csharp
-public sealed class MyStringCollection : NotifyCollectionBase, ICollection<string>
+public sealed class MyStringCollection : NotifiableCollection, ICollection<string>
 {
   private readonly Collection<string> _collection;
 
@@ -74,7 +75,7 @@ Most of the implementation must be done despite the base class itself. The inten
 - The `CollectionChangingEventHandler` contains via the `CollectionChangingEventArgs` the `CollectionChangeAction` and when casted to `CollectionChangingEventArgs<T>` the old value of the object.
 - The `CollectionChangedEventHandler` contains via the `CollectionChangedEventArgs` the `CollectionChangeAction` and when casted to `CollectionChangedEventArgs<T>` the new value of the object.
 
-Further implementation possibilities can be achieved with the interfaces `INotifyCollectionChanged` and `INotifyCollectionChanging`.
+Further implementation possibilities can be achieved with the `INotifiableCollection` interface or the `INotifyCollectionChanged` and `INotifyCollectionChanging` interfaces.
 
 ### The notification attributes
 
