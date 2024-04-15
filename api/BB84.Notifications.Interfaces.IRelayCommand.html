@@ -130,19 +130,79 @@ Interface IRelayCommand  <a class="header-action link-secondary" title="View sou
 </h2>
 
 
-  <a id="BB84_Notifications_Interfaces_IRelayCommand_NotifyCanExecuteChanged_" data-uid="BB84.Notifications.Interfaces.IRelayCommand.NotifyCanExecuteChanged*"></a>
+  <a id="BB84_Notifications_Interfaces_IRelayCommand_CanExecute_" data-uid="BB84.Notifications.Interfaces.IRelayCommand.CanExecute*"></a>
 
-  <h3 id="BB84_Notifications_Interfaces_IRelayCommand_NotifyCanExecuteChanged" data-uid="BB84.Notifications.Interfaces.IRelayCommand.NotifyCanExecuteChanged">
-  NotifyCanExecuteChanged()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Interfaces/IRelayCommand.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BB84_Notifications_Interfaces_IRelayCommand_CanExecute" data-uid="BB84.Notifications.Interfaces.IRelayCommand.CanExecute">
+  CanExecute()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Interfaces/IRelayCommand.cs/#L14"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Notifies that the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.input.icommand.canexecute">CanExecute(object)</a> property has changed.</p>
+  <div class="markdown level1 summary"><p>Defines the method that determines whether the command can execute in its current state.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void NotifyCanExecuteChanged()</code></pre>
+    <pre><code class="lang-csharp hljs">bool CanExecute()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if this command can be executed, otherwise false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BB84_Notifications_Interfaces_IRelayCommand_Execute_" data-uid="BB84.Notifications.Interfaces.IRelayCommand.Execute*"></a>
+
+  <h3 id="BB84_Notifications_Interfaces_IRelayCommand_Execute" data-uid="BB84.Notifications.Interfaces.IRelayCommand.Execute">
+  Execute()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Interfaces/IRelayCommand.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines the method to be called when the command is invoked.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Execute()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BB84_Notifications_Interfaces_IRelayCommand_RaiseCanExecuteChanged_" data-uid="BB84.Notifications.Interfaces.IRelayCommand.RaiseCanExecuteChanged*"></a>
+
+  <h3 id="BB84_Notifications_Interfaces_IRelayCommand_RaiseCanExecuteChanged" data-uid="BB84.Notifications.Interfaces.IRelayCommand.RaiseCanExecuteChanged">
+  RaiseCanExecuteChanged()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Interfaces/IRelayCommand.cs/#L24"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Notifies that the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.input.icommand.canexecutechanged">CanExecuteChanged</a> property has changed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void RaiseCanExecuteChanged()</code></pre>
   </div>
 
 
