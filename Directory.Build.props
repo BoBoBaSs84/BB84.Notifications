@@ -37,25 +37,24 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="!$(MSBuildProjectName.EndsWith('Tests'))" Label="MetaData">
-    <Author>BoBoBaSs84</Author>
-    <Authors>$(Author)</Authors>
-    <Company>https://github.com/$(Author)</Company>
-    <Copyright>Copyright © $([System.DateTime]::UtcNow.Year) $(Author)</Copyright>
+    <Authors>BoBoBaSs84</Authors>
+    <Company>https://github.com/BoBoBaSs84</Company>
+    <Copyright>Copyright © $([System.DateTime]::UtcNow.Year) BoBoBaSs84</Copyright>
     <Description>This package contains relevant abstractions and implementations for one- and two-way binding of properties, for notifications about changed properties, for notifications about changed collections and for the Relay Command Pattern for synchronous and asynchronous operations.</Description>
-    <Product>$(AssemblyName)</Product>
+    <Product>BB84.Notifications</Product>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <RepositoryUrl>https://github.com/$(Author)/$(AssemblyName)</RepositoryUrl>
-    <Title>$(AssemblyName)</Title>
+    <RepositoryUrl>https://github.com/BoBoBaSs84/BB84.Notifications</RepositoryUrl>
+    <Title>BB84.Notifications</Title>
   </PropertyGroup>
 
-  <PropertyGroup Condition="!$(MSBuildProjectName.EndsWith('Tests'))" Label="Package">
+  <PropertyGroup Condition="!$(MSBuildProjectName.EndsWith('Tests'))" Label="Package">    
     <PackageIcon>icon.png</PackageIcon>
-    <PackageId>$(AssemblyName)</PackageId>
+    <PackageId>BB84.Notifications</PackageId>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageProjectUrl>https://github.com/$(Author)/$(Product)</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/BoBoBaSs84/BB84.Notifications</PackageProjectUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <PackageReleaseNotes>https://github.com/$(Author)/$(Product)/releases/tag/v$(FileVersion)</PackageReleaseNotes>
+    <PackageReleaseNotes>https://github.com/BoBoBaSs84/BB84.Notifications/releases/tag/$(FileVersion)</PackageReleaseNotes>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
     <PackageTags>library;csharp;notification;common</PackageTags>
     <PackageVersion>$(FileVersion)</PackageVersion>
@@ -71,7 +70,7 @@
   <ItemGroup Condition="!$(MSBuildProjectName.EndsWith('Tests'))">
     <InternalsVisibleTo Include="$(AssemblyName)Tests" Key="00240000048000009400000006020000002400005253413100040000010001001d279f3822ca86e5157254452c9b0bda97bfeef3ed7964a8626318a1e46449adb0b62b7ca2f37b461ab2f28d0203344b11da76c5244331ff0a8629a258901534d0fb7d1cdfc6c048031874fced4f4c6a6d87991d4105e072adde2a965ccd440bbf8c3f90d6de6f8cfce47bd8908d9fdcdc08c617dc04616fc1dfcd290b4f4eec" />
     <None Include="..\..\LICENSE" Pack="True" PackagePath="\" />
-    <None Include="..\..\$(PackageIcon)" Pack="True" PackagePath="" />
+    <None Include="..\..\icon.png" Pack="True" PackagePath="" />
     <None Include="..\..\README.md" Pack="True" PackagePath="\" />
   </ItemGroup>
 
