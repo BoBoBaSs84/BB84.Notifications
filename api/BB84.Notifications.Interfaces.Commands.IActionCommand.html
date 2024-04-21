@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Interface IRelayCommand&lt;T&gt; </title>
+      <title>Interface IActionCommand </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Interface IRelayCommand&lt;T&gt; ">
+      <meta name="title" content="Interface IActionCommand ">
       
-      <meta name="description" content="The relay command interface.">
+      <meta name="description" content="The action command interface.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -16,7 +16,7 @@
       
       
       
-      <meta name="docfx:docurl" content="https://github.com/BoBoBaSs84/BB84.Notifications/new/main/apiSpec/new?filename=BB84_Notifications_Interfaces_IRelayCommand_1.md&amp;value=---%0Auid%3A%20BB84.Notifications.Interfaces.IRelayCommand%601%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/BoBoBaSs84/BB84.Notifications/new/main/apiSpec/new?filename=BB84_Notifications_Interfaces_Commands_IActionCommand.md&amp;value=---%0Auid%3A%20BB84.Notifications.Interfaces.Commands.IActionCommand%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -80,35 +80,29 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="BB84.Notifications.Interfaces.IRelayCommand`1">
+        <article data-uid="BB84.Notifications.Interfaces.Commands.IActionCommand">
 
 
 
-  <h1 id="BB84_Notifications_Interfaces_IRelayCommand_1" data-uid="BB84.Notifications.Interfaces.IRelayCommand`1" class="text-break">
-Interface IRelayCommand&lt;T&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Interfaces/IRelayCommand.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  <h1 id="BB84_Notifications_Interfaces_Commands_IActionCommand" data-uid="BB84.Notifications.Interfaces.Commands.IActionCommand" class="text-break">
+Interface IActionCommand  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Interfaces/Commands/IActionCommand.cs/#L8"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="BB84.html">BB84</a>.<a class="xref" href="BB84.Notifications.html">Notifications</a>.<a class="xref" href="BB84.Notifications.Interfaces.html">Interfaces</a></dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="BB84.html">BB84</a>.<a class="xref" href="BB84.Notifications.html">Notifications</a>.<a class="xref" href="BB84.Notifications.Interfaces.html">Interfaces</a>.<a class="xref" href="BB84.Notifications.Interfaces.Commands.html">Commands</a></dd></dl>
   <dl><dt>Assembly</dt><dd>BB84.Notifications.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>The relay command interface.</p>
+  <div class="markdown summary"><p>The action command interface.</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface IRelayCommand&lt;T&gt; : ICommand</code></pre>
+    <pre><code class="lang-csharp hljs">public interface IActionCommand : ICommand</code></pre>
   </div>
 
 
 
-  <h4 class="section">Type Parameters</h4>
-  <dl class="parameters">
-    <dt><code>T</code></dt>
-    <dd><p>The type to work with.</p>
-</dd>
-  </dl>
 
 
 
@@ -136,11 +130,11 @@ Interface IRelayCommand&lt;T&gt;  <a class="header-action link-secondary" title=
 </h2>
 
 
-  <a id="BB84_Notifications_Interfaces_IRelayCommand_1_CanExecute_" data-uid="BB84.Notifications.Interfaces.IRelayCommand`1.CanExecute*"></a>
+  <a id="BB84_Notifications_Interfaces_Commands_IActionCommand_CanExecute_" data-uid="BB84.Notifications.Interfaces.Commands.IActionCommand.CanExecute*"></a>
 
-  <h3 id="BB84_Notifications_Interfaces_IRelayCommand_1_CanExecute__0_" data-uid="BB84.Notifications.Interfaces.IRelayCommand`1.CanExecute(`0)">
-  CanExecute(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Interfaces/IRelayCommand.cs/#L38"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BB84_Notifications_Interfaces_Commands_IActionCommand_CanExecute" data-uid="BB84.Notifications.Interfaces.Commands.IActionCommand.CanExecute">
+  CanExecute()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Interfaces/Commands/IActionCommand.cs/#L14"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Defines the method that determines whether the command can execute in its current state.</p>
@@ -148,15 +142,9 @@ Interface IRelayCommand&lt;T&gt;  <a class="header-action link-secondary" title=
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">bool CanExecute(T parameter)</code></pre>
+    <pre><code class="lang-csharp hljs">bool CanExecute()</code></pre>
   </div>
 
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>parameter</code> <span class="xref">T</span></dt>
-    <dd><p>The data used by the command.</p>
-</dd>
-  </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
@@ -175,11 +163,11 @@ Interface IRelayCommand&lt;T&gt;  <a class="header-action link-secondary" title=
 
 
 
-  <a id="BB84_Notifications_Interfaces_IRelayCommand_1_Execute_" data-uid="BB84.Notifications.Interfaces.IRelayCommand`1.Execute*"></a>
+  <a id="BB84_Notifications_Interfaces_Commands_IActionCommand_Execute_" data-uid="BB84.Notifications.Interfaces.Commands.IActionCommand.Execute*"></a>
 
-  <h3 id="BB84_Notifications_Interfaces_IRelayCommand_1_Execute__0_" data-uid="BB84.Notifications.Interfaces.IRelayCommand`1.Execute(`0)">
-  Execute(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Interfaces/IRelayCommand.cs/#L44"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BB84_Notifications_Interfaces_Commands_IActionCommand_Execute" data-uid="BB84.Notifications.Interfaces.Commands.IActionCommand.Execute">
+  Execute()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Interfaces/Commands/IActionCommand.cs/#L19"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Defines the method to be called when the command is invoked.</p>
@@ -187,15 +175,9 @@ Interface IRelayCommand&lt;T&gt;  <a class="header-action link-secondary" title=
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void Execute(T parameter)</code></pre>
+    <pre><code class="lang-csharp hljs">void Execute()</code></pre>
   </div>
 
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>parameter</code> <span class="xref">T</span></dt>
-    <dd><p>The data used by the command.</p>
-</dd>
-  </dl>
 
 
 
@@ -208,11 +190,11 @@ Interface IRelayCommand&lt;T&gt;  <a class="header-action link-secondary" title=
 
 
 
-  <a id="BB84_Notifications_Interfaces_IRelayCommand_1_RaiseCanExecuteChanged_" data-uid="BB84.Notifications.Interfaces.IRelayCommand`1.RaiseCanExecuteChanged*"></a>
+  <a id="BB84_Notifications_Interfaces_Commands_IActionCommand_RaiseCanExecuteChanged_" data-uid="BB84.Notifications.Interfaces.Commands.IActionCommand.RaiseCanExecuteChanged*"></a>
 
-  <h3 id="BB84_Notifications_Interfaces_IRelayCommand_1_RaiseCanExecuteChanged" data-uid="BB84.Notifications.Interfaces.IRelayCommand`1.RaiseCanExecuteChanged">
+  <h3 id="BB84_Notifications_Interfaces_Commands_IActionCommand_RaiseCanExecuteChanged" data-uid="BB84.Notifications.Interfaces.Commands.IActionCommand.RaiseCanExecuteChanged">
   RaiseCanExecuteChanged()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Interfaces/IRelayCommand.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Interfaces/Commands/IActionCommand.cs/#L24"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Notifies that the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.input.icommand.canexecutechanged">CanExecuteChanged</a> property has changed.</p>
@@ -239,7 +221,7 @@ Interface IRelayCommand&lt;T&gt;  <a class="header-action link-secondary" title=
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Interfaces/IRelayCommand.cs/#L31" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Interfaces/Commands/IActionCommand.cs/#L8" class="edit-link">Edit this page</a>
         </div>
 
 

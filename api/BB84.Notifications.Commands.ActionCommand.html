@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class RelayCommand </title>
+      <title>Class ActionCommand </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class RelayCommand ">
+      <meta name="title" content="Class ActionCommand ">
       
-      <meta name="description" content="The relay command class.">
+      <meta name="description" content="The action command class.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -16,7 +16,7 @@
       
       
       
-      <meta name="docfx:docurl" content="https://github.com/BoBoBaSs84/BB84.Notifications/new/main/apiSpec/new?filename=BB84_Notifications_RelayCommand.md&amp;value=---%0Auid%3A%20BB84.Notifications.RelayCommand%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/BoBoBaSs84/BB84.Notifications/new/main/apiSpec/new?filename=BB84_Notifications_Commands_ActionCommand.md&amp;value=---%0Auid%3A%20BB84.Notifications.Commands.ActionCommand%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -80,25 +80,25 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="BB84.Notifications.RelayCommand">
+        <article data-uid="BB84.Notifications.Commands.ActionCommand">
 
 
 
-  <h1 id="BB84_Notifications_RelayCommand" data-uid="BB84.Notifications.RelayCommand" class="text-break">
-Class RelayCommand  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/RelayCommand.cs/#L10"><i class="bi bi-code-slash"></i></a>
+  <h1 id="BB84_Notifications_Commands_ActionCommand" data-uid="BB84.Notifications.Commands.ActionCommand" class="text-break">
+Class ActionCommand  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Commands/ActionCommand.cs/#L10"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="BB84.html">BB84</a>.<a class="xref" href="BB84.Notifications.html">Notifications</a></dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="BB84.html">BB84</a>.<a class="xref" href="BB84.Notifications.html">Notifications</a>.<a class="xref" href="BB84.Notifications.Commands.html">Commands</a></dd></dl>
   <dl><dt>Assembly</dt><dd>BB84.Notifications.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>The relay command class.</p>
+  <div class="markdown summary"><p>The action command class.</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class RelayCommand : IRelayCommand, ICommand</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class ActionCommand : IActionCommand, ICommand</code></pre>
   </div>
 
 
@@ -108,14 +108,14 @@ Class RelayCommand  <a class="header-action link-secondary" title="View source" 
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">RelayCommand</span></div>
+      <div><span class="xref">ActionCommand</span></div>
     </dd>
   </dl>
 
   <dl class="typelist implements">
     <dt>Implements</dt>
     <dd>
-      <div><a class="xref" href="BB84.Notifications.Interfaces.IRelayCommand.html">IRelayCommand</a></div>
+      <div><a class="xref" href="BB84.Notifications.Interfaces.Commands.IActionCommand.html">IActionCommand</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.input.icommand">ICommand</a></div>
     </dd>
   </dl>
@@ -153,19 +153,19 @@ Class RelayCommand  <a class="header-action link-secondary" title="View source" 
 </h2>
 
 
-  <a id="BB84_Notifications_RelayCommand__ctor_" data-uid="BB84.Notifications.RelayCommand.#ctor*"></a>
+  <a id="BB84_Notifications_Commands_ActionCommand__ctor_" data-uid="BB84.Notifications.Commands.ActionCommand.#ctor*"></a>
 
-  <h3 id="BB84_Notifications_RelayCommand__ctor_System_Action_" data-uid="BB84.Notifications.RelayCommand.#ctor(System.Action)">
-  RelayCommand(Action)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/RelayCommand.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BB84_Notifications_Commands_ActionCommand__ctor_System_Action_" data-uid="BB84.Notifications.Commands.ActionCommand.#ctor(System.Action)">
+  ActionCommand(Action)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Commands/ActionCommand.cs/#L16"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="BB84.Notifications.RelayCommand.html">RelayCommand</a> class that can always execute.</p>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="BB84.Notifications.Commands.ActionCommand.html">ActionCommand</a> class that can always execute.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public RelayCommand(Action execute)</code></pre>
+    <pre><code class="lang-csharp hljs">public ActionCommand(Action execute)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -186,19 +186,19 @@ Class RelayCommand  <a class="header-action link-secondary" title="View source" 
 
 
 
-  <a id="BB84_Notifications_RelayCommand__ctor_" data-uid="BB84.Notifications.RelayCommand.#ctor*"></a>
+  <a id="BB84_Notifications_Commands_ActionCommand__ctor_" data-uid="BB84.Notifications.Commands.ActionCommand.#ctor*"></a>
 
-  <h3 id="BB84_Notifications_RelayCommand__ctor_System_Action_System_Func_System_Boolean__" data-uid="BB84.Notifications.RelayCommand.#ctor(System.Action,System.Func{System.Boolean})">
-  RelayCommand(Action, Func&lt;bool&gt;?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/RelayCommand.cs/#L10"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BB84_Notifications_Commands_ActionCommand__ctor_System_Action_System_Func_System_Boolean__" data-uid="BB84.Notifications.Commands.ActionCommand.#ctor(System.Action,System.Func{System.Boolean})">
+  ActionCommand(Action, Func&lt;bool&gt;?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Commands/ActionCommand.cs/#L10"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>The relay command class.</p>
+  <div class="markdown level1 summary"><p>The action command class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public RelayCommand(Action execute, Func&lt;bool&gt;? canExecute)</code></pre>
+    <pre><code class="lang-csharp hljs">public ActionCommand(Action execute, Func&lt;bool&gt;? canExecute)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -226,11 +226,11 @@ Class RelayCommand  <a class="header-action link-secondary" title="View source" 
 </h2>
 
 
-  <a id="BB84_Notifications_RelayCommand_CanExecute_" data-uid="BB84.Notifications.RelayCommand.CanExecute*"></a>
+  <a id="BB84_Notifications_Commands_ActionCommand_CanExecute_" data-uid="BB84.Notifications.Commands.ActionCommand.CanExecute*"></a>
 
-  <h3 id="BB84_Notifications_RelayCommand_CanExecute" data-uid="BB84.Notifications.RelayCommand.CanExecute">
+  <h3 id="BB84_Notifications_Commands_ActionCommand_CanExecute" data-uid="BB84.Notifications.Commands.ActionCommand.CanExecute">
   CanExecute()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/RelayCommand.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Commands/ActionCommand.cs/#L27"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Defines the method that determines whether the command can execute in its current state.</p>
@@ -259,11 +259,11 @@ Class RelayCommand  <a class="header-action link-secondary" title="View source" 
 
 
 
-  <a id="BB84_Notifications_RelayCommand_CanExecute_" data-uid="BB84.Notifications.RelayCommand.CanExecute*"></a>
+  <a id="BB84_Notifications_Commands_ActionCommand_CanExecute_" data-uid="BB84.Notifications.Commands.ActionCommand.CanExecute*"></a>
 
-  <h3 id="BB84_Notifications_RelayCommand_CanExecute_System_Object_" data-uid="BB84.Notifications.RelayCommand.CanExecute(System.Object)">
+  <h3 id="BB84_Notifications_Commands_ActionCommand_CanExecute_System_Object_" data-uid="BB84.Notifications.Commands.ActionCommand.CanExecute(System.Object)">
   CanExecute(object?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/RelayCommand.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Commands/ActionCommand.cs/#L23"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -295,11 +295,11 @@ Class RelayCommand  <a class="header-action link-secondary" title="View source" 
 
 
 
-  <a id="BB84_Notifications_RelayCommand_Execute_" data-uid="BB84.Notifications.RelayCommand.Execute*"></a>
+  <a id="BB84_Notifications_Commands_ActionCommand_Execute_" data-uid="BB84.Notifications.Commands.ActionCommand.Execute*"></a>
 
-  <h3 id="BB84_Notifications_RelayCommand_Execute" data-uid="BB84.Notifications.RelayCommand.Execute">
+  <h3 id="BB84_Notifications_Commands_ActionCommand_Execute" data-uid="BB84.Notifications.Commands.ActionCommand.Execute">
   Execute()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/RelayCommand.cs/#L35"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Commands/ActionCommand.cs/#L35"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Defines the method to be called when the command is invoked.</p>
@@ -322,11 +322,11 @@ Class RelayCommand  <a class="header-action link-secondary" title="View source" 
 
 
 
-  <a id="BB84_Notifications_RelayCommand_Execute_" data-uid="BB84.Notifications.RelayCommand.Execute*"></a>
+  <a id="BB84_Notifications_Commands_ActionCommand_Execute_" data-uid="BB84.Notifications.Commands.ActionCommand.Execute*"></a>
 
-  <h3 id="BB84_Notifications_RelayCommand_Execute_System_Object_" data-uid="BB84.Notifications.RelayCommand.Execute(System.Object)">
+  <h3 id="BB84_Notifications_Commands_ActionCommand_Execute_System_Object_" data-uid="BB84.Notifications.Commands.ActionCommand.Execute(System.Object)">
   Execute(object?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/RelayCommand.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Commands/ActionCommand.cs/#L31"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -353,11 +353,11 @@ Class RelayCommand  <a class="header-action link-secondary" title="View source" 
 
 
 
-  <a id="BB84_Notifications_RelayCommand_RaiseCanExecuteChanged_" data-uid="BB84.Notifications.RelayCommand.RaiseCanExecuteChanged*"></a>
+  <a id="BB84_Notifications_Commands_ActionCommand_RaiseCanExecuteChanged_" data-uid="BB84.Notifications.Commands.ActionCommand.RaiseCanExecuteChanged*"></a>
 
-  <h3 id="BB84_Notifications_RelayCommand_RaiseCanExecuteChanged" data-uid="BB84.Notifications.RelayCommand.RaiseCanExecuteChanged">
+  <h3 id="BB84_Notifications_Commands_ActionCommand_RaiseCanExecuteChanged" data-uid="BB84.Notifications.Commands.ActionCommand.RaiseCanExecuteChanged">
   RaiseCanExecuteChanged()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/RelayCommand.cs/#L45"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Commands/ActionCommand.cs/#L45"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Notifies that the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.input.icommand.canexecutechanged">CanExecuteChanged</a> property has changed.</p>
@@ -385,9 +385,9 @@ Class RelayCommand  <a class="header-action link-secondary" title="View source" 
 
 
 
-  <h3 id="BB84_Notifications_RelayCommand_CanExecuteChanged" data-uid="BB84.Notifications.RelayCommand.CanExecuteChanged">
+  <h3 id="BB84_Notifications_Commands_ActionCommand_CanExecuteChanged" data-uid="BB84.Notifications.Commands.ActionCommand.CanExecuteChanged">
   CanExecuteChanged
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/RelayCommand.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Commands/ActionCommand.cs/#L20"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -418,7 +418,7 @@ Class RelayCommand  <a class="header-action link-secondary" title="View source" 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/RelayCommand.cs/#L10" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Commands/ActionCommand.cs/#L10" class="edit-link">Edit this page</a>
         </div>
 
 

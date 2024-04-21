@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class AsyncRelayCommand&lt;T&gt; </title>
+      <title>Class ActionCommand&lt;T&gt; </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class AsyncRelayCommand&lt;T&gt; ">
+      <meta name="title" content="Class ActionCommand&lt;T&gt; ">
       
-      <meta name="description" content="The async relay command class.">
+      <meta name="description" content="The action command class.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -16,7 +16,7 @@
       
       
       
-      <meta name="docfx:docurl" content="https://github.com/BoBoBaSs84/BB84.Notifications/new/main/apiSpec/new?filename=BB84_Notifications_AsyncRelayCommand_1.md&amp;value=---%0Auid%3A%20BB84.Notifications.AsyncRelayCommand%601%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/BoBoBaSs84/BB84.Notifications/new/main/apiSpec/new?filename=BB84_Notifications_Commands_ActionCommand_1.md&amp;value=---%0Auid%3A%20BB84.Notifications.Commands.ActionCommand%601%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -80,25 +80,25 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="BB84.Notifications.AsyncRelayCommand`1">
+        <article data-uid="BB84.Notifications.Commands.ActionCommand`1">
 
 
 
-  <h1 id="BB84_Notifications_AsyncRelayCommand_1" data-uid="BB84.Notifications.AsyncRelayCommand`1" class="text-break">
-Class AsyncRelayCommand&lt;T&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/AsyncRelayCommand.cs/#L69"><i class="bi bi-code-slash"></i></a>
+  <h1 id="BB84_Notifications_Commands_ActionCommand_1" data-uid="BB84.Notifications.Commands.ActionCommand`1" class="text-break">
+Class ActionCommand&lt;T&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Commands/ActionCommand.cs/#L58"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="BB84.html">BB84</a>.<a class="xref" href="BB84.Notifications.html">Notifications</a></dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="BB84.html">BB84</a>.<a class="xref" href="BB84.Notifications.html">Notifications</a>.<a class="xref" href="BB84.Notifications.Commands.html">Commands</a></dd></dl>
   <dl><dt>Assembly</dt><dd>BB84.Notifications.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>The async relay command class.</p>
+  <div class="markdown summary"><p>The action command class.</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class AsyncRelayCommand&lt;T&gt; : IAsyncRelayCommand&lt;T&gt;, ICommand</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class ActionCommand&lt;T&gt; : IActionCommand&lt;T&gt;, ICommand</code></pre>
   </div>
 
 
@@ -114,14 +114,14 @@ Class AsyncRelayCommand&lt;T&gt;  <a class="header-action link-secondary" title=
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">AsyncRelayCommand&lt;T&gt;</span></div>
+      <div><span class="xref">ActionCommand&lt;T&gt;</span></div>
     </dd>
   </dl>
 
   <dl class="typelist implements">
     <dt>Implements</dt>
     <dd>
-      <div><a class="xref" href="BB84.Notifications.Interfaces.IAsyncRelayCommand-1.html">IAsyncRelayCommand</a>&lt;T&gt;</div>
+      <div><a class="xref" href="BB84.Notifications.Interfaces.Commands.IActionCommand-1.html">IActionCommand</a>&lt;T&gt;</div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.input.icommand">ICommand</a></div>
     </dd>
   </dl>
@@ -153,7 +153,7 @@ Class AsyncRelayCommand&lt;T&gt;  <a class="header-action link-secondary" title=
 
 
 
-  <h2 id="BB84_Notifications_AsyncRelayCommand_1_remarks">Remarks</h2>
+  <h2 id="BB84_Notifications_Commands_ActionCommand_1_remarks">Remarks</h2>
   <div class="markdown level0 remarks"><p>For all commands that need a parameter.</p>
 </div>
 
@@ -162,25 +162,25 @@ Class AsyncRelayCommand&lt;T&gt;  <a class="header-action link-secondary" title=
 </h2>
 
 
-  <a id="BB84_Notifications_AsyncRelayCommand_1__ctor_" data-uid="BB84.Notifications.AsyncRelayCommand`1.#ctor*"></a>
+  <a id="BB84_Notifications_Commands_ActionCommand_1__ctor_" data-uid="BB84.Notifications.Commands.ActionCommand`1.#ctor*"></a>
 
-  <h3 id="BB84_Notifications_AsyncRelayCommand_1__ctor_System_Func__0_System_Threading_Tasks_Task__" data-uid="BB84.Notifications.AsyncRelayCommand`1.#ctor(System.Func{`0,System.Threading.Tasks.Task})">
-  AsyncRelayCommand(Func&lt;T, Task&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/AsyncRelayCommand.cs/#L77"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BB84_Notifications_Commands_ActionCommand_1__ctor_System_Action__0__" data-uid="BB84.Notifications.Commands.ActionCommand`1.#ctor(System.Action{`0})">
+  ActionCommand(Action&lt;T&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Commands/ActionCommand.cs/#L64"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Initializes a new instance of <a class="xref" href="BB84.Notifications.AsyncRelayCommand-1.html">AsyncRelayCommand&lt;T&gt;</a> class that can always execute.</p>
+  <div class="markdown level1 summary"><p>Initializes a new instance of <a class="xref" href="BB84.Notifications.Commands.ActionCommand-1.html">ActionCommand&lt;T&gt;</a> class that can always execute.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public AsyncRelayCommand(Func&lt;T, Task&gt; execute)</code></pre>
+    <pre><code class="lang-csharp hljs">public ActionCommand(Action&lt;T&gt; execute)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>execute</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;T, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>&gt;</dt>
-    <dd><p>The task to execute.</p>
+    <dt><code>execute</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;T&gt;</dt>
+    <dd><p>The action to execute.</p>
 </dd>
   </dl>
 
@@ -195,25 +195,25 @@ Class AsyncRelayCommand&lt;T&gt;  <a class="header-action link-secondary" title=
 
 
 
-  <a id="BB84_Notifications_AsyncRelayCommand_1__ctor_" data-uid="BB84.Notifications.AsyncRelayCommand`1.#ctor*"></a>
+  <a id="BB84_Notifications_Commands_ActionCommand_1__ctor_" data-uid="BB84.Notifications.Commands.ActionCommand`1.#ctor*"></a>
 
-  <h3 id="BB84_Notifications_AsyncRelayCommand_1__ctor_System_Func__0_System_Threading_Tasks_Task__System_Func__0_System_Boolean__" data-uid="BB84.Notifications.AsyncRelayCommand`1.#ctor(System.Func{`0,System.Threading.Tasks.Task},System.Func{`0,System.Boolean})">
-  AsyncRelayCommand(Func&lt;T, Task&gt;, Func&lt;T, bool&gt;?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/AsyncRelayCommand.cs/#L69"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BB84_Notifications_Commands_ActionCommand_1__ctor_System_Action__0__System_Func__0_System_Boolean__" data-uid="BB84.Notifications.Commands.ActionCommand`1.#ctor(System.Action{`0},System.Func{`0,System.Boolean})">
+  ActionCommand(Action&lt;T&gt;, Func&lt;T, bool&gt;?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Commands/ActionCommand.cs/#L58"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>The async relay command class.</p>
+  <div class="markdown level1 summary"><p>The action command class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public AsyncRelayCommand(Func&lt;T, Task&gt; execute, Func&lt;T, bool&gt;? canExecute)</code></pre>
+    <pre><code class="lang-csharp hljs">public ActionCommand(Action&lt;T&gt; execute, Func&lt;T, bool&gt;? canExecute)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>execute</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;T, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>&gt;</dt>
-    <dd><p>The task to execute.</p>
+    <dt><code>execute</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;T&gt;</dt>
+    <dd><p>The action to execute.</p>
 </dd>
     <dt><code>canExecute</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;T, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
     <dd><p>The condition to execute.</p>
@@ -227,7 +227,7 @@ Class AsyncRelayCommand&lt;T&gt;  <a class="header-action link-secondary" title=
 
 
 
-  <h4 class="section" id="BB84_Notifications_AsyncRelayCommand_1__ctor_System_Func__0_System_Threading_Tasks_Task__System_Func__0_System_Boolean___remarks">Remarks</h4>
+  <h4 class="section" id="BB84_Notifications_Commands_ActionCommand_1__ctor_System_Action__0__System_Func__0_System_Boolean___remarks">Remarks</h4>
   <div class="markdown level1 remarks"><p>For all commands that need a parameter.</p>
 </div>
 
@@ -238,11 +238,11 @@ Class AsyncRelayCommand&lt;T&gt;  <a class="header-action link-secondary" title=
 </h2>
 
 
-  <a id="BB84_Notifications_AsyncRelayCommand_1_CanExecute_" data-uid="BB84.Notifications.AsyncRelayCommand`1.CanExecute*"></a>
+  <a id="BB84_Notifications_Commands_ActionCommand_1_CanExecute_" data-uid="BB84.Notifications.Commands.ActionCommand`1.CanExecute*"></a>
 
-  <h3 id="BB84_Notifications_AsyncRelayCommand_1_CanExecute_System_Object_" data-uid="BB84.Notifications.AsyncRelayCommand`1.CanExecute(System.Object)">
+  <h3 id="BB84_Notifications_Commands_ActionCommand_1_CanExecute_System_Object_" data-uid="BB84.Notifications.Commands.ActionCommand`1.CanExecute(System.Object)">
   CanExecute(object?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/AsyncRelayCommand.cs/#L88"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Commands/ActionCommand.cs/#L75"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -274,11 +274,11 @@ Class AsyncRelayCommand&lt;T&gt;  <a class="header-action link-secondary" title=
 
 
 
-  <a id="BB84_Notifications_AsyncRelayCommand_1_CanExecute_" data-uid="BB84.Notifications.AsyncRelayCommand`1.CanExecute*"></a>
+  <a id="BB84_Notifications_Commands_ActionCommand_1_CanExecute_" data-uid="BB84.Notifications.Commands.ActionCommand`1.CanExecute*"></a>
 
-  <h3 id="BB84_Notifications_AsyncRelayCommand_1_CanExecute__0_" data-uid="BB84.Notifications.AsyncRelayCommand`1.CanExecute(`0)">
+  <h3 id="BB84_Notifications_Commands_ActionCommand_1_CanExecute__0_" data-uid="BB84.Notifications.Commands.ActionCommand`1.CanExecute(`0)">
   CanExecute(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/AsyncRelayCommand.cs/#L84"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Commands/ActionCommand.cs/#L71"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Defines the method that determines whether the command can execute in its current state.</p>
@@ -313,11 +313,11 @@ Class AsyncRelayCommand&lt;T&gt;  <a class="header-action link-secondary" title=
 
 
 
-  <a id="BB84_Notifications_AsyncRelayCommand_1_Execute_" data-uid="BB84.Notifications.AsyncRelayCommand`1.Execute*"></a>
+  <a id="BB84_Notifications_Commands_ActionCommand_1_Execute_" data-uid="BB84.Notifications.Commands.ActionCommand`1.Execute*"></a>
 
-  <h3 id="BB84_Notifications_AsyncRelayCommand_1_Execute_System_Object_" data-uid="BB84.Notifications.AsyncRelayCommand`1.Execute(System.Object)">
+  <h3 id="BB84_Notifications_Commands_ActionCommand_1_Execute_System_Object_" data-uid="BB84.Notifications.Commands.ActionCommand`1.Execute(System.Object)">
   Execute(object?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/AsyncRelayCommand.cs/#L92"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Commands/ActionCommand.cs/#L89"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -344,11 +344,11 @@ Class AsyncRelayCommand&lt;T&gt;  <a class="header-action link-secondary" title=
 
 
 
-  <a id="BB84_Notifications_AsyncRelayCommand_1_ExecuteAsync_" data-uid="BB84.Notifications.AsyncRelayCommand`1.ExecuteAsync*"></a>
+  <a id="BB84_Notifications_Commands_ActionCommand_1_Execute_" data-uid="BB84.Notifications.Commands.ActionCommand`1.Execute*"></a>
 
-  <h3 id="BB84_Notifications_AsyncRelayCommand_1_ExecuteAsync__0_" data-uid="BB84.Notifications.AsyncRelayCommand`1.ExecuteAsync(`0)">
-  ExecuteAsync(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/AsyncRelayCommand.cs/#L96"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BB84_Notifications_Commands_ActionCommand_1_Execute__0_" data-uid="BB84.Notifications.Commands.ActionCommand`1.Execute(`0)">
+  Execute(T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Commands/ActionCommand.cs/#L79"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Defines the method to be called when the command is invoked.</p>
@@ -356,7 +356,7 @@ Class AsyncRelayCommand&lt;T&gt;  <a class="header-action link-secondary" title=
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task ExecuteAsync(T parameter)</code></pre>
+    <pre><code class="lang-csharp hljs">public void Execute(T parameter)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -366,12 +366,6 @@ Class AsyncRelayCommand&lt;T&gt;  <a class="header-action link-secondary" title=
 </dd>
   </dl>
 
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></p>
-</dd>
-  </dl>
 
 
 
@@ -383,11 +377,11 @@ Class AsyncRelayCommand&lt;T&gt;  <a class="header-action link-secondary" title=
 
 
 
-  <a id="BB84_Notifications_AsyncRelayCommand_1_RaiseCanExecuteChanged_" data-uid="BB84.Notifications.AsyncRelayCommand`1.RaiseCanExecuteChanged*"></a>
+  <a id="BB84_Notifications_Commands_ActionCommand_1_RaiseCanExecuteChanged_" data-uid="BB84.Notifications.Commands.ActionCommand`1.RaiseCanExecuteChanged*"></a>
 
-  <h3 id="BB84_Notifications_AsyncRelayCommand_1_RaiseCanExecuteChanged" data-uid="BB84.Notifications.AsyncRelayCommand`1.RaiseCanExecuteChanged">
+  <h3 id="BB84_Notifications_Commands_ActionCommand_1_RaiseCanExecuteChanged" data-uid="BB84.Notifications.Commands.ActionCommand`1.RaiseCanExecuteChanged">
   RaiseCanExecuteChanged()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/AsyncRelayCommand.cs/#L115"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Commands/ActionCommand.cs/#L93"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Notifies that the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.input.icommand.canexecutechanged">CanExecuteChanged</a> property has changed.</p>
@@ -415,9 +409,9 @@ Class AsyncRelayCommand&lt;T&gt;  <a class="header-action link-secondary" title=
 
 
 
-  <h3 id="BB84_Notifications_AsyncRelayCommand_1_CanExecuteChanged" data-uid="BB84.Notifications.AsyncRelayCommand`1.CanExecuteChanged">
+  <h3 id="BB84_Notifications_Commands_ActionCommand_1_CanExecuteChanged" data-uid="BB84.Notifications.Commands.ActionCommand`1.CanExecuteChanged">
   CanExecuteChanged
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/AsyncRelayCommand.cs/#L81"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Commands/ActionCommand.cs/#L68"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -448,7 +442,7 @@ Class AsyncRelayCommand&lt;T&gt;  <a class="header-action link-secondary" title=
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/AsyncRelayCommand.cs/#L69" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Commands/ActionCommand.cs/#L58" class="edit-link">Edit this page</a>
         </div>
 
 

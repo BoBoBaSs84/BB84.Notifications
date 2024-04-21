@@ -7,233 +7,6 @@ references:
   commentId: N:BB84.Notifications
   fullName: BB84.Notifications
   nameWithType: BB84.Notifications
-- uid: BB84.Notifications.AsyncRelayCommand
-  name: AsyncRelayCommand
-  href: api/BB84.Notifications.AsyncRelayCommand.html
-  commentId: T:BB84.Notifications.AsyncRelayCommand
-  fullName: BB84.Notifications.AsyncRelayCommand
-  nameWithType: AsyncRelayCommand
-- uid: BB84.Notifications.AsyncRelayCommand.#ctor(System.Func{System.Threading.Tasks.Task})
-  name: AsyncRelayCommand(Func<Task>)
-  href: api/BB84.Notifications.AsyncRelayCommand.html#BB84_Notifications_AsyncRelayCommand__ctor_System_Func_System_Threading_Tasks_Task__
-  commentId: M:BB84.Notifications.AsyncRelayCommand.#ctor(System.Func{System.Threading.Tasks.Task})
-  name.vb: New(Func(Of Task))
-  fullName: BB84.Notifications.AsyncRelayCommand.AsyncRelayCommand(System.Func<System.Threading.Tasks.Task>)
-  fullName.vb: BB84.Notifications.AsyncRelayCommand.New(System.Func(Of System.Threading.Tasks.Task))
-  nameWithType: AsyncRelayCommand.AsyncRelayCommand(Func<Task>)
-  nameWithType.vb: AsyncRelayCommand.New(Func(Of Task))
-- uid: BB84.Notifications.AsyncRelayCommand.#ctor(System.Func{System.Threading.Tasks.Task},System.Func{System.Boolean})
-  name: AsyncRelayCommand(Func<Task>, Func<bool>?)
-  href: api/BB84.Notifications.AsyncRelayCommand.html#BB84_Notifications_AsyncRelayCommand__ctor_System_Func_System_Threading_Tasks_Task__System_Func_System_Boolean__
-  commentId: M:BB84.Notifications.AsyncRelayCommand.#ctor(System.Func{System.Threading.Tasks.Task},System.Func{System.Boolean})
-  name.vb: New(Func(Of Task), Func(Of Boolean))
-  fullName: BB84.Notifications.AsyncRelayCommand.AsyncRelayCommand(System.Func<System.Threading.Tasks.Task>, System.Func<bool>?)
-  fullName.vb: BB84.Notifications.AsyncRelayCommand.New(System.Func(Of System.Threading.Tasks.Task), System.Func(Of Boolean))
-  nameWithType: AsyncRelayCommand.AsyncRelayCommand(Func<Task>, Func<bool>?)
-  nameWithType.vb: AsyncRelayCommand.New(Func(Of Task), Func(Of Boolean))
-- uid: BB84.Notifications.AsyncRelayCommand.#ctor*
-  name: AsyncRelayCommand
-  href: api/BB84.Notifications.AsyncRelayCommand.html#BB84_Notifications_AsyncRelayCommand__ctor_
-  commentId: Overload:BB84.Notifications.AsyncRelayCommand.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: BB84.Notifications.AsyncRelayCommand.AsyncRelayCommand
-  fullName.vb: BB84.Notifications.AsyncRelayCommand.New
-  nameWithType: AsyncRelayCommand.AsyncRelayCommand
-  nameWithType.vb: AsyncRelayCommand.New
-- uid: BB84.Notifications.AsyncRelayCommand.CanExecute
-  name: CanExecute()
-  href: api/BB84.Notifications.AsyncRelayCommand.html#BB84_Notifications_AsyncRelayCommand_CanExecute
-  commentId: M:BB84.Notifications.AsyncRelayCommand.CanExecute
-  fullName: BB84.Notifications.AsyncRelayCommand.CanExecute()
-  nameWithType: AsyncRelayCommand.CanExecute()
-- uid: BB84.Notifications.AsyncRelayCommand.CanExecute(System.Object)
-  name: CanExecute(object?)
-  href: api/BB84.Notifications.AsyncRelayCommand.html#BB84_Notifications_AsyncRelayCommand_CanExecute_System_Object_
-  commentId: M:BB84.Notifications.AsyncRelayCommand.CanExecute(System.Object)
-  name.vb: CanExecute(Object)
-  fullName: BB84.Notifications.AsyncRelayCommand.CanExecute(object?)
-  fullName.vb: BB84.Notifications.AsyncRelayCommand.CanExecute(Object)
-  nameWithType: AsyncRelayCommand.CanExecute(object?)
-  nameWithType.vb: AsyncRelayCommand.CanExecute(Object)
-- uid: BB84.Notifications.AsyncRelayCommand.CanExecute*
-  name: CanExecute
-  href: api/BB84.Notifications.AsyncRelayCommand.html#BB84_Notifications_AsyncRelayCommand_CanExecute_
-  commentId: Overload:BB84.Notifications.AsyncRelayCommand.CanExecute
-  isSpec: "True"
-  fullName: BB84.Notifications.AsyncRelayCommand.CanExecute
-  nameWithType: AsyncRelayCommand.CanExecute
-- uid: BB84.Notifications.AsyncRelayCommand.CanExecuteChanged
-  name: CanExecuteChanged
-  href: api/BB84.Notifications.AsyncRelayCommand.html#BB84_Notifications_AsyncRelayCommand_CanExecuteChanged
-  commentId: E:BB84.Notifications.AsyncRelayCommand.CanExecuteChanged
-  fullName: BB84.Notifications.AsyncRelayCommand.CanExecuteChanged
-  nameWithType: AsyncRelayCommand.CanExecuteChanged
-- uid: BB84.Notifications.AsyncRelayCommand.Execute(System.Object)
-  name: Execute(object?)
-  href: api/BB84.Notifications.AsyncRelayCommand.html#BB84_Notifications_AsyncRelayCommand_Execute_System_Object_
-  commentId: M:BB84.Notifications.AsyncRelayCommand.Execute(System.Object)
-  name.vb: Execute(Object)
-  fullName: BB84.Notifications.AsyncRelayCommand.Execute(object?)
-  fullName.vb: BB84.Notifications.AsyncRelayCommand.Execute(Object)
-  nameWithType: AsyncRelayCommand.Execute(object?)
-  nameWithType.vb: AsyncRelayCommand.Execute(Object)
-- uid: BB84.Notifications.AsyncRelayCommand.Execute*
-  name: Execute
-  href: api/BB84.Notifications.AsyncRelayCommand.html#BB84_Notifications_AsyncRelayCommand_Execute_
-  commentId: Overload:BB84.Notifications.AsyncRelayCommand.Execute
-  isSpec: "True"
-  fullName: BB84.Notifications.AsyncRelayCommand.Execute
-  nameWithType: AsyncRelayCommand.Execute
-- uid: BB84.Notifications.AsyncRelayCommand.ExecuteAsync
-  name: ExecuteAsync()
-  href: api/BB84.Notifications.AsyncRelayCommand.html#BB84_Notifications_AsyncRelayCommand_ExecuteAsync
-  commentId: M:BB84.Notifications.AsyncRelayCommand.ExecuteAsync
-  fullName: BB84.Notifications.AsyncRelayCommand.ExecuteAsync()
-  nameWithType: AsyncRelayCommand.ExecuteAsync()
-- uid: BB84.Notifications.AsyncRelayCommand.ExecuteAsync*
-  name: ExecuteAsync
-  href: api/BB84.Notifications.AsyncRelayCommand.html#BB84_Notifications_AsyncRelayCommand_ExecuteAsync_
-  commentId: Overload:BB84.Notifications.AsyncRelayCommand.ExecuteAsync
-  isSpec: "True"
-  fullName: BB84.Notifications.AsyncRelayCommand.ExecuteAsync
-  nameWithType: AsyncRelayCommand.ExecuteAsync
-- uid: BB84.Notifications.AsyncRelayCommand.RaiseCanExecuteChanged
-  name: RaiseCanExecuteChanged()
-  href: api/BB84.Notifications.AsyncRelayCommand.html#BB84_Notifications_AsyncRelayCommand_RaiseCanExecuteChanged
-  commentId: M:BB84.Notifications.AsyncRelayCommand.RaiseCanExecuteChanged
-  fullName: BB84.Notifications.AsyncRelayCommand.RaiseCanExecuteChanged()
-  nameWithType: AsyncRelayCommand.RaiseCanExecuteChanged()
-- uid: BB84.Notifications.AsyncRelayCommand.RaiseCanExecuteChanged*
-  name: RaiseCanExecuteChanged
-  href: api/BB84.Notifications.AsyncRelayCommand.html#BB84_Notifications_AsyncRelayCommand_RaiseCanExecuteChanged_
-  commentId: Overload:BB84.Notifications.AsyncRelayCommand.RaiseCanExecuteChanged
-  isSpec: "True"
-  fullName: BB84.Notifications.AsyncRelayCommand.RaiseCanExecuteChanged
-  nameWithType: AsyncRelayCommand.RaiseCanExecuteChanged
-- uid: BB84.Notifications.AsyncRelayCommand`1
-  name: AsyncRelayCommand<T>
-  href: api/BB84.Notifications.AsyncRelayCommand-1.html
-  commentId: T:BB84.Notifications.AsyncRelayCommand`1
-  name.vb: AsyncRelayCommand(Of T)
-  fullName: BB84.Notifications.AsyncRelayCommand<T>
-  fullName.vb: BB84.Notifications.AsyncRelayCommand(Of T)
-  nameWithType: AsyncRelayCommand<T>
-  nameWithType.vb: AsyncRelayCommand(Of T)
-- uid: BB84.Notifications.AsyncRelayCommand`1.#ctor(System.Func{`0,System.Threading.Tasks.Task})
-  name: AsyncRelayCommand(Func<T, Task>)
-  href: api/BB84.Notifications.AsyncRelayCommand-1.html#BB84_Notifications_AsyncRelayCommand_1__ctor_System_Func__0_System_Threading_Tasks_Task__
-  commentId: M:BB84.Notifications.AsyncRelayCommand`1.#ctor(System.Func{`0,System.Threading.Tasks.Task})
-  name.vb: New(Func(Of T, Task))
-  fullName: BB84.Notifications.AsyncRelayCommand<T>.AsyncRelayCommand(System.Func<T, System.Threading.Tasks.Task>)
-  fullName.vb: BB84.Notifications.AsyncRelayCommand(Of T).New(System.Func(Of T, System.Threading.Tasks.Task))
-  nameWithType: AsyncRelayCommand<T>.AsyncRelayCommand(Func<T, Task>)
-  nameWithType.vb: AsyncRelayCommand(Of T).New(Func(Of T, Task))
-- uid: BB84.Notifications.AsyncRelayCommand`1.#ctor(System.Func{`0,System.Threading.Tasks.Task},System.Func{`0,System.Boolean})
-  name: AsyncRelayCommand(Func<T, Task>, Func<T, bool>?)
-  href: api/BB84.Notifications.AsyncRelayCommand-1.html#BB84_Notifications_AsyncRelayCommand_1__ctor_System_Func__0_System_Threading_Tasks_Task__System_Func__0_System_Boolean__
-  commentId: M:BB84.Notifications.AsyncRelayCommand`1.#ctor(System.Func{`0,System.Threading.Tasks.Task},System.Func{`0,System.Boolean})
-  name.vb: New(Func(Of T, Task), Func(Of T, Boolean))
-  fullName: BB84.Notifications.AsyncRelayCommand<T>.AsyncRelayCommand(System.Func<T, System.Threading.Tasks.Task>, System.Func<T, bool>?)
-  fullName.vb: BB84.Notifications.AsyncRelayCommand(Of T).New(System.Func(Of T, System.Threading.Tasks.Task), System.Func(Of T, Boolean))
-  nameWithType: AsyncRelayCommand<T>.AsyncRelayCommand(Func<T, Task>, Func<T, bool>?)
-  nameWithType.vb: AsyncRelayCommand(Of T).New(Func(Of T, Task), Func(Of T, Boolean))
-- uid: BB84.Notifications.AsyncRelayCommand`1.#ctor*
-  name: AsyncRelayCommand
-  href: api/BB84.Notifications.AsyncRelayCommand-1.html#BB84_Notifications_AsyncRelayCommand_1__ctor_
-  commentId: Overload:BB84.Notifications.AsyncRelayCommand`1.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: BB84.Notifications.AsyncRelayCommand<T>.AsyncRelayCommand
-  fullName.vb: BB84.Notifications.AsyncRelayCommand(Of T).New
-  nameWithType: AsyncRelayCommand<T>.AsyncRelayCommand
-  nameWithType.vb: AsyncRelayCommand(Of T).New
-- uid: BB84.Notifications.AsyncRelayCommand`1.CanExecute(System.Object)
-  name: CanExecute(object?)
-  href: api/BB84.Notifications.AsyncRelayCommand-1.html#BB84_Notifications_AsyncRelayCommand_1_CanExecute_System_Object_
-  commentId: M:BB84.Notifications.AsyncRelayCommand`1.CanExecute(System.Object)
-  name.vb: CanExecute(Object)
-  fullName: BB84.Notifications.AsyncRelayCommand<T>.CanExecute(object?)
-  fullName.vb: BB84.Notifications.AsyncRelayCommand(Of T).CanExecute(Object)
-  nameWithType: AsyncRelayCommand<T>.CanExecute(object?)
-  nameWithType.vb: AsyncRelayCommand(Of T).CanExecute(Object)
-- uid: BB84.Notifications.AsyncRelayCommand`1.CanExecute(`0)
-  name: CanExecute(T)
-  href: api/BB84.Notifications.AsyncRelayCommand-1.html#BB84_Notifications_AsyncRelayCommand_1_CanExecute__0_
-  commentId: M:BB84.Notifications.AsyncRelayCommand`1.CanExecute(`0)
-  fullName: BB84.Notifications.AsyncRelayCommand<T>.CanExecute(T)
-  fullName.vb: BB84.Notifications.AsyncRelayCommand(Of T).CanExecute(T)
-  nameWithType: AsyncRelayCommand<T>.CanExecute(T)
-  nameWithType.vb: AsyncRelayCommand(Of T).CanExecute(T)
-- uid: BB84.Notifications.AsyncRelayCommand`1.CanExecute*
-  name: CanExecute
-  href: api/BB84.Notifications.AsyncRelayCommand-1.html#BB84_Notifications_AsyncRelayCommand_1_CanExecute_
-  commentId: Overload:BB84.Notifications.AsyncRelayCommand`1.CanExecute
-  isSpec: "True"
-  fullName: BB84.Notifications.AsyncRelayCommand<T>.CanExecute
-  fullName.vb: BB84.Notifications.AsyncRelayCommand(Of T).CanExecute
-  nameWithType: AsyncRelayCommand<T>.CanExecute
-  nameWithType.vb: AsyncRelayCommand(Of T).CanExecute
-- uid: BB84.Notifications.AsyncRelayCommand`1.CanExecuteChanged
-  name: CanExecuteChanged
-  href: api/BB84.Notifications.AsyncRelayCommand-1.html#BB84_Notifications_AsyncRelayCommand_1_CanExecuteChanged
-  commentId: E:BB84.Notifications.AsyncRelayCommand`1.CanExecuteChanged
-  fullName: BB84.Notifications.AsyncRelayCommand<T>.CanExecuteChanged
-  fullName.vb: BB84.Notifications.AsyncRelayCommand(Of T).CanExecuteChanged
-  nameWithType: AsyncRelayCommand<T>.CanExecuteChanged
-  nameWithType.vb: AsyncRelayCommand(Of T).CanExecuteChanged
-- uid: BB84.Notifications.AsyncRelayCommand`1.Execute(System.Object)
-  name: Execute(object?)
-  href: api/BB84.Notifications.AsyncRelayCommand-1.html#BB84_Notifications_AsyncRelayCommand_1_Execute_System_Object_
-  commentId: M:BB84.Notifications.AsyncRelayCommand`1.Execute(System.Object)
-  name.vb: Execute(Object)
-  fullName: BB84.Notifications.AsyncRelayCommand<T>.Execute(object?)
-  fullName.vb: BB84.Notifications.AsyncRelayCommand(Of T).Execute(Object)
-  nameWithType: AsyncRelayCommand<T>.Execute(object?)
-  nameWithType.vb: AsyncRelayCommand(Of T).Execute(Object)
-- uid: BB84.Notifications.AsyncRelayCommand`1.Execute*
-  name: Execute
-  href: api/BB84.Notifications.AsyncRelayCommand-1.html#BB84_Notifications_AsyncRelayCommand_1_Execute_
-  commentId: Overload:BB84.Notifications.AsyncRelayCommand`1.Execute
-  isSpec: "True"
-  fullName: BB84.Notifications.AsyncRelayCommand<T>.Execute
-  fullName.vb: BB84.Notifications.AsyncRelayCommand(Of T).Execute
-  nameWithType: AsyncRelayCommand<T>.Execute
-  nameWithType.vb: AsyncRelayCommand(Of T).Execute
-- uid: BB84.Notifications.AsyncRelayCommand`1.ExecuteAsync(`0)
-  name: ExecuteAsync(T)
-  href: api/BB84.Notifications.AsyncRelayCommand-1.html#BB84_Notifications_AsyncRelayCommand_1_ExecuteAsync__0_
-  commentId: M:BB84.Notifications.AsyncRelayCommand`1.ExecuteAsync(`0)
-  fullName: BB84.Notifications.AsyncRelayCommand<T>.ExecuteAsync(T)
-  fullName.vb: BB84.Notifications.AsyncRelayCommand(Of T).ExecuteAsync(T)
-  nameWithType: AsyncRelayCommand<T>.ExecuteAsync(T)
-  nameWithType.vb: AsyncRelayCommand(Of T).ExecuteAsync(T)
-- uid: BB84.Notifications.AsyncRelayCommand`1.ExecuteAsync*
-  name: ExecuteAsync
-  href: api/BB84.Notifications.AsyncRelayCommand-1.html#BB84_Notifications_AsyncRelayCommand_1_ExecuteAsync_
-  commentId: Overload:BB84.Notifications.AsyncRelayCommand`1.ExecuteAsync
-  isSpec: "True"
-  fullName: BB84.Notifications.AsyncRelayCommand<T>.ExecuteAsync
-  fullName.vb: BB84.Notifications.AsyncRelayCommand(Of T).ExecuteAsync
-  nameWithType: AsyncRelayCommand<T>.ExecuteAsync
-  nameWithType.vb: AsyncRelayCommand(Of T).ExecuteAsync
-- uid: BB84.Notifications.AsyncRelayCommand`1.RaiseCanExecuteChanged
-  name: RaiseCanExecuteChanged()
-  href: api/BB84.Notifications.AsyncRelayCommand-1.html#BB84_Notifications_AsyncRelayCommand_1_RaiseCanExecuteChanged
-  commentId: M:BB84.Notifications.AsyncRelayCommand`1.RaiseCanExecuteChanged
-  fullName: BB84.Notifications.AsyncRelayCommand<T>.RaiseCanExecuteChanged()
-  fullName.vb: BB84.Notifications.AsyncRelayCommand(Of T).RaiseCanExecuteChanged()
-  nameWithType: AsyncRelayCommand<T>.RaiseCanExecuteChanged()
-  nameWithType.vb: AsyncRelayCommand(Of T).RaiseCanExecuteChanged()
-- uid: BB84.Notifications.AsyncRelayCommand`1.RaiseCanExecuteChanged*
-  name: RaiseCanExecuteChanged
-  href: api/BB84.Notifications.AsyncRelayCommand-1.html#BB84_Notifications_AsyncRelayCommand_1_RaiseCanExecuteChanged_
-  commentId: Overload:BB84.Notifications.AsyncRelayCommand`1.RaiseCanExecuteChanged
-  isSpec: "True"
-  fullName: BB84.Notifications.AsyncRelayCommand<T>.RaiseCanExecuteChanged
-  fullName.vb: BB84.Notifications.AsyncRelayCommand(Of T).RaiseCanExecuteChanged
-  nameWithType: AsyncRelayCommand<T>.RaiseCanExecuteChanged
-  nameWithType.vb: AsyncRelayCommand(Of T).RaiseCanExecuteChanged
 - uid: BB84.Notifications.Attributes
   name: BB84.Notifications.Attributes
   href: api/BB84.Notifications.Attributes.html
@@ -316,6 +89,432 @@ references:
   isSpec: "True"
   fullName: BB84.Notifications.Attributes.NotifyChangingAttribute.Properties
   nameWithType: NotifyChangingAttribute.Properties
+- uid: BB84.Notifications.Commands
+  name: BB84.Notifications.Commands
+  href: api/BB84.Notifications.Commands.html
+  commentId: N:BB84.Notifications.Commands
+  fullName: BB84.Notifications.Commands
+  nameWithType: BB84.Notifications.Commands
+- uid: BB84.Notifications.Commands.ActionCommand
+  name: ActionCommand
+  href: api/BB84.Notifications.Commands.ActionCommand.html
+  commentId: T:BB84.Notifications.Commands.ActionCommand
+  fullName: BB84.Notifications.Commands.ActionCommand
+  nameWithType: ActionCommand
+- uid: BB84.Notifications.Commands.ActionCommand.#ctor(System.Action)
+  name: ActionCommand(Action)
+  href: api/BB84.Notifications.Commands.ActionCommand.html#BB84_Notifications_Commands_ActionCommand__ctor_System_Action_
+  commentId: M:BB84.Notifications.Commands.ActionCommand.#ctor(System.Action)
+  name.vb: New(Action)
+  fullName: BB84.Notifications.Commands.ActionCommand.ActionCommand(System.Action)
+  fullName.vb: BB84.Notifications.Commands.ActionCommand.New(System.Action)
+  nameWithType: ActionCommand.ActionCommand(Action)
+  nameWithType.vb: ActionCommand.New(Action)
+- uid: BB84.Notifications.Commands.ActionCommand.#ctor(System.Action,System.Func{System.Boolean})
+  name: ActionCommand(Action, Func<bool>?)
+  href: api/BB84.Notifications.Commands.ActionCommand.html#BB84_Notifications_Commands_ActionCommand__ctor_System_Action_System_Func_System_Boolean__
+  commentId: M:BB84.Notifications.Commands.ActionCommand.#ctor(System.Action,System.Func{System.Boolean})
+  name.vb: New(Action, Func(Of Boolean))
+  fullName: BB84.Notifications.Commands.ActionCommand.ActionCommand(System.Action, System.Func<bool>?)
+  fullName.vb: BB84.Notifications.Commands.ActionCommand.New(System.Action, System.Func(Of Boolean))
+  nameWithType: ActionCommand.ActionCommand(Action, Func<bool>?)
+  nameWithType.vb: ActionCommand.New(Action, Func(Of Boolean))
+- uid: BB84.Notifications.Commands.ActionCommand.#ctor*
+  name: ActionCommand
+  href: api/BB84.Notifications.Commands.ActionCommand.html#BB84_Notifications_Commands_ActionCommand__ctor_
+  commentId: Overload:BB84.Notifications.Commands.ActionCommand.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: BB84.Notifications.Commands.ActionCommand.ActionCommand
+  fullName.vb: BB84.Notifications.Commands.ActionCommand.New
+  nameWithType: ActionCommand.ActionCommand
+  nameWithType.vb: ActionCommand.New
+- uid: BB84.Notifications.Commands.ActionCommand.CanExecute
+  name: CanExecute()
+  href: api/BB84.Notifications.Commands.ActionCommand.html#BB84_Notifications_Commands_ActionCommand_CanExecute
+  commentId: M:BB84.Notifications.Commands.ActionCommand.CanExecute
+  fullName: BB84.Notifications.Commands.ActionCommand.CanExecute()
+  nameWithType: ActionCommand.CanExecute()
+- uid: BB84.Notifications.Commands.ActionCommand.CanExecute(System.Object)
+  name: CanExecute(object?)
+  href: api/BB84.Notifications.Commands.ActionCommand.html#BB84_Notifications_Commands_ActionCommand_CanExecute_System_Object_
+  commentId: M:BB84.Notifications.Commands.ActionCommand.CanExecute(System.Object)
+  name.vb: CanExecute(Object)
+  fullName: BB84.Notifications.Commands.ActionCommand.CanExecute(object?)
+  fullName.vb: BB84.Notifications.Commands.ActionCommand.CanExecute(Object)
+  nameWithType: ActionCommand.CanExecute(object?)
+  nameWithType.vb: ActionCommand.CanExecute(Object)
+- uid: BB84.Notifications.Commands.ActionCommand.CanExecute*
+  name: CanExecute
+  href: api/BB84.Notifications.Commands.ActionCommand.html#BB84_Notifications_Commands_ActionCommand_CanExecute_
+  commentId: Overload:BB84.Notifications.Commands.ActionCommand.CanExecute
+  isSpec: "True"
+  fullName: BB84.Notifications.Commands.ActionCommand.CanExecute
+  nameWithType: ActionCommand.CanExecute
+- uid: BB84.Notifications.Commands.ActionCommand.CanExecuteChanged
+  name: CanExecuteChanged
+  href: api/BB84.Notifications.Commands.ActionCommand.html#BB84_Notifications_Commands_ActionCommand_CanExecuteChanged
+  commentId: E:BB84.Notifications.Commands.ActionCommand.CanExecuteChanged
+  fullName: BB84.Notifications.Commands.ActionCommand.CanExecuteChanged
+  nameWithType: ActionCommand.CanExecuteChanged
+- uid: BB84.Notifications.Commands.ActionCommand.Execute
+  name: Execute()
+  href: api/BB84.Notifications.Commands.ActionCommand.html#BB84_Notifications_Commands_ActionCommand_Execute
+  commentId: M:BB84.Notifications.Commands.ActionCommand.Execute
+  fullName: BB84.Notifications.Commands.ActionCommand.Execute()
+  nameWithType: ActionCommand.Execute()
+- uid: BB84.Notifications.Commands.ActionCommand.Execute(System.Object)
+  name: Execute(object?)
+  href: api/BB84.Notifications.Commands.ActionCommand.html#BB84_Notifications_Commands_ActionCommand_Execute_System_Object_
+  commentId: M:BB84.Notifications.Commands.ActionCommand.Execute(System.Object)
+  name.vb: Execute(Object)
+  fullName: BB84.Notifications.Commands.ActionCommand.Execute(object?)
+  fullName.vb: BB84.Notifications.Commands.ActionCommand.Execute(Object)
+  nameWithType: ActionCommand.Execute(object?)
+  nameWithType.vb: ActionCommand.Execute(Object)
+- uid: BB84.Notifications.Commands.ActionCommand.Execute*
+  name: Execute
+  href: api/BB84.Notifications.Commands.ActionCommand.html#BB84_Notifications_Commands_ActionCommand_Execute_
+  commentId: Overload:BB84.Notifications.Commands.ActionCommand.Execute
+  isSpec: "True"
+  fullName: BB84.Notifications.Commands.ActionCommand.Execute
+  nameWithType: ActionCommand.Execute
+- uid: BB84.Notifications.Commands.ActionCommand.RaiseCanExecuteChanged
+  name: RaiseCanExecuteChanged()
+  href: api/BB84.Notifications.Commands.ActionCommand.html#BB84_Notifications_Commands_ActionCommand_RaiseCanExecuteChanged
+  commentId: M:BB84.Notifications.Commands.ActionCommand.RaiseCanExecuteChanged
+  fullName: BB84.Notifications.Commands.ActionCommand.RaiseCanExecuteChanged()
+  nameWithType: ActionCommand.RaiseCanExecuteChanged()
+- uid: BB84.Notifications.Commands.ActionCommand.RaiseCanExecuteChanged*
+  name: RaiseCanExecuteChanged
+  href: api/BB84.Notifications.Commands.ActionCommand.html#BB84_Notifications_Commands_ActionCommand_RaiseCanExecuteChanged_
+  commentId: Overload:BB84.Notifications.Commands.ActionCommand.RaiseCanExecuteChanged
+  isSpec: "True"
+  fullName: BB84.Notifications.Commands.ActionCommand.RaiseCanExecuteChanged
+  nameWithType: ActionCommand.RaiseCanExecuteChanged
+- uid: BB84.Notifications.Commands.ActionCommand`1
+  name: ActionCommand<T>
+  href: api/BB84.Notifications.Commands.ActionCommand-1.html
+  commentId: T:BB84.Notifications.Commands.ActionCommand`1
+  name.vb: ActionCommand(Of T)
+  fullName: BB84.Notifications.Commands.ActionCommand<T>
+  fullName.vb: BB84.Notifications.Commands.ActionCommand(Of T)
+  nameWithType: ActionCommand<T>
+  nameWithType.vb: ActionCommand(Of T)
+- uid: BB84.Notifications.Commands.ActionCommand`1.#ctor(System.Action{`0})
+  name: ActionCommand(Action<T>)
+  href: api/BB84.Notifications.Commands.ActionCommand-1.html#BB84_Notifications_Commands_ActionCommand_1__ctor_System_Action__0__
+  commentId: M:BB84.Notifications.Commands.ActionCommand`1.#ctor(System.Action{`0})
+  name.vb: New(Action(Of T))
+  fullName: BB84.Notifications.Commands.ActionCommand<T>.ActionCommand(System.Action<T>)
+  fullName.vb: BB84.Notifications.Commands.ActionCommand(Of T).New(System.Action(Of T))
+  nameWithType: ActionCommand<T>.ActionCommand(Action<T>)
+  nameWithType.vb: ActionCommand(Of T).New(Action(Of T))
+- uid: BB84.Notifications.Commands.ActionCommand`1.#ctor(System.Action{`0},System.Func{`0,System.Boolean})
+  name: ActionCommand(Action<T>, Func<T, bool>?)
+  href: api/BB84.Notifications.Commands.ActionCommand-1.html#BB84_Notifications_Commands_ActionCommand_1__ctor_System_Action__0__System_Func__0_System_Boolean__
+  commentId: M:BB84.Notifications.Commands.ActionCommand`1.#ctor(System.Action{`0},System.Func{`0,System.Boolean})
+  name.vb: New(Action(Of T), Func(Of T, Boolean))
+  fullName: BB84.Notifications.Commands.ActionCommand<T>.ActionCommand(System.Action<T>, System.Func<T, bool>?)
+  fullName.vb: BB84.Notifications.Commands.ActionCommand(Of T).New(System.Action(Of T), System.Func(Of T, Boolean))
+  nameWithType: ActionCommand<T>.ActionCommand(Action<T>, Func<T, bool>?)
+  nameWithType.vb: ActionCommand(Of T).New(Action(Of T), Func(Of T, Boolean))
+- uid: BB84.Notifications.Commands.ActionCommand`1.#ctor*
+  name: ActionCommand
+  href: api/BB84.Notifications.Commands.ActionCommand-1.html#BB84_Notifications_Commands_ActionCommand_1__ctor_
+  commentId: Overload:BB84.Notifications.Commands.ActionCommand`1.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: BB84.Notifications.Commands.ActionCommand<T>.ActionCommand
+  fullName.vb: BB84.Notifications.Commands.ActionCommand(Of T).New
+  nameWithType: ActionCommand<T>.ActionCommand
+  nameWithType.vb: ActionCommand(Of T).New
+- uid: BB84.Notifications.Commands.ActionCommand`1.CanExecute(System.Object)
+  name: CanExecute(object?)
+  href: api/BB84.Notifications.Commands.ActionCommand-1.html#BB84_Notifications_Commands_ActionCommand_1_CanExecute_System_Object_
+  commentId: M:BB84.Notifications.Commands.ActionCommand`1.CanExecute(System.Object)
+  name.vb: CanExecute(Object)
+  fullName: BB84.Notifications.Commands.ActionCommand<T>.CanExecute(object?)
+  fullName.vb: BB84.Notifications.Commands.ActionCommand(Of T).CanExecute(Object)
+  nameWithType: ActionCommand<T>.CanExecute(object?)
+  nameWithType.vb: ActionCommand(Of T).CanExecute(Object)
+- uid: BB84.Notifications.Commands.ActionCommand`1.CanExecute(`0)
+  name: CanExecute(T)
+  href: api/BB84.Notifications.Commands.ActionCommand-1.html#BB84_Notifications_Commands_ActionCommand_1_CanExecute__0_
+  commentId: M:BB84.Notifications.Commands.ActionCommand`1.CanExecute(`0)
+  fullName: BB84.Notifications.Commands.ActionCommand<T>.CanExecute(T)
+  fullName.vb: BB84.Notifications.Commands.ActionCommand(Of T).CanExecute(T)
+  nameWithType: ActionCommand<T>.CanExecute(T)
+  nameWithType.vb: ActionCommand(Of T).CanExecute(T)
+- uid: BB84.Notifications.Commands.ActionCommand`1.CanExecute*
+  name: CanExecute
+  href: api/BB84.Notifications.Commands.ActionCommand-1.html#BB84_Notifications_Commands_ActionCommand_1_CanExecute_
+  commentId: Overload:BB84.Notifications.Commands.ActionCommand`1.CanExecute
+  isSpec: "True"
+  fullName: BB84.Notifications.Commands.ActionCommand<T>.CanExecute
+  fullName.vb: BB84.Notifications.Commands.ActionCommand(Of T).CanExecute
+  nameWithType: ActionCommand<T>.CanExecute
+  nameWithType.vb: ActionCommand(Of T).CanExecute
+- uid: BB84.Notifications.Commands.ActionCommand`1.CanExecuteChanged
+  name: CanExecuteChanged
+  href: api/BB84.Notifications.Commands.ActionCommand-1.html#BB84_Notifications_Commands_ActionCommand_1_CanExecuteChanged
+  commentId: E:BB84.Notifications.Commands.ActionCommand`1.CanExecuteChanged
+  fullName: BB84.Notifications.Commands.ActionCommand<T>.CanExecuteChanged
+  fullName.vb: BB84.Notifications.Commands.ActionCommand(Of T).CanExecuteChanged
+  nameWithType: ActionCommand<T>.CanExecuteChanged
+  nameWithType.vb: ActionCommand(Of T).CanExecuteChanged
+- uid: BB84.Notifications.Commands.ActionCommand`1.Execute(System.Object)
+  name: Execute(object?)
+  href: api/BB84.Notifications.Commands.ActionCommand-1.html#BB84_Notifications_Commands_ActionCommand_1_Execute_System_Object_
+  commentId: M:BB84.Notifications.Commands.ActionCommand`1.Execute(System.Object)
+  name.vb: Execute(Object)
+  fullName: BB84.Notifications.Commands.ActionCommand<T>.Execute(object?)
+  fullName.vb: BB84.Notifications.Commands.ActionCommand(Of T).Execute(Object)
+  nameWithType: ActionCommand<T>.Execute(object?)
+  nameWithType.vb: ActionCommand(Of T).Execute(Object)
+- uid: BB84.Notifications.Commands.ActionCommand`1.Execute(`0)
+  name: Execute(T)
+  href: api/BB84.Notifications.Commands.ActionCommand-1.html#BB84_Notifications_Commands_ActionCommand_1_Execute__0_
+  commentId: M:BB84.Notifications.Commands.ActionCommand`1.Execute(`0)
+  fullName: BB84.Notifications.Commands.ActionCommand<T>.Execute(T)
+  fullName.vb: BB84.Notifications.Commands.ActionCommand(Of T).Execute(T)
+  nameWithType: ActionCommand<T>.Execute(T)
+  nameWithType.vb: ActionCommand(Of T).Execute(T)
+- uid: BB84.Notifications.Commands.ActionCommand`1.Execute*
+  name: Execute
+  href: api/BB84.Notifications.Commands.ActionCommand-1.html#BB84_Notifications_Commands_ActionCommand_1_Execute_
+  commentId: Overload:BB84.Notifications.Commands.ActionCommand`1.Execute
+  isSpec: "True"
+  fullName: BB84.Notifications.Commands.ActionCommand<T>.Execute
+  fullName.vb: BB84.Notifications.Commands.ActionCommand(Of T).Execute
+  nameWithType: ActionCommand<T>.Execute
+  nameWithType.vb: ActionCommand(Of T).Execute
+- uid: BB84.Notifications.Commands.ActionCommand`1.RaiseCanExecuteChanged
+  name: RaiseCanExecuteChanged()
+  href: api/BB84.Notifications.Commands.ActionCommand-1.html#BB84_Notifications_Commands_ActionCommand_1_RaiseCanExecuteChanged
+  commentId: M:BB84.Notifications.Commands.ActionCommand`1.RaiseCanExecuteChanged
+  fullName: BB84.Notifications.Commands.ActionCommand<T>.RaiseCanExecuteChanged()
+  fullName.vb: BB84.Notifications.Commands.ActionCommand(Of T).RaiseCanExecuteChanged()
+  nameWithType: ActionCommand<T>.RaiseCanExecuteChanged()
+  nameWithType.vb: ActionCommand(Of T).RaiseCanExecuteChanged()
+- uid: BB84.Notifications.Commands.ActionCommand`1.RaiseCanExecuteChanged*
+  name: RaiseCanExecuteChanged
+  href: api/BB84.Notifications.Commands.ActionCommand-1.html#BB84_Notifications_Commands_ActionCommand_1_RaiseCanExecuteChanged_
+  commentId: Overload:BB84.Notifications.Commands.ActionCommand`1.RaiseCanExecuteChanged
+  isSpec: "True"
+  fullName: BB84.Notifications.Commands.ActionCommand<T>.RaiseCanExecuteChanged
+  fullName.vb: BB84.Notifications.Commands.ActionCommand(Of T).RaiseCanExecuteChanged
+  nameWithType: ActionCommand<T>.RaiseCanExecuteChanged
+  nameWithType.vb: ActionCommand(Of T).RaiseCanExecuteChanged
+- uid: BB84.Notifications.Commands.AsyncActionCommand
+  name: AsyncActionCommand
+  href: api/BB84.Notifications.Commands.AsyncActionCommand.html
+  commentId: T:BB84.Notifications.Commands.AsyncActionCommand
+  fullName: BB84.Notifications.Commands.AsyncActionCommand
+  nameWithType: AsyncActionCommand
+- uid: BB84.Notifications.Commands.AsyncActionCommand.#ctor(System.Func{System.Threading.Tasks.Task},System.Func{System.Boolean},BB84.Notifications.Interfaces.Components.IExceptionHandler)
+  name: AsyncActionCommand(Func<Task>, Func<bool>?, IExceptionHandler?)
+  href: api/BB84.Notifications.Commands.AsyncActionCommand.html#BB84_Notifications_Commands_AsyncActionCommand__ctor_System_Func_System_Threading_Tasks_Task__System_Func_System_Boolean__BB84_Notifications_Interfaces_Components_IExceptionHandler_
+  commentId: M:BB84.Notifications.Commands.AsyncActionCommand.#ctor(System.Func{System.Threading.Tasks.Task},System.Func{System.Boolean},BB84.Notifications.Interfaces.Components.IExceptionHandler)
+  name.vb: New(Func(Of Task), Func(Of Boolean), IExceptionHandler)
+  fullName: BB84.Notifications.Commands.AsyncActionCommand.AsyncActionCommand(System.Func<System.Threading.Tasks.Task>, System.Func<bool>?, BB84.Notifications.Interfaces.Components.IExceptionHandler?)
+  fullName.vb: BB84.Notifications.Commands.AsyncActionCommand.New(System.Func(Of System.Threading.Tasks.Task), System.Func(Of Boolean), BB84.Notifications.Interfaces.Components.IExceptionHandler)
+  nameWithType: AsyncActionCommand.AsyncActionCommand(Func<Task>, Func<bool>?, IExceptionHandler?)
+  nameWithType.vb: AsyncActionCommand.New(Func(Of Task), Func(Of Boolean), IExceptionHandler)
+- uid: BB84.Notifications.Commands.AsyncActionCommand.#ctor*
+  name: AsyncActionCommand
+  href: api/BB84.Notifications.Commands.AsyncActionCommand.html#BB84_Notifications_Commands_AsyncActionCommand__ctor_
+  commentId: Overload:BB84.Notifications.Commands.AsyncActionCommand.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: BB84.Notifications.Commands.AsyncActionCommand.AsyncActionCommand
+  fullName.vb: BB84.Notifications.Commands.AsyncActionCommand.New
+  nameWithType: AsyncActionCommand.AsyncActionCommand
+  nameWithType.vb: AsyncActionCommand.New
+- uid: BB84.Notifications.Commands.AsyncActionCommand.CanExecute
+  name: CanExecute()
+  href: api/BB84.Notifications.Commands.AsyncActionCommand.html#BB84_Notifications_Commands_AsyncActionCommand_CanExecute
+  commentId: M:BB84.Notifications.Commands.AsyncActionCommand.CanExecute
+  fullName: BB84.Notifications.Commands.AsyncActionCommand.CanExecute()
+  nameWithType: AsyncActionCommand.CanExecute()
+- uid: BB84.Notifications.Commands.AsyncActionCommand.CanExecute(System.Object)
+  name: CanExecute(object?)
+  href: api/BB84.Notifications.Commands.AsyncActionCommand.html#BB84_Notifications_Commands_AsyncActionCommand_CanExecute_System_Object_
+  commentId: M:BB84.Notifications.Commands.AsyncActionCommand.CanExecute(System.Object)
+  name.vb: CanExecute(Object)
+  fullName: BB84.Notifications.Commands.AsyncActionCommand.CanExecute(object?)
+  fullName.vb: BB84.Notifications.Commands.AsyncActionCommand.CanExecute(Object)
+  nameWithType: AsyncActionCommand.CanExecute(object?)
+  nameWithType.vb: AsyncActionCommand.CanExecute(Object)
+- uid: BB84.Notifications.Commands.AsyncActionCommand.CanExecute*
+  name: CanExecute
+  href: api/BB84.Notifications.Commands.AsyncActionCommand.html#BB84_Notifications_Commands_AsyncActionCommand_CanExecute_
+  commentId: Overload:BB84.Notifications.Commands.AsyncActionCommand.CanExecute
+  isSpec: "True"
+  fullName: BB84.Notifications.Commands.AsyncActionCommand.CanExecute
+  nameWithType: AsyncActionCommand.CanExecute
+- uid: BB84.Notifications.Commands.AsyncActionCommand.CanExecuteChanged
+  name: CanExecuteChanged
+  href: api/BB84.Notifications.Commands.AsyncActionCommand.html#BB84_Notifications_Commands_AsyncActionCommand_CanExecuteChanged
+  commentId: E:BB84.Notifications.Commands.AsyncActionCommand.CanExecuteChanged
+  fullName: BB84.Notifications.Commands.AsyncActionCommand.CanExecuteChanged
+  nameWithType: AsyncActionCommand.CanExecuteChanged
+- uid: BB84.Notifications.Commands.AsyncActionCommand.Execute(System.Object)
+  name: Execute(object?)
+  href: api/BB84.Notifications.Commands.AsyncActionCommand.html#BB84_Notifications_Commands_AsyncActionCommand_Execute_System_Object_
+  commentId: M:BB84.Notifications.Commands.AsyncActionCommand.Execute(System.Object)
+  name.vb: Execute(Object)
+  fullName: BB84.Notifications.Commands.AsyncActionCommand.Execute(object?)
+  fullName.vb: BB84.Notifications.Commands.AsyncActionCommand.Execute(Object)
+  nameWithType: AsyncActionCommand.Execute(object?)
+  nameWithType.vb: AsyncActionCommand.Execute(Object)
+- uid: BB84.Notifications.Commands.AsyncActionCommand.Execute*
+  name: Execute
+  href: api/BB84.Notifications.Commands.AsyncActionCommand.html#BB84_Notifications_Commands_AsyncActionCommand_Execute_
+  commentId: Overload:BB84.Notifications.Commands.AsyncActionCommand.Execute
+  isSpec: "True"
+  fullName: BB84.Notifications.Commands.AsyncActionCommand.Execute
+  nameWithType: AsyncActionCommand.Execute
+- uid: BB84.Notifications.Commands.AsyncActionCommand.ExecuteAsync
+  name: ExecuteAsync()
+  href: api/BB84.Notifications.Commands.AsyncActionCommand.html#BB84_Notifications_Commands_AsyncActionCommand_ExecuteAsync
+  commentId: M:BB84.Notifications.Commands.AsyncActionCommand.ExecuteAsync
+  fullName: BB84.Notifications.Commands.AsyncActionCommand.ExecuteAsync()
+  nameWithType: AsyncActionCommand.ExecuteAsync()
+- uid: BB84.Notifications.Commands.AsyncActionCommand.ExecuteAsync*
+  name: ExecuteAsync
+  href: api/BB84.Notifications.Commands.AsyncActionCommand.html#BB84_Notifications_Commands_AsyncActionCommand_ExecuteAsync_
+  commentId: Overload:BB84.Notifications.Commands.AsyncActionCommand.ExecuteAsync
+  isSpec: "True"
+  fullName: BB84.Notifications.Commands.AsyncActionCommand.ExecuteAsync
+  nameWithType: AsyncActionCommand.ExecuteAsync
+- uid: BB84.Notifications.Commands.AsyncActionCommand.RaiseCanExecuteChanged
+  name: RaiseCanExecuteChanged()
+  href: api/BB84.Notifications.Commands.AsyncActionCommand.html#BB84_Notifications_Commands_AsyncActionCommand_RaiseCanExecuteChanged
+  commentId: M:BB84.Notifications.Commands.AsyncActionCommand.RaiseCanExecuteChanged
+  fullName: BB84.Notifications.Commands.AsyncActionCommand.RaiseCanExecuteChanged()
+  nameWithType: AsyncActionCommand.RaiseCanExecuteChanged()
+- uid: BB84.Notifications.Commands.AsyncActionCommand.RaiseCanExecuteChanged*
+  name: RaiseCanExecuteChanged
+  href: api/BB84.Notifications.Commands.AsyncActionCommand.html#BB84_Notifications_Commands_AsyncActionCommand_RaiseCanExecuteChanged_
+  commentId: Overload:BB84.Notifications.Commands.AsyncActionCommand.RaiseCanExecuteChanged
+  isSpec: "True"
+  fullName: BB84.Notifications.Commands.AsyncActionCommand.RaiseCanExecuteChanged
+  nameWithType: AsyncActionCommand.RaiseCanExecuteChanged
+- uid: BB84.Notifications.Commands.AsyncActionCommand`1
+  name: AsyncActionCommand<T>
+  href: api/BB84.Notifications.Commands.AsyncActionCommand-1.html
+  commentId: T:BB84.Notifications.Commands.AsyncActionCommand`1
+  name.vb: AsyncActionCommand(Of T)
+  fullName: BB84.Notifications.Commands.AsyncActionCommand<T>
+  fullName.vb: BB84.Notifications.Commands.AsyncActionCommand(Of T)
+  nameWithType: AsyncActionCommand<T>
+  nameWithType.vb: AsyncActionCommand(Of T)
+- uid: BB84.Notifications.Commands.AsyncActionCommand`1.#ctor(System.Func{`0,System.Threading.Tasks.Task},System.Func{`0,System.Boolean},BB84.Notifications.Interfaces.Components.IExceptionHandler)
+  name: AsyncActionCommand(Func<T, Task>, Func<T, bool>?, IExceptionHandler?)
+  href: api/BB84.Notifications.Commands.AsyncActionCommand-1.html#BB84_Notifications_Commands_AsyncActionCommand_1__ctor_System_Func__0_System_Threading_Tasks_Task__System_Func__0_System_Boolean__BB84_Notifications_Interfaces_Components_IExceptionHandler_
+  commentId: M:BB84.Notifications.Commands.AsyncActionCommand`1.#ctor(System.Func{`0,System.Threading.Tasks.Task},System.Func{`0,System.Boolean},BB84.Notifications.Interfaces.Components.IExceptionHandler)
+  name.vb: New(Func(Of T, Task), Func(Of T, Boolean), IExceptionHandler)
+  fullName: BB84.Notifications.Commands.AsyncActionCommand<T>.AsyncActionCommand(System.Func<T, System.Threading.Tasks.Task>, System.Func<T, bool>?, BB84.Notifications.Interfaces.Components.IExceptionHandler?)
+  fullName.vb: BB84.Notifications.Commands.AsyncActionCommand(Of T).New(System.Func(Of T, System.Threading.Tasks.Task), System.Func(Of T, Boolean), BB84.Notifications.Interfaces.Components.IExceptionHandler)
+  nameWithType: AsyncActionCommand<T>.AsyncActionCommand(Func<T, Task>, Func<T, bool>?, IExceptionHandler?)
+  nameWithType.vb: AsyncActionCommand(Of T).New(Func(Of T, Task), Func(Of T, Boolean), IExceptionHandler)
+- uid: BB84.Notifications.Commands.AsyncActionCommand`1.#ctor*
+  name: AsyncActionCommand
+  href: api/BB84.Notifications.Commands.AsyncActionCommand-1.html#BB84_Notifications_Commands_AsyncActionCommand_1__ctor_
+  commentId: Overload:BB84.Notifications.Commands.AsyncActionCommand`1.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: BB84.Notifications.Commands.AsyncActionCommand<T>.AsyncActionCommand
+  fullName.vb: BB84.Notifications.Commands.AsyncActionCommand(Of T).New
+  nameWithType: AsyncActionCommand<T>.AsyncActionCommand
+  nameWithType.vb: AsyncActionCommand(Of T).New
+- uid: BB84.Notifications.Commands.AsyncActionCommand`1.CanExecute(System.Object)
+  name: CanExecute(object?)
+  href: api/BB84.Notifications.Commands.AsyncActionCommand-1.html#BB84_Notifications_Commands_AsyncActionCommand_1_CanExecute_System_Object_
+  commentId: M:BB84.Notifications.Commands.AsyncActionCommand`1.CanExecute(System.Object)
+  name.vb: CanExecute(Object)
+  fullName: BB84.Notifications.Commands.AsyncActionCommand<T>.CanExecute(object?)
+  fullName.vb: BB84.Notifications.Commands.AsyncActionCommand(Of T).CanExecute(Object)
+  nameWithType: AsyncActionCommand<T>.CanExecute(object?)
+  nameWithType.vb: AsyncActionCommand(Of T).CanExecute(Object)
+- uid: BB84.Notifications.Commands.AsyncActionCommand`1.CanExecute(`0)
+  name: CanExecute(T)
+  href: api/BB84.Notifications.Commands.AsyncActionCommand-1.html#BB84_Notifications_Commands_AsyncActionCommand_1_CanExecute__0_
+  commentId: M:BB84.Notifications.Commands.AsyncActionCommand`1.CanExecute(`0)
+  fullName: BB84.Notifications.Commands.AsyncActionCommand<T>.CanExecute(T)
+  fullName.vb: BB84.Notifications.Commands.AsyncActionCommand(Of T).CanExecute(T)
+  nameWithType: AsyncActionCommand<T>.CanExecute(T)
+  nameWithType.vb: AsyncActionCommand(Of T).CanExecute(T)
+- uid: BB84.Notifications.Commands.AsyncActionCommand`1.CanExecute*
+  name: CanExecute
+  href: api/BB84.Notifications.Commands.AsyncActionCommand-1.html#BB84_Notifications_Commands_AsyncActionCommand_1_CanExecute_
+  commentId: Overload:BB84.Notifications.Commands.AsyncActionCommand`1.CanExecute
+  isSpec: "True"
+  fullName: BB84.Notifications.Commands.AsyncActionCommand<T>.CanExecute
+  fullName.vb: BB84.Notifications.Commands.AsyncActionCommand(Of T).CanExecute
+  nameWithType: AsyncActionCommand<T>.CanExecute
+  nameWithType.vb: AsyncActionCommand(Of T).CanExecute
+- uid: BB84.Notifications.Commands.AsyncActionCommand`1.CanExecuteChanged
+  name: CanExecuteChanged
+  href: api/BB84.Notifications.Commands.AsyncActionCommand-1.html#BB84_Notifications_Commands_AsyncActionCommand_1_CanExecuteChanged
+  commentId: E:BB84.Notifications.Commands.AsyncActionCommand`1.CanExecuteChanged
+  fullName: BB84.Notifications.Commands.AsyncActionCommand<T>.CanExecuteChanged
+  fullName.vb: BB84.Notifications.Commands.AsyncActionCommand(Of T).CanExecuteChanged
+  nameWithType: AsyncActionCommand<T>.CanExecuteChanged
+  nameWithType.vb: AsyncActionCommand(Of T).CanExecuteChanged
+- uid: BB84.Notifications.Commands.AsyncActionCommand`1.Execute(System.Object)
+  name: Execute(object?)
+  href: api/BB84.Notifications.Commands.AsyncActionCommand-1.html#BB84_Notifications_Commands_AsyncActionCommand_1_Execute_System_Object_
+  commentId: M:BB84.Notifications.Commands.AsyncActionCommand`1.Execute(System.Object)
+  name.vb: Execute(Object)
+  fullName: BB84.Notifications.Commands.AsyncActionCommand<T>.Execute(object?)
+  fullName.vb: BB84.Notifications.Commands.AsyncActionCommand(Of T).Execute(Object)
+  nameWithType: AsyncActionCommand<T>.Execute(object?)
+  nameWithType.vb: AsyncActionCommand(Of T).Execute(Object)
+- uid: BB84.Notifications.Commands.AsyncActionCommand`1.Execute*
+  name: Execute
+  href: api/BB84.Notifications.Commands.AsyncActionCommand-1.html#BB84_Notifications_Commands_AsyncActionCommand_1_Execute_
+  commentId: Overload:BB84.Notifications.Commands.AsyncActionCommand`1.Execute
+  isSpec: "True"
+  fullName: BB84.Notifications.Commands.AsyncActionCommand<T>.Execute
+  fullName.vb: BB84.Notifications.Commands.AsyncActionCommand(Of T).Execute
+  nameWithType: AsyncActionCommand<T>.Execute
+  nameWithType.vb: AsyncActionCommand(Of T).Execute
+- uid: BB84.Notifications.Commands.AsyncActionCommand`1.ExecuteAsync(`0)
+  name: ExecuteAsync(T)
+  href: api/BB84.Notifications.Commands.AsyncActionCommand-1.html#BB84_Notifications_Commands_AsyncActionCommand_1_ExecuteAsync__0_
+  commentId: M:BB84.Notifications.Commands.AsyncActionCommand`1.ExecuteAsync(`0)
+  fullName: BB84.Notifications.Commands.AsyncActionCommand<T>.ExecuteAsync(T)
+  fullName.vb: BB84.Notifications.Commands.AsyncActionCommand(Of T).ExecuteAsync(T)
+  nameWithType: AsyncActionCommand<T>.ExecuteAsync(T)
+  nameWithType.vb: AsyncActionCommand(Of T).ExecuteAsync(T)
+- uid: BB84.Notifications.Commands.AsyncActionCommand`1.ExecuteAsync*
+  name: ExecuteAsync
+  href: api/BB84.Notifications.Commands.AsyncActionCommand-1.html#BB84_Notifications_Commands_AsyncActionCommand_1_ExecuteAsync_
+  commentId: Overload:BB84.Notifications.Commands.AsyncActionCommand`1.ExecuteAsync
+  isSpec: "True"
+  fullName: BB84.Notifications.Commands.AsyncActionCommand<T>.ExecuteAsync
+  fullName.vb: BB84.Notifications.Commands.AsyncActionCommand(Of T).ExecuteAsync
+  nameWithType: AsyncActionCommand<T>.ExecuteAsync
+  nameWithType.vb: AsyncActionCommand(Of T).ExecuteAsync
+- uid: BB84.Notifications.Commands.AsyncActionCommand`1.RaiseCanExecuteChanged
+  name: RaiseCanExecuteChanged()
+  href: api/BB84.Notifications.Commands.AsyncActionCommand-1.html#BB84_Notifications_Commands_AsyncActionCommand_1_RaiseCanExecuteChanged
+  commentId: M:BB84.Notifications.Commands.AsyncActionCommand`1.RaiseCanExecuteChanged
+  fullName: BB84.Notifications.Commands.AsyncActionCommand<T>.RaiseCanExecuteChanged()
+  fullName.vb: BB84.Notifications.Commands.AsyncActionCommand(Of T).RaiseCanExecuteChanged()
+  nameWithType: AsyncActionCommand<T>.RaiseCanExecuteChanged()
+  nameWithType.vb: AsyncActionCommand(Of T).RaiseCanExecuteChanged()
+- uid: BB84.Notifications.Commands.AsyncActionCommand`1.RaiseCanExecuteChanged*
+  name: RaiseCanExecuteChanged
+  href: api/BB84.Notifications.Commands.AsyncActionCommand-1.html#BB84_Notifications_Commands_AsyncActionCommand_1_RaiseCanExecuteChanged_
+  commentId: Overload:BB84.Notifications.Commands.AsyncActionCommand`1.RaiseCanExecuteChanged
+  isSpec: "True"
+  fullName: BB84.Notifications.Commands.AsyncActionCommand<T>.RaiseCanExecuteChanged
+  fullName.vb: BB84.Notifications.Commands.AsyncActionCommand(Of T).RaiseCanExecuteChanged
+  nameWithType: AsyncActionCommand<T>.RaiseCanExecuteChanged
+  nameWithType.vb: AsyncActionCommand(Of T).RaiseCanExecuteChanged
 - uid: BB84.Notifications.Components
   name: BB84.Notifications.Components
   href: api/BB84.Notifications.Components.html
@@ -608,18 +807,281 @@ references:
   fullName.vb: BB84.Notifications.Components.PropertyChangingEventArgs(Of T).Value
   nameWithType: PropertyChangingEventArgs<T>.Value
   nameWithType.vb: PropertyChangingEventArgs(Of T).Value
+- uid: BB84.Notifications.Extensions
+  name: BB84.Notifications.Extensions
+  href: api/BB84.Notifications.Extensions.html
+  commentId: N:BB84.Notifications.Extensions
+  fullName: BB84.Notifications.Extensions
+  nameWithType: BB84.Notifications.Extensions
+- uid: BB84.Notifications.Extensions.TaskExtensions
+  name: TaskExtensions
+  href: api/BB84.Notifications.Extensions.TaskExtensions.html
+  commentId: T:BB84.Notifications.Extensions.TaskExtensions
+  fullName: BB84.Notifications.Extensions.TaskExtensions
+  nameWithType: TaskExtensions
+- uid: BB84.Notifications.Extensions.TaskExtensions.ToSaveVoid(System.Threading.Tasks.Task,BB84.Notifications.Interfaces.Components.IExceptionHandler)
+  name: ToSaveVoid(Task, IExceptionHandler?)
+  href: api/BB84.Notifications.Extensions.TaskExtensions.html#BB84_Notifications_Extensions_TaskExtensions_ToSaveVoid_System_Threading_Tasks_Task_BB84_Notifications_Interfaces_Components_IExceptionHandler_
+  commentId: M:BB84.Notifications.Extensions.TaskExtensions.ToSaveVoid(System.Threading.Tasks.Task,BB84.Notifications.Interfaces.Components.IExceptionHandler)
+  name.vb: ToSaveVoid(Task, IExceptionHandler)
+  fullName: BB84.Notifications.Extensions.TaskExtensions.ToSaveVoid(System.Threading.Tasks.Task, BB84.Notifications.Interfaces.Components.IExceptionHandler?)
+  fullName.vb: BB84.Notifications.Extensions.TaskExtensions.ToSaveVoid(System.Threading.Tasks.Task, BB84.Notifications.Interfaces.Components.IExceptionHandler)
+  nameWithType: TaskExtensions.ToSaveVoid(Task, IExceptionHandler?)
+  nameWithType.vb: TaskExtensions.ToSaveVoid(Task, IExceptionHandler)
+- uid: BB84.Notifications.Extensions.TaskExtensions.ToSaveVoid*
+  name: ToSaveVoid
+  href: api/BB84.Notifications.Extensions.TaskExtensions.html#BB84_Notifications_Extensions_TaskExtensions_ToSaveVoid_
+  commentId: Overload:BB84.Notifications.Extensions.TaskExtensions.ToSaveVoid
+  isSpec: "True"
+  fullName: BB84.Notifications.Extensions.TaskExtensions.ToSaveVoid
+  nameWithType: TaskExtensions.ToSaveVoid
 - uid: BB84.Notifications.Interfaces
   name: BB84.Notifications.Interfaces
   href: api/BB84.Notifications.Interfaces.html
   commentId: N:BB84.Notifications.Interfaces
   fullName: BB84.Notifications.Interfaces
   nameWithType: BB84.Notifications.Interfaces
+- uid: BB84.Notifications.Interfaces.Commands
+  name: BB84.Notifications.Interfaces.Commands
+  href: api/BB84.Notifications.Interfaces.Commands.html
+  commentId: N:BB84.Notifications.Interfaces.Commands
+  fullName: BB84.Notifications.Interfaces.Commands
+  nameWithType: BB84.Notifications.Interfaces.Commands
+- uid: BB84.Notifications.Interfaces.Commands.IActionCommand
+  name: IActionCommand
+  href: api/BB84.Notifications.Interfaces.Commands.IActionCommand.html
+  commentId: T:BB84.Notifications.Interfaces.Commands.IActionCommand
+  fullName: BB84.Notifications.Interfaces.Commands.IActionCommand
+  nameWithType: IActionCommand
+- uid: BB84.Notifications.Interfaces.Commands.IActionCommand.CanExecute
+  name: CanExecute()
+  href: api/BB84.Notifications.Interfaces.Commands.IActionCommand.html#BB84_Notifications_Interfaces_Commands_IActionCommand_CanExecute
+  commentId: M:BB84.Notifications.Interfaces.Commands.IActionCommand.CanExecute
+  fullName: BB84.Notifications.Interfaces.Commands.IActionCommand.CanExecute()
+  nameWithType: IActionCommand.CanExecute()
+- uid: BB84.Notifications.Interfaces.Commands.IActionCommand.CanExecute*
+  name: CanExecute
+  href: api/BB84.Notifications.Interfaces.Commands.IActionCommand.html#BB84_Notifications_Interfaces_Commands_IActionCommand_CanExecute_
+  commentId: Overload:BB84.Notifications.Interfaces.Commands.IActionCommand.CanExecute
+  isSpec: "True"
+  fullName: BB84.Notifications.Interfaces.Commands.IActionCommand.CanExecute
+  nameWithType: IActionCommand.CanExecute
+- uid: BB84.Notifications.Interfaces.Commands.IActionCommand.Execute
+  name: Execute()
+  href: api/BB84.Notifications.Interfaces.Commands.IActionCommand.html#BB84_Notifications_Interfaces_Commands_IActionCommand_Execute
+  commentId: M:BB84.Notifications.Interfaces.Commands.IActionCommand.Execute
+  fullName: BB84.Notifications.Interfaces.Commands.IActionCommand.Execute()
+  nameWithType: IActionCommand.Execute()
+- uid: BB84.Notifications.Interfaces.Commands.IActionCommand.Execute*
+  name: Execute
+  href: api/BB84.Notifications.Interfaces.Commands.IActionCommand.html#BB84_Notifications_Interfaces_Commands_IActionCommand_Execute_
+  commentId: Overload:BB84.Notifications.Interfaces.Commands.IActionCommand.Execute
+  isSpec: "True"
+  fullName: BB84.Notifications.Interfaces.Commands.IActionCommand.Execute
+  nameWithType: IActionCommand.Execute
+- uid: BB84.Notifications.Interfaces.Commands.IActionCommand.RaiseCanExecuteChanged
+  name: RaiseCanExecuteChanged()
+  href: api/BB84.Notifications.Interfaces.Commands.IActionCommand.html#BB84_Notifications_Interfaces_Commands_IActionCommand_RaiseCanExecuteChanged
+  commentId: M:BB84.Notifications.Interfaces.Commands.IActionCommand.RaiseCanExecuteChanged
+  fullName: BB84.Notifications.Interfaces.Commands.IActionCommand.RaiseCanExecuteChanged()
+  nameWithType: IActionCommand.RaiseCanExecuteChanged()
+- uid: BB84.Notifications.Interfaces.Commands.IActionCommand.RaiseCanExecuteChanged*
+  name: RaiseCanExecuteChanged
+  href: api/BB84.Notifications.Interfaces.Commands.IActionCommand.html#BB84_Notifications_Interfaces_Commands_IActionCommand_RaiseCanExecuteChanged_
+  commentId: Overload:BB84.Notifications.Interfaces.Commands.IActionCommand.RaiseCanExecuteChanged
+  isSpec: "True"
+  fullName: BB84.Notifications.Interfaces.Commands.IActionCommand.RaiseCanExecuteChanged
+  nameWithType: IActionCommand.RaiseCanExecuteChanged
+- uid: BB84.Notifications.Interfaces.Commands.IActionCommand`1
+  name: IActionCommand<T>
+  href: api/BB84.Notifications.Interfaces.Commands.IActionCommand-1.html
+  commentId: T:BB84.Notifications.Interfaces.Commands.IActionCommand`1
+  name.vb: IActionCommand(Of T)
+  fullName: BB84.Notifications.Interfaces.Commands.IActionCommand<T>
+  fullName.vb: BB84.Notifications.Interfaces.Commands.IActionCommand(Of T)
+  nameWithType: IActionCommand<T>
+  nameWithType.vb: IActionCommand(Of T)
+- uid: BB84.Notifications.Interfaces.Commands.IActionCommand`1.CanExecute(`0)
+  name: CanExecute(T)
+  href: api/BB84.Notifications.Interfaces.Commands.IActionCommand-1.html#BB84_Notifications_Interfaces_Commands_IActionCommand_1_CanExecute__0_
+  commentId: M:BB84.Notifications.Interfaces.Commands.IActionCommand`1.CanExecute(`0)
+  fullName: BB84.Notifications.Interfaces.Commands.IActionCommand<T>.CanExecute(T)
+  fullName.vb: BB84.Notifications.Interfaces.Commands.IActionCommand(Of T).CanExecute(T)
+  nameWithType: IActionCommand<T>.CanExecute(T)
+  nameWithType.vb: IActionCommand(Of T).CanExecute(T)
+- uid: BB84.Notifications.Interfaces.Commands.IActionCommand`1.CanExecute*
+  name: CanExecute
+  href: api/BB84.Notifications.Interfaces.Commands.IActionCommand-1.html#BB84_Notifications_Interfaces_Commands_IActionCommand_1_CanExecute_
+  commentId: Overload:BB84.Notifications.Interfaces.Commands.IActionCommand`1.CanExecute
+  isSpec: "True"
+  fullName: BB84.Notifications.Interfaces.Commands.IActionCommand<T>.CanExecute
+  fullName.vb: BB84.Notifications.Interfaces.Commands.IActionCommand(Of T).CanExecute
+  nameWithType: IActionCommand<T>.CanExecute
+  nameWithType.vb: IActionCommand(Of T).CanExecute
+- uid: BB84.Notifications.Interfaces.Commands.IActionCommand`1.Execute(`0)
+  name: Execute(T)
+  href: api/BB84.Notifications.Interfaces.Commands.IActionCommand-1.html#BB84_Notifications_Interfaces_Commands_IActionCommand_1_Execute__0_
+  commentId: M:BB84.Notifications.Interfaces.Commands.IActionCommand`1.Execute(`0)
+  fullName: BB84.Notifications.Interfaces.Commands.IActionCommand<T>.Execute(T)
+  fullName.vb: BB84.Notifications.Interfaces.Commands.IActionCommand(Of T).Execute(T)
+  nameWithType: IActionCommand<T>.Execute(T)
+  nameWithType.vb: IActionCommand(Of T).Execute(T)
+- uid: BB84.Notifications.Interfaces.Commands.IActionCommand`1.Execute*
+  name: Execute
+  href: api/BB84.Notifications.Interfaces.Commands.IActionCommand-1.html#BB84_Notifications_Interfaces_Commands_IActionCommand_1_Execute_
+  commentId: Overload:BB84.Notifications.Interfaces.Commands.IActionCommand`1.Execute
+  isSpec: "True"
+  fullName: BB84.Notifications.Interfaces.Commands.IActionCommand<T>.Execute
+  fullName.vb: BB84.Notifications.Interfaces.Commands.IActionCommand(Of T).Execute
+  nameWithType: IActionCommand<T>.Execute
+  nameWithType.vb: IActionCommand(Of T).Execute
+- uid: BB84.Notifications.Interfaces.Commands.IActionCommand`1.RaiseCanExecuteChanged
+  name: RaiseCanExecuteChanged()
+  href: api/BB84.Notifications.Interfaces.Commands.IActionCommand-1.html#BB84_Notifications_Interfaces_Commands_IActionCommand_1_RaiseCanExecuteChanged
+  commentId: M:BB84.Notifications.Interfaces.Commands.IActionCommand`1.RaiseCanExecuteChanged
+  fullName: BB84.Notifications.Interfaces.Commands.IActionCommand<T>.RaiseCanExecuteChanged()
+  fullName.vb: BB84.Notifications.Interfaces.Commands.IActionCommand(Of T).RaiseCanExecuteChanged()
+  nameWithType: IActionCommand<T>.RaiseCanExecuteChanged()
+  nameWithType.vb: IActionCommand(Of T).RaiseCanExecuteChanged()
+- uid: BB84.Notifications.Interfaces.Commands.IActionCommand`1.RaiseCanExecuteChanged*
+  name: RaiseCanExecuteChanged
+  href: api/BB84.Notifications.Interfaces.Commands.IActionCommand-1.html#BB84_Notifications_Interfaces_Commands_IActionCommand_1_RaiseCanExecuteChanged_
+  commentId: Overload:BB84.Notifications.Interfaces.Commands.IActionCommand`1.RaiseCanExecuteChanged
+  isSpec: "True"
+  fullName: BB84.Notifications.Interfaces.Commands.IActionCommand<T>.RaiseCanExecuteChanged
+  fullName.vb: BB84.Notifications.Interfaces.Commands.IActionCommand(Of T).RaiseCanExecuteChanged
+  nameWithType: IActionCommand<T>.RaiseCanExecuteChanged
+  nameWithType.vb: IActionCommand(Of T).RaiseCanExecuteChanged
+- uid: BB84.Notifications.Interfaces.Commands.IAsyncActionCommand
+  name: IAsyncActionCommand
+  href: api/BB84.Notifications.Interfaces.Commands.IAsyncActionCommand.html
+  commentId: T:BB84.Notifications.Interfaces.Commands.IAsyncActionCommand
+  fullName: BB84.Notifications.Interfaces.Commands.IAsyncActionCommand
+  nameWithType: IAsyncActionCommand
+- uid: BB84.Notifications.Interfaces.Commands.IAsyncActionCommand.CanExecute
+  name: CanExecute()
+  href: api/BB84.Notifications.Interfaces.Commands.IAsyncActionCommand.html#BB84_Notifications_Interfaces_Commands_IAsyncActionCommand_CanExecute
+  commentId: M:BB84.Notifications.Interfaces.Commands.IAsyncActionCommand.CanExecute
+  fullName: BB84.Notifications.Interfaces.Commands.IAsyncActionCommand.CanExecute()
+  nameWithType: IAsyncActionCommand.CanExecute()
+- uid: BB84.Notifications.Interfaces.Commands.IAsyncActionCommand.CanExecute*
+  name: CanExecute
+  href: api/BB84.Notifications.Interfaces.Commands.IAsyncActionCommand.html#BB84_Notifications_Interfaces_Commands_IAsyncActionCommand_CanExecute_
+  commentId: Overload:BB84.Notifications.Interfaces.Commands.IAsyncActionCommand.CanExecute
+  isSpec: "True"
+  fullName: BB84.Notifications.Interfaces.Commands.IAsyncActionCommand.CanExecute
+  nameWithType: IAsyncActionCommand.CanExecute
+- uid: BB84.Notifications.Interfaces.Commands.IAsyncActionCommand.ExecuteAsync
+  name: ExecuteAsync()
+  href: api/BB84.Notifications.Interfaces.Commands.IAsyncActionCommand.html#BB84_Notifications_Interfaces_Commands_IAsyncActionCommand_ExecuteAsync
+  commentId: M:BB84.Notifications.Interfaces.Commands.IAsyncActionCommand.ExecuteAsync
+  fullName: BB84.Notifications.Interfaces.Commands.IAsyncActionCommand.ExecuteAsync()
+  nameWithType: IAsyncActionCommand.ExecuteAsync()
+- uid: BB84.Notifications.Interfaces.Commands.IAsyncActionCommand.ExecuteAsync*
+  name: ExecuteAsync
+  href: api/BB84.Notifications.Interfaces.Commands.IAsyncActionCommand.html#BB84_Notifications_Interfaces_Commands_IAsyncActionCommand_ExecuteAsync_
+  commentId: Overload:BB84.Notifications.Interfaces.Commands.IAsyncActionCommand.ExecuteAsync
+  isSpec: "True"
+  fullName: BB84.Notifications.Interfaces.Commands.IAsyncActionCommand.ExecuteAsync
+  nameWithType: IAsyncActionCommand.ExecuteAsync
+- uid: BB84.Notifications.Interfaces.Commands.IAsyncActionCommand.RaiseCanExecuteChanged
+  name: RaiseCanExecuteChanged()
+  href: api/BB84.Notifications.Interfaces.Commands.IAsyncActionCommand.html#BB84_Notifications_Interfaces_Commands_IAsyncActionCommand_RaiseCanExecuteChanged
+  commentId: M:BB84.Notifications.Interfaces.Commands.IAsyncActionCommand.RaiseCanExecuteChanged
+  fullName: BB84.Notifications.Interfaces.Commands.IAsyncActionCommand.RaiseCanExecuteChanged()
+  nameWithType: IAsyncActionCommand.RaiseCanExecuteChanged()
+- uid: BB84.Notifications.Interfaces.Commands.IAsyncActionCommand.RaiseCanExecuteChanged*
+  name: RaiseCanExecuteChanged
+  href: api/BB84.Notifications.Interfaces.Commands.IAsyncActionCommand.html#BB84_Notifications_Interfaces_Commands_IAsyncActionCommand_RaiseCanExecuteChanged_
+  commentId: Overload:BB84.Notifications.Interfaces.Commands.IAsyncActionCommand.RaiseCanExecuteChanged
+  isSpec: "True"
+  fullName: BB84.Notifications.Interfaces.Commands.IAsyncActionCommand.RaiseCanExecuteChanged
+  nameWithType: IAsyncActionCommand.RaiseCanExecuteChanged
+- uid: BB84.Notifications.Interfaces.Commands.IAsyncActionCommand`1
+  name: IAsyncActionCommand<T>
+  href: api/BB84.Notifications.Interfaces.Commands.IAsyncActionCommand-1.html
+  commentId: T:BB84.Notifications.Interfaces.Commands.IAsyncActionCommand`1
+  name.vb: IAsyncActionCommand(Of T)
+  fullName: BB84.Notifications.Interfaces.Commands.IAsyncActionCommand<T>
+  fullName.vb: BB84.Notifications.Interfaces.Commands.IAsyncActionCommand(Of T)
+  nameWithType: IAsyncActionCommand<T>
+  nameWithType.vb: IAsyncActionCommand(Of T)
+- uid: BB84.Notifications.Interfaces.Commands.IAsyncActionCommand`1.CanExecute(`0)
+  name: CanExecute(T)
+  href: api/BB84.Notifications.Interfaces.Commands.IAsyncActionCommand-1.html#BB84_Notifications_Interfaces_Commands_IAsyncActionCommand_1_CanExecute__0_
+  commentId: M:BB84.Notifications.Interfaces.Commands.IAsyncActionCommand`1.CanExecute(`0)
+  fullName: BB84.Notifications.Interfaces.Commands.IAsyncActionCommand<T>.CanExecute(T)
+  fullName.vb: BB84.Notifications.Interfaces.Commands.IAsyncActionCommand(Of T).CanExecute(T)
+  nameWithType: IAsyncActionCommand<T>.CanExecute(T)
+  nameWithType.vb: IAsyncActionCommand(Of T).CanExecute(T)
+- uid: BB84.Notifications.Interfaces.Commands.IAsyncActionCommand`1.CanExecute*
+  name: CanExecute
+  href: api/BB84.Notifications.Interfaces.Commands.IAsyncActionCommand-1.html#BB84_Notifications_Interfaces_Commands_IAsyncActionCommand_1_CanExecute_
+  commentId: Overload:BB84.Notifications.Interfaces.Commands.IAsyncActionCommand`1.CanExecute
+  isSpec: "True"
+  fullName: BB84.Notifications.Interfaces.Commands.IAsyncActionCommand<T>.CanExecute
+  fullName.vb: BB84.Notifications.Interfaces.Commands.IAsyncActionCommand(Of T).CanExecute
+  nameWithType: IAsyncActionCommand<T>.CanExecute
+  nameWithType.vb: IAsyncActionCommand(Of T).CanExecute
+- uid: BB84.Notifications.Interfaces.Commands.IAsyncActionCommand`1.ExecuteAsync(`0)
+  name: ExecuteAsync(T)
+  href: api/BB84.Notifications.Interfaces.Commands.IAsyncActionCommand-1.html#BB84_Notifications_Interfaces_Commands_IAsyncActionCommand_1_ExecuteAsync__0_
+  commentId: M:BB84.Notifications.Interfaces.Commands.IAsyncActionCommand`1.ExecuteAsync(`0)
+  fullName: BB84.Notifications.Interfaces.Commands.IAsyncActionCommand<T>.ExecuteAsync(T)
+  fullName.vb: BB84.Notifications.Interfaces.Commands.IAsyncActionCommand(Of T).ExecuteAsync(T)
+  nameWithType: IAsyncActionCommand<T>.ExecuteAsync(T)
+  nameWithType.vb: IAsyncActionCommand(Of T).ExecuteAsync(T)
+- uid: BB84.Notifications.Interfaces.Commands.IAsyncActionCommand`1.ExecuteAsync*
+  name: ExecuteAsync
+  href: api/BB84.Notifications.Interfaces.Commands.IAsyncActionCommand-1.html#BB84_Notifications_Interfaces_Commands_IAsyncActionCommand_1_ExecuteAsync_
+  commentId: Overload:BB84.Notifications.Interfaces.Commands.IAsyncActionCommand`1.ExecuteAsync
+  isSpec: "True"
+  fullName: BB84.Notifications.Interfaces.Commands.IAsyncActionCommand<T>.ExecuteAsync
+  fullName.vb: BB84.Notifications.Interfaces.Commands.IAsyncActionCommand(Of T).ExecuteAsync
+  nameWithType: IAsyncActionCommand<T>.ExecuteAsync
+  nameWithType.vb: IAsyncActionCommand(Of T).ExecuteAsync
+- uid: BB84.Notifications.Interfaces.Commands.IAsyncActionCommand`1.RaiseCanExecuteChanged
+  name: RaiseCanExecuteChanged()
+  href: api/BB84.Notifications.Interfaces.Commands.IAsyncActionCommand-1.html#BB84_Notifications_Interfaces_Commands_IAsyncActionCommand_1_RaiseCanExecuteChanged
+  commentId: M:BB84.Notifications.Interfaces.Commands.IAsyncActionCommand`1.RaiseCanExecuteChanged
+  fullName: BB84.Notifications.Interfaces.Commands.IAsyncActionCommand<T>.RaiseCanExecuteChanged()
+  fullName.vb: BB84.Notifications.Interfaces.Commands.IAsyncActionCommand(Of T).RaiseCanExecuteChanged()
+  nameWithType: IAsyncActionCommand<T>.RaiseCanExecuteChanged()
+  nameWithType.vb: IAsyncActionCommand(Of T).RaiseCanExecuteChanged()
+- uid: BB84.Notifications.Interfaces.Commands.IAsyncActionCommand`1.RaiseCanExecuteChanged*
+  name: RaiseCanExecuteChanged
+  href: api/BB84.Notifications.Interfaces.Commands.IAsyncActionCommand-1.html#BB84_Notifications_Interfaces_Commands_IAsyncActionCommand_1_RaiseCanExecuteChanged_
+  commentId: Overload:BB84.Notifications.Interfaces.Commands.IAsyncActionCommand`1.RaiseCanExecuteChanged
+  isSpec: "True"
+  fullName: BB84.Notifications.Interfaces.Commands.IAsyncActionCommand<T>.RaiseCanExecuteChanged
+  fullName.vb: BB84.Notifications.Interfaces.Commands.IAsyncActionCommand(Of T).RaiseCanExecuteChanged
+  nameWithType: IAsyncActionCommand<T>.RaiseCanExecuteChanged
+  nameWithType.vb: IAsyncActionCommand(Of T).RaiseCanExecuteChanged
 - uid: BB84.Notifications.Interfaces.Components
   name: BB84.Notifications.Interfaces.Components
   href: api/BB84.Notifications.Interfaces.Components.html
   commentId: N:BB84.Notifications.Interfaces.Components
   fullName: BB84.Notifications.Interfaces.Components
   nameWithType: BB84.Notifications.Interfaces.Components
+- uid: BB84.Notifications.Interfaces.Components.IExceptionHandler
+  name: IExceptionHandler
+  href: api/BB84.Notifications.Interfaces.Components.IExceptionHandler.html
+  commentId: T:BB84.Notifications.Interfaces.Components.IExceptionHandler
+  fullName: BB84.Notifications.Interfaces.Components.IExceptionHandler
+  nameWithType: IExceptionHandler
+- uid: BB84.Notifications.Interfaces.Components.IExceptionHandler.Handle(System.Exception)
+  name: Handle(Exception)
+  href: api/BB84.Notifications.Interfaces.Components.IExceptionHandler.html#BB84_Notifications_Interfaces_Components_IExceptionHandler_Handle_System_Exception_
+  commentId: M:BB84.Notifications.Interfaces.Components.IExceptionHandler.Handle(System.Exception)
+  fullName: BB84.Notifications.Interfaces.Components.IExceptionHandler.Handle(System.Exception)
+  nameWithType: IExceptionHandler.Handle(Exception)
+- uid: BB84.Notifications.Interfaces.Components.IExceptionHandler.Handle*
+  name: Handle
+  href: api/BB84.Notifications.Interfaces.Components.IExceptionHandler.html#BB84_Notifications_Interfaces_Components_IExceptionHandler_Handle_
+  commentId: Overload:BB84.Notifications.Interfaces.Components.IExceptionHandler.Handle
+  isSpec: "True"
+  fullName: BB84.Notifications.Interfaces.Components.IExceptionHandler.Handle
+  nameWithType: IExceptionHandler.Handle
 - uid: BB84.Notifications.Interfaces.Components.INotifyCollectionChanged
   name: INotifyCollectionChanged
   href: api/BB84.Notifications.Interfaces.Components.INotifyCollectionChanged.html
@@ -644,111 +1106,6 @@ references:
   commentId: E:BB84.Notifications.Interfaces.Components.INotifyCollectionChanging.CollectionChanging
   fullName: BB84.Notifications.Interfaces.Components.INotifyCollectionChanging.CollectionChanging
   nameWithType: INotifyCollectionChanging.CollectionChanging
-- uid: BB84.Notifications.Interfaces.IAsyncRelayCommand
-  name: IAsyncRelayCommand
-  href: api/BB84.Notifications.Interfaces.IAsyncRelayCommand.html
-  commentId: T:BB84.Notifications.Interfaces.IAsyncRelayCommand
-  fullName: BB84.Notifications.Interfaces.IAsyncRelayCommand
-  nameWithType: IAsyncRelayCommand
-- uid: BB84.Notifications.Interfaces.IAsyncRelayCommand.CanExecute
-  name: CanExecute()
-  href: api/BB84.Notifications.Interfaces.IAsyncRelayCommand.html#BB84_Notifications_Interfaces_IAsyncRelayCommand_CanExecute
-  commentId: M:BB84.Notifications.Interfaces.IAsyncRelayCommand.CanExecute
-  fullName: BB84.Notifications.Interfaces.IAsyncRelayCommand.CanExecute()
-  nameWithType: IAsyncRelayCommand.CanExecute()
-- uid: BB84.Notifications.Interfaces.IAsyncRelayCommand.CanExecute*
-  name: CanExecute
-  href: api/BB84.Notifications.Interfaces.IAsyncRelayCommand.html#BB84_Notifications_Interfaces_IAsyncRelayCommand_CanExecute_
-  commentId: Overload:BB84.Notifications.Interfaces.IAsyncRelayCommand.CanExecute
-  isSpec: "True"
-  fullName: BB84.Notifications.Interfaces.IAsyncRelayCommand.CanExecute
-  nameWithType: IAsyncRelayCommand.CanExecute
-- uid: BB84.Notifications.Interfaces.IAsyncRelayCommand.ExecuteAsync
-  name: ExecuteAsync()
-  href: api/BB84.Notifications.Interfaces.IAsyncRelayCommand.html#BB84_Notifications_Interfaces_IAsyncRelayCommand_ExecuteAsync
-  commentId: M:BB84.Notifications.Interfaces.IAsyncRelayCommand.ExecuteAsync
-  fullName: BB84.Notifications.Interfaces.IAsyncRelayCommand.ExecuteAsync()
-  nameWithType: IAsyncRelayCommand.ExecuteAsync()
-- uid: BB84.Notifications.Interfaces.IAsyncRelayCommand.ExecuteAsync*
-  name: ExecuteAsync
-  href: api/BB84.Notifications.Interfaces.IAsyncRelayCommand.html#BB84_Notifications_Interfaces_IAsyncRelayCommand_ExecuteAsync_
-  commentId: Overload:BB84.Notifications.Interfaces.IAsyncRelayCommand.ExecuteAsync
-  isSpec: "True"
-  fullName: BB84.Notifications.Interfaces.IAsyncRelayCommand.ExecuteAsync
-  nameWithType: IAsyncRelayCommand.ExecuteAsync
-- uid: BB84.Notifications.Interfaces.IAsyncRelayCommand.RaiseCanExecuteChanged
-  name: RaiseCanExecuteChanged()
-  href: api/BB84.Notifications.Interfaces.IAsyncRelayCommand.html#BB84_Notifications_Interfaces_IAsyncRelayCommand_RaiseCanExecuteChanged
-  commentId: M:BB84.Notifications.Interfaces.IAsyncRelayCommand.RaiseCanExecuteChanged
-  fullName: BB84.Notifications.Interfaces.IAsyncRelayCommand.RaiseCanExecuteChanged()
-  nameWithType: IAsyncRelayCommand.RaiseCanExecuteChanged()
-- uid: BB84.Notifications.Interfaces.IAsyncRelayCommand.RaiseCanExecuteChanged*
-  name: RaiseCanExecuteChanged
-  href: api/BB84.Notifications.Interfaces.IAsyncRelayCommand.html#BB84_Notifications_Interfaces_IAsyncRelayCommand_RaiseCanExecuteChanged_
-  commentId: Overload:BB84.Notifications.Interfaces.IAsyncRelayCommand.RaiseCanExecuteChanged
-  isSpec: "True"
-  fullName: BB84.Notifications.Interfaces.IAsyncRelayCommand.RaiseCanExecuteChanged
-  nameWithType: IAsyncRelayCommand.RaiseCanExecuteChanged
-- uid: BB84.Notifications.Interfaces.IAsyncRelayCommand`1
-  name: IAsyncRelayCommand<T>
-  href: api/BB84.Notifications.Interfaces.IAsyncRelayCommand-1.html
-  commentId: T:BB84.Notifications.Interfaces.IAsyncRelayCommand`1
-  name.vb: IAsyncRelayCommand(Of T)
-  fullName: BB84.Notifications.Interfaces.IAsyncRelayCommand<T>
-  fullName.vb: BB84.Notifications.Interfaces.IAsyncRelayCommand(Of T)
-  nameWithType: IAsyncRelayCommand<T>
-  nameWithType.vb: IAsyncRelayCommand(Of T)
-- uid: BB84.Notifications.Interfaces.IAsyncRelayCommand`1.CanExecute(`0)
-  name: CanExecute(T)
-  href: api/BB84.Notifications.Interfaces.IAsyncRelayCommand-1.html#BB84_Notifications_Interfaces_IAsyncRelayCommand_1_CanExecute__0_
-  commentId: M:BB84.Notifications.Interfaces.IAsyncRelayCommand`1.CanExecute(`0)
-  fullName: BB84.Notifications.Interfaces.IAsyncRelayCommand<T>.CanExecute(T)
-  fullName.vb: BB84.Notifications.Interfaces.IAsyncRelayCommand(Of T).CanExecute(T)
-  nameWithType: IAsyncRelayCommand<T>.CanExecute(T)
-  nameWithType.vb: IAsyncRelayCommand(Of T).CanExecute(T)
-- uid: BB84.Notifications.Interfaces.IAsyncRelayCommand`1.CanExecute*
-  name: CanExecute
-  href: api/BB84.Notifications.Interfaces.IAsyncRelayCommand-1.html#BB84_Notifications_Interfaces_IAsyncRelayCommand_1_CanExecute_
-  commentId: Overload:BB84.Notifications.Interfaces.IAsyncRelayCommand`1.CanExecute
-  isSpec: "True"
-  fullName: BB84.Notifications.Interfaces.IAsyncRelayCommand<T>.CanExecute
-  fullName.vb: BB84.Notifications.Interfaces.IAsyncRelayCommand(Of T).CanExecute
-  nameWithType: IAsyncRelayCommand<T>.CanExecute
-  nameWithType.vb: IAsyncRelayCommand(Of T).CanExecute
-- uid: BB84.Notifications.Interfaces.IAsyncRelayCommand`1.ExecuteAsync(`0)
-  name: ExecuteAsync(T)
-  href: api/BB84.Notifications.Interfaces.IAsyncRelayCommand-1.html#BB84_Notifications_Interfaces_IAsyncRelayCommand_1_ExecuteAsync__0_
-  commentId: M:BB84.Notifications.Interfaces.IAsyncRelayCommand`1.ExecuteAsync(`0)
-  fullName: BB84.Notifications.Interfaces.IAsyncRelayCommand<T>.ExecuteAsync(T)
-  fullName.vb: BB84.Notifications.Interfaces.IAsyncRelayCommand(Of T).ExecuteAsync(T)
-  nameWithType: IAsyncRelayCommand<T>.ExecuteAsync(T)
-  nameWithType.vb: IAsyncRelayCommand(Of T).ExecuteAsync(T)
-- uid: BB84.Notifications.Interfaces.IAsyncRelayCommand`1.ExecuteAsync*
-  name: ExecuteAsync
-  href: api/BB84.Notifications.Interfaces.IAsyncRelayCommand-1.html#BB84_Notifications_Interfaces_IAsyncRelayCommand_1_ExecuteAsync_
-  commentId: Overload:BB84.Notifications.Interfaces.IAsyncRelayCommand`1.ExecuteAsync
-  isSpec: "True"
-  fullName: BB84.Notifications.Interfaces.IAsyncRelayCommand<T>.ExecuteAsync
-  fullName.vb: BB84.Notifications.Interfaces.IAsyncRelayCommand(Of T).ExecuteAsync
-  nameWithType: IAsyncRelayCommand<T>.ExecuteAsync
-  nameWithType.vb: IAsyncRelayCommand(Of T).ExecuteAsync
-- uid: BB84.Notifications.Interfaces.IAsyncRelayCommand`1.RaiseCanExecuteChanged
-  name: RaiseCanExecuteChanged()
-  href: api/BB84.Notifications.Interfaces.IAsyncRelayCommand-1.html#BB84_Notifications_Interfaces_IAsyncRelayCommand_1_RaiseCanExecuteChanged
-  commentId: M:BB84.Notifications.Interfaces.IAsyncRelayCommand`1.RaiseCanExecuteChanged
-  fullName: BB84.Notifications.Interfaces.IAsyncRelayCommand<T>.RaiseCanExecuteChanged()
-  fullName.vb: BB84.Notifications.Interfaces.IAsyncRelayCommand(Of T).RaiseCanExecuteChanged()
-  nameWithType: IAsyncRelayCommand<T>.RaiseCanExecuteChanged()
-  nameWithType.vb: IAsyncRelayCommand(Of T).RaiseCanExecuteChanged()
-- uid: BB84.Notifications.Interfaces.IAsyncRelayCommand`1.RaiseCanExecuteChanged*
-  name: RaiseCanExecuteChanged
-  href: api/BB84.Notifications.Interfaces.IAsyncRelayCommand-1.html#BB84_Notifications_Interfaces_IAsyncRelayCommand_1_RaiseCanExecuteChanged_
-  commentId: Overload:BB84.Notifications.Interfaces.IAsyncRelayCommand`1.RaiseCanExecuteChanged
-  isSpec: "True"
-  fullName: BB84.Notifications.Interfaces.IAsyncRelayCommand<T>.RaiseCanExecuteChanged
-  fullName.vb: BB84.Notifications.Interfaces.IAsyncRelayCommand(Of T).RaiseCanExecuteChanged
-  nameWithType: IAsyncRelayCommand<T>.RaiseCanExecuteChanged
-  nameWithType.vb: IAsyncRelayCommand(Of T).RaiseCanExecuteChanged
 - uid: BB84.Notifications.Interfaces.INotifiableCollection
   name: INotifiableCollection
   href: api/BB84.Notifications.Interfaces.INotifiableCollection.html
@@ -821,111 +1178,6 @@ references:
   fullName.vb: BB84.Notifications.Interfaces.INotifiableProperty(Of T).Value
   nameWithType: INotifiableProperty<T>.Value
   nameWithType.vb: INotifiableProperty(Of T).Value
-- uid: BB84.Notifications.Interfaces.IRelayCommand
-  name: IRelayCommand
-  href: api/BB84.Notifications.Interfaces.IRelayCommand.html
-  commentId: T:BB84.Notifications.Interfaces.IRelayCommand
-  fullName: BB84.Notifications.Interfaces.IRelayCommand
-  nameWithType: IRelayCommand
-- uid: BB84.Notifications.Interfaces.IRelayCommand.CanExecute
-  name: CanExecute()
-  href: api/BB84.Notifications.Interfaces.IRelayCommand.html#BB84_Notifications_Interfaces_IRelayCommand_CanExecute
-  commentId: M:BB84.Notifications.Interfaces.IRelayCommand.CanExecute
-  fullName: BB84.Notifications.Interfaces.IRelayCommand.CanExecute()
-  nameWithType: IRelayCommand.CanExecute()
-- uid: BB84.Notifications.Interfaces.IRelayCommand.CanExecute*
-  name: CanExecute
-  href: api/BB84.Notifications.Interfaces.IRelayCommand.html#BB84_Notifications_Interfaces_IRelayCommand_CanExecute_
-  commentId: Overload:BB84.Notifications.Interfaces.IRelayCommand.CanExecute
-  isSpec: "True"
-  fullName: BB84.Notifications.Interfaces.IRelayCommand.CanExecute
-  nameWithType: IRelayCommand.CanExecute
-- uid: BB84.Notifications.Interfaces.IRelayCommand.Execute
-  name: Execute()
-  href: api/BB84.Notifications.Interfaces.IRelayCommand.html#BB84_Notifications_Interfaces_IRelayCommand_Execute
-  commentId: M:BB84.Notifications.Interfaces.IRelayCommand.Execute
-  fullName: BB84.Notifications.Interfaces.IRelayCommand.Execute()
-  nameWithType: IRelayCommand.Execute()
-- uid: BB84.Notifications.Interfaces.IRelayCommand.Execute*
-  name: Execute
-  href: api/BB84.Notifications.Interfaces.IRelayCommand.html#BB84_Notifications_Interfaces_IRelayCommand_Execute_
-  commentId: Overload:BB84.Notifications.Interfaces.IRelayCommand.Execute
-  isSpec: "True"
-  fullName: BB84.Notifications.Interfaces.IRelayCommand.Execute
-  nameWithType: IRelayCommand.Execute
-- uid: BB84.Notifications.Interfaces.IRelayCommand.RaiseCanExecuteChanged
-  name: RaiseCanExecuteChanged()
-  href: api/BB84.Notifications.Interfaces.IRelayCommand.html#BB84_Notifications_Interfaces_IRelayCommand_RaiseCanExecuteChanged
-  commentId: M:BB84.Notifications.Interfaces.IRelayCommand.RaiseCanExecuteChanged
-  fullName: BB84.Notifications.Interfaces.IRelayCommand.RaiseCanExecuteChanged()
-  nameWithType: IRelayCommand.RaiseCanExecuteChanged()
-- uid: BB84.Notifications.Interfaces.IRelayCommand.RaiseCanExecuteChanged*
-  name: RaiseCanExecuteChanged
-  href: api/BB84.Notifications.Interfaces.IRelayCommand.html#BB84_Notifications_Interfaces_IRelayCommand_RaiseCanExecuteChanged_
-  commentId: Overload:BB84.Notifications.Interfaces.IRelayCommand.RaiseCanExecuteChanged
-  isSpec: "True"
-  fullName: BB84.Notifications.Interfaces.IRelayCommand.RaiseCanExecuteChanged
-  nameWithType: IRelayCommand.RaiseCanExecuteChanged
-- uid: BB84.Notifications.Interfaces.IRelayCommand`1
-  name: IRelayCommand<T>
-  href: api/BB84.Notifications.Interfaces.IRelayCommand-1.html
-  commentId: T:BB84.Notifications.Interfaces.IRelayCommand`1
-  name.vb: IRelayCommand(Of T)
-  fullName: BB84.Notifications.Interfaces.IRelayCommand<T>
-  fullName.vb: BB84.Notifications.Interfaces.IRelayCommand(Of T)
-  nameWithType: IRelayCommand<T>
-  nameWithType.vb: IRelayCommand(Of T)
-- uid: BB84.Notifications.Interfaces.IRelayCommand`1.CanExecute(`0)
-  name: CanExecute(T)
-  href: api/BB84.Notifications.Interfaces.IRelayCommand-1.html#BB84_Notifications_Interfaces_IRelayCommand_1_CanExecute__0_
-  commentId: M:BB84.Notifications.Interfaces.IRelayCommand`1.CanExecute(`0)
-  fullName: BB84.Notifications.Interfaces.IRelayCommand<T>.CanExecute(T)
-  fullName.vb: BB84.Notifications.Interfaces.IRelayCommand(Of T).CanExecute(T)
-  nameWithType: IRelayCommand<T>.CanExecute(T)
-  nameWithType.vb: IRelayCommand(Of T).CanExecute(T)
-- uid: BB84.Notifications.Interfaces.IRelayCommand`1.CanExecute*
-  name: CanExecute
-  href: api/BB84.Notifications.Interfaces.IRelayCommand-1.html#BB84_Notifications_Interfaces_IRelayCommand_1_CanExecute_
-  commentId: Overload:BB84.Notifications.Interfaces.IRelayCommand`1.CanExecute
-  isSpec: "True"
-  fullName: BB84.Notifications.Interfaces.IRelayCommand<T>.CanExecute
-  fullName.vb: BB84.Notifications.Interfaces.IRelayCommand(Of T).CanExecute
-  nameWithType: IRelayCommand<T>.CanExecute
-  nameWithType.vb: IRelayCommand(Of T).CanExecute
-- uid: BB84.Notifications.Interfaces.IRelayCommand`1.Execute(`0)
-  name: Execute(T)
-  href: api/BB84.Notifications.Interfaces.IRelayCommand-1.html#BB84_Notifications_Interfaces_IRelayCommand_1_Execute__0_
-  commentId: M:BB84.Notifications.Interfaces.IRelayCommand`1.Execute(`0)
-  fullName: BB84.Notifications.Interfaces.IRelayCommand<T>.Execute(T)
-  fullName.vb: BB84.Notifications.Interfaces.IRelayCommand(Of T).Execute(T)
-  nameWithType: IRelayCommand<T>.Execute(T)
-  nameWithType.vb: IRelayCommand(Of T).Execute(T)
-- uid: BB84.Notifications.Interfaces.IRelayCommand`1.Execute*
-  name: Execute
-  href: api/BB84.Notifications.Interfaces.IRelayCommand-1.html#BB84_Notifications_Interfaces_IRelayCommand_1_Execute_
-  commentId: Overload:BB84.Notifications.Interfaces.IRelayCommand`1.Execute
-  isSpec: "True"
-  fullName: BB84.Notifications.Interfaces.IRelayCommand<T>.Execute
-  fullName.vb: BB84.Notifications.Interfaces.IRelayCommand(Of T).Execute
-  nameWithType: IRelayCommand<T>.Execute
-  nameWithType.vb: IRelayCommand(Of T).Execute
-- uid: BB84.Notifications.Interfaces.IRelayCommand`1.RaiseCanExecuteChanged
-  name: RaiseCanExecuteChanged()
-  href: api/BB84.Notifications.Interfaces.IRelayCommand-1.html#BB84_Notifications_Interfaces_IRelayCommand_1_RaiseCanExecuteChanged
-  commentId: M:BB84.Notifications.Interfaces.IRelayCommand`1.RaiseCanExecuteChanged
-  fullName: BB84.Notifications.Interfaces.IRelayCommand<T>.RaiseCanExecuteChanged()
-  fullName.vb: BB84.Notifications.Interfaces.IRelayCommand(Of T).RaiseCanExecuteChanged()
-  nameWithType: IRelayCommand<T>.RaiseCanExecuteChanged()
-  nameWithType.vb: IRelayCommand(Of T).RaiseCanExecuteChanged()
-- uid: BB84.Notifications.Interfaces.IRelayCommand`1.RaiseCanExecuteChanged*
-  name: RaiseCanExecuteChanged
-  href: api/BB84.Notifications.Interfaces.IRelayCommand-1.html#BB84_Notifications_Interfaces_IRelayCommand_1_RaiseCanExecuteChanged_
-  commentId: Overload:BB84.Notifications.Interfaces.IRelayCommand`1.RaiseCanExecuteChanged
-  isSpec: "True"
-  fullName: BB84.Notifications.Interfaces.IRelayCommand<T>.RaiseCanExecuteChanged
-  fullName.vb: BB84.Notifications.Interfaces.IRelayCommand(Of T).RaiseCanExecuteChanged
-  nameWithType: IRelayCommand<T>.RaiseCanExecuteChanged
-  nameWithType.vb: IRelayCommand(Of T).RaiseCanExecuteChanged
 - uid: BB84.Notifications.Interfaces.IValidatableObject
   name: IValidatableObject
   href: api/BB84.Notifications.Interfaces.IValidatableObject.html
@@ -1123,217 +1375,6 @@ references:
   fullName.vb: BB84.Notifications.NotifiableProperty(Of T).Value
   nameWithType: NotifiableProperty<T>.Value
   nameWithType.vb: NotifiableProperty(Of T).Value
-- uid: BB84.Notifications.RelayCommand
-  name: RelayCommand
-  href: api/BB84.Notifications.RelayCommand.html
-  commentId: T:BB84.Notifications.RelayCommand
-  fullName: BB84.Notifications.RelayCommand
-  nameWithType: RelayCommand
-- uid: BB84.Notifications.RelayCommand.#ctor(System.Action)
-  name: RelayCommand(Action)
-  href: api/BB84.Notifications.RelayCommand.html#BB84_Notifications_RelayCommand__ctor_System_Action_
-  commentId: M:BB84.Notifications.RelayCommand.#ctor(System.Action)
-  name.vb: New(Action)
-  fullName: BB84.Notifications.RelayCommand.RelayCommand(System.Action)
-  fullName.vb: BB84.Notifications.RelayCommand.New(System.Action)
-  nameWithType: RelayCommand.RelayCommand(Action)
-  nameWithType.vb: RelayCommand.New(Action)
-- uid: BB84.Notifications.RelayCommand.#ctor(System.Action,System.Func{System.Boolean})
-  name: RelayCommand(Action, Func<bool>?)
-  href: api/BB84.Notifications.RelayCommand.html#BB84_Notifications_RelayCommand__ctor_System_Action_System_Func_System_Boolean__
-  commentId: M:BB84.Notifications.RelayCommand.#ctor(System.Action,System.Func{System.Boolean})
-  name.vb: New(Action, Func(Of Boolean))
-  fullName: BB84.Notifications.RelayCommand.RelayCommand(System.Action, System.Func<bool>?)
-  fullName.vb: BB84.Notifications.RelayCommand.New(System.Action, System.Func(Of Boolean))
-  nameWithType: RelayCommand.RelayCommand(Action, Func<bool>?)
-  nameWithType.vb: RelayCommand.New(Action, Func(Of Boolean))
-- uid: BB84.Notifications.RelayCommand.#ctor*
-  name: RelayCommand
-  href: api/BB84.Notifications.RelayCommand.html#BB84_Notifications_RelayCommand__ctor_
-  commentId: Overload:BB84.Notifications.RelayCommand.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: BB84.Notifications.RelayCommand.RelayCommand
-  fullName.vb: BB84.Notifications.RelayCommand.New
-  nameWithType: RelayCommand.RelayCommand
-  nameWithType.vb: RelayCommand.New
-- uid: BB84.Notifications.RelayCommand.CanExecute
-  name: CanExecute()
-  href: api/BB84.Notifications.RelayCommand.html#BB84_Notifications_RelayCommand_CanExecute
-  commentId: M:BB84.Notifications.RelayCommand.CanExecute
-  fullName: BB84.Notifications.RelayCommand.CanExecute()
-  nameWithType: RelayCommand.CanExecute()
-- uid: BB84.Notifications.RelayCommand.CanExecute(System.Object)
-  name: CanExecute(object?)
-  href: api/BB84.Notifications.RelayCommand.html#BB84_Notifications_RelayCommand_CanExecute_System_Object_
-  commentId: M:BB84.Notifications.RelayCommand.CanExecute(System.Object)
-  name.vb: CanExecute(Object)
-  fullName: BB84.Notifications.RelayCommand.CanExecute(object?)
-  fullName.vb: BB84.Notifications.RelayCommand.CanExecute(Object)
-  nameWithType: RelayCommand.CanExecute(object?)
-  nameWithType.vb: RelayCommand.CanExecute(Object)
-- uid: BB84.Notifications.RelayCommand.CanExecute*
-  name: CanExecute
-  href: api/BB84.Notifications.RelayCommand.html#BB84_Notifications_RelayCommand_CanExecute_
-  commentId: Overload:BB84.Notifications.RelayCommand.CanExecute
-  isSpec: "True"
-  fullName: BB84.Notifications.RelayCommand.CanExecute
-  nameWithType: RelayCommand.CanExecute
-- uid: BB84.Notifications.RelayCommand.CanExecuteChanged
-  name: CanExecuteChanged
-  href: api/BB84.Notifications.RelayCommand.html#BB84_Notifications_RelayCommand_CanExecuteChanged
-  commentId: E:BB84.Notifications.RelayCommand.CanExecuteChanged
-  fullName: BB84.Notifications.RelayCommand.CanExecuteChanged
-  nameWithType: RelayCommand.CanExecuteChanged
-- uid: BB84.Notifications.RelayCommand.Execute
-  name: Execute()
-  href: api/BB84.Notifications.RelayCommand.html#BB84_Notifications_RelayCommand_Execute
-  commentId: M:BB84.Notifications.RelayCommand.Execute
-  fullName: BB84.Notifications.RelayCommand.Execute()
-  nameWithType: RelayCommand.Execute()
-- uid: BB84.Notifications.RelayCommand.Execute(System.Object)
-  name: Execute(object?)
-  href: api/BB84.Notifications.RelayCommand.html#BB84_Notifications_RelayCommand_Execute_System_Object_
-  commentId: M:BB84.Notifications.RelayCommand.Execute(System.Object)
-  name.vb: Execute(Object)
-  fullName: BB84.Notifications.RelayCommand.Execute(object?)
-  fullName.vb: BB84.Notifications.RelayCommand.Execute(Object)
-  nameWithType: RelayCommand.Execute(object?)
-  nameWithType.vb: RelayCommand.Execute(Object)
-- uid: BB84.Notifications.RelayCommand.Execute*
-  name: Execute
-  href: api/BB84.Notifications.RelayCommand.html#BB84_Notifications_RelayCommand_Execute_
-  commentId: Overload:BB84.Notifications.RelayCommand.Execute
-  isSpec: "True"
-  fullName: BB84.Notifications.RelayCommand.Execute
-  nameWithType: RelayCommand.Execute
-- uid: BB84.Notifications.RelayCommand.RaiseCanExecuteChanged
-  name: RaiseCanExecuteChanged()
-  href: api/BB84.Notifications.RelayCommand.html#BB84_Notifications_RelayCommand_RaiseCanExecuteChanged
-  commentId: M:BB84.Notifications.RelayCommand.RaiseCanExecuteChanged
-  fullName: BB84.Notifications.RelayCommand.RaiseCanExecuteChanged()
-  nameWithType: RelayCommand.RaiseCanExecuteChanged()
-- uid: BB84.Notifications.RelayCommand.RaiseCanExecuteChanged*
-  name: RaiseCanExecuteChanged
-  href: api/BB84.Notifications.RelayCommand.html#BB84_Notifications_RelayCommand_RaiseCanExecuteChanged_
-  commentId: Overload:BB84.Notifications.RelayCommand.RaiseCanExecuteChanged
-  isSpec: "True"
-  fullName: BB84.Notifications.RelayCommand.RaiseCanExecuteChanged
-  nameWithType: RelayCommand.RaiseCanExecuteChanged
-- uid: BB84.Notifications.RelayCommand`1
-  name: RelayCommand<T>
-  href: api/BB84.Notifications.RelayCommand-1.html
-  commentId: T:BB84.Notifications.RelayCommand`1
-  name.vb: RelayCommand(Of T)
-  fullName: BB84.Notifications.RelayCommand<T>
-  fullName.vb: BB84.Notifications.RelayCommand(Of T)
-  nameWithType: RelayCommand<T>
-  nameWithType.vb: RelayCommand(Of T)
-- uid: BB84.Notifications.RelayCommand`1.#ctor(System.Action{`0})
-  name: RelayCommand(Action<T>)
-  href: api/BB84.Notifications.RelayCommand-1.html#BB84_Notifications_RelayCommand_1__ctor_System_Action__0__
-  commentId: M:BB84.Notifications.RelayCommand`1.#ctor(System.Action{`0})
-  name.vb: New(Action(Of T))
-  fullName: BB84.Notifications.RelayCommand<T>.RelayCommand(System.Action<T>)
-  fullName.vb: BB84.Notifications.RelayCommand(Of T).New(System.Action(Of T))
-  nameWithType: RelayCommand<T>.RelayCommand(Action<T>)
-  nameWithType.vb: RelayCommand(Of T).New(Action(Of T))
-- uid: BB84.Notifications.RelayCommand`1.#ctor(System.Action{`0},System.Func{`0,System.Boolean})
-  name: RelayCommand(Action<T>, Func<T, bool>?)
-  href: api/BB84.Notifications.RelayCommand-1.html#BB84_Notifications_RelayCommand_1__ctor_System_Action__0__System_Func__0_System_Boolean__
-  commentId: M:BB84.Notifications.RelayCommand`1.#ctor(System.Action{`0},System.Func{`0,System.Boolean})
-  name.vb: New(Action(Of T), Func(Of T, Boolean))
-  fullName: BB84.Notifications.RelayCommand<T>.RelayCommand(System.Action<T>, System.Func<T, bool>?)
-  fullName.vb: BB84.Notifications.RelayCommand(Of T).New(System.Action(Of T), System.Func(Of T, Boolean))
-  nameWithType: RelayCommand<T>.RelayCommand(Action<T>, Func<T, bool>?)
-  nameWithType.vb: RelayCommand(Of T).New(Action(Of T), Func(Of T, Boolean))
-- uid: BB84.Notifications.RelayCommand`1.#ctor*
-  name: RelayCommand
-  href: api/BB84.Notifications.RelayCommand-1.html#BB84_Notifications_RelayCommand_1__ctor_
-  commentId: Overload:BB84.Notifications.RelayCommand`1.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: BB84.Notifications.RelayCommand<T>.RelayCommand
-  fullName.vb: BB84.Notifications.RelayCommand(Of T).New
-  nameWithType: RelayCommand<T>.RelayCommand
-  nameWithType.vb: RelayCommand(Of T).New
-- uid: BB84.Notifications.RelayCommand`1.CanExecute(System.Object)
-  name: CanExecute(object?)
-  href: api/BB84.Notifications.RelayCommand-1.html#BB84_Notifications_RelayCommand_1_CanExecute_System_Object_
-  commentId: M:BB84.Notifications.RelayCommand`1.CanExecute(System.Object)
-  name.vb: CanExecute(Object)
-  fullName: BB84.Notifications.RelayCommand<T>.CanExecute(object?)
-  fullName.vb: BB84.Notifications.RelayCommand(Of T).CanExecute(Object)
-  nameWithType: RelayCommand<T>.CanExecute(object?)
-  nameWithType.vb: RelayCommand(Of T).CanExecute(Object)
-- uid: BB84.Notifications.RelayCommand`1.CanExecute(`0)
-  name: CanExecute(T)
-  href: api/BB84.Notifications.RelayCommand-1.html#BB84_Notifications_RelayCommand_1_CanExecute__0_
-  commentId: M:BB84.Notifications.RelayCommand`1.CanExecute(`0)
-  fullName: BB84.Notifications.RelayCommand<T>.CanExecute(T)
-  fullName.vb: BB84.Notifications.RelayCommand(Of T).CanExecute(T)
-  nameWithType: RelayCommand<T>.CanExecute(T)
-  nameWithType.vb: RelayCommand(Of T).CanExecute(T)
-- uid: BB84.Notifications.RelayCommand`1.CanExecute*
-  name: CanExecute
-  href: api/BB84.Notifications.RelayCommand-1.html#BB84_Notifications_RelayCommand_1_CanExecute_
-  commentId: Overload:BB84.Notifications.RelayCommand`1.CanExecute
-  isSpec: "True"
-  fullName: BB84.Notifications.RelayCommand<T>.CanExecute
-  fullName.vb: BB84.Notifications.RelayCommand(Of T).CanExecute
-  nameWithType: RelayCommand<T>.CanExecute
-  nameWithType.vb: RelayCommand(Of T).CanExecute
-- uid: BB84.Notifications.RelayCommand`1.CanExecuteChanged
-  name: CanExecuteChanged
-  href: api/BB84.Notifications.RelayCommand-1.html#BB84_Notifications_RelayCommand_1_CanExecuteChanged
-  commentId: E:BB84.Notifications.RelayCommand`1.CanExecuteChanged
-  fullName: BB84.Notifications.RelayCommand<T>.CanExecuteChanged
-  fullName.vb: BB84.Notifications.RelayCommand(Of T).CanExecuteChanged
-  nameWithType: RelayCommand<T>.CanExecuteChanged
-  nameWithType.vb: RelayCommand(Of T).CanExecuteChanged
-- uid: BB84.Notifications.RelayCommand`1.Execute(System.Object)
-  name: Execute(object?)
-  href: api/BB84.Notifications.RelayCommand-1.html#BB84_Notifications_RelayCommand_1_Execute_System_Object_
-  commentId: M:BB84.Notifications.RelayCommand`1.Execute(System.Object)
-  name.vb: Execute(Object)
-  fullName: BB84.Notifications.RelayCommand<T>.Execute(object?)
-  fullName.vb: BB84.Notifications.RelayCommand(Of T).Execute(Object)
-  nameWithType: RelayCommand<T>.Execute(object?)
-  nameWithType.vb: RelayCommand(Of T).Execute(Object)
-- uid: BB84.Notifications.RelayCommand`1.Execute(`0)
-  name: Execute(T)
-  href: api/BB84.Notifications.RelayCommand-1.html#BB84_Notifications_RelayCommand_1_Execute__0_
-  commentId: M:BB84.Notifications.RelayCommand`1.Execute(`0)
-  fullName: BB84.Notifications.RelayCommand<T>.Execute(T)
-  fullName.vb: BB84.Notifications.RelayCommand(Of T).Execute(T)
-  nameWithType: RelayCommand<T>.Execute(T)
-  nameWithType.vb: RelayCommand(Of T).Execute(T)
-- uid: BB84.Notifications.RelayCommand`1.Execute*
-  name: Execute
-  href: api/BB84.Notifications.RelayCommand-1.html#BB84_Notifications_RelayCommand_1_Execute_
-  commentId: Overload:BB84.Notifications.RelayCommand`1.Execute
-  isSpec: "True"
-  fullName: BB84.Notifications.RelayCommand<T>.Execute
-  fullName.vb: BB84.Notifications.RelayCommand(Of T).Execute
-  nameWithType: RelayCommand<T>.Execute
-  nameWithType.vb: RelayCommand(Of T).Execute
-- uid: BB84.Notifications.RelayCommand`1.RaiseCanExecuteChanged
-  name: RaiseCanExecuteChanged()
-  href: api/BB84.Notifications.RelayCommand-1.html#BB84_Notifications_RelayCommand_1_RaiseCanExecuteChanged
-  commentId: M:BB84.Notifications.RelayCommand`1.RaiseCanExecuteChanged
-  fullName: BB84.Notifications.RelayCommand<T>.RaiseCanExecuteChanged()
-  fullName.vb: BB84.Notifications.RelayCommand(Of T).RaiseCanExecuteChanged()
-  nameWithType: RelayCommand<T>.RaiseCanExecuteChanged()
-  nameWithType.vb: RelayCommand(Of T).RaiseCanExecuteChanged()
-- uid: BB84.Notifications.RelayCommand`1.RaiseCanExecuteChanged*
-  name: RaiseCanExecuteChanged
-  href: api/BB84.Notifications.RelayCommand-1.html#BB84_Notifications_RelayCommand_1_RaiseCanExecuteChanged_
-  commentId: Overload:BB84.Notifications.RelayCommand`1.RaiseCanExecuteChanged
-  isSpec: "True"
-  fullName: BB84.Notifications.RelayCommand<T>.RaiseCanExecuteChanged
-  fullName.vb: BB84.Notifications.RelayCommand(Of T).RaiseCanExecuteChanged
-  nameWithType: RelayCommand<T>.RaiseCanExecuteChanged
-  nameWithType.vb: RelayCommand(Of T).RaiseCanExecuteChanged
 - uid: BB84.Notifications.ValidatableObject
   name: ValidatableObject
   href: api/BB84.Notifications.ValidatableObject.html
