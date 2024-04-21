@@ -1,4 +1,6 @@
-﻿using BB84.Notifications.Interfaces.Commands;
+﻿using BB84.Notifications.Extensions;
+using BB84.Notifications.Interfaces.Commands;
+using BB84.Notifications.Interfaces.Components;
 
 namespace BB84.Notifications.Commands;
 
@@ -7,16 +9,10 @@ namespace BB84.Notifications.Commands;
 /// </summary>
 /// <param name="execute">The task to execute.</param>
 /// <param name="canExecute">The condition to execute.</param>
-public sealed class AsyncActionCommand(Func<Task> execute, Func<bool>? canExecute) : IAsyncActionCommand
+/// <param name="handler">The exception handler to use.</param>
+public sealed class AsyncActionCommand(Func<Task> execute, Func<bool>? canExecute = null, IExceptionHandler? handler = null) : IAsyncActionCommand
 {
   private bool _isExecuting;
-
-  /// <summary>
-  /// Initializes a new instance of the <see cref="AsyncActionCommand"/> class that can always execute.
-  /// </summary>
-  /// <param name="execute">The task to execute.</param>
-  public AsyncActionCommand(Func<Task> execute) : this(execute, null)
-  { }
 
   /// <inheritdoc/>
   public event EventHandler? CanExecuteChanged;
@@ -50,7 +46,7 @@ public sealed class AsyncActionCommand(Func<Task> execute, Func<bool>? canExecut
 
   /// <inheritdoc/>
   public void Execute(object? parameter)
-    => ExecuteAsync().Wait();
+    => ExecuteAsync().ToSaveVoid(handler);
 
   /// <inheritdoc/>
   public void RaiseCanExecuteChanged()
@@ -66,16 +62,10 @@ public sealed class AsyncActionCommand(Func<Task> execute, Func<bool>? canExecut
 /// <typeparam name="T">The generic type to work with.</typeparam>
 /// <param name="execute">The task to execute.</param>
 /// <param name="canExecute">The condition to execute.</param>
-public sealed class AsyncActionCommand<T>(Func<T, Task> execute, Func<T, bool>? canExecute) : IAsyncActionCommand<T>
+/// <param name="handler">The exception handler to use.</param>
+public sealed class AsyncActionCommand<T>(Func<T, Task> execute, Func<T, bool>? canExecute = null, IExceptionHandler? handler = null) : IAsyncActionCommand<T>
 {
   private bool _isExecuting;
-
-  /// <summary>
-  /// Initializes a new instance of <see cref="AsyncActionCommand{T}"/> class that can always execute.
-  /// </summary>
-  /// <param name="execute">The task to execute.</param>
-  public AsyncActionCommand(Func<T, Task> execute) : this(execute, null)
-  { }
 
   /// <inheritdoc/>
   public event EventHandler? CanExecuteChanged;
@@ -90,7 +80,7 @@ public sealed class AsyncActionCommand<T>(Func<T, Task> execute, Func<T, bool>? 
 
   /// <inheritdoc/>
   public void Execute(object? parameter)
-    => ExecuteAsync((T)parameter!).Wait();
+    => ExecuteAsync((T)parameter!).ToSaveVoid(handler);
 
   /// <inheritdoc/>
   public async Task ExecuteAsync(T parameter)
