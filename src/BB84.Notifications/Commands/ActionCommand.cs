@@ -1,19 +1,19 @@
-﻿using BB84.Notifications.Interfaces;
+﻿using BB84.Notifications.Interfaces.Commands;
 
-namespace BB84.Notifications;
+namespace BB84.Notifications.Commands;
 
 /// <summary>
-/// The relay command class.
+/// The action command class.
 /// </summary>
 /// <param name="execute">The action to execute.</param>
 /// <param name="canExecute">The condition to execute.</param>
-public sealed class RelayCommand(Action execute, Func<bool>? canExecute) : IRelayCommand
+public sealed class ActionCommand(Action execute, Func<bool>? canExecute) : IActionCommand
 {
   /// <summary>
-  /// Initializes a new instance of the <see cref="RelayCommand"/> class that can always execute.
+  /// Initializes a new instance of the <see cref="ActionCommand"/> class that can always execute.
   /// </summary>
   /// <param name="execute">The action to execute.</param>
-  public RelayCommand(Action execute) : this(execute, null)
+  public ActionCommand(Action execute) : this(execute, null)
   { }
 
   /// <inheritdoc/>
@@ -47,7 +47,7 @@ public sealed class RelayCommand(Action execute, Func<bool>? canExecute) : IRela
 }
 
 /// <summary>
-/// The relay command class.
+/// The action command class.
 /// </summary>
 /// <remarks>
 /// For all commands that need a parameter.
@@ -55,13 +55,13 @@ public sealed class RelayCommand(Action execute, Func<bool>? canExecute) : IRela
 /// <typeparam name="T">The generic type to work with.</typeparam>
 /// <param name="execute">The action to execute.</param>
 /// <param name="canExecute">The condition to execute.</param>
-public sealed class RelayCommand<T>(Action<T> execute, Func<T, bool>? canExecute) : IRelayCommand<T>
+public sealed class ActionCommand<T>(Action<T> execute, Func<T, bool>? canExecute) : IActionCommand<T>
 {
   /// <summary>
-  /// Initializes a new instance of <see cref="RelayCommand{T}"/> class that can always execute.
+  /// Initializes a new instance of <see cref="ActionCommand{T}"/> class that can always execute.
   /// </summary>
   /// <param name="execute">The action to execute.</param>
-  public RelayCommand(Action<T> execute) : this(execute, null)
+  public ActionCommand(Action<T> execute) : this(execute, null)
   { }
 
   /// <inheritdoc/>

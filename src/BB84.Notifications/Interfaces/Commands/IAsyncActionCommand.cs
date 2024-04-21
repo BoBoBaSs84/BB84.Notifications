@@ -1,11 +1,11 @@
 ﻿using System.Windows.Input;
 
-namespace BB84.Notifications.Interfaces;
+namespace BB84.Notifications.Interfaces.Commands;
 
 /// <summary>
-/// The async relay command interface.
+/// The async action command interface.
 /// </summary>
-public interface IAsyncRelayCommand : ICommand
+public interface IAsyncActionCommand : ICommand
 {
   /// <summary>
   /// Defines the method to be called when the command is invoked.
@@ -26,10 +26,10 @@ public interface IAsyncRelayCommand : ICommand
 }
 
 /// <summary>
-/// The async relay command interface.
+/// The async action command interface.
 /// </summary>
-/// <typeparam name="T">The generic type to wor with.</typeparam>
-public interface IAsyncRelayCommand<T> : ICommand
+/// <typeparam name="T">The generic type to work with.</typeparam>
+public interface IAsyncActionCommand<T> : ICommand
 {
   /// <summary>
   /// Defines the method to be called when the command is invoked.

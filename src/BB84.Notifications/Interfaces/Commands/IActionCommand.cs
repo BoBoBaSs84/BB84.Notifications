@@ -1,11 +1,11 @@
 ﻿using System.Windows.Input;
 
-namespace BB84.Notifications.Interfaces;
+namespace BB84.Notifications.Interfaces.Commands;
 
 /// <summary>
-/// The relay command interface.
+/// The action command interface.
 /// </summary>
-public interface IRelayCommand : ICommand
+public interface IActionCommand : ICommand
 {
   /// <summary>
   /// Defines the method that determines whether the command can execute in its current state.
@@ -25,10 +25,10 @@ public interface IRelayCommand : ICommand
 }
 
 /// <summary>
-/// The relay command interface.
+/// The action command interface.
 /// </summary>
-/// <typeparam name="T">The type to work with.</typeparam>
-public interface IRelayCommand<T> : ICommand
+/// <typeparam name="T">The generic type to work with.</typeparam>
+public interface IActionCommand<T> : ICommand
 {
   /// <summary>
   /// Defines the method that determines whether the command can execute in its current state.
