@@ -1,6 +1,6 @@
 ﻿namespace BB84.NotificationsTests;
 
-public sealed partial class RelayCommandTests
+public sealed partial class ActionCommandTests
 {
   [TestMethod]
   public void CanExecute()
@@ -9,8 +9,10 @@ public sealed partial class RelayCommandTests
 
     test = new TestClass();
 
-    Assert.IsTrue(test.Command.CanExecute(this));
-    Assert.IsFalse(test.CondCommand.CanExecute(this));
+    Assert.IsTrue(test.Command.CanExecute());
+    Assert.IsTrue(test.Command.CanExecute(null));
+    Assert.IsFalse(test.CondCommand.CanExecute());
+    Assert.IsFalse(test.CondCommand.CanExecute(null));
   }
 
   [TestMethod]
@@ -23,5 +25,6 @@ public sealed partial class RelayCommandTests
     Assert.IsTrue(test.IntCommand.CanExecute(1));
     Assert.IsTrue(test.IntCommand.CanExecute((object)1));
     Assert.IsFalse(test.CondIntCommand.CanExecute(1));
+    Assert.IsFalse(test.CondIntCommand.CanExecute((object)1));
   }
 }

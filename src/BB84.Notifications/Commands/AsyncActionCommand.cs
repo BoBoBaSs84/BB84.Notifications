@@ -1,21 +1,21 @@
-﻿using BB84.Notifications.Interfaces;
+﻿using BB84.Notifications.Interfaces.Commands;
 
-namespace BB84.Notifications;
+namespace BB84.Notifications.Commands;
 
 /// <summary>
-/// The async relay command class.
+/// The async action command class.
 /// </summary>
 /// <param name="execute">The task to execute.</param>
 /// <param name="canExecute">The condition to execute.</param>
-public sealed class AsyncRelayCommand(Func<Task> execute, Func<bool>? canExecute) : IAsyncRelayCommand
+public sealed class AsyncActionCommand(Func<Task> execute, Func<bool>? canExecute) : IAsyncActionCommand
 {
   private bool _isExecuting;
 
   /// <summary>
-  /// Initializes a new instance of the <see cref="AsyncRelayCommand"/> class that can always execute.
+  /// Initializes a new instance of the <see cref="AsyncActionCommand"/> class that can always execute.
   /// </summary>
   /// <param name="execute">The task to execute.</param>
-  public AsyncRelayCommand(Func<Task> execute) : this(execute, null)
+  public AsyncActionCommand(Func<Task> execute) : this(execute, null)
   { }
 
   /// <inheritdoc/>
@@ -58,7 +58,7 @@ public sealed class AsyncRelayCommand(Func<Task> execute, Func<bool>? canExecute
 }
 
 /// <summary>
-/// The async relay command class.
+/// The async action command class.
 /// </summary>
 /// <remarks>
 /// For all commands that need a parameter.
@@ -66,15 +66,15 @@ public sealed class AsyncRelayCommand(Func<Task> execute, Func<bool>? canExecute
 /// <typeparam name="T">The generic type to work with.</typeparam>
 /// <param name="execute">The task to execute.</param>
 /// <param name="canExecute">The condition to execute.</param>
-public sealed class AsyncRelayCommand<T>(Func<T, Task> execute, Func<T, bool>? canExecute) : IAsyncRelayCommand<T>
+public sealed class AsyncActionCommand<T>(Func<T, Task> execute, Func<T, bool>? canExecute) : IAsyncActionCommand<T>
 {
   private bool _isExecuting;
 
   /// <summary>
-  /// Initializes a new instance of <see cref="AsyncRelayCommand{T}"/> class that can always execute.
+  /// Initializes a new instance of <see cref="AsyncActionCommand{T}"/> class that can always execute.
   /// </summary>
   /// <param name="execute">The task to execute.</param>
-  public AsyncRelayCommand(Func<T, Task> execute) : this(execute, null)
+  public AsyncActionCommand(Func<T, Task> execute) : this(execute, null)
   { }
 
   /// <inheritdoc/>

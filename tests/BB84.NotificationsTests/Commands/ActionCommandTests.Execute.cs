@@ -1,15 +1,15 @@
 ﻿namespace BB84.NotificationsTests;
 
-public sealed partial class RelayCommandTests
+public sealed partial class ActionCommandTests
 {
   [TestMethod]
   public void Execute()
   {
     TestClass test = new();
 
-    test.Command.Execute(this);
-
-    Assert.AreEqual(1, test.CommandExecution);
+    test.Command.Execute();
+    test.Command.Execute(null);
+    Assert.AreEqual(2, test.CommandExecution);
   }
 
   [TestMethod]
@@ -17,9 +17,8 @@ public sealed partial class RelayCommandTests
   {
     TestClass test = new();
 
-    test.IntCommand.Execute((object)1);
-    test.IntCommand.Execute(2);
-
+    test.IntCommand.Execute(1);
+    test.IntCommand.Execute((object)2);
     Assert.AreEqual(2, test.IntegerCommandExecution);
   }
 }

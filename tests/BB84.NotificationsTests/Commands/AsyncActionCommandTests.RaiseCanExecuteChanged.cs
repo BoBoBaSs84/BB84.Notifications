@@ -1,6 +1,5 @@
-﻿namespace BB84.NotificationsTests;
-
-public sealed partial class RelayCommandTests
+﻿namespace BB84.NotificationsTests.Commands;
+public sealed partial class AsyncActionCommandTests
 {
   [TestMethod]
   public void RaiseCanExecuteChanged()
