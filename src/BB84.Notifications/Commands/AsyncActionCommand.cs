@@ -19,7 +19,7 @@ public sealed class AsyncActionCommand(Func<Task> execute, Func<bool>? canExecut
 
   /// <inheritdoc/>
   public bool CanExecute()
-    => !_isExecuting && (canExecute?.Invoke() ?? true);
+    => CanExecute(null);
 
   /// <inheritdoc/>
   public async Task ExecuteAsync()
@@ -42,7 +42,7 @@ public sealed class AsyncActionCommand(Func<Task> execute, Func<bool>? canExecut
 
   /// <inheritdoc/>
   public bool CanExecute(object? parameter)
-    => CanExecute();
+    => !_isExecuting && (canExecute?.Invoke() ?? true);
 
   /// <inheritdoc/>
   public void Execute(object? parameter)

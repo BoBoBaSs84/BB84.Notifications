@@ -44,7 +44,7 @@ public abstract class NotifiableObject : INotifiableObject
   /// Raises the <see cref="PropertyChanged"/> event.
   /// </summary>
   /// <param name="propertyName">The name of the calling property.</param>
-  private void RaisePropertyChanged(string propertyName)
+  protected void RaisePropertyChanged(string propertyName)
     => PropertyChanged?.Invoke(this, new(propertyName));
 
   /// <summary>
@@ -53,22 +53,23 @@ public abstract class NotifiableObject : INotifiableObject
   /// <typeparam name="T">The type to work with.</typeparam>
   /// <param name="propertyName">The name of the calling property.</param>
   /// <param name="value">The value of the calling property.</param>
-  private void RaisePropertyChanged<T>(string propertyName, T value)
+  protected void RaisePropertyChanged<T>(string propertyName, T value)
    => PropertyChanged?.Invoke(this, new PropertyChangedEventArgs<T>(propertyName, value));
 
   /// <summary>
   /// Raises the <see cref="PropertyChanging"/> event.
   /// </summary>
   /// <param name="propertyName">The name of the calling property.</param>
-  private void RaisePropertyChanging(string propertyName)
+  protected void RaisePropertyChanging(string propertyName)
     => PropertyChanging?.Invoke(this, new(propertyName));
 
   /// <summary>
   /// Raises the <see cref="PropertyChanging"/> event.
   /// </summary>
+  /// <typeparam name="T">The type to work with.</typeparam>
   /// <param name="propertyName">The name of the calling property.</param>
   /// <param name="value">The value of the calling property.</param>
-  private void RaisePropertyChanging<T>(string propertyName, T value)
+  protected void RaisePropertyChanging<T>(string propertyName, T value)
     => PropertyChanging?.Invoke(this, new PropertyChangingEventArgs<T>(propertyName, value));
 
   /// <summary>
