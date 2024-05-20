@@ -1264,6 +1264,56 @@ references:
   commentId: E:BB84.Notifications.NotifiableObject.PropertyChanging
   fullName: BB84.Notifications.NotifiableObject.PropertyChanging
   nameWithType: NotifiableObject.PropertyChanging
+- uid: BB84.Notifications.NotifiableObject.RaisePropertyChanged(System.String)
+  name: RaisePropertyChanged(string)
+  href: api/BB84.Notifications.NotifiableObject.html#BB84_Notifications_NotifiableObject_RaisePropertyChanged_System_String_
+  commentId: M:BB84.Notifications.NotifiableObject.RaisePropertyChanged(System.String)
+  name.vb: RaisePropertyChanged(String)
+  fullName: BB84.Notifications.NotifiableObject.RaisePropertyChanged(string)
+  fullName.vb: BB84.Notifications.NotifiableObject.RaisePropertyChanged(String)
+  nameWithType: NotifiableObject.RaisePropertyChanged(string)
+  nameWithType.vb: NotifiableObject.RaisePropertyChanged(String)
+- uid: BB84.Notifications.NotifiableObject.RaisePropertyChanged*
+  name: RaisePropertyChanged
+  href: api/BB84.Notifications.NotifiableObject.html#BB84_Notifications_NotifiableObject_RaisePropertyChanged_
+  commentId: Overload:BB84.Notifications.NotifiableObject.RaisePropertyChanged
+  isSpec: "True"
+  fullName: BB84.Notifications.NotifiableObject.RaisePropertyChanged
+  nameWithType: NotifiableObject.RaisePropertyChanged
+- uid: BB84.Notifications.NotifiableObject.RaisePropertyChanged``1(System.String,``0)
+  name: RaisePropertyChanged<T>(string, T)
+  href: api/BB84.Notifications.NotifiableObject.html#BB84_Notifications_NotifiableObject_RaisePropertyChanged__1_System_String___0_
+  commentId: M:BB84.Notifications.NotifiableObject.RaisePropertyChanged``1(System.String,``0)
+  name.vb: RaisePropertyChanged(Of T)(String, T)
+  fullName: BB84.Notifications.NotifiableObject.RaisePropertyChanged<T>(string, T)
+  fullName.vb: BB84.Notifications.NotifiableObject.RaisePropertyChanged(Of T)(String, T)
+  nameWithType: NotifiableObject.RaisePropertyChanged<T>(string, T)
+  nameWithType.vb: NotifiableObject.RaisePropertyChanged(Of T)(String, T)
+- uid: BB84.Notifications.NotifiableObject.RaisePropertyChanging(System.String)
+  name: RaisePropertyChanging(string)
+  href: api/BB84.Notifications.NotifiableObject.html#BB84_Notifications_NotifiableObject_RaisePropertyChanging_System_String_
+  commentId: M:BB84.Notifications.NotifiableObject.RaisePropertyChanging(System.String)
+  name.vb: RaisePropertyChanging(String)
+  fullName: BB84.Notifications.NotifiableObject.RaisePropertyChanging(string)
+  fullName.vb: BB84.Notifications.NotifiableObject.RaisePropertyChanging(String)
+  nameWithType: NotifiableObject.RaisePropertyChanging(string)
+  nameWithType.vb: NotifiableObject.RaisePropertyChanging(String)
+- uid: BB84.Notifications.NotifiableObject.RaisePropertyChanging*
+  name: RaisePropertyChanging
+  href: api/BB84.Notifications.NotifiableObject.html#BB84_Notifications_NotifiableObject_RaisePropertyChanging_
+  commentId: Overload:BB84.Notifications.NotifiableObject.RaisePropertyChanging
+  isSpec: "True"
+  fullName: BB84.Notifications.NotifiableObject.RaisePropertyChanging
+  nameWithType: NotifiableObject.RaisePropertyChanging
+- uid: BB84.Notifications.NotifiableObject.RaisePropertyChanging``1(System.String,``0)
+  name: RaisePropertyChanging<T>(string, T)
+  href: api/BB84.Notifications.NotifiableObject.html#BB84_Notifications_NotifiableObject_RaisePropertyChanging__1_System_String___0_
+  commentId: M:BB84.Notifications.NotifiableObject.RaisePropertyChanging``1(System.String,``0)
+  name.vb: RaisePropertyChanging(Of T)(String, T)
+  fullName: BB84.Notifications.NotifiableObject.RaisePropertyChanging<T>(string, T)
+  fullName.vb: BB84.Notifications.NotifiableObject.RaisePropertyChanging(Of T)(String, T)
+  nameWithType: NotifiableObject.RaisePropertyChanging<T>(string, T)
+  nameWithType.vb: NotifiableObject.RaisePropertyChanging(Of T)(String, T)
 - uid: BB84.Notifications.NotifiableObject.SetProperty*
   name: SetProperty
   href: api/BB84.Notifications.NotifiableObject.html#BB84_Notifications_NotifiableObject_SetProperty_
