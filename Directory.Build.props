@@ -4,7 +4,7 @@
     <VersionMajor>3</VersionMajor>
     <VersionMinor>2</VersionMinor>
     <VersionPatch>$([System.DateTime]::UtcNow.ToString("MMdd"))</VersionPatch>
-    <VersionRevision>$([System.DateTime]::UtcNow.ToString("HHmm"))</VersionRevision>
+    <VersionRevision>$([System.DateTime]::UtcNow.TimeOfDay.TotalMinutes.ToString("0"))</VersionRevision>
     <VersionPrefix>$(VersionMajor).$(VersionMinor).$(VersionPatch).$(VersionRevision)</VersionPrefix>
     <VersionSuffix Condition="$(Configuration.Equals('Debug'))">Development</VersionSuffix>
     <FileVersion>$(VersionMajor).$(VersionMinor).$(VersionPatch)</FileVersion>
@@ -42,10 +42,9 @@
     <Copyright>Copyright © $([System.DateTime]::UtcNow.Year) BoBoBaSs84</Copyright>
     <Description>This package contains relevant abstractions and implementations for one- and two-way binding of properties, for notifications about changed properties, for notifications about changed collections and for the Relay Command Pattern for synchronous and asynchronous operations.</Description>
     <Product>BB84.Notifications</Product>
-    <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/BoBoBaSs84/BB84.Notifications</RepositoryUrl>
-    <Title>BB84.Notifications</Title>
+    <Title>$(AssemblyName)</Title>
   </PropertyGroup>
 
   <PropertyGroup Condition="!$(MSBuildProjectName.EndsWith('Tests'))" Label="Package">    
