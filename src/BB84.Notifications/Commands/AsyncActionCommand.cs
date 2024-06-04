@@ -46,7 +46,7 @@ public sealed class AsyncActionCommand(Func<Task> execute, Func<bool>? canExecut
 
   /// <inheritdoc/>
   public void Execute(object? parameter)
-    => ExecuteAsync().ToSaveVoid(handler);
+    => ExecuteAsync().FireAndForgetSafeAsync(handler);
 
   /// <inheritdoc/>
   public void RaiseCanExecuteChanged()
@@ -80,7 +80,7 @@ public sealed class AsyncActionCommand<T>(Func<T, Task> execute, Func<T, bool>? 
 
   /// <inheritdoc/>
   public void Execute(object? parameter)
-    => ExecuteAsync((T)parameter!).ToSaveVoid(handler);
+    => ExecuteAsync((T)parameter!).FireAndForgetSafeAsync(handler);
 
   /// <inheritdoc/>
   public async Task ExecuteAsync(T parameter)
