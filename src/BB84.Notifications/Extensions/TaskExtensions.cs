@@ -1,6 +1,4 @@
-﻿using BB84.Notifications.Interfaces.Components;
-
-namespace BB84.Notifications.Extensions;
+﻿namespace BB84.Notifications.Extensions;
 
 /// <summary>
 /// The task extensions class.
@@ -8,20 +6,20 @@ namespace BB84.Notifications.Extensions;
 public static class TaskExtensions
 {
   /// <summary>
-  /// Awaits the provided <paramref name="task"/>, uses the exception <paramref name="handler"/>
-  /// if an <see cref="Exception"/> occurs and returns <see cref="void"/>.
+  /// Awaits the provided <paramref name="task"/> and returns <see langword="void"/>.
+  /// The <paramref name="action"/> can be used, if an <see cref="Exception"/> occurs.
   /// </summary>
   /// <param name="task">The task to await.</param>
-  /// <param name="handler">Sends the exception to an exception handler.</param>
-  public static async void FireAndForgetSafeAsync(this Task task, IExceptionHandler? handler = null)
+  /// <param name="action">The action to invoke if an exception occurs.</param>
+  public static async void FireAndForgetSafeAsync(this Task task, Action<Exception>? action = null)
   {
     try
     {
-      await task;
+      await task.ConfigureAwait(false);
     }
     catch (Exception ex)
     {
-      handler?.HandleError(ex);
+      action?.Invoke(ex);
     }
   }
 }
