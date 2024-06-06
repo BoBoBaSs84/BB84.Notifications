@@ -15,7 +15,7 @@ public static class TaskExtensions
   {
     try
     {
-      await task;
+      await task.ConfigureAwait(false);
     }
     catch (Exception ex)
     {
