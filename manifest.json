@@ -244,16 +244,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/BB84.Notifications.Interfaces.Components.IExceptionHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/BB84.Notifications.Interfaces.Components.IExceptionHandler.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/BB84.Notifications.Interfaces.Components.INotifyCollectionChanged.yml",
       "output": {
         ".html": {

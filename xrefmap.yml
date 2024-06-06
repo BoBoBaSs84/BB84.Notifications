@@ -312,15 +312,15 @@ references:
   commentId: T:BB84.Notifications.Commands.AsyncActionCommand
   fullName: BB84.Notifications.Commands.AsyncActionCommand
   nameWithType: AsyncActionCommand
-- uid: BB84.Notifications.Commands.AsyncActionCommand.#ctor(System.Func{System.Threading.Tasks.Task},System.Func{System.Boolean},BB84.Notifications.Interfaces.Components.IExceptionHandler)
-  name: AsyncActionCommand(Func<Task>, Func<bool>?, IExceptionHandler?)
-  href: api/BB84.Notifications.Commands.AsyncActionCommand.html#BB84_Notifications_Commands_AsyncActionCommand__ctor_System_Func_System_Threading_Tasks_Task__System_Func_System_Boolean__BB84_Notifications_Interfaces_Components_IExceptionHandler_
-  commentId: M:BB84.Notifications.Commands.AsyncActionCommand.#ctor(System.Func{System.Threading.Tasks.Task},System.Func{System.Boolean},BB84.Notifications.Interfaces.Components.IExceptionHandler)
-  name.vb: New(Func(Of Task), Func(Of Boolean), IExceptionHandler)
-  fullName: BB84.Notifications.Commands.AsyncActionCommand.AsyncActionCommand(System.Func<System.Threading.Tasks.Task>, System.Func<bool>?, BB84.Notifications.Interfaces.Components.IExceptionHandler?)
-  fullName.vb: BB84.Notifications.Commands.AsyncActionCommand.New(System.Func(Of System.Threading.Tasks.Task), System.Func(Of Boolean), BB84.Notifications.Interfaces.Components.IExceptionHandler)
-  nameWithType: AsyncActionCommand.AsyncActionCommand(Func<Task>, Func<bool>?, IExceptionHandler?)
-  nameWithType.vb: AsyncActionCommand.New(Func(Of Task), Func(Of Boolean), IExceptionHandler)
+- uid: BB84.Notifications.Commands.AsyncActionCommand.#ctor(System.Func{System.Threading.Tasks.Task},System.Func{System.Boolean},System.Action{System.Exception})
+  name: AsyncActionCommand(Func<Task>, Func<bool>?, Action<Exception>?)
+  href: api/BB84.Notifications.Commands.AsyncActionCommand.html#BB84_Notifications_Commands_AsyncActionCommand__ctor_System_Func_System_Threading_Tasks_Task__System_Func_System_Boolean__System_Action_System_Exception__
+  commentId: M:BB84.Notifications.Commands.AsyncActionCommand.#ctor(System.Func{System.Threading.Tasks.Task},System.Func{System.Boolean},System.Action{System.Exception})
+  name.vb: New(Func(Of Task), Func(Of Boolean), Action(Of Exception))
+  fullName: BB84.Notifications.Commands.AsyncActionCommand.AsyncActionCommand(System.Func<System.Threading.Tasks.Task>, System.Func<bool>?, System.Action<System.Exception>?)
+  fullName.vb: BB84.Notifications.Commands.AsyncActionCommand.New(System.Func(Of System.Threading.Tasks.Task), System.Func(Of Boolean), System.Action(Of System.Exception))
+  nameWithType: AsyncActionCommand.AsyncActionCommand(Func<Task>, Func<bool>?, Action<Exception>?)
+  nameWithType.vb: AsyncActionCommand.New(Func(Of Task), Func(Of Boolean), Action(Of Exception))
 - uid: BB84.Notifications.Commands.AsyncActionCommand.#ctor*
   name: AsyncActionCommand
   href: api/BB84.Notifications.Commands.AsyncActionCommand.html#BB84_Notifications_Commands_AsyncActionCommand__ctor_
@@ -410,15 +410,15 @@ references:
   fullName.vb: BB84.Notifications.Commands.AsyncActionCommand(Of T)
   nameWithType: AsyncActionCommand<T>
   nameWithType.vb: AsyncActionCommand(Of T)
-- uid: BB84.Notifications.Commands.AsyncActionCommand`1.#ctor(System.Func{`0,System.Threading.Tasks.Task},System.Func{`0,System.Boolean},BB84.Notifications.Interfaces.Components.IExceptionHandler)
-  name: AsyncActionCommand(Func<T, Task>, Func<T, bool>?, IExceptionHandler?)
-  href: api/BB84.Notifications.Commands.AsyncActionCommand-1.html#BB84_Notifications_Commands_AsyncActionCommand_1__ctor_System_Func__0_System_Threading_Tasks_Task__System_Func__0_System_Boolean__BB84_Notifications_Interfaces_Components_IExceptionHandler_
-  commentId: M:BB84.Notifications.Commands.AsyncActionCommand`1.#ctor(System.Func{`0,System.Threading.Tasks.Task},System.Func{`0,System.Boolean},BB84.Notifications.Interfaces.Components.IExceptionHandler)
-  name.vb: New(Func(Of T, Task), Func(Of T, Boolean), IExceptionHandler)
-  fullName: BB84.Notifications.Commands.AsyncActionCommand<T>.AsyncActionCommand(System.Func<T, System.Threading.Tasks.Task>, System.Func<T, bool>?, BB84.Notifications.Interfaces.Components.IExceptionHandler?)
-  fullName.vb: BB84.Notifications.Commands.AsyncActionCommand(Of T).New(System.Func(Of T, System.Threading.Tasks.Task), System.Func(Of T, Boolean), BB84.Notifications.Interfaces.Components.IExceptionHandler)
-  nameWithType: AsyncActionCommand<T>.AsyncActionCommand(Func<T, Task>, Func<T, bool>?, IExceptionHandler?)
-  nameWithType.vb: AsyncActionCommand(Of T).New(Func(Of T, Task), Func(Of T, Boolean), IExceptionHandler)
+- uid: BB84.Notifications.Commands.AsyncActionCommand`1.#ctor(System.Func{`0,System.Threading.Tasks.Task},System.Func{`0,System.Boolean},System.Action{System.Exception})
+  name: AsyncActionCommand(Func<T, Task>, Func<T, bool>?, Action<Exception>?)
+  href: api/BB84.Notifications.Commands.AsyncActionCommand-1.html#BB84_Notifications_Commands_AsyncActionCommand_1__ctor_System_Func__0_System_Threading_Tasks_Task__System_Func__0_System_Boolean__System_Action_System_Exception__
+  commentId: M:BB84.Notifications.Commands.AsyncActionCommand`1.#ctor(System.Func{`0,System.Threading.Tasks.Task},System.Func{`0,System.Boolean},System.Action{System.Exception})
+  name.vb: New(Func(Of T, Task), Func(Of T, Boolean), Action(Of Exception))
+  fullName: BB84.Notifications.Commands.AsyncActionCommand<T>.AsyncActionCommand(System.Func<T, System.Threading.Tasks.Task>, System.Func<T, bool>?, System.Action<System.Exception>?)
+  fullName.vb: BB84.Notifications.Commands.AsyncActionCommand(Of T).New(System.Func(Of T, System.Threading.Tasks.Task), System.Func(Of T, Boolean), System.Action(Of System.Exception))
+  nameWithType: AsyncActionCommand<T>.AsyncActionCommand(Func<T, Task>, Func<T, bool>?, Action<Exception>?)
+  nameWithType.vb: AsyncActionCommand(Of T).New(Func(Of T, Task), Func(Of T, Boolean), Action(Of Exception))
 - uid: BB84.Notifications.Commands.AsyncActionCommand`1.#ctor*
   name: AsyncActionCommand
   href: api/BB84.Notifications.Commands.AsyncActionCommand-1.html#BB84_Notifications_Commands_AsyncActionCommand_1__ctor_
@@ -819,22 +819,22 @@ references:
   commentId: T:BB84.Notifications.Extensions.TaskExtensions
   fullName: BB84.Notifications.Extensions.TaskExtensions
   nameWithType: TaskExtensions
-- uid: BB84.Notifications.Extensions.TaskExtensions.ToSaveVoid(System.Threading.Tasks.Task,BB84.Notifications.Interfaces.Components.IExceptionHandler)
-  name: ToSaveVoid(Task, IExceptionHandler?)
-  href: api/BB84.Notifications.Extensions.TaskExtensions.html#BB84_Notifications_Extensions_TaskExtensions_ToSaveVoid_System_Threading_Tasks_Task_BB84_Notifications_Interfaces_Components_IExceptionHandler_
-  commentId: M:BB84.Notifications.Extensions.TaskExtensions.ToSaveVoid(System.Threading.Tasks.Task,BB84.Notifications.Interfaces.Components.IExceptionHandler)
-  name.vb: ToSaveVoid(Task, IExceptionHandler)
-  fullName: BB84.Notifications.Extensions.TaskExtensions.ToSaveVoid(System.Threading.Tasks.Task, BB84.Notifications.Interfaces.Components.IExceptionHandler?)
-  fullName.vb: BB84.Notifications.Extensions.TaskExtensions.ToSaveVoid(System.Threading.Tasks.Task, BB84.Notifications.Interfaces.Components.IExceptionHandler)
-  nameWithType: TaskExtensions.ToSaveVoid(Task, IExceptionHandler?)
-  nameWithType.vb: TaskExtensions.ToSaveVoid(Task, IExceptionHandler)
-- uid: BB84.Notifications.Extensions.TaskExtensions.ToSaveVoid*
-  name: ToSaveVoid
-  href: api/BB84.Notifications.Extensions.TaskExtensions.html#BB84_Notifications_Extensions_TaskExtensions_ToSaveVoid_
-  commentId: Overload:BB84.Notifications.Extensions.TaskExtensions.ToSaveVoid
+- uid: BB84.Notifications.Extensions.TaskExtensions.FireAndForgetSafeAsync(System.Threading.Tasks.Task,System.Action{System.Exception})
+  name: FireAndForgetSafeAsync(Task, Action<Exception>?)
+  href: api/BB84.Notifications.Extensions.TaskExtensions.html#BB84_Notifications_Extensions_TaskExtensions_FireAndForgetSafeAsync_System_Threading_Tasks_Task_System_Action_System_Exception__
+  commentId: M:BB84.Notifications.Extensions.TaskExtensions.FireAndForgetSafeAsync(System.Threading.Tasks.Task,System.Action{System.Exception})
+  name.vb: FireAndForgetSafeAsync(Task, Action(Of Exception))
+  fullName: BB84.Notifications.Extensions.TaskExtensions.FireAndForgetSafeAsync(System.Threading.Tasks.Task, System.Action<System.Exception>?)
+  fullName.vb: BB84.Notifications.Extensions.TaskExtensions.FireAndForgetSafeAsync(System.Threading.Tasks.Task, System.Action(Of System.Exception))
+  nameWithType: TaskExtensions.FireAndForgetSafeAsync(Task, Action<Exception>?)
+  nameWithType.vb: TaskExtensions.FireAndForgetSafeAsync(Task, Action(Of Exception))
+- uid: BB84.Notifications.Extensions.TaskExtensions.FireAndForgetSafeAsync*
+  name: FireAndForgetSafeAsync
+  href: api/BB84.Notifications.Extensions.TaskExtensions.html#BB84_Notifications_Extensions_TaskExtensions_FireAndForgetSafeAsync_
+  commentId: Overload:BB84.Notifications.Extensions.TaskExtensions.FireAndForgetSafeAsync
   isSpec: "True"
-  fullName: BB84.Notifications.Extensions.TaskExtensions.ToSaveVoid
-  nameWithType: TaskExtensions.ToSaveVoid
+  fullName: BB84.Notifications.Extensions.TaskExtensions.FireAndForgetSafeAsync
+  nameWithType: TaskExtensions.FireAndForgetSafeAsync
 - uid: BB84.Notifications.Interfaces
   name: BB84.Notifications.Interfaces
   href: api/BB84.Notifications.Interfaces.html
@@ -1063,25 +1063,6 @@ references:
   commentId: N:BB84.Notifications.Interfaces.Components
   fullName: BB84.Notifications.Interfaces.Components
   nameWithType: BB84.Notifications.Interfaces.Components
-- uid: BB84.Notifications.Interfaces.Components.IExceptionHandler
-  name: IExceptionHandler
-  href: api/BB84.Notifications.Interfaces.Components.IExceptionHandler.html
-  commentId: T:BB84.Notifications.Interfaces.Components.IExceptionHandler
-  fullName: BB84.Notifications.Interfaces.Components.IExceptionHandler
-  nameWithType: IExceptionHandler
-- uid: BB84.Notifications.Interfaces.Components.IExceptionHandler.Handle(System.Exception)
-  name: Handle(Exception)
-  href: api/BB84.Notifications.Interfaces.Components.IExceptionHandler.html#BB84_Notifications_Interfaces_Components_IExceptionHandler_Handle_System_Exception_
-  commentId: M:BB84.Notifications.Interfaces.Components.IExceptionHandler.Handle(System.Exception)
-  fullName: BB84.Notifications.Interfaces.Components.IExceptionHandler.Handle(System.Exception)
-  nameWithType: IExceptionHandler.Handle(Exception)
-- uid: BB84.Notifications.Interfaces.Components.IExceptionHandler.Handle*
-  name: Handle
-  href: api/BB84.Notifications.Interfaces.Components.IExceptionHandler.html#BB84_Notifications_Interfaces_Components_IExceptionHandler_Handle_
-  commentId: Overload:BB84.Notifications.Interfaces.Components.IExceptionHandler.Handle
-  isSpec: "True"
-  fullName: BB84.Notifications.Interfaces.Components.IExceptionHandler.Handle
-  nameWithType: IExceptionHandler.Handle
 - uid: BB84.Notifications.Interfaces.Components.INotifyCollectionChanged
   name: INotifyCollectionChanged
   href: api/BB84.Notifications.Interfaces.Components.INotifyCollectionChanged.html

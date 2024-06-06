@@ -85,7 +85,7 @@
 
 
   <h1 id="BB84_Notifications_Commands_AsyncActionCommand_1" data-uid="BB84.Notifications.Commands.AsyncActionCommand`1" class="text-break">
-Class AsyncActionCommand&lt;T&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Commands/AsyncActionCommand.cs/#L66"><i class="bi bi-code-slash"></i></a>
+Class AsyncActionCommand&lt;T&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Commands/AsyncActionCommand.cs/#L65"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -164,9 +164,9 @@ Class AsyncActionCommand&lt;T&gt;  <a class="header-action link-secondary" title
 
   <a id="BB84_Notifications_Commands_AsyncActionCommand_1__ctor_" data-uid="BB84.Notifications.Commands.AsyncActionCommand`1.#ctor*"></a>
 
-  <h3 id="BB84_Notifications_Commands_AsyncActionCommand_1__ctor_System_Func__0_System_Threading_Tasks_Task__System_Func__0_System_Boolean__BB84_Notifications_Interfaces_Components_IExceptionHandler_" data-uid="BB84.Notifications.Commands.AsyncActionCommand`1.#ctor(System.Func{`0,System.Threading.Tasks.Task},System.Func{`0,System.Boolean},BB84.Notifications.Interfaces.Components.IExceptionHandler)">
-  AsyncActionCommand(Func&lt;T, Task&gt;, Func&lt;T, bool&gt;?, IExceptionHandler?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Commands/AsyncActionCommand.cs/#L66"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BB84_Notifications_Commands_AsyncActionCommand_1__ctor_System_Func__0_System_Threading_Tasks_Task__System_Func__0_System_Boolean__System_Action_System_Exception__" data-uid="BB84.Notifications.Commands.AsyncActionCommand`1.#ctor(System.Func{`0,System.Threading.Tasks.Task},System.Func{`0,System.Boolean},System.Action{System.Exception})">
+  AsyncActionCommand(Func&lt;T, Task&gt;, Func&lt;T, bool&gt;?, Action&lt;Exception&gt;?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Commands/AsyncActionCommand.cs/#L65"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The async action command class.</p>
@@ -174,7 +174,7 @@ Class AsyncActionCommand&lt;T&gt;  <a class="header-action link-secondary" title
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public AsyncActionCommand(Func&lt;T, Task&gt; execute, Func&lt;T, bool&gt;? canExecute = null, IExceptionHandler? handler = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public AsyncActionCommand(Func&lt;T, Task&gt; execute, Func&lt;T, bool&gt;? canExecute = null, Action&lt;Exception&gt;? action = null)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -185,8 +185,8 @@ Class AsyncActionCommand&lt;T&gt;  <a class="header-action link-secondary" title
     <dt><code>canExecute</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;T, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
     <dd><p>The condition to execute.</p>
 </dd>
-    <dt><code>handler</code> <a class="xref" href="BB84.Notifications.Interfaces.Components.IExceptionHandler.html">IExceptionHandler</a></dt>
-    <dd><p>The exception handler to use.</p>
+    <dt><code>action</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a>&gt;</dt>
+    <dd><p>The action to invoke if an exception occurs.</p>
 </dd>
   </dl>
 
@@ -197,7 +197,7 @@ Class AsyncActionCommand&lt;T&gt;  <a class="header-action link-secondary" title
 
 
 
-  <h4 class="section" id="BB84_Notifications_Commands_AsyncActionCommand_1__ctor_System_Func__0_System_Threading_Tasks_Task__System_Func__0_System_Boolean__BB84_Notifications_Interfaces_Components_IExceptionHandler__remarks">Remarks</h4>
+  <h4 class="section" id="BB84_Notifications_Commands_AsyncActionCommand_1__ctor_System_Func__0_System_Threading_Tasks_Task__System_Func__0_System_Boolean__System_Action_System_Exception___remarks">Remarks</h4>
   <div class="markdown level1 remarks"><p>For all commands that need a parameter.</p>
 </div>
 
@@ -212,7 +212,7 @@ Class AsyncActionCommand&lt;T&gt;  <a class="header-action link-secondary" title
 
   <h3 id="BB84_Notifications_Commands_AsyncActionCommand_1_CanExecute_System_Object_" data-uid="BB84.Notifications.Commands.AsyncActionCommand`1.CanExecute(System.Object)">
   CanExecute(object?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Commands/AsyncActionCommand.cs/#L78"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Commands/AsyncActionCommand.cs/#L77"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -248,7 +248,7 @@ Class AsyncActionCommand&lt;T&gt;  <a class="header-action link-secondary" title
 
   <h3 id="BB84_Notifications_Commands_AsyncActionCommand_1_CanExecute__0_" data-uid="BB84.Notifications.Commands.AsyncActionCommand`1.CanExecute(`0)">
   CanExecute(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Commands/AsyncActionCommand.cs/#L74"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Commands/AsyncActionCommand.cs/#L73"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Defines the method that determines whether the command can execute in its current state.</p>
@@ -287,7 +287,7 @@ Class AsyncActionCommand&lt;T&gt;  <a class="header-action link-secondary" title
 
   <h3 id="BB84_Notifications_Commands_AsyncActionCommand_1_Execute_System_Object_" data-uid="BB84.Notifications.Commands.AsyncActionCommand`1.Execute(System.Object)">
   Execute(object?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Commands/AsyncActionCommand.cs/#L82"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Commands/AsyncActionCommand.cs/#L81"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -318,7 +318,7 @@ Class AsyncActionCommand&lt;T&gt;  <a class="header-action link-secondary" title
 
   <h3 id="BB84_Notifications_Commands_AsyncActionCommand_1_ExecuteAsync__0_" data-uid="BB84.Notifications.Commands.AsyncActionCommand`1.ExecuteAsync(`0)">
   ExecuteAsync(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Commands/AsyncActionCommand.cs/#L86"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Commands/AsyncActionCommand.cs/#L85"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Defines the method to be called when the command is invoked.</p>
@@ -357,7 +357,7 @@ Class AsyncActionCommand&lt;T&gt;  <a class="header-action link-secondary" title
 
   <h3 id="BB84_Notifications_Commands_AsyncActionCommand_1_RaiseCanExecuteChanged" data-uid="BB84.Notifications.Commands.AsyncActionCommand`1.RaiseCanExecuteChanged">
   RaiseCanExecuteChanged()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Commands/AsyncActionCommand.cs/#L105"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Commands/AsyncActionCommand.cs/#L104"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Notifies that the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.input.icommand.canexecutechanged">CanExecuteChanged</a> property has changed.</p>
@@ -387,7 +387,7 @@ Class AsyncActionCommand&lt;T&gt;  <a class="header-action link-secondary" title
 
   <h3 id="BB84_Notifications_Commands_AsyncActionCommand_1_CanExecuteChanged" data-uid="BB84.Notifications.Commands.AsyncActionCommand`1.CanExecuteChanged">
   CanExecuteChanged
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Commands/AsyncActionCommand.cs/#L71"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Commands/AsyncActionCommand.cs/#L70"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -418,7 +418,7 @@ Class AsyncActionCommand&lt;T&gt;  <a class="header-action link-secondary" title
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Commands/AsyncActionCommand.cs/#L66" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Commands/AsyncActionCommand.cs/#L65" class="edit-link">Edit this page</a>
         </div>
 
 

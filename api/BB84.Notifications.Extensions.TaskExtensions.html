@@ -85,7 +85,7 @@
 
 
   <h1 id="BB84_Notifications_Extensions_TaskExtensions" data-uid="BB84.Notifications.Extensions.TaskExtensions" class="text-break">
-Class TaskExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Extensions/TaskExtensions.cs/#L8"><i class="bi bi-code-slash"></i></a>
+Class TaskExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Extensions/TaskExtensions.cs/#L6"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -149,20 +149,20 @@ Class TaskExtensions  <a class="header-action link-secondary" title="View source
 </h2>
 
 
-  <a id="BB84_Notifications_Extensions_TaskExtensions_ToSaveVoid_" data-uid="BB84.Notifications.Extensions.TaskExtensions.ToSaveVoid*"></a>
+  <a id="BB84_Notifications_Extensions_TaskExtensions_FireAndForgetSafeAsync_" data-uid="BB84.Notifications.Extensions.TaskExtensions.FireAndForgetSafeAsync*"></a>
 
-  <h3 id="BB84_Notifications_Extensions_TaskExtensions_ToSaveVoid_System_Threading_Tasks_Task_BB84_Notifications_Interfaces_Components_IExceptionHandler_" data-uid="BB84.Notifications.Extensions.TaskExtensions.ToSaveVoid(System.Threading.Tasks.Task,BB84.Notifications.Interfaces.Components.IExceptionHandler)">
-  ToSaveVoid(Task, IExceptionHandler?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Extensions/TaskExtensions.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BB84_Notifications_Extensions_TaskExtensions_FireAndForgetSafeAsync_System_Threading_Tasks_Task_System_Action_System_Exception__" data-uid="BB84.Notifications.Extensions.TaskExtensions.FireAndForgetSafeAsync(System.Threading.Tasks.Task,System.Action{System.Exception})">
+  FireAndForgetSafeAsync(Task, Action&lt;Exception&gt;?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Extensions/TaskExtensions.cs/#L14"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Awaits the provided <code class="paramref">task</code>, uses the exception <code class="paramref">handler</code>
-if an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a> occured and returns <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.void">void</a>.</p>
+  <div class="markdown level1 summary"><p>Awaits the provided <code class="paramref">task</code> and returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/void">void</a>.
+The <code class="paramref">action</code> can be used, if an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a> occurs.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void ToSaveVoid(this Task task, IExceptionHandler? handler = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void FireAndForgetSafeAsync(this Task task, Action&lt;Exception&gt;? action = null)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -170,8 +170,8 @@ if an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.except
     <dt><code>task</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
     <dd><p>The task to await.</p>
 </dd>
-    <dt><code>handler</code> <a class="xref" href="BB84.Notifications.Interfaces.Components.IExceptionHandler.html">IExceptionHandler</a></dt>
-    <dd><p>Sends the exception to an exception handler.</p>
+    <dt><code>action</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a>&gt;</dt>
+    <dd><p>The action to invoke if an exception occurs.</p>
 </dd>
   </dl>
 
@@ -190,7 +190,7 @@ if an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.except
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Extensions/TaskExtensions.cs/#L8" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Extensions/TaskExtensions.cs/#L6" class="edit-link">Edit this page</a>
         </div>
 
 
