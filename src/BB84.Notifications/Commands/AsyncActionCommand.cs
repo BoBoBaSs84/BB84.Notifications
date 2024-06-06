@@ -1,6 +1,5 @@
 ﻿using BB84.Notifications.Extensions;
 using BB84.Notifications.Interfaces.Commands;
-using BB84.Notifications.Interfaces.Components;
 
 namespace BB84.Notifications.Commands;
 
@@ -9,8 +8,8 @@ namespace BB84.Notifications.Commands;
 /// </summary>
 /// <param name="execute">The task to execute.</param>
 /// <param name="canExecute">The condition to execute.</param>
-/// <param name="handler">The exception handler to use.</param>
-public sealed class AsyncActionCommand(Func<Task> execute, Func<bool>? canExecute = null, IExceptionHandler? handler = null) : IAsyncActionCommand
+/// <param name="action">The action to invoke if an exception occurs.</param>
+public sealed class AsyncActionCommand(Func<Task> execute, Func<bool>? canExecute = null, Action<Exception>? action = null) : IAsyncActionCommand
 {
   private bool _isExecuting;
 
@@ -46,7 +45,7 @@ public sealed class AsyncActionCommand(Func<Task> execute, Func<bool>? canExecut
 
   /// <inheritdoc/>
   public void Execute(object? parameter)
-    => ExecuteAsync().FireAndForgetSafeAsync(handler);
+    => ExecuteAsync().FireAndForgetSafeAsync(action);
 
   /// <inheritdoc/>
   public void RaiseCanExecuteChanged()
@@ -62,8 +61,8 @@ public sealed class AsyncActionCommand(Func<Task> execute, Func<bool>? canExecut
 /// <typeparam name="T">The generic type to work with.</typeparam>
 /// <param name="execute">The task to execute.</param>
 /// <param name="canExecute">The condition to execute.</param>
-/// <param name="handler">The exception handler to use.</param>
-public sealed class AsyncActionCommand<T>(Func<T, Task> execute, Func<T, bool>? canExecute = null, IExceptionHandler? handler = null) : IAsyncActionCommand<T>
+/// <param name="action">The action to invoke if an exception occurs.</param>
+public sealed class AsyncActionCommand<T>(Func<T, Task> execute, Func<T, bool>? canExecute = null, Action<Exception>? action = null) : IAsyncActionCommand<T>
 {
   private bool _isExecuting;
 
@@ -80,7 +79,7 @@ public sealed class AsyncActionCommand<T>(Func<T, Task> execute, Func<T, bool>? 
 
   /// <inheritdoc/>
   public void Execute(object? parameter)
-    => ExecuteAsync((T)parameter!).FireAndForgetSafeAsync(handler);
+    => ExecuteAsync((T)parameter!).FireAndForgetSafeAsync(action);
 
   /// <inheritdoc/>
   public async Task ExecuteAsync(T parameter)

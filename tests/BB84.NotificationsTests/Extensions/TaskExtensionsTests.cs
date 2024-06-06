@@ -1,5 +1,4 @@
 ﻿using BB84.Notifications.Extensions;
-using BB84.Notifications.Interfaces.Components;
 
 namespace BB84.NotificationsTests.Extensions;
 
@@ -20,14 +19,12 @@ public sealed class TaskExtensionsTests
   [TestMethod]
   public void FireAndForgetSafeAsyncExceptionHandledTest()
   {
-    VoidHandler handler = new();
+    bool invoked = false;
     Task task = Task.Factory.StartNew(() => throw new Exception(""));
 
-    task.FireAndForgetSafeAsync(handler);
-  }
+    task.FireAndForgetSafeAsync((e) => invoked = true);
+    Task.Delay(100).Wait();
 
-  private sealed class VoidHandler : IExceptionHandler
-  {
-    public void HandleError(Exception exception) { }
+    Assert.IsTrue(invoked);
   }
 }
