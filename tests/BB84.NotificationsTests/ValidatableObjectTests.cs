@@ -7,31 +7,42 @@ namespace BB84.NotificationsTests;
 [TestClass]
 public sealed partial class ValidatableObjectTests
 {
-  private sealed class TestClass : ValidatableObject
+  private sealed class TestClass(int id, string firstName, string lastName, string? middleName = null) : ValidatableObject
   {
-    private int _id;
-    private string _firstName;
-    private string _lastName;
-    private string? _middleName;
+    private int _id = id;
+    private string _firstName = firstName;
+    private string _lastName = lastName;
+    private string? _middleName = middleName;
 
-    public TestClass()
-    {
-      _id = 1000;
-      _firstName = string.Empty;
-      _lastName = string.Empty;
-      _middleName = default;
-    }
+    public TestClass() : this(1000, string.Empty, string.Empty)
+    { }
 
     [Required, Range(1, int.MaxValue)]
-    public int Id { get => _id; set => SetPropertyAndValidate(ref _id, value); }
+    public int Id
+    {
+      get => _id;
+      set => SetPropertyAndValidate(ref _id, value);
+    }
 
     [Required, MaxLength(50)]
-    public string FirstName { get => _firstName; set => SetPropertyAndValidate(ref _firstName, value); }
+    public string FirstName
+    {
+      get => _firstName;
+      set => SetPropertyAndValidate(ref _firstName, value);
+    }
 
     [MaxLength(50)]
-    public string? MiddleName { get => _middleName; set => SetPropertyAndValidate(ref _middleName, value); }
+    public string? MiddleName
+    {
+      get => _middleName;
+      set => SetPropertyAndValidate(ref _middleName, value);
+    }
 
     [Required, StringLength(50, MinimumLength = 2)]
-    public string LastName { get => _lastName; set => SetPropertyAndValidate(ref _lastName, value); }
+    public string LastName
+    {
+      get => _lastName;
+      set => SetPropertyAndValidate(ref _lastName, value);
+    }
   }
 }
