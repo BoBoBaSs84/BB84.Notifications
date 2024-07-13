@@ -13,6 +13,14 @@ namespace BB84.Notifications;
 /// </summary>
 public abstract class NotifiableObject : INotifiableObject
 {
+  private static readonly Dictionary<string, string[]> PropertyChangedAttributeCache = [];
+  private static readonly Dictionary<string, string[]> PropertyChangingAttributeCache = [];
+
+  /// <summary>
+  /// Initializes a new instance of the <see cref="NotifiableObject"/> class.
+  /// </summary>
+  protected NotifiableObject() => FillCaches();
+
   /// <inheritdoc/>
   public event PropertyChangedEventHandler? PropertyChanged;
 
@@ -79,16 +87,12 @@ public abstract class NotifiableObject : INotifiableObject
   /// <param name="propertyName">The name of the calling property.</param>
   private void RaiseChangedAttribute(string propertyName)
   {
-    PropertyInfo? propertyInfo = GetType().GetProperty(propertyName);
+    bool success = PropertyChangedAttributeCache.TryGetValue(propertyName, out string[]? propertiesToNotify);
 
-    if (propertyInfo is not null)
+    if (success && propertiesToNotify is not null)
     {
-      NotifyChangedAttribute? attribute =
-        propertyInfo.GetCustomAttribute(typeof(NotifyChangedAttribute), false) as NotifyChangedAttribute;
-
-      if (attribute is not null)
-        foreach (string property in attribute.Properties)
-          RaisePropertyChanged(property);
+      foreach (string propertyToNotify in propertiesToNotify)
+        RaisePropertyChanged(propertyToNotify);
     }
   }
 
@@ -99,16 +103,37 @@ public abstract class NotifiableObject : INotifiableObject
   /// <param name="propertyName">The name of the calling property.</param>
   private void RaiseChangingAttribute(string propertyName)
   {
-    PropertyInfo? propertyInfo = GetType().GetProperty(propertyName);
+    bool success = PropertyChangingAttributeCache.TryGetValue(propertyName, out string[]? propertiesToNotify);
 
-    if (propertyInfo is not null)
+    if (success && propertiesToNotify is not null)
     {
-      NotifyChangingAttribute? attribute =
+      foreach (string propertyToNotify in propertiesToNotify)
+        RaisePropertyChanging(propertyToNotify);
+    }
+  }
+
+  /// <summary>
+  /// The method fills the <see cref="PropertyChangedAttributeCache"/> and the <see cref="PropertyChangingAttributeCache"/>
+  /// when the class is instantiated so that it only has to do this once. This means that subsequent calls to 
+  /// <see cref="RaiseChangedAttribute"/> and <see cref="RaiseChangingAttribute"/> no longer have to do this.
+  /// </summary>
+  private void FillCaches()
+  {
+    PropertyInfo[] propertiesInfos = GetType().GetProperties();
+
+    foreach (PropertyInfo propertyInfo in propertiesInfos)
+    {
+      NotifyChangedAttribute? changedAttribute =
+        propertyInfo.GetCustomAttribute(typeof(NotifyChangedAttribute), false) as NotifyChangedAttribute;
+
+      if (changedAttribute is not null)
+        PropertyChangedAttributeCache.Add(propertyInfo.Name, changedAttribute.Properties);
+
+      NotifyChangingAttribute? changingAttribute =
         propertyInfo.GetCustomAttribute(typeof(NotifyChangingAttribute), false) as NotifyChangingAttribute;
 
-      if (attribute is not null)
-        foreach (string property in attribute.Properties)
-          RaisePropertyChanging(property);
+      if (changingAttribute is not null)
+        PropertyChangingAttributeCache.Add(propertyInfo.Name, changingAttribute.Properties);
     }
   }
 }

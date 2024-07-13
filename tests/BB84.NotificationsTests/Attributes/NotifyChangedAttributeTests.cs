@@ -32,10 +32,18 @@ public class NotifyChangedAttributeTests
     }
 
     [NotifyChanged(nameof(TotalValue))]
-    public int Quantity { get => _quantity; set => SetProperty(ref _quantity, value); }
+    public int Quantity
+    {
+      get => _quantity;
+      set => SetProperty(ref _quantity, value);
+    }
 
     [NotifyChanged(nameof(TotalValue))]
-    public int Value { get => _value; set => SetProperty(ref _value, value); }
+    public int Value
+    {
+      get => _value;
+      set => SetProperty(ref _value, value);
+    }
 
     public int TotalValue => Quantity * Value;
   }
