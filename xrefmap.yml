@@ -1246,6 +1246,25 @@ references:
   commentId: T:BB84.Notifications.NotifiableObject
   fullName: BB84.Notifications.NotifiableObject
   nameWithType: NotifiableObject
+- uid: BB84.Notifications.NotifiableObject.#ctor
+  name: NotifiableObject()
+  href: api/BB84.Notifications.NotifiableObject.html#BB84_Notifications_NotifiableObject__ctor
+  commentId: M:BB84.Notifications.NotifiableObject.#ctor
+  name.vb: New()
+  fullName: BB84.Notifications.NotifiableObject.NotifiableObject()
+  fullName.vb: BB84.Notifications.NotifiableObject.New()
+  nameWithType: NotifiableObject.NotifiableObject()
+  nameWithType.vb: NotifiableObject.New()
+- uid: BB84.Notifications.NotifiableObject.#ctor*
+  name: NotifiableObject
+  href: api/BB84.Notifications.NotifiableObject.html#BB84_Notifications_NotifiableObject__ctor_
+  commentId: Overload:BB84.Notifications.NotifiableObject.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: BB84.Notifications.NotifiableObject.NotifiableObject
+  fullName.vb: BB84.Notifications.NotifiableObject.New
+  nameWithType: NotifiableObject.NotifiableObject
+  nameWithType.vb: NotifiableObject.New
 - uid: BB84.Notifications.NotifiableObject.PropertyChanged
   name: PropertyChanged
   href: api/BB84.Notifications.NotifiableObject.html#BB84_Notifications_NotifiableObject_PropertyChanged
