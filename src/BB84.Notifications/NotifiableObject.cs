@@ -13,8 +13,8 @@ namespace BB84.Notifications;
 /// </summary>
 public abstract class NotifiableObject : INotifiableObject
 {
-  private static readonly Dictionary<string, string[]> PropertyChangedAttributeCache = [];
-  private static readonly Dictionary<string, string[]> PropertyChangingAttributeCache = [];
+  private readonly Dictionary<string, string[]> _propertiesToNotifyOnChange = [];
+  private readonly Dictionary<string, string[]> _propertiesToNotifyOnChanging = [];
 
   /// <summary>
   /// Initializes a new instance of the <see cref="NotifiableObject"/> class.
@@ -87,7 +87,7 @@ public abstract class NotifiableObject : INotifiableObject
   /// <param name="propertyName">The name of the calling property.</param>
   private void RaiseChangedAttribute(string propertyName)
   {
-    bool success = PropertyChangedAttributeCache.TryGetValue(propertyName, out string[]? propertiesToNotify);
+    bool success = _propertiesToNotifyOnChange.TryGetValue(propertyName, out string[]? propertiesToNotify);
 
     if (success && propertiesToNotify is not null)
     {
@@ -103,7 +103,7 @@ public abstract class NotifiableObject : INotifiableObject
   /// <param name="propertyName">The name of the calling property.</param>
   private void RaiseChangingAttribute(string propertyName)
   {
-    bool success = PropertyChangingAttributeCache.TryGetValue(propertyName, out string[]? propertiesToNotify);
+    bool success = _propertiesToNotifyOnChanging.TryGetValue(propertyName, out string[]? propertiesToNotify);
 
     if (success && propertiesToNotify is not null)
     {
@@ -113,7 +113,7 @@ public abstract class NotifiableObject : INotifiableObject
   }
 
   /// <summary>
-  /// The method fills the <see cref="PropertyChangedAttributeCache"/> and the <see cref="PropertyChangingAttributeCache"/>
+  /// The method fills the <see cref="_propertiesToNotifyOnChange"/> and the <see cref="_propertiesToNotifyOnChanging"/>
   /// when the class is instantiated so that it only has to do this once. This means that subsequent calls to 
   /// <see cref="RaiseChangedAttribute"/> and <see cref="RaiseChangingAttribute"/> no longer have to do this.
   /// </summary>
@@ -127,13 +127,13 @@ public abstract class NotifiableObject : INotifiableObject
         propertyInfo.GetCustomAttribute(typeof(NotifyChangedAttribute), false) as NotifyChangedAttribute;
 
       if (changedAttribute is not null)
-        PropertyChangedAttributeCache.Add(propertyInfo.Name, changedAttribute.Properties);
+        _propertiesToNotifyOnChange.Add(propertyInfo.Name, changedAttribute.Properties);
 
       NotifyChangingAttribute? changingAttribute =
         propertyInfo.GetCustomAttribute(typeof(NotifyChangingAttribute), false) as NotifyChangingAttribute;
 
       if (changingAttribute is not null)
-        PropertyChangingAttributeCache.Add(propertyInfo.Name, changingAttribute.Properties);
+        _propertiesToNotifyOnChanging.Add(propertyInfo.Name, changingAttribute.Properties);
     }
   }
 }
