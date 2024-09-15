@@ -18,7 +18,7 @@ public sealed class ReversibleProperty<T> : INotifiableProperty<T>, IReversibleP
   /// <summary>
   /// Initializes a new instance of the <see cref="ReversibleProperty{T}"/> class.
   /// </summary>
-  /// <param name="value">The value of the reversible property.</param>
+  /// <param name="value">The initial value of the reversible property.</param>
   /// <param name="size">The size of the backing array.</param>
   public ReversibleProperty(T value, int size = 10)
   {
