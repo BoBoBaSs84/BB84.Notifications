@@ -34,6 +34,32 @@ If the property is changed, the `PropertyChangingEventHandler` is triggered befo
 
 Further implementation possibilities can be achieved with the help of the `INotifiableProperty<T>` interface.
 
+### The reversible property class and interface
+
+Designed with one or two way binding in mind and for switching back and forth. By default, only 10 values are saved, but a different value can be specified when initializing the property.
+
+```csharp
+int defaultValue = 42;
+int valuesToStore = 20;
+public IReversibleProperty<int> ReversibleInt { get; set; } = new ReversibleProperty<int>(defaultValue, valuesToStore);
+```
+
+The reversible property contains all the functions of the notifiable property and also provides the option of switching back and forth between the values already set.
+
+**To get the previous value:**
+
+```csharp
+ReversibleInt.PreviousValue();
+```
+
+**To get the next value:**
+
+```csharp
+ReversibleInt.NextValue();
+```
+
+Further implementation possibilities can be achieved with the help of the `IReversibleProperty<T>` interface.
+
 ### The notifiable object base class and interface
 
 Designed to handle changes at the class level and propagate them.
@@ -109,6 +135,8 @@ private sealed class TestClass : NotifyPropertyBase
 
 If the `Quantity` property or the `Value` property is changed, a `PropertyChanged` event is also triggered for the `TotalValue` property.
 
-## Documentation
+To keep the costs of reflection as low as possible, the property and its properties to be notified are persisted when initializing the class that uses the attributes.
+
+## API Documentation
 
 The complete API documentation can be found [here](https://bobobass84.github.io/BB84.Notifications/).
