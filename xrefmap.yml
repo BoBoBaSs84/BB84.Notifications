@@ -1159,6 +1159,117 @@ references:
   fullName.vb: BB84.Notifications.Interfaces.INotifiableProperty(Of T).Value
   nameWithType: INotifiableProperty<T>.Value
   nameWithType.vb: INotifiableProperty(Of T).Value
+- uid: BB84.Notifications.Interfaces.IReversibleProperty`1
+  name: IReversibleProperty<T>
+  href: api/BB84.Notifications.Interfaces.IReversibleProperty-1.html
+  commentId: T:BB84.Notifications.Interfaces.IReversibleProperty`1
+  name.vb: IReversibleProperty(Of T)
+  fullName: BB84.Notifications.Interfaces.IReversibleProperty<T>
+  fullName.vb: BB84.Notifications.Interfaces.IReversibleProperty(Of T)
+  nameWithType: IReversibleProperty<T>
+  nameWithType.vb: IReversibleProperty(Of T)
+- uid: BB84.Notifications.Interfaces.IReversibleProperty`1.Count
+  name: Count
+  href: api/BB84.Notifications.Interfaces.IReversibleProperty-1.html#BB84_Notifications_Interfaces_IReversibleProperty_1_Count
+  commentId: P:BB84.Notifications.Interfaces.IReversibleProperty`1.Count
+  fullName: BB84.Notifications.Interfaces.IReversibleProperty<T>.Count
+  fullName.vb: BB84.Notifications.Interfaces.IReversibleProperty(Of T).Count
+  nameWithType: IReversibleProperty<T>.Count
+  nameWithType.vb: IReversibleProperty(Of T).Count
+- uid: BB84.Notifications.Interfaces.IReversibleProperty`1.Count*
+  name: Count
+  href: api/BB84.Notifications.Interfaces.IReversibleProperty-1.html#BB84_Notifications_Interfaces_IReversibleProperty_1_Count_
+  commentId: Overload:BB84.Notifications.Interfaces.IReversibleProperty`1.Count
+  isSpec: "True"
+  fullName: BB84.Notifications.Interfaces.IReversibleProperty<T>.Count
+  fullName.vb: BB84.Notifications.Interfaces.IReversibleProperty(Of T).Count
+  nameWithType: IReversibleProperty<T>.Count
+  nameWithType.vb: IReversibleProperty(Of T).Count
+- uid: BB84.Notifications.Interfaces.IReversibleProperty`1.HasNextValue
+  name: HasNextValue
+  href: api/BB84.Notifications.Interfaces.IReversibleProperty-1.html#BB84_Notifications_Interfaces_IReversibleProperty_1_HasNextValue
+  commentId: P:BB84.Notifications.Interfaces.IReversibleProperty`1.HasNextValue
+  fullName: BB84.Notifications.Interfaces.IReversibleProperty<T>.HasNextValue
+  fullName.vb: BB84.Notifications.Interfaces.IReversibleProperty(Of T).HasNextValue
+  nameWithType: IReversibleProperty<T>.HasNextValue
+  nameWithType.vb: IReversibleProperty(Of T).HasNextValue
+- uid: BB84.Notifications.Interfaces.IReversibleProperty`1.HasNextValue*
+  name: HasNextValue
+  href: api/BB84.Notifications.Interfaces.IReversibleProperty-1.html#BB84_Notifications_Interfaces_IReversibleProperty_1_HasNextValue_
+  commentId: Overload:BB84.Notifications.Interfaces.IReversibleProperty`1.HasNextValue
+  isSpec: "True"
+  fullName: BB84.Notifications.Interfaces.IReversibleProperty<T>.HasNextValue
+  fullName.vb: BB84.Notifications.Interfaces.IReversibleProperty(Of T).HasNextValue
+  nameWithType: IReversibleProperty<T>.HasNextValue
+  nameWithType.vb: IReversibleProperty(Of T).HasNextValue
+- uid: BB84.Notifications.Interfaces.IReversibleProperty`1.HasPreviousValue
+  name: HasPreviousValue
+  href: api/BB84.Notifications.Interfaces.IReversibleProperty-1.html#BB84_Notifications_Interfaces_IReversibleProperty_1_HasPreviousValue
+  commentId: P:BB84.Notifications.Interfaces.IReversibleProperty`1.HasPreviousValue
+  fullName: BB84.Notifications.Interfaces.IReversibleProperty<T>.HasPreviousValue
+  fullName.vb: BB84.Notifications.Interfaces.IReversibleProperty(Of T).HasPreviousValue
+  nameWithType: IReversibleProperty<T>.HasPreviousValue
+  nameWithType.vb: IReversibleProperty(Of T).HasPreviousValue
+- uid: BB84.Notifications.Interfaces.IReversibleProperty`1.HasPreviousValue*
+  name: HasPreviousValue
+  href: api/BB84.Notifications.Interfaces.IReversibleProperty-1.html#BB84_Notifications_Interfaces_IReversibleProperty_1_HasPreviousValue_
+  commentId: Overload:BB84.Notifications.Interfaces.IReversibleProperty`1.HasPreviousValue
+  isSpec: "True"
+  fullName: BB84.Notifications.Interfaces.IReversibleProperty<T>.HasPreviousValue
+  fullName.vb: BB84.Notifications.Interfaces.IReversibleProperty(Of T).HasPreviousValue
+  nameWithType: IReversibleProperty<T>.HasPreviousValue
+  nameWithType.vb: IReversibleProperty(Of T).HasPreviousValue
+- uid: BB84.Notifications.Interfaces.IReversibleProperty`1.Index
+  name: Index
+  href: api/BB84.Notifications.Interfaces.IReversibleProperty-1.html#BB84_Notifications_Interfaces_IReversibleProperty_1_Index
+  commentId: P:BB84.Notifications.Interfaces.IReversibleProperty`1.Index
+  fullName: BB84.Notifications.Interfaces.IReversibleProperty<T>.Index
+  fullName.vb: BB84.Notifications.Interfaces.IReversibleProperty(Of T).Index
+  nameWithType: IReversibleProperty<T>.Index
+  nameWithType.vb: IReversibleProperty(Of T).Index
+- uid: BB84.Notifications.Interfaces.IReversibleProperty`1.Index*
+  name: Index
+  href: api/BB84.Notifications.Interfaces.IReversibleProperty-1.html#BB84_Notifications_Interfaces_IReversibleProperty_1_Index_
+  commentId: Overload:BB84.Notifications.Interfaces.IReversibleProperty`1.Index
+  isSpec: "True"
+  fullName: BB84.Notifications.Interfaces.IReversibleProperty<T>.Index
+  fullName.vb: BB84.Notifications.Interfaces.IReversibleProperty(Of T).Index
+  nameWithType: IReversibleProperty<T>.Index
+  nameWithType.vb: IReversibleProperty(Of T).Index
+- uid: BB84.Notifications.Interfaces.IReversibleProperty`1.NextValue
+  name: NextValue()
+  href: api/BB84.Notifications.Interfaces.IReversibleProperty-1.html#BB84_Notifications_Interfaces_IReversibleProperty_1_NextValue
+  commentId: M:BB84.Notifications.Interfaces.IReversibleProperty`1.NextValue
+  fullName: BB84.Notifications.Interfaces.IReversibleProperty<T>.NextValue()
+  fullName.vb: BB84.Notifications.Interfaces.IReversibleProperty(Of T).NextValue()
+  nameWithType: IReversibleProperty<T>.NextValue()
+  nameWithType.vb: IReversibleProperty(Of T).NextValue()
+- uid: BB84.Notifications.Interfaces.IReversibleProperty`1.NextValue*
+  name: NextValue
+  href: api/BB84.Notifications.Interfaces.IReversibleProperty-1.html#BB84_Notifications_Interfaces_IReversibleProperty_1_NextValue_
+  commentId: Overload:BB84.Notifications.Interfaces.IReversibleProperty`1.NextValue
+  isSpec: "True"
+  fullName: BB84.Notifications.Interfaces.IReversibleProperty<T>.NextValue
+  fullName.vb: BB84.Notifications.Interfaces.IReversibleProperty(Of T).NextValue
+  nameWithType: IReversibleProperty<T>.NextValue
+  nameWithType.vb: IReversibleProperty(Of T).NextValue
+- uid: BB84.Notifications.Interfaces.IReversibleProperty`1.PreviousValue
+  name: PreviousValue()
+  href: api/BB84.Notifications.Interfaces.IReversibleProperty-1.html#BB84_Notifications_Interfaces_IReversibleProperty_1_PreviousValue
+  commentId: M:BB84.Notifications.Interfaces.IReversibleProperty`1.PreviousValue
+  fullName: BB84.Notifications.Interfaces.IReversibleProperty<T>.PreviousValue()
+  fullName.vb: BB84.Notifications.Interfaces.IReversibleProperty(Of T).PreviousValue()
+  nameWithType: IReversibleProperty<T>.PreviousValue()
+  nameWithType.vb: IReversibleProperty(Of T).PreviousValue()
+- uid: BB84.Notifications.Interfaces.IReversibleProperty`1.PreviousValue*
+  name: PreviousValue
+  href: api/BB84.Notifications.Interfaces.IReversibleProperty-1.html#BB84_Notifications_Interfaces_IReversibleProperty_1_PreviousValue_
+  commentId: Overload:BB84.Notifications.Interfaces.IReversibleProperty`1.PreviousValue
+  isSpec: "True"
+  fullName: BB84.Notifications.Interfaces.IReversibleProperty<T>.PreviousValue
+  fullName.vb: BB84.Notifications.Interfaces.IReversibleProperty(Of T).PreviousValue
+  nameWithType: IReversibleProperty<T>.PreviousValue
+  nameWithType.vb: IReversibleProperty(Of T).PreviousValue
 - uid: BB84.Notifications.Interfaces.IValidatableObject
   name: IValidatableObject
   href: api/BB84.Notifications.Interfaces.IValidatableObject.html
@@ -1438,6 +1549,203 @@ references:
   fullName.vb: BB84.Notifications.NotifiableProperty(Of T).Value
   nameWithType: NotifiableProperty<T>.Value
   nameWithType.vb: NotifiableProperty(Of T).Value
+- uid: BB84.Notifications.ReversibleProperty`1
+  name: ReversibleProperty<T>
+  href: api/BB84.Notifications.ReversibleProperty-1.html
+  commentId: T:BB84.Notifications.ReversibleProperty`1
+  name.vb: ReversibleProperty(Of T)
+  fullName: BB84.Notifications.ReversibleProperty<T>
+  fullName.vb: BB84.Notifications.ReversibleProperty(Of T)
+  nameWithType: ReversibleProperty<T>
+  nameWithType.vb: ReversibleProperty(Of T)
+- uid: BB84.Notifications.ReversibleProperty`1.#ctor(`0,System.Int32)
+  name: ReversibleProperty(T, int)
+  href: api/BB84.Notifications.ReversibleProperty-1.html#BB84_Notifications_ReversibleProperty_1__ctor__0_System_Int32_
+  commentId: M:BB84.Notifications.ReversibleProperty`1.#ctor(`0,System.Int32)
+  name.vb: New(T, Integer)
+  fullName: BB84.Notifications.ReversibleProperty<T>.ReversibleProperty(T, int)
+  fullName.vb: BB84.Notifications.ReversibleProperty(Of T).New(T, Integer)
+  nameWithType: ReversibleProperty<T>.ReversibleProperty(T, int)
+  nameWithType.vb: ReversibleProperty(Of T).New(T, Integer)
+- uid: BB84.Notifications.ReversibleProperty`1.#ctor*
+  name: ReversibleProperty
+  href: api/BB84.Notifications.ReversibleProperty-1.html#BB84_Notifications_ReversibleProperty_1__ctor_
+  commentId: Overload:BB84.Notifications.ReversibleProperty`1.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: BB84.Notifications.ReversibleProperty<T>.ReversibleProperty
+  fullName.vb: BB84.Notifications.ReversibleProperty(Of T).New
+  nameWithType: ReversibleProperty<T>.ReversibleProperty
+  nameWithType.vb: ReversibleProperty(Of T).New
+- uid: BB84.Notifications.ReversibleProperty`1.Count
+  name: Count
+  href: api/BB84.Notifications.ReversibleProperty-1.html#BB84_Notifications_ReversibleProperty_1_Count
+  commentId: P:BB84.Notifications.ReversibleProperty`1.Count
+  fullName: BB84.Notifications.ReversibleProperty<T>.Count
+  fullName.vb: BB84.Notifications.ReversibleProperty(Of T).Count
+  nameWithType: ReversibleProperty<T>.Count
+  nameWithType.vb: ReversibleProperty(Of T).Count
+- uid: BB84.Notifications.ReversibleProperty`1.Count*
+  name: Count
+  href: api/BB84.Notifications.ReversibleProperty-1.html#BB84_Notifications_ReversibleProperty_1_Count_
+  commentId: Overload:BB84.Notifications.ReversibleProperty`1.Count
+  isSpec: "True"
+  fullName: BB84.Notifications.ReversibleProperty<T>.Count
+  fullName.vb: BB84.Notifications.ReversibleProperty(Of T).Count
+  nameWithType: ReversibleProperty<T>.Count
+  nameWithType.vb: ReversibleProperty(Of T).Count
+- uid: BB84.Notifications.ReversibleProperty`1.HasNextValue
+  name: HasNextValue
+  href: api/BB84.Notifications.ReversibleProperty-1.html#BB84_Notifications_ReversibleProperty_1_HasNextValue
+  commentId: P:BB84.Notifications.ReversibleProperty`1.HasNextValue
+  fullName: BB84.Notifications.ReversibleProperty<T>.HasNextValue
+  fullName.vb: BB84.Notifications.ReversibleProperty(Of T).HasNextValue
+  nameWithType: ReversibleProperty<T>.HasNextValue
+  nameWithType.vb: ReversibleProperty(Of T).HasNextValue
+- uid: BB84.Notifications.ReversibleProperty`1.HasNextValue*
+  name: HasNextValue
+  href: api/BB84.Notifications.ReversibleProperty-1.html#BB84_Notifications_ReversibleProperty_1_HasNextValue_
+  commentId: Overload:BB84.Notifications.ReversibleProperty`1.HasNextValue
+  isSpec: "True"
+  fullName: BB84.Notifications.ReversibleProperty<T>.HasNextValue
+  fullName.vb: BB84.Notifications.ReversibleProperty(Of T).HasNextValue
+  nameWithType: ReversibleProperty<T>.HasNextValue
+  nameWithType.vb: ReversibleProperty(Of T).HasNextValue
+- uid: BB84.Notifications.ReversibleProperty`1.HasPreviousValue
+  name: HasPreviousValue
+  href: api/BB84.Notifications.ReversibleProperty-1.html#BB84_Notifications_ReversibleProperty_1_HasPreviousValue
+  commentId: P:BB84.Notifications.ReversibleProperty`1.HasPreviousValue
+  fullName: BB84.Notifications.ReversibleProperty<T>.HasPreviousValue
+  fullName.vb: BB84.Notifications.ReversibleProperty(Of T).HasPreviousValue
+  nameWithType: ReversibleProperty<T>.HasPreviousValue
+  nameWithType.vb: ReversibleProperty(Of T).HasPreviousValue
+- uid: BB84.Notifications.ReversibleProperty`1.HasPreviousValue*
+  name: HasPreviousValue
+  href: api/BB84.Notifications.ReversibleProperty-1.html#BB84_Notifications_ReversibleProperty_1_HasPreviousValue_
+  commentId: Overload:BB84.Notifications.ReversibleProperty`1.HasPreviousValue
+  isSpec: "True"
+  fullName: BB84.Notifications.ReversibleProperty<T>.HasPreviousValue
+  fullName.vb: BB84.Notifications.ReversibleProperty(Of T).HasPreviousValue
+  nameWithType: ReversibleProperty<T>.HasPreviousValue
+  nameWithType.vb: ReversibleProperty(Of T).HasPreviousValue
+- uid: BB84.Notifications.ReversibleProperty`1.Index
+  name: Index
+  href: api/BB84.Notifications.ReversibleProperty-1.html#BB84_Notifications_ReversibleProperty_1_Index
+  commentId: P:BB84.Notifications.ReversibleProperty`1.Index
+  fullName: BB84.Notifications.ReversibleProperty<T>.Index
+  fullName.vb: BB84.Notifications.ReversibleProperty(Of T).Index
+  nameWithType: ReversibleProperty<T>.Index
+  nameWithType.vb: ReversibleProperty(Of T).Index
+- uid: BB84.Notifications.ReversibleProperty`1.Index*
+  name: Index
+  href: api/BB84.Notifications.ReversibleProperty-1.html#BB84_Notifications_ReversibleProperty_1_Index_
+  commentId: Overload:BB84.Notifications.ReversibleProperty`1.Index
+  isSpec: "True"
+  fullName: BB84.Notifications.ReversibleProperty<T>.Index
+  fullName.vb: BB84.Notifications.ReversibleProperty(Of T).Index
+  nameWithType: ReversibleProperty<T>.Index
+  nameWithType.vb: ReversibleProperty(Of T).Index
+- uid: BB84.Notifications.ReversibleProperty`1.IsDefault
+  name: IsDefault
+  href: api/BB84.Notifications.ReversibleProperty-1.html#BB84_Notifications_ReversibleProperty_1_IsDefault
+  commentId: P:BB84.Notifications.ReversibleProperty`1.IsDefault
+  fullName: BB84.Notifications.ReversibleProperty<T>.IsDefault
+  fullName.vb: BB84.Notifications.ReversibleProperty(Of T).IsDefault
+  nameWithType: ReversibleProperty<T>.IsDefault
+  nameWithType.vb: ReversibleProperty(Of T).IsDefault
+- uid: BB84.Notifications.ReversibleProperty`1.IsDefault*
+  name: IsDefault
+  href: api/BB84.Notifications.ReversibleProperty-1.html#BB84_Notifications_ReversibleProperty_1_IsDefault_
+  commentId: Overload:BB84.Notifications.ReversibleProperty`1.IsDefault
+  isSpec: "True"
+  fullName: BB84.Notifications.ReversibleProperty<T>.IsDefault
+  fullName.vb: BB84.Notifications.ReversibleProperty(Of T).IsDefault
+  nameWithType: ReversibleProperty<T>.IsDefault
+  nameWithType.vb: ReversibleProperty(Of T).IsDefault
+- uid: BB84.Notifications.ReversibleProperty`1.IsNull
+  name: IsNull
+  href: api/BB84.Notifications.ReversibleProperty-1.html#BB84_Notifications_ReversibleProperty_1_IsNull
+  commentId: P:BB84.Notifications.ReversibleProperty`1.IsNull
+  fullName: BB84.Notifications.ReversibleProperty<T>.IsNull
+  fullName.vb: BB84.Notifications.ReversibleProperty(Of T).IsNull
+  nameWithType: ReversibleProperty<T>.IsNull
+  nameWithType.vb: ReversibleProperty(Of T).IsNull
+- uid: BB84.Notifications.ReversibleProperty`1.IsNull*
+  name: IsNull
+  href: api/BB84.Notifications.ReversibleProperty-1.html#BB84_Notifications_ReversibleProperty_1_IsNull_
+  commentId: Overload:BB84.Notifications.ReversibleProperty`1.IsNull
+  isSpec: "True"
+  fullName: BB84.Notifications.ReversibleProperty<T>.IsNull
+  fullName.vb: BB84.Notifications.ReversibleProperty(Of T).IsNull
+  nameWithType: ReversibleProperty<T>.IsNull
+  nameWithType.vb: ReversibleProperty(Of T).IsNull
+- uid: BB84.Notifications.ReversibleProperty`1.NextValue
+  name: NextValue()
+  href: api/BB84.Notifications.ReversibleProperty-1.html#BB84_Notifications_ReversibleProperty_1_NextValue
+  commentId: M:BB84.Notifications.ReversibleProperty`1.NextValue
+  fullName: BB84.Notifications.ReversibleProperty<T>.NextValue()
+  fullName.vb: BB84.Notifications.ReversibleProperty(Of T).NextValue()
+  nameWithType: ReversibleProperty<T>.NextValue()
+  nameWithType.vb: ReversibleProperty(Of T).NextValue()
+- uid: BB84.Notifications.ReversibleProperty`1.NextValue*
+  name: NextValue
+  href: api/BB84.Notifications.ReversibleProperty-1.html#BB84_Notifications_ReversibleProperty_1_NextValue_
+  commentId: Overload:BB84.Notifications.ReversibleProperty`1.NextValue
+  isSpec: "True"
+  fullName: BB84.Notifications.ReversibleProperty<T>.NextValue
+  fullName.vb: BB84.Notifications.ReversibleProperty(Of T).NextValue
+  nameWithType: ReversibleProperty<T>.NextValue
+  nameWithType.vb: ReversibleProperty(Of T).NextValue
+- uid: BB84.Notifications.ReversibleProperty`1.PreviousValue
+  name: PreviousValue()
+  href: api/BB84.Notifications.ReversibleProperty-1.html#BB84_Notifications_ReversibleProperty_1_PreviousValue
+  commentId: M:BB84.Notifications.ReversibleProperty`1.PreviousValue
+  fullName: BB84.Notifications.ReversibleProperty<T>.PreviousValue()
+  fullName.vb: BB84.Notifications.ReversibleProperty(Of T).PreviousValue()
+  nameWithType: ReversibleProperty<T>.PreviousValue()
+  nameWithType.vb: ReversibleProperty(Of T).PreviousValue()
+- uid: BB84.Notifications.ReversibleProperty`1.PreviousValue*
+  name: PreviousValue
+  href: api/BB84.Notifications.ReversibleProperty-1.html#BB84_Notifications_ReversibleProperty_1_PreviousValue_
+  commentId: Overload:BB84.Notifications.ReversibleProperty`1.PreviousValue
+  isSpec: "True"
+  fullName: BB84.Notifications.ReversibleProperty<T>.PreviousValue
+  fullName.vb: BB84.Notifications.ReversibleProperty(Of T).PreviousValue
+  nameWithType: ReversibleProperty<T>.PreviousValue
+  nameWithType.vb: ReversibleProperty(Of T).PreviousValue
+- uid: BB84.Notifications.ReversibleProperty`1.PropertyChanged
+  name: PropertyChanged
+  href: api/BB84.Notifications.ReversibleProperty-1.html#BB84_Notifications_ReversibleProperty_1_PropertyChanged
+  commentId: E:BB84.Notifications.ReversibleProperty`1.PropertyChanged
+  fullName: BB84.Notifications.ReversibleProperty<T>.PropertyChanged
+  fullName.vb: BB84.Notifications.ReversibleProperty(Of T).PropertyChanged
+  nameWithType: ReversibleProperty<T>.PropertyChanged
+  nameWithType.vb: ReversibleProperty(Of T).PropertyChanged
+- uid: BB84.Notifications.ReversibleProperty`1.PropertyChanging
+  name: PropertyChanging
+  href: api/BB84.Notifications.ReversibleProperty-1.html#BB84_Notifications_ReversibleProperty_1_PropertyChanging
+  commentId: E:BB84.Notifications.ReversibleProperty`1.PropertyChanging
+  fullName: BB84.Notifications.ReversibleProperty<T>.PropertyChanging
+  fullName.vb: BB84.Notifications.ReversibleProperty(Of T).PropertyChanging
+  nameWithType: ReversibleProperty<T>.PropertyChanging
+  nameWithType.vb: ReversibleProperty(Of T).PropertyChanging
+- uid: BB84.Notifications.ReversibleProperty`1.Value
+  name: Value
+  href: api/BB84.Notifications.ReversibleProperty-1.html#BB84_Notifications_ReversibleProperty_1_Value
+  commentId: P:BB84.Notifications.ReversibleProperty`1.Value
+  fullName: BB84.Notifications.ReversibleProperty<T>.Value
+  fullName.vb: BB84.Notifications.ReversibleProperty(Of T).Value
+  nameWithType: ReversibleProperty<T>.Value
+  nameWithType.vb: ReversibleProperty(Of T).Value
+- uid: BB84.Notifications.ReversibleProperty`1.Value*
+  name: Value
+  href: api/BB84.Notifications.ReversibleProperty-1.html#BB84_Notifications_ReversibleProperty_1_Value_
+  commentId: Overload:BB84.Notifications.ReversibleProperty`1.Value
+  isSpec: "True"
+  fullName: BB84.Notifications.ReversibleProperty<T>.Value
+  fullName.vb: BB84.Notifications.ReversibleProperty(Of T).Value
+  nameWithType: ReversibleProperty<T>.Value
+  nameWithType.vb: ReversibleProperty(Of T).Value
 - uid: BB84.Notifications.ValidatableObject
   name: ValidatableObject
   href: api/BB84.Notifications.ValidatableObject.html

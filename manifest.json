@@ -304,6 +304,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/BB84.Notifications.Interfaces.IReversibleProperty-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BB84.Notifications.Interfaces.IReversibleProperty-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/BB84.Notifications.Interfaces.IValidatableObject.yml",
       "output": {
         ".html": {
@@ -348,6 +358,16 @@
       "output": {
         ".html": {
           "relative_path": "api/BB84.Notifications.NotifiableProperty-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BB84.Notifications.ReversibleProperty-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BB84.Notifications.ReversibleProperty-1.html"
         }
       },
       "version": ""
