@@ -16,7 +16,7 @@ public sealed partial class NotifiablePropertyTests
   [DataRow(null, true)]
   public void IsNull(object? value, bool expected)
   {
-    INotifiableProperty<object?> bindableProperty = new NotifiableProperty<object?>(value);
+    NotifiableProperty<object?> bindableProperty = new(value);
 
     Assert.AreEqual(expected, bindableProperty.IsNull);
   }
