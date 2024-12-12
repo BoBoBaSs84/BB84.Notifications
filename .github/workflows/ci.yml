@@ -20,12 +20,9 @@ jobs:
       uses: actions/setup-dotnet@v4
       with:
         dotnet-version: '8.0.x'
-
-    - name: Restore
-      run: dotnet restore
     
     - name: Build
-      run: dotnet build --no-restore --configuration release --verbosity minimal
+      run: dotnet build --configuration release --verbosity minimal
     
     - name: Test
       run: dotnet test --no-build --configuration release --verbosity minimal
