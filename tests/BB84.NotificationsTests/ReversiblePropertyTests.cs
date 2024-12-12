@@ -24,11 +24,16 @@ public sealed partial class ReversiblePropertyTests
     Assert.AreEqual(default, testClass.Property.Value);
   }
 
-  private sealed class TestClass(int propertyValue)
+  private sealed class TestClass(int propertyValue) : ITestClass
   {
     public TestClass() : this(default)
     { }
 
     public IReversibleProperty<int> Property { get; set; } = new ReversibleProperty<int>(propertyValue);
+  }
+
+  private interface ITestClass
+  {
+    IReversibleProperty<int> Property { get; set; }
   }
 }

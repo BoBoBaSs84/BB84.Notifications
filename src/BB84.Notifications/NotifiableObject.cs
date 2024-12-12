@@ -124,13 +124,13 @@ public abstract class NotifiableObject : INotifiableObject
     foreach (PropertyInfo propertyInfo in propertiesInfos)
     {
       NotifyChangedAttribute? changedAttribute =
-        propertyInfo.GetCustomAttribute(typeof(NotifyChangedAttribute), false) as NotifyChangedAttribute;
+        propertyInfo.GetCustomAttribute<NotifyChangedAttribute>(false);
 
       if (changedAttribute is not null)
         _propertiesToNotifyOnChange.Add(propertyInfo.Name, changedAttribute.Properties);
 
       NotifyChangingAttribute? changingAttribute =
-        propertyInfo.GetCustomAttribute(typeof(NotifyChangingAttribute), false) as NotifyChangingAttribute;
+        propertyInfo.GetCustomAttribute<NotifyChangingAttribute>(false);
 
       if (changingAttribute is not null)
         _propertiesToNotifyOnChanging.Add(propertyInfo.Name, changingAttribute.Properties);
