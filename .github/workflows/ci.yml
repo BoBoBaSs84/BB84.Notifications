@@ -22,10 +22,10 @@ jobs:
         dotnet-version: '9.0.x'
 
     - name: Restore
-      run: dotnet restore
+      run: dotnet restore --verbosity minimal
     
     - name: Build
       run: dotnet build --no-restore --configuration release --verbosity minimal
     
     - name: Test
-      run: dotnet test --no-build --configuration release --verbosity minimal
+      run: dotnet test --no-build --configuration release --verbosity minimal --framework net8.0
