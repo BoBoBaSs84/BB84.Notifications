@@ -6,6 +6,8 @@ project = "BB84.Notifications.sln"
 [github]
 user = "BoBoBaSs84"
 repo = "BB84.Notifications"
+[test]
+enable = false
 [nuget]
 publish = true
 source = "https://api.nuget.org/v3/index.json"
