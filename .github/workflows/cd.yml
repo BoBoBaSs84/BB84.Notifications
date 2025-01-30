@@ -14,10 +14,10 @@ jobs:
       with:
         fetch-depth: 0
 
-    - name: Setup .Net
+    - name: Setup .NET
       uses: actions/setup-dotnet@v4
       with:
-        dotnet-version: '8.0.x'
+        dotnet-version: '9.0.x'
 
     - name: Publish NuGet
       shell: bash
@@ -34,8 +34,10 @@ jobs:
       with:
         fetch-depth: 0
 
-    - name: Setup .Net
+    - name: Setup .NET
       uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '9.0.x'
 
     - name: Setup DocFx
       run: dotnet tool update -g docfx
