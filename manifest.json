@@ -10,7 +10,11 @@
           "relative_path": "api/BB84.Notifications.Attributes.NotifyChangedAttribute.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BB84.Notifications.Attributes.NotifyChangedAttribute",
+      "Summary": "<p sourcefile=\"api/BB84.Notifications.Attributes.NotifyChangedAttribute.yml\" sourcestartlinenumber=\"1\">The notify changed attribute class.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -20,7 +24,11 @@
           "relative_path": "api/BB84.Notifications.Attributes.NotifyChangingAttribute.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BB84.Notifications.Attributes.NotifyChangingAttribute",
+      "Summary": "<p sourcefile=\"api/BB84.Notifications.Attributes.NotifyChangingAttribute.yml\" sourcestartlinenumber=\"1\">The notify changing attribute class.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -30,7 +38,11 @@
           "relative_path": "api/BB84.Notifications.Attributes.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BB84.Notifications.Attributes",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -40,7 +52,11 @@
           "relative_path": "api/BB84.Notifications.Commands.ActionCommand-1.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BB84.Notifications.Commands.ActionCommand<T>",
+      "Summary": "<p sourcefile=\"api/BB84.Notifications.Commands.ActionCommand-1.yml\" sourcestartlinenumber=\"1\">The action command class.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -50,7 +66,11 @@
           "relative_path": "api/BB84.Notifications.Commands.ActionCommand.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BB84.Notifications.Commands.ActionCommand",
+      "Summary": "<p sourcefile=\"api/BB84.Notifications.Commands.ActionCommand.yml\" sourcestartlinenumber=\"1\">The action command class.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -60,7 +80,11 @@
           "relative_path": "api/BB84.Notifications.Commands.AsyncActionCommand-1.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BB84.Notifications.Commands.AsyncActionCommand<T>",
+      "Summary": "<p sourcefile=\"api/BB84.Notifications.Commands.AsyncActionCommand-1.yml\" sourcestartlinenumber=\"1\">The async action command class.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -70,7 +94,11 @@
           "relative_path": "api/BB84.Notifications.Commands.AsyncActionCommand.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BB84.Notifications.Commands.AsyncActionCommand",
+      "Summary": "<p sourcefile=\"api/BB84.Notifications.Commands.AsyncActionCommand.yml\" sourcestartlinenumber=\"1\">The async action command class.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -80,7 +108,11 @@
           "relative_path": "api/BB84.Notifications.Commands.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BB84.Notifications.Commands",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -90,7 +122,11 @@
           "relative_path": "api/BB84.Notifications.Components.CollectionChangedEventArgs-1.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BB84.Notifications.Components.CollectionChangedEventArgs<T>",
+      "Summary": "<p sourcefile=\"api/BB84.Notifications.Components.CollectionChangedEventArgs-1.yml\" sourcestartlinenumber=\"1\">Provides data for the <xref href=\"BB84.Notifications.Interfaces.Components.INotifyCollectionChanged\" data-throw-if-not-resolved=\"false\"></xref> event.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -100,7 +136,11 @@
           "relative_path": "api/BB84.Notifications.Components.CollectionChangedEventArgs.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BB84.Notifications.Components.CollectionChangedEventArgs",
+      "Summary": "<p sourcefile=\"api/BB84.Notifications.Components.CollectionChangedEventArgs.yml\" sourcestartlinenumber=\"1\">Provides data for the <xref href=\"BB84.Notifications.Interfaces.Components.INotifyCollectionChanged\" data-throw-if-not-resolved=\"false\"></xref> event.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -110,7 +150,11 @@
           "relative_path": "api/BB84.Notifications.Components.CollectionChangedEventHandler.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BB84.Notifications.Components.CollectionChangedEventHandler",
+      "Summary": "<p sourcefile=\"api/BB84.Notifications.Components.CollectionChangedEventHandler.yml\" sourcestartlinenumber=\"1\">Represents the method that will handle the event of the <xref href=\"BB84.Notifications.Interfaces.Components.INotifyCollectionChanged\" data-throw-if-not-resolved=\"false\"></xref> interface.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -120,7 +164,11 @@
           "relative_path": "api/BB84.Notifications.Components.CollectionChangingEventArgs-1.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BB84.Notifications.Components.CollectionChangingEventArgs<T>",
+      "Summary": "<p sourcefile=\"api/BB84.Notifications.Components.CollectionChangingEventArgs-1.yml\" sourcestartlinenumber=\"1\">Provides data for the <xref href=\"BB84.Notifications.Interfaces.Components.INotifyCollectionChanging\" data-throw-if-not-resolved=\"false\"></xref> event.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -130,7 +178,11 @@
           "relative_path": "api/BB84.Notifications.Components.CollectionChangingEventArgs.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BB84.Notifications.Components.CollectionChangingEventArgs",
+      "Summary": "<p sourcefile=\"api/BB84.Notifications.Components.CollectionChangingEventArgs.yml\" sourcestartlinenumber=\"1\">Provides data for the <xref href=\"BB84.Notifications.Interfaces.Components.INotifyCollectionChanging\" data-throw-if-not-resolved=\"false\"></xref> event.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -140,7 +192,11 @@
           "relative_path": "api/BB84.Notifications.Components.CollectionChangingEventHandler.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BB84.Notifications.Components.CollectionChangingEventHandler",
+      "Summary": "<p sourcefile=\"api/BB84.Notifications.Components.CollectionChangingEventHandler.yml\" sourcestartlinenumber=\"1\">Represents the method that will handle the event of the <xref href=\"BB84.Notifications.Interfaces.Components.INotifyCollectionChanging\" data-throw-if-not-resolved=\"false\"></xref> interface.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -150,7 +206,11 @@
           "relative_path": "api/BB84.Notifications.Components.PropertyChangedEventArgs-1.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BB84.Notifications.Components.PropertyChangedEventArgs<T>",
+      "Summary": "<p sourcefile=\"api/BB84.Notifications.Components.PropertyChangedEventArgs-1.yml\" sourcestartlinenumber=\"1\">Provides data for the <xref href=\"System.ComponentModel.INotifyPropertyChanged\" data-throw-if-not-resolved=\"false\"></xref> event.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -160,7 +220,11 @@
           "relative_path": "api/BB84.Notifications.Components.PropertyChangingEventArgs-1.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BB84.Notifications.Components.PropertyChangingEventArgs<T>",
+      "Summary": "<p sourcefile=\"api/BB84.Notifications.Components.PropertyChangingEventArgs-1.yml\" sourcestartlinenumber=\"1\">Provides data for the <xref href=\"System.ComponentModel.INotifyPropertyChanging\" data-throw-if-not-resolved=\"false\"></xref> event.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -170,7 +234,11 @@
           "relative_path": "api/BB84.Notifications.Components.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BB84.Notifications.Components",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -180,7 +248,11 @@
           "relative_path": "api/BB84.Notifications.Extensions.TaskExtensions.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BB84.Notifications.Extensions.TaskExtensions",
+      "Summary": "<p sourcefile=\"api/BB84.Notifications.Extensions.TaskExtensions.yml\" sourcestartlinenumber=\"1\">The task extensions class.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -190,7 +262,11 @@
           "relative_path": "api/BB84.Notifications.Extensions.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BB84.Notifications.Extensions",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -200,7 +276,11 @@
           "relative_path": "api/BB84.Notifications.Interfaces.Commands.IActionCommand-1.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BB84.Notifications.Interfaces.Commands.IActionCommand<T>",
+      "Summary": "<p sourcefile=\"api/BB84.Notifications.Interfaces.Commands.IActionCommand-1.yml\" sourcestartlinenumber=\"1\">The action command interface.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -210,7 +290,11 @@
           "relative_path": "api/BB84.Notifications.Interfaces.Commands.IActionCommand.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BB84.Notifications.Interfaces.Commands.IActionCommand",
+      "Summary": "<p sourcefile=\"api/BB84.Notifications.Interfaces.Commands.IActionCommand.yml\" sourcestartlinenumber=\"1\">The action command interface.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -220,7 +304,11 @@
           "relative_path": "api/BB84.Notifications.Interfaces.Commands.IAsyncActionCommand-1.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BB84.Notifications.Interfaces.Commands.IAsyncActionCommand<T>",
+      "Summary": "<p sourcefile=\"api/BB84.Notifications.Interfaces.Commands.IAsyncActionCommand-1.yml\" sourcestartlinenumber=\"1\">The async action command interface.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -230,7 +318,11 @@
           "relative_path": "api/BB84.Notifications.Interfaces.Commands.IAsyncActionCommand.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BB84.Notifications.Interfaces.Commands.IAsyncActionCommand",
+      "Summary": "<p sourcefile=\"api/BB84.Notifications.Interfaces.Commands.IAsyncActionCommand.yml\" sourcestartlinenumber=\"1\">The async action command interface.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -240,7 +332,11 @@
           "relative_path": "api/BB84.Notifications.Interfaces.Commands.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BB84.Notifications.Interfaces.Commands",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -250,7 +346,11 @@
           "relative_path": "api/BB84.Notifications.Interfaces.Components.INotifyCollectionChanged.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BB84.Notifications.Interfaces.Components.INotifyCollectionChanged",
+      "Summary": "<p sourcefile=\"api/BB84.Notifications.Interfaces.Components.INotifyCollectionChanged.yml\" sourcestartlinenumber=\"1\">Notifies clients that a collection has changed.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -260,7 +360,11 @@
           "relative_path": "api/BB84.Notifications.Interfaces.Components.INotifyCollectionChanging.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BB84.Notifications.Interfaces.Components.INotifyCollectionChanging",
+      "Summary": "<p sourcefile=\"api/BB84.Notifications.Interfaces.Components.INotifyCollectionChanging.yml\" sourcestartlinenumber=\"1\">Notifies clients that a collection is changing.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -270,7 +374,11 @@
           "relative_path": "api/BB84.Notifications.Interfaces.Components.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BB84.Notifications.Interfaces.Components",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -280,7 +388,11 @@
           "relative_path": "api/BB84.Notifications.Interfaces.INotifiableCollection.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BB84.Notifications.Interfaces.INotifiableCollection",
+      "Summary": "<p sourcefile=\"api/BB84.Notifications.Interfaces.INotifiableCollection.yml\" sourcestartlinenumber=\"1\">The notifiable collection interface.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -290,7 +402,11 @@
           "relative_path": "api/BB84.Notifications.Interfaces.INotifiableObject.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BB84.Notifications.Interfaces.INotifiableObject",
+      "Summary": "<p sourcefile=\"api/BB84.Notifications.Interfaces.INotifiableObject.yml\" sourcestartlinenumber=\"1\">The notifiable object interface.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -300,7 +416,11 @@
           "relative_path": "api/BB84.Notifications.Interfaces.INotifiableProperty-1.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BB84.Notifications.Interfaces.INotifiableProperty<T>",
+      "Summary": "<p sourcefile=\"api/BB84.Notifications.Interfaces.INotifiableProperty-1.yml\" sourcestartlinenumber=\"1\">The notifiable property interface.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -310,7 +430,11 @@
           "relative_path": "api/BB84.Notifications.Interfaces.IReversibleProperty-1.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BB84.Notifications.Interfaces.IReversibleProperty<T>",
+      "Summary": "<p sourcefile=\"api/BB84.Notifications.Interfaces.IReversibleProperty-1.yml\" sourcestartlinenumber=\"1\">The reversible property interface.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -320,7 +444,11 @@
           "relative_path": "api/BB84.Notifications.Interfaces.IValidatableObject.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BB84.Notifications.Interfaces.IValidatableObject",
+      "Summary": "<p sourcefile=\"api/BB84.Notifications.Interfaces.IValidatableObject.yml\" sourcestartlinenumber=\"1\">The validatable object interface.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -330,7 +458,11 @@
           "relative_path": "api/BB84.Notifications.Interfaces.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BB84.Notifications.Interfaces",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -340,7 +472,11 @@
           "relative_path": "api/BB84.Notifications.NotifiableCollection.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BB84.Notifications.NotifiableCollection",
+      "Summary": "<p sourcefile=\"api/BB84.Notifications.NotifiableCollection.yml\" sourcestartlinenumber=\"1\">The notifiable collection class.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -350,7 +486,11 @@
           "relative_path": "api/BB84.Notifications.NotifiableObject.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BB84.Notifications.NotifiableObject",
+      "Summary": "<p sourcefile=\"api/BB84.Notifications.NotifiableObject.yml\" sourcestartlinenumber=\"1\">The notifiable object class.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -360,7 +500,11 @@
           "relative_path": "api/BB84.Notifications.NotifiableProperty-1.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BB84.Notifications.NotifiableProperty<T>",
+      "Summary": "<p sourcefile=\"api/BB84.Notifications.NotifiableProperty-1.yml\" sourcestartlinenumber=\"1\">The notifiable property class.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -370,7 +514,11 @@
           "relative_path": "api/BB84.Notifications.ReversibleProperty-1.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BB84.Notifications.ReversibleProperty<T>",
+      "Summary": "<p sourcefile=\"api/BB84.Notifications.ReversibleProperty-1.yml\" sourcestartlinenumber=\"1\">The reversible property class.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -380,7 +528,11 @@
           "relative_path": "api/BB84.Notifications.ValidatableObject.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BB84.Notifications.ValidatableObject",
+      "Summary": "<p sourcefile=\"api/BB84.Notifications.ValidatableObject.yml\" sourcestartlinenumber=\"1\">The validatable object class.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -390,7 +542,11 @@
           "relative_path": "api/BB84.Notifications.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BB84.Notifications",
+      "Summary": null
     },
     {
       "type": "Conceptual",
@@ -406,11 +562,11 @@
       "type": "Toc",
       "source_relative_path": "api/toc.yml",
       "output": {
-        ".html": {
-          "relative_path": "api/toc.html"
-        },
         ".json": {
           "relative_path": "api/toc.json"
+        },
+        ".html": {
+          "relative_path": "api/toc.html"
         }
       },
       "version": ""
@@ -429,11 +585,11 @@
       "type": "Toc",
       "source_relative_path": "toc.yml",
       "output": {
-        ".html": {
-          "relative_path": "toc.html"
-        },
         ".json": {
           "relative_path": "toc.json"
+        },
+        ".html": {
+          "relative_path": "toc.html"
         }
       },
       "version": ""
