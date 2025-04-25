@@ -53,4 +53,18 @@ public sealed class NotifiableProperty<T>(T value) : INotifiableProperty<T>
       PropertyChanged?.Invoke(this, new PropertyChangedEventArgs<T>(newValue));
     }
   }
+
+  /// <summary>
+  /// Implicitly converts the <see cref="NotifiableProperty{T}"/> to the value type.
+  /// </summary>
+  /// <param name="property">The notifiable property to convert.</param>
+  public static implicit operator T(NotifiableProperty<T> property)
+    => property.Value;
+
+  /// <summary>
+  /// Implicitly converts the value type to the <see cref="NotifiableProperty{T}"/>.
+  /// </summary>
+  /// <param name="value">The value to convert.</param>
+  public static implicit operator NotifiableProperty<T>(T value)
+    => new(value);
 }
