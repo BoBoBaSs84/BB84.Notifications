@@ -86,6 +86,20 @@ public sealed class ReversibleProperty<T> : INotifiableProperty<T>, IReversibleP
     SetProperty(ref _value, value, false);
   }
 
+  /// <summary>
+  /// Implicitly converts the value type to the <see cref="ReversibleProperty{T}"/>.
+  /// </summary>
+  /// <param name="value">The value type to convert.</param>
+  public static implicit operator ReversibleProperty<T>(T value)
+    => new(value);
+
+  /// <summary>
+  /// Implicitly converts the <see cref="ReversibleProperty{T}"/> to the value type.
+  /// </summary>
+  /// <param name="property">The notifiable property to convert.</param>
+  public static implicit operator T(ReversibleProperty<T> property)
+    => property.Value;
+
   /// <inheritdoc/>
   private void SetProperty(ref T oldValue, T newValue, bool addToArray = true)
   {
