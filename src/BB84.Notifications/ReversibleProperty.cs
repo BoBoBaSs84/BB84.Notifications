@@ -89,7 +89,7 @@ public sealed class ReversibleProperty<T> : INotifiableProperty<T>, IReversibleP
   /// <summary>
   /// Implicitly converts the value type to the <see cref="ReversibleProperty{T}"/>.
   /// </summary>
-  /// <param name="value">The value to convert.</param>
+  /// <param name="value">The value type to convert.</param>
   public static implicit operator ReversibleProperty<T>(T value)
     => new(value);
 

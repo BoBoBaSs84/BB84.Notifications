@@ -57,7 +57,7 @@ public sealed class NotifiableProperty<T>(T value) : INotifiableProperty<T>
   /// <summary>
   /// Implicitly converts the value type to the <see cref="NotifiableProperty{T}"/>.
   /// </summary>
-  /// <param name="value">The value to convert.</param>
+  /// <param name="value">The value type to convert.</param>
   public static implicit operator NotifiableProperty<T>(T value)
     => new(value);
 

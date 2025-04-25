@@ -5,7 +5,7 @@ namespace BB84.NotificationsTests;
 public sealed partial class ReversiblePropertyTests
 {
   [TestMethod]
-  public void ConvertValueToValueTypeTest()
+  public void ConvertValueTypeToPropertyTest()
   {
     int value = 42;
 
@@ -15,7 +15,7 @@ public sealed partial class ReversiblePropertyTests
   }
 
   [TestMethod]
-  public void ConvertValueTypeToValueTest()
+  public void ConvertPropertyToValueTypeTest()
   {
     ReversibleProperty<int> notifiableProperty = new(42);
 
