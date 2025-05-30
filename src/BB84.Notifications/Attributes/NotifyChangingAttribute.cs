@@ -6,12 +6,18 @@
 namespace BB84.Notifications.Attributes;
 
 /// <summary>
-/// The notify changing attribute class.
+/// Indicates that upcoming changes to the decorated property should trigger notifications for the specified
+/// dependent properties.
 /// </summary>
 /// <remarks>
-/// Notifies the specified properties about the imminent change to the decorated property.
+/// Apply this attribute to a property to indicate that changes to the property should notify changes for
+/// the specified related properties. This is typically used in scenarios where dependent properties need
+/// to be updated or recalculated when the annotated property changes.
 /// </remarks>
-/// <param name="properties">The properties to notify on change.</param>
+/// <param name="properties">
+/// An array of property names that should be notified when the annotated property changes.
+/// Each name must correspond to a valid property in the same class.
+/// </param>
 [AttributeUsage(AttributeTargets.Property, Inherited = false)]
 public sealed class NotifyChangingAttribute(params string[] properties) : Attribute
 {

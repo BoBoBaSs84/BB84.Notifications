@@ -11,35 +11,49 @@ using BB84.Notifications.Interfaces.Components;
 namespace BB84.Notifications.Components;
 
 /// <summary>
-/// Provides data for the <see cref="INotifyCollectionChanging"/> event.
+/// Provides data for the collection changing event, including the action being performed.
 /// </summary>
+/// <remarks>
+/// This class is typically used to describe upcoming changes to a collection, such as adding
+/// or removing items. It includes the specific action performed on the collection.
+/// </remarks>
 /// <param name="action">The action that causes the change.</param>
 public class CollectionChangingEventArgs(CollectionChangeAction action) : EventArgs
 {
   /// <summary>
-  /// The action that causes the change.
+  /// Gets the type of action that caused the change to the collection.
   /// </summary>
-  public CollectionChangeAction Action { get; } = action;
+  public CollectionChangeAction Action => action;
 }
 
 /// <summary>
-/// Provides data for the <see cref="INotifyCollectionChanging"/> event.
+/// Provides data for the collection changing event, including the action being performed
+/// and the item involved.
 /// </summary>
-/// <typeparam name="T">The type to work with.</typeparam>
+/// <remarks>
+/// This class is typically used to describe upcoming changes to a collection, such as adding
+/// or removing items. It includes the specific action performed on the collection and the
+/// item involved in the change.
+/// </remarks>
+/// <typeparam name="T">The type of the item in the collection.</typeparam>
 /// <param name="action">The action that causes the change.</param>
-/// <param name="item">The item that is changing.</param>
+/// <param name="item">The item that is changing in the collection.</param>
 public sealed class CollectionChangingEventArgs<T>(CollectionChangeAction action, T item) : CollectionChangingEventArgs(action)
 {
   /// <summary>
-  /// The item that is changing.
+  /// Gets the item stored in this instance.
   /// </summary>
-  public T Item { get; } = item;
+  public T Item => item;
 }
 
 /// <summary>
-/// Represents the method that will handle the event of the <see cref="INotifyCollectionChanging"/> interface.
+/// Represents the method that will handle a collection changing event.
 /// </summary>
-/// <param name="sender">The source of the event.</param>
-/// <param name="e">The argument that contains the event data.</param>
+/// <param name="sender">
+/// The source of the event. This is typically the object whose collection is changing.
+/// </param>
+/// <param name="args">
+/// An instance of <see cref="CollectionChangingEventArgs"/> that contains the event data.
+/// </param>
 [SuppressMessage("Naming", "CA1711", Justification = "Event Handler Naming Conventions")]
-public delegate void CollectionChangingEventHandler(object? sender, CollectionChangingEventArgs e);
+public delegate void CollectionChangingEventHandler(object? sender, CollectionChangingEventArgs args);
