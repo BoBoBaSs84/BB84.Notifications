@@ -14,7 +14,7 @@ using BB84.Notifications.Interfaces;
 namespace BB84.Notifications;
 
 /// <summary>
-///	The notifiable object class.
+///	Represents a base class for objects that support property change notifications.
 /// </summary>
 public abstract class NotifiableObject : INotifiableObject
 {
@@ -33,12 +33,21 @@ public abstract class NotifiableObject : INotifiableObject
   public event PropertyChangingEventHandler? PropertyChanging;
 
   /// <summary>
-  /// Sets a new value for a property and notifies about the change.
+  /// Updates the specified field with a new value and raises property change notifications.
   /// </summary>
-  /// <typeparam name="T">The type to work with.</typeparam>
-  /// <param name="fieldValue">The referenced field.</param>
-  /// <param name="newValue">The new value for the property.</param>
-  /// <param name="propertyName">The name of the calling property.</param>
+  /// <remarks>
+  /// This method compares the current value of the field with the new value using the default
+  /// equality comparer. If the values are not equal, it updates the field and raises property
+  /// change notifications. Use this method to implement property setters in classes that
+  /// support change tracking or data binding.
+  /// </remarks>
+  /// <typeparam name="T">The type of the property being updated.</typeparam>
+  /// <param name="fieldValue">A reference to the backing field of the property.</param>
+  /// <param name="newValue">The new value to assign to the property.</param>
+  /// <param name="propertyName">
+  /// The name of the property being updated.
+  /// This parameter is optional and automatically provided by the compiler if not explicitly specified.
+  /// </param>
   protected void SetProperty<T>(ref T fieldValue, T newValue, [CallerMemberName] string propertyName = "")
   {
     if (!EqualityComparer<T>.Default.Equals(fieldValue, newValue))
@@ -54,42 +63,67 @@ public abstract class NotifiableObject : INotifiableObject
   }
 
   /// <summary>
-  /// Raises the <see cref="PropertyChanged"/> event.
+  /// Notifies subscribers that a property value has changed.
   /// </summary>
-  /// <param name="propertyName">The name of the calling property.</param>
+  /// <remarks>
+  /// This method raises the <see cref="PropertyChanged"/> event with the specified property
+  /// name and value. Use this method to notify subscribers of changes to property values in
+  /// data-binding scenarios.
+  /// </remarks>
+  /// <param name="propertyName">The name of the property that changed.</param>
   protected void RaisePropertyChanged(string propertyName)
     => PropertyChanged?.Invoke(this, new(propertyName));
 
   /// <summary>
-  /// Raises the <see cref="PropertyChanged"/> event.
+  /// Notifies listeners that a property value has changed.
   /// </summary>
-  /// <typeparam name="T">The type to work with.</typeparam>
-  /// <param name="propertyName">The name of the calling property.</param>
-  /// <param name="value">The value of the calling property.</param>
+  /// <remarks>
+  /// This method raises the <see cref="PropertyChanged"/> event with the specified property
+  /// name and value. Use this method to notify subscribers of changes to property values in
+  /// data-binding scenarios.
+  /// </remarks>
+  /// <typeparam name="T">The type of the property value.</typeparam>
+  /// <param name="propertyName">The name of the property that changed.</param>
+  /// <param name="value">The new value of the property.</param>
   protected void RaisePropertyChanged<T>(string propertyName, T value)
    => PropertyChanged?.Invoke(this, new PropertyChangedEventArgs<T>(propertyName, value));
 
   /// <summary>
-  /// Raises the <see cref="PropertyChanging"/> event.
+  /// Notifies subscribers that a property value is changing.
   /// </summary>
-  /// <param name="propertyName">The name of the calling property.</param>
+  /// <remarks>
+  /// This method raises the <see cref="PropertyChanging"/> event with the specified property
+  /// name and value. Use this method to notify subscribers of changes to property values in
+  /// data-binding scenarios.
+  /// </remarks>
+  /// <param name="propertyName">The name of the property is changing.</param>
   protected void RaisePropertyChanging(string propertyName)
     => PropertyChanging?.Invoke(this, new(propertyName));
 
   /// <summary>
-  /// Raises the <see cref="PropertyChanging"/> event.
+  /// Notifies subscribers that a property value is changing.
   /// </summary>
-  /// <typeparam name="T">The type to work with.</typeparam>
-  /// <param name="propertyName">The name of the calling property.</param>
+  /// <remarks>
+  /// This method raises the <see cref="PropertyChanging"/> event with the specified property
+  /// name and value. Use this method to notify subscribers of changes to property values in
+  /// data-binding scenarios.
+  /// </remarks>
+  /// <param name="propertyName">The name of the property is changing.</param>
   /// <param name="value">The value of the calling property.</param>
   protected void RaisePropertyChanging<T>(string propertyName, T value)
     => PropertyChanging?.Invoke(this, new PropertyChangingEventArgs<T>(propertyName, value));
 
   /// <summary>
-  /// Raises the <see cref="PropertyChanged"/> event for all properties that are
-  /// defined within the <see cref="NotifyChangedAttribute"/>.
+  /// Notifies listeners that the specified property and its dependent properties have changed.
   /// </summary>
-  /// <param name="propertyName">The name of the calling property.</param>
+  /// <remarks>
+  /// This method checks for dependent properties associated with the specified property name and
+  /// raises change notifications for each of them. If no dependencies are found, no additional
+  /// notifications are raised.
+  /// </remarks>
+  /// <param name="propertyName">
+  /// The name of the property that has changed. This property must exist in the dependency mapping.
+  /// </param>
   private void RaiseChangedAttribute(string propertyName)
   {
     bool success = _propertiesToNotifyOnChange.TryGetValue(propertyName, out string[]? propertiesToNotify);
@@ -102,10 +136,15 @@ public abstract class NotifiableObject : INotifiableObject
   }
 
   /// <summary>
-  /// Raises the <see cref="PropertyChanging"/> event for all properties that are
-  /// defined within the <see cref="NotifyChangingAttribute"/>.
+  /// Notifies that the specified property is about to change, along with any dependent properties.
   /// </summary>
-  /// <param name="propertyName">The name of the calling property.</param>
+  /// <remarks>
+  /// If the specified property has dependent properties registered in the notification mapping,
+  /// this method raises change notifications for those dependent properties as well.
+  /// </remarks>
+  /// <param name="propertyName">
+  /// The name of the property that is changing. This property must exist in the notification mapping.
+  /// </param>
   private void RaiseChangingAttribute(string propertyName)
   {
     bool success = _propertiesToNotifyOnChanging.TryGetValue(propertyName, out string[]? propertiesToNotify);
@@ -118,10 +157,16 @@ public abstract class NotifiableObject : INotifiableObject
   }
 
   /// <summary>
-  /// The method fills the <see cref="_propertiesToNotifyOnChange"/> and the <see cref="_propertiesToNotifyOnChanging"/>
-  /// when the class is instantiated so that it only has to do this once. This means that subsequent calls to 
-  /// <see cref="RaiseChangedAttribute"/> and <see cref="RaiseChangingAttribute"/> no longer have to do this.
+  /// Populates internal caches with metadata about properties that have:
+  /// <list type="bullet">
+  /// <item> Properties decorated with <see cref="NotifyChangedAttribute"/></item>
+  /// <item> Properties decorated with <see cref="NotifyChangingAttribute"/></item>
+  /// </list>
   /// </summary>
+  /// <remarks>
+  /// For each matching property, it updates internal caches to track the associated metadata.
+  /// These caches are used to manage notifications for property changes.
+  /// </remarks>
   private void FillCaches()
   {
     PropertyInfo[] propertiesInfos = GetType().GetProperties();

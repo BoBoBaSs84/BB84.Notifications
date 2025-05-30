@@ -11,8 +11,14 @@ using System.Runtime.CompilerServices;
 namespace BB84.Notifications;
 
 /// <summary>
-/// The validatable object class.
+/// Represents an abstract base class for objects that support validation and error notification.
 /// </summary>
+/// <remarks>
+/// This class provides functionality for validating object properties and tracking validation errors.
+/// It implements the <see cref="Interfaces.IValidatableObject"/> interface and integrates with data
+/// binding scenarios by raising the <see cref="ErrorsChanged"/> event when validation errors change.
+/// Derived classes can use the provided methods to validate properties and manage validation errors.
+/// </remarks>
 public abstract class ValidatableObject : NotifiableObject, Interfaces.IValidatableObject
 {
   private readonly Dictionary<string, List<string?>> _errors = [];
@@ -39,12 +45,18 @@ public abstract class ValidatableObject : NotifiableObject, Interfaces.IValidata
 #endif
 
   /// <summary>
-  /// Sets a new value for a property, notifies about the change and validates the value.
+  /// Sets the specified property to a new value and performs validation.
   /// </summary>
-  /// <typeparam name="T">The type to work with.</typeparam>
-  /// <param name="fieldValue">The referenced field.</param>
-  /// <param name="newValue">The new value for the property.</param>
-  /// <param name="propertyName">The name of the calling property.</param>
+  /// <remarks>
+  /// This method updates the property value only if the new value differs from the current value.
+  /// After updating the property, it performs validation using the provided value and property name.
+  /// </remarks>
+  /// <typeparam name="T">The type of the property value.</typeparam>
+  /// <param name="fieldValue">A reference to the backing field of the property.</param>
+  /// <param name="newValue">The new value to assign to the property.</param>
+  /// <param name="propertyName">
+  /// The name of the property being set. This parameter is optional and defaults to the caller's member name.
+  /// </param>
   protected void SetPropertyAndValidate<T>(ref T fieldValue, T newValue, [CallerMemberName] string propertyName = "")
   {
     if (!EqualityComparer<T>.Default.Equals(fieldValue, newValue))
@@ -55,16 +67,31 @@ public abstract class ValidatableObject : NotifiableObject, Interfaces.IValidata
   }
 
   /// <summary>
-  /// The method will raise the <see cref="ErrorsChanged"/> event.
+  /// Raises the <see cref="ErrorsChanged"/> event to notify subscribers that the validation
+  /// errors for a specific property have changed.
   /// </summary>
-  /// <param name="propertyName">The name of the calling property.</param>
+  /// <remarks>
+  /// This method is typically used in implementations of the <see cref="INotifyDataErrorInfo"/>
+  /// interface to signal changes in validation errors.
+  /// </remarks>
+  /// <param name="propertyName">
+  /// The name of the property whose validation errors have changed. Defaults to the name of
+  /// the calling member if not explicitly provided.
+  /// </param>
   protected void RaiseErrorsChanged([CallerMemberName] string propertyName = "")
     => ErrorsChanged?.Invoke(this, new(propertyName));
 
   /// <summary>
-  /// Validates the all properties of the object and returns if the object is valid or not.
+  /// Validates the current object based on its data annotations.
   /// </summary>
-  /// <returns>True if the all the properties are valid, otherwise false.</returns>
+  /// <remarks>
+  /// This method checks the object's properties and fields against the validation attributes
+  /// defined in its class. If validation fails, the validation errors are stored for further
+  /// inspection.
+  /// </remarks>
+  /// <returns>
+  /// <see langword="true"/> if the object passes validation; otherwise, <see langword="false"/>.
+  /// </returns>
   protected bool Validate()
   {
     ValidationContext context = new(this);
@@ -87,11 +114,17 @@ public abstract class ValidatableObject : NotifiableObject, Interfaces.IValidata
   }
 
   /// <summary>
-  /// The method will try to validate the property value.
+  /// Validates the specified property value against the validation attributes defined for the property.
   /// </summary>
-  /// <typeparam name="T">The type to work with.</typeparam>
-  /// <param name="value">The value of the proprty.</param>
-  /// <param name="propertyName">The name of the property.</param>
+  /// <remarks>
+  /// If the validation fails, any validation errors are added to the error collection for the specified
+  /// property. This method clears existing errors for the property before performing validation.
+  /// </remarks>
+  /// <typeparam name="T">The type of the property value to validate.</typeparam>
+  /// <param name="value">The value of the property to validate.</param>
+  /// <param name="propertyName">
+  /// The name of the property being validated. This must match the name of the property in the class.
+  /// </param>
   protected void Vaildate<T>(T value, string propertyName)
   {
     ValidationContext context = new(this) { MemberName = propertyName };
@@ -107,10 +140,20 @@ public abstract class ValidatableObject : NotifiableObject, Interfaces.IValidata
   }
 
   /// <summary>
-  /// The method will add an error message for the property.
+  /// Adds an error message associated with a specific property name to the error collection.
   /// </summary>
-  /// <param name="propertyName">The name of the property.</param>
-  /// <param name="errorMessage">The error message for the property.</param>
+  /// <remarks>
+  /// If the specified property does not already exist in the error collection, it is added.
+  /// If the error message is not already associated with the property, it is appended to the
+  /// list of errors for that property. This method raises the <see cref="RaiseErrorsChanged"/>
+  /// event to notify listeners of changes to the error collection.
+  /// </remarks>
+  /// <param name="propertyName">
+  /// The name of the property for which the error is being added. Cannot be null or empty.
+  /// </param>
+  /// <param name="errorMessage">
+  /// The error message to associate with the property. Can be null, in which case no message is added.
+  /// </param>
   private void AddError(string propertyName, string? errorMessage)
   {
     if (_errors.ContainsKey(propertyName).Equals(false))
@@ -123,9 +166,15 @@ public abstract class ValidatableObject : NotifiableObject, Interfaces.IValidata
   }
 
   /// <summary>
-  /// The method will clear all errors for the property.
+  /// Clears all validation errors associated with the specified property.
   /// </summary>
-  /// <param name="propertyName">The name of the property.</param>
+  /// <remarks>
+  /// If the specified property has any validation errors, they are removed, and the
+  /// <see cref="RaiseErrorsChanged"/> method is invoked to notify listeners of the change.
+  /// </remarks>
+  /// <param name="propertyName">
+  /// The name of the property for which validation errors should be cleared.
+  /// </param>
   private void ClearErrors(string propertyName)
   {
     if (_errors.Remove(propertyName))
