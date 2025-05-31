@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Interface INotifiableProperty&lt;T&gt; ">
       
-      <meta name="description" content="The notifiable property interface.">
+      <meta name="description" content="Represents a property that supports change notification and provides additional metadata about its value.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -85,7 +85,7 @@
 
 
   <h1 id="BB84_Notifications_Interfaces_INotifiableProperty_1" data-uid="BB84.Notifications.Interfaces.INotifiableProperty`1" class="text-break">
-Interface INotifiableProperty&lt;T&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Interfaces/INotifiableProperty.cs/#L14"><i class="bi bi-code-slash"></i></a>
+Interface INotifiableProperty&lt;T&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Interfaces/INotifiableProperty.cs/#L19"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -93,7 +93,7 @@ Interface INotifiableProperty&lt;T&gt;  <a class="header-action link-secondary" 
   <dl><dt>Assembly</dt><dd>BB84.Notifications.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>The notifiable property interface.</p>
+  <div class="markdown summary"><p>Represents a property that supports change notification and provides additional metadata about its value.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -106,7 +106,7 @@ Interface INotifiableProperty&lt;T&gt;  <a class="header-action link-secondary" 
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>T</code></dt>
-    <dd><p>The value type to work with.</p>
+    <dd><p>The type of the property's value.</p>
 </dd>
   </dl>
 
@@ -127,6 +127,11 @@ Interface INotifiableProperty&lt;T&gt;  <a class="header-action link-secondary" 
 
 
 
+  <h2 id="BB84_Notifications_Interfaces_INotifiableProperty_1_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>This interface extends <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged">INotifyPropertyChanged</a> and <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanging">INotifyPropertyChanging</a>,
+enabling consumers to subscribe to notifications when the property's value changes or is about to change.
+It also provides metadata about the property's value, such as whether it is null or the default value.</p>
+</div>
 
 
   <h2 class="section" id="properties">Properties
@@ -137,10 +142,10 @@ Interface INotifiableProperty&lt;T&gt;  <a class="header-action link-secondary" 
 
   <h3 id="BB84_Notifications_Interfaces_INotifiableProperty_1_IsDefault" data-uid="BB84.Notifications.Interfaces.INotifiableProperty`1.IsDefault">
   IsDefault
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Interfaces/INotifiableProperty.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Interfaces/INotifiableProperty.cs/#L24"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Is the value of the notifiable property the default value?</p>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether the current instance represents the default configuration or state.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -169,10 +174,10 @@ Interface INotifiableProperty&lt;T&gt;  <a class="header-action link-secondary" 
 
   <h3 id="BB84_Notifications_Interfaces_INotifiableProperty_1_IsNull" data-uid="BB84.Notifications.Interfaces.INotifiableProperty`1.IsNull">
   IsNull
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Interfaces/INotifiableProperty.cs/#L24"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Interfaces/INotifiableProperty.cs/#L29"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Is the value of the notifiable property null?</p>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether the current object represents a null state.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -201,10 +206,10 @@ Interface INotifiableProperty&lt;T&gt;  <a class="header-action link-secondary" 
 
   <h3 id="BB84_Notifications_Interfaces_INotifiableProperty_1_Value" data-uid="BB84.Notifications.Interfaces.INotifiableProperty`1.Value">
   Value
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Interfaces/INotifiableProperty.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Interfaces/INotifiableProperty.cs/#L34"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>The actual value of the notifiable property.</p>
+  <div class="markdown level1 summary"><p>Gets or sets the value stored in the current instance.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -233,7 +238,7 @@ Interface INotifiableProperty&lt;T&gt;  <a class="header-action link-secondary" 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Interfaces/INotifiableProperty.cs/#L14" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Interfaces/INotifiableProperty.cs/#L19" class="edit-link">Edit this page</a>
         </div>
 
 

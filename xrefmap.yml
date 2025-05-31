@@ -1549,6 +1549,34 @@ references:
   fullName.vb: BB84.Notifications.NotifiableProperty(Of T).Value
   nameWithType: NotifiableProperty<T>.Value
   nameWithType.vb: NotifiableProperty(Of T).Value
+- uid: BB84.Notifications.NotifiableProperty`1.op_Implicit(BB84.Notifications.NotifiableProperty{`0})~`0
+  name: implicit operator T(NotifiableProperty<T>)
+  href: api/BB84.Notifications.NotifiableProperty-1.html#BB84_Notifications_NotifiableProperty_1_op_Implicit_BB84_Notifications_NotifiableProperty__0____0
+  commentId: M:BB84.Notifications.NotifiableProperty`1.op_Implicit(BB84.Notifications.NotifiableProperty{`0})~`0
+  name.vb: CType(NotifiableProperty(Of T))
+  fullName: BB84.Notifications.NotifiableProperty<T>.implicit operator T(BB84.Notifications.NotifiableProperty<T>)
+  fullName.vb: BB84.Notifications.NotifiableProperty(Of T).CType(BB84.Notifications.NotifiableProperty(Of T))
+  nameWithType: NotifiableProperty<T>.implicit operator T(NotifiableProperty<T>)
+  nameWithType.vb: NotifiableProperty(Of T).CType(NotifiableProperty(Of T))
+- uid: BB84.Notifications.NotifiableProperty`1.op_Implicit(`0)~BB84.Notifications.NotifiableProperty{`0}
+  name: implicit operator NotifiableProperty<T>(T)
+  href: api/BB84.Notifications.NotifiableProperty-1.html#BB84_Notifications_NotifiableProperty_1_op_Implicit__0__BB84_Notifications_NotifiableProperty__0_
+  commentId: M:BB84.Notifications.NotifiableProperty`1.op_Implicit(`0)~BB84.Notifications.NotifiableProperty{`0}
+  name.vb: CType(T)
+  fullName: BB84.Notifications.NotifiableProperty<T>.implicit operator BB84.Notifications.NotifiableProperty<T>(T)
+  fullName.vb: BB84.Notifications.NotifiableProperty(Of T).CType(T)
+  nameWithType: NotifiableProperty<T>.implicit operator NotifiableProperty<T>(T)
+  nameWithType.vb: NotifiableProperty(Of T).CType(T)
+- uid: BB84.Notifications.NotifiableProperty`1.op_Implicit*
+  name: implicit operator
+  href: api/BB84.Notifications.NotifiableProperty-1.html#BB84_Notifications_NotifiableProperty_1_op_Implicit_
+  commentId: Overload:BB84.Notifications.NotifiableProperty`1.op_Implicit
+  isSpec: "True"
+  name.vb: CType
+  fullName: BB84.Notifications.NotifiableProperty<T>.implicit operator
+  fullName.vb: BB84.Notifications.NotifiableProperty(Of T).CType
+  nameWithType: NotifiableProperty<T>.implicit operator
+  nameWithType.vb: NotifiableProperty(Of T).CType
 - uid: BB84.Notifications.ReversibleProperty`1
   name: ReversibleProperty<T>
   href: api/BB84.Notifications.ReversibleProperty-1.html
@@ -1746,6 +1774,34 @@ references:
   fullName.vb: BB84.Notifications.ReversibleProperty(Of T).Value
   nameWithType: ReversibleProperty<T>.Value
   nameWithType.vb: ReversibleProperty(Of T).Value
+- uid: BB84.Notifications.ReversibleProperty`1.op_Implicit(BB84.Notifications.ReversibleProperty{`0})~`0
+  name: implicit operator T(ReversibleProperty<T>)
+  href: api/BB84.Notifications.ReversibleProperty-1.html#BB84_Notifications_ReversibleProperty_1_op_Implicit_BB84_Notifications_ReversibleProperty__0____0
+  commentId: M:BB84.Notifications.ReversibleProperty`1.op_Implicit(BB84.Notifications.ReversibleProperty{`0})~`0
+  name.vb: CType(ReversibleProperty(Of T))
+  fullName: BB84.Notifications.ReversibleProperty<T>.implicit operator T(BB84.Notifications.ReversibleProperty<T>)
+  fullName.vb: BB84.Notifications.ReversibleProperty(Of T).CType(BB84.Notifications.ReversibleProperty(Of T))
+  nameWithType: ReversibleProperty<T>.implicit operator T(ReversibleProperty<T>)
+  nameWithType.vb: ReversibleProperty(Of T).CType(ReversibleProperty(Of T))
+- uid: BB84.Notifications.ReversibleProperty`1.op_Implicit(`0)~BB84.Notifications.ReversibleProperty{`0}
+  name: implicit operator ReversibleProperty<T>(T)
+  href: api/BB84.Notifications.ReversibleProperty-1.html#BB84_Notifications_ReversibleProperty_1_op_Implicit__0__BB84_Notifications_ReversibleProperty__0_
+  commentId: M:BB84.Notifications.ReversibleProperty`1.op_Implicit(`0)~BB84.Notifications.ReversibleProperty{`0}
+  name.vb: CType(T)
+  fullName: BB84.Notifications.ReversibleProperty<T>.implicit operator BB84.Notifications.ReversibleProperty<T>(T)
+  fullName.vb: BB84.Notifications.ReversibleProperty(Of T).CType(T)
+  nameWithType: ReversibleProperty<T>.implicit operator ReversibleProperty<T>(T)
+  nameWithType.vb: ReversibleProperty(Of T).CType(T)
+- uid: BB84.Notifications.ReversibleProperty`1.op_Implicit*
+  name: implicit operator
+  href: api/BB84.Notifications.ReversibleProperty-1.html#BB84_Notifications_ReversibleProperty_1_op_Implicit_
+  commentId: Overload:BB84.Notifications.ReversibleProperty`1.op_Implicit
+  isSpec: "True"
+  name.vb: CType
+  fullName: BB84.Notifications.ReversibleProperty<T>.implicit operator
+  fullName.vb: BB84.Notifications.ReversibleProperty(Of T).CType
+  nameWithType: ReversibleProperty<T>.implicit operator
+  nameWithType.vb: ReversibleProperty(Of T).CType
 - uid: BB84.Notifications.ValidatableObject
   name: ValidatableObject
   href: api/BB84.Notifications.ValidatableObject.html

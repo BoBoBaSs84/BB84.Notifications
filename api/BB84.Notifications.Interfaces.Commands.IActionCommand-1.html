@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Interface IActionCommand&lt;T&gt; ">
       
-      <meta name="description" content="The action command interface.">
+      <meta name="description" content="Represents a command that can be executed with a parameter of type T.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -85,7 +85,7 @@
 
 
   <h1 id="BB84_Notifications_Interfaces_Commands_IActionCommand_1" data-uid="BB84.Notifications.Interfaces.Commands.IActionCommand`1" class="text-break">
-Interface IActionCommand&lt;T&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Interfaces/Commands/IActionCommand.cs/#L36"><i class="bi bi-code-slash"></i></a>
+Interface IActionCommand&lt;T&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Interfaces/Commands/IActionCommand.cs/#L59"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -93,7 +93,7 @@ Interface IActionCommand&lt;T&gt;  <a class="header-action link-secondary" title
   <dl><dt>Assembly</dt><dd>BB84.Notifications.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>The action command interface.</p>
+  <div class="markdown summary"><p>Represents a command that can be executed with a parameter of type <code class="typeparamref">T</code>.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -106,7 +106,7 @@ Interface IActionCommand&lt;T&gt;  <a class="header-action link-secondary" title
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>T</code></dt>
-    <dd><p>The generic type to work with.</p>
+    <dd><p>The type of the parameter used by the command.</p>
 </dd>
   </dl>
 
@@ -130,6 +130,11 @@ Interface IActionCommand&lt;T&gt;  <a class="header-action link-secondary" title
 
 
 
+  <h2 id="BB84_Notifications_Interfaces_Commands_IActionCommand_1_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>This interface extends <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.input.icommand">ICommand</a> to provide strongly-typed methods for determining
+whether the command can execute and for executing the command. It is commonly used in scenarios
+where commands are bound to UI elements or invoked programmatically with specific data.</p>
+</div>
 
 
   <h2 class="section" id="methods">Methods
@@ -140,10 +145,10 @@ Interface IActionCommand&lt;T&gt;  <a class="header-action link-secondary" title
 
   <h3 id="BB84_Notifications_Interfaces_Commands_IActionCommand_1_CanExecute__0_" data-uid="BB84.Notifications.Interfaces.Commands.IActionCommand`1.CanExecute(`0)">
   CanExecute(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Interfaces/Commands/IActionCommand.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Interfaces/Commands/IActionCommand.cs/#L72"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Defines the method that determines whether the command can execute in its current state.</p>
+  <div class="markdown level1 summary"><p>Determines whether the command can execute in its current state with the specified parameter.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -154,14 +159,16 @@ Interface IActionCommand&lt;T&gt;  <a class="header-action link-secondary" title
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>parameter</code> <span class="xref">T</span></dt>
-    <dd><p>The data used by the command.</p>
+    <dd><p>The parameter to evaluate. This can be used to provide context or input for determining
+whether the command is executable.</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p>True if this command can be executed, otherwise false.</p>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the command can execute with the specified parameter; otherwise,
+<a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
 </dd>
   </dl>
 
@@ -179,10 +186,10 @@ Interface IActionCommand&lt;T&gt;  <a class="header-action link-secondary" title
 
   <h3 id="BB84_Notifications_Interfaces_Commands_IActionCommand_1_Execute__0_" data-uid="BB84.Notifications.Interfaces.Commands.IActionCommand`1.Execute(`0)">
   Execute(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Interfaces/Commands/IActionCommand.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Interfaces/Commands/IActionCommand.cs/#L85"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Defines the method to be called when the command is invoked.</p>
+  <div class="markdown level1 summary"><p>Executes the specified action if the associated condition is met.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -193,7 +200,7 @@ Interface IActionCommand&lt;T&gt;  <a class="header-action link-secondary" title
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>parameter</code> <span class="xref">T</span></dt>
-    <dd><p>The data used by the command.</p>
+    <dd><p>The parameter to pass to the action. This can be null if the action supports null parameters.</p>
 </dd>
   </dl>
 
@@ -204,6 +211,11 @@ Interface IActionCommand&lt;T&gt;  <a class="header-action link-secondary" title
 
 
 
+  <h4 class="section" id="BB84_Notifications_Interfaces_Commands_IActionCommand_1_Execute__0__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method performs the primary action associated with. The specific behavior of the
+operation depends on the implementation. Ensure that any required preconditions are
+met before calling this method.</p>
+</div>
 
 
 
@@ -212,10 +224,10 @@ Interface IActionCommand&lt;T&gt;  <a class="header-action link-secondary" title
 
   <h3 id="BB84_Notifications_Interfaces_Commands_IActionCommand_1_RaiseCanExecuteChanged" data-uid="BB84.Notifications.Interfaces.Commands.IActionCommand`1.RaiseCanExecuteChanged">
   RaiseCanExecuteChanged()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Interfaces/Commands/IActionCommand.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Interfaces/Commands/IActionCommand.cs/#L95"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Notifies that the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.input.icommand.canexecutechanged">CanExecuteChanged</a> property has changed.</p>
+  <div class="markdown level1 summary"><p>Notifies subscribers that the ability to execute the command has changed.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -231,6 +243,11 @@ Interface IActionCommand&lt;T&gt;  <a class="header-action link-secondary" title
 
 
 
+  <h4 class="section" id="BB84_Notifications_Interfaces_Commands_IActionCommand_1_RaiseCanExecuteChanged_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method should be called when the conditions that determine whether the command
+can execute have changed. It triggers the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.input.icommand.canexecutechanged">CanExecuteChanged</a>
+event, allowing UI  elements bound to the command to update their enabled state.</p>
+</div>
 
 
 
@@ -239,7 +256,7 @@ Interface IActionCommand&lt;T&gt;  <a class="header-action link-secondary" title
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Interfaces/Commands/IActionCommand.cs/#L36" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Interfaces/Commands/IActionCommand.cs/#L59" class="edit-link">Edit this page</a>
         </div>
 
 

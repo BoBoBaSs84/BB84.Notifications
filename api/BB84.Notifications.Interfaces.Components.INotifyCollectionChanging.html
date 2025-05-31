@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Interface INotifyCollectionChanging ">
       
-      <meta name="description" content="Notifies clients that a collection is changing.">
+      <meta name="description" content="Defines an interface for notifying clients that a collection is changing.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -85,7 +85,7 @@
 
 
   <h1 id="BB84_Notifications_Interfaces_Components_INotifyCollectionChanging" data-uid="BB84.Notifications.Interfaces.Components.INotifyCollectionChanging" class="text-break">
-Interface INotifyCollectionChanging  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Interfaces/Components/INotifyCollectionChanging.cs/#L13"><i class="bi bi-code-slash"></i></a>
+Interface INotifyCollectionChanging  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Interfaces/Components/INotifyCollectionChanging.cs/#L18"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -93,7 +93,7 @@ Interface INotifyCollectionChanging  <a class="header-action link-secondary" tit
   <dl><dt>Assembly</dt><dd>BB84.Notifications.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Notifies clients that a collection is changing.</p>
+  <div class="markdown summary"><p>Defines an interface for notifying clients that a collection is changing.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -111,6 +111,11 @@ Interface INotifyCollectionChanging  <a class="header-action link-secondary" tit
 
 
 
+  <h2 id="BB84_Notifications_Interfaces_Components_INotifyCollectionChanging_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>Implement this interface to provide notifications when a collection is about to change.
+This is typically used in scenarios where consumers need to react to changes in a collection
+before they occur, such as canceling the change or preparing for it.</p>
+</div>
 
 
   <h2 class="section" id="events">Events
@@ -120,10 +125,10 @@ Interface INotifyCollectionChanging  <a class="header-action link-secondary" tit
 
   <h3 id="BB84_Notifications_Interfaces_Components_INotifyCollectionChanging_CollectionChanging" data-uid="BB84.Notifications.Interfaces.Components.INotifyCollectionChanging.CollectionChanging">
   CollectionChanging
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Interfaces/Components/INotifyCollectionChanging.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Interfaces/Components/INotifyCollectionChanging.cs/#L27"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Occurs when a collection is changing.</p>
+  <div class="markdown level1 summary"><p>Occurs when the collection is about to change.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -144,6 +149,10 @@ Interface INotifyCollectionChanging  <a class="header-action link-secondary" tit
 
 
 
+  <h4 class="section" id="BB84_Notifications_Interfaces_Components_INotifyCollectionChanging_CollectionChanging_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This event is raised before any modifications are made to the collection, allowing subscribers
+to inspect or cancel the operation. The event handler can throw an exception to prevent the change.</p>
+</div>
 
 
 
@@ -152,7 +161,7 @@ Interface INotifyCollectionChanging  <a class="header-action link-secondary" tit
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Interfaces/Components/INotifyCollectionChanging.cs/#L13" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Interfaces/Components/INotifyCollectionChanging.cs/#L18" class="edit-link">Edit this page</a>
         </div>
 
 

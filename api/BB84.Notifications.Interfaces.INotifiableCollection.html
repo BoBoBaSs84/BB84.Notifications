@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Interface INotifiableCollection ">
       
-      <meta name="description" content="The notifiable collection interface.">
+      <meta name="description" content="Represents a collection that provides notifications when its contents or properties change.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -85,7 +85,7 @@
 
 
   <h1 id="BB84_Notifications_Interfaces_INotifiableCollection" data-uid="BB84.Notifications.Interfaces.INotifiableCollection" class="text-break">
-Interface INotifiableCollection  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Interfaces/INotifiableCollection.cs/#L16"><i class="bi bi-code-slash"></i></a>
+Interface INotifiableCollection  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Interfaces/INotifiableCollection.cs/#L25"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -93,7 +93,7 @@ Interface INotifiableCollection  <a class="header-action link-secondary" title="
   <dl><dt>Assembly</dt><dd>BB84.Notifications.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>The notifiable collection interface.</p>
+  <div class="markdown summary"><p>Represents a collection that provides notifications when its contents or properties change.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -127,13 +127,18 @@ Interface INotifiableCollection  <a class="header-action link-secondary" title="
 
 
 
+  <h2 id="BB84_Notifications_Interfaces_INotifiableCollection_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>This interface combines multiple notification mechanisms, including:
+<ul><li><a class="xref" href="BB84.Notifications.Interfaces.Components.INotifyCollectionChanged.html">INotifyCollectionChanged</a> for changes to the collection's contents.</li><li><a class="xref" href="BB84.Notifications.Interfaces.Components.INotifyCollectionChanging.html">INotifyCollectionChanging</a> for notifications before changes occur.</li><li><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged">INotifyPropertyChanged</a> for changes to the collection's properties.</li><li><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanging">INotifyPropertyChanging</a> for notifications before property changes occur.</li></ul>
+Implement this  interface to create collections that support advanced change tracking and notification scenarios.
+</div>
 
 
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Interfaces/INotifiableCollection.cs/#L16" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Interfaces/INotifiableCollection.cs/#L25" class="edit-link">Edit this page</a>
         </div>
 
 

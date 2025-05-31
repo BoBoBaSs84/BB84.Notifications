@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Interface INotifiableObject ">
       
-      <meta name="description" content="The notifiable object interface.">
+      <meta name="description" content="Represents an object that provides notifications when its properties are changed or are about to change.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -85,7 +85,7 @@
 
 
   <h1 id="BB84_Notifications_Interfaces_INotifiableObject" data-uid="BB84.Notifications.Interfaces.INotifiableObject" class="text-break">
-Interface INotifiableObject  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Interfaces/INotifiableObject.cs/#L13"><i class="bi bi-code-slash"></i></a>
+Interface INotifiableObject  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Interfaces/INotifiableObject.cs/#L19"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -93,7 +93,7 @@ Interface INotifiableObject  <a class="header-action link-secondary" title="View
   <dl><dt>Assembly</dt><dd>BB84.Notifications.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>The notifiable object interface.</p>
+  <div class="markdown summary"><p>Represents an object that provides notifications when its properties are changed or are about to change.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -121,13 +121,19 @@ Interface INotifiableObject  <a class="header-action link-secondary" title="View
 
 
 
+  <h2 id="BB84_Notifications_Interfaces_INotifiableObject_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>This interface combines <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged">INotifyPropertyChanged</a> and <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanging">INotifyPropertyChanging</a>,
+enabling consumers to subscribe to events for both property changes and property change initiation.
+Implementing this interface allows objects to notify observers about changes to their properties,
+which is useful for data binding and reactive programming scenarios.</p>
+</div>
 
 
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Interfaces/INotifiableObject.cs/#L13" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Interfaces/INotifiableObject.cs/#L19" class="edit-link">Edit this page</a>
         </div>
 
 

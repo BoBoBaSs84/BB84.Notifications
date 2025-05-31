@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class CollectionChangedEventArgs&lt;T&gt; ">
       
-      <meta name="description" content="Provides data for the  event.">
+      <meta name="description" content="Provides data for collection change events, including the action performed and the item affected.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -85,7 +85,7 @@
 
 
   <h1 id="BB84_Notifications_Components_CollectionChangedEventArgs_1" data-uid="BB84.Notifications.Components.CollectionChangedEventArgs`1" class="text-break">
-Class CollectionChangedEventArgs&lt;T&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Components/CollectionChangedEventArgs.cs/#L31"><i class="bi bi-code-slash"></i></a>
+Class CollectionChangedEventArgs&lt;T&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Components/CollectionChangedEventArgs.cs/#L39"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -93,7 +93,7 @@ Class CollectionChangedEventArgs&lt;T&gt;  <a class="header-action link-secondar
   <dl><dt>Assembly</dt><dd>BB84.Notifications.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Provides data for the <a class="xref" href="BB84.Notifications.Interfaces.Components.INotifyCollectionChanged.html">INotifyCollectionChanged</a> event.</p>
+  <div class="markdown summary"><p>Provides data for collection change events, including the action performed and the item affected.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -106,7 +106,7 @@ Class CollectionChangedEventArgs&lt;T&gt;  <a class="header-action link-secondar
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>T</code></dt>
-    <dd><p>The type to work with.</p>
+    <dd><p>The type of the item in the collection.</p>
 </dd>
   </dl>
 
@@ -154,6 +154,10 @@ Class CollectionChangedEventArgs&lt;T&gt;  <a class="header-action link-secondar
 
 
 
+  <h2 id="BB84_Notifications_Components_CollectionChangedEventArgs_1_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>This class is typically used to describe changes to a collection, such as adding or removing items.
+It includes the specific action performed on the collection and the item involved in the change.</p>
+</div>
 
 
   <h2 class="section" id="constructors">Constructors
@@ -164,10 +168,10 @@ Class CollectionChangedEventArgs&lt;T&gt;  <a class="header-action link-secondar
 
   <h3 id="BB84_Notifications_Components_CollectionChangedEventArgs_1__ctor_System_ComponentModel_CollectionChangeAction__0_" data-uid="BB84.Notifications.Components.CollectionChangedEventArgs`1.#ctor(System.ComponentModel.CollectionChangeAction,`0)">
   CollectionChangedEventArgs(CollectionChangeAction, T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Components/CollectionChangedEventArgs.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Components/CollectionChangedEventArgs.cs/#L39"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Provides data for the <a class="xref" href="BB84.Notifications.Interfaces.Components.INotifyCollectionChanged.html">INotifyCollectionChanged</a> event.</p>
+  <div class="markdown level1 summary"><p>Provides data for collection change events, including the action performed and the item affected.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -181,7 +185,7 @@ Class CollectionChangedEventArgs&lt;T&gt;  <a class="header-action link-secondar
     <dd><p>The action that causes the change.</p>
 </dd>
     <dt><code>item</code> <span class="xref">T</span></dt>
-    <dd><p>The item that is changed.</p>
+    <dd><p>The item that is changed in the collection.</p>
 </dd>
   </dl>
 
@@ -192,6 +196,10 @@ Class CollectionChangedEventArgs&lt;T&gt;  <a class="header-action link-secondar
 
 
 
+  <h4 class="section" id="BB84_Notifications_Components_CollectionChangedEventArgs_1__ctor_System_ComponentModel_CollectionChangeAction__0__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This class is typically used to describe changes to a collection, such as adding or removing items.
+It includes the specific action performed on the collection and the item involved in the change.</p>
+</div>
 
 
 
@@ -204,10 +212,10 @@ Class CollectionChangedEventArgs&lt;T&gt;  <a class="header-action link-secondar
 
   <h3 id="BB84_Notifications_Components_CollectionChangedEventArgs_1_Item" data-uid="BB84.Notifications.Components.CollectionChangedEventArgs`1.Item">
   Item
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Components/CollectionChangedEventArgs.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Components/CollectionChangedEventArgs.cs/#L44"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>The item that is changed.</p>
+  <div class="markdown level1 summary"><p>Gets the item stored in this instance.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -236,7 +244,7 @@ Class CollectionChangedEventArgs&lt;T&gt;  <a class="header-action link-secondar
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Components/CollectionChangedEventArgs.cs/#L31" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Components/CollectionChangedEventArgs.cs/#L39" class="edit-link">Edit this page</a>
         </div>
 
 

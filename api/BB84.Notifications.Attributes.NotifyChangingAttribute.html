@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class NotifyChangingAttribute ">
       
-      <meta name="description" content="The notify changing attribute class.">
+      <meta name="description" content="Indicates that upcoming changes to the decorated property should trigger notifications for the specified dependent properties.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -85,7 +85,7 @@
 
 
   <h1 id="BB84_Notifications_Attributes_NotifyChangingAttribute" data-uid="BB84.Notifications.Attributes.NotifyChangingAttribute" class="text-break">
-Class NotifyChangingAttribute  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Attributes/NotifyChangingAttribute.cs/#L15"><i class="bi bi-code-slash"></i></a>
+Class NotifyChangingAttribute  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Attributes/NotifyChangingAttribute.cs/#L21"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -93,7 +93,8 @@ Class NotifyChangingAttribute  <a class="header-action link-secondary" title="Vi
   <dl><dt>Assembly</dt><dd>BB84.Notifications.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>The notify changing attribute class.</p>
+  <div class="markdown summary"><p>Indicates that upcoming changes to the decorated property should trigger notifications for the specified
+dependent properties.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -248,7 +249,9 @@ public sealed class NotifyChangingAttribute : Attribute</code></pre>
 
 
   <h2 id="BB84_Notifications_Attributes_NotifyChangingAttribute_remarks">Remarks</h2>
-  <div class="markdown level0 remarks"><p>Notifies the specified properties about the imminent change to the decorated property.</p>
+  <div class="markdown level0 remarks"><p>Apply this attribute to a property to indicate that changes to the property should notify changes for
+the specified related properties. This is typically used in scenarios where dependent properties need
+to be updated or recalculated when the annotated property changes.</p>
 </div>
 
 
@@ -260,10 +263,11 @@ public sealed class NotifyChangingAttribute : Attribute</code></pre>
 
   <h3 id="BB84_Notifications_Attributes_NotifyChangingAttribute__ctor_System_String___" data-uid="BB84.Notifications.Attributes.NotifyChangingAttribute.#ctor(System.String[])">
   NotifyChangingAttribute(params string[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Attributes/NotifyChangingAttribute.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Attributes/NotifyChangingAttribute.cs/#L21"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>The notify changing attribute class.</p>
+  <div class="markdown level1 summary"><p>Indicates that upcoming changes to the decorated property should trigger notifications for the specified
+dependent properties.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -274,7 +278,8 @@ public sealed class NotifyChangingAttribute : Attribute</code></pre>
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>properties</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
-    <dd><p>The properties to notify on change.</p>
+    <dd><p>An array of property names that should be notified when the annotated property changes.
+Each name must correspond to a valid property in the same class.</p>
 </dd>
   </dl>
 
@@ -286,7 +291,9 @@ public sealed class NotifyChangingAttribute : Attribute</code></pre>
 
 
   <h4 class="section" id="BB84_Notifications_Attributes_NotifyChangingAttribute__ctor_System_String____remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>Notifies the specified properties about the imminent change to the decorated property.</p>
+  <div class="markdown level1 remarks"><p>Apply this attribute to a property to indicate that changes to the property should notify changes for
+the specified related properties. This is typically used in scenarios where dependent properties need
+to be updated or recalculated when the annotated property changes.</p>
 </div>
 
 
@@ -300,7 +307,7 @@ public sealed class NotifyChangingAttribute : Attribute</code></pre>
 
   <h3 id="BB84_Notifications_Attributes_NotifyChangingAttribute_Properties" data-uid="BB84.Notifications.Attributes.NotifyChangingAttribute.Properties">
   Properties
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Attributes/NotifyChangingAttribute.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Attributes/NotifyChangingAttribute.cs/#L27"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The properties to notify on change.</p>
@@ -332,7 +339,7 @@ public sealed class NotifyChangingAttribute : Attribute</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Attributes/NotifyChangingAttribute.cs/#L15" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Attributes/NotifyChangingAttribute.cs/#L21" class="edit-link">Edit this page</a>
         </div>
 
 

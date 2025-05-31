@@ -14,7 +14,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BB84.Notifications.Attributes.NotifyChangedAttribute",
-      "Summary": "<p sourcefile=\"api/BB84.Notifications.Attributes.NotifyChangedAttribute.yml\" sourcestartlinenumber=\"1\">The notify changed attribute class.</p>\n"
+      "Summary": "<p sourcefile=\"api/BB84.Notifications.Attributes.NotifyChangedAttribute.yml\" sourcestartlinenumber=\"1\">Indicates that changes to the decorated property should trigger notifications for the specified dependent\nproperties.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -28,7 +28,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BB84.Notifications.Attributes.NotifyChangingAttribute",
-      "Summary": "<p sourcefile=\"api/BB84.Notifications.Attributes.NotifyChangingAttribute.yml\" sourcestartlinenumber=\"1\">The notify changing attribute class.</p>\n"
+      "Summary": "<p sourcefile=\"api/BB84.Notifications.Attributes.NotifyChangingAttribute.yml\" sourcestartlinenumber=\"1\">Indicates that upcoming changes to the decorated property should trigger notifications for the specified\ndependent properties.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -126,7 +126,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BB84.Notifications.Components.CollectionChangedEventArgs<T>",
-      "Summary": "<p sourcefile=\"api/BB84.Notifications.Components.CollectionChangedEventArgs-1.yml\" sourcestartlinenumber=\"1\">Provides data for the <xref href=\"BB84.Notifications.Interfaces.Components.INotifyCollectionChanged\" data-throw-if-not-resolved=\"false\"></xref> event.</p>\n"
+      "Summary": "<p sourcefile=\"api/BB84.Notifications.Components.CollectionChangedEventArgs-1.yml\" sourcestartlinenumber=\"1\">Provides data for collection change events, including the action performed and the item affected.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -140,7 +140,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BB84.Notifications.Components.CollectionChangedEventArgs",
-      "Summary": "<p sourcefile=\"api/BB84.Notifications.Components.CollectionChangedEventArgs.yml\" sourcestartlinenumber=\"1\">Provides data for the <xref href=\"BB84.Notifications.Interfaces.Components.INotifyCollectionChanged\" data-throw-if-not-resolved=\"false\"></xref> event.</p>\n"
+      "Summary": "<p sourcefile=\"api/BB84.Notifications.Components.CollectionChangedEventArgs.yml\" sourcestartlinenumber=\"1\">Provides data for events that signal changes to a collection.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -154,7 +154,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BB84.Notifications.Components.CollectionChangedEventHandler",
-      "Summary": "<p sourcefile=\"api/BB84.Notifications.Components.CollectionChangedEventHandler.yml\" sourcestartlinenumber=\"1\">Represents the method that will handle the event of the <xref href=\"BB84.Notifications.Interfaces.Components.INotifyCollectionChanged\" data-throw-if-not-resolved=\"false\"></xref> interface.</p>\n"
+      "Summary": "<p sourcefile=\"api/BB84.Notifications.Components.CollectionChangedEventHandler.yml\" sourcestartlinenumber=\"1\">Represents the method that will handle collection change events.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -168,7 +168,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BB84.Notifications.Components.CollectionChangingEventArgs<T>",
-      "Summary": "<p sourcefile=\"api/BB84.Notifications.Components.CollectionChangingEventArgs-1.yml\" sourcestartlinenumber=\"1\">Provides data for the <xref href=\"BB84.Notifications.Interfaces.Components.INotifyCollectionChanging\" data-throw-if-not-resolved=\"false\"></xref> event.</p>\n"
+      "Summary": "<p sourcefile=\"api/BB84.Notifications.Components.CollectionChangingEventArgs-1.yml\" sourcestartlinenumber=\"1\">Provides data for the collection changing event, including the action being performed\nand the item involved.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -182,7 +182,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BB84.Notifications.Components.CollectionChangingEventArgs",
-      "Summary": "<p sourcefile=\"api/BB84.Notifications.Components.CollectionChangingEventArgs.yml\" sourcestartlinenumber=\"1\">Provides data for the <xref href=\"BB84.Notifications.Interfaces.Components.INotifyCollectionChanging\" data-throw-if-not-resolved=\"false\"></xref> event.</p>\n"
+      "Summary": "<p sourcefile=\"api/BB84.Notifications.Components.CollectionChangingEventArgs.yml\" sourcestartlinenumber=\"1\">Provides data for the collection changing event, including the action being performed.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -196,7 +196,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BB84.Notifications.Components.CollectionChangingEventHandler",
-      "Summary": "<p sourcefile=\"api/BB84.Notifications.Components.CollectionChangingEventHandler.yml\" sourcestartlinenumber=\"1\">Represents the method that will handle the event of the <xref href=\"BB84.Notifications.Interfaces.Components.INotifyCollectionChanging\" data-throw-if-not-resolved=\"false\"></xref> interface.</p>\n"
+      "Summary": "<p sourcefile=\"api/BB84.Notifications.Components.CollectionChangingEventHandler.yml\" sourcestartlinenumber=\"1\">Represents the method that will handle a collection changing event.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -210,7 +210,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BB84.Notifications.Components.PropertyChangedEventArgs<T>",
-      "Summary": "<p sourcefile=\"api/BB84.Notifications.Components.PropertyChangedEventArgs-1.yml\" sourcestartlinenumber=\"1\">Provides data for the <xref href=\"System.ComponentModel.INotifyPropertyChanged\" data-throw-if-not-resolved=\"false\"></xref> event.</p>\n"
+      "Summary": "<p sourcefile=\"api/BB84.Notifications.Components.PropertyChangedEventArgs-1.yml\" sourcestartlinenumber=\"1\">Provides data for the <xref href=\"System.ComponentModel.INotifyPropertyChanged.PropertyChanged\" data-throw-if-not-resolved=\"false\"></xref> event, including\nthe name of the property that changed and its new value.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -224,7 +224,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BB84.Notifications.Components.PropertyChangingEventArgs<T>",
-      "Summary": "<p sourcefile=\"api/BB84.Notifications.Components.PropertyChangingEventArgs-1.yml\" sourcestartlinenumber=\"1\">Provides data for the <xref href=\"System.ComponentModel.INotifyPropertyChanging\" data-throw-if-not-resolved=\"false\"></xref> event.</p>\n"
+      "Summary": "<p sourcefile=\"api/BB84.Notifications.Components.PropertyChangingEventArgs-1.yml\" sourcestartlinenumber=\"1\">Provides data for the event that is raised when a property is changing, including the\nproperty's name and its new value.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -280,7 +280,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BB84.Notifications.Interfaces.Commands.IActionCommand<T>",
-      "Summary": "<p sourcefile=\"api/BB84.Notifications.Interfaces.Commands.IActionCommand-1.yml\" sourcestartlinenumber=\"1\">The action command interface.</p>\n"
+      "Summary": "<p sourcefile=\"api/BB84.Notifications.Interfaces.Commands.IActionCommand-1.yml\" sourcestartlinenumber=\"1\">Represents a command that can be executed with a parameter of type <code class=\"typeparamref\">T</code>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -294,7 +294,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BB84.Notifications.Interfaces.Commands.IActionCommand",
-      "Summary": "<p sourcefile=\"api/BB84.Notifications.Interfaces.Commands.IActionCommand.yml\" sourcestartlinenumber=\"1\">The action command interface.</p>\n"
+      "Summary": "<p sourcefile=\"api/BB84.Notifications.Interfaces.Commands.IActionCommand.yml\" sourcestartlinenumber=\"1\">Represents a command that can be executed based on a dynamic condition and provides functionality to\nnotify changes in its execution state.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -308,7 +308,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BB84.Notifications.Interfaces.Commands.IAsyncActionCommand<T>",
-      "Summary": "<p sourcefile=\"api/BB84.Notifications.Interfaces.Commands.IAsyncActionCommand-1.yml\" sourcestartlinenumber=\"1\">The async action command interface.</p>\n"
+      "Summary": "<p sourcefile=\"api/BB84.Notifications.Interfaces.Commands.IAsyncActionCommand-1.yml\" sourcestartlinenumber=\"1\">Represents an asynchronous command that can be executed with a parameter of type <code class=\"typeparamref\">T</code>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -322,7 +322,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BB84.Notifications.Interfaces.Commands.IAsyncActionCommand",
-      "Summary": "<p sourcefile=\"api/BB84.Notifications.Interfaces.Commands.IAsyncActionCommand.yml\" sourcestartlinenumber=\"1\">The async action command interface.</p>\n"
+      "Summary": "<p sourcefile=\"api/BB84.Notifications.Interfaces.Commands.IAsyncActionCommand.yml\" sourcestartlinenumber=\"1\">Represents an asynchronous command that can be executed and queried for its ability to execute.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -350,7 +350,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BB84.Notifications.Interfaces.Components.INotifyCollectionChanged",
-      "Summary": "<p sourcefile=\"api/BB84.Notifications.Interfaces.Components.INotifyCollectionChanged.yml\" sourcestartlinenumber=\"1\">Notifies clients that a collection has changed.</p>\n"
+      "Summary": "<p sourcefile=\"api/BB84.Notifications.Interfaces.Components.INotifyCollectionChanged.yml\" sourcestartlinenumber=\"1\">Provides notification when the contents of a collection change.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -364,7 +364,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BB84.Notifications.Interfaces.Components.INotifyCollectionChanging",
-      "Summary": "<p sourcefile=\"api/BB84.Notifications.Interfaces.Components.INotifyCollectionChanging.yml\" sourcestartlinenumber=\"1\">Notifies clients that a collection is changing.</p>\n"
+      "Summary": "<p sourcefile=\"api/BB84.Notifications.Interfaces.Components.INotifyCollectionChanging.yml\" sourcestartlinenumber=\"1\">Defines an interface for notifying clients that a collection is changing.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -392,7 +392,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BB84.Notifications.Interfaces.INotifiableCollection",
-      "Summary": "<p sourcefile=\"api/BB84.Notifications.Interfaces.INotifiableCollection.yml\" sourcestartlinenumber=\"1\">The notifiable collection interface.</p>\n"
+      "Summary": "<p sourcefile=\"api/BB84.Notifications.Interfaces.INotifiableCollection.yml\" sourcestartlinenumber=\"1\">Represents a collection that provides notifications when its contents or properties change.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -406,7 +406,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BB84.Notifications.Interfaces.INotifiableObject",
-      "Summary": "<p sourcefile=\"api/BB84.Notifications.Interfaces.INotifiableObject.yml\" sourcestartlinenumber=\"1\">The notifiable object interface.</p>\n"
+      "Summary": "<p sourcefile=\"api/BB84.Notifications.Interfaces.INotifiableObject.yml\" sourcestartlinenumber=\"1\">Represents an object that provides notifications when its properties are changed or are about to change.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -420,7 +420,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BB84.Notifications.Interfaces.INotifiableProperty<T>",
-      "Summary": "<p sourcefile=\"api/BB84.Notifications.Interfaces.INotifiableProperty-1.yml\" sourcestartlinenumber=\"1\">The notifiable property interface.</p>\n"
+      "Summary": "<p sourcefile=\"api/BB84.Notifications.Interfaces.INotifiableProperty-1.yml\" sourcestartlinenumber=\"1\">Represents a property that supports change notification and provides additional metadata about its value.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -434,7 +434,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BB84.Notifications.Interfaces.IReversibleProperty<T>",
-      "Summary": "<p sourcefile=\"api/BB84.Notifications.Interfaces.IReversibleProperty-1.yml\" sourcestartlinenumber=\"1\">The reversible property interface.</p>\n"
+      "Summary": "<p sourcefile=\"api/BB84.Notifications.Interfaces.IReversibleProperty-1.yml\" sourcestartlinenumber=\"1\">Represents a property that supports reversible navigation through a sequence of values.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -448,7 +448,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BB84.Notifications.Interfaces.IValidatableObject",
-      "Summary": "<p sourcefile=\"api/BB84.Notifications.Interfaces.IValidatableObject.yml\" sourcestartlinenumber=\"1\">The validatable object interface.</p>\n"
+      "Summary": "<p sourcefile=\"api/BB84.Notifications.Interfaces.IValidatableObject.yml\" sourcestartlinenumber=\"1\">Defines an object that supports validation and provides notification of property changes,\nproperty-changing events and data error information.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -476,7 +476,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BB84.Notifications.NotifiableCollection",
-      "Summary": "<p sourcefile=\"api/BB84.Notifications.NotifiableCollection.yml\" sourcestartlinenumber=\"1\">The notifiable collection class.</p>\n"
+      "Summary": "<p sourcefile=\"api/BB84.Notifications.NotifiableCollection.yml\" sourcestartlinenumber=\"1\">Represents a collection that provides notifications when its contents or properties change.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -490,7 +490,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BB84.Notifications.NotifiableObject",
-      "Summary": "<p sourcefile=\"api/BB84.Notifications.NotifiableObject.yml\" sourcestartlinenumber=\"1\">The notifiable object class.</p>\n"
+      "Summary": "<p sourcefile=\"api/BB84.Notifications.NotifiableObject.yml\" sourcestartlinenumber=\"1\">Represents a base class for objects that support property change notifications.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -504,7 +504,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BB84.Notifications.NotifiableProperty<T>",
-      "Summary": "<p sourcefile=\"api/BB84.Notifications.NotifiableProperty-1.yml\" sourcestartlinenumber=\"1\">The notifiable property class.</p>\n"
+      "Summary": "<p sourcefile=\"api/BB84.Notifications.NotifiableProperty-1.yml\" sourcestartlinenumber=\"1\">Represents a property that supports change notifications and can be observed for changes.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -518,7 +518,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BB84.Notifications.ReversibleProperty<T>",
-      "Summary": "<p sourcefile=\"api/BB84.Notifications.ReversibleProperty-1.yml\" sourcestartlinenumber=\"1\">The reversible property class.</p>\n"
+      "Summary": "<p sourcefile=\"api/BB84.Notifications.ReversibleProperty-1.yml\" sourcestartlinenumber=\"1\">Represents a property that supports reversible changes, allowing navigation\nthrough its historical values.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -532,7 +532,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BB84.Notifications.ValidatableObject",
-      "Summary": "<p sourcefile=\"api/BB84.Notifications.ValidatableObject.yml\" sourcestartlinenumber=\"1\">The validatable object class.</p>\n"
+      "Summary": "<p sourcefile=\"api/BB84.Notifications.ValidatableObject.yml\" sourcestartlinenumber=\"1\">Represents an abstract base class for objects that support validation and error notification.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -562,11 +562,11 @@
       "type": "Toc",
       "source_relative_path": "api/toc.yml",
       "output": {
-        ".json": {
-          "relative_path": "api/toc.json"
-        },
         ".html": {
           "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
         }
       },
       "version": ""
@@ -585,11 +585,11 @@
       "type": "Toc",
       "source_relative_path": "toc.yml",
       "output": {
-        ".json": {
-          "relative_path": "toc.json"
-        },
         ".html": {
           "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
         }
       },
       "version": ""

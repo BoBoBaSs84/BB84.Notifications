@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class ValidatableObject ">
       
-      <meta name="description" content="The validatable object class.">
+      <meta name="description" content="Represents an abstract base class for objects that support validation and error notification.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -85,7 +85,7 @@
 
 
   <h1 id="BB84_Notifications_ValidatableObject" data-uid="BB84.Notifications.ValidatableObject" class="text-break">
-Class ValidatableObject  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/ValidatableObject.cs/#L16"><i class="bi bi-code-slash"></i></a>
+Class ValidatableObject  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/ValidatableObject.cs/#L22"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -93,7 +93,7 @@ Class ValidatableObject  <a class="header-action link-secondary" title="View sou
   <dl><dt>Assembly</dt><dd>BB84.Notifications.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>The validatable object class.</p>
+  <div class="markdown summary"><p>Represents an abstract base class for objects that support validation and error notification.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -175,6 +175,12 @@ Class ValidatableObject  <a class="header-action link-secondary" title="View sou
 
 
 
+  <h2 id="BB84_Notifications_ValidatableObject_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>This class provides functionality for validating object properties and tracking validation errors.
+It implements the <a class="xref" href="BB84.Notifications.Interfaces.IValidatableObject.html">IValidatableObject</a> interface and integrates with data
+binding scenarios by raising the <a class="xref" href="BB84.Notifications.ValidatableObject.html#BB84_Notifications_ValidatableObject_ErrorsChanged">ErrorsChanged</a> event when validation errors change.
+Derived classes can use the provided methods to validate properties and manage validation errors.</p>
+</div>
 
 
   <h2 class="section" id="properties">Properties
@@ -185,7 +191,7 @@ Class ValidatableObject  <a class="header-action link-secondary" title="View sou
 
   <h3 id="BB84_Notifications_ValidatableObject_HasErrors" data-uid="BB84.Notifications.ValidatableObject.HasErrors">
   HasErrors
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/ValidatableObject.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/ValidatableObject.cs/#L27"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -216,10 +222,10 @@ Class ValidatableObject  <a class="header-action link-secondary" title="View sou
 
   <h3 id="BB84_Notifications_ValidatableObject_IsValid" data-uid="BB84.Notifications.ValidatableObject.IsValid">
   IsValid
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/ValidatableObject.cs/#L24"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/ValidatableObject.cs/#L30"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Indicates if the object is valid.</p>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether the current state is valid.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -252,7 +258,7 @@ Class ValidatableObject  <a class="header-action link-secondary" title="View sou
 
   <h3 id="BB84_Notifications_ValidatableObject_GetErrors_System_String_" data-uid="BB84.Notifications.ValidatableObject.GetErrors(System.String)">
   GetErrors(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/ValidatableObject.cs/#L37"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/ValidatableObject.cs/#L43"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -288,10 +294,11 @@ Class ValidatableObject  <a class="header-action link-secondary" title="View sou
 
   <h3 id="BB84_Notifications_ValidatableObject_RaiseErrorsChanged_System_String_" data-uid="BB84.Notifications.ValidatableObject.RaiseErrorsChanged(System.String)">
   RaiseErrorsChanged(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/ValidatableObject.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/ValidatableObject.cs/#L81"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>The method will raise the <a class="xref" href="BB84.Notifications.ValidatableObject.html#BB84_Notifications_ValidatableObject_ErrorsChanged">ErrorsChanged</a> event.</p>
+  <div class="markdown level1 summary"><p>Raises the <a class="xref" href="BB84.Notifications.ValidatableObject.html#BB84_Notifications_ValidatableObject_ErrorsChanged">ErrorsChanged</a> event to notify subscribers that the validation
+errors for a specific property have changed.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -302,7 +309,8 @@ Class ValidatableObject  <a class="header-action link-secondary" title="View sou
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The name of the calling property.</p>
+    <dd><p>The name of the property whose validation errors have changed. Defaults to the name of
+the calling member if not explicitly provided.</p>
 </dd>
   </dl>
 
@@ -313,6 +321,10 @@ Class ValidatableObject  <a class="header-action link-secondary" title="View sou
 
 
 
+  <h4 class="section" id="BB84_Notifications_ValidatableObject_RaiseErrorsChanged_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method is typically used in implementations of the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifydataerrorinfo">INotifyDataErrorInfo</a>
+interface to signal changes in validation errors.</p>
+</div>
 
 
 
@@ -321,10 +333,10 @@ Class ValidatableObject  <a class="header-action link-secondary" title="View sou
 
   <h3 id="BB84_Notifications_ValidatableObject_SetPropertyAndValidate__1___0____0_System_String_" data-uid="BB84.Notifications.ValidatableObject.SetPropertyAndValidate``1(``0@,``0,System.String)">
   SetPropertyAndValidate&lt;T&gt;(ref T, T, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/ValidatableObject.cs/#L48"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/ValidatableObject.cs/#L60"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Sets a new value for a property, notifies about the change and validates the value.</p>
+  <div class="markdown level1 summary"><p>Sets the specified property to a new value and performs validation.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -335,13 +347,13 @@ Class ValidatableObject  <a class="header-action link-secondary" title="View sou
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>fieldValue</code> <span class="xref">T</span></dt>
-    <dd><p>The referenced field.</p>
+    <dd><p>A reference to the backing field of the property.</p>
 </dd>
     <dt><code>newValue</code> <span class="xref">T</span></dt>
-    <dd><p>The new value for the property.</p>
+    <dd><p>The new value to assign to the property.</p>
 </dd>
     <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The name of the calling property.</p>
+    <dd><p>The name of the property being set. This parameter is optional and defaults to the caller's member name.</p>
 </dd>
   </dl>
 
@@ -349,7 +361,7 @@ Class ValidatableObject  <a class="header-action link-secondary" title="View sou
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>T</code></dt>
-    <dd><p>The type to work with.</p>
+    <dd><p>The type of the property value.</p>
 </dd>
   </dl>
 
@@ -358,6 +370,10 @@ Class ValidatableObject  <a class="header-action link-secondary" title="View sou
 
 
 
+  <h4 class="section" id="BB84_Notifications_ValidatableObject_SetPropertyAndValidate__1___0____0_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method updates the property value only if the new value differs from the current value.
+After updating the property, it performs validation using the provided value and property name.</p>
+</div>
 
 
 
@@ -366,10 +382,10 @@ Class ValidatableObject  <a class="header-action link-secondary" title="View sou
 
   <h3 id="BB84_Notifications_ValidatableObject_Vaildate__1___0_System_String_" data-uid="BB84.Notifications.ValidatableObject.Vaildate``1(``0,System.String)">
   Vaildate&lt;T&gt;(T, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/ValidatableObject.cs/#L95"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/ValidatableObject.cs/#L128"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>The method will try to validate the property value.</p>
+  <div class="markdown level1 summary"><p>Validates the specified property value against the validation attributes defined for the property.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -380,10 +396,10 @@ Class ValidatableObject  <a class="header-action link-secondary" title="View sou
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>value</code> <span class="xref">T</span></dt>
-    <dd><p>The value of the proprty.</p>
+    <dd><p>The value of the property to validate.</p>
 </dd>
     <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The name of the property.</p>
+    <dd><p>The name of the property being validated. This must match the name of the property in the class.</p>
 </dd>
   </dl>
 
@@ -391,7 +407,7 @@ Class ValidatableObject  <a class="header-action link-secondary" title="View sou
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>T</code></dt>
-    <dd><p>The type to work with.</p>
+    <dd><p>The type of the property value to validate.</p>
 </dd>
   </dl>
 
@@ -400,6 +416,10 @@ Class ValidatableObject  <a class="header-action link-secondary" title="View sou
 
 
 
+  <h4 class="section" id="BB84_Notifications_ValidatableObject_Vaildate__1___0_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If the validation fails, any validation errors are added to the error collection for the specified
+property. This method clears existing errors for the property before performing validation.</p>
+</div>
 
 
 
@@ -408,10 +428,10 @@ Class ValidatableObject  <a class="header-action link-secondary" title="View sou
 
   <h3 id="BB84_Notifications_ValidatableObject_Validate" data-uid="BB84.Notifications.ValidatableObject.Validate">
   Validate()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/ValidatableObject.cs/#L68"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/ValidatableObject.cs/#L95"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Validates the all properties of the object and returns if the object is valid or not.</p>
+  <div class="markdown level1 summary"><p>Validates the current object based on its data annotations.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -423,7 +443,7 @@ Class ValidatableObject  <a class="header-action link-secondary" title="View sou
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p>True if the all the properties are valid, otherwise false.</p>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the object passes validation; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
 </dd>
   </dl>
 
@@ -433,6 +453,11 @@ Class ValidatableObject  <a class="header-action link-secondary" title="View sou
 
 
 
+  <h4 class="section" id="BB84_Notifications_ValidatableObject_Validate_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method checks the object's properties and fields against the validation attributes
+defined in its class. If validation fails, the validation errors are stored for further
+inspection.</p>
+</div>
 
 
 
@@ -444,7 +469,7 @@ Class ValidatableObject  <a class="header-action link-secondary" title="View sou
 
   <h3 id="BB84_Notifications_ValidatableObject_ErrorsChanged" data-uid="BB84.Notifications.ValidatableObject.ErrorsChanged">
   ErrorsChanged
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/ValidatableObject.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/ValidatableObject.cs/#L33"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -475,7 +500,7 @@ Class ValidatableObject  <a class="header-action link-secondary" title="View sou
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/ValidatableObject.cs/#L16" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/ValidatableObject.cs/#L22" class="edit-link">Edit this page</a>
         </div>
 
 

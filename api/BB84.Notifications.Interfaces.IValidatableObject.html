@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Interface IValidatableObject ">
       
-      <meta name="description" content="The validatable object interface.">
+      <meta name="description" content="Defines an object that supports validation and provides notification of property changes, property-changing events and data error information.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -85,7 +85,7 @@
 
 
   <h1 id="BB84_Notifications_Interfaces_IValidatableObject" data-uid="BB84.Notifications.Interfaces.IValidatableObject" class="text-break">
-Interface IValidatableObject  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Interfaces/IValidatableObject.cs/#L13"><i class="bi bi-code-slash"></i></a>
+Interface IValidatableObject  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Interfaces/IValidatableObject.cs/#L19"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -93,7 +93,8 @@ Interface IValidatableObject  <a class="header-action link-secondary" title="Vie
   <dl><dt>Assembly</dt><dd>BB84.Notifications.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>The validatable object interface.</p>
+  <div class="markdown summary"><p>Defines an object that supports validation and provides notification of property changes,
+property-changing events and data error information.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -130,6 +131,11 @@ Interface IValidatableObject  <a class="header-action link-secondary" title="Vie
 
 
 
+  <h2 id="BB84_Notifications_Interfaces_IValidatableObject_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>Implement this interface to create objects that can be validated for correctness and provide
+real-time feedback on validation errors. The interface also integrates with property change
+notifications, making it suitable for use in data-binding scenarios.</p>
+</div>
 
 
   <h2 class="section" id="properties">Properties
@@ -140,10 +146,10 @@ Interface IValidatableObject  <a class="header-action link-secondary" title="Vie
 
   <h3 id="BB84_Notifications_Interfaces_IValidatableObject_IsValid" data-uid="BB84.Notifications.Interfaces.IValidatableObject.IsValid">
   IsValid
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Interfaces/IValidatableObject.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Interfaces/IValidatableObject.cs/#L24"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Indicates if the object is valid.</p>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether the current state is valid.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -172,7 +178,7 @@ Interface IValidatableObject  <a class="header-action link-secondary" title="Vie
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Interfaces/IValidatableObject.cs/#L13" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Interfaces/IValidatableObject.cs/#L19" class="edit-link">Edit this page</a>
         </div>
 
 

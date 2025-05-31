@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Interface IReversibleProperty&lt;T&gt; ">
       
-      <meta name="description" content="The reversible property interface.">
+      <meta name="description" content="Represents a property that supports reversible navigation through a sequence of values.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -85,7 +85,7 @@
 
 
   <h1 id="BB84_Notifications_Interfaces_IReversibleProperty_1" data-uid="BB84.Notifications.Interfaces.IReversibleProperty`1" class="text-break">
-Interface IReversibleProperty&lt;T&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Interfaces/IReversibleProperty.cs/#L12"><i class="bi bi-code-slash"></i></a>
+Interface IReversibleProperty&lt;T&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Interfaces/IReversibleProperty.cs/#L17"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -93,7 +93,7 @@ Interface IReversibleProperty&lt;T&gt;  <a class="header-action link-secondary" 
   <dl><dt>Assembly</dt><dd>BB84.Notifications.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>The reversible property interface.</p>
+  <div class="markdown summary"><p>Represents a property that supports reversible navigation through a sequence of values.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -106,7 +106,7 @@ Interface IReversibleProperty&lt;T&gt;  <a class="header-action link-secondary" 
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>T</code></dt>
-    <dd><p>The value type to work with.</p>
+    <dd><p>The type of the values contained in the property.</p>
 </dd>
   </dl>
 
@@ -136,6 +136,11 @@ Interface IReversibleProperty&lt;T&gt;  <a class="header-action link-secondary" 
 
 
 
+  <h2 id="BB84_Notifications_Interfaces_IReversibleProperty_1_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>This interface extends <a class="xref" href="BB84.Notifications.Interfaces.INotifiableProperty-1.html">INotifiableProperty&lt;T&gt;</a> to provide functionality for navigating
+forward and backward through a sequence of values. It includes properties to check the availability
+of next and previous values, as well as methods to move to the next or previous value.</p>
+</div>
 
 
   <h2 class="section" id="properties">Properties
@@ -146,7 +151,7 @@ Interface IReversibleProperty&lt;T&gt;  <a class="header-action link-secondary" 
 
   <h3 id="BB84_Notifications_Interfaces_IReversibleProperty_1_Count" data-uid="BB84.Notifications.Interfaces.IReversibleProperty`1.Count">
   Count
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Interfaces/IReversibleProperty.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Interfaces/IReversibleProperty.cs/#L22"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the number of elements contained in the backing array.</p>
@@ -178,10 +183,10 @@ Interface IReversibleProperty&lt;T&gt;  <a class="header-action link-secondary" 
 
   <h3 id="BB84_Notifications_Interfaces_IReversibleProperty_1_HasNextValue" data-uid="BB84.Notifications.Interfaces.IReversibleProperty`1.HasNextValue">
   HasNextValue
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Interfaces/IReversibleProperty.cs/#L22"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Interfaces/IReversibleProperty.cs/#L27"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Inidcates if there is a next value in the backing store.</p>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether there is a next value available in the sequence.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -210,10 +215,10 @@ Interface IReversibleProperty&lt;T&gt;  <a class="header-action link-secondary" 
 
   <h3 id="BB84_Notifications_Interfaces_IReversibleProperty_1_HasPreviousValue" data-uid="BB84.Notifications.Interfaces.IReversibleProperty`1.HasPreviousValue">
   HasPreviousValue
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Interfaces/IReversibleProperty.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Interfaces/IReversibleProperty.cs/#L32"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Inidcates if there is a previous value in the backing store.</p>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether there is a previous value available in the sequence.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -242,10 +247,10 @@ Interface IReversibleProperty&lt;T&gt;  <a class="header-action link-secondary" 
 
   <h3 id="BB84_Notifications_Interfaces_IReversibleProperty_1_Index" data-uid="BB84.Notifications.Interfaces.IReversibleProperty`1.Index">
   Index
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Interfaces/IReversibleProperty.cs/#L32"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Interfaces/IReversibleProperty.cs/#L37"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>The current index of the Value.</p>
+  <div class="markdown level1 summary"><p>Gets the zero-based index of the current item.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -278,10 +283,10 @@ Interface IReversibleProperty&lt;T&gt;  <a class="header-action link-secondary" 
 
   <h3 id="BB84_Notifications_Interfaces_IReversibleProperty_1_NextValue" data-uid="BB84.Notifications.Interfaces.IReversibleProperty`1.NextValue">
   NextValue()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Interfaces/IReversibleProperty.cs/#L37"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Interfaces/IReversibleProperty.cs/#L47"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Switches to the next value, if there is a next value.</p>
+  <div class="markdown level1 summary"><p>Advances the internal state to the next value in the sequence.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -297,6 +302,11 @@ Interface IReversibleProperty&lt;T&gt;  <a class="header-action link-secondary" 
 
 
 
+  <h4 class="section" id="BB84_Notifications_Interfaces_IReversibleProperty_1_NextValue_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method updates the internal state of the sequence, preparing it to return the next value.
+It does not return the value itself; instead, it modifies the sequence's state. Call this method
+before retrieving the next value from the sequence.</p>
+</div>
 
 
 
@@ -305,10 +315,10 @@ Interface IReversibleProperty&lt;T&gt;  <a class="header-action link-secondary" 
 
   <h3 id="BB84_Notifications_Interfaces_IReversibleProperty_1_PreviousValue" data-uid="BB84.Notifications.Interfaces.IReversibleProperty`1.PreviousValue">
   PreviousValue()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Interfaces/IReversibleProperty.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Interfaces/IReversibleProperty.cs/#L57"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Switches to the previous value, if there is a next value.</p>
+  <div class="markdown level1 summary"><p>Retrieves the previous value in a sequence or collection.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -324,6 +334,11 @@ Interface IReversibleProperty&lt;T&gt;  <a class="header-action link-secondary" 
 
 
 
+  <h4 class="section" id="BB84_Notifications_Interfaces_IReversibleProperty_1_PreviousValue_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method updates the internal state of the sequence, preparing it to return the previous value.
+It does not return the value itself; instead, it modifies the sequence's state. Call this method
+before retrieving the previous value from the sequence.</p>
+</div>
 
 
 
@@ -332,7 +347,7 @@ Interface IReversibleProperty&lt;T&gt;  <a class="header-action link-secondary" 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Interfaces/IReversibleProperty.cs/#L12" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Interfaces/IReversibleProperty.cs/#L17" class="edit-link">Edit this page</a>
         </div>
 
 

@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class NotifiableCollection ">
       
-      <meta name="description" content="The notifiable collection class.">
+      <meta name="description" content="Represents a collection that provides notifications when its contents or properties change.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -93,7 +93,7 @@ Class NotifiableCollection  <a class="header-action link-secondary" title="View 
   <dl><dt>Assembly</dt><dd>BB84.Notifications.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>The notifiable collection class.</p>
+  <div class="markdown summary"><p>Represents a collection that provides notifications when its contents or properties change.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -186,10 +186,10 @@ Class NotifiableCollection  <a class="header-action link-secondary" title="View 
 
   <h3 id="BB84_Notifications_NotifiableCollection_RaiseCollectionChanged_System_ComponentModel_CollectionChangeAction_" data-uid="BB84.Notifications.NotifiableCollection.RaiseCollectionChanged(System.ComponentModel.CollectionChangeAction)">
   RaiseCollectionChanged(CollectionChangeAction)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/NotifiableCollection.cs/#L30"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/NotifiableCollection.cs/#L36"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Raises the <a class="xref" href="BB84.Notifications.NotifiableCollection.html#BB84_Notifications_NotifiableCollection_CollectionChanged">CollectionChanged</a> event.</p>
+  <div class="markdown level1 summary"><p>Raises the <a class="xref" href="BB84.Notifications.NotifiableCollection.html#BB84_Notifications_NotifiableCollection_CollectionChanged">CollectionChanged</a> event to notify subscribers of changes to the collection.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -200,7 +200,8 @@ Class NotifiableCollection  <a class="header-action link-secondary" title="View 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>action</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.collectionchangeaction">CollectionChangeAction</a></dt>
-    <dd><p>The action that causes the change.</p>
+    <dd><p>The type of change that occurred in the collection.
+This value indicates whether items were added, removed, or the collection was refreshed.</p>
 </dd>
   </dl>
 
@@ -211,6 +212,10 @@ Class NotifiableCollection  <a class="header-action link-secondary" title="View 
 
 
 
+  <h4 class="section" id="BB84_Notifications_NotifiableCollection_RaiseCollectionChanged_System_ComponentModel_CollectionChangeAction__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method invokes the <a class="xref" href="BB84.Notifications.NotifiableCollection.html#BB84_Notifications_NotifiableCollection_CollectionChanged">CollectionChanged</a> event with the specified
+<code class="paramref">action</code>. Ensure that any subscribers to the event handle the change appropriately.</p>
+</div>
 
 
 
@@ -219,10 +224,10 @@ Class NotifiableCollection  <a class="header-action link-secondary" title="View 
 
   <h3 id="BB84_Notifications_NotifiableCollection_RaiseCollectionChanged__1_System_ComponentModel_CollectionChangeAction___0_" data-uid="BB84.Notifications.NotifiableCollection.RaiseCollectionChanged``1(System.ComponentModel.CollectionChangeAction,``0)">
   RaiseCollectionChanged&lt;T&gt;(CollectionChangeAction, T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/NotifiableCollection.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/NotifiableCollection.cs/#L53"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Raises the <a class="xref" href="BB84.Notifications.NotifiableCollection.html#BB84_Notifications_NotifiableCollection_CollectionChanged">CollectionChanged</a> event.</p>
+  <div class="markdown level1 summary"><p>Raises the <a class="xref" href="BB84.Notifications.NotifiableCollection.html#BB84_Notifications_NotifiableCollection_CollectionChanged">CollectionChanged</a> event to notify subscribers of changes to the collection.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -233,10 +238,10 @@ Class NotifiableCollection  <a class="header-action link-secondary" title="View 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>action</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.collectionchangeaction">CollectionChangeAction</a></dt>
-    <dd><p>The action that causes the change.</p>
+    <dd><p>The action that describes the type of change to the collection, such as Add or Remove.</p>
 </dd>
     <dt><code>item</code> <span class="xref">T</span></dt>
-    <dd><p>The item that is changed.</p>
+    <dd><p>The item that is affected by the collection change.</p>
 </dd>
   </dl>
 
@@ -244,7 +249,7 @@ Class NotifiableCollection  <a class="header-action link-secondary" title="View 
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>T</code></dt>
-    <dd><p>The type to work with.</p>
+    <dd><p>The type of the item affected by the collection change.</p>
 </dd>
   </dl>
 
@@ -253,6 +258,10 @@ Class NotifiableCollection  <a class="header-action link-secondary" title="View 
 
 
 
+  <h4 class="section" id="BB84_Notifications_NotifiableCollection_RaiseCollectionChanged__1_System_ComponentModel_CollectionChangeAction___0__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method invokes the <a class="xref" href="BB84.Notifications.NotifiableCollection.html#BB84_Notifications_NotifiableCollection_CollectionChanged">CollectionChanged</a> event with the specified action and item.
+Ensure that any subscribers to the event handle the change appropriately.</p>
+</div>
 
 
 
@@ -261,10 +270,11 @@ Class NotifiableCollection  <a class="header-action link-secondary" title="View 
 
   <h3 id="BB84_Notifications_NotifiableCollection_RaiseCollectionChanging_System_ComponentModel_CollectionChangeAction_" data-uid="BB84.Notifications.NotifiableCollection.RaiseCollectionChanging(System.ComponentModel.CollectionChangeAction)">
   RaiseCollectionChanging(CollectionChangeAction)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/NotifiableCollection.cs/#L46"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/NotifiableCollection.cs/#L64"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Raises the <a class="xref" href="BB84.Notifications.NotifiableCollection.html#BB84_Notifications_NotifiableCollection_CollectionChanging">CollectionChanging</a> event.</p>
+  <div class="markdown level1 summary"><p>Raises the <a class="xref" href="BB84.Notifications.NotifiableCollection.html#BB84_Notifications_NotifiableCollection_CollectionChanging">CollectionChanging</a> event to notify subscribers that the collection
+is about to change.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -275,7 +285,8 @@ Class NotifiableCollection  <a class="header-action link-secondary" title="View 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>action</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.collectionchangeaction">CollectionChangeAction</a></dt>
-    <dd><p>The action that causes the change.</p>
+    <dd><p>The type of change that is occurring in the collection.
+This value indicates whether items are being added, removed or the entire collection is being refreshed.</p>
 </dd>
   </dl>
 
@@ -294,10 +305,11 @@ Class NotifiableCollection  <a class="header-action link-secondary" title="View 
 
   <h3 id="BB84_Notifications_NotifiableCollection_RaiseCollectionChanging__1_System_ComponentModel_CollectionChangeAction___0_" data-uid="BB84.Notifications.NotifiableCollection.RaiseCollectionChanging``1(System.ComponentModel.CollectionChangeAction,``0)">
   RaiseCollectionChanging&lt;T&gt;(CollectionChangeAction, T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/NotifiableCollection.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/NotifiableCollection.cs/#L82"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Raises the <a class="xref" href="BB84.Notifications.NotifiableCollection.html#BB84_Notifications_NotifiableCollection_CollectionChanging">CollectionChanging</a> event.</p>
+  <div class="markdown level1 summary"><p>Raises the <a class="xref" href="BB84.Notifications.NotifiableCollection.html#BB84_Notifications_NotifiableCollection_CollectionChanging">CollectionChanging</a> event to notify subscribers that the collection
+is about to change.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -308,10 +320,10 @@ Class NotifiableCollection  <a class="header-action link-secondary" title="View 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>action</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.collectionchangeaction">CollectionChangeAction</a></dt>
-    <dd><p>The action that causes the change.</p>
+    <dd><p>The action indicating the type of change being performed on the collection.</p>
 </dd>
     <dt><code>item</code> <span class="xref">T</span></dt>
-    <dd><p>The item that is changing.</p>
+    <dd><p>The item that is affected by the upcoming collection change.</p>
 </dd>
   </dl>
 
@@ -319,7 +331,7 @@ Class NotifiableCollection  <a class="header-action link-secondary" title="View 
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>T</code></dt>
-    <dd><p>The type to work with.</p>
+    <dd><p>The type of the item involved in the collection change.</p>
 </dd>
   </dl>
 
@@ -328,6 +340,10 @@ Class NotifiableCollection  <a class="header-action link-secondary" title="View 
 
 
 
+  <h4 class="section" id="BB84_Notifications_NotifiableCollection_RaiseCollectionChanging__1_System_ComponentModel_CollectionChangeAction___0__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method should be called before a change is made to the collection to allow subscribers
+to respond to the impending change.</p>
+</div>
 
 
 
@@ -342,7 +358,8 @@ Class NotifiableCollection  <a class="header-action link-secondary" title="View 
   <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/NotifiableCollection.cs/#L21"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Occurs when a collection changes.</p>
+  <div class="markdown level1 summary"><p>Occurs when the collection is changed, such as when items are added, removed,
+or the entire collection is refreshed.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -363,6 +380,10 @@ Class NotifiableCollection  <a class="header-action link-secondary" title="View 
 
 
 
+  <h4 class="section" id="BB84_Notifications_NotifiableCollection_CollectionChanged_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This event is typically used to notify subscribers of changes to the collection's contents.
+Handlers for this event can inspect the event arguments to determine the nature of the change.</p>
+</div>
 
 
 
@@ -373,7 +394,7 @@ Class NotifiableCollection  <a class="header-action link-secondary" title="View 
   <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/NotifiableCollection.cs/#L24"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Occurs when a collection is changing.</p>
+  <div class="markdown level1 summary"><p>Occurs when the collection is about to change.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -394,6 +415,10 @@ Class NotifiableCollection  <a class="header-action link-secondary" title="View 
 
 
 
+  <h4 class="section" id="BB84_Notifications_NotifiableCollection_CollectionChanging_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This event is raised before any modifications are made to the collection, allowing subscribers
+to inspect or cancel the operation. The event handler can throw an exception to prevent the change.</p>
+</div>
 
 
 

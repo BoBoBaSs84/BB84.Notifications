@@ -281,7 +281,7 @@ Class ActionCommand&lt;T&gt;  <a class="header-action link-secondary" title="Vie
   <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Commands/ActionCommand.cs/#L76"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Defines the method that determines whether the command can execute in its current state.</p>
+  <div class="markdown level1 summary"><p>Determines whether the command can execute in its current state with the specified parameter.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -292,14 +292,16 @@ Class ActionCommand&lt;T&gt;  <a class="header-action link-secondary" title="Vie
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>parameter</code> <span class="xref">T</span></dt>
-    <dd><p>The data used by the command.</p>
+    <dd><p>The parameter to evaluate. This can be used to provide context or input for determining
+whether the command is executable.</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p>True if this command can be executed, otherwise false.</p>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the command can execute with the specified parameter; otherwise,
+<a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
 </dd>
   </dl>
 
@@ -351,7 +353,7 @@ Class ActionCommand&lt;T&gt;  <a class="header-action link-secondary" title="Vie
   <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Commands/ActionCommand.cs/#L84"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Defines the method to be called when the command is invoked.</p>
+  <div class="markdown level1 summary"><p>Executes the specified action if the associated condition is met.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -362,7 +364,7 @@ Class ActionCommand&lt;T&gt;  <a class="header-action link-secondary" title="Vie
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>parameter</code> <span class="xref">T</span></dt>
-    <dd><p>The data used by the command.</p>
+    <dd><p>The parameter to pass to the action. This can be null if the action supports null parameters.</p>
 </dd>
   </dl>
 
@@ -373,6 +375,11 @@ Class ActionCommand&lt;T&gt;  <a class="header-action link-secondary" title="Vie
 
 
 
+  <h4 class="section" id="BB84_Notifications_Commands_ActionCommand_1_Execute__0__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method performs the primary action associated with. The specific behavior of the
+operation depends on the implementation. Ensure that any required preconditions are
+met before calling this method.</p>
+</div>
 
 
 
@@ -384,7 +391,7 @@ Class ActionCommand&lt;T&gt;  <a class="header-action link-secondary" title="Vie
   <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Commands/ActionCommand.cs/#L98"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Notifies that the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.input.icommand.canexecutechanged">CanExecuteChanged</a> property has changed.</p>
+  <div class="markdown level1 summary"><p>Notifies subscribers that the ability to execute the command has changed.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -400,6 +407,11 @@ Class ActionCommand&lt;T&gt;  <a class="header-action link-secondary" title="Vie
 
 
 
+  <h4 class="section" id="BB84_Notifications_Commands_ActionCommand_1_RaiseCanExecuteChanged_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method should be called when the conditions that determine whether the command
+can execute have changed. It triggers the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.input.icommand.canexecutechanged">CanExecuteChanged</a>
+event, allowing UI  elements bound to the command to update their enabled state.</p>
+</div>
 
 
 

@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Interface IAsyncActionCommand ">
       
-      <meta name="description" content="The async action command interface.">
+      <meta name="description" content="Represents an asynchronous command that can be executed and queried for its ability to execute.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -85,7 +85,7 @@
 
 
   <h1 id="BB84_Notifications_Interfaces_Commands_IAsyncActionCommand" data-uid="BB84.Notifications.Interfaces.Commands.IAsyncActionCommand" class="text-break">
-Interface IAsyncActionCommand  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Interfaces/Commands/IAsyncActionCommand.cs/#L13"><i class="bi bi-code-slash"></i></a>
+Interface IAsyncActionCommand  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Interfaces/Commands/IAsyncActionCommand.cs/#L18"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -93,7 +93,7 @@ Interface IAsyncActionCommand  <a class="header-action link-secondary" title="Vi
   <dl><dt>Assembly</dt><dd>BB84.Notifications.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>The async action command interface.</p>
+  <div class="markdown summary"><p>Represents an asynchronous command that can be executed and queried for its ability to execute.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -124,6 +124,11 @@ Interface IAsyncActionCommand  <a class="header-action link-secondary" title="Vi
 
 
 
+  <h2 id="BB84_Notifications_Interfaces_Commands_IAsyncActionCommand_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>This interface extends <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.input.icommand">ICommand</a> to support asynchronous operations.
+It provides methods for executing the command asynchronously, determining whether the command can execute,
+and raising notifications when the ability to execute changes.</p>
+</div>
 
 
   <h2 class="section" id="methods">Methods
@@ -134,7 +139,7 @@ Interface IAsyncActionCommand  <a class="header-action link-secondary" title="Vi
 
   <h3 id="BB84_Notifications_Interfaces_Commands_IAsyncActionCommand_CanExecute" data-uid="BB84.Notifications.Interfaces.Commands.IAsyncActionCommand.CanExecute">
   CanExecute()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Interfaces/Commands/IAsyncActionCommand.cs/#L25"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Interfaces/Commands/IAsyncActionCommand.cs/#L30"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Defines the method that determines whether the command can execute in its current state.</p>
@@ -167,7 +172,7 @@ Interface IAsyncActionCommand  <a class="header-action link-secondary" title="Vi
 
   <h3 id="BB84_Notifications_Interfaces_Commands_IAsyncActionCommand_ExecuteAsync" data-uid="BB84.Notifications.Interfaces.Commands.IAsyncActionCommand.ExecuteAsync">
   ExecuteAsync()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Interfaces/Commands/IAsyncActionCommand.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Interfaces/Commands/IAsyncActionCommand.cs/#L24"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Defines the method to be called when the command is invoked.</p>
@@ -200,7 +205,7 @@ Interface IAsyncActionCommand  <a class="header-action link-secondary" title="Vi
 
   <h3 id="BB84_Notifications_Interfaces_Commands_IAsyncActionCommand_RaiseCanExecuteChanged" data-uid="BB84.Notifications.Interfaces.Commands.IAsyncActionCommand.RaiseCanExecuteChanged">
   RaiseCanExecuteChanged()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Interfaces/Commands/IAsyncActionCommand.cs/#L30"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Interfaces/Commands/IAsyncActionCommand.cs/#L35"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Notifies that the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.input.icommand.canexecutechanged">CanExecuteChanged</a> property has changed.</p>
@@ -227,7 +232,7 @@ Interface IAsyncActionCommand  <a class="header-action link-secondary" title="Vi
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Interfaces/Commands/IAsyncActionCommand.cs/#L13" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/Interfaces/Commands/IAsyncActionCommand.cs/#L18" class="edit-link">Edit this page</a>
         </div>
 
 
