@@ -12,22 +12,7 @@
 [![RepoSize](https://img.shields.io/github/repo-size/BoBoBaSs84/BB84.Notifications)](https://github.com/BoBoBaSs84/BB84.Notifications)
 [![Release](https://img.shields.io/github/v/release/BoBoBaSs84/BB84.Notifications)](https://github.com/BoBoBaSs84/BB84.Notifications/releases/latest)
 
-## Table of Contents
-
-- [Overview](#overview)
-- [Features](#features)
-- [Target Frameworks](#target-frameworks)
-- [Installation](#installation)
-- [Core Components](#core-components)
-- [Usage Guide](#usage-guide)
-- [Advanced Scenarios](#advanced-scenarios)
-- [API Reference](#api-reference)
-- [Examples](#examples)
-- [Testing](#testing)
-- [Contributing](#contributing)
-- [License](#license)
-
-## Overview
+## 🔎 Project Overview
 
 **BB84.Notifications** is a comprehensive .NET library that provides robust abstractions and implementations for property change notifications, collection change notifications, and command patterns. The library is designed to facilitate one-way and two-way data binding scenarios, making it an excellent choice for MVVM (Model-View-ViewModel) applications, WPF, Xamarin, MAUI, and other data-binding frameworks.
 
@@ -40,7 +25,7 @@ This library provides:
 - **Command Patterns**: Synchronous and asynchronous command implementations
 - **Attribute-Based Notifications**: Declarative property notification chaining
 
-## Features
+## ⚡ Features
 
 ### 🔔 Enhanced Property Notifications
 
@@ -77,7 +62,7 @@ This library provides:
 - Generic and non-generic command variants
 - Automatic `CanExecuteChanged` notifications
 
-## Target Frameworks
+## 📦 Target Frameworks
 
 [![net20](https://img.shields.io/badge/netstandard2.0-5C2D91?logo=.NET&labelColor=gray)](https://github.com/BoBoBaSs84/BB84.Notifications)
 [![net21](https://img.shields.io/badge/netstandard2.1-5C2D91?logo=.NET&labelColor=gray)](https://github.com/BoBoBaSs84/BB84.Notifications)
@@ -95,7 +80,7 @@ The library supports multiple .NET framework versions:
 - **.NET 8.0** - Modern .NET with latest features
 - **.NET 9.0** - Cutting-edge .NET version
 
-## Installation
+## 💾 Installation
 
 [![NuGet](https://img.shields.io/nuget/v/BB84.Notifications.svg?logo=nuget&logoColor=white)](https://www.nuget.org/packages/BB84.Notifications)
 
@@ -117,7 +102,7 @@ dotnet add package BB84.Notifications
 <PackageReference Include="BB84.Notifications" Version="[latest_version]" />
 ```
 
-## Core Components
+## 🥦 Core Components
 
 ### 1. Notifiable Properties
 
@@ -248,7 +233,7 @@ Interfaces for asynchronous command execution.
 - `ActionCommand` / `ActionCommand<T>` - Synchronous commands
 - `AsyncActionCommand` / `AsyncActionCommand<T>` - Asynchronous commands
 
-## Usage Guide
+## 🧰 Usage Guide
 
 ### Basic Property Notification
 
@@ -491,7 +476,7 @@ public class MainViewModel : NotifiableObject
 }
 ```
 
-## Advanced Scenarios
+## 🎛️ Advanced Scenarios
 
 ### Custom Event Arguments
 
@@ -574,7 +559,7 @@ The library is designed to minimize memory allocations:
 - Collection change notifications use efficient data structures
 - Property change detection uses optimized equality comparisons
 
-## API Reference
+## 📔 API Reference
 
 ### Core Namespaces
 
@@ -606,7 +591,7 @@ The library is designed to minimize memory allocations:
 | `CollectionChangingEventHandler` | Collection about to change | `CollectionChangingEventArgs<T>` |
 | `CollectionChangedEventHandler`  | Collection has changed     | `CollectionChangedEventArgs<T>`  |
 
-## Examples
+## 🧰 Examples
 
 ### Complete MVVM Example
 
@@ -736,7 +721,7 @@ public class ReactiveViewModel : NotifiableObject
 }
 ```
 
-## Testing
+## 💎 Testing
 
 The library includes comprehensive unit tests covering all major functionality. The test suite uses MSTest framework and covers:
 
@@ -762,7 +747,7 @@ dotnet test
 - **Attributes**: Notification chaining and dependency tracking
 - **Edge Cases**: Null values, default values, threading scenarios
 
-## Contributing
+## 🤝 Contributing
 
 Contributions are welcome! Please follow these guidelines:
 
@@ -786,17 +771,13 @@ Contributions are welcome! Please follow these guidelines:
 - Include XML documentation for public APIs
 - Maintain high test coverage (>90%)
 
-## License
+## ⚖️ License
 
 This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
 
----
-
-## Additional Resources
+## 📚 Support and Resources
 
 - **API Documentation**: [https://bobobass84.github.io/BB84.Notifications/](https://bobobass84.github.io/BB84.Notifications/)
 - **NuGet Package**: [https://www.nuget.org/packages/BB84.Notifications](https://www.nuget.org/packages/BB84.Notifications)
 - **GitHub Repository**: [https://github.com/BoBoBaSs84/BB84.Notifications](https://github.com/BoBoBaSs84/BB84.Notifications)
 - **Issues & Feature Requests**: [GitHub Issues](https://github.com/BoBoBaSs84/BB84.Notifications/issues)
-
----
