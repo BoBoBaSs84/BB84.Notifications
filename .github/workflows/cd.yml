@@ -6,6 +6,9 @@ on:
 
 jobs:
   publish:
+    permissions:
+      contents: write
+      packages: write
     runs-on: ubuntu-latest
 
     steps:
@@ -26,6 +29,9 @@ jobs:
         dotnet-releaser run --nuget-token "${{secrets.NUGET_TOKEN}}" --github-token "${{secrets.GITHUB_TOKEN}}" dotnet-releaser.toml
 
   docs:
+    permissions:
+      contents: read
+      pages: write
     runs-on: ubuntu-latest
 
     steps:
