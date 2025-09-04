@@ -75,6 +75,24 @@ public abstract class NotifiableObject : INotifiableObject
     => PropertyChanged?.Invoke(this, new(propertyName));
 
   /// <summary>
+  /// Notifies subscribers that the values of the specified properties have changed.
+  /// </summary>
+  /// <remarks>
+  /// This method iterates through the provided property names and raises a change notification
+  /// for each one by invoking the <see cref="RaisePropertyChanged(string)"/> method.
+  /// If no property names are provided, no notifications are raised.
+  /// </remarks>
+  /// <param name="propertyNames">
+  /// An array of property names for which change notifications should be raised. Each name in
+  /// the array corresponds to a property for which the change notification will be raised.
+  /// </param>
+  protected void RaisePropertiesChanged(params string[] propertyNames)
+  {
+    foreach (string propertyName in propertyNames)
+      RaisePropertyChanged(propertyName);
+  }
+
+  /// <summary>
   /// Notifies listeners that a property value has changed.
   /// </summary>
   /// <remarks>
@@ -99,6 +117,24 @@ public abstract class NotifiableObject : INotifiableObject
   /// <param name="propertyName">The name of the property is changing.</param>
   protected void RaisePropertyChanging(string propertyName)
     => PropertyChanging?.Invoke(this, new(propertyName));
+
+  /// <summary>
+  /// Notifies subscribers that one or more properties are about to change.
+  /// </summary>
+  /// <remarks>
+  /// This method iterates through the provided property names and raises a changing notification
+  /// for each one by invoking the <see cref="RaisePropertyChanged(string)"/> method.
+  /// If no property names are provided, no notifications are raised.
+  /// </remarks>
+  /// <param name="propertyNames">
+  /// An array of property names that are about to change. Each name in the array corresponds to a
+  /// property for which the change notification will be raised.
+  /// </param>
+  protected void RaisePropertiesChanging(params string[] propertyNames)
+  {
+    foreach (string propertyName in propertyNames)
+      RaisePropertyChanging(propertyName);
+  }
 
   /// <summary>
   /// Notifies subscribers that a property value is changing.
@@ -129,10 +165,7 @@ public abstract class NotifiableObject : INotifiableObject
     bool success = _propertiesToNotifyOnChange.TryGetValue(propertyName, out string[]? propertiesToNotify);
 
     if (success && propertiesToNotify is not null)
-    {
-      foreach (string propertyToNotify in propertiesToNotify)
-        RaisePropertyChanged(propertyToNotify);
-    }
+      RaisePropertiesChanged(propertiesToNotify);
   }
 
   /// <summary>
@@ -150,10 +183,7 @@ public abstract class NotifiableObject : INotifiableObject
     bool success = _propertiesToNotifyOnChanging.TryGetValue(propertyName, out string[]? propertiesToNotify);
 
     if (success && propertiesToNotify is not null)
-    {
-      foreach (string propertyToNotify in propertiesToNotify)
-        RaisePropertyChanging(propertyToNotify);
-    }
+      RaisePropertiesChanging(propertiesToNotify);
   }
 
   /// <summary>
