@@ -1,8 +1,7 @@
-name: CD
+name: Continuous Deployment
 
 on:
   workflow_dispatch:
-    branches: [ main ]
 
 jobs:
   publish:

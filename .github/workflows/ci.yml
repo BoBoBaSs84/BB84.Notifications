@@ -1,6 +1,7 @@
+name: Continuous Integration
+
 permissions:
   contents: read
-name: CI
 
 on:
   push:
