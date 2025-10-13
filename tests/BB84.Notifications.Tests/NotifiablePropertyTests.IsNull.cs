@@ -7,7 +7,7 @@ namespace BB84.Notifications.Tests;
 
 public sealed partial class NotifiablePropertyTests
 {
-  [DataTestMethod]
+  [TestMethod]
   [DataRow(456, false)]
   [DataRow(6.3d, false)]
   [DataRow(0.75f, false)]

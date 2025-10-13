@@ -7,7 +7,7 @@ namespace BB84.Notifications.Tests;
 
 public sealed partial class NotifiablePropertyTests
 {
-  [DataTestMethod]
+  [TestMethod]
   [DataRow(456, false)]
   [DataRow(6.3d, false)]
   [DataRow(0.75f, false)]
@@ -23,7 +23,7 @@ public sealed partial class NotifiablePropertyTests
     Assert.AreEqual(expected, bindableProperty.IsDefault);
   }
 
-  [DataTestMethod]
+  [TestMethod]
   [DataRow(1, false)]
   [DataRow(0, true)]
   [DataRow(default, true)]
@@ -34,7 +34,7 @@ public sealed partial class NotifiablePropertyTests
     Assert.AreEqual(expected, bindableProperty.IsDefault);
   }
 
-  [DataTestMethod]
+  [TestMethod]
   [DataRow(1, false)]
   [DataRow(0, false)]
   [DataRow(default, true)]

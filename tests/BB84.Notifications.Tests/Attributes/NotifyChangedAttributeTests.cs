@@ -19,7 +19,7 @@ public class NotifyChangedAttributeTests
 
     testClass.Value = 50;
 
-    Assert.AreEqual(2, propertiesNotified.Count);
+    Assert.HasCount(2, propertiesNotified);
     Assert.AreEqual(nameof(TestClass.Value), propertiesNotified.First());
     Assert.AreEqual(nameof(TestClass.TotalValue), propertiesNotified.Last());
   }
