@@ -98,7 +98,8 @@ Delegate CollectionChangedEventHandler  <a class="header-action link-secondary" 
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public delegate void CollectionChangedEventHandler(object? sender, CollectionChangedEventArgs args)</code></pre>
+    <pre><code class="lang-csharp hljs">[SuppressMessage(&quot;Naming&quot;, &quot;CA1711&quot;, Justification = &quot;Event Handler Naming Conventions&quot;)]
+public delegate void CollectionChangedEventHandler(object? sender, CollectionChangedEventArgs args)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>

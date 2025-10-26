@@ -1388,6 +1388,38 @@ references:
   commentId: E:BB84.Notifications.NotifiableObject.PropertyChanging
   fullName: BB84.Notifications.NotifiableObject.PropertyChanging
   nameWithType: NotifiableObject.PropertyChanging
+- uid: BB84.Notifications.NotifiableObject.RaisePropertiesChanged(System.String[])
+  name: RaisePropertiesChanged(params string[])
+  href: api/BB84.Notifications.NotifiableObject.html#BB84_Notifications_NotifiableObject_RaisePropertiesChanged_System_String___
+  commentId: M:BB84.Notifications.NotifiableObject.RaisePropertiesChanged(System.String[])
+  name.vb: RaisePropertiesChanged(ParamArray String())
+  fullName: BB84.Notifications.NotifiableObject.RaisePropertiesChanged(params string[])
+  fullName.vb: BB84.Notifications.NotifiableObject.RaisePropertiesChanged(ParamArray String())
+  nameWithType: NotifiableObject.RaisePropertiesChanged(params string[])
+  nameWithType.vb: NotifiableObject.RaisePropertiesChanged(ParamArray String())
+- uid: BB84.Notifications.NotifiableObject.RaisePropertiesChanged*
+  name: RaisePropertiesChanged
+  href: api/BB84.Notifications.NotifiableObject.html#BB84_Notifications_NotifiableObject_RaisePropertiesChanged_
+  commentId: Overload:BB84.Notifications.NotifiableObject.RaisePropertiesChanged
+  isSpec: "True"
+  fullName: BB84.Notifications.NotifiableObject.RaisePropertiesChanged
+  nameWithType: NotifiableObject.RaisePropertiesChanged
+- uid: BB84.Notifications.NotifiableObject.RaisePropertiesChanging(System.String[])
+  name: RaisePropertiesChanging(params string[])
+  href: api/BB84.Notifications.NotifiableObject.html#BB84_Notifications_NotifiableObject_RaisePropertiesChanging_System_String___
+  commentId: M:BB84.Notifications.NotifiableObject.RaisePropertiesChanging(System.String[])
+  name.vb: RaisePropertiesChanging(ParamArray String())
+  fullName: BB84.Notifications.NotifiableObject.RaisePropertiesChanging(params string[])
+  fullName.vb: BB84.Notifications.NotifiableObject.RaisePropertiesChanging(ParamArray String())
+  nameWithType: NotifiableObject.RaisePropertiesChanging(params string[])
+  nameWithType.vb: NotifiableObject.RaisePropertiesChanging(ParamArray String())
+- uid: BB84.Notifications.NotifiableObject.RaisePropertiesChanging*
+  name: RaisePropertiesChanging
+  href: api/BB84.Notifications.NotifiableObject.html#BB84_Notifications_NotifiableObject_RaisePropertiesChanging_
+  commentId: Overload:BB84.Notifications.NotifiableObject.RaisePropertiesChanging
+  isSpec: "True"
+  fullName: BB84.Notifications.NotifiableObject.RaisePropertiesChanging
+  nameWithType: NotifiableObject.RaisePropertiesChanging
 - uid: BB84.Notifications.NotifiableObject.RaisePropertyChanged(System.String)
   name: RaisePropertyChanged(string)
   href: api/BB84.Notifications.NotifiableObject.html#BB84_Notifications_NotifiableObject_RaisePropertyChanged_System_String_

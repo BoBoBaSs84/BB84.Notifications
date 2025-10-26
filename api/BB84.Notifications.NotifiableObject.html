@@ -195,6 +195,84 @@ Class NotifiableObject  <a class="header-action link-secondary" title="View sour
 </h2>
 
 
+  <a id="BB84_Notifications_NotifiableObject_RaisePropertiesChanged_" data-uid="BB84.Notifications.NotifiableObject.RaisePropertiesChanged*"></a>
+
+  <h3 id="BB84_Notifications_NotifiableObject_RaisePropertiesChanged_System_String___" data-uid="BB84.Notifications.NotifiableObject.RaisePropertiesChanged(System.String[])">
+  RaisePropertiesChanged(params string[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/NotifiableObject.cs/#L89"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Notifies subscribers that the values of the specified properties have changed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void RaisePropertiesChanged(params string[] propertyNames)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyNames</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd><p>An array of property names for which change notifications should be raised. Each name in
+the array corresponds to a property for which the change notification will be raised.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="BB84_Notifications_NotifiableObject_RaisePropertiesChanged_System_String____remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method iterates through the provided property names and raises a change notification
+for each one by invoking the <a class="xref" href="BB84.Notifications.NotifiableObject.html#BB84_Notifications_NotifiableObject_RaisePropertyChanged_System_String_">RaisePropertyChanged(string)</a> method.
+If no property names are provided, no notifications are raised.</p>
+</div>
+
+
+
+
+  <a id="BB84_Notifications_NotifiableObject_RaisePropertiesChanging_" data-uid="BB84.Notifications.NotifiableObject.RaisePropertiesChanging*"></a>
+
+  <h3 id="BB84_Notifications_NotifiableObject_RaisePropertiesChanging_System_String___" data-uid="BB84.Notifications.NotifiableObject.RaisePropertiesChanging(System.String[])">
+  RaisePropertiesChanging(params string[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/NotifiableObject.cs/#L133"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Notifies subscribers that one or more properties are about to change.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void RaisePropertiesChanging(params string[] propertyNames)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyNames</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd><p>An array of property names that are about to change. Each name in the array corresponds to a
+property for which the change notification will be raised.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="BB84_Notifications_NotifiableObject_RaisePropertiesChanging_System_String____remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method iterates through the provided property names and raises a changing notification
+for each one by invoking the <a class="xref" href="BB84.Notifications.NotifiableObject.html#BB84_Notifications_NotifiableObject_RaisePropertyChanged_System_String_">RaisePropertyChanged(string)</a> method.
+If no property names are provided, no notifications are raised.</p>
+</div>
+
+
+
+
   <a id="BB84_Notifications_NotifiableObject_RaisePropertyChanged_" data-uid="BB84.Notifications.NotifiableObject.RaisePropertyChanged*"></a>
 
   <h3 id="BB84_Notifications_NotifiableObject_RaisePropertyChanged_System_String_" data-uid="BB84.Notifications.NotifiableObject.RaisePropertyChanged(System.String)">
@@ -237,7 +315,7 @@ data-binding scenarios.</p>
 
   <h3 id="BB84_Notifications_NotifiableObject_RaisePropertyChanged__1_System_String___0_" data-uid="BB84.Notifications.NotifiableObject.RaisePropertyChanged``1(System.String,``0)">
   RaisePropertyChanged&lt;T&gt;(string, T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/NotifiableObject.cs/#L88"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/NotifiableObject.cs/#L106"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Notifies listeners that a property value has changed.</p>
@@ -284,7 +362,7 @@ data-binding scenarios.</p>
 
   <h3 id="BB84_Notifications_NotifiableObject_RaisePropertyChanging_System_String_" data-uid="BB84.Notifications.NotifiableObject.RaisePropertyChanging(System.String)">
   RaisePropertyChanging(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/NotifiableObject.cs/#L100"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/NotifiableObject.cs/#L118"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Notifies subscribers that a property value is changing.</p>
@@ -322,7 +400,7 @@ data-binding scenarios.</p>
 
   <h3 id="BB84_Notifications_NotifiableObject_RaisePropertyChanging__1_System_String___0_" data-uid="BB84.Notifications.NotifiableObject.RaisePropertyChanging``1(System.String,``0)">
   RaisePropertyChanging&lt;T&gt;(string, T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/NotifiableObject.cs/#L113"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/NotifiableObject.cs/#L149"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Notifies subscribers that a property value is changing.</p>

@@ -98,7 +98,8 @@ Class NotifiableCollection  <a class="header-action link-secondary" title="View 
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class NotifiableCollection : NotifiableObject, INotifiableObject, INotifiableCollection, INotifyCollectionChanged, INotifyCollectionChanging, INotifyPropertyChanged, INotifyPropertyChanging</code></pre>
+    <pre><code class="lang-csharp hljs">[SuppressMessage(&quot;Naming&quot;, &quot;CA1711&quot;, Justification = &quot;Identifier is correct here&quot;)]
+public abstract class NotifiableCollection : NotifiableObject, INotifiableObject, INotifiableCollection, INotifyCollectionChanged, INotifyCollectionChanging, INotifyPropertyChanged, INotifyPropertyChanging</code></pre>
   </div>
 
 
@@ -142,10 +143,16 @@ Class NotifiableCollection  <a class="header-action link-secondary" title="View 
       <a class="xref" href="BB84.Notifications.NotifiableObject.html#BB84_Notifications_NotifiableObject_RaisePropertyChanged_System_String_">NotifiableObject.RaisePropertyChanged(string)</a>
     </div>
     <div>
+      <a class="xref" href="BB84.Notifications.NotifiableObject.html#BB84_Notifications_NotifiableObject_RaisePropertiesChanged_System_String___">NotifiableObject.RaisePropertiesChanged(params string[])</a>
+    </div>
+    <div>
       <a class="xref" href="BB84.Notifications.NotifiableObject.html#BB84_Notifications_NotifiableObject_RaisePropertyChanged__1_System_String___0_">NotifiableObject.RaisePropertyChanged&lt;T&gt;(string, T)</a>
     </div>
     <div>
       <a class="xref" href="BB84.Notifications.NotifiableObject.html#BB84_Notifications_NotifiableObject_RaisePropertyChanging_System_String_">NotifiableObject.RaisePropertyChanging(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="BB84.Notifications.NotifiableObject.html#BB84_Notifications_NotifiableObject_RaisePropertiesChanging_System_String___">NotifiableObject.RaisePropertiesChanging(params string[])</a>
     </div>
     <div>
       <a class="xref" href="BB84.Notifications.NotifiableObject.html#BB84_Notifications_NotifiableObject_RaisePropertyChanging__1_System_String___0_">NotifiableObject.RaisePropertyChanging&lt;T&gt;(string, T)</a>
