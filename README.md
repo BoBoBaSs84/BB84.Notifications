@@ -66,19 +66,19 @@ This library provides:
 
 [![net20](https://img.shields.io/badge/netstandard2.0-5C2D91?logo=.NET&labelColor=gray)](https://github.com/BoBoBaSs84/BB84.Notifications)
 [![net21](https://img.shields.io/badge/netstandard2.1-5C2D91?logo=.NET&labelColor=gray)](https://github.com/BoBoBaSs84/BB84.Notifications)
-[![net462](https://img.shields.io/badge/net462-5C2D91?logo=.NET&labelColor=gray)](https://github.com/BoBoBaSs84/BB84.Notifications)
+[![net472](https://img.shields.io/badge/net472-5C2D91?logo=.NET&labelColor=gray)](https://github.com/BoBoBaSs84/BB84.Notifications)
 [![net481](https://img.shields.io/badge/net481-5C2D91?logo=.NET&labelColor=gray)](https://github.com/BoBoBaSs84/BB84.Notifications)
 [![net80](https://img.shields.io/badge/net8.0-5C2D91?logo=.NET&labelColor=gray)](https://github.com/BoBoBaSs84/BB84.Notifications)
-[![net90](https://img.shields.io/badge/net9.0-5C2D91?logo=.NET&labelColor=gray)](https://github.com/BoBoBaSs84/BB84.Notifications)
+[![net100](https://img.shields.io/badge/net10.0-5C2D91?logo=.NET&labelColor=gray)](https://github.com/BoBoBaSs84/BB84.Notifications)
 
 The library supports multiple .NET framework versions:
 
 - **.NET Standard 2.0** - Maximum compatibility
 - **.NET Standard 2.1** - Enhanced performance features
-- **.NET Framework 4.6.2** - Legacy Windows applications
+- **.NET Framework 4.67.2** - Legacy Windows applications
 - **.NET Framework 4.8.1** - Latest .NET Framework
 - **.NET 8.0** - Modern .NET with latest features
-- **.NET 9.0** - Cutting-edge .NET version
+- **.NET 10.0** - Cutting-edge .NET version
 
 ## 💾 Installation
 
