@@ -22,7 +22,7 @@ jobs:
     - name: Setup .NET
       uses: actions/setup-dotnet@v5
       with:
-        dotnet-version: '9.0.x'
+        dotnet-version: '10.0.x'
 
     - name: Restore
       run: dotnet restore --verbosity minimal
@@ -31,4 +31,4 @@ jobs:
       run: dotnet build --no-restore --configuration release --verbosity minimal
     
     - name: Test
-      run: dotnet test --no-build --configuration release --verbosity minimal --framework net8.0
+      run: dotnet test --no-build --configuration release --verbosity minimal
