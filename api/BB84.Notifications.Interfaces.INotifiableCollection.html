@@ -129,9 +129,11 @@ public interface INotifiableCollection : INotifyCollectionChanged, INotifyCollec
 
 
   <h2 id="BB84_Notifications_Interfaces_INotifiableCollection_remarks">Remarks</h2>
-  <div class="markdown level0 remarks"><p>This interface combines multiple notification mechanisms, including:
-<ul><li><a class="xref" href="BB84.Notifications.Interfaces.Components.INotifyCollectionChanged.html">INotifyCollectionChanged</a> for changes to the collection's contents.</li><li><a class="xref" href="BB84.Notifications.Interfaces.Components.INotifyCollectionChanging.html">INotifyCollectionChanging</a> for notifications before changes occur.</li><li><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged">INotifyPropertyChanged</a> for changes to the collection's properties.</li><li><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanging">INotifyPropertyChanging</a> for notifications before property changes occur.</li></ul>
+  <div class="markdown level0 remarks"><p>This interface combines multiple notification mechanisms, including:</p>
+<pre><code>&lt;ul&gt;&lt;li&gt;&lt;xref href=&quot;BB84.Notifications.Interfaces.Components.INotifyCollectionChanged&quot; data-throw-if-not-resolved=&quot;false&quot;&gt;&lt;/xref&gt; for changes to the collection's contents.&lt;/li&gt;&lt;li&gt;&lt;xref href=&quot;BB84.Notifications.Interfaces.Components.INotifyCollectionChanging&quot; data-throw-if-not-resolved=&quot;false&quot;&gt;&lt;/xref&gt; for notifications before changes occur.&lt;/li&gt;&lt;li&gt;&lt;xref href=&quot;System.ComponentModel.INotifyPropertyChanged&quot; data-throw-if-not-resolved=&quot;false&quot;&gt;&lt;/xref&gt; for changes to the collection's properties.&lt;/li&gt;&lt;li&gt;&lt;xref href=&quot;System.ComponentModel.INotifyPropertyChanging&quot; data-throw-if-not-resolved=&quot;false&quot;&gt;&lt;/xref&gt; for notifications before property changes occur.&lt;/li&gt;&lt;/ul&gt;
+
 Implement this  interface to create collections that support advanced change tracking and notification scenarios.
+</code></pre>
 </div>
 
 

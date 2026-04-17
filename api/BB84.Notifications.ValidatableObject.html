@@ -260,6 +260,48 @@ Derived classes can use the provided methods to validate properties and manage v
 </h2>
 
 
+  <a id="BB84_Notifications_ValidatableObject_AddError_" data-uid="BB84.Notifications.ValidatableObject.AddError*"></a>
+
+  <h3 id="BB84_Notifications_ValidatableObject_AddError_System_String_System_String_" data-uid="BB84.Notifications.ValidatableObject.AddError(System.String,System.String)">
+  AddError(string, string?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/ValidatableObject.cs/#L157"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds an error message associated with a specific property name to the error collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void AddError(string propertyName, string? errorMessage)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name of the property for which the error is being added. Cannot be null or empty.</p>
+</dd>
+    <dt><code>errorMessage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The error message to associate with the property. Can be null, in which case no message is added.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="BB84_Notifications_ValidatableObject_AddError_System_String_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If the specified property does not already exist in the error collection, it is added.
+If the error message is not already associated with the property, it is appended to the
+list of errors for that property. This method raises the <a class="xref" href="BB84.Notifications.ValidatableObject.html#BB84_Notifications_ValidatableObject_RaiseErrorsChanged_System_String_">RaiseErrorsChanged(string)</a>
+event to notify listeners of changes to the error collection.</p>
+</div>
+
+
+
+
   <a id="BB84_Notifications_ValidatableObject_GetErrors_" data-uid="BB84.Notifications.ValidatableObject.GetErrors*"></a>
 
   <h3 id="BB84_Notifications_ValidatableObject_GetErrors_System_String_" data-uid="BB84.Notifications.ValidatableObject.GetErrors(System.String)">
@@ -384,10 +426,48 @@ After updating the property, it performs validation using the provided value and
 
 
 
-  <a id="BB84_Notifications_ValidatableObject_Vaildate_" data-uid="BB84.Notifications.ValidatableObject.Vaildate*"></a>
+  <a id="BB84_Notifications_ValidatableObject_Validate_" data-uid="BB84.Notifications.ValidatableObject.Validate*"></a>
 
-  <h3 id="BB84_Notifications_ValidatableObject_Vaildate__1___0_System_String_" data-uid="BB84.Notifications.ValidatableObject.Vaildate``1(``0,System.String)">
-  Vaildate&lt;T&gt;(T, string)
+  <h3 id="BB84_Notifications_ValidatableObject_Validate" data-uid="BB84.Notifications.ValidatableObject.Validate">
+  Validate()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/ValidatableObject.cs/#L95"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Validates the current object based on its data annotations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool Validate()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the object passes validation; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="BB84_Notifications_ValidatableObject_Validate_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method checks the object's properties and fields against the validation attributes
+defined in its class. If validation fails, the validation errors are stored for further
+inspection.</p>
+</div>
+
+
+
+
+  <a id="BB84_Notifications_ValidatableObject_Validate_" data-uid="BB84.Notifications.ValidatableObject.Validate*"></a>
+
+  <h3 id="BB84_Notifications_ValidatableObject_Validate__1___0_System_String_" data-uid="BB84.Notifications.ValidatableObject.Validate``1(``0,System.String)">
+  Validate&lt;T&gt;(T, string)
   <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/ValidatableObject.cs/#L128"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -396,7 +476,7 @@ After updating the property, it performs validation using the provided value and
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected void Vaildate&lt;T&gt;(T value, string propertyName)</code></pre>
+    <pre><code class="lang-csharp hljs">protected virtual void Validate&lt;T&gt;(T value, string propertyName)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -422,47 +502,9 @@ After updating the property, it performs validation using the provided value and
 
 
 
-  <h4 class="section" id="BB84_Notifications_ValidatableObject_Vaildate__1___0_System_String__remarks">Remarks</h4>
+  <h4 class="section" id="BB84_Notifications_ValidatableObject_Validate__1___0_System_String__remarks">Remarks</h4>
   <div class="markdown level1 remarks"><p>If the validation fails, any validation errors are added to the error collection for the specified
 property. This method clears existing errors for the property before performing validation.</p>
-</div>
-
-
-
-
-  <a id="BB84_Notifications_ValidatableObject_Validate_" data-uid="BB84.Notifications.ValidatableObject.Validate*"></a>
-
-  <h3 id="BB84_Notifications_ValidatableObject_Validate" data-uid="BB84.Notifications.ValidatableObject.Validate">
-  Validate()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/main/src/BB84.Notifications/ValidatableObject.cs/#L95"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Validates the current object based on its data annotations.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected bool Validate()</code></pre>
-  </div>
-
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the object passes validation; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-  <h4 class="section" id="BB84_Notifications_ValidatableObject_Validate_remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>This method checks the object's properties and fields against the validation attributes
-defined in its class. If validation fails, the validation errors are stored for further
-inspection.</p>
 </div>
 
 

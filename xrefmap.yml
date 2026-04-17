@@ -1840,6 +1840,22 @@ references:
   commentId: T:BB84.Notifications.ValidatableObject
   fullName: BB84.Notifications.ValidatableObject
   nameWithType: ValidatableObject
+- uid: BB84.Notifications.ValidatableObject.AddError(System.String,System.String)
+  name: AddError(string, string?)
+  href: api/BB84.Notifications.ValidatableObject.html#BB84_Notifications_ValidatableObject_AddError_System_String_System_String_
+  commentId: M:BB84.Notifications.ValidatableObject.AddError(System.String,System.String)
+  name.vb: AddError(String, String)
+  fullName: BB84.Notifications.ValidatableObject.AddError(string, string?)
+  fullName.vb: BB84.Notifications.ValidatableObject.AddError(String, String)
+  nameWithType: ValidatableObject.AddError(string, string?)
+  nameWithType.vb: ValidatableObject.AddError(String, String)
+- uid: BB84.Notifications.ValidatableObject.AddError*
+  name: AddError
+  href: api/BB84.Notifications.ValidatableObject.html#BB84_Notifications_ValidatableObject_AddError_
+  commentId: Overload:BB84.Notifications.ValidatableObject.AddError
+  isSpec: "True"
+  fullName: BB84.Notifications.ValidatableObject.AddError
+  nameWithType: ValidatableObject.AddError
 - uid: BB84.Notifications.ValidatableObject.ErrorsChanged
   name: ErrorsChanged
   href: api/BB84.Notifications.ValidatableObject.html#BB84_Notifications_ValidatableObject_ErrorsChanged
@@ -1920,22 +1936,6 @@ references:
   fullName.vb: BB84.Notifications.ValidatableObject.SetPropertyAndValidate(Of T)(T, T, String)
   nameWithType: ValidatableObject.SetPropertyAndValidate<T>(ref T, T, string)
   nameWithType.vb: ValidatableObject.SetPropertyAndValidate(Of T)(T, T, String)
-- uid: BB84.Notifications.ValidatableObject.Vaildate*
-  name: Vaildate
-  href: api/BB84.Notifications.ValidatableObject.html#BB84_Notifications_ValidatableObject_Vaildate_
-  commentId: Overload:BB84.Notifications.ValidatableObject.Vaildate
-  isSpec: "True"
-  fullName: BB84.Notifications.ValidatableObject.Vaildate
-  nameWithType: ValidatableObject.Vaildate
-- uid: BB84.Notifications.ValidatableObject.Vaildate``1(``0,System.String)
-  name: Vaildate<T>(T, string)
-  href: api/BB84.Notifications.ValidatableObject.html#BB84_Notifications_ValidatableObject_Vaildate__1___0_System_String_
-  commentId: M:BB84.Notifications.ValidatableObject.Vaildate``1(``0,System.String)
-  name.vb: Vaildate(Of T)(T, String)
-  fullName: BB84.Notifications.ValidatableObject.Vaildate<T>(T, string)
-  fullName.vb: BB84.Notifications.ValidatableObject.Vaildate(Of T)(T, String)
-  nameWithType: ValidatableObject.Vaildate<T>(T, string)
-  nameWithType.vb: ValidatableObject.Vaildate(Of T)(T, String)
 - uid: BB84.Notifications.ValidatableObject.Validate
   name: Validate()
   href: api/BB84.Notifications.ValidatableObject.html#BB84_Notifications_ValidatableObject_Validate
@@ -1949,3 +1949,12 @@ references:
   isSpec: "True"
   fullName: BB84.Notifications.ValidatableObject.Validate
   nameWithType: ValidatableObject.Validate
+- uid: BB84.Notifications.ValidatableObject.Validate``1(``0,System.String)
+  name: Validate<T>(T, string)
+  href: api/BB84.Notifications.ValidatableObject.html#BB84_Notifications_ValidatableObject_Validate__1___0_System_String_
+  commentId: M:BB84.Notifications.ValidatableObject.Validate``1(``0,System.String)
+  name.vb: Validate(Of T)(T, String)
+  fullName: BB84.Notifications.ValidatableObject.Validate<T>(T, string)
+  fullName.vb: BB84.Notifications.ValidatableObject.Validate(Of T)(T, String)
+  nameWithType: ValidatableObject.Validate<T>(T, string)
+  nameWithType.vb: ValidatableObject.Validate(Of T)(T, String)
