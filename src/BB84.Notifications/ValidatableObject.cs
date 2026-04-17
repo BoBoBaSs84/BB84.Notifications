@@ -62,7 +62,7 @@ public abstract class ValidatableObject : NotifiableObject, Interfaces.IValidata
     if (!EqualityComparer<T>.Default.Equals(fieldValue, newValue))
     {
       SetProperty(ref fieldValue, newValue, propertyName);
-      Vaildate(newValue, propertyName);
+      Validate(newValue, propertyName);
     }
   }
 
@@ -92,7 +92,7 @@ public abstract class ValidatableObject : NotifiableObject, Interfaces.IValidata
   /// <returns>
   /// <see langword="true"/> if the object passes validation; otherwise, <see langword="false"/>.
   /// </returns>
-  protected bool Validate()
+  protected virtual bool Validate()
   {
     ValidationContext context = new(this);
     List<ValidationResult> results = [];
@@ -125,7 +125,7 @@ public abstract class ValidatableObject : NotifiableObject, Interfaces.IValidata
   /// <param name="propertyName">
   /// The name of the property being validated. This must match the name of the property in the class.
   /// </param>
-  protected void Vaildate<T>(T value, string propertyName)
+  protected virtual void Validate<T>(T value, string propertyName)
   {
     ValidationContext context = new(this) { MemberName = propertyName };
     List<ValidationResult> results = [];
@@ -154,7 +154,7 @@ public abstract class ValidatableObject : NotifiableObject, Interfaces.IValidata
   /// <param name="errorMessage">
   /// The error message to associate with the property. Can be null, in which case no message is added.
   /// </param>
-  private void AddError(string propertyName, string? errorMessage)
+  protected void AddError(string propertyName, string? errorMessage)
   {
     if (_errors.ContainsKey(propertyName).Equals(false))
       _errors.Add(propertyName, []);
