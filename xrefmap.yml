@@ -312,6 +312,15 @@ references:
   commentId: T:BB84.Notifications.Commands.AsyncActionCommand
   fullName: BB84.Notifications.Commands.AsyncActionCommand
   nameWithType: AsyncActionCommand
+- uid: BB84.Notifications.Commands.AsyncActionCommand.#ctor(System.Func{System.Threading.CancellationToken,System.Threading.Tasks.Task},System.Func{System.Boolean},System.Action{System.Exception})
+  name: AsyncActionCommand(Func<CancellationToken, Task>, Func<bool>?, Action<Exception>?)
+  href: api/BB84.Notifications.Commands.AsyncActionCommand.html#BB84_Notifications_Commands_AsyncActionCommand__ctor_System_Func_System_Threading_CancellationToken_System_Threading_Tasks_Task__System_Func_System_Boolean__System_Action_System_Exception__
+  commentId: M:BB84.Notifications.Commands.AsyncActionCommand.#ctor(System.Func{System.Threading.CancellationToken,System.Threading.Tasks.Task},System.Func{System.Boolean},System.Action{System.Exception})
+  name.vb: New(Func(Of CancellationToken, Task), Func(Of Boolean), Action(Of Exception))
+  fullName: BB84.Notifications.Commands.AsyncActionCommand.AsyncActionCommand(System.Func<System.Threading.CancellationToken, System.Threading.Tasks.Task>, System.Func<bool>?, System.Action<System.Exception>?)
+  fullName.vb: BB84.Notifications.Commands.AsyncActionCommand.New(System.Func(Of System.Threading.CancellationToken, System.Threading.Tasks.Task), System.Func(Of Boolean), System.Action(Of System.Exception))
+  nameWithType: AsyncActionCommand.AsyncActionCommand(Func<CancellationToken, Task>, Func<bool>?, Action<Exception>?)
+  nameWithType.vb: AsyncActionCommand.New(Func(Of CancellationToken, Task), Func(Of Boolean), Action(Of Exception))
 - uid: BB84.Notifications.Commands.AsyncActionCommand.#ctor(System.Func{System.Threading.Tasks.Task},System.Func{System.Boolean},System.Action{System.Exception})
   name: AsyncActionCommand(Func<Task>, Func<bool>?, Action<Exception>?)
   href: api/BB84.Notifications.Commands.AsyncActionCommand.html#BB84_Notifications_Commands_AsyncActionCommand__ctor_System_Func_System_Threading_Tasks_Task__System_Func_System_Boolean__System_Action_System_Exception__
@@ -359,6 +368,32 @@ references:
   commentId: E:BB84.Notifications.Commands.AsyncActionCommand.CanExecuteChanged
   fullName: BB84.Notifications.Commands.AsyncActionCommand.CanExecuteChanged
   nameWithType: AsyncActionCommand.CanExecuteChanged
+- uid: BB84.Notifications.Commands.AsyncActionCommand.Cancel
+  name: Cancel()
+  href: api/BB84.Notifications.Commands.AsyncActionCommand.html#BB84_Notifications_Commands_AsyncActionCommand_Cancel
+  commentId: M:BB84.Notifications.Commands.AsyncActionCommand.Cancel
+  fullName: BB84.Notifications.Commands.AsyncActionCommand.Cancel()
+  nameWithType: AsyncActionCommand.Cancel()
+- uid: BB84.Notifications.Commands.AsyncActionCommand.Cancel*
+  name: Cancel
+  href: api/BB84.Notifications.Commands.AsyncActionCommand.html#BB84_Notifications_Commands_AsyncActionCommand_Cancel_
+  commentId: Overload:BB84.Notifications.Commands.AsyncActionCommand.Cancel
+  isSpec: "True"
+  fullName: BB84.Notifications.Commands.AsyncActionCommand.Cancel
+  nameWithType: AsyncActionCommand.Cancel
+- uid: BB84.Notifications.Commands.AsyncActionCommand.CancelCommand
+  name: CancelCommand
+  href: api/BB84.Notifications.Commands.AsyncActionCommand.html#BB84_Notifications_Commands_AsyncActionCommand_CancelCommand
+  commentId: P:BB84.Notifications.Commands.AsyncActionCommand.CancelCommand
+  fullName: BB84.Notifications.Commands.AsyncActionCommand.CancelCommand
+  nameWithType: AsyncActionCommand.CancelCommand
+- uid: BB84.Notifications.Commands.AsyncActionCommand.CancelCommand*
+  name: CancelCommand
+  href: api/BB84.Notifications.Commands.AsyncActionCommand.html#BB84_Notifications_Commands_AsyncActionCommand_CancelCommand_
+  commentId: Overload:BB84.Notifications.Commands.AsyncActionCommand.CancelCommand
+  isSpec: "True"
+  fullName: BB84.Notifications.Commands.AsyncActionCommand.CancelCommand
+  nameWithType: AsyncActionCommand.CancelCommand
 - uid: BB84.Notifications.Commands.AsyncActionCommand.Execute(System.Object)
   name: Execute(object?)
   href: api/BB84.Notifications.Commands.AsyncActionCommand.html#BB84_Notifications_Commands_AsyncActionCommand_Execute_System_Object_
@@ -381,6 +416,12 @@ references:
   commentId: M:BB84.Notifications.Commands.AsyncActionCommand.ExecuteAsync
   fullName: BB84.Notifications.Commands.AsyncActionCommand.ExecuteAsync()
   nameWithType: AsyncActionCommand.ExecuteAsync()
+- uid: BB84.Notifications.Commands.AsyncActionCommand.ExecuteAsync(System.Threading.CancellationToken)
+  name: ExecuteAsync(CancellationToken)
+  href: api/BB84.Notifications.Commands.AsyncActionCommand.html#BB84_Notifications_Commands_AsyncActionCommand_ExecuteAsync_System_Threading_CancellationToken_
+  commentId: M:BB84.Notifications.Commands.AsyncActionCommand.ExecuteAsync(System.Threading.CancellationToken)
+  fullName: BB84.Notifications.Commands.AsyncActionCommand.ExecuteAsync(System.Threading.CancellationToken)
+  nameWithType: AsyncActionCommand.ExecuteAsync(CancellationToken)
 - uid: BB84.Notifications.Commands.AsyncActionCommand.ExecuteAsync*
   name: ExecuteAsync
   href: api/BB84.Notifications.Commands.AsyncActionCommand.html#BB84_Notifications_Commands_AsyncActionCommand_ExecuteAsync_
@@ -388,6 +429,19 @@ references:
   isSpec: "True"
   fullName: BB84.Notifications.Commands.AsyncActionCommand.ExecuteAsync
   nameWithType: AsyncActionCommand.ExecuteAsync
+- uid: BB84.Notifications.Commands.AsyncActionCommand.IsCancellationRequested
+  name: IsCancellationRequested
+  href: api/BB84.Notifications.Commands.AsyncActionCommand.html#BB84_Notifications_Commands_AsyncActionCommand_IsCancellationRequested
+  commentId: P:BB84.Notifications.Commands.AsyncActionCommand.IsCancellationRequested
+  fullName: BB84.Notifications.Commands.AsyncActionCommand.IsCancellationRequested
+  nameWithType: AsyncActionCommand.IsCancellationRequested
+- uid: BB84.Notifications.Commands.AsyncActionCommand.IsCancellationRequested*
+  name: IsCancellationRequested
+  href: api/BB84.Notifications.Commands.AsyncActionCommand.html#BB84_Notifications_Commands_AsyncActionCommand_IsCancellationRequested_
+  commentId: Overload:BB84.Notifications.Commands.AsyncActionCommand.IsCancellationRequested
+  isSpec: "True"
+  fullName: BB84.Notifications.Commands.AsyncActionCommand.IsCancellationRequested
+  nameWithType: AsyncActionCommand.IsCancellationRequested
 - uid: BB84.Notifications.Commands.AsyncActionCommand.RaiseCanExecuteChanged
   name: RaiseCanExecuteChanged()
   href: api/BB84.Notifications.Commands.AsyncActionCommand.html#BB84_Notifications_Commands_AsyncActionCommand_RaiseCanExecuteChanged
@@ -410,6 +464,15 @@ references:
   fullName.vb: BB84.Notifications.Commands.AsyncActionCommand(Of T)
   nameWithType: AsyncActionCommand<T>
   nameWithType.vb: AsyncActionCommand(Of T)
+- uid: BB84.Notifications.Commands.AsyncActionCommand`1.#ctor(System.Func{`0,System.Threading.CancellationToken,System.Threading.Tasks.Task},System.Func{`0,System.Boolean},System.Action{System.Exception})
+  name: AsyncActionCommand(Func<T, CancellationToken, Task>, Func<T, bool>?, Action<Exception>?)
+  href: api/BB84.Notifications.Commands.AsyncActionCommand-1.html#BB84_Notifications_Commands_AsyncActionCommand_1__ctor_System_Func__0_System_Threading_CancellationToken_System_Threading_Tasks_Task__System_Func__0_System_Boolean__System_Action_System_Exception__
+  commentId: M:BB84.Notifications.Commands.AsyncActionCommand`1.#ctor(System.Func{`0,System.Threading.CancellationToken,System.Threading.Tasks.Task},System.Func{`0,System.Boolean},System.Action{System.Exception})
+  name.vb: New(Func(Of T, CancellationToken, Task), Func(Of T, Boolean), Action(Of Exception))
+  fullName: BB84.Notifications.Commands.AsyncActionCommand<T>.AsyncActionCommand(System.Func<T, System.Threading.CancellationToken, System.Threading.Tasks.Task>, System.Func<T, bool>?, System.Action<System.Exception>?)
+  fullName.vb: BB84.Notifications.Commands.AsyncActionCommand(Of T).New(System.Func(Of T, System.Threading.CancellationToken, System.Threading.Tasks.Task), System.Func(Of T, Boolean), System.Action(Of System.Exception))
+  nameWithType: AsyncActionCommand<T>.AsyncActionCommand(Func<T, CancellationToken, Task>, Func<T, bool>?, Action<Exception>?)
+  nameWithType.vb: AsyncActionCommand(Of T).New(Func(Of T, CancellationToken, Task), Func(Of T, Boolean), Action(Of Exception))
 - uid: BB84.Notifications.Commands.AsyncActionCommand`1.#ctor(System.Func{`0,System.Threading.Tasks.Task},System.Func{`0,System.Boolean},System.Action{System.Exception})
   name: AsyncActionCommand(Func<T, Task>, Func<T, bool>?, Action<Exception>?)
   href: api/BB84.Notifications.Commands.AsyncActionCommand-1.html#BB84_Notifications_Commands_AsyncActionCommand_1__ctor_System_Func__0_System_Threading_Tasks_Task__System_Func__0_System_Boolean__System_Action_System_Exception__
@@ -463,6 +526,40 @@ references:
   fullName.vb: BB84.Notifications.Commands.AsyncActionCommand(Of T).CanExecuteChanged
   nameWithType: AsyncActionCommand<T>.CanExecuteChanged
   nameWithType.vb: AsyncActionCommand(Of T).CanExecuteChanged
+- uid: BB84.Notifications.Commands.AsyncActionCommand`1.Cancel
+  name: Cancel()
+  href: api/BB84.Notifications.Commands.AsyncActionCommand-1.html#BB84_Notifications_Commands_AsyncActionCommand_1_Cancel
+  commentId: M:BB84.Notifications.Commands.AsyncActionCommand`1.Cancel
+  fullName: BB84.Notifications.Commands.AsyncActionCommand<T>.Cancel()
+  fullName.vb: BB84.Notifications.Commands.AsyncActionCommand(Of T).Cancel()
+  nameWithType: AsyncActionCommand<T>.Cancel()
+  nameWithType.vb: AsyncActionCommand(Of T).Cancel()
+- uid: BB84.Notifications.Commands.AsyncActionCommand`1.Cancel*
+  name: Cancel
+  href: api/BB84.Notifications.Commands.AsyncActionCommand-1.html#BB84_Notifications_Commands_AsyncActionCommand_1_Cancel_
+  commentId: Overload:BB84.Notifications.Commands.AsyncActionCommand`1.Cancel
+  isSpec: "True"
+  fullName: BB84.Notifications.Commands.AsyncActionCommand<T>.Cancel
+  fullName.vb: BB84.Notifications.Commands.AsyncActionCommand(Of T).Cancel
+  nameWithType: AsyncActionCommand<T>.Cancel
+  nameWithType.vb: AsyncActionCommand(Of T).Cancel
+- uid: BB84.Notifications.Commands.AsyncActionCommand`1.CancelCommand
+  name: CancelCommand
+  href: api/BB84.Notifications.Commands.AsyncActionCommand-1.html#BB84_Notifications_Commands_AsyncActionCommand_1_CancelCommand
+  commentId: P:BB84.Notifications.Commands.AsyncActionCommand`1.CancelCommand
+  fullName: BB84.Notifications.Commands.AsyncActionCommand<T>.CancelCommand
+  fullName.vb: BB84.Notifications.Commands.AsyncActionCommand(Of T).CancelCommand
+  nameWithType: AsyncActionCommand<T>.CancelCommand
+  nameWithType.vb: AsyncActionCommand(Of T).CancelCommand
+- uid: BB84.Notifications.Commands.AsyncActionCommand`1.CancelCommand*
+  name: CancelCommand
+  href: api/BB84.Notifications.Commands.AsyncActionCommand-1.html#BB84_Notifications_Commands_AsyncActionCommand_1_CancelCommand_
+  commentId: Overload:BB84.Notifications.Commands.AsyncActionCommand`1.CancelCommand
+  isSpec: "True"
+  fullName: BB84.Notifications.Commands.AsyncActionCommand<T>.CancelCommand
+  fullName.vb: BB84.Notifications.Commands.AsyncActionCommand(Of T).CancelCommand
+  nameWithType: AsyncActionCommand<T>.CancelCommand
+  nameWithType.vb: AsyncActionCommand(Of T).CancelCommand
 - uid: BB84.Notifications.Commands.AsyncActionCommand`1.Execute(System.Object)
   name: Execute(object?)
   href: api/BB84.Notifications.Commands.AsyncActionCommand-1.html#BB84_Notifications_Commands_AsyncActionCommand_1_Execute_System_Object_
@@ -489,6 +586,14 @@ references:
   fullName.vb: BB84.Notifications.Commands.AsyncActionCommand(Of T).ExecuteAsync(T)
   nameWithType: AsyncActionCommand<T>.ExecuteAsync(T)
   nameWithType.vb: AsyncActionCommand(Of T).ExecuteAsync(T)
+- uid: BB84.Notifications.Commands.AsyncActionCommand`1.ExecuteAsync(`0,System.Threading.CancellationToken)
+  name: ExecuteAsync(T, CancellationToken)
+  href: api/BB84.Notifications.Commands.AsyncActionCommand-1.html#BB84_Notifications_Commands_AsyncActionCommand_1_ExecuteAsync__0_System_Threading_CancellationToken_
+  commentId: M:BB84.Notifications.Commands.AsyncActionCommand`1.ExecuteAsync(`0,System.Threading.CancellationToken)
+  fullName: BB84.Notifications.Commands.AsyncActionCommand<T>.ExecuteAsync(T, System.Threading.CancellationToken)
+  fullName.vb: BB84.Notifications.Commands.AsyncActionCommand(Of T).ExecuteAsync(T, System.Threading.CancellationToken)
+  nameWithType: AsyncActionCommand<T>.ExecuteAsync(T, CancellationToken)
+  nameWithType.vb: AsyncActionCommand(Of T).ExecuteAsync(T, CancellationToken)
 - uid: BB84.Notifications.Commands.AsyncActionCommand`1.ExecuteAsync*
   name: ExecuteAsync
   href: api/BB84.Notifications.Commands.AsyncActionCommand-1.html#BB84_Notifications_Commands_AsyncActionCommand_1_ExecuteAsync_
@@ -498,6 +603,23 @@ references:
   fullName.vb: BB84.Notifications.Commands.AsyncActionCommand(Of T).ExecuteAsync
   nameWithType: AsyncActionCommand<T>.ExecuteAsync
   nameWithType.vb: AsyncActionCommand(Of T).ExecuteAsync
+- uid: BB84.Notifications.Commands.AsyncActionCommand`1.IsCancellationRequested
+  name: IsCancellationRequested
+  href: api/BB84.Notifications.Commands.AsyncActionCommand-1.html#BB84_Notifications_Commands_AsyncActionCommand_1_IsCancellationRequested
+  commentId: P:BB84.Notifications.Commands.AsyncActionCommand`1.IsCancellationRequested
+  fullName: BB84.Notifications.Commands.AsyncActionCommand<T>.IsCancellationRequested
+  fullName.vb: BB84.Notifications.Commands.AsyncActionCommand(Of T).IsCancellationRequested
+  nameWithType: AsyncActionCommand<T>.IsCancellationRequested
+  nameWithType.vb: AsyncActionCommand(Of T).IsCancellationRequested
+- uid: BB84.Notifications.Commands.AsyncActionCommand`1.IsCancellationRequested*
+  name: IsCancellationRequested
+  href: api/BB84.Notifications.Commands.AsyncActionCommand-1.html#BB84_Notifications_Commands_AsyncActionCommand_1_IsCancellationRequested_
+  commentId: Overload:BB84.Notifications.Commands.AsyncActionCommand`1.IsCancellationRequested
+  isSpec: "True"
+  fullName: BB84.Notifications.Commands.AsyncActionCommand<T>.IsCancellationRequested
+  fullName.vb: BB84.Notifications.Commands.AsyncActionCommand(Of T).IsCancellationRequested
+  nameWithType: AsyncActionCommand<T>.IsCancellationRequested
+  nameWithType.vb: AsyncActionCommand(Of T).IsCancellationRequested
 - uid: BB84.Notifications.Commands.AsyncActionCommand`1.RaiseCanExecuteChanged
   name: RaiseCanExecuteChanged()
   href: api/BB84.Notifications.Commands.AsyncActionCommand-1.html#BB84_Notifications_Commands_AsyncActionCommand_1_RaiseCanExecuteChanged
@@ -835,6 +957,31 @@ references:
   isSpec: "True"
   fullName: BB84.Notifications.Extensions.TaskExtensions.FireAndForgetSafeAsync
   nameWithType: TaskExtensions.FireAndForgetSafeAsync
+- uid: BB84.Notifications.Extensions.WeakEventExtensions
+  name: WeakEventExtensions
+  href: api/BB84.Notifications.Extensions.WeakEventExtensions.html
+  commentId: T:BB84.Notifications.Extensions.WeakEventExtensions
+  fullName: BB84.Notifications.Extensions.WeakEventExtensions
+  nameWithType: WeakEventExtensions
+- uid: BB84.Notifications.Extensions.WeakEventExtensions.WeakSubscribe(System.ComponentModel.INotifyPropertyChanged,System.ComponentModel.PropertyChangedEventHandler)
+  name: WeakSubscribe(INotifyPropertyChanged, PropertyChangedEventHandler)
+  href: api/BB84.Notifications.Extensions.WeakEventExtensions.html#BB84_Notifications_Extensions_WeakEventExtensions_WeakSubscribe_System_ComponentModel_INotifyPropertyChanged_System_ComponentModel_PropertyChangedEventHandler_
+  commentId: M:BB84.Notifications.Extensions.WeakEventExtensions.WeakSubscribe(System.ComponentModel.INotifyPropertyChanged,System.ComponentModel.PropertyChangedEventHandler)
+  fullName: BB84.Notifications.Extensions.WeakEventExtensions.WeakSubscribe(System.ComponentModel.INotifyPropertyChanged, System.ComponentModel.PropertyChangedEventHandler)
+  nameWithType: WeakEventExtensions.WeakSubscribe(INotifyPropertyChanged, PropertyChangedEventHandler)
+- uid: BB84.Notifications.Extensions.WeakEventExtensions.WeakSubscribe(System.ComponentModel.INotifyPropertyChanging,System.ComponentModel.PropertyChangingEventHandler)
+  name: WeakSubscribe(INotifyPropertyChanging, PropertyChangingEventHandler)
+  href: api/BB84.Notifications.Extensions.WeakEventExtensions.html#BB84_Notifications_Extensions_WeakEventExtensions_WeakSubscribe_System_ComponentModel_INotifyPropertyChanging_System_ComponentModel_PropertyChangingEventHandler_
+  commentId: M:BB84.Notifications.Extensions.WeakEventExtensions.WeakSubscribe(System.ComponentModel.INotifyPropertyChanging,System.ComponentModel.PropertyChangingEventHandler)
+  fullName: BB84.Notifications.Extensions.WeakEventExtensions.WeakSubscribe(System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.PropertyChangingEventHandler)
+  nameWithType: WeakEventExtensions.WeakSubscribe(INotifyPropertyChanging, PropertyChangingEventHandler)
+- uid: BB84.Notifications.Extensions.WeakEventExtensions.WeakSubscribe*
+  name: WeakSubscribe
+  href: api/BB84.Notifications.Extensions.WeakEventExtensions.html#BB84_Notifications_Extensions_WeakEventExtensions_WeakSubscribe_
+  commentId: Overload:BB84.Notifications.Extensions.WeakEventExtensions.WeakSubscribe
+  isSpec: "True"
+  fullName: BB84.Notifications.Extensions.WeakEventExtensions.WeakSubscribe
+  nameWithType: WeakEventExtensions.WeakSubscribe
 - uid: BB84.Notifications.Interfaces
   name: BB84.Notifications.Interfaces
   href: api/BB84.Notifications.Interfaces.html
@@ -971,12 +1118,44 @@ references:
   isSpec: "True"
   fullName: BB84.Notifications.Interfaces.Commands.IAsyncActionCommand.CanExecute
   nameWithType: IAsyncActionCommand.CanExecute
+- uid: BB84.Notifications.Interfaces.Commands.IAsyncActionCommand.Cancel
+  name: Cancel()
+  href: api/BB84.Notifications.Interfaces.Commands.IAsyncActionCommand.html#BB84_Notifications_Interfaces_Commands_IAsyncActionCommand_Cancel
+  commentId: M:BB84.Notifications.Interfaces.Commands.IAsyncActionCommand.Cancel
+  fullName: BB84.Notifications.Interfaces.Commands.IAsyncActionCommand.Cancel()
+  nameWithType: IAsyncActionCommand.Cancel()
+- uid: BB84.Notifications.Interfaces.Commands.IAsyncActionCommand.Cancel*
+  name: Cancel
+  href: api/BB84.Notifications.Interfaces.Commands.IAsyncActionCommand.html#BB84_Notifications_Interfaces_Commands_IAsyncActionCommand_Cancel_
+  commentId: Overload:BB84.Notifications.Interfaces.Commands.IAsyncActionCommand.Cancel
+  isSpec: "True"
+  fullName: BB84.Notifications.Interfaces.Commands.IAsyncActionCommand.Cancel
+  nameWithType: IAsyncActionCommand.Cancel
+- uid: BB84.Notifications.Interfaces.Commands.IAsyncActionCommand.CancelCommand
+  name: CancelCommand
+  href: api/BB84.Notifications.Interfaces.Commands.IAsyncActionCommand.html#BB84_Notifications_Interfaces_Commands_IAsyncActionCommand_CancelCommand
+  commentId: P:BB84.Notifications.Interfaces.Commands.IAsyncActionCommand.CancelCommand
+  fullName: BB84.Notifications.Interfaces.Commands.IAsyncActionCommand.CancelCommand
+  nameWithType: IAsyncActionCommand.CancelCommand
+- uid: BB84.Notifications.Interfaces.Commands.IAsyncActionCommand.CancelCommand*
+  name: CancelCommand
+  href: api/BB84.Notifications.Interfaces.Commands.IAsyncActionCommand.html#BB84_Notifications_Interfaces_Commands_IAsyncActionCommand_CancelCommand_
+  commentId: Overload:BB84.Notifications.Interfaces.Commands.IAsyncActionCommand.CancelCommand
+  isSpec: "True"
+  fullName: BB84.Notifications.Interfaces.Commands.IAsyncActionCommand.CancelCommand
+  nameWithType: IAsyncActionCommand.CancelCommand
 - uid: BB84.Notifications.Interfaces.Commands.IAsyncActionCommand.ExecuteAsync
   name: ExecuteAsync()
   href: api/BB84.Notifications.Interfaces.Commands.IAsyncActionCommand.html#BB84_Notifications_Interfaces_Commands_IAsyncActionCommand_ExecuteAsync
   commentId: M:BB84.Notifications.Interfaces.Commands.IAsyncActionCommand.ExecuteAsync
   fullName: BB84.Notifications.Interfaces.Commands.IAsyncActionCommand.ExecuteAsync()
   nameWithType: IAsyncActionCommand.ExecuteAsync()
+- uid: BB84.Notifications.Interfaces.Commands.IAsyncActionCommand.ExecuteAsync(System.Threading.CancellationToken)
+  name: ExecuteAsync(CancellationToken)
+  href: api/BB84.Notifications.Interfaces.Commands.IAsyncActionCommand.html#BB84_Notifications_Interfaces_Commands_IAsyncActionCommand_ExecuteAsync_System_Threading_CancellationToken_
+  commentId: M:BB84.Notifications.Interfaces.Commands.IAsyncActionCommand.ExecuteAsync(System.Threading.CancellationToken)
+  fullName: BB84.Notifications.Interfaces.Commands.IAsyncActionCommand.ExecuteAsync(System.Threading.CancellationToken)
+  nameWithType: IAsyncActionCommand.ExecuteAsync(CancellationToken)
 - uid: BB84.Notifications.Interfaces.Commands.IAsyncActionCommand.ExecuteAsync*
   name: ExecuteAsync
   href: api/BB84.Notifications.Interfaces.Commands.IAsyncActionCommand.html#BB84_Notifications_Interfaces_Commands_IAsyncActionCommand_ExecuteAsync_
@@ -984,6 +1163,19 @@ references:
   isSpec: "True"
   fullName: BB84.Notifications.Interfaces.Commands.IAsyncActionCommand.ExecuteAsync
   nameWithType: IAsyncActionCommand.ExecuteAsync
+- uid: BB84.Notifications.Interfaces.Commands.IAsyncActionCommand.IsCancellationRequested
+  name: IsCancellationRequested
+  href: api/BB84.Notifications.Interfaces.Commands.IAsyncActionCommand.html#BB84_Notifications_Interfaces_Commands_IAsyncActionCommand_IsCancellationRequested
+  commentId: P:BB84.Notifications.Interfaces.Commands.IAsyncActionCommand.IsCancellationRequested
+  fullName: BB84.Notifications.Interfaces.Commands.IAsyncActionCommand.IsCancellationRequested
+  nameWithType: IAsyncActionCommand.IsCancellationRequested
+- uid: BB84.Notifications.Interfaces.Commands.IAsyncActionCommand.IsCancellationRequested*
+  name: IsCancellationRequested
+  href: api/BB84.Notifications.Interfaces.Commands.IAsyncActionCommand.html#BB84_Notifications_Interfaces_Commands_IAsyncActionCommand_IsCancellationRequested_
+  commentId: Overload:BB84.Notifications.Interfaces.Commands.IAsyncActionCommand.IsCancellationRequested
+  isSpec: "True"
+  fullName: BB84.Notifications.Interfaces.Commands.IAsyncActionCommand.IsCancellationRequested
+  nameWithType: IAsyncActionCommand.IsCancellationRequested
 - uid: BB84.Notifications.Interfaces.Commands.IAsyncActionCommand.RaiseCanExecuteChanged
   name: RaiseCanExecuteChanged()
   href: api/BB84.Notifications.Interfaces.Commands.IAsyncActionCommand.html#BB84_Notifications_Interfaces_Commands_IAsyncActionCommand_RaiseCanExecuteChanged
@@ -1023,6 +1215,40 @@ references:
   fullName.vb: BB84.Notifications.Interfaces.Commands.IAsyncActionCommand(Of T).CanExecute
   nameWithType: IAsyncActionCommand<T>.CanExecute
   nameWithType.vb: IAsyncActionCommand(Of T).CanExecute
+- uid: BB84.Notifications.Interfaces.Commands.IAsyncActionCommand`1.Cancel
+  name: Cancel()
+  href: api/BB84.Notifications.Interfaces.Commands.IAsyncActionCommand-1.html#BB84_Notifications_Interfaces_Commands_IAsyncActionCommand_1_Cancel
+  commentId: M:BB84.Notifications.Interfaces.Commands.IAsyncActionCommand`1.Cancel
+  fullName: BB84.Notifications.Interfaces.Commands.IAsyncActionCommand<T>.Cancel()
+  fullName.vb: BB84.Notifications.Interfaces.Commands.IAsyncActionCommand(Of T).Cancel()
+  nameWithType: IAsyncActionCommand<T>.Cancel()
+  nameWithType.vb: IAsyncActionCommand(Of T).Cancel()
+- uid: BB84.Notifications.Interfaces.Commands.IAsyncActionCommand`1.Cancel*
+  name: Cancel
+  href: api/BB84.Notifications.Interfaces.Commands.IAsyncActionCommand-1.html#BB84_Notifications_Interfaces_Commands_IAsyncActionCommand_1_Cancel_
+  commentId: Overload:BB84.Notifications.Interfaces.Commands.IAsyncActionCommand`1.Cancel
+  isSpec: "True"
+  fullName: BB84.Notifications.Interfaces.Commands.IAsyncActionCommand<T>.Cancel
+  fullName.vb: BB84.Notifications.Interfaces.Commands.IAsyncActionCommand(Of T).Cancel
+  nameWithType: IAsyncActionCommand<T>.Cancel
+  nameWithType.vb: IAsyncActionCommand(Of T).Cancel
+- uid: BB84.Notifications.Interfaces.Commands.IAsyncActionCommand`1.CancelCommand
+  name: CancelCommand
+  href: api/BB84.Notifications.Interfaces.Commands.IAsyncActionCommand-1.html#BB84_Notifications_Interfaces_Commands_IAsyncActionCommand_1_CancelCommand
+  commentId: P:BB84.Notifications.Interfaces.Commands.IAsyncActionCommand`1.CancelCommand
+  fullName: BB84.Notifications.Interfaces.Commands.IAsyncActionCommand<T>.CancelCommand
+  fullName.vb: BB84.Notifications.Interfaces.Commands.IAsyncActionCommand(Of T).CancelCommand
+  nameWithType: IAsyncActionCommand<T>.CancelCommand
+  nameWithType.vb: IAsyncActionCommand(Of T).CancelCommand
+- uid: BB84.Notifications.Interfaces.Commands.IAsyncActionCommand`1.CancelCommand*
+  name: CancelCommand
+  href: api/BB84.Notifications.Interfaces.Commands.IAsyncActionCommand-1.html#BB84_Notifications_Interfaces_Commands_IAsyncActionCommand_1_CancelCommand_
+  commentId: Overload:BB84.Notifications.Interfaces.Commands.IAsyncActionCommand`1.CancelCommand
+  isSpec: "True"
+  fullName: BB84.Notifications.Interfaces.Commands.IAsyncActionCommand<T>.CancelCommand
+  fullName.vb: BB84.Notifications.Interfaces.Commands.IAsyncActionCommand(Of T).CancelCommand
+  nameWithType: IAsyncActionCommand<T>.CancelCommand
+  nameWithType.vb: IAsyncActionCommand(Of T).CancelCommand
 - uid: BB84.Notifications.Interfaces.Commands.IAsyncActionCommand`1.ExecuteAsync(`0)
   name: ExecuteAsync(T)
   href: api/BB84.Notifications.Interfaces.Commands.IAsyncActionCommand-1.html#BB84_Notifications_Interfaces_Commands_IAsyncActionCommand_1_ExecuteAsync__0_
@@ -1031,6 +1257,14 @@ references:
   fullName.vb: BB84.Notifications.Interfaces.Commands.IAsyncActionCommand(Of T).ExecuteAsync(T)
   nameWithType: IAsyncActionCommand<T>.ExecuteAsync(T)
   nameWithType.vb: IAsyncActionCommand(Of T).ExecuteAsync(T)
+- uid: BB84.Notifications.Interfaces.Commands.IAsyncActionCommand`1.ExecuteAsync(`0,System.Threading.CancellationToken)
+  name: ExecuteAsync(T, CancellationToken)
+  href: api/BB84.Notifications.Interfaces.Commands.IAsyncActionCommand-1.html#BB84_Notifications_Interfaces_Commands_IAsyncActionCommand_1_ExecuteAsync__0_System_Threading_CancellationToken_
+  commentId: M:BB84.Notifications.Interfaces.Commands.IAsyncActionCommand`1.ExecuteAsync(`0,System.Threading.CancellationToken)
+  fullName: BB84.Notifications.Interfaces.Commands.IAsyncActionCommand<T>.ExecuteAsync(T, System.Threading.CancellationToken)
+  fullName.vb: BB84.Notifications.Interfaces.Commands.IAsyncActionCommand(Of T).ExecuteAsync(T, System.Threading.CancellationToken)
+  nameWithType: IAsyncActionCommand<T>.ExecuteAsync(T, CancellationToken)
+  nameWithType.vb: IAsyncActionCommand(Of T).ExecuteAsync(T, CancellationToken)
 - uid: BB84.Notifications.Interfaces.Commands.IAsyncActionCommand`1.ExecuteAsync*
   name: ExecuteAsync
   href: api/BB84.Notifications.Interfaces.Commands.IAsyncActionCommand-1.html#BB84_Notifications_Interfaces_Commands_IAsyncActionCommand_1_ExecuteAsync_
@@ -1040,6 +1274,23 @@ references:
   fullName.vb: BB84.Notifications.Interfaces.Commands.IAsyncActionCommand(Of T).ExecuteAsync
   nameWithType: IAsyncActionCommand<T>.ExecuteAsync
   nameWithType.vb: IAsyncActionCommand(Of T).ExecuteAsync
+- uid: BB84.Notifications.Interfaces.Commands.IAsyncActionCommand`1.IsCancellationRequested
+  name: IsCancellationRequested
+  href: api/BB84.Notifications.Interfaces.Commands.IAsyncActionCommand-1.html#BB84_Notifications_Interfaces_Commands_IAsyncActionCommand_1_IsCancellationRequested
+  commentId: P:BB84.Notifications.Interfaces.Commands.IAsyncActionCommand`1.IsCancellationRequested
+  fullName: BB84.Notifications.Interfaces.Commands.IAsyncActionCommand<T>.IsCancellationRequested
+  fullName.vb: BB84.Notifications.Interfaces.Commands.IAsyncActionCommand(Of T).IsCancellationRequested
+  nameWithType: IAsyncActionCommand<T>.IsCancellationRequested
+  nameWithType.vb: IAsyncActionCommand(Of T).IsCancellationRequested
+- uid: BB84.Notifications.Interfaces.Commands.IAsyncActionCommand`1.IsCancellationRequested*
+  name: IsCancellationRequested
+  href: api/BB84.Notifications.Interfaces.Commands.IAsyncActionCommand-1.html#BB84_Notifications_Interfaces_Commands_IAsyncActionCommand_1_IsCancellationRequested_
+  commentId: Overload:BB84.Notifications.Interfaces.Commands.IAsyncActionCommand`1.IsCancellationRequested
+  isSpec: "True"
+  fullName: BB84.Notifications.Interfaces.Commands.IAsyncActionCommand<T>.IsCancellationRequested
+  fullName.vb: BB84.Notifications.Interfaces.Commands.IAsyncActionCommand(Of T).IsCancellationRequested
+  nameWithType: IAsyncActionCommand<T>.IsCancellationRequested
+  nameWithType.vb: IAsyncActionCommand(Of T).IsCancellationRequested
 - uid: BB84.Notifications.Interfaces.Commands.IAsyncActionCommand`1.RaiseCanExecuteChanged
   name: RaiseCanExecuteChanged()
   href: api/BB84.Notifications.Interfaces.Commands.IAsyncActionCommand-1.html#BB84_Notifications_Interfaces_Commands_IAsyncActionCommand_1_RaiseCanExecuteChanged
@@ -1093,6 +1344,15 @@ references:
   commentId: T:BB84.Notifications.Interfaces.INotifiableCollection
   fullName: BB84.Notifications.Interfaces.INotifiableCollection
   nameWithType: INotifiableCollection
+- uid: BB84.Notifications.Interfaces.INotifiableCollection`1
+  name: INotifiableCollection<T>
+  href: api/BB84.Notifications.Interfaces.INotifiableCollection-1.html
+  commentId: T:BB84.Notifications.Interfaces.INotifiableCollection`1
+  name.vb: INotifiableCollection(Of T)
+  fullName: BB84.Notifications.Interfaces.INotifiableCollection<T>
+  fullName.vb: BB84.Notifications.Interfaces.INotifiableCollection(Of T)
+  nameWithType: INotifiableCollection<T>
+  nameWithType.vb: INotifiableCollection(Of T)
 - uid: BB84.Notifications.Interfaces.INotifiableObject
   name: INotifiableObject
   href: api/BB84.Notifications.Interfaces.INotifiableObject.html
@@ -1168,6 +1428,23 @@ references:
   fullName.vb: BB84.Notifications.Interfaces.IReversibleProperty(Of T)
   nameWithType: IReversibleProperty<T>
   nameWithType.vb: IReversibleProperty(Of T)
+- uid: BB84.Notifications.Interfaces.IReversibleProperty`1.Clear
+  name: Clear()
+  href: api/BB84.Notifications.Interfaces.IReversibleProperty-1.html#BB84_Notifications_Interfaces_IReversibleProperty_1_Clear
+  commentId: M:BB84.Notifications.Interfaces.IReversibleProperty`1.Clear
+  fullName: BB84.Notifications.Interfaces.IReversibleProperty<T>.Clear()
+  fullName.vb: BB84.Notifications.Interfaces.IReversibleProperty(Of T).Clear()
+  nameWithType: IReversibleProperty<T>.Clear()
+  nameWithType.vb: IReversibleProperty(Of T).Clear()
+- uid: BB84.Notifications.Interfaces.IReversibleProperty`1.Clear*
+  name: Clear
+  href: api/BB84.Notifications.Interfaces.IReversibleProperty-1.html#BB84_Notifications_Interfaces_IReversibleProperty_1_Clear_
+  commentId: Overload:BB84.Notifications.Interfaces.IReversibleProperty`1.Clear
+  isSpec: "True"
+  fullName: BB84.Notifications.Interfaces.IReversibleProperty<T>.Clear
+  fullName.vb: BB84.Notifications.Interfaces.IReversibleProperty(Of T).Clear
+  nameWithType: IReversibleProperty<T>.Clear
+  nameWithType.vb: IReversibleProperty(Of T).Clear
 - uid: BB84.Notifications.Interfaces.IReversibleProperty`1.Count
   name: Count
   href: api/BB84.Notifications.Interfaces.IReversibleProperty-1.html#BB84_Notifications_Interfaces_IReversibleProperty_1_Count
@@ -1270,6 +1547,23 @@ references:
   fullName.vb: BB84.Notifications.Interfaces.IReversibleProperty(Of T).PreviousValue
   nameWithType: IReversibleProperty<T>.PreviousValue
   nameWithType.vb: IReversibleProperty(Of T).PreviousValue
+- uid: BB84.Notifications.Interfaces.IReversibleProperty`1.Snapshot
+  name: Snapshot()
+  href: api/BB84.Notifications.Interfaces.IReversibleProperty-1.html#BB84_Notifications_Interfaces_IReversibleProperty_1_Snapshot
+  commentId: M:BB84.Notifications.Interfaces.IReversibleProperty`1.Snapshot
+  fullName: BB84.Notifications.Interfaces.IReversibleProperty<T>.Snapshot()
+  fullName.vb: BB84.Notifications.Interfaces.IReversibleProperty(Of T).Snapshot()
+  nameWithType: IReversibleProperty<T>.Snapshot()
+  nameWithType.vb: IReversibleProperty(Of T).Snapshot()
+- uid: BB84.Notifications.Interfaces.IReversibleProperty`1.Snapshot*
+  name: Snapshot
+  href: api/BB84.Notifications.Interfaces.IReversibleProperty-1.html#BB84_Notifications_Interfaces_IReversibleProperty_1_Snapshot_
+  commentId: Overload:BB84.Notifications.Interfaces.IReversibleProperty`1.Snapshot
+  isSpec: "True"
+  fullName: BB84.Notifications.Interfaces.IReversibleProperty<T>.Snapshot
+  fullName.vb: BB84.Notifications.Interfaces.IReversibleProperty(Of T).Snapshot
+  nameWithType: IReversibleProperty<T>.Snapshot
+  nameWithType.vb: IReversibleProperty(Of T).Snapshot
 - uid: BB84.Notifications.Interfaces.IValidatableObject
   name: IValidatableObject
   href: api/BB84.Notifications.Interfaces.IValidatableObject.html
@@ -1351,6 +1645,252 @@ references:
   fullName.vb: BB84.Notifications.NotifiableCollection.RaiseCollectionChanging(Of T)(System.ComponentModel.CollectionChangeAction, T)
   nameWithType: NotifiableCollection.RaiseCollectionChanging<T>(CollectionChangeAction, T)
   nameWithType.vb: NotifiableCollection.RaiseCollectionChanging(Of T)(CollectionChangeAction, T)
+- uid: BB84.Notifications.NotifiableCollection`1
+  name: NotifiableCollection<T>
+  href: api/BB84.Notifications.NotifiableCollection-1.html
+  commentId: T:BB84.Notifications.NotifiableCollection`1
+  name.vb: NotifiableCollection(Of T)
+  fullName: BB84.Notifications.NotifiableCollection<T>
+  fullName.vb: BB84.Notifications.NotifiableCollection(Of T)
+  nameWithType: NotifiableCollection<T>
+  nameWithType.vb: NotifiableCollection(Of T)
+- uid: BB84.Notifications.NotifiableCollection`1.#ctor
+  name: NotifiableCollection()
+  href: api/BB84.Notifications.NotifiableCollection-1.html#BB84_Notifications_NotifiableCollection_1__ctor
+  commentId: M:BB84.Notifications.NotifiableCollection`1.#ctor
+  name.vb: New()
+  fullName: BB84.Notifications.NotifiableCollection<T>.NotifiableCollection()
+  fullName.vb: BB84.Notifications.NotifiableCollection(Of T).New()
+  nameWithType: NotifiableCollection<T>.NotifiableCollection()
+  nameWithType.vb: NotifiableCollection(Of T).New()
+- uid: BB84.Notifications.NotifiableCollection`1.#ctor(System.Collections.Generic.IEnumerable{`0})
+  name: NotifiableCollection(IEnumerable<T>)
+  href: api/BB84.Notifications.NotifiableCollection-1.html#BB84_Notifications_NotifiableCollection_1__ctor_System_Collections_Generic_IEnumerable__0__
+  commentId: M:BB84.Notifications.NotifiableCollection`1.#ctor(System.Collections.Generic.IEnumerable{`0})
+  name.vb: New(IEnumerable(Of T))
+  fullName: BB84.Notifications.NotifiableCollection<T>.NotifiableCollection(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: BB84.Notifications.NotifiableCollection(Of T).New(System.Collections.Generic.IEnumerable(Of T))
+  nameWithType: NotifiableCollection<T>.NotifiableCollection(IEnumerable<T>)
+  nameWithType.vb: NotifiableCollection(Of T).New(IEnumerable(Of T))
+- uid: BB84.Notifications.NotifiableCollection`1.#ctor*
+  name: NotifiableCollection
+  href: api/BB84.Notifications.NotifiableCollection-1.html#BB84_Notifications_NotifiableCollection_1__ctor_
+  commentId: Overload:BB84.Notifications.NotifiableCollection`1.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: BB84.Notifications.NotifiableCollection<T>.NotifiableCollection
+  fullName.vb: BB84.Notifications.NotifiableCollection(Of T).New
+  nameWithType: NotifiableCollection<T>.NotifiableCollection
+  nameWithType.vb: NotifiableCollection(Of T).New
+- uid: BB84.Notifications.NotifiableCollection`1.Add(`0)
+  name: Add(T)
+  href: api/BB84.Notifications.NotifiableCollection-1.html#BB84_Notifications_NotifiableCollection_1_Add__0_
+  commentId: M:BB84.Notifications.NotifiableCollection`1.Add(`0)
+  fullName: BB84.Notifications.NotifiableCollection<T>.Add(T)
+  fullName.vb: BB84.Notifications.NotifiableCollection(Of T).Add(T)
+  nameWithType: NotifiableCollection<T>.Add(T)
+  nameWithType.vb: NotifiableCollection(Of T).Add(T)
+- uid: BB84.Notifications.NotifiableCollection`1.Add*
+  name: Add
+  href: api/BB84.Notifications.NotifiableCollection-1.html#BB84_Notifications_NotifiableCollection_1_Add_
+  commentId: Overload:BB84.Notifications.NotifiableCollection`1.Add
+  isSpec: "True"
+  fullName: BB84.Notifications.NotifiableCollection<T>.Add
+  fullName.vb: BB84.Notifications.NotifiableCollection(Of T).Add
+  nameWithType: NotifiableCollection<T>.Add
+  nameWithType.vb: NotifiableCollection(Of T).Add
+- uid: BB84.Notifications.NotifiableCollection`1.Clear
+  name: Clear()
+  href: api/BB84.Notifications.NotifiableCollection-1.html#BB84_Notifications_NotifiableCollection_1_Clear
+  commentId: M:BB84.Notifications.NotifiableCollection`1.Clear
+  fullName: BB84.Notifications.NotifiableCollection<T>.Clear()
+  fullName.vb: BB84.Notifications.NotifiableCollection(Of T).Clear()
+  nameWithType: NotifiableCollection<T>.Clear()
+  nameWithType.vb: NotifiableCollection(Of T).Clear()
+- uid: BB84.Notifications.NotifiableCollection`1.Clear*
+  name: Clear
+  href: api/BB84.Notifications.NotifiableCollection-1.html#BB84_Notifications_NotifiableCollection_1_Clear_
+  commentId: Overload:BB84.Notifications.NotifiableCollection`1.Clear
+  isSpec: "True"
+  fullName: BB84.Notifications.NotifiableCollection<T>.Clear
+  fullName.vb: BB84.Notifications.NotifiableCollection(Of T).Clear
+  nameWithType: NotifiableCollection<T>.Clear
+  nameWithType.vb: NotifiableCollection(Of T).Clear
+- uid: BB84.Notifications.NotifiableCollection`1.Contains(`0)
+  name: Contains(T)
+  href: api/BB84.Notifications.NotifiableCollection-1.html#BB84_Notifications_NotifiableCollection_1_Contains__0_
+  commentId: M:BB84.Notifications.NotifiableCollection`1.Contains(`0)
+  fullName: BB84.Notifications.NotifiableCollection<T>.Contains(T)
+  fullName.vb: BB84.Notifications.NotifiableCollection(Of T).Contains(T)
+  nameWithType: NotifiableCollection<T>.Contains(T)
+  nameWithType.vb: NotifiableCollection(Of T).Contains(T)
+- uid: BB84.Notifications.NotifiableCollection`1.Contains*
+  name: Contains
+  href: api/BB84.Notifications.NotifiableCollection-1.html#BB84_Notifications_NotifiableCollection_1_Contains_
+  commentId: Overload:BB84.Notifications.NotifiableCollection`1.Contains
+  isSpec: "True"
+  fullName: BB84.Notifications.NotifiableCollection<T>.Contains
+  fullName.vb: BB84.Notifications.NotifiableCollection(Of T).Contains
+  nameWithType: NotifiableCollection<T>.Contains
+  nameWithType.vb: NotifiableCollection(Of T).Contains
+- uid: BB84.Notifications.NotifiableCollection`1.CopyTo(`0[],System.Int32)
+  name: CopyTo(T[], int)
+  href: api/BB84.Notifications.NotifiableCollection-1.html#BB84_Notifications_NotifiableCollection_1_CopyTo__0___System_Int32_
+  commentId: M:BB84.Notifications.NotifiableCollection`1.CopyTo(`0[],System.Int32)
+  name.vb: CopyTo(T(), Integer)
+  fullName: BB84.Notifications.NotifiableCollection<T>.CopyTo(T[], int)
+  fullName.vb: BB84.Notifications.NotifiableCollection(Of T).CopyTo(T(), Integer)
+  nameWithType: NotifiableCollection<T>.CopyTo(T[], int)
+  nameWithType.vb: NotifiableCollection(Of T).CopyTo(T(), Integer)
+- uid: BB84.Notifications.NotifiableCollection`1.CopyTo*
+  name: CopyTo
+  href: api/BB84.Notifications.NotifiableCollection-1.html#BB84_Notifications_NotifiableCollection_1_CopyTo_
+  commentId: Overload:BB84.Notifications.NotifiableCollection`1.CopyTo
+  isSpec: "True"
+  fullName: BB84.Notifications.NotifiableCollection<T>.CopyTo
+  fullName.vb: BB84.Notifications.NotifiableCollection(Of T).CopyTo
+  nameWithType: NotifiableCollection<T>.CopyTo
+  nameWithType.vb: NotifiableCollection(Of T).CopyTo
+- uid: BB84.Notifications.NotifiableCollection`1.Count
+  name: Count
+  href: api/BB84.Notifications.NotifiableCollection-1.html#BB84_Notifications_NotifiableCollection_1_Count
+  commentId: P:BB84.Notifications.NotifiableCollection`1.Count
+  fullName: BB84.Notifications.NotifiableCollection<T>.Count
+  fullName.vb: BB84.Notifications.NotifiableCollection(Of T).Count
+  nameWithType: NotifiableCollection<T>.Count
+  nameWithType.vb: NotifiableCollection(Of T).Count
+- uid: BB84.Notifications.NotifiableCollection`1.Count*
+  name: Count
+  href: api/BB84.Notifications.NotifiableCollection-1.html#BB84_Notifications_NotifiableCollection_1_Count_
+  commentId: Overload:BB84.Notifications.NotifiableCollection`1.Count
+  isSpec: "True"
+  fullName: BB84.Notifications.NotifiableCollection<T>.Count
+  fullName.vb: BB84.Notifications.NotifiableCollection(Of T).Count
+  nameWithType: NotifiableCollection<T>.Count
+  nameWithType.vb: NotifiableCollection(Of T).Count
+- uid: BB84.Notifications.NotifiableCollection`1.GetEnumerator
+  name: GetEnumerator()
+  href: api/BB84.Notifications.NotifiableCollection-1.html#BB84_Notifications_NotifiableCollection_1_GetEnumerator
+  commentId: M:BB84.Notifications.NotifiableCollection`1.GetEnumerator
+  fullName: BB84.Notifications.NotifiableCollection<T>.GetEnumerator()
+  fullName.vb: BB84.Notifications.NotifiableCollection(Of T).GetEnumerator()
+  nameWithType: NotifiableCollection<T>.GetEnumerator()
+  nameWithType.vb: NotifiableCollection(Of T).GetEnumerator()
+- uid: BB84.Notifications.NotifiableCollection`1.GetEnumerator*
+  name: GetEnumerator
+  href: api/BB84.Notifications.NotifiableCollection-1.html#BB84_Notifications_NotifiableCollection_1_GetEnumerator_
+  commentId: Overload:BB84.Notifications.NotifiableCollection`1.GetEnumerator
+  isSpec: "True"
+  fullName: BB84.Notifications.NotifiableCollection<T>.GetEnumerator
+  fullName.vb: BB84.Notifications.NotifiableCollection(Of T).GetEnumerator
+  nameWithType: NotifiableCollection<T>.GetEnumerator
+  nameWithType.vb: NotifiableCollection(Of T).GetEnumerator
+- uid: BB84.Notifications.NotifiableCollection`1.IndexOf(`0)
+  name: IndexOf(T)
+  href: api/BB84.Notifications.NotifiableCollection-1.html#BB84_Notifications_NotifiableCollection_1_IndexOf__0_
+  commentId: M:BB84.Notifications.NotifiableCollection`1.IndexOf(`0)
+  fullName: BB84.Notifications.NotifiableCollection<T>.IndexOf(T)
+  fullName.vb: BB84.Notifications.NotifiableCollection(Of T).IndexOf(T)
+  nameWithType: NotifiableCollection<T>.IndexOf(T)
+  nameWithType.vb: NotifiableCollection(Of T).IndexOf(T)
+- uid: BB84.Notifications.NotifiableCollection`1.IndexOf*
+  name: IndexOf
+  href: api/BB84.Notifications.NotifiableCollection-1.html#BB84_Notifications_NotifiableCollection_1_IndexOf_
+  commentId: Overload:BB84.Notifications.NotifiableCollection`1.IndexOf
+  isSpec: "True"
+  fullName: BB84.Notifications.NotifiableCollection<T>.IndexOf
+  fullName.vb: BB84.Notifications.NotifiableCollection(Of T).IndexOf
+  nameWithType: NotifiableCollection<T>.IndexOf
+  nameWithType.vb: NotifiableCollection(Of T).IndexOf
+- uid: BB84.Notifications.NotifiableCollection`1.Insert(System.Int32,`0)
+  name: Insert(int, T)
+  href: api/BB84.Notifications.NotifiableCollection-1.html#BB84_Notifications_NotifiableCollection_1_Insert_System_Int32__0_
+  commentId: M:BB84.Notifications.NotifiableCollection`1.Insert(System.Int32,`0)
+  name.vb: Insert(Integer, T)
+  fullName: BB84.Notifications.NotifiableCollection<T>.Insert(int, T)
+  fullName.vb: BB84.Notifications.NotifiableCollection(Of T).Insert(Integer, T)
+  nameWithType: NotifiableCollection<T>.Insert(int, T)
+  nameWithType.vb: NotifiableCollection(Of T).Insert(Integer, T)
+- uid: BB84.Notifications.NotifiableCollection`1.Insert*
+  name: Insert
+  href: api/BB84.Notifications.NotifiableCollection-1.html#BB84_Notifications_NotifiableCollection_1_Insert_
+  commentId: Overload:BB84.Notifications.NotifiableCollection`1.Insert
+  isSpec: "True"
+  fullName: BB84.Notifications.NotifiableCollection<T>.Insert
+  fullName.vb: BB84.Notifications.NotifiableCollection(Of T).Insert
+  nameWithType: NotifiableCollection<T>.Insert
+  nameWithType.vb: NotifiableCollection(Of T).Insert
+- uid: BB84.Notifications.NotifiableCollection`1.IsReadOnly
+  name: IsReadOnly
+  href: api/BB84.Notifications.NotifiableCollection-1.html#BB84_Notifications_NotifiableCollection_1_IsReadOnly
+  commentId: P:BB84.Notifications.NotifiableCollection`1.IsReadOnly
+  fullName: BB84.Notifications.NotifiableCollection<T>.IsReadOnly
+  fullName.vb: BB84.Notifications.NotifiableCollection(Of T).IsReadOnly
+  nameWithType: NotifiableCollection<T>.IsReadOnly
+  nameWithType.vb: NotifiableCollection(Of T).IsReadOnly
+- uid: BB84.Notifications.NotifiableCollection`1.IsReadOnly*
+  name: IsReadOnly
+  href: api/BB84.Notifications.NotifiableCollection-1.html#BB84_Notifications_NotifiableCollection_1_IsReadOnly_
+  commentId: Overload:BB84.Notifications.NotifiableCollection`1.IsReadOnly
+  isSpec: "True"
+  fullName: BB84.Notifications.NotifiableCollection<T>.IsReadOnly
+  fullName.vb: BB84.Notifications.NotifiableCollection(Of T).IsReadOnly
+  nameWithType: NotifiableCollection<T>.IsReadOnly
+  nameWithType.vb: NotifiableCollection(Of T).IsReadOnly
+- uid: BB84.Notifications.NotifiableCollection`1.Item(System.Int32)
+  name: this[int]
+  href: api/BB84.Notifications.NotifiableCollection-1.html#BB84_Notifications_NotifiableCollection_1_Item_System_Int32_
+  commentId: P:BB84.Notifications.NotifiableCollection`1.Item(System.Int32)
+  name.vb: this[](Integer)
+  fullName: BB84.Notifications.NotifiableCollection<T>.this[int]
+  fullName.vb: BB84.Notifications.NotifiableCollection(Of T).this[](Integer)
+  nameWithType: NotifiableCollection<T>.this[int]
+  nameWithType.vb: NotifiableCollection(Of T).this[](Integer)
+- uid: BB84.Notifications.NotifiableCollection`1.Item*
+  name: this
+  href: api/BB84.Notifications.NotifiableCollection-1.html#BB84_Notifications_NotifiableCollection_1_Item_
+  commentId: Overload:BB84.Notifications.NotifiableCollection`1.Item
+  isSpec: "True"
+  name.vb: this[]
+  fullName: BB84.Notifications.NotifiableCollection<T>.this
+  fullName.vb: BB84.Notifications.NotifiableCollection(Of T).this[]
+  nameWithType: NotifiableCollection<T>.this
+  nameWithType.vb: NotifiableCollection(Of T).this[]
+- uid: BB84.Notifications.NotifiableCollection`1.Remove(`0)
+  name: Remove(T)
+  href: api/BB84.Notifications.NotifiableCollection-1.html#BB84_Notifications_NotifiableCollection_1_Remove__0_
+  commentId: M:BB84.Notifications.NotifiableCollection`1.Remove(`0)
+  fullName: BB84.Notifications.NotifiableCollection<T>.Remove(T)
+  fullName.vb: BB84.Notifications.NotifiableCollection(Of T).Remove(T)
+  nameWithType: NotifiableCollection<T>.Remove(T)
+  nameWithType.vb: NotifiableCollection(Of T).Remove(T)
+- uid: BB84.Notifications.NotifiableCollection`1.Remove*
+  name: Remove
+  href: api/BB84.Notifications.NotifiableCollection-1.html#BB84_Notifications_NotifiableCollection_1_Remove_
+  commentId: Overload:BB84.Notifications.NotifiableCollection`1.Remove
+  isSpec: "True"
+  fullName: BB84.Notifications.NotifiableCollection<T>.Remove
+  fullName.vb: BB84.Notifications.NotifiableCollection(Of T).Remove
+  nameWithType: NotifiableCollection<T>.Remove
+  nameWithType.vb: NotifiableCollection(Of T).Remove
+- uid: BB84.Notifications.NotifiableCollection`1.RemoveAt(System.Int32)
+  name: RemoveAt(int)
+  href: api/BB84.Notifications.NotifiableCollection-1.html#BB84_Notifications_NotifiableCollection_1_RemoveAt_System_Int32_
+  commentId: M:BB84.Notifications.NotifiableCollection`1.RemoveAt(System.Int32)
+  name.vb: RemoveAt(Integer)
+  fullName: BB84.Notifications.NotifiableCollection<T>.RemoveAt(int)
+  fullName.vb: BB84.Notifications.NotifiableCollection(Of T).RemoveAt(Integer)
+  nameWithType: NotifiableCollection<T>.RemoveAt(int)
+  nameWithType.vb: NotifiableCollection(Of T).RemoveAt(Integer)
+- uid: BB84.Notifications.NotifiableCollection`1.RemoveAt*
+  name: RemoveAt
+  href: api/BB84.Notifications.NotifiableCollection-1.html#BB84_Notifications_NotifiableCollection_1_RemoveAt_
+  commentId: Overload:BB84.Notifications.NotifiableCollection`1.RemoveAt
+  isSpec: "True"
+  fullName: BB84.Notifications.NotifiableCollection<T>.RemoveAt
+  fullName.vb: BB84.Notifications.NotifiableCollection(Of T).RemoveAt
+  nameWithType: NotifiableCollection<T>.RemoveAt
+  nameWithType.vb: NotifiableCollection(Of T).RemoveAt
 - uid: BB84.Notifications.NotifiableObject
   name: NotifiableObject
   href: api/BB84.Notifications.NotifiableObject.html
@@ -1477,6 +2017,15 @@ references:
   isSpec: "True"
   fullName: BB84.Notifications.NotifiableObject.SetProperty
   nameWithType: NotifiableObject.SetProperty
+- uid: BB84.Notifications.NotifiableObject.SetProperty``1(``0@,``0,System.Collections.Generic.IEqualityComparer{``0},System.String)
+  name: SetProperty<T>(ref T, T, IEqualityComparer<T>, string)
+  href: api/BB84.Notifications.NotifiableObject.html#BB84_Notifications_NotifiableObject_SetProperty__1___0____0_System_Collections_Generic_IEqualityComparer___0__System_String_
+  commentId: M:BB84.Notifications.NotifiableObject.SetProperty``1(``0@,``0,System.Collections.Generic.IEqualityComparer{``0},System.String)
+  name.vb: SetProperty(Of T)(T, T, IEqualityComparer(Of T), String)
+  fullName: BB84.Notifications.NotifiableObject.SetProperty<T>(ref T, T, System.Collections.Generic.IEqualityComparer<T>, string)
+  fullName.vb: BB84.Notifications.NotifiableObject.SetProperty(Of T)(T, T, System.Collections.Generic.IEqualityComparer(Of T), String)
+  nameWithType: NotifiableObject.SetProperty<T>(ref T, T, IEqualityComparer<T>, string)
+  nameWithType.vb: NotifiableObject.SetProperty(Of T)(T, T, IEqualityComparer(Of T), String)
 - uid: BB84.Notifications.NotifiableObject.SetProperty``1(``0@,``0,System.String)
   name: SetProperty<T>(ref T, T, string)
   href: api/BB84.Notifications.NotifiableObject.html#BB84_Notifications_NotifiableObject_SetProperty__1___0____0_System_String_
@@ -1504,6 +2053,15 @@ references:
   fullName.vb: BB84.Notifications.NotifiableProperty(Of T).New(T)
   nameWithType: NotifiableProperty<T>.NotifiableProperty(T)
   nameWithType.vb: NotifiableProperty(Of T).New(T)
+- uid: BB84.Notifications.NotifiableProperty`1.#ctor(`0,System.Collections.Generic.IEqualityComparer{`0})
+  name: NotifiableProperty(T, IEqualityComparer<T>)
+  href: api/BB84.Notifications.NotifiableProperty-1.html#BB84_Notifications_NotifiableProperty_1__ctor__0_System_Collections_Generic_IEqualityComparer__0__
+  commentId: M:BB84.Notifications.NotifiableProperty`1.#ctor(`0,System.Collections.Generic.IEqualityComparer{`0})
+  name.vb: New(T, IEqualityComparer(Of T))
+  fullName: BB84.Notifications.NotifiableProperty<T>.NotifiableProperty(T, System.Collections.Generic.IEqualityComparer<T>)
+  fullName.vb: BB84.Notifications.NotifiableProperty(Of T).New(T, System.Collections.Generic.IEqualityComparer(Of T))
+  nameWithType: NotifiableProperty<T>.NotifiableProperty(T, IEqualityComparer<T>)
+  nameWithType.vb: NotifiableProperty(Of T).New(T, IEqualityComparer(Of T))
 - uid: BB84.Notifications.NotifiableProperty`1.#ctor*
   name: NotifiableProperty
   href: api/BB84.Notifications.NotifiableProperty-1.html#BB84_Notifications_NotifiableProperty_1__ctor_
@@ -1609,6 +2167,30 @@ references:
   fullName.vb: BB84.Notifications.NotifiableProperty(Of T).CType
   nameWithType: NotifiableProperty<T>.implicit operator
   nameWithType.vb: NotifiableProperty(Of T).CType
+- uid: BB84.Notifications.OverflowStrategy
+  name: OverflowStrategy
+  href: api/BB84.Notifications.OverflowStrategy.html
+  commentId: T:BB84.Notifications.OverflowStrategy
+  fullName: BB84.Notifications.OverflowStrategy
+  nameWithType: OverflowStrategy
+- uid: BB84.Notifications.OverflowStrategy.EvictNewest
+  name: EvictNewest
+  href: api/BB84.Notifications.OverflowStrategy.html#BB84_Notifications_OverflowStrategy_EvictNewest
+  commentId: F:BB84.Notifications.OverflowStrategy.EvictNewest
+  fullName: BB84.Notifications.OverflowStrategy.EvictNewest
+  nameWithType: OverflowStrategy.EvictNewest
+- uid: BB84.Notifications.OverflowStrategy.EvictOldest
+  name: EvictOldest
+  href: api/BB84.Notifications.OverflowStrategy.html#BB84_Notifications_OverflowStrategy_EvictOldest
+  commentId: F:BB84.Notifications.OverflowStrategy.EvictOldest
+  fullName: BB84.Notifications.OverflowStrategy.EvictOldest
+  nameWithType: OverflowStrategy.EvictOldest
+- uid: BB84.Notifications.OverflowStrategy.Throw
+  name: Throw
+  href: api/BB84.Notifications.OverflowStrategy.html#BB84_Notifications_OverflowStrategy_Throw
+  commentId: F:BB84.Notifications.OverflowStrategy.Throw
+  fullName: BB84.Notifications.OverflowStrategy.Throw
+  nameWithType: OverflowStrategy.Throw
 - uid: BB84.Notifications.ReversibleProperty`1
   name: ReversibleProperty<T>
   href: api/BB84.Notifications.ReversibleProperty-1.html
@@ -1618,15 +2200,15 @@ references:
   fullName.vb: BB84.Notifications.ReversibleProperty(Of T)
   nameWithType: ReversibleProperty<T>
   nameWithType.vb: ReversibleProperty(Of T)
-- uid: BB84.Notifications.ReversibleProperty`1.#ctor(`0,System.Int32)
-  name: ReversibleProperty(T, int)
-  href: api/BB84.Notifications.ReversibleProperty-1.html#BB84_Notifications_ReversibleProperty_1__ctor__0_System_Int32_
-  commentId: M:BB84.Notifications.ReversibleProperty`1.#ctor(`0,System.Int32)
-  name.vb: New(T, Integer)
-  fullName: BB84.Notifications.ReversibleProperty<T>.ReversibleProperty(T, int)
-  fullName.vb: BB84.Notifications.ReversibleProperty(Of T).New(T, Integer)
-  nameWithType: ReversibleProperty<T>.ReversibleProperty(T, int)
-  nameWithType.vb: ReversibleProperty(Of T).New(T, Integer)
+- uid: BB84.Notifications.ReversibleProperty`1.#ctor(`0,System.Int32,BB84.Notifications.OverflowStrategy)
+  name: ReversibleProperty(T, int, OverflowStrategy)
+  href: api/BB84.Notifications.ReversibleProperty-1.html#BB84_Notifications_ReversibleProperty_1__ctor__0_System_Int32_BB84_Notifications_OverflowStrategy_
+  commentId: M:BB84.Notifications.ReversibleProperty`1.#ctor(`0,System.Int32,BB84.Notifications.OverflowStrategy)
+  name.vb: New(T, Integer, OverflowStrategy)
+  fullName: BB84.Notifications.ReversibleProperty<T>.ReversibleProperty(T, int, BB84.Notifications.OverflowStrategy)
+  fullName.vb: BB84.Notifications.ReversibleProperty(Of T).New(T, Integer, BB84.Notifications.OverflowStrategy)
+  nameWithType: ReversibleProperty<T>.ReversibleProperty(T, int, OverflowStrategy)
+  nameWithType.vb: ReversibleProperty(Of T).New(T, Integer, OverflowStrategy)
 - uid: BB84.Notifications.ReversibleProperty`1.#ctor*
   name: ReversibleProperty
   href: api/BB84.Notifications.ReversibleProperty-1.html#BB84_Notifications_ReversibleProperty_1__ctor_
@@ -1637,6 +2219,23 @@ references:
   fullName.vb: BB84.Notifications.ReversibleProperty(Of T).New
   nameWithType: ReversibleProperty<T>.ReversibleProperty
   nameWithType.vb: ReversibleProperty(Of T).New
+- uid: BB84.Notifications.ReversibleProperty`1.Clear
+  name: Clear()
+  href: api/BB84.Notifications.ReversibleProperty-1.html#BB84_Notifications_ReversibleProperty_1_Clear
+  commentId: M:BB84.Notifications.ReversibleProperty`1.Clear
+  fullName: BB84.Notifications.ReversibleProperty<T>.Clear()
+  fullName.vb: BB84.Notifications.ReversibleProperty(Of T).Clear()
+  nameWithType: ReversibleProperty<T>.Clear()
+  nameWithType.vb: ReversibleProperty(Of T).Clear()
+- uid: BB84.Notifications.ReversibleProperty`1.Clear*
+  name: Clear
+  href: api/BB84.Notifications.ReversibleProperty-1.html#BB84_Notifications_ReversibleProperty_1_Clear_
+  commentId: Overload:BB84.Notifications.ReversibleProperty`1.Clear
+  isSpec: "True"
+  fullName: BB84.Notifications.ReversibleProperty<T>.Clear
+  fullName.vb: BB84.Notifications.ReversibleProperty(Of T).Clear
+  nameWithType: ReversibleProperty<T>.Clear
+  nameWithType.vb: ReversibleProperty(Of T).Clear
 - uid: BB84.Notifications.ReversibleProperty`1.Count
   name: Count
   href: api/BB84.Notifications.ReversibleProperty-1.html#BB84_Notifications_ReversibleProperty_1_Count
@@ -1789,6 +2388,23 @@ references:
   fullName.vb: BB84.Notifications.ReversibleProperty(Of T).PropertyChanging
   nameWithType: ReversibleProperty<T>.PropertyChanging
   nameWithType.vb: ReversibleProperty(Of T).PropertyChanging
+- uid: BB84.Notifications.ReversibleProperty`1.Snapshot
+  name: Snapshot()
+  href: api/BB84.Notifications.ReversibleProperty-1.html#BB84_Notifications_ReversibleProperty_1_Snapshot
+  commentId: M:BB84.Notifications.ReversibleProperty`1.Snapshot
+  fullName: BB84.Notifications.ReversibleProperty<T>.Snapshot()
+  fullName.vb: BB84.Notifications.ReversibleProperty(Of T).Snapshot()
+  nameWithType: ReversibleProperty<T>.Snapshot()
+  nameWithType.vb: ReversibleProperty(Of T).Snapshot()
+- uid: BB84.Notifications.ReversibleProperty`1.Snapshot*
+  name: Snapshot
+  href: api/BB84.Notifications.ReversibleProperty-1.html#BB84_Notifications_ReversibleProperty_1_Snapshot_
+  commentId: Overload:BB84.Notifications.ReversibleProperty`1.Snapshot
+  isSpec: "True"
+  fullName: BB84.Notifications.ReversibleProperty<T>.Snapshot
+  fullName.vb: BB84.Notifications.ReversibleProperty(Of T).Snapshot
+  nameWithType: ReversibleProperty<T>.Snapshot
+  nameWithType.vb: ReversibleProperty(Of T).Snapshot
 - uid: BB84.Notifications.ReversibleProperty`1.Value
   name: Value
   href: api/BB84.Notifications.ReversibleProperty-1.html#BB84_Notifications_ReversibleProperty_1_Value
@@ -1927,6 +2543,15 @@ references:
   isSpec: "True"
   fullName: BB84.Notifications.ValidatableObject.SetPropertyAndValidate
   nameWithType: ValidatableObject.SetPropertyAndValidate
+- uid: BB84.Notifications.ValidatableObject.SetPropertyAndValidate``1(``0@,``0,System.Collections.Generic.IEqualityComparer{``0},System.String)
+  name: SetPropertyAndValidate<T>(ref T, T, IEqualityComparer<T>, string)
+  href: api/BB84.Notifications.ValidatableObject.html#BB84_Notifications_ValidatableObject_SetPropertyAndValidate__1___0____0_System_Collections_Generic_IEqualityComparer___0__System_String_
+  commentId: M:BB84.Notifications.ValidatableObject.SetPropertyAndValidate``1(``0@,``0,System.Collections.Generic.IEqualityComparer{``0},System.String)
+  name.vb: SetPropertyAndValidate(Of T)(T, T, IEqualityComparer(Of T), String)
+  fullName: BB84.Notifications.ValidatableObject.SetPropertyAndValidate<T>(ref T, T, System.Collections.Generic.IEqualityComparer<T>, string)
+  fullName.vb: BB84.Notifications.ValidatableObject.SetPropertyAndValidate(Of T)(T, T, System.Collections.Generic.IEqualityComparer(Of T), String)
+  nameWithType: ValidatableObject.SetPropertyAndValidate<T>(ref T, T, IEqualityComparer<T>, string)
+  nameWithType.vb: ValidatableObject.SetPropertyAndValidate(Of T)(T, T, IEqualityComparer(Of T), String)
 - uid: BB84.Notifications.ValidatableObject.SetPropertyAndValidate``1(``0@,``0,System.String)
   name: SetPropertyAndValidate<T>(ref T, T, string)
   href: api/BB84.Notifications.ValidatableObject.html#BB84_Notifications_ValidatableObject_SetPropertyAndValidate__1___0____0_System_String_

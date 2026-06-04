@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class NotifiableCollection&lt;T&gt; </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class NotifiableCollection&lt;T&gt; ">
+      
+      <meta name="description" content="Represents a generic collection that provides notifications when its contents or properties change.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/BoBoBaSs84/BB84.Notifications/new/v4.3.604.0/apiSpec/new?filename=BB84_Notifications_NotifiableCollection_1.md&amp;value=---%0Auid%3A%20BB84.Notifications.NotifiableCollection%601%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="BB84.Notifications.NotifiableCollection`1">
+
+
+
+  <h1 id="BB84_Notifications_NotifiableCollection_1" data-uid="BB84.Notifications.NotifiableCollection`1" class="text-break">
+Class NotifiableCollection&lt;T&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v4.3.604.0/src/BB84.Notifications/NotifiableCollection.cs/#L96"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="BB84.html">BB84</a>.<a class="xref" href="BB84.Notifications.html">Notifications</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>BB84.Notifications.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Represents a generic collection that provides notifications when its contents or properties change.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class NotifiableCollection&lt;T&gt; : NotifiableCollection, INotifiableObject, INotifiableCollection&lt;T&gt;, INotifiableCollection, INotifyCollectionChanged, INotifyCollectionChanging, INotifyPropertyChanged, INotifyPropertyChanging, IList&lt;T&gt;, ICollection&lt;T&gt;, IReadOnlyList&lt;T&gt;, IReadOnlyCollection&lt;T&gt;, IEnumerable&lt;T&gt;, IEnumerable</code></pre>
+  </div>
+
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The type of elements in the collection.</p>
+</dd>
+  </dl>
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="BB84.Notifications.NotifiableObject.html">NotifiableObject</a></div>
+      <div><a class="xref" href="BB84.Notifications.NotifiableCollection.html">NotifiableCollection</a></div>
+      <div><span class="xref">NotifiableCollection&lt;T&gt;</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="BB84.Notifications.Interfaces.INotifiableObject.html">INotifiableObject</a></div>
+      <div><a class="xref" href="BB84.Notifications.Interfaces.INotifiableCollection-1.html">INotifiableCollection</a>&lt;T&gt;</div>
+      <div><a class="xref" href="BB84.Notifications.Interfaces.INotifiableCollection.html">INotifiableCollection</a></div>
+      <div><a class="xref" href="BB84.Notifications.Interfaces.Components.INotifyCollectionChanged.html">INotifyCollectionChanged</a></div>
+      <div><a class="xref" href="BB84.Notifications.Interfaces.Components.INotifyCollectionChanging.html">INotifyCollectionChanging</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged">INotifyPropertyChanged</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanging">INotifyPropertyChanging</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;T&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;T&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;T&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">IReadOnlyCollection</a>&lt;T&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="BB84.Notifications.NotifiableCollection.html#BB84_Notifications_NotifiableCollection_CollectionChanged">NotifiableCollection.CollectionChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="BB84.Notifications.NotifiableCollection.html#BB84_Notifications_NotifiableCollection_CollectionChanging">NotifiableCollection.CollectionChanging</a>
+    </div>
+    <div>
+      <a class="xref" href="BB84.Notifications.NotifiableCollection.html#BB84_Notifications_NotifiableCollection_RaiseCollectionChanged_System_ComponentModel_CollectionChangeAction_">NotifiableCollection.RaiseCollectionChanged(CollectionChangeAction)</a>
+    </div>
+    <div>
+      <a class="xref" href="BB84.Notifications.NotifiableCollection.html#BB84_Notifications_NotifiableCollection_RaiseCollectionChanged__1_System_ComponentModel_CollectionChangeAction___0_">NotifiableCollection.RaiseCollectionChanged&lt;T&gt;(CollectionChangeAction, T)</a>
+    </div>
+    <div>
+      <a class="xref" href="BB84.Notifications.NotifiableCollection.html#BB84_Notifications_NotifiableCollection_RaiseCollectionChanging_System_ComponentModel_CollectionChangeAction_">NotifiableCollection.RaiseCollectionChanging(CollectionChangeAction)</a>
+    </div>
+    <div>
+      <a class="xref" href="BB84.Notifications.NotifiableCollection.html#BB84_Notifications_NotifiableCollection_RaiseCollectionChanging__1_System_ComponentModel_CollectionChangeAction___0_">NotifiableCollection.RaiseCollectionChanging&lt;T&gt;(CollectionChangeAction, T)</a>
+    </div>
+    <div>
+      <a class="xref" href="BB84.Notifications.NotifiableObject.html#BB84_Notifications_NotifiableObject_PropertyChanged">NotifiableObject.PropertyChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="BB84.Notifications.NotifiableObject.html#BB84_Notifications_NotifiableObject_PropertyChanging">NotifiableObject.PropertyChanging</a>
+    </div>
+    <div>
+      <a class="xref" href="BB84.Notifications.NotifiableObject.html#BB84_Notifications_NotifiableObject_SetProperty__1___0____0_System_String_">NotifiableObject.SetProperty&lt;T&gt;(ref T, T, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="BB84.Notifications.NotifiableObject.html#BB84_Notifications_NotifiableObject_SetProperty__1___0____0_System_Collections_Generic_IEqualityComparer___0__System_String_">NotifiableObject.SetProperty&lt;T&gt;(ref T, T, IEqualityComparer&lt;T&gt;, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="BB84.Notifications.NotifiableObject.html#BB84_Notifications_NotifiableObject_RaisePropertyChanged_System_String_">NotifiableObject.RaisePropertyChanged(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="BB84.Notifications.NotifiableObject.html#BB84_Notifications_NotifiableObject_RaisePropertiesChanged_System_String___">NotifiableObject.RaisePropertiesChanged(params string[])</a>
+    </div>
+    <div>
+      <a class="xref" href="BB84.Notifications.NotifiableObject.html#BB84_Notifications_NotifiableObject_RaisePropertyChanged__1_System_String___0_">NotifiableObject.RaisePropertyChanged&lt;T&gt;(string, T)</a>
+    </div>
+    <div>
+      <a class="xref" href="BB84.Notifications.NotifiableObject.html#BB84_Notifications_NotifiableObject_RaisePropertyChanging_System_String_">NotifiableObject.RaisePropertyChanging(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="BB84.Notifications.NotifiableObject.html#BB84_Notifications_NotifiableObject_RaisePropertiesChanging_System_String___">NotifiableObject.RaisePropertiesChanging(params string[])</a>
+    </div>
+    <div>
+      <a class="xref" href="BB84.Notifications.NotifiableObject.html#BB84_Notifications_NotifiableObject_RaisePropertyChanging__1_System_String___0_">NotifiableObject.RaisePropertyChanging&lt;T&gt;(string, T)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="BB84.Notifications.Extensions.WeakEventExtensions.html#BB84_Notifications_Extensions_WeakEventExtensions_WeakSubscribe_System_ComponentModel_INotifyPropertyChanged_System_ComponentModel_PropertyChangedEventHandler_">WeakEventExtensions.WeakSubscribe(INotifyPropertyChanged, PropertyChangedEventHandler)</a>
+  </div>
+  <div>
+      <a class="xref" href="BB84.Notifications.Extensions.WeakEventExtensions.html#BB84_Notifications_Extensions_WeakEventExtensions_WeakSubscribe_System_ComponentModel_INotifyPropertyChanging_System_ComponentModel_PropertyChangingEventHandler_">WeakEventExtensions.WeakSubscribe(INotifyPropertyChanging, PropertyChangingEventHandler)</a>
+  </div>
+  </dd></dl>
+
+
+
+  <h2 id="BB84_Notifications_NotifiableCollection_1_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>The <a class="xref" href="BB84.Notifications.NotifiableCollection-1.html">NotifiableCollection&lt;T&gt;</a> class provides a ready-to-use observable list that
+raises <a class="xref" href="BB84.Notifications.NotifiableCollection.html#BB84_Notifications_NotifiableCollection_CollectionChanging">CollectionChanging</a> and
+<a class="xref" href="BB84.Notifications.NotifiableCollection.html#BB84_Notifications_NotifiableCollection_CollectionChanged">CollectionChanged</a> events for each mutating operation.</p>
+</div>
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="BB84_Notifications_NotifiableCollection_1__ctor_" data-uid="BB84.Notifications.NotifiableCollection`1.#ctor*"></a>
+
+  <h3 id="BB84_Notifications_NotifiableCollection_1__ctor" data-uid="BB84.Notifications.NotifiableCollection`1.#ctor">
+  NotifiableCollection()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v4.3.604.0/src/BB84.Notifications/NotifiableCollection.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new empty instance of the <a class="xref" href="BB84.Notifications.NotifiableCollection-1.html">NotifiableCollection&lt;T&gt;</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NotifiableCollection()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BB84_Notifications_NotifiableCollection_1__ctor_" data-uid="BB84.Notifications.NotifiableCollection`1.#ctor*"></a>
+
+  <h3 id="BB84_Notifications_NotifiableCollection_1__ctor_System_Collections_Generic_IEnumerable__0__" data-uid="BB84.Notifications.NotifiableCollection`1.#ctor(System.Collections.Generic.IEnumerable{`0})">
+  NotifiableCollection(IEnumerable&lt;T&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v4.3.604.0/src/BB84.Notifications/NotifiableCollection.cs/#L111"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="BB84.Notifications.NotifiableCollection-1.html">NotifiableCollection&lt;T&gt;</a> class that contains
+elements copied from the specified collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NotifiableCollection(IEnumerable&lt;T&gt; collection)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>collection</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</dt>
+    <dd><p>The collection whose elements are copied to the new list.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="BB84_Notifications_NotifiableCollection_1_Count_" data-uid="BB84.Notifications.NotifiableCollection`1.Count*"></a>
+
+  <h3 id="BB84_Notifications_NotifiableCollection_1_Count" data-uid="BB84.Notifications.NotifiableCollection`1.Count">
+  Count
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v4.3.604.0/src/BB84.Notifications/NotifiableCollection.cs/#L130"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Count { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="BB84_Notifications_NotifiableCollection_1_IsReadOnly_" data-uid="BB84.Notifications.NotifiableCollection`1.IsReadOnly*"></a>
+
+  <h3 id="BB84_Notifications_NotifiableCollection_1_IsReadOnly" data-uid="BB84.Notifications.NotifiableCollection`1.IsReadOnly">
+  IsReadOnly
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v4.3.604.0/src/BB84.Notifications/NotifiableCollection.cs/#L133"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsReadOnly { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="BB84_Notifications_NotifiableCollection_1_Item_" data-uid="BB84.Notifications.NotifiableCollection`1.Item*"></a>
+
+  <h3 id="BB84_Notifications_NotifiableCollection_1_Item_System_Int32_" data-uid="BB84.Notifications.NotifiableCollection`1.Item(System.Int32)">
+  this[int]
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v4.3.604.0/src/BB84.Notifications/NotifiableCollection.cs/#L115"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T this[int index] { get; set; }</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="BB84_Notifications_NotifiableCollection_1_Add_" data-uid="BB84.Notifications.NotifiableCollection`1.Add*"></a>
+
+  <h3 id="BB84_Notifications_NotifiableCollection_1_Add__0_" data-uid="BB84.Notifications.NotifiableCollection`1.Add(`0)">
+  Add(T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v4.3.604.0/src/BB84.Notifications/NotifiableCollection.cs/#L136"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Add(T item)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>item</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BB84_Notifications_NotifiableCollection_1_Clear_" data-uid="BB84.Notifications.NotifiableCollection`1.Clear*"></a>
+
+  <h3 id="BB84_Notifications_NotifiableCollection_1_Clear" data-uid="BB84.Notifications.NotifiableCollection`1.Clear">
+  Clear()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v4.3.604.0/src/BB84.Notifications/NotifiableCollection.cs/#L144"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Clear()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BB84_Notifications_NotifiableCollection_1_Contains_" data-uid="BB84.Notifications.NotifiableCollection`1.Contains*"></a>
+
+  <h3 id="BB84_Notifications_NotifiableCollection_1_Contains__0_" data-uid="BB84.Notifications.NotifiableCollection`1.Contains(`0)">
+  Contains(T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v4.3.604.0/src/BB84.Notifications/NotifiableCollection.cs/#L152"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Contains(T item)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>item</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BB84_Notifications_NotifiableCollection_1_CopyTo_" data-uid="BB84.Notifications.NotifiableCollection`1.CopyTo*"></a>
+
+  <h3 id="BB84_Notifications_NotifiableCollection_1_CopyTo__0___System_Int32_" data-uid="BB84.Notifications.NotifiableCollection`1.CopyTo(`0[],System.Int32)">
+  CopyTo(T[], int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v4.3.604.0/src/BB84.Notifications/NotifiableCollection.cs/#L156"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyTo(T[] array, int arrayIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>array</code> T[]</dt>
+    <dd></dd>
+    <dt><code>arrayIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BB84_Notifications_NotifiableCollection_1_GetEnumerator_" data-uid="BB84.Notifications.NotifiableCollection`1.GetEnumerator*"></a>
+
+  <h3 id="BB84_Notifications_NotifiableCollection_1_GetEnumerator" data-uid="BB84.Notifications.NotifiableCollection`1.GetEnumerator">
+  GetEnumerator()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v4.3.604.0/src/BB84.Notifications/NotifiableCollection.cs/#L160"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerator&lt;T&gt; GetEnumerator()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1">IEnumerator</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BB84_Notifications_NotifiableCollection_1_IndexOf_" data-uid="BB84.Notifications.NotifiableCollection`1.IndexOf*"></a>
+
+  <h3 id="BB84_Notifications_NotifiableCollection_1_IndexOf__0_" data-uid="BB84.Notifications.NotifiableCollection`1.IndexOf(`0)">
+  IndexOf(T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v4.3.604.0/src/BB84.Notifications/NotifiableCollection.cs/#L164"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int IndexOf(T item)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>item</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BB84_Notifications_NotifiableCollection_1_Insert_" data-uid="BB84.Notifications.NotifiableCollection`1.Insert*"></a>
+
+  <h3 id="BB84_Notifications_NotifiableCollection_1_Insert_System_Int32__0_" data-uid="BB84.Notifications.NotifiableCollection`1.Insert(System.Int32,`0)">
+  Insert(int, T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v4.3.604.0/src/BB84.Notifications/NotifiableCollection.cs/#L168"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Insert(int index, T item)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>item</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BB84_Notifications_NotifiableCollection_1_Remove_" data-uid="BB84.Notifications.NotifiableCollection`1.Remove*"></a>
+
+  <h3 id="BB84_Notifications_NotifiableCollection_1_Remove__0_" data-uid="BB84.Notifications.NotifiableCollection`1.Remove(`0)">
+  Remove(T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v4.3.604.0/src/BB84.Notifications/NotifiableCollection.cs/#L176"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Remove(T item)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>item</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BB84_Notifications_NotifiableCollection_1_RemoveAt_" data-uid="BB84.Notifications.NotifiableCollection`1.RemoveAt*"></a>
+
+  <h3 id="BB84_Notifications_NotifiableCollection_1_RemoveAt_System_Int32_" data-uid="BB84.Notifications.NotifiableCollection`1.RemoveAt(System.Int32)">
+  RemoveAt(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v4.3.604.0/src/BB84.Notifications/NotifiableCollection.cs/#L187"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveAt(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v4.3.604.0/src/BB84.Notifications/NotifiableCollection.cs/#L96" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

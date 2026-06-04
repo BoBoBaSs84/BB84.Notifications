@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Interface INotifiableObject </title>
+      <title>Enum OverflowStrategy </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Interface INotifiableObject ">
+      <meta name="title" content="Enum OverflowStrategy ">
       
-      <meta name="description" content="Represents an object that provides notifications when its properties are changed or are about to change.">
+      <meta name="description" content="Defines the behaviour of  when a new value is added and the history buffer has reached its configured maximum size.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -16,7 +16,7 @@
       
       
       
-      <meta name="docfx:docurl" content="https://github.com/BoBoBaSs84/BB84.Notifications/new/v4.3.604.0/apiSpec/new?filename=BB84_Notifications_Interfaces_INotifiableObject.md&amp;value=---%0Auid%3A%20BB84.Notifications.Interfaces.INotifiableObject%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/BoBoBaSs84/BB84.Notifications/new/v4.3.604.0/apiSpec/new?filename=BB84_Notifications_OverflowStrategy.md&amp;value=---%0Auid%3A%20BB84.Notifications.OverflowStrategy%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -80,25 +80,27 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="BB84.Notifications.Interfaces.INotifiableObject">
+        <article data-uid="BB84.Notifications.OverflowStrategy">
 
 
 
-  <h1 id="BB84_Notifications_Interfaces_INotifiableObject" data-uid="BB84.Notifications.Interfaces.INotifiableObject" class="text-break">
-Interface INotifiableObject  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v4.3.604.0/src/BB84.Notifications/Interfaces/INotifiableObject.cs/#L19"><i class="bi bi-code-slash"></i></a>
+
+  <h1 id="BB84_Notifications_OverflowStrategy" data-uid="BB84.Notifications.OverflowStrategy" class="text-break">
+Enum OverflowStrategy  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v4.3.604.0/src/BB84.Notifications/OverflowStrategy.cs/#L12"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="BB84.html">BB84</a>.<a class="xref" href="BB84.Notifications.html">Notifications</a>.<a class="xref" href="BB84.Notifications.Interfaces.html">Interfaces</a></dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="BB84.html">BB84</a>.<a class="xref" href="BB84.Notifications.html">Notifications</a></dd></dl>
   <dl><dt>Assembly</dt><dd>BB84.Notifications.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Represents an object that provides notifications when its properties are changed or are about to change.</p>
+  <div class="markdown summary"><p>Defines the behaviour of <a class="xref" href="BB84.Notifications.ReversibleProperty-1.html">ReversibleProperty&lt;T&gt;</a> when a new value is added and
+the history buffer has reached its configured maximum size.</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface INotifiableObject : INotifyPropertyChanged, INotifyPropertyChanging</code></pre>
+    <pre><code class="lang-csharp hljs">public enum OverflowStrategy</code></pre>
   </div>
 
 
@@ -107,43 +109,33 @@ Interface INotifiableObject  <a class="header-action link-secondary" title="View
 
 
 
-  <dl class="typelist inheritedMembers">
-    <dt>Inherited Members</dt>
-    <dd>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged.propertychanged">INotifyPropertyChanged.PropertyChanged</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanging.propertychanging">INotifyPropertyChanging.PropertyChanging</a>
-    </div>
-  </dd></dl>
-
-  <dl class="typelist extensionMethods">
-    <dt>Extension Methods</dt>
-    <dd>
-  <div>
-      <a class="xref" href="BB84.Notifications.Extensions.WeakEventExtensions.html#BB84_Notifications_Extensions_WeakEventExtensions_WeakSubscribe_System_ComponentModel_INotifyPropertyChanged_System_ComponentModel_PropertyChangedEventHandler_">WeakEventExtensions.WeakSubscribe(INotifyPropertyChanged, PropertyChangedEventHandler)</a>
-  </div>
-  <div>
-      <a class="xref" href="BB84.Notifications.Extensions.WeakEventExtensions.html#BB84_Notifications_Extensions_WeakEventExtensions_WeakSubscribe_System_ComponentModel_INotifyPropertyChanging_System_ComponentModel_PropertyChangingEventHandler_">WeakEventExtensions.WeakSubscribe(INotifyPropertyChanging, PropertyChangingEventHandler)</a>
-  </div>
-  </dd></dl>
 
 
-
-  <h2 id="BB84_Notifications_Interfaces_INotifiableObject_remarks">Remarks</h2>
-  <div class="markdown level0 remarks"><p>This interface combines <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged">INotifyPropertyChanged</a> and <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanging">INotifyPropertyChanging</a>,
-enabling consumers to subscribe to events for both property changes and property change initiation.
-Implementing this interface allows objects to notify observers about changes to their properties,
-which is useful for data binding and reactive programming scenarios.</p>
-</div>
+  <h2 id="fields">Fields
+</h2>
+  <dl class="parameters">
+    <dt id="BB84_Notifications_OverflowStrategy_EvictNewest"><code>EvictNewest = 1</code></dt>
+  
+  <dd><p>The new value is silently discarded; the history and current value remain unchanged.</p>
+</dd>
+    <dt id="BB84_Notifications_OverflowStrategy_EvictOldest"><code>EvictOldest = 0</code></dt>
+  
+  <dd><p>The oldest entry in the history is silently removed to make room for the new value.
+This is the default strategy.</p>
+</dd>
+    <dt id="BB84_Notifications_OverflowStrategy_Throw"><code>Throw = 2</code></dt>
+  
+  <dd><p>An <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a> is thrown when the history is full and a
+new value is set.</p>
+</dd>
+  </dl>
 
 
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v4.3.604.0/src/BB84.Notifications/Interfaces/INotifiableObject.cs/#L19" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v4.3.604.0/src/BB84.Notifications/OverflowStrategy.cs/#L12" class="edit-link">Edit this page</a>
         </div>
 
 

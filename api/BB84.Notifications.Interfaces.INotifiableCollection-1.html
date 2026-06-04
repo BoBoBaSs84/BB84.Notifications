@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Interface INotifiableObject </title>
+      <title>Interface INotifiableCollection&lt;T&gt; </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Interface INotifiableObject ">
+      <meta name="title" content="Interface INotifiableCollection&lt;T&gt; ">
       
-      <meta name="description" content="Represents an object that provides notifications when its properties are changed or are about to change.">
+      <meta name="description" content="Represents a generic collection that provides notifications when its contents or properties change.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -16,7 +16,7 @@
       
       
       
-      <meta name="docfx:docurl" content="https://github.com/BoBoBaSs84/BB84.Notifications/new/v4.3.604.0/apiSpec/new?filename=BB84_Notifications_Interfaces_INotifiableObject.md&amp;value=---%0Auid%3A%20BB84.Notifications.Interfaces.INotifiableObject%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/BoBoBaSs84/BB84.Notifications/new/v4.3.604.0/apiSpec/new?filename=BB84_Notifications_Interfaces_INotifiableCollection_1.md&amp;value=---%0Auid%3A%20BB84.Notifications.Interfaces.INotifiableCollection%601%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -80,12 +80,12 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="BB84.Notifications.Interfaces.INotifiableObject">
+        <article data-uid="BB84.Notifications.Interfaces.INotifiableCollection`1">
 
 
 
-  <h1 id="BB84_Notifications_Interfaces_INotifiableObject" data-uid="BB84.Notifications.Interfaces.INotifiableObject" class="text-break">
-Interface INotifiableObject  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v4.3.604.0/src/BB84.Notifications/Interfaces/INotifiableObject.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  <h1 id="BB84_Notifications_Interfaces_INotifiableCollection_1" data-uid="BB84.Notifications.Interfaces.INotifiableCollection`1" class="text-break">
+Interface INotifiableCollection&lt;T&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v4.3.604.0/src/BB84.Notifications/Interfaces/INotifiableCollection.cs/#L37"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -93,16 +93,22 @@ Interface INotifiableObject  <a class="header-action link-secondary" title="View
   <dl><dt>Assembly</dt><dd>BB84.Notifications.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Represents an object that provides notifications when its properties are changed or are about to change.</p>
+  <div class="markdown summary"><p>Represents a generic collection that provides notifications when its contents or properties change.</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface INotifiableObject : INotifyPropertyChanged, INotifyPropertyChanging</code></pre>
+    <pre><code class="lang-csharp hljs">public interface INotifiableCollection&lt;T&gt; : INotifiableCollection, INotifyCollectionChanged, INotifyCollectionChanging, INotifyPropertyChanged, INotifyPropertyChanging, IList&lt;T&gt;, ICollection&lt;T&gt;, IReadOnlyList&lt;T&gt;, IReadOnlyCollection&lt;T&gt;, IEnumerable&lt;T&gt;, IEnumerable</code></pre>
   </div>
 
 
 
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The type of elements in the collection.</p>
+</dd>
+  </dl>
 
 
 
@@ -111,10 +117,52 @@ Interface INotifiableObject  <a class="header-action link-secondary" title="View
     <dt>Inherited Members</dt>
     <dd>
     <div>
+      <a class="xref" href="BB84.Notifications.Interfaces.Components.INotifyCollectionChanged.html#BB84_Notifications_Interfaces_Components_INotifyCollectionChanged_CollectionChanged">INotifyCollectionChanged.CollectionChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="BB84.Notifications.Interfaces.Components.INotifyCollectionChanging.html#BB84_Notifications_Interfaces_Components_INotifyCollectionChanging_CollectionChanging">INotifyCollectionChanging.CollectionChanging</a>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged.propertychanged">INotifyPropertyChanged.PropertyChanged</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanging.propertychanging">INotifyPropertyChanging.PropertyChanging</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1.indexof">IList&lt;T&gt;.IndexOf(T)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1.insert">IList&lt;T&gt;.Insert(int, T)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1.removeat">IList&lt;T&gt;.RemoveAt(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">IList&lt;T&gt;.this[int]</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.add">ICollection&lt;T&gt;.Add(T)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.clear">ICollection&lt;T&gt;.Clear()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.contains">ICollection&lt;T&gt;.Contains(T)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.copyto">ICollection&lt;T&gt;.CopyTo(T[], int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.remove">ICollection&lt;T&gt;.Remove(T)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.count">ICollection&lt;T&gt;.Count</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.isreadonly">ICollection&lt;T&gt;.IsReadOnly</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator">IEnumerable&lt;T&gt;.GetEnumerator()</a>
     </div>
   </dd></dl>
 
@@ -131,11 +179,9 @@ Interface INotifiableObject  <a class="header-action link-secondary" title="View
 
 
 
-  <h2 id="BB84_Notifications_Interfaces_INotifiableObject_remarks">Remarks</h2>
-  <div class="markdown level0 remarks"><p>This interface combines <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged">INotifyPropertyChanged</a> and <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanging">INotifyPropertyChanging</a>,
-enabling consumers to subscribe to events for both property changes and property change initiation.
-Implementing this interface allows objects to notify observers about changes to their properties,
-which is useful for data binding and reactive programming scenarios.</p>
+  <h2 id="BB84_Notifications_Interfaces_INotifiableCollection_1_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>This interface extends <a class="xref" href="BB84.Notifications.Interfaces.INotifiableCollection.html">INotifiableCollection</a> by adding generic collection capabilities through
+implementing <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList&lt;T&gt;</a> and <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList&lt;T&gt;</a>.</p>
 </div>
 
 
@@ -143,7 +189,7 @@ which is useful for data binding and reactive programming scenarios.</p>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v4.3.604.0/src/BB84.Notifications/Interfaces/INotifiableObject.cs/#L19" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v4.3.604.0/src/BB84.Notifications/Interfaces/INotifiableCollection.cs/#L37" class="edit-link">Edit this page</a>
         </div>
 
 
