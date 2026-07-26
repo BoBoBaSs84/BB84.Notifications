@@ -16,7 +16,7 @@
       
       
       
-      <meta name="docfx:docurl" content="https://github.com/BoBoBaSs84/BB84.Notifications/new/v4.3.0625.0/apiSpec/new?filename=BB84_Notifications_NotifiableProperty_1.md&amp;value=---%0Auid%3A%20BB84.Notifications.NotifiableProperty%601%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/BoBoBaSs84/BB84.Notifications/new/v5.0.0726.0/apiSpec/new?filename=BB84_Notifications_NotifiableProperty_1.md&amp;value=---%0Auid%3A%20BB84.Notifications.NotifiableProperty%601%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -85,7 +85,7 @@
 
 
   <h1 id="BB84_Notifications_NotifiableProperty_1" data-uid="BB84.Notifications.NotifiableProperty`1" class="text-break">
-Class NotifiableProperty&lt;T&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v4.3.0625.0/src/BB84.Notifications/NotifiableProperty.cs/#L23"><i class="bi bi-code-slash"></i></a>
+Class NotifiableProperty&lt;T&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v5.0.0726.0/src/BB84.Notifications/NotifiableProperty.cs/#L18"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -98,7 +98,7 @@ Class NotifiableProperty&lt;T&gt;  <a class="header-action link-secondary" title
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class NotifiableProperty&lt;T&gt; : INotifiableProperty&lt;T&gt;, INotifyPropertyChanged, INotifyPropertyChanging</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class NotifiableProperty&lt;T&gt; : NotifiablePropertyBase&lt;T&gt;, INotifiableProperty&lt;T&gt;, INotifyPropertyChanged, INotifyPropertyChanging</code></pre>
   </div>
 
 
@@ -114,6 +114,7 @@ Class NotifiableProperty&lt;T&gt;  <a class="header-action link-secondary" title
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="BB84.Notifications.NotifiablePropertyBase-1.html">NotifiablePropertyBase</a>&lt;T&gt;</div>
       <div><span class="xref">NotifiableProperty&lt;T&gt;</span></div>
     </dd>
   </dl>
@@ -131,6 +132,21 @@ Class NotifiableProperty&lt;T&gt;  <a class="header-action link-secondary" title
   <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
     <dd>
+    <div>
+      <a class="xref" href="BB84.Notifications.NotifiablePropertyBase-1.html#BB84_Notifications_NotifiablePropertyBase_1_IsDefault">NotifiablePropertyBase&lt;T&gt;.IsDefault</a>
+    </div>
+    <div>
+      <a class="xref" href="BB84.Notifications.NotifiablePropertyBase-1.html#BB84_Notifications_NotifiablePropertyBase_1_IsNull">NotifiablePropertyBase&lt;T&gt;.IsNull</a>
+    </div>
+    <div>
+      <a class="xref" href="BB84.Notifications.NotifiablePropertyBase-1.html#BB84_Notifications_NotifiablePropertyBase_1_Value">NotifiablePropertyBase&lt;T&gt;.Value</a>
+    </div>
+    <div>
+      <a class="xref" href="BB84.Notifications.NotifiablePropertyBase-1.html#BB84_Notifications_NotifiablePropertyBase_1_PropertyChanged">NotifiablePropertyBase&lt;T&gt;.PropertyChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="BB84.Notifications.NotifiablePropertyBase-1.html#BB84_Notifications_NotifiablePropertyBase_1_PropertyChanging">NotifiablePropertyBase&lt;T&gt;.PropertyChanging</a>
+    </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
     </div>
@@ -166,8 +182,9 @@ Class NotifiableProperty&lt;T&gt;  <a class="header-action link-secondary" title
 
   <h2 id="BB84_Notifications_NotifiableProperty_1_remarks">Remarks</h2>
   <div class="markdown level0 remarks"><p>The <a class="xref" href="BB84.Notifications.NotifiableProperty-1.html">NotifiableProperty&lt;T&gt;</a> class provides functionality for tracking changes
-to a property value. It raises <a class="xref" href="BB84.Notifications.NotifiableProperty-1.html#BB84_Notifications_NotifiableProperty_1_PropertyChanging">PropertyChanging</a> and <a class="xref" href="BB84.Notifications.NotifiableProperty-1.html#BB84_Notifications_NotifiableProperty_1_PropertyChanged">PropertyChanged</a>
-events when the value changes, allowing consumers to react to these changes.</p>
+to a property value. It raises <a class="xref" href="BB84.Notifications.NotifiablePropertyBase-1.html#BB84_Notifications_NotifiablePropertyBase_1_PropertyChanging">PropertyChanging</a> and
+<a class="xref" href="BB84.Notifications.NotifiablePropertyBase-1.html#BB84_Notifications_NotifiablePropertyBase_1_PropertyChanged">PropertyChanged</a> events when the value changes,
+allowing consumers to react to these changes.</p>
 </div>
 
 
@@ -179,10 +196,10 @@ events when the value changes, allowing consumers to react to these changes.</p>
 
   <h3 id="BB84_Notifications_NotifiableProperty_1__ctor__0_" data-uid="BB84.Notifications.NotifiableProperty`1.#ctor(`0)">
   NotifiableProperty(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v4.3.0625.0/src/BB84.Notifications/NotifiableProperty.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v5.0.0726.0/src/BB84.Notifications/NotifiableProperty.cs/#L24"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Represents a property that supports change notifications and can be observed for changes.</p>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="BB84.Notifications.NotifiableProperty-1.html">NotifiableProperty&lt;T&gt;</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -204,11 +221,6 @@ events when the value changes, allowing consumers to react to these changes.</p>
 
 
 
-  <h4 class="section" id="BB84_Notifications_NotifiableProperty_1__ctor__0__remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>The <a class="xref" href="BB84.Notifications.NotifiableProperty-1.html">NotifiableProperty&lt;T&gt;</a> class provides functionality for tracking changes
-to a property value. It raises <a class="xref" href="BB84.Notifications.NotifiableProperty-1.html#BB84_Notifications_NotifiableProperty_1_PropertyChanging">PropertyChanging</a> and <a class="xref" href="BB84.Notifications.NotifiableProperty-1.html#BB84_Notifications_NotifiableProperty_1_PropertyChanged">PropertyChanged</a>
-events when the value changes, allowing consumers to react to these changes.</p>
-</div>
 
 
 
@@ -217,7 +229,7 @@ events when the value changes, allowing consumers to react to these changes.</p>
 
   <h3 id="BB84_Notifications_NotifiableProperty_1__ctor__0_System_Collections_Generic_IEqualityComparer__0__" data-uid="BB84.Notifications.NotifiableProperty`1.#ctor(`0,System.Collections.Generic.IEqualityComparer{`0})">
   NotifiableProperty(T, IEqualityComparer&lt;T&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v4.3.0625.0/src/BB84.Notifications/NotifiableProperty.cs/#L34"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v5.0.0726.0/src/BB84.Notifications/NotifiableProperty.cs/#L33"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="BB84.Notifications.NotifiableProperty-1.html">NotifiableProperty&lt;T&gt;</a> class with an initial
@@ -250,170 +262,6 @@ value and a custom equality comparer.</p>
 
 
 
-  <h2 class="section" id="properties">Properties
-</h2>
-
-
-  <a id="BB84_Notifications_NotifiableProperty_1_IsDefault_" data-uid="BB84.Notifications.NotifiableProperty`1.IsDefault*"></a>
-
-  <h3 id="BB84_Notifications_NotifiableProperty_1_IsDefault" data-uid="BB84.Notifications.NotifiableProperty`1.IsDefault">
-  IsDefault
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v4.3.0625.0/src/BB84.Notifications/NotifiableProperty.cs/#L38"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Gets a value indicating whether the current instance represents the default configuration or state.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsDefault { get; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="BB84_Notifications_NotifiableProperty_1_IsNull_" data-uid="BB84.Notifications.NotifiableProperty`1.IsNull*"></a>
-
-  <h3 id="BB84_Notifications_NotifiableProperty_1_IsNull" data-uid="BB84.Notifications.NotifiableProperty`1.IsNull">
-  IsNull
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v4.3.0625.0/src/BB84.Notifications/NotifiableProperty.cs/#L41"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Gets a value indicating whether the current object represents a null state.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsNull { get; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="BB84_Notifications_NotifiableProperty_1_Value_" data-uid="BB84.Notifications.NotifiableProperty`1.Value*"></a>
-
-  <h3 id="BB84_Notifications_NotifiableProperty_1_Value" data-uid="BB84.Notifications.NotifiableProperty`1.Value">
-  Value
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v4.3.0625.0/src/BB84.Notifications/NotifiableProperty.cs/#L44"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Gets or sets the value stored in the current instance.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public T Value { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">T</span></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <h2 class="section" id="events">Events
-</h2>
-
-
-
-  <h3 id="BB84_Notifications_NotifiableProperty_1_PropertyChanged" data-uid="BB84.Notifications.NotifiableProperty`1.PropertyChanged">
-  PropertyChanged
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v4.3.0625.0/src/BB84.Notifications/NotifiableProperty.cs/#L51"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event PropertyChangedEventHandler? PropertyChanged</code></pre>
-  </div>
-
-
-
-
-
-
-  <h4 class="section">Event Type</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.propertychangedeventhandler">PropertyChangedEventHandler</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <h3 id="BB84_Notifications_NotifiableProperty_1_PropertyChanging" data-uid="BB84.Notifications.NotifiableProperty`1.PropertyChanging">
-  PropertyChanging
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v4.3.0625.0/src/BB84.Notifications/NotifiableProperty.cs/#L54"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event PropertyChangingEventHandler? PropertyChanging</code></pre>
-  </div>
-
-
-
-
-
-
-  <h4 class="section">Event Type</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.propertychangingeventhandler">PropertyChangingEventHandler</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
   <h2 class="section" id="operators">Operators
 </h2>
 
@@ -422,7 +270,7 @@ value and a custom equality comparer.</p>
 
   <h3 id="BB84_Notifications_NotifiableProperty_1_op_Implicit_BB84_Notifications_NotifiableProperty__0____0" data-uid="BB84.Notifications.NotifiableProperty`1.op_Implicit(BB84.Notifications.NotifiableProperty{`0})~`0">
   implicit operator T(NotifiableProperty&lt;T&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v4.3.0625.0/src/BB84.Notifications/NotifiableProperty.cs/#L93"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v5.0.0726.0/src/BB84.Notifications/NotifiableProperty.cs/#L51"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Implicitly converts a <a class="xref" href="BB84.Notifications.NotifiableProperty-1.html">NotifiableProperty&lt;T&gt;</a> to its underlying value of type <code class="typeparamref">T</code>.</p>
@@ -454,7 +302,7 @@ value and a custom equality comparer.</p>
 
   <h4 class="section" id="BB84_Notifications_NotifiableProperty_1_op_Implicit_BB84_Notifications_NotifiableProperty__0____0_remarks">Remarks</h4>
   <div class="markdown level1 remarks"><p>This operator allows a <a class="xref" href="BB84.Notifications.NotifiableProperty-1.html">NotifiableProperty&lt;T&gt;</a> to be used directly as its underlying
-value without explicitly accessing the <a class="xref" href="BB84.Notifications.NotifiableProperty-1.html#BB84_Notifications_NotifiableProperty_1_Value">Value</a> property.</p>
+value without explicitly accessing the <a class="xref" href="BB84.Notifications.NotifiablePropertyBase-1.html#BB84_Notifications_NotifiablePropertyBase_1_Value">Value</a> property.</p>
 </div>
 
 
@@ -464,7 +312,7 @@ value without explicitly accessing the <a class="xref" href="BB84.Notifications.
 
   <h3 id="BB84_Notifications_NotifiableProperty_1_op_Implicit__0__BB84_Notifications_NotifiableProperty__0_" data-uid="BB84.Notifications.NotifiableProperty`1.op_Implicit(`0)~BB84.Notifications.NotifiableProperty{`0}">
   implicit operator NotifiableProperty&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v4.3.0625.0/src/BB84.Notifications/NotifiableProperty.cs/#L82"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v5.0.0726.0/src/BB84.Notifications/NotifiableProperty.cs/#L40"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Implicitly converts a value of type <code class="typeparamref">T</code> to a <a class="xref" href="BB84.Notifications.NotifiableProperty-1.html">NotifiableProperty&lt;T&gt;</a>.</p>
@@ -502,7 +350,7 @@ value without explicitly accessing the <a class="xref" href="BB84.Notifications.
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v4.3.0625.0/src/BB84.Notifications/NotifiableProperty.cs/#L23" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v5.0.0726.0/src/BB84.Notifications/NotifiableProperty.cs/#L18" class="edit-link">Edit this page</a>
         </div>
 
 

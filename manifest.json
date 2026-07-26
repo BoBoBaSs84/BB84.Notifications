@@ -102,6 +102,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/BB84.Notifications.Commands.AsyncActionCommandBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BB84.Notifications.Commands.AsyncActionCommandBase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BB84.Notifications.Commands.AsyncActionCommandBase",
+      "Summary": "<p sourcefile=\"api/BB84.Notifications.Commands.AsyncActionCommandBase.yml\" sourcestartlinenumber=\"1\">Provides the cancellation state and execution pipeline shared by the asynchronous commands.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/BB84.Notifications.Commands.yml",
       "output": {
         ".html": {
@@ -547,6 +561,20 @@
       "IsMRef": true,
       "Title": "BB84.Notifications.NotifiableProperty<T>",
       "Summary": "<p sourcefile=\"api/BB84.Notifications.NotifiableProperty-1.yml\" sourcestartlinenumber=\"1\">Represents a property that supports change notifications and can be observed for changes.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BB84.Notifications.NotifiablePropertyBase-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BB84.Notifications.NotifiablePropertyBase-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BB84.Notifications.NotifiablePropertyBase<T>",
+      "Summary": "<p sourcefile=\"api/BB84.Notifications.NotifiablePropertyBase-1.yml\" sourcestartlinenumber=\"1\">Provides the shared infrastructure for properties that raise change notifications.</p>\n"
     },
     {
       "type": "ManagedReference",

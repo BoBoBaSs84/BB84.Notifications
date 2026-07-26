@@ -16,7 +16,7 @@
       
       
       
-      <meta name="docfx:docurl" content="https://github.com/BoBoBaSs84/BB84.Notifications/new/v4.3.0625.0/apiSpec/new?filename=BB84_Notifications_ReversibleProperty_1.md&amp;value=---%0Auid%3A%20BB84.Notifications.ReversibleProperty%601%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/BoBoBaSs84/BB84.Notifications/new/v5.0.0726.0/apiSpec/new?filename=BB84_Notifications_ReversibleProperty_1.md&amp;value=---%0Auid%3A%20BB84.Notifications.ReversibleProperty%601%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -85,7 +85,7 @@
 
 
   <h1 id="BB84_Notifications_ReversibleProperty_1" data-uid="BB84.Notifications.ReversibleProperty`1" class="text-break">
-Class ReversibleProperty&lt;T&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v4.3.0625.0/src/BB84.Notifications/ReversibleProperty.cs/#L25"><i class="bi bi-code-slash"></i></a>
+Class ReversibleProperty&lt;T&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v5.0.0726.0/src/BB84.Notifications/ReversibleProperty.cs/#L22"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -99,7 +99,7 @@ through its historical values.</p>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class ReversibleProperty&lt;T&gt; : IReversibleProperty&lt;T&gt;, INotifiableProperty&lt;T&gt;, INotifyPropertyChanged, INotifyPropertyChanging</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class ReversibleProperty&lt;T&gt; : NotifiablePropertyBase&lt;T&gt;, IReversibleProperty&lt;T&gt;, INotifiableProperty&lt;T&gt;, INotifyPropertyChanged, INotifyPropertyChanging</code></pre>
   </div>
 
 
@@ -115,6 +115,7 @@ through its historical values.</p>
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="BB84.Notifications.NotifiablePropertyBase-1.html">NotifiablePropertyBase</a>&lt;T&gt;</div>
       <div><span class="xref">ReversibleProperty&lt;T&gt;</span></div>
     </dd>
   </dl>
@@ -133,6 +134,21 @@ through its historical values.</p>
   <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
     <dd>
+    <div>
+      <a class="xref" href="BB84.Notifications.NotifiablePropertyBase-1.html#BB84_Notifications_NotifiablePropertyBase_1_IsDefault">NotifiablePropertyBase&lt;T&gt;.IsDefault</a>
+    </div>
+    <div>
+      <a class="xref" href="BB84.Notifications.NotifiablePropertyBase-1.html#BB84_Notifications_NotifiablePropertyBase_1_IsNull">NotifiablePropertyBase&lt;T&gt;.IsNull</a>
+    </div>
+    <div>
+      <a class="xref" href="BB84.Notifications.NotifiablePropertyBase-1.html#BB84_Notifications_NotifiablePropertyBase_1_Value">NotifiablePropertyBase&lt;T&gt;.Value</a>
+    </div>
+    <div>
+      <a class="xref" href="BB84.Notifications.NotifiablePropertyBase-1.html#BB84_Notifications_NotifiablePropertyBase_1_PropertyChanged">NotifiablePropertyBase&lt;T&gt;.PropertyChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="BB84.Notifications.NotifiablePropertyBase-1.html#BB84_Notifications_NotifiablePropertyBase_1_PropertyChanging">NotifiablePropertyBase&lt;T&gt;.PropertyChanging</a>
+    </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
     </div>
@@ -181,9 +197,55 @@ supplied at construction time (default: <a class="xref" href="BB84.Notifications
 
   <a id="BB84_Notifications_ReversibleProperty_1__ctor_" data-uid="BB84.Notifications.ReversibleProperty`1.#ctor*"></a>
 
+  <h3 id="BB84_Notifications_ReversibleProperty_1__ctor__0_System_Collections_Generic_IEqualityComparer__0__System_Int32_BB84_Notifications_OverflowStrategy_" data-uid="BB84.Notifications.ReversibleProperty`1.#ctor(`0,System.Collections.Generic.IEqualityComparer{`0},System.Int32,BB84.Notifications.OverflowStrategy)">
+  ReversibleProperty(T, IEqualityComparer&lt;T&gt;?, int, OverflowStrategy)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v5.0.0726.0/src/BB84.Notifications/ReversibleProperty.cs/#L63"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="BB84.Notifications.ReversibleProperty-1.html">ReversibleProperty&lt;T&gt;</a> class with the
+specified initial value, equality comparer, history size, and overflow strategy.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReversibleProperty(T value, IEqualityComparer&lt;T&gt;? comparer, int size = 10, OverflowStrategy overflow = OverflowStrategy.EvictOldest)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <span class="xref">T</span></dt>
+    <dd><p>The initial value of the property.</p>
+</dd>
+    <dt><code>comparer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1">IEqualityComparer</a>&lt;T&gt;</dt>
+    <dd><p>The equality comparer used to determine whether the value has changed.
+When <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.equalitycomparer-1.default">Default</a> is used.</p>
+</dd>
+    <dt><code>size</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The maximum number of values to retain in the history.
+Defaults to 10 and must be a positive integer.</p>
+</dd>
+    <dt><code>overflow</code> <a class="xref" href="BB84.Notifications.OverflowStrategy.html">OverflowStrategy</a></dt>
+    <dd><p>The strategy to apply when a new value is added and the history is already full.
+Defaults to <a class="xref" href="BB84.Notifications.OverflowStrategy.html#BB84_Notifications_OverflowStrategy_EvictOldest">EvictOldest</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BB84_Notifications_ReversibleProperty_1__ctor_" data-uid="BB84.Notifications.ReversibleProperty`1.#ctor*"></a>
+
   <h3 id="BB84_Notifications_ReversibleProperty_1__ctor__0_System_Int32_BB84_Notifications_OverflowStrategy_" data-uid="BB84.Notifications.ReversibleProperty`1.#ctor(`0,System.Int32,BB84.Notifications.OverflowStrategy)">
   ReversibleProperty(T, int, OverflowStrategy)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v4.3.0625.0/src/BB84.Notifications/ReversibleProperty.cs/#L46"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v5.0.0726.0/src/BB84.Notifications/ReversibleProperty.cs/#L42"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="BB84.Notifications.ReversibleProperty-1.html">ReversibleProperty&lt;T&gt;</a> class
@@ -229,7 +291,7 @@ Defaults to <a class="xref" href="BB84.Notifications.OverflowStrategy.html#BB84_
 
   <h3 id="BB84_Notifications_ReversibleProperty_1_Count" data-uid="BB84.Notifications.ReversibleProperty`1.Count">
   Count
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v4.3.0625.0/src/BB84.Notifications/ReversibleProperty.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v5.0.0726.0/src/BB84.Notifications/ReversibleProperty.cs/#L73"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the number of elements contained in the backing array.</p>
@@ -261,7 +323,7 @@ Defaults to <a class="xref" href="BB84.Notifications.OverflowStrategy.html#BB84_
 
   <h3 id="BB84_Notifications_ReversibleProperty_1_HasNextValue" data-uid="BB84.Notifications.ReversibleProperty`1.HasNextValue">
   HasNextValue
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v4.3.0625.0/src/BB84.Notifications/ReversibleProperty.cs/#L68"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v5.0.0726.0/src/BB84.Notifications/ReversibleProperty.cs/#L79"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets a value indicating whether there is a next value available in the sequence.</p>
@@ -293,7 +355,7 @@ Defaults to <a class="xref" href="BB84.Notifications.OverflowStrategy.html#BB84_
 
   <h3 id="BB84_Notifications_ReversibleProperty_1_HasPreviousValue" data-uid="BB84.Notifications.ReversibleProperty`1.HasPreviousValue">
   HasPreviousValue
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v4.3.0625.0/src/BB84.Notifications/ReversibleProperty.cs/#L71"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v5.0.0726.0/src/BB84.Notifications/ReversibleProperty.cs/#L82"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets a value indicating whether there is a previous value available in the sequence.</p>
@@ -325,7 +387,7 @@ Defaults to <a class="xref" href="BB84.Notifications.OverflowStrategy.html#BB84_
 
   <h3 id="BB84_Notifications_ReversibleProperty_1_Index" data-uid="BB84.Notifications.ReversibleProperty`1.Index">
   Index
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v4.3.0625.0/src/BB84.Notifications/ReversibleProperty.cs/#L59"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v5.0.0726.0/src/BB84.Notifications/ReversibleProperty.cs/#L76"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the zero-based index of the current item.</p>
@@ -353,102 +415,6 @@ Defaults to <a class="xref" href="BB84.Notifications.OverflowStrategy.html#BB84_
 
 
 
-  <a id="BB84_Notifications_ReversibleProperty_1_IsDefault_" data-uid="BB84.Notifications.ReversibleProperty`1.IsDefault*"></a>
-
-  <h3 id="BB84_Notifications_ReversibleProperty_1_IsDefault" data-uid="BB84.Notifications.ReversibleProperty`1.IsDefault">
-  IsDefault
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v4.3.0625.0/src/BB84.Notifications/ReversibleProperty.cs/#L62"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Gets a value indicating whether the current instance represents the default configuration or state.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsDefault { get; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="BB84_Notifications_ReversibleProperty_1_IsNull_" data-uid="BB84.Notifications.ReversibleProperty`1.IsNull*"></a>
-
-  <h3 id="BB84_Notifications_ReversibleProperty_1_IsNull" data-uid="BB84.Notifications.ReversibleProperty`1.IsNull">
-  IsNull
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v4.3.0625.0/src/BB84.Notifications/ReversibleProperty.cs/#L65"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Gets a value indicating whether the current object represents a null state.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsNull { get; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="BB84_Notifications_ReversibleProperty_1_Value_" data-uid="BB84.Notifications.ReversibleProperty`1.Value*"></a>
-
-  <h3 id="BB84_Notifications_ReversibleProperty_1_Value" data-uid="BB84.Notifications.ReversibleProperty`1.Value">
-  Value
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v4.3.0625.0/src/BB84.Notifications/ReversibleProperty.cs/#L74"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Gets or sets the value stored in the current instance.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public T Value { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">T</span></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
   <h2 class="section" id="methods">Methods
 </h2>
 
@@ -457,7 +423,7 @@ Defaults to <a class="xref" href="BB84.Notifications.OverflowStrategy.html#BB84_
 
   <h3 id="BB84_Notifications_ReversibleProperty_1_Clear" data-uid="BB84.Notifications.ReversibleProperty`1.Clear">
   Clear()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v4.3.0625.0/src/BB84.Notifications/ReversibleProperty.cs/#L109"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v5.0.0726.0/src/BB84.Notifications/ReversibleProperty.cs/#L105"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Resets the history to contain only the current value and sets <a class="xref" href="BB84.Notifications.Interfaces.IReversibleProperty-1.html#BB84_Notifications_Interfaces_IReversibleProperty_1_Index">Index</a> to zero,
@@ -485,7 +451,7 @@ returning the property to the same state as after initial construction.</p>
 
   <h3 id="BB84_Notifications_ReversibleProperty_1_NextValue" data-uid="BB84.Notifications.ReversibleProperty`1.NextValue">
   NextValue()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v4.3.0625.0/src/BB84.Notifications/ReversibleProperty.cs/#L87"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v5.0.0726.0/src/BB84.Notifications/ReversibleProperty.cs/#L85"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Advances the internal state to the next value in the sequence.</p>
@@ -513,11 +479,55 @@ before retrieving the next value from the sequence.</p>
 
 
 
+  <a id="BB84_Notifications_ReversibleProperty_1_OnValueChanging_" data-uid="BB84.Notifications.ReversibleProperty`1.OnValueChanging*"></a>
+
+  <h3 id="BB84_Notifications_ReversibleProperty_1_OnValueChanging__0_" data-uid="BB84.Notifications.ReversibleProperty`1.OnValueChanging(`0)">
+  OnValueChanging(T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v5.0.0726.0/src/BB84.Notifications/ReversibleProperty.cs/#L128"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Records the incoming value in the history before it is assigned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool OnValueChanging(T newValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>newValue</code> <span class="xref">T</span></dt>
+    <dd><p>The value that is about to be assigned.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> when the value was recorded and may be assigned;
+otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="BB84_Notifications_ReversibleProperty_1_OnValueChanging__0__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Returning <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> aborts the assignment, which is how
+<a class="xref" href="BB84.Notifications.OverflowStrategy.html#BB84_Notifications_OverflowStrategy_EvictNewest">EvictNewest</a> rejects a value once the buffer is full.</p>
+</div>
+
+
+
+
   <a id="BB84_Notifications_ReversibleProperty_1_PreviousValue_" data-uid="BB84.Notifications.ReversibleProperty`1.PreviousValue*"></a>
 
   <h3 id="BB84_Notifications_ReversibleProperty_1_PreviousValue" data-uid="BB84.Notifications.ReversibleProperty`1.PreviousValue">
   PreviousValue()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v4.3.0625.0/src/BB84.Notifications/ReversibleProperty.cs/#L98"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v5.0.0726.0/src/BB84.Notifications/ReversibleProperty.cs/#L95"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Retrieves the previous value in a sequence or collection.</p>
@@ -549,7 +559,7 @@ before retrieving the previous value from the sequence.</p>
 
   <h3 id="BB84_Notifications_ReversibleProperty_1_Snapshot" data-uid="BB84.Notifications.ReversibleProperty`1.Snapshot">
   Snapshot()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v4.3.0625.0/src/BB84.Notifications/ReversibleProperty.cs/#L117"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v5.0.0726.0/src/BB84.Notifications/ReversibleProperty.cs/#L113"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns a read-only snapshot of all values currently in the history, ordered from oldest
@@ -579,70 +589,6 @@ to most recent.</p>
 
 
 
-  <h2 class="section" id="events">Events
-</h2>
-
-
-
-  <h3 id="BB84_Notifications_ReversibleProperty_1_PropertyChanged" data-uid="BB84.Notifications.ReversibleProperty`1.PropertyChanged">
-  PropertyChanged
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v4.3.0625.0/src/BB84.Notifications/ReversibleProperty.cs/#L81"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event PropertyChangedEventHandler? PropertyChanged</code></pre>
-  </div>
-
-
-
-
-
-
-  <h4 class="section">Event Type</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.propertychangedeventhandler">PropertyChangedEventHandler</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <h3 id="BB84_Notifications_ReversibleProperty_1_PropertyChanging" data-uid="BB84.Notifications.ReversibleProperty`1.PropertyChanging">
-  PropertyChanging
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v4.3.0625.0/src/BB84.Notifications/ReversibleProperty.cs/#L84"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event PropertyChangingEventHandler? PropertyChanging</code></pre>
-  </div>
-
-
-
-
-
-
-  <h4 class="section">Event Type</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.propertychangingeventhandler">PropertyChangingEventHandler</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
   <h2 class="section" id="operators">Operators
 </h2>
 
@@ -651,7 +597,7 @@ to most recent.</p>
 
   <h3 id="BB84_Notifications_ReversibleProperty_1_op_Implicit_BB84_Notifications_ReversibleProperty__0____0" data-uid="BB84.Notifications.ReversibleProperty`1.op_Implicit(BB84.Notifications.ReversibleProperty{`0})~`0">
   implicit operator T(ReversibleProperty&lt;T&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v4.3.0625.0/src/BB84.Notifications/ReversibleProperty.cs/#L137"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v5.0.0726.0/src/BB84.Notifications/ReversibleProperty.cs/#L148"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Implicitly converts a <a class="xref" href="BB84.Notifications.ReversibleProperty-1.html">ReversibleProperty&lt;T&gt;</a> instance
@@ -690,7 +636,7 @@ to its underlying value of type <code class="typeparamref">T</code>.</p>
 
   <h3 id="BB84_Notifications_ReversibleProperty_1_op_Implicit__0__BB84_Notifications_ReversibleProperty__0_" data-uid="BB84.Notifications.ReversibleProperty`1.op_Implicit(`0)~BB84.Notifications.ReversibleProperty{`0}">
   implicit operator ReversibleProperty&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v4.3.0625.0/src/BB84.Notifications/ReversibleProperty.cs/#L127"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v5.0.0726.0/src/BB84.Notifications/ReversibleProperty.cs/#L138"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Implicitly converts a value of type <code class="typeparamref">T</code> to a
@@ -729,7 +675,7 @@ to its underlying value of type <code class="typeparamref">T</code>.</p>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v4.3.0625.0/src/BB84.Notifications/ReversibleProperty.cs/#L25" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v5.0.0726.0/src/BB84.Notifications/ReversibleProperty.cs/#L22" class="edit-link">Edit this page</a>
         </div>
 
 

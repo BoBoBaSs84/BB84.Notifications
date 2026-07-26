@@ -16,7 +16,7 @@
       
       
       
-      <meta name="docfx:docurl" content="https://github.com/BoBoBaSs84/BB84.Notifications/new/v4.3.0625.0/apiSpec/new?filename=BB84_Notifications_Commands_AsyncActionCommand.md&amp;value=---%0Auid%3A%20BB84.Notifications.Commands.AsyncActionCommand%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/BoBoBaSs84/BB84.Notifications/new/v5.0.0726.0/apiSpec/new?filename=BB84_Notifications_Commands_AsyncActionCommand.md&amp;value=---%0Auid%3A%20BB84.Notifications.Commands.AsyncActionCommand%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -85,7 +85,7 @@
 
 
   <h1 id="BB84_Notifications_Commands_AsyncActionCommand" data-uid="BB84.Notifications.Commands.AsyncActionCommand" class="text-break">
-Class AsyncActionCommand  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v4.3.0625.0/src/BB84.Notifications/Commands/AsyncActionCommand.cs/#L22"><i class="bi bi-code-slash"></i></a>
+Class AsyncActionCommand  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v5.0.0726.0/src/BB84.Notifications/Commands/AsyncActionCommand.cs/#L19"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -98,7 +98,7 @@ Class AsyncActionCommand  <a class="header-action link-secondary" title="View so
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class AsyncActionCommand : IAsyncActionCommand, ICommand</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class AsyncActionCommand : AsyncActionCommandBase, IAsyncActionCommand, ICommand</code></pre>
   </div>
 
 
@@ -108,6 +108,7 @@ Class AsyncActionCommand  <a class="header-action link-secondary" title="View so
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="BB84.Notifications.Commands.AsyncActionCommandBase.html">AsyncActionCommandBase</a></div>
       <div><span class="xref">AsyncActionCommand</span></div>
     </dd>
   </dl>
@@ -124,6 +125,21 @@ Class AsyncActionCommand  <a class="header-action link-secondary" title="View so
   <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
     <dd>
+    <div>
+      <a class="xref" href="BB84.Notifications.Commands.AsyncActionCommandBase.html#BB84_Notifications_Commands_AsyncActionCommandBase_IsCancellationRequested">AsyncActionCommandBase.IsCancellationRequested</a>
+    </div>
+    <div>
+      <a class="xref" href="BB84.Notifications.Commands.AsyncActionCommandBase.html#BB84_Notifications_Commands_AsyncActionCommandBase_CancelCommand">AsyncActionCommandBase.CancelCommand</a>
+    </div>
+    <div>
+      <a class="xref" href="BB84.Notifications.Commands.AsyncActionCommandBase.html#BB84_Notifications_Commands_AsyncActionCommandBase_CanExecuteChanged">AsyncActionCommandBase.CanExecuteChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="BB84.Notifications.Commands.AsyncActionCommandBase.html#BB84_Notifications_Commands_AsyncActionCommandBase_Cancel">AsyncActionCommandBase.Cancel()</a>
+    </div>
+    <div>
+      <a class="xref" href="BB84.Notifications.Commands.AsyncActionCommandBase.html#BB84_Notifications_Commands_AsyncActionCommandBase_RaiseCanExecuteChanged">AsyncActionCommandBase.RaiseCanExecuteChanged()</a>
+    </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
     </div>
@@ -148,9 +164,9 @@ Class AsyncActionCommand  <a class="header-action link-secondary" title="View so
 
 
   <h2 id="BB84_Notifications_Commands_AsyncActionCommand_remarks">Remarks</h2>
-  <div class="markdown level0 remarks"><p>When a <code>Func&lt;CancellationToken, Task&gt;</code> delegate is supplied the command manages its own
-<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtokensource">CancellationTokenSource</a> internally. Call <a class="xref" href="BB84.Notifications.Commands.AsyncActionCommand.html#BB84_Notifications_Commands_AsyncActionCommand_Cancel">Cancel()</a> (or execute
-<a class="xref" href="BB84.Notifications.Commands.AsyncActionCommand.html#BB84_Notifications_Commands_AsyncActionCommand_CancelCommand">CancelCommand</a>) to cancel a running operation.</p>
+  <div class="markdown level0 remarks"><p>The command manages its own <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtokensource">CancellationTokenSource</a> internally. Call
+<a class="xref" href="BB84.Notifications.Commands.AsyncActionCommandBase.html#BB84_Notifications_Commands_AsyncActionCommandBase_Cancel">Cancel()</a> (or execute
+<a class="xref" href="BB84.Notifications.Commands.AsyncActionCommandBase.html#BB84_Notifications_Commands_AsyncActionCommandBase_CancelCommand">CancelCommand</a>) to cancel a running operation.</p>
 </div>
 
 
@@ -162,7 +178,7 @@ Class AsyncActionCommand  <a class="header-action link-secondary" title="View so
 
   <h3 id="BB84_Notifications_Commands_AsyncActionCommand__ctor_System_Func_System_Threading_CancellationToken_System_Threading_Tasks_Task__System_Func_System_Boolean__System_Action_System_Exception__" data-uid="BB84.Notifications.Commands.AsyncActionCommand.#ctor(System.Func{System.Threading.CancellationToken,System.Threading.Tasks.Task},System.Func{System.Boolean},System.Action{System.Exception})">
   AsyncActionCommand(Func&lt;CancellationToken, Task&gt;, Func&lt;bool&gt;?, Action&lt;Exception&gt;?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v4.3.0625.0/src/BB84.Notifications/Commands/AsyncActionCommand.cs/#L37"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v5.0.0726.0/src/BB84.Notifications/Commands/AsyncActionCommand.cs/#L44"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Initializes a new instance of <a class="xref" href="BB84.Notifications.Commands.AsyncActionCommand.html">AsyncActionCommand</a> with a cancellable execute delegate.</p>
@@ -201,10 +217,10 @@ Class AsyncActionCommand  <a class="header-action link-secondary" title="View so
 
   <h3 id="BB84_Notifications_Commands_AsyncActionCommand__ctor_System_Func_System_Threading_Tasks_Task__System_Func_System_Boolean__System_Action_System_Exception__" data-uid="BB84.Notifications.Commands.AsyncActionCommand.#ctor(System.Func{System.Threading.Tasks.Task},System.Func{System.Boolean},System.Action{System.Exception})">
   AsyncActionCommand(Func&lt;Task&gt;, Func&lt;bool&gt;?, Action&lt;Exception&gt;?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v4.3.0625.0/src/BB84.Notifications/Commands/AsyncActionCommand.cs/#L22"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v5.0.0726.0/src/BB84.Notifications/Commands/AsyncActionCommand.cs/#L31"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Represents an asynchronous command that can be executed and queried for its ability to execute.</p>
+  <div class="markdown level1 summary"><p>Initializes a new instance of <a class="xref" href="BB84.Notifications.Commands.AsyncActionCommand.html">AsyncActionCommand</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -232,79 +248,6 @@ Class AsyncActionCommand  <a class="header-action link-secondary" title="View so
 
 
 
-  <h4 class="section" id="BB84_Notifications_Commands_AsyncActionCommand__ctor_System_Func_System_Threading_Tasks_Task__System_Func_System_Boolean__System_Action_System_Exception___remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>When a <code>Func&lt;CancellationToken, Task&gt;</code> delegate is supplied the command manages its own
-<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtokensource">CancellationTokenSource</a> internally. Call <a class="xref" href="BB84.Notifications.Commands.AsyncActionCommand.html#BB84_Notifications_Commands_AsyncActionCommand_Cancel">Cancel()</a> (or execute
-<a class="xref" href="BB84.Notifications.Commands.AsyncActionCommand.html#BB84_Notifications_Commands_AsyncActionCommand_CancelCommand">CancelCommand</a>) to cancel a running operation.</p>
-</div>
-
-
-
-
-  <h2 class="section" id="properties">Properties
-</h2>
-
-
-  <a id="BB84_Notifications_Commands_AsyncActionCommand_CancelCommand_" data-uid="BB84.Notifications.Commands.AsyncActionCommand.CancelCommand*"></a>
-
-  <h3 id="BB84_Notifications_Commands_AsyncActionCommand_CancelCommand" data-uid="BB84.Notifications.Commands.AsyncActionCommand.CancelCommand">
-  CancelCommand
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v4.3.0625.0/src/BB84.Notifications/Commands/AsyncActionCommand.cs/#L47"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Gets an <a class="xref" href="BB84.Notifications.Interfaces.Commands.IActionCommand.html">IActionCommand</a> that, when executed, cancels the currently running operation.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IActionCommand CancelCommand { get; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="BB84.Notifications.Interfaces.Commands.IActionCommand.html">IActionCommand</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="BB84_Notifications_Commands_AsyncActionCommand_IsCancellationRequested_" data-uid="BB84.Notifications.Commands.AsyncActionCommand.IsCancellationRequested*"></a>
-
-  <h3 id="BB84_Notifications_Commands_AsyncActionCommand_IsCancellationRequested" data-uid="BB84.Notifications.Commands.AsyncActionCommand.IsCancellationRequested">
-  IsCancellationRequested
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v4.3.0625.0/src/BB84.Notifications/Commands/AsyncActionCommand.cs/#L44"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Gets a value indicating whether cancellation has been requested for the currently executing operation.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsCancellationRequested { get; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
 
 
 
@@ -317,7 +260,7 @@ Class AsyncActionCommand  <a class="header-action link-secondary" title="View so
 
   <h3 id="BB84_Notifications_Commands_AsyncActionCommand_CanExecute" data-uid="BB84.Notifications.Commands.AsyncActionCommand.CanExecute">
   CanExecute()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v4.3.0625.0/src/BB84.Notifications/Commands/AsyncActionCommand.cs/#L53"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v5.0.0726.0/src/BB84.Notifications/Commands/AsyncActionCommand.cs/#L52"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Defines the method that determines whether the command can execute in its current state.</p>
@@ -350,7 +293,7 @@ Class AsyncActionCommand  <a class="header-action link-secondary" title="View so
 
   <h3 id="BB84_Notifications_Commands_AsyncActionCommand_CanExecute_System_Object_" data-uid="BB84.Notifications.Commands.AsyncActionCommand.CanExecute(System.Object)">
   CanExecute(object?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v4.3.0625.0/src/BB84.Notifications/Commands/AsyncActionCommand.cs/#L94"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v5.0.0726.0/src/BB84.Notifications/Commands/AsyncActionCommand.cs/#L56"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -382,38 +325,11 @@ Class AsyncActionCommand  <a class="header-action link-secondary" title="View so
 
 
 
-  <a id="BB84_Notifications_Commands_AsyncActionCommand_Cancel_" data-uid="BB84.Notifications.Commands.AsyncActionCommand.Cancel*"></a>
-
-  <h3 id="BB84_Notifications_Commands_AsyncActionCommand_Cancel" data-uid="BB84.Notifications.Commands.AsyncActionCommand.Cancel">
-  Cancel()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v4.3.0625.0/src/BB84.Notifications/Commands/AsyncActionCommand.cs/#L57"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Requests cancellation of the currently executing operation.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Cancel()</code></pre>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
   <a id="BB84_Notifications_Commands_AsyncActionCommand_Execute_" data-uid="BB84.Notifications.Commands.AsyncActionCommand.Execute*"></a>
 
   <h3 id="BB84_Notifications_Commands_AsyncActionCommand_Execute_System_Object_" data-uid="BB84.Notifications.Commands.AsyncActionCommand.Execute(System.Object)">
   Execute(object?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v4.3.0625.0/src/BB84.Notifications/Commands/AsyncActionCommand.cs/#L98"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v5.0.0726.0/src/BB84.Notifications/Commands/AsyncActionCommand.cs/#L76"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -444,7 +360,7 @@ Class AsyncActionCommand  <a class="header-action link-secondary" title="View so
 
   <h3 id="BB84_Notifications_Commands_AsyncActionCommand_ExecuteAsync" data-uid="BB84.Notifications.Commands.AsyncActionCommand.ExecuteAsync">
   ExecuteAsync()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v4.3.0625.0/src/BB84.Notifications/Commands/AsyncActionCommand.cs/#L64"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v5.0.0726.0/src/BB84.Notifications/Commands/AsyncActionCommand.cs/#L60"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Defines the method to be called when the command is invoked.</p>
@@ -477,7 +393,7 @@ Class AsyncActionCommand  <a class="header-action link-secondary" title="View so
 
   <h3 id="BB84_Notifications_Commands_AsyncActionCommand_ExecuteAsync_System_Threading_CancellationToken_" data-uid="BB84.Notifications.Commands.AsyncActionCommand.ExecuteAsync(System.Threading.CancellationToken)">
   ExecuteAsync(CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v4.3.0625.0/src/BB84.Notifications/Commands/AsyncActionCommand.cs/#L68"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v5.0.0726.0/src/BB84.Notifications/Commands/AsyncActionCommand.cs/#L64"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Defines the method to be called when the command is invoked with the specified cancellation token.</p>
@@ -512,72 +428,11 @@ Class AsyncActionCommand  <a class="header-action link-secondary" title="View so
 
 
 
-  <a id="BB84_Notifications_Commands_AsyncActionCommand_RaiseCanExecuteChanged_" data-uid="BB84.Notifications.Commands.AsyncActionCommand.RaiseCanExecuteChanged*"></a>
-
-  <h3 id="BB84_Notifications_Commands_AsyncActionCommand_RaiseCanExecuteChanged" data-uid="BB84.Notifications.Commands.AsyncActionCommand.RaiseCanExecuteChanged">
-  RaiseCanExecuteChanged()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v4.3.0625.0/src/BB84.Notifications/Commands/AsyncActionCommand.cs/#L102"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Notifies that the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.input.icommand.canexecutechanged">CanExecuteChanged</a> property has changed.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void RaiseCanExecuteChanged()</code></pre>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <h2 class="section" id="events">Events
-</h2>
-
-
-
-  <h3 id="BB84_Notifications_Commands_AsyncActionCommand_CanExecuteChanged" data-uid="BB84.Notifications.Commands.AsyncActionCommand.CanExecuteChanged">
-  CanExecuteChanged
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v4.3.0625.0/src/BB84.Notifications/Commands/AsyncActionCommand.cs/#L50"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event EventHandler? CanExecuteChanged</code></pre>
-  </div>
-
-
-
-
-
-
-  <h4 class="section">Event Type</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler">EventHandler</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v4.3.0625.0/src/BB84.Notifications/Commands/AsyncActionCommand.cs/#L22" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BoBoBaSs84/BB84.Notifications/blob/v5.0.0726.0/src/BB84.Notifications/Commands/AsyncActionCommand.cs/#L19" class="edit-link">Edit this page</a>
         </div>
 
 
