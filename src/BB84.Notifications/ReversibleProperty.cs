@@ -1,11 +1,8 @@
-﻿// Copyright: 2023 Robert Peter Meyer
+// Copyright: 2023 Robert Peter Meyer
 // License: MIT
 //
 // This source code is licensed under the MIT license found in the
 // LICENSE file in the root directory of this source tree.
-using System.ComponentModel;
-
-using BB84.Notifications.Components;
 using BB84.Notifications.Interfaces;
 
 namespace BB84.Notifications;
@@ -22,13 +19,12 @@ namespace BB84.Notifications;
 /// supplied at construction time (default: <see cref="OverflowStrategy.EvictOldest"/>).
 /// </remarks>
 /// <typeparam name="T">The type of the property's value.</typeparam>
-public sealed class ReversibleProperty<T> : INotifiableProperty<T>, IReversibleProperty<T>
+public sealed class ReversibleProperty<T> : NotifiablePropertyBase<T>, IReversibleProperty<T>
 {
   private const int DefaultSize = 10;
   private readonly int _size;
   private readonly OverflowStrategy _overflow;
   private readonly List<T> _values;
-  private T _value;
 
   /// <summary>
   /// Initializes a new instance of the <see cref="ReversibleProperty{T}"/> class
@@ -44,11 +40,32 @@ public sealed class ReversibleProperty<T> : INotifiableProperty<T>, IReversibleP
   /// Defaults to <see cref="OverflowStrategy.EvictOldest"/>.
   /// </param>
   public ReversibleProperty(T value, int size = DefaultSize, OverflowStrategy overflow = OverflowStrategy.EvictOldest)
+    : this(value, null, size, overflow)
+  { }
+
+  /// <summary>
+  /// Initializes a new instance of the <see cref="ReversibleProperty{T}"/> class with the
+  /// specified initial value, equality comparer, history size, and overflow strategy.
+  /// </summary>
+  /// <param name="value">The initial value of the property.</param>
+  /// <param name="comparer">
+  /// The equality comparer used to determine whether the value has changed.
+  /// When <see langword="null"/>, <see cref="EqualityComparer{T}.Default"/> is used.
+  /// </param>
+  /// <param name="size">
+  /// The maximum number of values to retain in the history.
+  /// Defaults to 10 and must be a positive integer.
+  /// </param>
+  /// <param name="overflow">
+  /// The strategy to apply when a new value is added and the history is already full.
+  /// Defaults to <see cref="OverflowStrategy.EvictOldest"/>.
+  /// </param>
+  public ReversibleProperty(T value, IEqualityComparer<T>? comparer, int size = DefaultSize, OverflowStrategy overflow = OverflowStrategy.EvictOldest)
+    : base(value, comparer)
   {
     _size = size;
     _overflow = overflow;
     _values = new(size);
-    _value = value;
     _ = TryAddValue(value);
   }
 
@@ -59,29 +76,10 @@ public sealed class ReversibleProperty<T> : INotifiableProperty<T>, IReversibleP
   public int Index { get; private set; }
 
   /// <inheritdoc/>
-  public bool IsDefault => EqualityComparer<T>.Default.Equals(_value, default!);
-
-  /// <inheritdoc/>
-  public bool IsNull => _value is null;
-
-  /// <inheritdoc/>
   public bool HasNextValue => _values.Count > Index + 1;
 
   /// <inheritdoc/>
   public bool HasPreviousValue => Index > 0;
-
-  /// <inheritdoc/>
-  public T Value
-  {
-    get => _value;
-    set => SetProperty(ref _value, value);
-  }
-
-  /// <inheritdoc/>
-  public event PropertyChangedEventHandler? PropertyChanged;
-
-  /// <inheritdoc/>
-  public event PropertyChangingEventHandler? PropertyChanging;
 
   /// <inheritdoc/>
   public void NextValue()
@@ -90,8 +88,7 @@ public sealed class ReversibleProperty<T> : INotifiableProperty<T>, IReversibleP
       return;
 
     Index++;
-    T value = _values[Index];
-    SetProperty(ref _value, value, false);
+    ForceValue(_values[Index]);
   }
 
   /// <inheritdoc/>
@@ -101,21 +98,35 @@ public sealed class ReversibleProperty<T> : INotifiableProperty<T>, IReversibleP
       return;
 
     Index--;
-    T value = _values[Index];
-    SetProperty(ref _value, value, false);
+    ForceValue(_values[Index]);
   }
 
   /// <inheritdoc/>
   public void Clear()
   {
     _values.Clear();
-    _values.Add(_value);
+    _values.Add(Value);
     Index = 0;
   }
 
   /// <inheritdoc/>
   public IReadOnlyList<T> Snapshot()
     => _values.AsReadOnly();
+
+  /// <summary>
+  /// Records the incoming value in the history before it is assigned.
+  /// </summary>
+  /// <remarks>
+  /// Returning <see langword="false"/> aborts the assignment, which is how
+  /// <see cref="OverflowStrategy.EvictNewest"/> rejects a value once the buffer is full.
+  /// </remarks>
+  /// <param name="newValue">The value that is about to be assigned.</param>
+  /// <returns>
+  /// <see langword="true"/> when the value was recorded and may be assigned;
+  /// otherwise, <see langword="false"/>.
+  /// </returns>
+  protected override bool OnValueChanging(T newValue)
+    => TryAddValue(newValue);
 
   /// <summary>
   /// Implicitly converts a value of type <typeparamref name="T"/> to a
@@ -136,28 +147,6 @@ public sealed class ReversibleProperty<T> : INotifiableProperty<T>, IReversibleP
   /// </param>
   public static implicit operator T(ReversibleProperty<T> property)
     => property.Value;
-
-  /// <summary>
-  /// Updates the value of a property and raises the appropriate change notifications.
-  /// </summary>
-  /// <param name="oldValue">A reference to the current value. Updated to <paramref name="newValue"/> when not equal.</param>
-  /// <param name="newValue">The new value to set for the property.</param>
-  /// <param name="addToHistory">
-  /// <see langword="true"/> to record the new value in the history; <see langword="false"/> when
-  /// navigating the existing history (NextValue/PreviousValue).
-  /// </param>
-  private void SetProperty(ref T oldValue, T newValue, bool addToHistory = true)
-  {
-    if (!EqualityComparer<T>.Default.Equals(oldValue, newValue))
-    {
-      if (addToHistory && !TryAddValue(newValue))
-        return;
-
-      PropertyChanging?.Invoke(this, new PropertyChangingEventArgs<T>(oldValue));
-      oldValue = newValue;
-      PropertyChanged?.Invoke(this, new PropertyChangedEventArgs<T>(newValue));
-    }
-  }
 
   /// <summary>
   /// Attempts to add a value to the history, respecting the configured <see cref="OverflowStrategy"/>.
