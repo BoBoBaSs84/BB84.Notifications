@@ -27,7 +27,7 @@ public abstract class ValidatableObject : NotifiableObject, Interfaces.IValidata
   public bool HasErrors => _errors.Count > 0;
 
   /// <inheritdoc/>
-  public bool IsValid => Validate();
+  public bool IsValid => _errors.Count is 0;
 
   /// <inheritdoc/>
   public event EventHandler<DataErrorsChangedEventArgs>? ErrorsChanged;
@@ -105,34 +105,32 @@ public abstract class ValidatableObject : NotifiableObject, Interfaces.IValidata
   protected void RaiseErrorsChanged([CallerMemberName] string propertyName = "")
     => ErrorsChanged?.Invoke(this, new(propertyName));
 
-  /// <summary>
-  /// Validates the current object based on its data annotations.
-  /// </summary>
+  /// <inheritdoc/>
   /// <remarks>
   /// This method checks the object's properties and fields against the validation attributes
-  /// defined in its class. If validation fails, the validation errors are stored for further
-  /// inspection.
+  /// defined in its class. Every previously recorded error is discarded first, so an object
+  /// that now passes validation no longer reports errors from an earlier run.
   /// </remarks>
-  /// <returns>
-  /// <see langword="true"/> if the object passes validation; otherwise, <see langword="false"/>.
-  /// </returns>
-  protected virtual bool Validate()
+  public virtual bool Validate()
   {
     ValidationContext context = new(this);
     List<ValidationResult> results = [];
 
     bool isValid = Validator.TryValidateObject(this, context, results, true);
 
-    if (isValid)
-      return isValid;
-
+    string[] previousProperties = [.. _errors.Keys];
     _errors.Clear();
 
     foreach (ValidationResult result in results)
     {
       foreach (string propertyName in result.MemberNames)
-        AddError(propertyName, result.ErrorMessage);
+        AddErrorCore(propertyName, result.ErrorMessage);
     }
+
+    // Notify once per property that gained or lost errors, rather than once per
+    // individual message, so subscribers are not told about the same property twice.
+    foreach (string propertyName in previousProperties.Union(_errors.Keys))
+      RaiseErrorsChanged(propertyName);
 
     return isValid;
   }
@@ -156,7 +154,7 @@ public abstract class ValidatableObject : NotifiableObject, Interfaces.IValidata
 
     ClearErrors(propertyName);
 
-    if (Validator.TryValidateProperty(value, context, results).Equals(false))
+    if (!Validator.TryValidateProperty(value, context, results))
     {
       foreach (ValidationResult result in results)
         AddError(propertyName, result.ErrorMessage);
@@ -180,13 +178,35 @@ public abstract class ValidatableObject : NotifiableObject, Interfaces.IValidata
   /// </param>
   protected void AddError(string propertyName, string? errorMessage)
   {
-    if (_errors.ContainsKey(propertyName).Equals(false))
-      _errors.Add(propertyName, []);
-
-    if (_errors[propertyName].Contains(errorMessage).Equals(false))
-      _errors[propertyName].Add(errorMessage);
-
+    AddErrorCore(propertyName, errorMessage);
     RaiseErrorsChanged(propertyName);
+  }
+
+  /// <summary>
+  /// Records an error message for a property without raising <see cref="ErrorsChanged"/>.
+  /// </summary>
+  /// <remarks>
+  /// Used by <see cref="Validate()"/>, which collects errors for many properties at once and
+  /// raises a single notification per affected property afterwards.
+  /// </remarks>
+  /// <param name="propertyName">
+  /// The name of the property for which the error is being recorded. Cannot be null or empty.
+  /// </param>
+  /// <param name="errorMessage">
+  /// The error message to associate with the property. Can be null, in which case no message is added.
+  /// </param>
+  private void AddErrorCore(string propertyName, string? errorMessage)
+  {
+    // The null check is redundant on annotated frameworks but keeps flow analysis
+    // happy on netstandard2.0, where TryGetValue carries no nullable annotations.
+    if (!_errors.TryGetValue(propertyName, out List<string?>? errorMessages) || errorMessages is null)
+    {
+      errorMessages = [];
+      _errors.Add(propertyName, errorMessages);
+    }
+
+    if (!errorMessages.Contains(errorMessage))
+      errorMessages.Add(errorMessage);
   }
 
   /// <summary>
@@ -202,6 +222,6 @@ public abstract class ValidatableObject : NotifiableObject, Interfaces.IValidata
   private void ClearErrors(string propertyName)
   {
     if (_errors.Remove(propertyName))
-      RaiseErrorsChanged();
+      RaiseErrorsChanged(propertyName);
   }
 }

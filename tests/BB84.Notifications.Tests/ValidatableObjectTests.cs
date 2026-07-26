@@ -47,5 +47,13 @@ public sealed partial class ValidatableObjectTests
       get => _lastName;
       set => SetPropertyAndValidate(ref _lastName, value);
     }
+
+    /// <summary>
+    /// Assigns <see cref="Id"/> through the non-validating <c>SetProperty</c> path, so the
+    /// recorded errors are left untouched and object-level validation can be observed
+    /// clearing them on its own.
+    /// </summary>
+    public void SetIdWithoutValidation(int value)
+      => SetProperty(ref _id, value);
   }
 }
