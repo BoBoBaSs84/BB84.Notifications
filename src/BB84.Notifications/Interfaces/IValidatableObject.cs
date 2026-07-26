@@ -21,5 +21,21 @@ public interface IValidatableObject : INotifyPropertyChanged, INotifyPropertyCha
   /// <summary>
   /// Gets a value indicating whether the current state is valid.
   /// </summary>
+  /// <remarks>
+  /// This is a pure read over the errors recorded so far; it does not trigger validation.
+  /// Call <see cref="Validate"/> to (re-)evaluate the object before relying on this value.
+  /// </remarks>
   bool IsValid { get; }
+
+  /// <summary>
+  /// Validates the whole object and records the resulting validation errors.
+  /// </summary>
+  /// <remarks>
+  /// Any previously recorded errors are discarded, and <see cref="INotifyDataErrorInfo.ErrorsChanged"/>
+  /// is raised for every property whose errors were added or removed.
+  /// </remarks>
+  /// <returns>
+  /// <see langword="true"/> if the object passes validation; otherwise, <see langword="false"/>.
+  /// </returns>
+  bool Validate();
 }
