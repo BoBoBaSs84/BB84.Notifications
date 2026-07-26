@@ -119,6 +119,12 @@ public interface INotifiableProperty<T> : INotifyPropertyChanged, INotifyPropert
 }
 ```
 
+#### NotifiablePropertyBase&lt;T&gt;
+
+Abstract base class providing the shared infrastructure for notifiable properties: the value, the equality comparer, `IsDefault`, `IsNull` and both notification events.
+
+Derived types hook into the set pipeline by overriding `OnValueChanging`, which runs after the value is known to differ but before anything is assigned, and may return `false` to abort the assignment.
+
 #### NotifiableProperty&lt;T&gt;
 
 Concrete implementation of a notifiable property with implicit conversion support.
@@ -157,8 +163,10 @@ Implementation with configurable history size and value navigation.
 **Key Features:**
 
 - Configurable history size (default: 10 values)
+- Optional custom `IEqualityComparer<T>` for change detection, as on `NotifiableProperty<T>`
 - Forward/backward navigation through value history
 - Automatic history management
+- Navigating existing history does not re-record entries or truncate forward ones
 - Configurable overflow strategy (`EvictOldest`, `EvictNewest`, `Throw`)
 - `Clear()` resets history to current value only, preserving event subscriptions
 - `Snapshot()` returns a read-only view of all history entries
@@ -176,7 +184,7 @@ Abstract base class providing property change infrastructure.
 
 **Key Features:**
 
-- `SetProperty` method for automatic change detection (default or custom `IEqualityComparer<T>`)
+- `SetProperty` method for automatic change detection (default or custom `IEqualityComparer<T>`), returning `bool` to report whether the value actually changed
 - Attribute-based notification propagation
 - Reflection optimization with caching
 - Support for computed properties
@@ -225,6 +233,18 @@ Ready-to-use generic observable list that wraps `List<T>`.
 
 Interface for objects that support validation and error notifications.
 
+```csharp
+public interface IValidatableObject : INotifyPropertyChanged, INotifyPropertyChanging, INotifyDataErrorInfo
+{
+    bool IsValid { get; }
+    bool Validate();
+}
+```
+
+`IsValid` is a pure read over the errors recorded so far — it does **not** trigger validation. Call
+`Validate()` to (re-)evaluate the object; it discards previously recorded errors and raises
+`ErrorsChanged` for every property that gained or lost them.
+
 #### ValidatableObject
 
 Base class with built-in validation using Data Annotations.
@@ -232,9 +252,9 @@ Base class with built-in validation using Data Annotations.
 **Key Features:**
 
 - Integration with `System.ComponentModel.DataAnnotations`
-- Property-level and object-level validation
+- Property-level validation via `SetPropertyAndValidate`, object-level validation via `Validate()`
 - `INotifyDataErrorInfo` implementation
-- Automatic error change notifications
+- Error change notifications carry the name of the affected property
 
 ### 6. Command Patterns
 
@@ -250,6 +270,8 @@ Interfaces for asynchronous command execution.
 
 - `ActionCommand` / `ActionCommand<T>` - Synchronous commands
 - `AsyncActionCommand` / `AsyncActionCommand<T>` - Asynchronous commands with optional `CancellationToken` support, `Cancel()` method, and bindable `CancelCommand`
+
+Both asynchronous commands derive from `AsyncActionCommandBase`, which owns the cancellation state and the execution pipeline. `CancelCommand` returns the same instance for the lifetime of its owning command, so handlers attached to its `CanExecuteChanged` event stay attached and a bound cancel button enables and disables correctly.
 
 ## 🧰 Usage Guide
 
@@ -324,6 +346,26 @@ public class UserViewModel : ValidatableObject
     {
         get => _email;
         set => SetPropertyAndValidate(ref _email, value, StringComparer.OrdinalIgnoreCase);
+    }
+}
+
+// ReversibleProperty<T> — the comparer precedes the optional size and overflow arguments
+IReversibleProperty<string> revision =
+    new ReversibleProperty<string>("draft", StringComparer.OrdinalIgnoreCase, size: 5);
+revision.Value = "DRAFT"; // no event raised, and nothing recorded in the history
+```
+
+`SetProperty` and `SetPropertyAndValidate` return `bool`, reporting whether the value actually
+changed. Ignore it for ordinary setters, or use it to skip follow-up work:
+
+```csharp
+public string Title
+{
+    get => _title;
+    set
+    {
+        if (SetProperty(ref _title, value))
+            _isDirty = true;
     }
 }
 ```
@@ -452,7 +494,7 @@ public class UserRegistrationViewModel : ValidatableObject
     public string Email
     {
         get => _email;
-        set => SetValidatedProperty(ref _email, value);
+        set => SetPropertyAndValidate(ref _email, value);
     }
 
     [Required(ErrorMessage = "Password is required")]
@@ -460,17 +502,19 @@ public class UserRegistrationViewModel : ValidatableObject
     public string Password
     {
         get => _password;
-        set => SetValidatedProperty(ref _password, value);
+        set => SetPropertyAndValidate(ref _password, value);
     }
 
     [Range(18, 120, ErrorMessage = "Age must be between 18 and 120")]
     public int Age
     {
         get => _age;
-        set => SetValidatedProperty(ref _age, value);
+        set => SetPropertyAndValidate(ref _age, value);
     }
 
-    public bool CanSubmit => IsValid && !HasErrors;
+    // IsValid reports the errors recorded so far and does not itself validate.
+    // Call Validate() when you need the object re-evaluated on the spot.
+    public bool CanSubmit => Validate();
 }
 ```
 
@@ -714,16 +758,18 @@ The library is designed to minimize memory allocations:
 
 ### Key Classes
 
-| Class                     | Description                                | Key Features                                       |
-| ------------------------- | ------------------------------------------ | -------------------------------------------------- |
-| `NotifiableProperty<T>`   | Generic property with change notifications | Implicit operators, typed events                   |
-| `ReversibleProperty<T>`   | Property with value history                | Undo/redo, configurable history                    |
-| `NotifiableObject`        | Base class for notifiable objects          | SetProperty, attribute support                     |
-| `NotifiableCollection`    | Base class for notifiable collections      | Before/after events, typed notifications           |
-| `NotifiableCollection<T>` | Generic ready-to-use observable list       | `IList<T>`, `IReadOnlyList<T>`, full notifications |
-| `ValidatableObject`       | Base class with validation                 | Data annotations, error notifications              |
-| `ActionCommand`           | Synchronous command implementation         | CanExecute logic, parameter support                |
-| `AsyncActionCommand`      | Asynchronous command implementation        | Exception handling, cancellation                   |
+| Class                       | Description                                | Key Features                                       |
+| --------------------------- | ------------------------------------------ | -------------------------------------------------- |
+| `NotifiablePropertyBase<T>` | Shared base for notifiable properties      | Value, comparer, events, `OnValueChanging` hook    |
+| `NotifiableProperty<T>`     | Generic property with change notifications | Implicit operators, typed events                   |
+| `ReversibleProperty<T>`     | Property with value history                | Undo/redo, configurable history, custom comparer   |
+| `NotifiableObject`          | Base class for notifiable objects          | SetProperty, attribute support                     |
+| `NotifiableCollection`      | Base class for notifiable collections      | Before/after events, typed notifications           |
+| `NotifiableCollection<T>`   | Generic ready-to-use observable list       | `IList<T>`, `IReadOnlyList<T>`, full notifications |
+| `ValidatableObject`         | Base class with validation                 | Data annotations, error notifications              |
+| `ActionCommand`             | Synchronous command implementation         | CanExecute logic, parameter support                |
+| `AsyncActionCommandBase`    | Shared base for the asynchronous commands  | Cancellation state, stable `CancelCommand`         |
+| `AsyncActionCommand`        | Asynchronous command implementation        | Exception handling, cancellation                   |
 
 ### Event Types
 
@@ -759,7 +805,7 @@ public class PersonViewModel : ValidatableObject
     public string FirstName
     {
         get => _firstName;
-        set => SetValidatedProperty(ref _firstName, value);
+        set => SetPropertyAndValidate(ref _firstName, value);
     }
 
     [Required(ErrorMessage = "Last name is required")]
@@ -767,7 +813,7 @@ public class PersonViewModel : ValidatableObject
     public string LastName
     {
         get => _lastName;
-        set => SetValidatedProperty(ref _lastName, value);
+        set => SetPropertyAndValidate(ref _lastName, value);
     }
 
     public DateTime BirthDate
