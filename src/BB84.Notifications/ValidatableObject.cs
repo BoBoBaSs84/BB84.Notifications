@@ -48,8 +48,10 @@ public abstract class ValidatableObject : NotifiableObject, Interfaces.IValidata
   /// Sets the specified property to a new value and performs validation.
   /// </summary>
   /// <remarks>
-  /// This method updates the property value only if the new value differs from the current value.
-  /// After updating the property, it performs validation using the provided value and property name.
+  /// This method forwards to
+  /// <see cref="SetPropertyAndValidate{T}(ref T, T, IEqualityComparer{T}, string)"/> using
+  /// <see cref="EqualityComparer{T}.Default"/>. The property value is updated only if the new
+  /// value differs from the current one, and validation runs only when it did.
   /// </remarks>
   /// <typeparam name="T">The type of the property value.</typeparam>
   /// <param name="fieldValue">A reference to the backing field of the property.</param>
@@ -57,22 +59,20 @@ public abstract class ValidatableObject : NotifiableObject, Interfaces.IValidata
   /// <param name="propertyName">
   /// The name of the property being set. This parameter is optional and defaults to the caller's member name.
   /// </param>
-  protected void SetPropertyAndValidate<T>(ref T fieldValue, T newValue, [CallerMemberName] string propertyName = "")
-  {
-    if (!EqualityComparer<T>.Default.Equals(fieldValue, newValue))
-    {
-      SetProperty(ref fieldValue, newValue, propertyName);
-      Validate(newValue, propertyName);
-    }
-  }
+  /// <returns>
+  /// <see langword="true"/> if the value differed, the field was updated and validation ran;
+  /// otherwise, <see langword="false"/>.
+  /// </returns>
+  protected bool SetPropertyAndValidate<T>(ref T fieldValue, T newValue, [CallerMemberName] string propertyName = "")
+    => SetPropertyAndValidate(ref fieldValue, newValue, EqualityComparer<T>.Default, propertyName);
 
   /// <summary>
   /// Sets the specified property to a new value using a custom equality comparer and performs validation.
   /// </summary>
   /// <remarks>
-  /// This method behaves identically to <see cref="SetPropertyAndValidate{T}(ref T, T, string)"/> but
-  /// uses the supplied <paramref name="comparer"/> instead of <see cref="EqualityComparer{T}.Default"/>
-  /// to determine whether the value has actually changed.
+  /// This is the underlying implementation for both overloads. The comparison is delegated to
+  /// <see cref="NotifiableObject.SetProperty{T}(ref T, T, IEqualityComparer{T}, string)"/>, whose
+  /// result gates the validation pass, so <paramref name="comparer"/> is consulted exactly once.
   /// </remarks>
   /// <typeparam name="T">The type of the property value.</typeparam>
   /// <param name="fieldValue">A reference to the backing field of the property.</param>
@@ -81,13 +81,17 @@ public abstract class ValidatableObject : NotifiableObject, Interfaces.IValidata
   /// <param name="propertyName">
   /// The name of the property being set. This parameter is optional and defaults to the caller's member name.
   /// </param>
-  protected void SetPropertyAndValidate<T>(ref T fieldValue, T newValue, IEqualityComparer<T> comparer, [CallerMemberName] string propertyName = "")
+  /// <returns>
+  /// <see langword="true"/> if the value differed, the field was updated and validation ran;
+  /// otherwise, <see langword="false"/>.
+  /// </returns>
+  protected bool SetPropertyAndValidate<T>(ref T fieldValue, T newValue, IEqualityComparer<T> comparer, [CallerMemberName] string propertyName = "")
   {
-    if (!comparer.Equals(fieldValue, newValue))
-    {
-      SetProperty(ref fieldValue, newValue, comparer, propertyName);
-      Validate(newValue, propertyName);
-    }
+    if (!SetProperty(ref fieldValue, newValue, comparer, propertyName))
+      return false;
+
+    Validate(newValue, propertyName);
+    return true;
   }
 
   /// <summary>
