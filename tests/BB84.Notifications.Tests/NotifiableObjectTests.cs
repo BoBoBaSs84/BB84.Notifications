@@ -17,5 +17,17 @@ public sealed partial class NotifiableObjectTests
       get => _property;
       set => SetProperty(ref _property, value);
     }
+
+    /// <summary>
+    /// Surfaces the <c>SetProperty</c> return value, which a property setter cannot.
+    /// </summary>
+    public bool TrySetProperty(int value)
+      => SetProperty(ref _property, value, nameof(Property));
+
+    /// <summary>
+    /// Surfaces the return value of the comparer overload.
+    /// </summary>
+    public bool TrySetProperty(int value, IEqualityComparer<int> comparer)
+      => SetProperty(ref _property, value, comparer, nameof(Property));
   }
 }

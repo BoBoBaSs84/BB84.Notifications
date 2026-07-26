@@ -36,10 +36,10 @@ public abstract class NotifiableObject : INotifiableObject
   /// Updates the specified field with a new value and raises property change notifications.
   /// </summary>
   /// <remarks>
-  /// This method compares the current value of the field with the new value using the default
-  /// equality comparer. If the values are not equal, it updates the field and raises property
-  /// change notifications. Use this method to implement property setters in classes that
-  /// support change tracking or data binding.
+  /// This method forwards to <see cref="SetProperty{T}(ref T, T, IEqualityComparer{T}, string)"/>
+  /// using <see cref="EqualityComparer{T}.Default"/>. If the values are not equal, it updates the
+  /// field and raises property change notifications. Use this method to implement property setters
+  /// in classes that support change tracking or data binding.
   /// </remarks>
   /// <typeparam name="T">The type of the property being updated.</typeparam>
   /// <param name="fieldValue">A reference to the backing field of the property.</param>
@@ -48,28 +48,21 @@ public abstract class NotifiableObject : INotifiableObject
   /// The name of the property being updated.
   /// This parameter is optional and automatically provided by the compiler if not explicitly specified.
   /// </param>
-  protected void SetProperty<T>(ref T fieldValue, T newValue, [CallerMemberName] string propertyName = "")
-  {
-    if (!EqualityComparer<T>.Default.Equals(fieldValue, newValue))
-    {
-      RaisePropertyChanging(propertyName, fieldValue);
-      RaiseChangingAttribute(propertyName);
-
-      fieldValue = newValue;
-
-      RaisePropertyChanged(propertyName, newValue);
-      RaiseChangedAttribute(propertyName);
-    }
-  }
+  /// <returns>
+  /// <see langword="true"/> if the value differed and the field was updated;
+  /// otherwise, <see langword="false"/>.
+  /// </returns>
+  protected bool SetProperty<T>(ref T fieldValue, T newValue, [CallerMemberName] string propertyName = "")
+    => SetProperty(ref fieldValue, newValue, EqualityComparer<T>.Default, propertyName);
 
   /// <summary>
   /// Updates the specified field with a new value using a custom equality comparer and raises
   /// property change notifications.
   /// </summary>
   /// <remarks>
-  /// This method behaves identically to <see cref="SetProperty{T}(ref T, T, string)"/> but uses
-  /// the supplied <paramref name="comparer"/> instead of <see cref="EqualityComparer{T}.Default"/>
-  /// to determine whether the value has actually changed.
+  /// This is the underlying implementation for both overloads; it uses the supplied
+  /// <paramref name="comparer"/> to determine whether the value has actually changed, and raises
+  /// the changing and changed notifications, including any attribute-driven dependent properties.
   /// </remarks>
   /// <typeparam name="T">The type of the property being updated.</typeparam>
   /// <param name="fieldValue">A reference to the backing field of the property.</param>
@@ -79,18 +72,24 @@ public abstract class NotifiableObject : INotifiableObject
   /// The name of the property being updated.
   /// This parameter is optional and automatically provided by the compiler if not explicitly specified.
   /// </param>
-  protected void SetProperty<T>(ref T fieldValue, T newValue, IEqualityComparer<T> comparer, [CallerMemberName] string propertyName = "")
+  /// <returns>
+  /// <see langword="true"/> if the value differed and the field was updated;
+  /// otherwise, <see langword="false"/>.
+  /// </returns>
+  protected bool SetProperty<T>(ref T fieldValue, T newValue, IEqualityComparer<T> comparer, [CallerMemberName] string propertyName = "")
   {
-    if (!comparer.Equals(fieldValue, newValue))
-    {
-      RaisePropertyChanging(propertyName, fieldValue);
-      RaiseChangingAttribute(propertyName);
+    if (comparer.Equals(fieldValue, newValue))
+      return false;
 
-      fieldValue = newValue;
+    RaisePropertyChanging(propertyName, fieldValue);
+    RaiseChangingAttribute(propertyName);
 
-      RaisePropertyChanged(propertyName, newValue);
-      RaiseChangedAttribute(propertyName);
-    }
+    fieldValue = newValue;
+
+    RaisePropertyChanged(propertyName, newValue);
+    RaiseChangedAttribute(propertyName);
+
+    return true;
   }
 
   /// <summary>
