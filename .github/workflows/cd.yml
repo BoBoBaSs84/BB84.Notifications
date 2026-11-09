@@ -9,12 +9,12 @@ permissions:
   contents: write
   packages: write
 
+env:
+  DOTNET_NOLOGO: true
+  DOTNET_CLI_TELEMETRY_OPTOUT: true
+
 jobs:
   deploy:
-    env:
-      DOTNET_NOLOGO: true
-      DOTNET_CLI_TELEMETRY_OPTOUT: true
-
     name: Build, Test & Publish
     runs-on: ubuntu-latest
 
@@ -26,6 +26,8 @@ jobs:
 
       - name: Setup .NET
         uses: actions/setup-dotnet@v6
+        with:
+          global-json-file: global.json
 
       - name: Install mono
         run: |
